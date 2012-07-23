@@ -1,0 +1,380 @@
+
+<HTML>
+<HEAD>
+
+
+
+	<TITLE>St. John's University School of Law - Rittenberg Law Library</TITLE>
+	<META NAME="description" CONTENT="St. John's University School of Law - Rittenberg Law Library Catalog">
+	<META NAME="keywords" CONTENT="university, school, law, library, catalog, author, OCLC, ISBN, ISSN, SUDOC, UN/NY, LC Call, depository, TWEN, Lexis, Westlaw, CALI">
+	<META NAME="author" CONTENT="The Next Page, LLC (www.nxpage.com)">
+	<META CONTENT="no-cache">
+	<META CONTENT="0"> 
+	<META CONTENT="no-cache">
+	<META CONTENT="en-US">
+	<META CONTENT="text/html; charset=ISO-8859-1">
+
+
+<!--
+
+if	( navigator.userAgent.toLowerCase().indexOf('msie') != 1)		
+		{ document.write('<link rel="stylesheet" media="screen" type="text/css" href="/screens/style_libr_IE.css">'); }
+else if (document.layers || (navigator.appName == "Netscape" && parseInt(navigator.appVersion) >= 5))	
+		{ document.write('<link rel="stylesheet" media="screen" type="text/css" href="/screens/style_libr_NS.css">'); }
+else if (navigator.appVersion.indexOf("Mac") != 1)
+		{ document.write('<link rel="stylesheet" media="screen" type="text/css" href="/screens/style_libr_MAC.css">'); }
+
+
+/* CBE v4b10 : cbe* functions CrossBrowser DHTML API  at crossbrowser.com
+ * Copyright (c) 2002 Michael Foster (mike@crossbrowser.com)
+ * This library is distributed under the terms of the GNU Lesser General Public License (gnu.org)
+ * Modifications by The Next Page, LLC (www.nxpage.com)
+ * Copyright (c) 2002 All Other Functions/modifactions/intergration and design by The Next Page, LLC (www.nxpage.com)
+*/
+
+var cbeImageCount=0;
+var cbeImageObj = new Array();
+var cbeImageName = new Array();
+var nxPreloadFlag = false;
+
+/*****************************************/
+function cbeNewImage(imgName, imgUrl, imgWidth, imgHeight)
+{
+  var imgObj;
+  if (arguments.length == 4) imgObj = new Image(imgWidth,imgHeight);
+  else imgObj = new Image();
+  imgObj.src = imgUrl;
+  imgObj.id = imgObj.name = imgName;
+  cbeImageObj[cbeImageCount] = imgObj;
+  cbeImageName[cbeImageCount++] = imgName;
+  return imgObj;
+}
+
+/*****************************************/
+function swap(tagImg, preloadedImg)
+{
+if (nxPreloadFlag == true) {
+  var t, p, sTemp;
+  if (typeof(tagImg)=='string') t = cbeGetImageByName(tagImg);
+  else t = tagImg;
+  if (typeof(preloadedImg)=='string') p = cbeGetImageByName(preloadedImg);
+  else p = preloadedImg;
+  t.src = p.src;
+ }
+}
+
+/*****************************************/
+function cbeGetImageByName(imgName)
+{
+  var i, j, imgHold;
+ 
+  if (document.images[imgName]) return document.images[imgName];
+
+  if (document.layers)
+  {
+    imgHold = findImage(imgName, window.document);
+    if (imgHold != null) return imgHold;
+  }
+
+  for (i = 0; i < cbeImageName.length; i++)
+  {
+    if (cbeImageName[i] == imgName) return cbeImageObj[i];
+  }
+ return null;
+}
+
+/*****************************************/
+function findImage(name, doc) {
+
+  var i, img;
+
+  for (i = 0; i < doc.images.length; i++)
+    if (doc.images[i].name == name)
+      return doc.images[i];
+  for (i = 0; i < doc.layers.length; i++)
+    if ((img = findImage(name, doc.layers[i].document)) != null) {
+      img.container = doc.layers[i];
+      return img;
+    }
+  return null;
+}
+
+/*****************************************/
+function applyeffect(){
+	if (document.all){
+	bigimage.filters.revealTrans.Transition=Math.floor(Math.random()*23)
+	bigimage.filters.revealTrans.stop()
+	bigimage.filters.revealTrans.apply()
+	}
+}
+
+/*****************************************/
+function playeffect(){
+if (document.all)
+bigimage.filters.revealTrans.play()
+}
+
+/*****************************************/
+function swapBig(tagImg, preloadedImg)
+{
+ if (nxPreloadFlag == true) {
+ applyeffect();
+ swap(tagImg, preloadedImg);
+ playeffect();
+ }
+}
+
+
+
+/*********************************************************/
+/* Fixes input box size problems between Netscape and IE */
+/* Rest of function follows last FORM element on page    */
+function jm_fixForms(decNum){
+  if(navigator.appName != 'Netscape')
+  {
+    var incrVal="."+decNum;
+    for(i=0;i<document.forms.length;i++)
+    {
+      for(j=0;j<document.forms[i].elements.length;j++)
+	{
+        var formObj=document.forms[i].elements[j];
+        if(formObj.type.toLowerCase() == "text" || formObj.type.toLowerCase() == "password" || formObj.type.toLowerCase() == "file"){
+          formincr=formObj.size*eval(incrVal);
+          formObj.size=formObj.size+formincr;
+        }
+	else if(document.forms[i].elements[j].type.toLowerCase() == "textarea")
+	{
+          formincr=formObj.cols*eval(incrVal/5);
+          formObj.cols=formObj.cols+formincr;
+        }
+      }
+    }
+  }
+}
+
+/*********************************************************/
+/* Set up images for rollovers */
+
+	cbeNewImage("Libr_btn_About_on",		"/screens/Libr_btn_About_on.gif", 211, 30);
+	cbeNewImage("Libr_btn_About_off",		"/screens/Libr_btn_About_off.gif", 211, 30);
+  
+	cbeNewImage("Libr_btn_Catalog_on",		"/screens/Libr_btn_Catalog_on.gif", 211, 30);
+	cbeNewImage("Libr_btn_Catalog_off",		"/screens/Libr_btn_Catalog_off.gif", 211, 30);
+
+	cbeNewImage("Libr_btn_eResources_on",	"/screens/Libr_btn_eResources_on.gif", 211, 30);
+	cbeNewImage("Libr_btn_eResources_off",	"/screens/Libr_btn_eResources_off.gif", 211, 30);
+
+	cbeNewImage("Libr_btn_FindLaw_on",		"/screens/Libr_btn_FindLaw_on.gif", 211, 30);
+	cbeNewImage("Libr_btn_FindLaw_off",		"/screens/Libr_btn_FindLaw_off.gif", 211, 30);
+
+	cbeNewImage("Libr_btn_StudentRes_on",	"/screens/Libr_btn_StudentRes_on.gif", 211, 30);
+	cbeNewImage("Libr_btn_StudentRes_off",	"/screens/Libr_btn_StudentRes_off.gif", 211, 30);
+  
+	cbeNewImage("Libr_btn_FacultyRes_on",	"/screens/Libr_btn_FacultyRes_on.gif", 211, 30);
+	cbeNewImage("Libr_btn_FacultyRes_off",	"/screens/Libr_btn_FacultyRes_off.gif", 211, 30);
+	
+	cbeNewImage("Libr_Photo_Nite",			"/screens/Libr_Photo_Nite.jpg", 216, 219);
+	cbeNewImage("Libr_Photo_Alcove",		"/screens/Libr_Photo_Alcove.jpg", 216, 219);
+	cbeNewImage("Libr_Photo_Laptop",		"/screens/Libr_Photo_Laptop.jpg", 216, 219);
+	cbeNewImage("Libr_Photo_Study",			"/screens/Libr_Photo_Study.jpg", 216, 219);
+	cbeNewImage("Libr_Photo_Study5",		"/screens/Libr_Photo_Study5.jpg", 216, 219);
+	cbeNewImage("Libr_Photo_RonBrown1",		"/screens/Libr_Photo_RonBrown1.jpg", 216, 219);
+	cbeNewImage("Libr_Photo_AsianLady",		"/screens/Libr_Photo_AsianLady.jpg", 216, 219);
+	nxPreloadFlag = true;
+
+// End -->
+
+	
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+
+<!-- -- -->
+<TABLE>
+<TR>
+	<TD>
+    	
+	</TD>
+
+	<TD>
+		
+	</TD>
+	
+</TR></TABLE>
+<!-- -- -->
+
+
+<!-- -- -->
+<TABLE>
+<TR>
+	<TD>
+	
+		<BR>
+		<!-- -- -->
+		<!-- Navigation Buttons -->
+		<TABLE>
+		<TR>
+			<TD></TD>
+			<TD><U><FONT COLOR=blue>[(About the Law Library)]</FONT></U><BR>&nbsp;&nbsp;&nbsp;Hours, Access, Policies...</TD>
+			<TD><U><FONT COLOR=blue>[(Finding the Law)]</FONT></U><BR>&nbsp;&nbsp;&nbsp;Indexes, Research Guides...</TD>
+		</TR>
+		<TR>	
+			<TD></TD>
+			<TD><U><FONT COLOR=blue>[(Catalogs and Collections)]</FONT></U><BR>&nbsp;&nbsp;&nbsp;Finding books, periodicals, more...</TD>
+			<TD><U><FONT COLOR=blue>[(Resources for Students)]</FONT></U><BR>&nbsp;&nbsp;&nbsp;Exams, TWEN, Lexis, Webmail...</TD>
+		</TR>
+		<TR>	
+			<TD></TD>
+			<TD><U><FONT COLOR=blue>[(Electronic Resources)]</FONT></U><BR>&nbsp;&nbsp;&nbsp;Legal and Non-Legal databases...</TD>
+			<TD><U><FONT COLOR=blue>[(Resources for Faculty)]</FONT></U><BR>&nbsp;&nbsp;&nbsp;Document Delivery, A/V, ILL...</TD>
+		</TR></TABLE>
+		<!-- -- -->	
+    
+	</TD>
+</TR>
+<TR>	
+	<TD>
+	
+		<FORM>
+		<INPUT VALUE="D" NAME="SORT" TYPE="hidden">
+		<BR><HR WIDTH="70%">
+		<BR> 
+		<!-- -- -->
+		<TABLE>
+		<TR>
+			<TH>Quick Search:&nbsp;&nbsp;Catalog</TH>
+		</TR>
+		<TR>		
+			<TD>
+				<SELECT NAME="searchtype">
+					<OPTION VALUE="X" SELECTED>Keywords</OPTION>					
+					<OPTION VALUE="a">Author</OPTION>
+					<OPTION VALUE="d">Subject</OPTION> 
+					<OPTION VALUE="t">Title</OPTION> 
+					<OPTION VALUE="r">Course Name</OPTION> 
+					<OPTION VALUE="g">Govt Doc #</OPTION>
+					<OPTION VALUE="c">LC Call#</OPTION> 
+					<OPTION VALUE="m">Local Call#</OPTION> 
+					<OPTION VALUE="p">Professor Name</OPTION> 
+				</SELECT>
+				
+				<!-- -- -->
+				<TABLE>
+				<TR>
+					<TD><INPUT NAME="searcharg" MAXLENGTH="50" SIZE="20" TYPE="text"></TD>
+					<TD><INPUT VALUE="Go" NAME="submit" TYPE="submit"></TD>
+					<TD><INPUT VALUE="Clr" NAME="reset" TYPE="reset"></TD>
+				</TR></TABLE>
+				<!-- -- -->	
+			</TD>
+		</TR></TABLE>
+		</FORM>
+		<!-- -- -->
+    
+	</TD>
+</TR>
+<TR>	    
+    <TD>
+    
+    	<!-- -- -->
+		<FORM>
+		<TABLE>
+		<TR>
+			<TH>Quick Search:&nbsp;&nbsp;Library Site</TH>
+		</TR>
+		<TR>	
+			<TD>
+				<!-- -- -->
+				<TABLE>
+				<TR>
+					<TD><INPUT VALUE="" NAME="q" MAXLENGTH="255" SIZE="20" TYPE="text"></TD>
+					<TD><INPUT VALUE="Go" NAME="sa" TYPE="submit"></TD>
+					<TD><INPUT VALUE="Clr" NAME="reset" TYPE="reset"></TD>
+				</TR></TABLE>
+				<!-- -- -->
+			</TD>
+		</TR></TABLE>
+		</FORM>
+		<!-- -- -->
+    
+    </TD>
+    
+    <TD>
+		<BR>
+	</TD>
+</TR>
+
+<TR>
+<TD>
+<P ALIGN="center">Today is 
+                
+    
+			  <!--
+			  var mydate=new Date() 
+var year=mydate.getYear() 
+if (year < 1000) 
+year+=1900 
+var day=mydate.getDay() 
+var month=mydate.getMonth() 
+var daym=mydate.getDate() 
+ 
+var dayarray=new Array("Sunday","Monday","Tuesday", 
+"Wednesday","Thursday","Friday","Saturday") 
+var montharray=new Array("January","February","March","April","May","June", 
+"July","August","September","October","November","December") 
+document.write(" "+dayarray[day]+", "+montharray[month]+" "+daym+", "+year+" ") 			  
+
+//-->
+			    &nbsp;
+
+</P>
+</TD>
+</TR>
+</TABLE>
+<!-- -- -->
+
+		
+			[(Library Photo)]
+		
+			<!-- -- -->
+			<!-- Did you know -->
+			<TABLE>
+			<TR>	
+			  <TD>
+					<BR>
+					<H1>Did you know...</H1>
+		            <BLOCKQUOTE>
+		              <P>The Rittenberg Law Library houses an important collection of papers of the recently deceased Hugh L. Carey, covering his years as a U.S. representative and Governor of New York (1961-1982).</EM></FONT></U> <BR>
+	                  </P>
+		              <P><BR>
+	                  </P>
+		              <P ALIGN="center">&nbsp;</P>
+                </BLOCKQUOTE>	            </TD>
+			</TR>
+			<TR>
+			  <TD>
+					<HR>
+					<BR>
+				  &nbsp;Visit
+				  Our Main <U><FONT COLOR=blue><EM>SJU Law Site</EM></FONT></U>
+			  </TD>
+			</TR>
+
+
+
+</TABLE>
+			<!-- -- -->	
+		
+
+	
+	<!-- Begin
+		if (navigator.appVersion.toLowerCase().indexOf("mac") == 1)
+		{ jm_fixForms('25'); }
+	
+	// End -->
+	
+
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>
+<!--this is customized <screens/mainmenu.html>-->

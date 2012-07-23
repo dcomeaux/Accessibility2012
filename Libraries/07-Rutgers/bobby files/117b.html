@@ -1,0 +1,582 @@
+
+<HTML>
+ <HEAD>
+  <TITLE>
+    Rutgers University Libraries: Libraries and Centers: John Cotton Dana Library: Media and Digital Library Services
+  </TITLE>
+
+
+@import url(/rul/includes/04rul-style2.css); 
+
+
+
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11510931-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+	
+
+.Caption { font-size: smaller; font-weight: bold; color: #000000; }
+
+
+
+// (C) 2002 www.CodeLifter.com
+// http://www.codelifter.com
+// Free for all users, but leave in this header.
+
+// ==============================
+// Set the following variables...
+// ==============================
+
+// Set the slideshow speed (in milliseconds)
+var SlideShowSpeed = 4500;
+
+// Set the duration of crossfade (in seconds)
+var CrossFadeDuration = 3;
+
+var Picture = new Array(); // don't change this
+var Caption = new Array(); // don't change this
+
+// Specify the image files...
+// To add more images, just continue
+// the pattern, adding to the array below.
+// To use fewer images, remove lines
+// starting at the end of the Picture array.
+// Caution: The number of Pictures *must*
+// equal the number of Captions!
+
+Picture[1]  = 'mds1.jpg';
+Picture[2]  = 'mds2.jpg';
+Picture[3]  = 'mds3.jpg';
+Picture[4]  = 'mds4.jpg';
+Picture[5]  = 'mds5.jpg';
+Picture[6]  = 'mds6.jpg';
+Picture[7]  = 'mds7.jpg';
+Picture[8]  = 'mds8.jpg';
+Picture[9]  = 'mds9.jpg';
+
+Caption[1]  = "Dana Media Carrels";
+Caption[2]  = "Dana Media Collections";
+Caption[3]  = "Crestron Audio-Visual Distribution System";
+Caption[4]  = "Dana Media Front Desk";
+Caption[5]  = "Seminar Room 215";
+Caption[6]  = "Group Study / Media Room";
+Caption[7]  = "Special Collections Room";
+Caption[8]  = "The Dana Room";
+Caption[9]  = "The Gallery";
+
+// =====================================
+// Do not edit anything below this line!
+// =====================================
+
+var tss;
+var iss;
+var jss = 1;
+var pss = Picture.length-1;
+
+var preLoad = new Array();
+for (iss = 1; iss  (pss)) jss=1;
+tss = setTimeout('runSlideShow()', SlideShowSpeed);
+}
+
+
+
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</FONT></U>
+
+<!-- red nav table: start -->
+<TABLE>
+<TR><!-- row 1 -->
+  <TD><U><FONT COLOR=blue>[Rutgers University Libraries]</FONT></U></TD>
+  <TD>
+<!-- note space: start -->
+
+<!-- note space: end -->
+</TD>
+  <TD>&nbsp;</TD>
+</TR>
+
+<TR><!-- row 2 -->
+<TD>
+    <TABLE>
+    <TR>
+<TD>&nbsp;&nbsp;<U><FONT COLOR=blue>LOGIN HERE</FONT></U>&nbsp;&nbsp;&nbsp;&nbsp;<U><FONT COLOR=blue>[About the Libraries' New Remote Access Login]</FONT></U></TD><TD>&nbsp;&nbsp;</TD>
+
+<!--
+  if (show_AAL_L  == true){
+  document.write("<td onmouseover='this.bgColor=\"#C00000\";' onmouseout='this.bgColor=\"#000000\";' onclick='this.bgColor=\"#000000\";'>&nbsp;&nbsp;&nbsp;<a href='/rul/ask_a_lib/ask_a_lib.shtml' class='navbar'>ASK&nbsp;A&nbsp;LIBRARIAN&nbsp;<span  style='backgroundcolor:white;fontsize:12px;color:black;'>LIVE!</span></a>&nbsp;&nbsp;&nbsp;</td>")
+  }
+  else {
+  document.write("<td onmouseover='this.bgColor=\"#C00000\";' onmouseout='this.bgColor=\"#000000\";' onclick='this.bgColor=\"#000000\";'>&nbsp;&nbsp;&nbsp;<a href='/rul/ask_a_lib/ask_a_lib.shtml' class='navbar'>ASK&nbsp;A&nbsp;LIBRARIAN</a>&nbsp;&nbsp;&nbsp;</td>");
+  }
+//-->
+
+<!--
+<noscript>
+    <td onmouseover="this.bgColor = '#C00000';" onmouseout="this.bgColor = '#000000';" onclick="this.bgColor = '#000000';">&nbsp;&nbsp;&nbsp;<a href="/rul/ask_a_lib/ask_a_lib.shtml" class="navbar">ASK&nbsp;A&nbsp;LIBRARIAN</a>&nbsp;&nbsp;&nbsp;</td>
+</noscript>
+-->
+    <TD>&nbsp;&nbsp;<U><FONT COLOR=blue>HOURS&nbsp;&amp;&nbsp;DIRECTIONS</FONT></U>&nbsp;&nbsp;</TD>
+    <TD>&nbsp;&nbsp;<U><FONT COLOR=blue>SEARCH&nbsp;SITE</FONT></U>&nbsp;&nbsp;</TD>
+    <TD>&nbsp;&nbsp;<U><FONT COLOR=blue>SITE&nbsp;INDEX</FONT></U>&nbsp;&nbsp;</TD>
+    <TD>&nbsp;&nbsp;<U><FONT COLOR=blue>FACULTY&nbsp;SERVICES</FONT></U>&nbsp;&nbsp;</TD>
+    <TD>&nbsp;&nbsp;<U><FONT COLOR=blue>MY ACCOUNT</FONT></U>&nbsp;&nbsp;</TD>
+    </TR>
+    </TABLE>
+<!-- scua pages have a bar as well -->
+</TD>
+</TR>
+</TABLE>
+<!-- red nav table: end -->
+
+<!-- proxy and google side bars need to be updated too -->
+
+<TABLE>
+<TR>
+<!-- left column: start -->
+<TD>
+ <TABLE>
+  <TR><TD><U><FONT COLOR=blue>LIBRARIES HOME</FONT></U></TD><TD></TD></TR>
+  <TR><TD><!-- horizontal rule --></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>SEARCH LIBRARY CATALOGS</FONT></U></TD><TD></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>FIND ARTICLES</FONT></U></TD><TD></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>FIND ARTICLES WITH SEARCHLIGHT</FONT></U></TD><TD></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>FIND RESERVES</FONT></U></TD><TD></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>RESEARCH RESOURCES</FONT></U></TD><TD></TD></TR>
+  <TR><TD><!-- horizontal rule --></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>RUCORE/INSTITUTIONAL REPOSITORY</FONT></U></TD><TD></TD></TR>
+  <TR><TD><!-- horizontal rule --></TD></TR>
+  <TR><TD><!-- horizontal rule --></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>CONNECT FROM OFF-CAMPUS</FONT></U></TD><TD></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>HOW DO I...?</FONT></U>  </TD><TD></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>REFWORKS</FONT></U>  </TD><TD></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>LEARNING TOOLS</FONT></U>  </TD><TD></TD></TR>
+  <TR><TD><!-- horizontal rule --></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>BORROWING</FONT></U></TD><TD></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>DELIVERY AND INTERLIBRARY LOAN</FONT></U></TD><TD></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>REFERENCE</FONT></U></TD><TD></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>FACULTY SERVICES</FONT></U></TD><TD></TD></TR>
+  <TR><TD><!-- horizontal rule --></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>ABOUT THE LIBRARIES</FONT></U></TD><TD></TD></TR>
+  <TR><TD><!-- spacer --></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>GIVING TO THE RUTGERS<BR>UNIVERSITY LIBRARIES</FONT></U></TD><TD></TD></TR>
+  <TR><TD><!-- spacer --></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>NEWS AND EVENTS</FONT></U></TD><TD></TD></TR>
+  <TR><TD><!-- spacer --></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>ALUMNI LIBRARY</FONT></U></TD><TD></TD></TR>
+</TABLE>
+<BR><BR>
+<BR><BR>
+<TABLE>
+   <TR>
+      <TD>
+      <U><FONT COLOR=blue>RETURN TO RUTGERS<BR>HOME PAGE</FONT></U><BR><BR>
+      <U><FONT COLOR=blue>SEARCH RUTGERS</FONT></U><BR>
+      
+      <BR>
+      <BR>
+      <U><FONT COLOR=blue>[VALE - Virtual Academic Library Environment]</FONT></U>
+   <BR>
+   </TD>
+<TD></TD>
+</TR></TABLE>
+</TD>
+<!-- left column: end -->
+<TD>
+
+
+<!-- content: start -->
+
+<!-- attribution: start -->
+<!-- attribution: end -->
+
+<!-- backpath: start -->
+<U><FONT COLOR=blue>About the Libraries:</FONT></U> 
+<U><FONT COLOR=blue>Libraries and Centers:</FONT></U> 
+<U><FONT COLOR=blue>John Cotton Dana Library:</FONT></U>
+<BR>
+<!-- backpath: end -->
+
+
+Media and Digital Library Services
+<BR>
+
+<TABLE>
+<TR>
+<TD>
+<P>
+<EM>Media and Digital Library Services<BR>
+John Cotton Dana Library<BR>
+Rutgers, The State University of New Jersey<BR>
+185 University Avenue<BR>
+Newark, NJ 07102<BR>
+Tel: 973/353-5917/1478 </EM>
+
+</P>
+
+<P>
+For On Campus Smart Classroom Information:<BR>
+Academic Scheduling Office: 973/353-5507 <BR>
+<U><FONT COLOR=blue>http://oat.newark.rutgers.edu/</FONT></U>
+</P>
+
+</TD>
+<TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+<TD>
+<TABLE>
+  <TR>
+    <TD>
+    [INLINE]
+    </TD>
+  </TR>
+  <TR>
+    <TD>
+    Dana Media Carrels
+    </TD>
+  </TR>
+
+</TABLE>
+
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+</HTML>
+
+</TD></TR>
+<TR>
+<TD>
+<UL>
+<LI><U><FONT COLOR=blue>General Information</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Hours and Directions</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Facilities</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Equipment Services</FONT></U></LI>
+
+<LI><U><FONT COLOR=blue>Access Policies</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Media Reserves</FONT></U></LI>
+</UL>
+</TD>
+<TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+<TD>
+<UL>
+<LI><U><FONT COLOR=blue>Media Collections: Introduction and Index to Guides</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Search Media Collections</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Media and Digital Library Services Brochure</FONT></U> [PDF]</LI>
+<LI><U><FONT COLOR=blue>On Campus Equipment Delivery Request Form</FONT></U> [PDF] </LI>
+<LI><U><FONT COLOR=blue>Media Materials - Booking Form</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Dana Media Center Reserve Request Form</FONT></U></LI>
+</UL>
+</TD></TR>
+</TABLE>
+
+ 
+
+</FONT></U>
+<H2>General Information</H2>
+
+<P>
+Media and Digital Library Services is a unit of the Rutgers University Libraries offering diverse moving image (videotape, DVD) collections and select audio collections to students, faculty, and staff on all Rutgers campuses. The unit offers individual, group and class viewing facilities, instructional presentation facilities within the Library, and provides the Newark campus with select audio visual equipment. The unit houses a Digital Media Lab used for scanning and digital preservation of documents and photos and special projects. An evolving array of services are being developed to make valuable informational resources available in digital formats for research and classroom use.
+</P>
+
+<H3>Media and Digital Library Services Staff</H3>
+
+<TABLE>
+<TR>
+<TD>
+Ka-Neng Au, Department Head<BR>
+<U><FONT COLOR=blue>au@rutgers.edu</FONT></U><BR>
+973/353-5911
+<BR><BR>
+</TD>
+<TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+<TD>
+Mark Papianni, AV Technical Coordinator<BR>
+<U><FONT COLOR=blue>papianni@rulmail.rutgers.edu</FONT></U><BR>
+973/353-1478
+</TD></TR>
+
+<TR>
+<TD>
+Bonnie Paz, Library Assistant<BR>
+<U><FONT COLOR=blue>brownpaz@rulmail.rutgers.edu</FONT></U><BR>
+973/353-3807
+<BR><BR>
+</TD>
+<TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+<TD>
+Christopher Singh, Unit Computing Specialist<BR>
+<U><FONT COLOR=blue>chsingh@andromeda.rutgers.edu</FONT></U><BR>
+973/353-5930
+</TD></TR>
+
+<TR>
+<TD>
+Robert Nahory, Digital Library Applications Developer <BR>
+<U><FONT COLOR=blue>nahory@rulmail.rutgers.edu</FONT></U><BR>
+973/353-5593
+<BR><BR>
+</TD>
+<TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+<TD>
+</TD></TR>
+</TABLE>
+
+ 
+
+</FONT></U>
+<H2>Hours and Directions</H2>
+
+<TABLE>
+<TR>
+<TD>
+    <H3>Spring &amp; Fall Semester</H3>
+
+    <TABLE>
+    <TR><TD>Monday-Thursday&nbsp;</TD><TD> 9am-9pm</TD></TR>
+    <TR><TD>Friday&nbsp;</TD><TD>9am-7pm</TD></TR>
+    <TR><TD>Saturday&nbsp;</TD><TD>12pm-4pm</TD></TR>
+    </TABLE>
+
+    <H3>Summer Semester</H3>
+    <TABLE>
+    <TR><TD>Monday-Friday&nbsp;</TD><TD>9am-5pm</TD></TR>
+    <TR><TD>Saturday-Sunday&nbsp;</TD><TD>CLOSED</TD></TR>
+    </TABLE>
+
+<P>
+For hours relating to holidays etc. please see the Dana Library hours in the listings 
+at the main <U><FONT COLOR=blue>Hours and Directions</FONT></U> page.
+</P>
+</TD>
+<TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+<TD>
+<H3>Directions</H3>
+
+<UL>
+<LI><U><FONT COLOR=blue>Directions to the Newark Campus</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Interactive Map of Newark Campus</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Area Map of Dana Library</FONT></U></LI>
+</UL>
+</TD></TR>
+</TABLE>
+
+ 
+
+</FONT></U>
+<H2>Facilities</H2>
+
+<H3>Dana Digital Media Lab</H3>
+
+
+
+<P>
+The Dana Digital Media Lab performs a variety of special projects for Rutgers University Libraries, the Institute of Jazz Studies, Newark faculty and Rutgers Newark departments. Web development, streaming video and audio, scanning of rare documents and photographs are just a few of the fascinating capabilities of the Digital lab.
+</P>
+
+<P>
+The focus of our technologies is toward digital preservation, educational webpage design and the development of digital objects that would be integrated into such a design. The intent is not to develop technological implementations that would replace face-to-face classes but rather to enhance and add both breadth and depth to present courses. The Lab provides the ability to restore outdated  commercially unavailable valuable informational resources to modern formats for classroom and research use.
+</P>
+
+<P>
+Our technologies permit the creation and the editing of digitized "streaming" video from analog sources, the creation of digitized audio, and the scanning of photos (prints, negatives, 35mm slides) on a studio quality, tabloid scanner capable of capturing images up to a bit density of 6400 dpi.  These digital objects and web course materials can be implemented and distributed to clients of the Dana library. Anyone with a special request or project should contact Ka-Neng Au, Department Head <U><FONT COLOR=blue>au@rutgers.edu</FONT></U>.  Note that copyright issues may introduce restrictions.
+</P>
+
+<P>
+Media and Digital Services campus outreach activities include:
+</P>
+
+<UL>
+
+<LI> Consultation services for faculty and staff for their multimedia, instructional technology and web projects.  </LI>
+<LI> Training in the use of media and digital services technology.  </LI>
+<LI> Conducting multimedia workshops. </LI>
+</UL>
+
+
+<H3>The Dana Room</H3>
+
+
+<P>
+
+The Dana Room is a versatile smart classroom space that accommodates various usage requests. For classes, it can be set up with or without tables for large screen viewing of films or presentations. For receptions or special events as an in-house theatre for musical performances, the Dana Room seats 118 (chairs only) and 55 with tables and chairs. Standing room capacity is 166. There is a grand concert piano in the Dana room that was made available through the generosity of the Faculty of Arts and Sciences Dean’s office. 
+</P>
+
+<P>
+<U><FONT COLOR=blue>Reservations</FONT></U> must be made by faculty or an authorized representative at least a week in advance. Space is available on a first come first serve basis and subject to administrative approval. Media related use has priority. Videotaping of events in the Dana Room must be arranged and approved in advance.
+</P>
+
+
+<H3>The Gallery</H3>
+
+
+<P>
+The adjoining exhibition gallery that runs through most of the media complex offers the  opportunity to display visual and textual materials, artwork, and other media in a way that encourages and facilitates learning and that serves to reinforce the importance of the jazz/media complex as an intellectually exciting and vital community space.
+</P>
+
+<P>
+Recent exhibitions have included several New Jersey Book Arts exhibits and the Public Administration Department’s Soviet Political Poster Art exhibit.  The gallery has also been a showcase for the display of many unique paintings and works of established artists from diverse communities and cultures.  
+</P>
+
+<P>
+Those interested in exhibit space should contact: Ann Watkins (<U><FONT COLOR=blue>ewatkins@rutgers.edu</FONT></U>).  Exhibits are approved by the Arts Advisory Committee and the Administrative Office.
+</P>
+
+
+<H3>The Seminar Room</H3>
+
+
+<P>
+The Seminar Room (215) is located on the 2nd floor of the library.  It designed for groups of 10-20 around a conference table offering a personalized class atmosphere with the ability to show DVD and VHS media materials on a 32” monitor.
+</P>
+
+<P>
+<U><FONT COLOR=blue>Reservations</FONT></U> must be made by faculty or an authorized representative at least a week in advance. Space is available on a first come first serve basis and subject to administrative approval. Media related use has priority. Videotaping of events in the Seminar Room must be arranged and approved in advance.
+</P>
+
+
+<H3>Special Collections Room</H3>
+
+
+
+<P>
+The Special Collections Room is located on the 4th floor of the library.  Primarily used by library administration for meetings, video conferences and interviews, this nostalgic space displays a collection of rare books and several musical instrument artifacts.  The room seats 10 comfortably around a historic conference table that was used to sign the resolution which officially ended the hostilities between the United States and Germany in World War I.
+</P>
+
+<P>
+<U><FONT COLOR=blue>Reservations</FONT></U> must be made by faculty or an authorized representative at least a week in advance. Space is available on a first come first serve basis and subject to administrative approval. Media related use has priority. Videotaping of events in the Special Collections Room must be arranged and approved in advance.
+</P>
+
+
+ 
+
+</FONT></U>
+<H2>Equipment Services</H2>
+
+<H3>Scheduling, Delivery, and Rental</H3>
+
+<P>
+Media Services has AV. Equipment for on-campus use ( 16mm Film Projectors, Overhead Projectors.) See  
+<U><FONT COLOR=blue>Equipment Scheduling form</FONT></U> for full list of equipment available.
+</P>
+
+<P>
+Projectors are delivered to classrooms. Smaller equipment can be picked up from Media Services with prior arrangement. Video equipment can only be used in the Dana Library. <EM>Presently we do not deliver video equipment (TV/VCR/DVD/video projectors/ monitors) across campus.</EM> Requests for listed equipment we do deliver must be made by faculty or an authorized representative at least three days in advance.
+</P>
+
+<P>
+Rental charges may apply to Summer Session (see <U><FONT COLOR=blue>Scheduling form</FONT></U> [PDF] for fees).  Currently, no  charges are applied for use of equipment in the Dana Library. (<EM>Subject to change</EM>)
+
+</P>
+
+<P>
+Videotaping of classes, seminars, or special presentations is provided through special arrangement with the AV Technical Coordinator and approval by the Department Head.  
+</P>
+
+<P>
+<EM>PLEASE NOTE:</EM>
+</P>
+
+
+<P>
+SMART CLASSROOMS ON CAMPUS ARE NOT SCHEDULED BY DANA MEDIA SERVICES.<BR>
+SMART CLASSROOM SCHEDULING AND TRAINING INFORMATION CAN BE OBTAINED AT:<BR>
+
+Academic Scheduling Office: 973/353-5507<BR>
+<U><FONT COLOR=blue>http://oat.newark.rutgers.edu/smartclassinfo.html</FONT></U>
+</P>
+
+
+ 
+
+</FONT></U>
+<H2>Access Policies</H2>
+
+<P>
+All Rutgers University students, faculty, and staff with valid IDs (and NJIT faculty teaching Rutgers classes) can borrow Rutgers media materials that ARE NOT ON RESERVE or BOOKED for a CLASS.
+</P>
+
+<P>
+CDs, audio cassettes, discs, and tapes circulate to faculty, staff and graduate students for 14 days; CDs also circulate to undergraduates for 3 days. Videos and DVDs circulate to faculty, staff, and graduate students for 3 days; Music Library DVDs also circulate to undergraduates for 3 days. 16 and 8mm films do not circulate; they are available only with special permission. Slides, film loops, filmstrips, and AV kits circulate to faculty, staff, graduate students, and undergraduates for 14 days. 
+</P>
+
+<P>
+Scheduled DVDs /Videos may be picked up and returned to Media Services or the Circulation  Desk.  <EM>Videos must be scheduled and picked up Mon-Fri between 9am-5:00pm. No videos will be charged out after 5:00pm or on weekends, unless special provisions have been made.</EM>
+</P>
+
+<P>
+<EM>All Reserve items must be used in the Dana Library. <BR>
+Faculty may borrow a reserve item for a 4 hour period. </EM> 
+
+<BR>
+See: <U><FONT COLOR=blue>Dana Media Center Reserve Request Form</FONT></U>
+</P>
+
+<P>
+Rutgers alumni, Council for Higher Education in Newark (CHEN) participants and holders of valid County of Essex Libraries Reciprocal, Borrowing &amp; Lending Program (ReBL) cards must use all materials in the library.
+</P>
+
+
+ 
+
+</FONT></U>
+
+<H2>Media Reserves</H2>
+
+<P>
+Faculty may place Rutgers media materials on reserve for their classes to view in-house for specific time periods each semester.
+</P>
+
+<P>
+In Newark, please use the <U><FONT COLOR=blue>Dana Media Center Reserve Request Form</FONT></U><BR>
+
+In Camden, contact the reserve staff at the Paul Robeson Library to place media on reserve. 
+</P>
+
+<P>
+Arrangements for media reserve materials on the New Brunswick and Piscataway campuses will be handled by the Media Center located in the Douglass Library or by the Music Library.
+<BR>
+See: <U><FONT COLOR=blue>Media Reserve Request Form</FONT></U>
+</P>
+
+<!-- content area: end -->
+
+<!-- footer -->
+
+<U><FONT COLOR=blue>[Back to Top of Page]</FONT></U>
+
+</TD></TR>
+<TR>
+<TD></TD>
+<TD>
+
+
+Last updated  <!-- March 27, 2008; March 25, 2009; June 26, 2009; January 21, 2010; January 20, 2011  --> October 11, 2011
+
+
+</TD>
+</TR>
+<TR>
+<TD>&nbsp;</TD>
+<TD>
+
+
+URL: http://www.libraries.rutgers.edu/rul/libs/dana_lib/media/dana_media.shtml<BR>
+
+
+
+
+    <U><FONT COLOR=blue>Website Feedback</FONT></U>&nbsp;&nbsp;|&nbsp;&nbsp;<U><FONT COLOR=blue>Privacy Policy</FONT></U>
+    <BR>
+    <U><FONT COLOR=blue>Copyright &#169;  2012</FONT></U>, Rutgers, The State University of New Jersey &nbsp;&nbsp;(<U><FONT COLOR=blue><EM>Further Copyright Information</EM></FONT></U>)
+
+
+</TD>
+</TR>
+</TABLE>
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>

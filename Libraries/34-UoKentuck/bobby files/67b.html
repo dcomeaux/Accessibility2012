@@ -1,0 +1,578 @@
+
+<HTML>
+
+<HEAD>
+<TITLE>About the University of Kentucky Libraries -  University of Kentucky Libraries</TITLE>
+<META CONTENT="IE=EmulateIE8">
+<META NAME="Keywords" CONTENT="Kentucky, libraries, resources">
+<META NAME="author" CONTENT="University of Kentucky Libraries">
+<META CONTENT="no">
+<META NAME="Description" CONTENT="University of Kentucky Libraries">
+<META CONTENT="text/html; charset=iso-8859-1">
+
+
+
+<!-- our compressed stylings -->
+<!-- our compressed js -->
+<!-- for our research guides search box -->
+
+
+<!--[if IE 6]>
+<style type="text/css">
+#lib_search_box {float: right; width: 560px; margin: 20px 0 0 48px; position: absolute;
+#lib_branch_content_right {margin: 4px 0 0 0;}
+</style>
+<![endif]-->
+
+<!--[if IE 7]>
+<style type="text/css">
+#lib_search_box {float: right; width: 560px; margin: 20px 0 0 48px; position: absolute;}
+#lib_branch_content_right {margin: 4px 24px 20px 6px;}
+#branchleftnav {margintop: 80px;}
+</style>
+<![endif]-->
+
+
+
+
+//
+    
+ 
+ 
+var ajax = [];function pjx(args,fname,method) { this.target=args[1]; this.args=args[0]; method=(method)?method:'GET'; if(method=='post'){method='POST';} this.method = method; this.r=ghr(); this.url = this.getURL(fname);}function formDump(){ var all = []; var fL = document.forms.length; for(var f = 0;f"; for( var i=0; i ' + decodeURI(ajax[i].url) + ' '; } document.getElementById('pjxdebugrequest').innerHTML = tmp + "";}function find_param_pattern_value() { var args = find_param_pattern_value.arguments; for( var i=0; i
+
+<!-- <script type="text/javascript">
+	var AutocompleteObj_param_pattern_value = actb(document.getElementById('param_pattern_value'),new Array(), 'sfxlcl3', '\'param_chinese_checkbox_value\',\'param_textSearchType_value\'');
+	AutocompleteObj_param_pattern_value.actb_lim 		= '10';
+	AutocompleteObj_param_pattern_value.actb_bgColor 	= '#FAFBFC';
+	AutocompleteObj_param_pattern_value.actb_textColor = '#000000';
+	AutocompleteObj_param_pattern_value.actb_hColor 	= '#CDEDFC';
+	AutocompleteObj_param_pattern_value.actb_fFamily 	= 'Verdana';
+	AutocompleteObj_param_pattern_value.actb_fSize 	= '11px';
+	AutocompleteObj_param_pattern_value.actb_list_extra_width 	= 0;
+	AutocompleteObj_param_pattern_value.actb_more_results_available_msg 	= "More results are available...";
+	AutocompleteObj_param_pattern_value.actb_delimiter = new Array();
+</script>
+-->
+
+
+function clearMe(formfield){
+  if (formfield.defaultValue==formfield.value)
+   formfield.value = ""
+ }
+
+
+
+	$(document).ready(function() {
+				   
+	function findValueCallback(event, data, formatted) {
+		$("").html( !data ? "No match!" : "Selected: " + formatted).appendTo("#result");
+	}
+	
+	function formatItem(row) {
+		return row[0] + " (id: " + row[1] + ")";
+	}
+	function formatResult(row) {
+		return row[0].replace(/()/gi, '');
+	}
+	
+	$("#suggest1").autocomplete(guides, {
+		  formatItem: function(item) {
+		    return item.text;
+		  }
+		}).result(function(event, item) {
+		  location.href = item.url;
+		});
+
+	// This takes care of the selected databases select dropdown
+	$("#selected-dbs").selectBox();
+
+	
+});
+
+
+
+
+	function Show_Stuff(Click_Menu)
+	// Function that will swap the display/no display for
+	// all content within span tags
+	{
+		Click_Menu = document.getElementById(Click_Menu);
+		if (Click_Menu.style.display == "none")
+		{
+		Click_Menu.style.display = "block";
+		}
+		else
+		{
+		Click_Menu.style.display = "none";
+		}
+	}
+
+
+
+
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-4968268-10']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+
+
+        
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+
+<!-- lib_content container -->
+<!-- inner white border -->
+
+
+
+
+<U><FONT COLOR=blue>[UK Libraries Logo]</FONT></U>
+
+
+
+<!-- Put Search Box Here -->
+<!-- <div id="container" class="leftit"> -->
+
+
+
+
+
+<UL>
+	<!-- <li class="TabbedPanelsTab">Catalog</li>  -->
+	<LI>Articles & Books</LI>
+	<LI>E-Journals</LI>
+	<LI>Databases</LI>
+	<LI>Site Search</LI>
+	<LI>Research Guides</LI>
+	<LI>Guided Search</LI>
+	<!-- <a class="TabbedPanelsTab" href="javascript:Show_Stuff('gsdiv')">Guided Search</a>
+   -->
+</UL>
+
+
+
+<!-- Articles+ Search -->
+
+
+
+<FORM><SELECT NAME="scope">
+	<OPTION VALUE="0" DISABLED>- select search limit -</OPTION>
+	<OPTION VALUE="0" SELECTED>Libraries Worldwide</OPTION>
+	<OPTION VALUE="2">University of Kentucky Libraries</OPTION>
+</SELECT> <INPUT VALUE="wc_org_uky" NAME="qt" TYPE="hidden"> <INPUT VALUE="" NAME="q" SIZE="50" TYPE="text"> <INPUT VALUE="" NAME="oldscope" TYPE="hidden"> <INPUT VALUE="1290" NAME="dblist" TYPE="hidden"> <!-- <input type="hidden" name="fq" value="dt:art" />  -->
+
+<INPUT VALUE="Go" NAME="wcsbtn2w" TYPE="submit"> <!-- <input type="submit" value="Go" name="wcsbtn2w" id="wcsbtn2w" alt="Go" title="Search" style="height: 26px; fontsize: 15px; fontweight: bold; background: #94aac7; color: #fff" />
+ --></FORM>
+
+
+
+
+<!-- <span class="maincontenttext">Databases: Academic Search Premier</span> -->
+<!-- <span class="maincontenttext">Or use the full <a href="http://uky.worldcat.org/" class="maincontenttext"><u>WorldCat Local</u></a> resource.</span>  -->
+Or use UK's <U><FONT COLOR=blue>InfoKat</FONT></U> Library Catalog, <U><FONT COLOR=blue>WorldCat Local</FONT></U>, or <U><FONT COLOR=blue>Database Resources</FONT></U>.
+	
+
+
+
+<!-- End Articles+ Search --> <!-- EJournals Search -->
+
+
+
+
+<FORM><U><FONT COLOR=blue>0-9</FONT></U>
+
+<U><FONT COLOR=blue>A</FONT></U>
+
+
+<U><FONT COLOR=blue>B</FONT></U>
+
+
+<U><FONT COLOR=blue>C</FONT></U>
+
+
+<U><FONT COLOR=blue>D</FONT></U>
+
+
+<U><FONT COLOR=blue>E</FONT></U>
+
+<U><FONT COLOR=blue>F</FONT></U>
+
+<U><FONT COLOR=blue>G</FONT></U>
+
+<U><FONT COLOR=blue>H</FONT></U>
+
+<U><FONT COLOR=blue>I</FONT></U>
+
+<U><FONT COLOR=blue>J</FONT></U>
+
+<U><FONT COLOR=blue>K</FONT></U>
+
+<U><FONT COLOR=blue>L</FONT></U>
+
+<U><FONT COLOR=blue>M</FONT></U>
+
+<U><FONT COLOR=blue>N</FONT></U>
+
+<U><FONT COLOR=blue>O</FONT></U>
+
+<U><FONT COLOR=blue>P</FONT></U>
+
+<U><FONT COLOR=blue>Q</FONT></U>
+
+<U><FONT COLOR=blue>R</FONT></U>
+
+<U><FONT COLOR=blue>S</FONT></U>
+
+
+<U><FONT COLOR=blue>T</FONT></U>
+
+<U><FONT COLOR=blue>U</FONT></U>
+
+
+<U><FONT COLOR=blue>V</FONT></U>
+
+<U><FONT COLOR=blue>W</FONT></U>
+
+<U><FONT COLOR=blue>X</FONT></U>
+
+<U><FONT COLOR=blue>Y</FONT></U>
+
+<U><FONT COLOR=blue>Z</FONT></U>
+
+
+<U><FONT COLOR=blue>Others</FONT></U>
+
+<!-- end of alphabet loop --> <INPUT VALUE="eng" NAME="param_lang_save" TYPE="hidden"> <INPUT VALUE="" NAME="param_letter_group_save" TYPE="hidden"> <INPUT VALUE="searchTitle" NAME="param_perform_save" TYPE="hidden"> <INPUT VALUE="" NAME="param_letter_group_script_save" TYPE="hidden"> <INPUT VALUE="0" NAME="param_chinese_checkbox_save" TYPE="hidden"> <INPUT VALUE="getFullTxt" NAME="param_services2filter_save" TYPE="hidden"> <INPUT VALUE="detail" NAME="param_current_view_save" TYPE="hidden"> <INPUT VALUE="1" NAME="param_jumpToPage_save" TYPE="hidden"> <INPUT VALUE="textSearch" NAME="param_type_save" TYPE="hidden"> <INPUT VALUE="contains" NAME="param_textSearchType_save" TYPE="hidden"> <INPUT VALUE="textSearch" NAME="param_type_value" TYPE="hidden"> <INPUT VALUE="" NAME="param_jumpToPage_value" TYPE="hidden"> <BR>
+Title: 
+<INPUT VALUE="" NAME="param_pattern_value" TYPE="text">
+
+
+<BR>
+<INPUT VALUE="startsWith" NAME="param_textSearchType_value" TYPE="radio">Starts
+with <INPUT VALUE="contains" NAME="param_textSearchType_value" CHECKED TYPE="radio">Contains
+
+
+</TD>
+</TR>
+
+<!-- chinese checkbox --> <!-- needed to be passed as one of ajax parameters-->
+<INPUT VALUE="0" NAME="param_chinese_checkbox_value" TYPE="hidden"> <INPUT VALUE="Go" TYPE="submit"> Search the E-Journals Database for
+specific <U><FONT COLOR=blue>journal titles</FONT></U>.
+</FORM>
+
+
+
+
+<!-- End EJournals Search --> <!-- Electronic Resources Search -->
+
+
+
+<FORM>Title
+Search <INPUT VALUE="Enter Title of Resource" NAME="irname" SIZE="40" TYPE="text"> <INPUT VALUE="Go" NAME="Press3" TYPE="submit"><BR>
+
+</FORM>
+Or use the full search on our <U><FONT COLOR=blue>Databases and Other Electronic Resources</FONT></U> page.
+
+
+
+
+<!-- End Electronic Resources Search --> <!-- UK Libraries Site Search -->
+
+
+
+
+<FORM><INPUT VALUE="libraries.uky.edu" NAME="as_sitesearch" TYPE="hidden"> <INPUT VALUE="uk" NAME="proxystylesheet" TYPE="hidden"> <INPUT VALUE="i" NAME="as_dt" TYPE="hidden"> <INPUT VALUE="0" NAME="numgm" TYPE="hidden"> Keyword Search: <INPUT VALUE="Search the Libraries' Site" NAME="as_q" MAXLENGTH="275" SIZE="25" TYPE="text"> <INPUT VALUE="Go" TYPE="submit"></FORM>
+Or see our <U><FONT COLOR=blue>Site Index</FONT></U>.
+
+
+
+<!-- End UK Libraries Site Search --> <!-- Research Guide Search -->
+
+
+
+
+
+<FORM>Search for Research Guides: 
+<INPUT NAME="search" TYPE="text">
+<INPUT VALUE="Go" TYPE="submit"></FORM>
+<INPUT VALUE="697" NAME="iid" TYPE="hidden">
+<INPUT VALUE="0" NAME="c" TYPE="hidden">
+Or see our <U><FONT COLOR=blue>complete list</FONT></U> of Research Guides by subject and alphabetically.
+
+
+
+<!-- End Research Guide Search --> <!-- Guided Search --> <!--    
+  <div class="TabbedPanelsContent"> 
+    <div class="searchfield" align="center"> 
+     
+      			<form id="searchBasic" acceptcharset="UTF8" method="GET" action="guides.php">
+      				<span class="maincontenttext">Begin by typing your Research area in the box... </span>	 
+					<input type="text" name="suggest1" id="suggest1" title="Begin by typing your Research area in the box..." />
+					<input title="Begin by typing your Research area in the box..." type="submit" value="Go" />  					
+					
+      			</form> 
+	 
+    </div> 
+  </div> 
+  --> <!-- End Guided Search -->
+
+<EM>Hello. What would you like to find today?</EM>
+<UL>
+	<LI><U><FONT COLOR=blue>Articles</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Books</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Databases</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Electronic
+	Journals</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Research
+	Guides</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Site Content
+	(UK Libraries Site Search)</FONT></U></LI>
+
+</UL>
+
+<CENTER><U><FONT COLOR=blue>[Close]</FONT></U></CENTER>
+
+
+<!-- <div align="center"><a href="http://library.buffalo.edu/libraries/helpAZ/offcampus.html" target="_self" class="tooltext" title="Log In Help  Remote Access to Library Resources">Log In Help</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://library.buffalo.edu/libraries/forms/techproblem.html" target="_self" title="Report a technical problem" class="tooltext">Report a Problem</a></div>  -->
+
+
+
+
+
+<!--
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+
+//-->
+
+
+
+<!-- End Search Box -->
+<!-- </div>  -->
+<!-- end of div leftit -->
+<!-- end of div lib_search_box -->
+
+
+
+
+<!-- end of div contain_banner  -->`
+
+<UL>
+	<LI><U><FONT COLOR=blue>[UK Libraries Home]</FONT></U>
+	<LI><U><FONT COLOR=blue>Our Libraries</FONT></U>
+	<!-- This is the campus mega menu div -->
+		
+     						
+			<UL>
+	            <LI><U><FONT COLOR=blue>Agricultural Information Center</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Design Library</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Education Library</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Law Library</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Lucille Caudill Little Fine Arts Library &amp; Learning Center</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Medical Center Library</FONT></U></LI>
+                </UL>
+                <UL>
+				<LI><U><FONT COLOR=blue>Science Library</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Shaver Engineering Library</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Special Collections</FONT></U></LI>				
+				<LI><U><FONT COLOR=blue>William T. Young Library</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Complete list including departments and service centers</FONT></U></LI>
+			</UL>
+			<BR>
+			
+		
+	</LI>	
+	<LI><U><FONT COLOR=blue>Services</FONT></U>
+		
+			<UL>
+				<LI><U><FONT COLOR=blue>Audio Visual Services</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Book Express</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Borrowing Information</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Disability Services</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Distance Learning</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Interlibrary loan</FONT></U></LI>				
+				<LI><U><FONT COLOR=blue>My Account</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Research Help and Consultations</FONT></U></LI>
+                </UL>
+                <UL>
+				<LI><U><FONT COLOR=blue>Study &amp; Meeting Rooms</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Services for Students</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Services for Faculty &amp; Grad Students</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Services for Community</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Storage Retrieval Services</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Complete List</FONT></U></LI>
+			</UL>
+					
+		
+	</LI>
+	<LI><U><FONT COLOR=blue>About</FONT></U>
+		
+
+			<UL>
+				<LI><U><FONT COLOR=blue>News</FONT></U></LI>			
+				<LI><U><FONT COLOR=blue>Hours</FONT></U></LI>				
+				<LI><U><FONT COLOR=blue>Faculty and Staff Directory</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Driving Directions, Parking &amp; Maps</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Room Reservations/Events Calendar - Young Library</FONT></U></LI>
+                </UL>
+                <UL>
+				<LI><U><FONT COLOR=blue>Employment Opportunities</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>About the UK Libraries (ARL Profile)</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Complete List</FONT></U></LI>
+			</UL>
+					
+		
+	</LI>
+	<LI><U><FONT COLOR=blue>Research Tools</FONT></U>
+		
+			<UL>
+				<LI><U><FONT COLOR=blue>Research Guides by Subject</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Course Guides</FONT></U></LI>
+			  	<LI><U><FONT COLOR=blue>Schedule a meeting with a librarian</FONT></U></LI>
+                </UL>
+                <UL>
+			  	<LI><U><FONT COLOR=blue>Research Toolbox</FONT></U></LI>
+			  	<LI><U><FONT COLOR=blue>Electronic resources &amp; databases provided by UK</FONT></U></LI>		  
+		</UL>
+ 		
+		
+	</LI>
+	<LI><U><FONT COLOR=blue>Help</FONT></U>
+		
+
+			<UL>
+				<LI><U><FONT COLOR=blue>Ask-a-Librarian for help, by email, phone or chat</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Borrowing Information</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Your Research Toolbox (Tutorial)</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Off-campus access</FONT></U></LI>				
+				<LI><U><FONT COLOR=blue>How to Find Books &amp; Articles</FONT></U></LI>
+                </UL>
+                <UL>
+				<LI><U><FONT COLOR=blue>Library Faculty and Staff Directory</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Chat with a Librarian</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Classes &amp; Tours</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Using the Library</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Subject Librarians</FONT></U></LI>
+			</UL>
+					
+		
+	</LI>
+	<LI><U><FONT COLOR=blue>Site Index</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Ask-a-Librarian</FONT></U>
+    		
+			<UL>
+				<LI><U><FONT COLOR=blue>E-Mail the RefDesk</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>E-Mail MCL</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Phone</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Chat</FONT></U></LI>
+                </UL>
+                <UL>
+				<LI><U><FONT COLOR=blue>Consultation</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Subject Librarians</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>More</FONT></U></LI>
+			</UL>
+					
+		
+    </LI>
+    <LI>
+    	<U><FONT COLOR=blue>Feedback</FONT></U>
+    </LI>
+    <LI>
+    	<U><FONT COLOR=blue>Giving</FONT></U>
+    </LI>
+    
+</UL>
+
+
+<!-- Close of div libtopnavspace opened in header.tpl -->
+
+<!-- Our Plan B DIV -->
+	
+
+	<H1>About the University of Kentucky Libraries</H1>
+	<P>
+	<EM>Dean of Libraries: Terry Birdwhistell</EM><BR>
+	<EM>Send correspondence to University of Kentucky Libraries, William T. Young Library, Lexington, KY 40506-0456</EM></P>
+<TABLE>
+	
+		<TR>
+			<TD>
+				<UL>
+					<LI>
+						<U><FONT COLOR=blue>About the UK Libraries</FONT></U> (ARL Profile)</LI>
+					<LI>
+						<U><FONT COLOR=blue>Hours</FONT></U></LI>
+					<LI>
+						<U><FONT COLOR=blue>Our Libraries</FONT></U></LI>
+					<LI>
+						<U><FONT COLOR=blue>Faculty and Staff Directory</FONT></U></LI>
+					<LI>
+						<U><FONT COLOR=blue>Driving Directions, Parking &amp; Maps</FONT></U></LI>
+					<LI>
+						<U><FONT COLOR=blue>Room Reservations / Events Calendar - Young Library</FONT></U></LI>
+					<LI>
+						<U><FONT COLOR=blue>Site Index</FONT></U></LI>
+					<LI>
+						<U><FONT COLOR=blue>Video Recording/Photo Shoot Policy/Request Forms</FONT></U></LI>
+				</UL>
+				<UL>
+					<LI>
+						<U><FONT COLOR=blue>News and Events</FONT></U></LI>
+					<LI>
+						<U><FONT COLOR=blue>Public Computer Use Guidelines</FONT></U></LI>
+					<LI>
+						<U><FONT COLOR=blue>Patron Code of Conduct</FONT></U></LI>
+					<LI>
+						<U><FONT COLOR=blue>Employment Opportunities</FONT></U></LI>
+					<LI>
+						<U><FONT COLOR=blue>Stay Safe Recommendations</FONT></U></LI>
+				</UL>
+				<UL>
+					<LI>
+						<U><FONT COLOR=blue>Administration and Faculty Governance</FONT></U></LI>
+					<LI>
+						<U><FONT COLOR=blue>Mission Statement</FONT></U></LI>
+					<LI>
+						<U><FONT COLOR=blue>Message from the Dean</FONT></U></LI>
+					<LI>
+						<U><FONT COLOR=blue>Organizational Chart</FONT></U></LI>
+					<LI>
+						<U><FONT COLOR=blue>Publications of the UK Libraries</FONT></U></LI>
+				</UL>
+			</TD>
+		</TR>
+	
+</TABLE>
+<P>
+	&nbsp;</P>
+
+	
+	
+		
+	
+
+<!-- 
+<div class="lib_content_bottom">
+Bottom Div.
+</div>
+ -->
+
+
+<BR>
+
+
+	<P><U><FONT COLOR=blue>UK Home</FONT></U>&nbsp;|&nbsp;Copyright 2006-2011 University of Kentucky Libraries. For questions or comments about this page contact: [INLINE] <U><FONT COLOR=blue>Judy Sackett</FONT></U>.&nbsp;|&nbsp;<U><FONT COLOR=blue>Staff Access</FONT></U></P>
+
+<!-- end of inner_wrapper -->
+<!-- end of lib_content container -->
+
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>

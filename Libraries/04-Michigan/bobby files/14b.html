@@ -1,0 +1,422 @@
+
+<HTML>
+  <HEAD>
+<META CONTENT="text/html; charset=utf-8">
+    <!-- <base href=""> -->
+    <TITLE>Online Journal and Newspaper List  | MLibrary</TITLE>
+                    <META CONTENT="text/html; charset=utf-8">
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--//--><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" }, "lightbox2": { "rtl": 0, "file_path": "/(\\w\\w/)files", "default_image": "/sites/www.lib.umich.edu/modules/lightbox2/images/brokenimage.jpg", "border_size": 20, "font_color": "666", "box_color": "fff", "top_position": "", "overlay_opacity": 0.9, "overlay_color": "333", "disable_close_click": 1, "resize_sequence": 0, "resize_speed": 200, "fade_in_speed": 200, "slide_down_speed": 200, "use_alt_layout": 0, "disable_resize": 0, "disable_zoom": 0, "force_show_nav": 0, "loop_items": 0, "node_link_text": "View Image Details", "node_link_target": 0, "image_count": "Image !current of !total", "video_count": "Video !current of !total", "page_count": "Page !current of !total", "lite_press_x_close": "press \x3ca href=\"#\" onclick=\"hideLightbox(); return FALSE;\"\x3e\x3ckbd\x3ex\x3c/kbd\x3e\x3c/a\x3e to close", "download_link_text": "", "enable_login": false, "enable_contact": false, "keys_close": "c x 27", "keys_previous": "p 37", "keys_next": "n 39", "keys_zoom": "z", "keys_play_pause": "32", "display_image_size": "", "image_node_sizes": "()", "trigger_lightbox_classes": "", "trigger_lightbox_group_classes": "", "trigger_slideshow_classes": "", "trigger_lightframe_classes": "", "trigger_lightframe_group_classes": "", "custom_class_handler": 0, "custom_trigger_classes": "", "disable_for_gallery_lists": true, "disable_for_acidfree_gallery_lists": true, "enable_acidfree_videos": true, "slideshow_interval": 5000, "slideshow_automatic_start": 0, "slideshow_automatic_exit": 1, "show_play_pause": 1, "pause_on_next_click": 0, "pause_on_previous_click": true, "loop_slides": 0, "iframe_width": 600, "iframe_height": 400, "iframe_border": 1, "enable_video": 0 }, "mlibrary_loading_gif": "sites/www.lib.umich.edu/modules/mlibrary/images/loading.gif", "arg": [ "onlinejournals" ], "mlibrary_browse": { "ui_select_item_url": "/mlibrary_browse_ui_select_item.html" }, "mlibrary_search": { "tabs": [ "mlibrary", "articles", "catalog" ], "options": "\'mlibrary\',\'articles\',\'catalog\'" } });
+//-->
+
+    <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/sites/www.lib.umich.edu/themes/mlibrary/fixie.css" />    <![endif]-->
+  </HEAD>
+  <BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+    
+      
+      
+        <!-- sidebar -->
+        
+          
+          <U><FONT COLOR=blue>[MLibrary Logo]</FONT></U>          
+          
+            <U><FONT COLOR=blue>[University of Michigan]</FONT></U>          
+                    &nbsp;
+        <!-- sidebar -->
+
+        
+          
+          
+          
+						
+								
+							&nbsp;<!-- /alerts -->
+								
+							
+								
+									<UL><LI><U><FONT COLOR=blue>About</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Services</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Libraries &amp; Departments</FONT></U></LI>
+</UL> | 
+									<UL><LI><U><FONT COLOR=blue>MGet It</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Search Tools</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Catalog (Mirlyn)</FONT></U></LI>
+</UL>								<!-- /navcontent -->
+							<!-- /nav -->
+								
+							
+
+
+  
+  
+  
+  
+  <U><FONT COLOR=blue>Login for Favorites</FONT></U>
+
+
+
+							
+						<!-- /alertsnavcontainer -->
+						
+					<!-- /header -->
+          
+          
+                          
+
+  <H2>Search</H2>
+
+  <U><FONT COLOR=blue>[Search]</FONT></U><INPUT VALUE="MLibrary" TYPE="button"><INPUT VALUE="ArticlesPlus" TYPE="button"><INPUT VALUE="Catalog" TYPE="button"><FORM>
+<INPUT VALUE="" NAME="op" TYPE="hidden">
+
+ Search MLibrary: 
+ <INPUT VALUE="" NAME="query" MAXLENGTH="128" SIZE="23" TYPE="text">
+
+<INPUT VALUE="" NAME="op" TYPE="submit">
+
+ <INPUT VALUE="searchtools" NAME="left[searchtools]" CHECKED="checked" TYPE="checkbox"> Databases
+
+
+ <INPUT VALUE="mirlyn" NAME="left[mirlyn]" CHECKED="checked" TYPE="checkbox"> Catalog (Mirlyn)
+
+
+ <INPUT VALUE="ejournals" NAME="left[ejournals]" CHECKED="checked" TYPE="checkbox"> Online Journals
+
+
+ <INPUT VALUE="libguides" NAME="right[libguides]" CHECKED="checked" TYPE="checkbox"> Research Guides
+
+
+ <INPUT VALUE="website" NAME="right[website]" CHECKED="checked" TYPE="checkbox"> Library Webpages
+
+
+ <INPUT VALUE="digitalcollections" NAME="right[digitalcollections]" CHECKED="checked" TYPE="checkbox"> Collections
+
+<INPUT VALUE="" NAME="op" TYPE="submit">
+<INPUT VALUE="mlibrary" NAME="search_tab" TYPE="hidden">
+
+ <INPUT VALUE="scholarly" NAME="articles[scholarly]" TYPE="checkbox"> Limit to peer-reviewed journals
+
+
+ <INPUT VALUE="newspapers" NAME="articles[newspapers]" TYPE="checkbox"> Exclude newspaper articles
+
+
+ <INPUT VALUE="fulltext" NAME="articles[fulltext]" TYPE="checkbox"> Limit to articles with full text online
+
+
+ <INPUT VALUE="local" NAME="articles[local]" TYPE="checkbox"> Add results beyond MLibrary
+
+<U><FONT COLOR=blue>Advanced Articles<EM>Plus</EM> Search</FONT></U>Catalog Search Options
+ <INPUT VALUE="all" NAME="catalog" CHECKED="checked" TYPE="radio"> Keywords
+
+
+ <INPUT VALUE="title" NAME="catalog" TYPE="radio"> Title
+
+
+ <INPUT VALUE="author" NAME="catalog" TYPE="radio"> Author
+
+
+ <INPUT VALUE="subject" NAME="catalog" TYPE="radio"> Subject
+
+
+ <INPUT VALUE="hlb" NAME="catalog" TYPE="radio"> Academic Discipline
+
+
+ <INPUT VALUE="callnumber" NAME="catalog" TYPE="radio"> Call Number
+
+
+ <INPUT VALUE="isn" NAME="catalog" TYPE="radio"> ISSN/ISBN/etc
+
+<INPUT VALUE="form-99fdcbaf16cce7dd67b9c43b84e420c3" NAME="form_build_id" TYPE="hidden">
+<INPUT VALUE="mlibrary_search_form_setup" NAME="form_id" TYPE="hidden">
+
+</FORM>
+
+
+
+
+  <H2>Browse</H2>
+
+  <U><FONT COLOR=blue>[Browse]</FONT></U><FORM>
+
+ <SELECT NAME="selects"><OPTION VALUE="0"></OPTION><OPTION VALUE="1"></OPTION></SELECT>
+
+<INPUT VALUE="" NAME="op" TYPE="submit">
+<INPUT VALUE="" NAME="op" TYPE="submit">
+<INPUT VALUE="form-8bc713e9e9e580cb03f13acfd11b5ba6" NAME="form_build_id" TYPE="hidden">
+<INPUT VALUE="mlibrary_browse_ui_form" NAME="form_id" TYPE="hidden">
+
+</FORM>
+
+
+
+
+  <H2>Get Help</H2>
+
+  [Get Help]<U><FONT COLOR=blue>Ask a Librarian</FONT></U><U><FONT COLOR=blue>Using the Library</FONT></U><UL><LI> <U><FONT COLOR=blue>- Chat</FONT></U></LI><LI> <U><FONT COLOR=blue>- Email</FONT></U></LI><LI> <U><FONT COLOR=blue>- Phone</FONT></U></LI><LI> <U><FONT COLOR=blue>- In Person</FONT></U></LI><LI> <U><FONT COLOR=blue>Subject Specialists</FONT></U></LI></UL><UL><LI> <U><FONT COLOR=blue>Research Guides</FONT></U></LI><LI> <U><FONT COLOR=blue>Instruction &amp; Workshops</FONT></U></LI><LI> <U><FONT COLOR=blue>Searchpath</FONT></U></LI><LI> <U><FONT COLOR=blue>Off-Campus Access</FONT></U></LI><LI> <U><FONT COLOR=blue>Video Tutorials</FONT></U></LI></UL>
+
+                      <!-- /searchoptions -->
+
+          
+            
+            <!-- breadcrumbs -->
+                        <!-- /breadcrumbs -->
+                        
+            <!-- admintabs -->
+                        
+            <!-- content area -->
+                                    <!-- mission & help  not sure when these show up... -->
+                        <!-- /mission, /help -->
+            
+            
+		<H2>Online Journals &amp; Newspapers List</H2>
+		<!--<p style="fontsize: 110%;">This is the library's new online journal tool.  Please <a href = "/feedback?id=/onlinejournals">let us know what you think</a> about the new version of this tool. Read <a href = "/onlinejournals/whatsnew">more about how to use the new Online Journals</a>.</p>--> 
+		
+				 
+					<P ALIGN="center">        
+						<EM>Loading ... ... Please wait!</EM>
+					</P>
+					
+                <!--<p style="fontsize: 110%; border: 1px solid black; padding: 0.5em; fontweight: bold; margintop: 1em;" align="center">Tell us your thoughts about the Online Journals &amp; Newspaper List.<br/>Please take this anonymous, <a href = "http://umichsi.qualtrics.com/SE/?SID=SV_5cIjnsO5SsHcf7m">fiveminute survey</a> to make the tool easier to use.</p>-->
+<U><FONT COLOR=blue>Get help with the Online Journals and Newspapers List</FONT></U>				
+		
+		
+		
+		 <UL>									
+			<LI><U><FONT COLOR=blue>Browse Online Journals by Subject </FONT></U></LI>             			
+			<LI><U><FONT COLOR=blue>Browse Online Journals by Title </FONT></U></LI>   
+			<LI><U><FONT COLOR=blue>Search Online Journals</FONT></U></LI>	
+					
+		</UL>
+		
+		
+			             				
+				<U><FONT COLOR=blue>0-9</FONT></U> <U><FONT COLOR=blue>A </FONT></U> <U><FONT COLOR=blue>B </FONT></U> <U><FONT COLOR=blue>C </FONT></U> <U><FONT COLOR=blue>D </FONT></U> <U><FONT COLOR=blue>E </FONT></U> <U><FONT COLOR=blue>F </FONT></U> <U><FONT COLOR=blue>G </FONT></U> <U><FONT COLOR=blue>H </FONT></U> <U><FONT COLOR=blue>I </FONT></U> <U><FONT COLOR=blue>J </FONT></U> <U><FONT COLOR=blue>K </FONT></U> <U><FONT COLOR=blue>L </FONT></U> <U><FONT COLOR=blue>M </FONT></U> <U><FONT COLOR=blue>N </FONT></U> <U><FONT COLOR=blue>O </FONT></U> <U><FONT COLOR=blue>P </FONT></U> <U><FONT COLOR=blue>Q </FONT></U> <U><FONT COLOR=blue>R </FONT></U> <U><FONT COLOR=blue>S </FONT></U> <U><FONT COLOR=blue>T </FONT></U> <U><FONT COLOR=blue>U </FONT></U> <U><FONT COLOR=blue>V </FONT></U> <U><FONT COLOR=blue>W </FONT></U> <U><FONT COLOR=blue>X </FONT></U> <U><FONT COLOR=blue>Y </FONT></U> <U><FONT COLOR=blue>Z </FONT></U> <U><FONT COLOR=blue>Others </FONT></U>				
+			      						
+			
+		  
+		
+			
+			 			
+				Select subject
+				Narrow your selection								
+				<BR>
+				<INPUT NAME="demo2" TYPE="hidden">	
+				&nbsp;
+				<U><FONT COLOR=blue>See entire subject list</FONT></U>
+										
+			
+			
+			
+		
+
+		
+			             				
+				<FORM>
+
+ Search For: 
+ <INPUT VALUE="" NAME="taxonomy_test_name" MAXLENGTH="100" SIZE="50" TYPE="text">
+
+
+ <SELECT NAME="taxonomy_test_base_location"><OPTION VALUE="0">Anywhere</OPTION><OPTION VALUE="3" SELECTED="selected">In title</OPTION><OPTION VALUE="1">Title starts with</OPTION><OPTION VALUE="2">ISSN</OPTION></SELECT>
+
+<INPUT VALUE="Find" NAME="op" TYPE="submit">
+
+ Narrow your search (optional): 
+ <SELECT NAME="taxonomy_test_subject_list" SIZE="1"><OPTION VALUE="none" SELECTED="selected">Select subject</OPTION><OPTION VALUE="Arts">Arts</OPTION><OPTION VALUE="Business">Business</OPTION><OPTION VALUE="Engineering">Engineering</OPTION><OPTION VALUE="General Information Sources">General Information Sources</OPTION><OPTION VALUE="Government, Politics &amp; Law">Government, Politics &amp; Law</OPTION><OPTION VALUE="Health Sciences">Health Sciences</OPTION><OPTION VALUE="Humanities">Humanities</OPTION><OPTION VALUE="International Studies">International Studies</OPTION><OPTION VALUE="News &amp; Current Events">News &amp; Current Events</OPTION><OPTION VALUE="Science">Science</OPTION><OPTION VALUE="Social Sciences">Social Sciences</OPTION></SELECT>
+
+<INPUT VALUE="form-de47875f7d9518a872aeecb2308dcefb" NAME="form_build_id" TYPE="hidden">
+<INPUT VALUE="taxonomy_test_form" NAME="form_id" TYPE="hidden">
+
+</FORM>
+					
+			   
+			
+			
+						
+		    		
+		
+		
+		
+		<H3>Search Options</H3>
+                <UL><LI>Use the <EM>Browse Online Journals by Subject</EM> tab to see journals organized by subject</LI><LI>Use the <EM>Browse Online Journals by Title</EM> tab to see journals organized by first letter of the title</LI><LI>Use the <EM>Search Online Journals</EM> tab to enter keywords and see matching journals</LI></UL>
+		<P>All of the journals listed here have also been cataloged in the <U><FONT COLOR=blue>UM Library Catalog</FONT></U>.  Due to licensing restrictions, remote access to many of these journals is limited to students, staff, and faculty of the University of Michigan (see the <U><FONT COLOR=blue>appropriate use policy</FONT></U> for more information).</P>  <P>Problem accessing a journal?  See if it's a known problem at <U><FONT COLOR=blue>Library Outages</FONT></U> or contact <U><FONT COLOR=blue>Ask a Librarian</FONT></U> for assistance.</P>
+                
+		
+			$(function () 
+			{				
+var options = {select_class: "vertical",choose: "", preselect:{"demo2_":"","demo2__":"","demo2___":""}};	
+				
+				
+				var $tabs = $("#tabcontainer").tabs();
+				$(".hideme").show();
+					
+				var selected = $tabs.tabs("option", "selected"); // => 0	
+				
+				var pagt = "";
+				
+				if ((pagt=="browse") && ((selected==1) || (selected==0)))
+				{										
+					$(".ui-state-default span.browsebysj").click();		
+					$("#browsejournals").show();
+					$("#search").show();
+					$("#browseletters").show();				
+				}
+				else if ((pagt=="search") && ((selected==2) || (selected==1)))
+				{							
+					$(".ui-state-default span.searchtext").click();
+					
+					$("#search").show();
+					$("#browsejournals").show();
+					$("#browseletters").show();
+				}	
+				else if ((pagt=="letter") && ((selected==0) || (selected==2)))
+				{				
+					$(".ui-state-default span.browsebyls").click();
+					$("#browseletters").show();
+					$("#browsejournals").show();
+					$("#search").show();					
+				}
+				else
+				{
+					$("#browsejournals").show();
+					$("#browseletters").show();					
+					$("#search").show();				
+					$(".ui-state-default span.searchtext").click();
+				}
+        $("#edit-taxonomy-test-name").focus();
+							
+				$.getJSON("/data1/", function(details) 
+				{	 
+					$("#ejournal_browsejournals_results input[name=demo2]").optionTree(details,options).change(function()
+					{ 	 
+						getdatafromselectbox(this);
+					});
+					
+					$("span.dialogx").click(function() 
+					{		
+						if (($(this).children().text())!="")
+							getdialogdata($(this).children().text());
+					});		
+					
+					$("span.aboutjournal").click(function() 
+					{	
+							$(this).addClass("active");				
+						$('.onlinesource',$(this).parent().parent()).removeClass("active");											
+						$('.aboutdescription',$(this).parent().parent()).show();
+						$('.content',$(this).parent().parent()).hide();
+					});
+					
+					$("span.onlinesource").click(function() 
+					{							
+						$(this).addClass("active");					
+						$('.aboutjournal',$(this).parent().parent()).removeClass("active");
+						$('.content',$(this).parent().parent()).show();
+						$('.aboutdescription',$(this).parent().parent()).hide();
+					});									
+					return false;
+				});
+				return false;						
+			});	 
+		                                    <!-- /content area -->
+            
+          <!-- /nodecontainer -->
+          
+        <!-- /main -->
+        
+       <!-- /container -->
+      
+      <!-- footercontainer -->
+      
+        <!-- footer -->
+        
+          
+            
+
+  <H2>Quick Links</H2>
+
+  
+  
+    <UL><LI><U><FONT COLOR=blue>My Library Account</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Online Journal List</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Library Hours</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Webmail</FONT></U></LI>
+<LI><U><FONT COLOR=blue>CTools</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Wolverine Access</FONT></U></LI>
+<LI><U><FONT COLOR=blue>MLibrary Mobile</FONT></U></LI>
+<LI><U><FONT COLOR=blue></FONT></U></LI>
+</UL>
+  
+
+          
+          <!-- /footer -->
+          
+            
+
+  <H2>MTagger</H2>
+
+  
+
+jQuery.mtagger.base += '/mtagger';
+
+
+  
+    <U><FONT COLOR=blue>[MTagger]tag this page</FONT></U>
+    <U><FONT COLOR=blue>mtagger</FONT></U>
+  
+  
+   
+
+
+  $('#tagCloud').addCloud({ separator: ' ',url:'http://www.lib.umich.edu/online-journals'});
+
+
+
+
+  <H2>CONTACT</H2>
+
+  <P>We welcome your 
+<U><FONT COLOR=blue>feedback</FONT></U> on our web site.</P><P>University Library<BR>818 Hatcher Graduate Library South<BR>913 S. University Avenue<BR>Ann Arbor, MI 48109-1190</P>
+
+
+
+  <H2>Copyright</H2>
+
+  Access this page at: http://www.lib.umich.edu/online-journals<U><FONT COLOR=blue> [Creative Commons License] [Creative Commons]</FONT></U><P>Except where otherwise noted, this work is subject to a Creative Commons Attribution 3.0 license. <U><FONT COLOR=blue>Details and exceptions</FONT></U>.</P><P>&copy;2012, Regents of the University of Michigan</P>
+
+          
+        
+       <!-- /footercontainer -->
+        
+    <!-- /wrapper -->
+    
+<!--//--><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA13416208"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = "/files/googleanalytics/ga.js?2";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//-->
+
+  </BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>

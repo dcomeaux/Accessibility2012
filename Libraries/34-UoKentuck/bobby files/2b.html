@@ -1,0 +1,286 @@
+<HTML>
+  <HEAD>
+    <META CONTENT="text/html; charset=UTF-8">
+    
+    
+    <META CONTENT="600;url=exit.do">
+    <TITLE>InfoKat Basic Search</TITLE>
+    
+            var msg;
+            var timeOut;
+            var seconds;
+            function timedMsg(time, grace, txtMsg)
+            {
+                msg = txtMsg;
+                timeOut = (time - grace) * 60000;
+                seconds = grace * 60;
+                
+                setTimeout("tcc_display_timeout(msg)", timeOut);
+            }
+          
+    
+    
+    
+    
+    
+    
+    
+    <!--[if lt IE 8]><link rel="stylesheet" type="text/css" media="all" href="ui/en_US/css/ieFixes.css"><![endif]--><!--[if IE 7]><link rel="stylesheet" type="text/css" media="all" href="ui/en_US/css/ie7Fixes.css"><![endif]--><!--[if IE 8]><link rel="stylesheet" type="text/css" media="all" href="ui/en_US/css/ie8Fixes.css"><![endif]-->
+  </HEAD>
+  <BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+    
+      <U><FONT COLOR=blue></FONT></U><U><FONT COLOR=blue></FONT></U><U><FONT COLOR=blue></FONT></U>
+      
+        
+          
+            <U><FONT COLOR=blue>[Restart InfoKat]</FONT></U>
+          
+        
+      
+      
+        
+          <H2>UK Libraries Links</H2>
+          <UL>
+            <LI>
+              <U><FONT COLOR=blue>Library Home</FONT></U>
+            </LI>
+            <LI>
+              <U><FONT COLOR=blue>Mobile</FONT></U>
+            </LI>
+            <LI>
+              <U><FONT COLOR=blue>Other Library Catalogs</FONT></U>
+            </LI>
+            <LI>
+              <U><FONT COLOR=blue>Interlibrary Loan</FONT></U>
+            </LI>
+            <LI>
+              <U><FONT COLOR=blue>E-Journals</FONT></U>
+            </LI>
+            <LI>
+              <U><FONT COLOR=blue>Blackboard</FONT></U>
+            </LI>
+            <LI>
+              <U><FONT COLOR=blue>Ask a Librarian</FONT></U>
+            </LI>
+          </UL>
+        
+      
+      
+        
+          </FONT></U>
+          <H2>Ask a Librarian</H2>
+          <UL>
+            <LI>
+              <U><FONT COLOR=blue>[Ask a Librarian]</FONT></U>
+            </LI>
+            <LI>
+              Search</FONT></U>
+            </LI>
+            <LI>
+              My Searches</FONT></U>
+            </LI>
+            <LI>
+              My List</FONT></U>
+            </LI>
+            <LI>
+              My Account</FONT></U>
+            </LI>
+          </UL>
+          <U><FONT COLOR=blue></FONT></U>&nbsp;
+            
+              <U><FONT COLOR=blue>Log in</FONT></U>&nbsp;to your account
+            
+          
+        
+      
+      
+        </FONT></U>
+        <H1>Basic Search</H1>
+        
+          <H2>Notice: This web application times out 10 minutes after loading a page.</H2>
+        
+        
+          University of Kentucky Libraries
+        
+        </FONT></U>
+        
+          <H2>Search Tab Navigation Bar</H2>
+          <UL>
+            <LI>
+              WorldCat Local</FONT></U>
+            </LI>
+            <LI>
+              Basic</FONT></U>
+            </LI>
+            <LI>
+              Advanced</FONT></U>
+            </LI>
+            <LI>
+              Subject</FONT></U>
+            </LI>
+            <LI>
+              Author</FONT></U>
+            </LI>
+            <LI>
+              Course Reserve</FONT></U>
+            </LI>
+            <LI>
+              New Titles</FONT></U>
+            </LI>
+          </UL>
+        
+        
+          <U><FONT COLOR=blue>Search History</FONT></U>
+        
+        
+          <FORM>
+            
+              
+                Search:<INPUT NAME="searchArg" SIZE="51" TYPE="text">within <SELECT NAME="searchCode"><OPTION VALUE="GKEY^*" SELECTED>Keyword</OPTION><OPTION VALUE="NAME+">Author</OPTION><OPTION VALUE="TALL">Title</OPTION><OPTION VALUE="JALL">Journal Title</OPTION><OPTION VALUE="SUBJ">Subject</OPTION><OPTION VALUE="AUTH+">Prolific Author/Composer</OPTION><OPTION VALUE="CALL">Call Number</OPTION><OPTION VALUE="FT*">Keyword Relevance Search</OPTION><OPTION VALUE="CMD">Command Search</OPTION></SELECT>
+              
+              
+                Limit To: <SELECT NAME="limitTo"><OPTION VALUE="none" SELECTED>None</OPTION><OPTION VALUE="TYPE=as">Journals</OPTION><OPTION VALUE="MEDI=s">Sound Recordings</OPTION><OPTION VALUE="MEDI=v">Videos</OPTION><OPTION VALUE="LOCA=INTERNET Resources">INTERNET Resources</OPTION><OPTION VALUE="LOCA=Agriculture Information Center">Agriculture Information Center</OPTION><OPTION VALUE="LOCA=Design Library">Design Library</OPTION><OPTION VALUE="LOCA=Education Library">Education Library</OPTION><OPTION VALUE="LOCA=Engineering Library">Engineering Library</OPTION><OPTION VALUE="LOCA=Fine Arts Library">Fine Arts Library</OPTION><OPTION VALUE="LOCA=Law Library">Law Library</OPTION><OPTION VALUE="LOCA=Medical Center Library">Medical Center Library</OPTION><OPTION VALUE="LOCA=Science Library">Science Library</OPTION><OPTION VALUE="LOCA=Special Collections">Special Collections</OPTION><OPTION VALUE="LOCA=Storage">Storage</OPTION><OPTION VALUE="LOCA=Center for the Enhancement of Learning and Teaching">Center for the Enhancement of Learning and Teaching</OPTION><OPTION VALUE="LOCA=William T Young Library">William T Young Library</OPTION><OPTION VALUE="LOCA=Young Media Library">Young Media Library</OPTION></SELECT>
+              
+            
+            
+              Records per page: <SELECT NAME="recCount"><OPTION VALUE="10">10 records per page</OPTION><OPTION VALUE="25">25 records per page</OPTION><OPTION VALUE="35">35 records per page</OPTION><OPTION VALUE="50" SELECTED>50 records per page</OPTION></SELECT>
+            
+            
+              <INPUT VALUE="1" NAME="searchType" TYPE="hidden"><INPUT VALUE="Search" NAME="page.search.search.button" TYPE="submit">&nbsp;<INPUT VALUE="Reset" TYPE="reset">
+            
+          </FORM>
+        
+        
+          
+            Search Tips: 
+            enter words relating to your topic, use quotes to search phrases: "world wide web",
+            use + to mark essential terms:  +explorer,
+            use * to mark important terms:  *internet,
+            use ? to truncate:  browser?
+          
+        
+      
+      
+    
+    
+      
+        </FONT></U>
+        <H2>Footer Navigation Bar</H2>
+        <UL>
+          <LI>
+            Search</FONT></U>
+          </LI>
+          
+            Session Timeout
+            
+            
+              
+	            	document.write('Continue Session');
+	            
+            
+            
+              <U><FONT COLOR=blue>New Session</FONT></U>
+            
+          
+          
+	         var dragBase = document.getElementById('tcc_timeout_container');
+	         var dragHandle = document.getElementById('tcc_timeout_title');
+	         tccDrag.init(dragBase, dragHandle, '400px', '250px');
+	      
+          <LI>
+            My Searches</FONT></U>
+          </LI>
+          
+            Session Timeout
+            
+            
+              
+	            	document.write('Continue Session');
+	            
+            
+            
+              <U><FONT COLOR=blue>New Session</FONT></U>
+            
+          
+          
+	         var dragBase = document.getElementById('tcc_timeout_container');
+	         var dragHandle = document.getElementById('tcc_timeout_title');
+	         tccDrag.init(dragBase, dragHandle, '400px', '250px');
+	      
+          <LI>
+            My List</FONT></U>
+          </LI>
+          
+            Session Timeout
+            
+            
+              
+	            	document.write('Continue Session');
+	            
+            
+            
+              <U><FONT COLOR=blue>New Session</FONT></U>
+            
+          
+          
+	         var dragBase = document.getElementById('tcc_timeout_container');
+	         var dragHandle = document.getElementById('tcc_timeout_title');
+	         tccDrag.init(dragBase, dragHandle, '400px', '250px');
+	      
+          <LI>
+            My Account</FONT></U>
+          </LI>
+          
+            Session Timeout
+            
+            
+              
+	            	document.write('Continue Session');
+	            
+            
+            
+              <U><FONT COLOR=blue>New Session</FONT></U>
+            
+          
+          
+	         var dragBase = document.getElementById('tcc_timeout_container');
+	         var dragHandle = document.getElementById('tcc_timeout_title');
+	         tccDrag.init(dragBase, dragHandle, '400px', '250px');
+	      
+          <LI>
+            Help</FONT></U>
+          </LI>
+          
+            Session Timeout
+            
+            
+              
+	            	document.write('Continue Session');
+	            
+            
+            
+              <U><FONT COLOR=blue>New Session</FONT></U>
+            
+          
+          
+	         var dragBase = document.getElementById('tcc_timeout_container');
+	         var dragHandle = document.getElementById('tcc_timeout_title');
+	         tccDrag.init(dragBase, dragHandle, '400px', '250px');
+	      
+        </UL>
+      
+      
+        <U><FONT COLOR=blue>University of Kentucky Libraries</FONT></U>
+      
+      
+        &copy;2011 Ex Libris Group. All rights reserved.
+      
+    
+    
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); 
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+try {
+var pageTracker = _gat._getTracker("UA-4968268-6"); pageTracker._trackPageview(); } catch(err) {}
+  </BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>

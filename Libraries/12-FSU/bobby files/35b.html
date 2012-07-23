@@ -1,0 +1,831 @@
+
+<HTML>
+<HEAD>
+<META CONTENT="text/html; charset=utf-8">
+<TITLE>FSU Libraries</TITLE>
+
+
+
+
+
+<META NAME="dc.title" CONTENT="The Florida State University Libraries">
+<META NAME="dc.subject" CONTENT="library, faculty, graduates, students, undergraduates, learning, commons, scholarly">
+<META NAME="dc.description" CONTENT="University Libraries supports and enhances the learning, teaching, research, and service activities of the Florida State University by providing organized access to quality information in all formats, promoting information literacy, preserving information and engaging in collaborative partnerships to disseminate ideas to advance intellectual discovery. ">
+<META NAME="description" CONTENT="The mission of the University Libraries is to support and enhance the learning, teaching, research, and service activities of the Florida State University by providing organized access to quality information in all formats, promoting information literacy, preserving information and engaging in collaborative partnerships to disseminate ideas to advance intellectual discovery. 
+">
+<META NAME="keywords" CONTENT="library, tallahassee, florida, state, university, higher, education, Florida State University, FSU, Seminoles, Education, College, Students, Graduate, Strozier, Dirac">
+
+
+
+var hours = new Spry.Data.XMLDataSet("http://www.lib.fsu.edu/calendar/events/rss/custom.php?l=42", "rss/channel/item/description");
+var ds1 = new Spry.Data.XMLDataSet("http://www.lib.fsu.edu/calendar/events/rss/custom.php?l=42&e=2020-12-12&chan=n&num=25&desc=1&date=n&targ=y", "rss/channel/item");
+ds1.setColumnType("title", "date");
+ds1.setColumnType("description", "html");
+
+
+body {
+	background-image: url(images/banner/background/21221.gif);
+	background-repeat: repeat-x;
+	background-color: #FFF;
+}
+
+
+
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+a:link { color:#540115;
+		text-decoration: none; border-bottom:1px dotted #540115; 
+}
+
+
+
+a:visited {
+	color: #540115;
+			text-decoration: none; border-bottom:1px dotted #540115; 
+}
+a:hover {
+	color: #F00;
+			text-decoration: none; border-bottom:1px dotted #540115; 
+}
+a:active {
+	color: #540115;
+			text-decoration: none; border-bottom:1px dotted #540115; 
+}
+
+.nl {     
+	text-decoration:none;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BeginOAWidget_Instance_2138522: #tplib */
+
+
+/* TabbedPanelsTabGroup */
+#tplib .TabbedPanelsTabGroup {
+	top: 10px;
+	left: 10px;
+
+	font-family: inherit;
+	font-weight: inherit;
+	font-size: 0.9em;
+	color: #000000;
+	background-color: transparent;
+
+	border-left: solid 0px inherit;
+	border-bottom: solid 0px inherit;
+	border-top: solid 0px inherit;
+	border-right: solid 0px inherit;
+
+	padding: 0px 0px 0px 0px;
+}
+
+/* TabbedPanelsTab */
+#tplib.TabbedPanels .TabbedPanelsTab,
+#tplib.VTabbedPanels .TabbedPanelsTab {
+	font-family: inherit;
+	font-weight: bold;
+	font-size: px;
+	color: #000000;
+	background-color: #cdc092;
+
+	border-left: solid 2px #003333;
+	border-bottom: solid 0px #000000;
+	border-top: solid 2px #000000;
+	border-right: solid 2px #000000;
+
+	padding: 4px 10px 3px 10px;
+}
+
+#tplib.TabbedPanels .TabbedPanelsTab a,
+#tplib.VTabbedPanels .TabbedPanelsTab a {
+	font-family: inherit;
+	font-weight: bold;
+	font-size: px;
+	color: #000000;
+}
+
+/* TabbedPanelsTabHover */
+#tplib.TabbedPanels .TabbedPanelsTabHover,
+#tplib.VTabbedPanels .TabbedPanelsTabHover {
+	font-family: inherit;
+	font-weight: bold;
+	font-size: inherit;
+	color: #ffffff;
+	background-color: #540115;
+
+	border-left: solid 2px #666666;
+	border-bottom: solid 0px #666666;
+	border-top: solid 2px #666666;
+	border-right: solid 2px #666666;
+
+	padding: 4px 10px 4px 10px;
+}
+
+#tplib.TabbedPanels .TabbedPanelsTabHover a,
+#tplib.VTabbedPanels .TabbedPanelsTabHover a {
+	font-family: inherit;
+	font-weight: bold;
+	font-size: inherit;
+	color: #ffffff;
+}
+
+/* TabbedPanelsTabSelected */
+#tplib.TabbedPanels .TabbedPanelsTabSelected,
+#tplib.VTabbedPanels .TabbedPanelsTabSelected {
+	font-family: inherit;
+	font-weight: bolder;
+	font-size: inherit;
+	color: inherit;
+	background-color: transparent;
+
+	border-left: solid 2px #540115;
+	border-bottom: solid 0px #EEE;
+	border-top: solid 2px #540115;
+	border-right: solid 2px #540115;
+
+	padding: 4px 10px 4px 10px;
+}
+
+#tplib.TabbedPanels .TabbedPanelsTabSelected a, 
+#tplib.VTabbedPanels .TabbedPanelsTabSelected a {
+	font-family: inherit;
+	font-weight: bolder;
+	font-size: inherit;
+	color: #000000;
+}
+
+/* TabbedPanelsTabFocused */
+#tplib.TabbedPanels .TabbedPanelsTabFocused, 
+#tplib.VTabbedPanels .TabbedPanelsTabFocused {
+	font-family: inherit;
+	font-weight: inherit;
+	font-size: inherit;
+	color: #000000;
+	background-color: transparent;
+
+	border-left: solid 1px transparent;
+	border-bottom: solid 1px #000000;
+	border-top: solid 1px #999;
+	border-right: solid 1px #999;
+
+	padding: 4px 10px 4px 10px;
+}
+
+#tplib.TabbedPanels .TabbedPanelsTabFocused a, 
+#tplib.VTabbedPanels .TabbedPanelsTabFocused a {
+	font-family: inherit;
+	font-weight: inherit;
+	font-size: inherit;
+	color: #000000;
+}
+
+
+/* TabbedPanelsContentGroup */
+#tplib .TabbedPanelsContentGroup {
+	font-family: inherit;
+	font-weight: inherit;
+	font-size: inherit;
+	color: inherit;
+	background-color: transparent;
+
+	border-left: solid 0px #CCC;
+	border-bottom: solid 0px #CCC;
+	border-top: solid 0px #999;
+	border-right: solid 0px #999;
+
+	padding: 0px 0px 0px 0px;
+}
+
+/* TabbedPanelsContentVisible */
+#tplib .TabbedPanelsContentVisible {
+	font-family: inherit;
+	font-weight: inherit;
+	font-size: inherit;
+	color: inherit;
+	background-color: transparent;
+
+	border-left: solid 0px #CCC;
+	border-bottom: solid 0px #CCC;
+	border-top: solid 0px #999;
+	border-right: solid 0px #999;
+
+	padding: 4px 5px 0px 5px;
+}
+
+#tplib.BTabbedPanels .TabbedPanelsTab {
+	border-bottom: solid 0px #000000;
+	border-top: solid 2px #000000;
+}
+
+#tplib.BTabbedPanels .TabbedPanelsTabSelected {
+	border-top: solid 2px #540115;
+}
+
+#tplib.VTabbedPanels .TabbedPanelsTabGroup {
+	width: 10em;
+	height: 20em;
+	top: 10px;
+	left: 10px;
+}
+
+#tplib.VTabbedPanels .TabbedPanelsTabSelected {
+	background-color: transparent;
+	border-bottom: solid 0px #EEE;
+}
+
+div#ads a {
+    border: none;
+}
+
+
+/* EndOAWidget_Instance_2138522 */
+
+
+<!--
+<oa:widgets>
+  <oa:widget wid="2138522" binding="#tplib" />
+  <oa:widget wid="2125523" binding="#twitter" />
+</oa:widgets>
+-->
+
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+
+
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11864750-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+
+
+/* BeginOAWidget_Instance_2125523: #twitter */
+
+		#twitter { height: 75px; width: 500px}
+
+
+
+
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+
+
+  
+    <TABLE>
+      <TR>
+        <TD><BR>
+[CLIENT-SIDE IMAGE MAP: FSU Libraries]<BR>
+</TD><TD>&nbsp;</TD>
+        <TD><U><FONT COLOR=blue>About the  Libraries</FONT></U><BR>
+          <U><FONT COLOR=blue>Site Index</FONT></U><BR>
+          <U><FONT COLOR=blue>Off Campus Access</FONT></U></TD>
+      </TR>
+    </TABLE>
+  <!-- end .header -->
+  
+    <TABLE>
+    
+      <TR>
+        <TD>
+
+          <H2>Search</H2>
+   
+    <BR>
+      <P><EM><BR>
+        Search for Journal Articles, Books, and More...</EM><BR>
+      </P>
+    
+<TABLE> 
+       <FORM>
+       <INPUT VALUE="true" NAME="spellcheck" TYPE="hidden">
+       <TR> 
+			<TD>
+			<INPUT NAME="s.q" TYPE="text"> 
+
+			</TD>
+			<TD> 
+				<INPUT VALUE="" NAME="Submit" TYPE="submit">
+			</TD>
+			</TR></FORM>
+</TABLE>
+
+<U><FONT COLOR=blue><EM>(more information)</EM></FONT></U>[INLINE] 
+<P>&nbsp;</P>
+<P><U><FONT COLOR=blue><EM>advanced search</EM></FONT></U><EM> | <U><FONT COLOR=blue>renewals</FONT></U> | <U><FONT COLOR=blue>my library   account</FONT></U> <BR>
+      <U><FONT COLOR=blue>course   reserves &amp; textbooks</FONT></U></EM><BR>
+</P>
+  
+   <H2>Books</H2><P ALIGN="left"><EM>            <BR>
+            Search for books,  movies, music, and more...<BR>
+          </EM></P>
+          <FORM>
+            <P>
+              <INPUT VALUE="" NAME="st" SIZE="25" TYPE="text">
+              <SELECT NAME="ix">
+                <OPTION VALUE="kw" SELECTED="selected">Search for:</OPTION>
+                <OPTION VALUE="kw">Anywhere</OPTION>
+                <OPTION VALUE="ti">Title</OPTION>
+                <OPTION VALUE="jt">Journal Title</OPTION>
+                <OPTION VALUE="au">Author</OPTION>
+                <OPTION VALUE="nu">ISBN, ISSN, etc.</OPTION>
+                <OPTION VALUE="cn">Call Number</OPTION>
+                <OPTION VALUE="su">Subject</OPTION>
+              </SELECT>
+              <INPUT VALUE="Go" NAME="submit" TYPE="submit">
+              <U><FONT COLOR=blue><BR>
+                </FONT></U> <U><FONT COLOR=blue><BR>
+              <EM>advanced search</EM></FONT></U><EM> | <U><FONT COLOR=blue>renewals</FONT></U> | <U><FONT COLOR=blue>my library account</FONT></U> <BR>
+              <U><FONT COLOR=blue>course reserves &amp; textbooks </FONT></U></EM>| <EM><U><FONT COLOR=blue>RefWorks</FONT></U></EM><U><FONT COLOR=blue> | <EM>(tips)</EM></FONT></U><BR>
+            </P>
+</FORM>
+</P>
+
+
+<H2>Journals          </H2>
+          
+            
+    <P ALIGN="left"><EM><BR>
+      Search for journals by title, subject, or ISSN</EM>            <BR>
+      <BR>
+    </P>
+            
+            
+              <FORM>
+          <INPUT VALUE="1.0" NAME="V" TYPE="hidden">
+          <INPUT VALUE="100" NAME="N" TYPE="hidden">
+          <INPUT VALUE="HA6LK3LY9Z" NAME="L" TYPE="hidden">
+          <SELECT NAME="S">
+            <OPTION VALUE="A_T_B" SELECTED="selected">Title begins with</OPTION>
+
+            <OPTION VALUE="A_T_M">Title equals</OPTION>
+            <OPTION VALUE="T_W_A">Title contains all words</OPTION>
+            <OPTION VALUE="I_M">ISSN equals</OPTION>
+          </SELECT>
+          <INPUT NAME="C">
+          <INPUT VALUE="Search" TYPE="Submit">
+        </FORM>
+
+  
+      <CENTER>
+       
+
+          <P>&nbsp;</P>
+<FORM>
+            <P>
+              <INPUT VALUE="1.0" NAME="V" TYPE="hidden">
+              <INPUT VALUE="HA6LK3LY9Z" NAME="L" TYPE="hidden">
+              <INPUT VALUE="SC" NAME="S" TYPE="hidden">
+              <SELECT NAME="C">
+                <OPTION VALUE="">-- Please select a subject category --</OPTION>
+                
+                <OPTION VALUE="01">Art, Architecture &amp; Applied Arts</OPTION>
+                <OPTION VALUE="BU">Business &amp; Economics</OPTION>
+                <OPTION VALUE="11">Earth &amp; Environmental Sciences</OPTION>
+                <OPTION VALUE="TE">Engineering &amp; Applied Sciences</OPTION>
+                
+                <OPTION VALUE="GI">General</OPTION>
+                <OPTION VALUE="HE">Health &amp; Biological Sciences</OPTION>
+                <OPTION VALUE="06">History &amp; Archaeology</OPTION>
+                <OPTION VALUE="07">Journalism &amp; Communications</OPTION>
+                
+                <OPTION VALUE="08">Languages &amp; Literatures</OPTION>
+                <OPTION VALUE="GO">Law, Politics &amp; Government</OPTION>
+                <OPTION VALUE="10">Music, Dance, Drama &amp; Film</OPTION>
+                <OPTION VALUE="RE">Philosophy &amp; Religion</OPTION>
+                
+                <OPTION VALUE="LS">Physical Sciences &amp; Mathematics</OPTION>
+                <OPTION VALUE="SO">Social Sciences</OPTION>
+              </SELECT>
+              <INPUT VALUE="Search" TYPE="submit">
+</P>
+            <BR><P><U><FONT COLOR=blue><EM>Journal Titles A-Z</EM></FONT></U> | <U><FONT COLOR=blue><EM>(tips)</EM></FONT></U></P>
+            <P>&nbsp;</P>
+
+          </FORM>
+        
+      </CENTER>
+
+  
+          <P>&nbsp;</P>
+<H2>Articles & Databases</H2>
+<TABLE>
+  <TR>
+              <TD><P ALIGN="left"><EM>                <BR>
+                Select a database to search for articles &amp; more:</EM></P>
+                <P ALIGN="center"><U><FONT COLOR=blue><EM>Most Used Databases</EM></FONT></U> | <U><FONT COLOR=blue><EM>A-Z List</EM></FONT></U> |<EM><U><FONT COLOR=blue> Citation Linker</FONT></U></EM><U><FONT COLOR=blue></FONT></U></P></TD>
+            </TR>
+            <TR>
+              <TD><FORM>
+  <EM><BR>
+  Search for a database by description or part of the title: </EM>
+  <INPUT NAME="keywords" SIZE="20" TYPE="text">
+                  <INPUT VALUE="Go" TYPE="submit">
+                </FORM></TD>
+              </TR>
+            <TR>
+                        
+              <TD>
+              <FORM>
+                <BR>
+                <SELECT NAME="jumpMenu">
+                  <OPTION VALUE="none" SELECTED="selected">or choose your subject here:</OPTION>
+
+          <OPTION VALUE="find/bysubject/americanfloridastudies.html">American and Florida Studies</OPTION>
+
+          <OPTION VALUE="find/bysubject/anthropology.html">Anthropology</OPTION>
+          <OPTION VALUE="find/bysubject/art.html">Art</OPTION>
+          <OPTION VALUE="find/bysubject/biology.html">Biology</OPTION>
+          <OPTION VALUE="find/bysubject/business.html">Business</OPTION>
+          <OPTION VALUE="find/bysubject/chemistry.html">Chemistry</OPTION>
+
+          <OPTION VALUE="find/bysubject/classics.html">Classics</OPTION>
+
+          <OPTION VALUE="find/bysubject/communication.html">Communication</OPTION>
+          <OPTION VALUE="find/bysubject/communicationdisorders.html">Communication Disorders</OPTION>
+          <OPTION VALUE="find/bysubject/compscience.html">Computer Science</OPTION>
+          <OPTION VALUE="find/bysubject/criminaljustice.html">Criminal Justice / Criminology</OPTION>
+          <OPTION VALUE="find/bysubject/economics.html">Economics</OPTION>
+
+          <OPTION VALUE="find/bysubject/education.html">Education</OPTION>
+
+          <OPTION VALUE="find/bysubject/engineering.html">Engineering</OPTION>
+          <OPTION VALUE="find/bysubject/english.html">English</OPTION>
+          <OPTION VALUE="find/bysubject/familyandchild.html">Family and Child Sciences</OPTION>
+          <OPTION VALUE="find/bysubject/film.html">Film</OPTION>
+          <OPTION VALUE="find/bysubject/geography.html">Geography</OPTION>
+
+          <OPTION VALUE="find/bysubject/geology.html">Geology</OPTION>
+
+          <OPTION VALUE="find/bysubject/healthandmedicine.html">Health and Medicine</OPTION>
+          <OPTION VALUE="find/bysubject/history.html">History</OPTION>
+          <OPTION VALUE="find/bysubject/iberian.html">Iberian, Latin American, Caribbean</OPTION>
+          <OPTION VALUE="find/bysubject/informationstudies.html">Information Studies</OPTION>
+          <OPTION VALUE="find/bysubject/international.html">International Studies</OPTION>
+
+          <OPTION VALUE="find/bysubject/mathematics.html">Mathematics</OPTION>
+
+          <OPTION VALUE="find/bysubject/meteorology.html">Meteorology</OPTION>
+          <OPTION VALUE="find/bysubject/Modern_Languages.html">Modern Languages</OPTION>
+          <OPTION VALUE="find/bysubject/nursing.html">Nursing</OPTION>
+          <OPTION VALUE="find/bysubject/oceanography.html">Oceanography</OPTION>
+          <OPTION VALUE="find/bysubject/philosophy.html">Philosophy</OPTION>
+
+          <OPTION VALUE="find/bysubject/physicaleducation.html">Physical Education (Sports Management)</OPTION>
+
+          <OPTION VALUE="find/bysubject/physics.html">Physics</OPTION>
+          <OPTION VALUE="find/bysubject/political_science.html">Political Science</OPTION>
+          <OPTION VALUE="find/bysubject/psychology.html">Psychology</OPTION>
+          <OPTION VALUE="find/bysubject/publicadmin.html">Public Administration</OPTION>
+          <OPTION VALUE="find/bysubject/religion.html">Religion</OPTION>
+
+          <OPTION VALUE="find/bysubject/socialwork.html">Social Work</OPTION>
+
+          <OPTION VALUE="find/bysubject/sociology.html">Sociology</OPTION>
+          <OPTION VALUE="find/bysubject/statistics.html">Statistics</OPTION>
+          <OPTION VALUE="find/bysubject/urban.html">Urban and Regional Planning</OPTION>
+        </SELECT>
+     </SELECT>
+|              <U><FONT COLOR=blue> <EM>(tips)</EM></FONT></U>
+              </FORM></TD></TR>
+
+        </TABLE>
+
+            <P>&nbsp;</P>
+<H2>Help            </H2>
+<P>&nbsp;</P>
+
+              <P><EM><BR>
+              Get help finding materials:</EM></P>
+            
+            <TABLE>
+            <TR>
+              <TD><U><FONT COLOR=blue>2.5 minute videos</FONT></U></TD>
+              <TD><U><FONT COLOR=blue>Articles</FONT></U></TD>
+              <TD><U><FONT COLOR=blue>Catalog searching</FONT></U></TD>
+            </TR>
+            <TR>
+              <TD><U><FONT COLOR=blue>eBooks</FONT></U></TD>
+              <TD><U><FONT COLOR=blue>Journals</FONT></U></TD>
+              <TD><U><FONT COLOR=blue>Maps</FONT></U></TD>
+            </TR>
+            <TR>
+              <TD><U><FONT COLOR=blue>One-on-One help</FONT></U></TD>
+              <TD><U><FONT COLOR=blue>Research Guides</FONT></U></TD>
+              <TD><U><FONT COLOR=blue>Dictionaries &amp; Encyclopedias</FONT></U></TD>
+            </TR>
+        </TABLE>
+<P>&nbsp;</P>
+</P>
+        
+        
+// BeginOAWidget_Instance_2138522: #tplib
+
+		var tplib = new Spry.Widget.TabbedPanels2("tplib", {
+			injectionType: "replace",
+			widgetID: "tplib",
+			autoPlay: false,
+			defaultTab: 0,
+			enableKeyboardNavigation: true,
+			hideHeader: true,
+			tabsPosition: "top",
+			event:"click",
+			stopOnUserAction: true,
+			displayInterval: 5000,
+			minDuration: 300,
+			maxDuration: 500,
+			stoppedMinDuration: 100,
+			stoppedMaxDuration: 200,
+			plugIns:[]
+		});
+
+// EndOAWidget_Instance_2138522
+          </TD>
+        <TD><TABLE>
+          <TR>
+            <TD>var frontslidefoldername='slides/';</TD>
+          </TR>
+        </TABLE></TD>
+      </TR>
+    </TABLE>
+ <TABLE><TR>
+        <TD>&nbsp;</TD></TR>
+      <TR>
+        <TD>
+        
+        <TABLE>
+                  <TR>
+                    <TD><EM>About the Libraries</EM></TD>
+                  </TR>
+                  <TR>
+                    <TD><U><FONT COLOR=blue>About the FSU 
+                      Libraries</FONT></U></TD>
+            </TR>
+                  <TR>
+                    <TD><U><FONT COLOR=blue>Contact us</FONT></U><BR></TD>
+                  </TR>
+                  <TR>
+                    <TD><U><FONT COLOR=blue>Directions/maps </FONT></U><BR></TD>
+                  </TR>
+                  <TR>
+                    <TD><U><FONT COLOR=blue>Policies</FONT></U><BR></TD>
+                  </TR>
+                  <TR>
+                    <TD><U><FONT COLOR=blue>Forms</FONT></U></TD>
+                  </TR>
+                  <TR>
+                    <TD><U><FONT COLOR=blue>Hours</FONT></U></TD>
+                  </TR>
+                  <TR>
+                    <TD><U><FONT COLOR=blue>Employment</FONT></U></TD>
+                  </TR>
+                  <TR>
+                    <TD><U><FONT COLOR=blue>Other   libraries</FONT></U></TD>
+                  </TR>
+                  <TR>
+                    <TD><U><FONT COLOR=blue>Friends of the   Libraries</FONT></U></TD>
+                  </TR>
+                  <TR>
+                    <TD><U><FONT COLOR=blue>Special Collections
+                    </FONT></U></TD>
+                  </TR>
+                  <TR>
+                    <TD><U><FONT COLOR=blue><EM><EM>Calendar</EM></EM></FONT></U></TD>
+            </TR>
+        </TABLE></TD>
+        
+        <TD>
+            <TABLE>
+               
+                    <TD><EM>Services</EM><BR></TD>
+                  </TR>
+                  <TR>
+                    <TD><U><FONT COLOR=blue><EM><EM>Scholars Commons</EM></EM></FONT></U></TD>
+                  </TR>
+                  <TR>
+                    <TD><U><FONT COLOR=blue>Faculty</FONT></U><BR></TD>
+                  </TR>
+                  <TR>
+                    <TD><U><FONT COLOR=blue>Graduate students</FONT></U><BR></TD>
+              </TR>
+                  <TR>
+                    <TD><EM><EM><U><FONT COLOR=blue>Learning Commons</FONT></U></EM></EM><BR></TD>
+                  </TR>
+                  <TR>
+                    <TD><U><FONT COLOR=blue>Undergraduate Students</FONT></U><BR></TD>
+                  </TR>
+                  <TR>
+                    <TD><BR></TD>
+                  </TR>
+                  <TR>
+                    <TD><U><FONT COLOR=blue>Distance Learners</FONT></U><BR></TD>
+                  </TR>
+                  <TR>
+                    <TD><U><FONT COLOR=blue>Accessibility</FONT></U><BR></TD>
+                  </TR>
+                  <TR>
+                    <TD><U><FONT COLOR=blue>Technology &amp; 
+                      Tools</FONT></U><BR></TD>
+                  </TR>
+                  <TR>
+                    <TD><U><FONT COLOR=blue>Borrowing 
+                      Materials</FONT></U></TD>
+                  </TR>
+                  <TR>
+                    <TD><U><FONT COLOR=blue>Interlibrary Loan </FONT></U></TD>
+                  </TR></TABLE>
+                  
+                  
+        </TD>
+              
+            <TD><TABLE>
+              <TR>
+               
+                    <TD><EM>Help with Research </EM></TD>
+              </TR>
+                  <TR>
+                    <TD><U><FONT COLOR=blue>Research Guides</FONT></U></TD>
+                  </TR>
+                  <TR>
+                    <TD><U><FONT COLOR=blue>One-on-one 
+                      help</FONT></U></TD>
+                  </TR>
+                  <TR>
+                    <TD><U><FONT COLOR=blue>Catalog Search hints</FONT></U></TD>
+                  </TR>
+                  <TR>
+                    <TD><U><FONT COLOR=blue>Citation 
+                      Management</FONT></U></TD>
+                  </TR>
+                  <TR>
+                    <TD><U><FONT COLOR=blue>Reference Tools</FONT></U></TD>
+                  </TR>
+                  <TR>
+                    <TD><U><FONT COLOR=blue>Subject 
+                      Librarians</FONT></U></TD>
+                  </TR>
+                  <TR>
+                    <TD><U><FONT COLOR=blue>Theses &amp; 
+                      Dissertations
+                    </FONT></U></TD>
+                  </TR>
+                  <TR>
+                    <TD><U><FONT COLOR=blue>Digital Library 
+                      Collection
+                    </FONT></U></TD>
+              </TR>
+                  <TR>
+                    <TD><U><FONT COLOR=blue>Advising &amp; Tutoring</FONT></U></TD>
+                  </TR>
+                  <TR>
+                    <TD><U><FONT COLOR=blue>Video Tutorials</FONT></U></TD>
+                  </TR>
+                
+            </TABLE></TD>
+       
+        <TD><BR>
+          
+          
+<!-- 
+
+// Array of day names
+var dayNames = new Array("Sunday","Monday","Tuesday","Wednesday",
+				"Thursday","Friday","Saturday");
+
+// Array of month Names
+var monthNames = new Array(
+"January","February","March","April","May","June","July",
+"Aug.","September","October","November","December");
+
+var now = new Date();
+document.write(dayNames[now.getDay()] + ", " + 
+monthNames[now.getMonth()] + " " + 
+now.getDate() + ", " + now.getFullYear());
+
+// -->
+
+            <U><FONT COLOR=blue>{description}</FONT></U>
+          
+        
+   <BR>
+
+
+          <EM><U><FONT COLOR=blue>more ways to ask</FONT></U></EM>
+         
+          
+                      
+          <BR>
+          <BR>
+
+          </P>
+          <U><FONT COLOR=blue>[Giving to Florida state University Libraries]</FONT></U><BR>
+          <BR>
+ <U><FONT COLOR=blue>[Florida State University: A Campus History]</FONT></U></TD>
+      </TR></TABLE>
+    
+    
+        <TABLE>
+  <TR>
+    <TD>
+      
+// BeginOAWidget_Instance_2125523: #twitter
+
+$(document).ready(function() {
+	$('#twitter').twitterSearch({
+		term: 'from%3Afsulibrary',
+		title: 'FSU LIbraries Twitter',
+		titleLink: 'http://twitter.com/#!/fsulibrary',
+		bird: false,					// true or false (show or hide twitter bird image)
+		birdSrc: '/images/tweet.gif', 		// twitter bird image
+		birdLink: 'http://twitter.com/dreamweaver',		// url that twitter bird image should like to
+		avatar: false,				// true or false (show or hide twitter profile images)
+		anchors: true,			// true or false (enable embedded links in tweets)
+		animOutSpeed: 500,	// speed of animation for top tweet when removed
+		animInSpeed: 500,	// speed of scroll animation for moving tweets up
+		pause: true,				// true or false (pause on hover)
+		time: true,					// true or false (show or hide the time that the tweet was sent)
+		timeout: 4000,			// delay betweet tweet scroll
+		css: { 
+			a:     { textDecoration: 'none', color: '#cc0000', fontWeight: 'normal'},
+			container: { backgroundColor: '#ffffff' },
+			frame: { border: '3px solid #cdc092', borderRadius: '6px', '-moz-border-radius': '6px', '-webkit-border-radius': '6px' },
+			img:   { width: '60px', height: '60px' },
+			loading: { color: '#888' },
+			text:  {fontWeight: 'normal', fontSize: '12px', color:'#000'},
+			time:  { fontSize: '9px', color: '#666666' },
+			title: { backgroundColor: '#cdc092', padding: '3px 0 3px 0', textAlign: 'center', fontWeight: 'normal', fontSize: '12px'},
+			titleLink: { textDecoration: 'none', color: '#000000' },
+			user:  { fontSize: '9px'},
+			fail:  { background: '#6cc5c3 url(/images/failwhale.png) no-repeat 50% 50%'}
+		}
+	});
+});
+		
+// EndOAWidget_Instance_2125523
+      </TD>
+         <TD><U><FONT COLOR=blue>[Learn about UBorrow: Get your materials even faster!]</FONT></U></TD>
+         <TD><P><BR>
+[CLIENT-SIDE IMAGE MAP: Social media]<BR>
+</P></TD>
+    
+    
+  </TR>
+      <TR>
+        <TD>
+          <U><FONT COLOR=blue>Library Hours</FONT></U> | <U><FONT COLOR=blue>Libraries mobile</FONT></U> | ©MMXI | Florida   State University Libraries, 116 Honors Way | Tallahassee, FL 32306 | (850)   644-2706 |<U><FONT COLOR=blue> Comment?</FONT></U> | <U><FONT COLOR=blue>Privacy Policy</FONT></U>
+        </TD>
+       
+       
+      </TR>
+
+
+    </TABLE>
+
+</TABLE>
+
+    <!-- end .content -->
+  <!-- end .container -->
+
+<MAP NAME="Map">
+  <AREA HREF="http://www.fsu.edu" COORDS="44,42,36" SHAPE="circle" ALT="Florida State Unniversity">
+  <AREA HREF="#" COORDS="234,49,0" SHAPE="circle">
+  <AREA HREF="http://lib.fsu.edu" COORDS="91,7,507,85" SHAPE="rect" ALT="FSU Libraries">
+</MAP>
+<MAP NAME="Map2">
+  <AREA HREF="http://www.facebook.com/pages/Florida-State-University-Libraries/105886229440021" COORDS="0,2,32,36" SHAPE="rect" ALT="Facebook">
+  <AREA HREF="http://twitter.com/fsulibrary" COORDS="34,1,63,47" SHAPE="rect" ALT="Twitter">
+  <AREA HREF="http://www.youtube.com/user/fsulibraries" COORDS="65,1,95,62" SHAPE="rect" ALT="You Tube">
+</MAP>
+
+
+
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>

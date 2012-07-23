@@ -1,0 +1,551 @@
+
+<HTML><!-- InstanceBegin template="/Templates/pageaccueil.dwt" codeOutsideHTMLIsLocked="false" -->
+<HEAD>
+<META CONTENT="text/html; charset=iso-8859-1">
+<!-- Modele v2.5 (20111216) Rev: 960 -->
+<META CONTENT="IE=EmulateIE7">
+
+<!-- InstanceBeginEditable name="doctitle" -->
+<TITLE>Biblioth&egrave;que de m&eacute;decine v&eacute;t&eacute;rinaire - Universit&eacute;&nbsp;de Montr&eacute;al</TITLE>
+<!-- InstanceEndEditable -->
+
+
+<!-- Début des styles locaux -->
+
+
+/* Lien de retour vers la page d'accueil désactivé*/
+.um-retour-accueil
+{
+	display: none;
+}
+
+#titre-section
+{
+	display: none;
+}
+
+/* Changement du look du titre <H1> pour cette page*/
+h1
+{
+	display: none;
+}
+
+/* Organisation de la page*/
+.bloc-documents-liens
+{
+	float: left;
+	width: 590px;
+	background: url("http://www.bib.umontreal.ca/modele/2/images/iu/ligne-fond-vertical.png") repeat-y scroll 100% 0 transparent;
+	padding-top:1.5em;
+}
+
+.bloc-documents
+{
+	float: left;
+	margin: 0;
+	width: 268px;
+}
+
+.bloc-liens
+{
+	float: right;
+	margin: 0;
+	background: url("http://www.bib.umontreal.ca/modele/2/images/iu/ligne-fond-vertical.png") repeat-y scroll 0 0 transparent;
+	width: 292px;
+	padding-left: 14px;
+	padding-right: 0px;
+}
+
+.bloc-bdd
+{
+	float: right;
+	margin: 0;
+	width: 172px;
+	padding: 0;
+	padding-top:1.5em;
+}
+
+.bloc-nouveautes
+{
+	float: left;
+	width: 100%;
+	background: url("http://www.bib.umontreal.ca/modele/2/images/iu/ligne-fond-horizontal.png") repeat-x 0 0 transparent;
+	padding-top:1.5em;
+	clear: both;
+}
+
+.bloc-quoi-de-neuf
+{
+	float: left;
+	width: 360px;
+	padding-right: 15px;
+}
+
+.bloc-quoi-de-neuf ul
+{
+	padding-bottom: 0;
+}
+
+.bloc-quoi-de-neuf li
+{
+	maring: 0;
+	padding: 0;
+	list-style: none outside none;
+	background:url("images/utilitaires/communs/puce-fleche-double.png") no-repeat scroll 0 8px transparent;
+	padding-left:15px;
+	position: relative; /* IE fix */
+	height: 1%
+}
+
+/* IE fix pour le problème de background image qui disparaît */
+.bloc-quoi-de-neuf li
+{
+	height: 1%
+}
+
+html>body .bloc-quoi-de-neuf li
+{
+	height: auto; /* on défait la règle qui prédède pour les autres navigateurs */
+}
+
+/* fin IE fix */
+
+.bloc-nouveautes-couvertures
+{
+	float: left;
+	width: 378px;
+}
+
+.bloc-nouveautes-couvertures p
+{
+	margin-top: 0;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.bloc-nouveautes-couvertures img
+{
+	border:1px solid #CFCFCF;
+	padding:0.25em;
+}
+
+/* Ajustement de la hauteur des flèche de navigation */
+
+.jcarousel-skin-bib2 .jcarousel-prev-horizontal,
+.jcarousel-skin-bib2 .jcarousel-next-horizontal
+{
+	top: 86px !important;
+}
+
+/* Stylage h2 */
+h2
+{
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	line-height: 100%;
+	color: #835697;
+}
+
+/* Stylage des listes*/
+ul
+{
+	list-style:none outside none;
+	margin:0;
+	padding: 14px;
+}
+
+li
+{
+	padding-left: 0px;
+	margin:0 0 2px;
+}
+
+/* Couleur des liens */
+#um-contenu a:link
+{
+	color : #4A5257;
+	text-decoration: none;
+}
+
+#um-contenu a:visited
+{
+	color : #969DA1;
+	text-decoration: none;
+}
+
+#um-contenu a:hover
+{
+	color : #4A5257;
+	text-decoration: underline;
+}
+
+.plus
+{
+	font-size:70%;
+	text-align:right;
+	margin-right: 10px;
+}
+
+
+html,
+body,
+div#um-contenu
+{
+	font-size: 15px;
+}
+
+.bloc-documents-liens
+{
+	width: 66%;
+}
+
+.bloc-documents,
+.bloc-liens
+{
+	width: 45%;
+}
+
+.bloc-bdd
+{
+	width: 33%;
+}
+
+.bloc-nouveautes
+{
+	width: 100%;
+}
+
+.bloc-nouveautes-couvertures,
+.bloc-quoi-de-neuf
+{
+	width: 44%;
+}
+
+.bloc-quoi-de-neuf li
+{
+	maring: 0;
+	padding: 0;
+	list-style: none outside url("images/utilitaires/puce-fleche-double.png");
+	background:none;
+}
+
+.bloc-quoi-de-neuf ul
+{
+	padding-left:2.5em;
+}
+
+.bloc-nouveautes-couvertures li
+{
+	display: inline;
+	list-style: none outside none;
+}
+
+
+
+<!-- Fin des styles locaux -->
+
+
+
+
+<META CONTENT="fr">
+<META NAME="Author" CONTENT="">
+<META NAME="Description" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+
+
+<META NAME="dc.creator" CONTENT="">
+<META NAME="dc.description" CONTENT="">
+<META NAME="dc.subject" CONTENT="">
+<META NAME="dc.language" CONTENT="fr-CA">
+
+
+
+
+
+
+
+
+
+<!--[if lte IE 6]>
+<style>
+div#ummenuvertical div#menu ul * { height: 1px; }
+</style>
+<![endif]-->
+<!-- InstanceBeginEditable name="Metadonnees" -->
+<!-- InstanceEndEditable -->
+
+<!-- Début des scripts locaux -->
+<!-- InstanceBeginEditable name="javascriptmodeleMV" -->
+<!-- InstanceEndEditable -->
+<!-- Insérez les scripts dans cette région, à partir de 
+     la page Web pour qu'ils n'affectent que la 
+	 page en cours -->
+
+
+
+
+
+jQuery(function() {
+    jQuery('#liste-couvertures').jcarousel({
+        // Configuration goes here
+		visible: 3
+    });
+});
+
+<!-- InstanceBeginEditable name="javascriptaccueil" -->
+
+<!-- InstanceEndEditable -->
+
+<!-- Fin des scripts locaux -->
+<!-- Les styles générés par Dreamweaver/Contribute sont insérés ici. 
+     Utilisez cette région modifiable au besoin pour y mettre les styles propres à la page en cours. -->
+<!-- InstanceBeginEditable name="CSS" -->
+<!-- InstanceEndEditable -->
+<!-- Fin des styles locaux -->
+
+
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+  <UL>
+    <LI><U><FONT COLOR=blue>Aller au contenu [1]</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Aller au menu du site [2]</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Aller aux liens rapides [3]</FONT></U></LI>
+  </UL><!-- #BeginLibraryItem "/Library/navigationUdeM.lbi" -->
+<!--  ************************** MENU DE NAVIGATION UDEM ************************** -->
+<!--  ************************** NE DOIT JAMAIS ETRE EDITE ************************ -->
+<U><FONT COLOR=blue>[Universit&eacute; de Montr&eacute;al]</FONT></U>
+  <HR>
+  <U><FONT COLOR=blue>R&eacute;pertoires</FONT></U> |  <U><FONT COLOR=blue>Facult&eacute;s</FONT></U> |  <U><FONT COLOR=blue>Biblioth&egrave;ques</FONT></U> |  <U><FONT COLOR=blue>Plan campus</FONT></U> |  <U><FONT COLOR=blue>Sites A-Z </FONT></U> |  <U><FONT COLOR=blue>Mon portail UdeM</FONT></U>
+  <BR>
+  <FORM>
+    Texte recherch&eacute; : 
+    
+    <INPUT VALUE="" NAME="q" MAXLENGTH="255" TYPE="text">
+    <INPUT TYPE="image">
+    <BR>
+    Rechercher dans : 
+    <INPUT VALUE="Atrium" NAME="sitesearch" TYPE="radio">
+    Atrium
+    <INPUT VALUE="umontreal.ca" NAME="sitesearch" CHECKED="checked" TYPE="radio">
+    UdeM
+    
+  </FORM>
+  <FORM>
+    <!-- On force IE à utiliser UTF8 lors de l'envoie des données --> 
+    <!--[if lt IE 9]><input name="iehack" type="hidden" value="&#9760;" /><![endif]-->
+    <INPUT VALUE="Basic" NAME="mode" TYPE="hidden">
+    <INPUT VALUE="default_tab" NAME="tab" TYPE="hidden">
+    <INPUT VALUE="1" NAME="indx" TYPE="hidden">
+    <INPUT VALUE="true" NAME="dum" TYPE="hidden">
+    <INPUT VALUE="rank" NAME="srt" TYPE="hidden">
+    <INPUT VALUE="UM" NAME="vid" TYPE="hidden">
+    <INPUT VALUE="" NAME="frbg" TYPE="hidden">
+    Texte recherch&eacute; : 
+    
+    <INPUT VALUE="" NAME="vl(freeText0)" MAXLENGTH="255" TYPE="text">
+    <INPUT TYPE="image">
+    <BR>
+    Rechercher dans :  
+    <INPUT VALUE="Atrium" NAME="sitesearch" TYPE="radio">
+    Atrium
+    <INPUT VALUE="umontreal.ca" NAME="sitesearch" CHECKED="checked" TYPE="radio">
+    UdeM
+    
+  </FORM>
+
+<!-- #EndLibraryItem --><HR>
+  
+    <P>Sauter les liens rapides</FONT></U></P>
+    
+      <U><FONT COLOR=blue>[Les biblioth&egrave;ques / UdeM]</FONT></U>
+    <!-- #BeginLibraryItem "/Library/bandeaucommun.lbi" -->
+<UL>
+  <LI><U><FONT COLOR=blue>Catalogue <EM>Atrium</EM></FONT></U>
+    <UL>
+      <LI><U><FONT COLOR=blue>Démarrer <EM>Atrium</EM></FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Guide <EM>Atrium</EM></FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Renouveler vos emprunts</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Votre dossier de lecteur</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Réserve de cours</FONT></U></LI>
+    </UL>
+  </LI>
+  <LI><U><FONT COLOR=blue>Ressources &eacute;lectroniques</FONT></U>
+    <UL>
+      <LI><U><FONT COLOR=blue>Maestro (bases de données)</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Périodiques électroniques</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Dictionnaires et encyclopédies</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Information statistique</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Données géospatiales</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Papyrus (Dépôt institutionnel numérique)</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Calypso (Collections d'objets numériques)</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Accès hors-campus (Proxy)</FONT></U></LI>
+    </UL>
+  </LI>
+  <LI><U><FONT COLOR=blue>Formation</FONT></U>
+    <UL>
+      <LI><U><FONT COLOR=blue>Activités offertes</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Guides</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Compétence informationnelle</FONT></U></LI>
+    </UL>
+  </LI>
+  <LI><U><FONT COLOR=blue>Obtenir un document</FONT></U>
+    <UL>
+      <LI><U><FONT COLOR=blue>Obtenir un article</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Obtenir une thèse / un mémoire</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Prêt réseau UdeM</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Prêt entre bibliothèques</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Catalogues <BR>
+        d'autres bibliothèques</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Modalités de prêt</FONT></U></LI>
+    </UL>
+  </LI>
+  <LI><U><FONT COLOR=blue>Horaires</FONT></U></LI>
+  <LI><U><FONT COLOR=blue>Nous joindre</FONT></U></LI>
+</UL>
+<!-- #EndLibraryItem -->
+  
+  
+    <TABLE>
+      <TR>
+        <TD>&nbsp;</TD>
+        <TD><U><FONT COLOR=blue>Bibliothèque de médecine vétérinaire</FONT></U><U><FONT COLOR=blue></FONT></U> </TD>
+      </TR>
+    </TABLE>
+  
+  
+  
+    
+      
+        <P>Sauter le menu du site</FONT></U></P>
+        <!-- #BeginLibraryItem "/Library/menugeneralMV.lbi" -->
+        <UL>
+          <LI>À propos de la bibliothèque
+            <UL>
+              <LI><U><FONT COLOR=blue>Médecine vétérinaire</FONT></U></LI>
+              <LI><U><FONT COLOR=blue>Autres bibliothèques des sciences de la santé</FONT></U></LI>
+            </UL>
+          </LI>
+          <LI><U><FONT COLOR=blue>Ressources documentaires</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Apprendre à utiliser les ressources </FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Faculté de médecine vétérinaire</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Bibliothèques de Saint-Hyacinthe</FONT></U> </LI>
+        </UL>
+        <!-- Lien vers la page d'accueil -->
+        <U><FONT COLOR=blue>&middot; Retour &agrave; la page d'accueil &middot;</FONT></U>
+        <!-- #EndLibraryItem -->
+        
+         
+    
+    <!--  /ummenuvertical -->
+    <HR>
+    
+      
+        Fil d'ariane...
+        </FONT></U>
+        <!-- InstanceBeginEditable name="Titre de la section" --><!-- InstanceEndEditable -->
+        
+        <H1>Biblioth&egrave;que de m&eacute;decine v&eacute;t&eacute;rinaire</H1>
+        
+        
+          
+            <H2>Ressources documentaires</H2>
+            <UL>
+              <LI><U><FONT COLOR=blue>Guide: M&eacute;decine v&eacute;t&eacute;rinaire</FONT></U></LI>
+              <LI>P&eacute;riodiques
+                <UL>
+                  <LI><U><FONT COLOR=blue>Facteurs d'impact</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Abr&eacute;viations de titres</FONT></U></LI>
+                </UL>
+              </LI>
+              <LI><U><FONT COLOR=blue>Nouvelles acquisitions</FONT></U> <U><FONT COLOR=blue>[INLINE]</FONT></U><U><FONT COLOR=blue><BR>
+                </FONT></U>(livres, p&eacute;riodiques et bases de donn&eacute;es)</LI>
+              <LI><U><FONT COLOR=blue>Suggestions d'achat</FONT></U></LI>
+            </UL>
+            <U><FONT COLOR=blue>[clavardage]</FONT></U><U><FONT COLOR=blue>Besoin d'aide?<BR>
+            Clavardez avec nous!</FONT></U> 
+          
+            <H2>Liens utiles</H2>
+            <UL>
+              <LI><U><FONT COLOR=blue>Bio-informatique pratique</FONT></U></LI>
+              <LI><U><FONT COLOR=blue>Communication scientifique</FONT></U></LI>
+              <LI><U><FONT COLOR=blue>EndNote, Zotero et autres logiciels bibliographiques</FONT></U><U><FONT COLOR=blue></FONT></U></LI>
+              <LI>Formations <U><FONT COLOR=blue>intégrées au cursus du DMV</FONT></U></LI>
+              <LI><U><FONT COLOR=blue>Guides, capsules InfoRepère et tutoriel</FONT></U>s</LI>
+              <LI><U><FONT COLOR=blue>M&eacute;thodologie de recherche d'information</FONT></U><U><FONT COLOR=blue></FONT></U></LI>
+              <LI> <U><FONT COLOR=blue>Outils informatiques</FONT></U></LI>
+              <LI><U><FONT COLOR=blue>Ressources pour la recherche en laboratoire (protocoles, m&eacute;thodes...)</FONT></U></LI>
+              <LI><U><FONT COLOR=blue>Traduction des MeSH avec CiSMeF</FONT></U></LI>
+            </UL>
+          
+        
+        
+          <H2>S&eacute;lection de bases de donn&eacute;es</H2>
+          <UL>
+            <LI><U><FONT COLOR=blue>CAB Abstracts</FONT></U> <U><FONT COLOR=blue>[CAB - Guide d'utilisation]</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>PubMed</FONT></U> <U><FONT COLOR=blue>[Pubmed - Guide d'utilisation]</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Medline</FONT></U> <U><FONT COLOR=blue>[Medline - Guide d'utilisation]</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>VetMed Resource</FONT></U> <U><FONT COLOR=blue>[Rep&egrave;re - Guide d'utilisation]</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Agricola</FONT></U> <U><FONT COLOR=blue>[Agricola - Guide d'utilisation]</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Consultant </FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Current Contents</FONT></U> <U><FONT COLOR=blue>[Current Contents - Guide d'utilisation]</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Web of Science</FONT></U> <U><FONT COLOR=blue>[Web of Science - Guide d'utilisation]</FONT></U></LI>
+          </UL>
+        
+        
+          
+            <H2>Quoi de neuf?</H2>
+            <UL>
+              <!-- InstanceBeginRepeat name="communiques" --><!-- InstanceBeginRepeatEntry -->
+              <LI><!-- InstanceBeginEditable name="communique" --><U><FONT COLOR=blue> Horaires de P&acirc;ques et des examens</FONT></U><!-- InstanceEndEditable --></LI>
+              <!-- InstanceEndRepeatEntry --><!-- InstanceBeginRepeatEntry -->
+              <LI><!-- InstanceBeginEditable name="communique" --><U><FONT COLOR=blue>Publication du rapport annuel 2010-2011</FONT></U><!-- InstanceEndEditable --></LI>
+              <!-- InstanceEndRepeatEntry --><!-- InstanceBeginRepeatEntry -->
+              <LI><!-- InstanceBeginEditable name="communique" --><U><FONT COLOR=blue>Des heures d'ouverture plus longues pour les intras</FONT></U><!-- InstanceEndEditable --></LI>
+              <!-- InstanceEndRepeatEntry --><!-- InstanceBeginRepeatEntry -->
+              <LI><!-- InstanceBeginEditable name="communique" --><U><FONT COLOR=blue>Des ordinateurs plus nombreux et plus performants</FONT></U><!-- InstanceEndEditable --></LI>
+              <!-- InstanceEndRepeatEntry --><!-- InstanceEndRepeat -->
+            </UL>
+            <P><U><FONT COLOR=blue>...plus</FONT></U></P>
+          
+          
+            
+              <P><EM>Nouveautés - janvier 2012</EM></P>
+              <UL>
+                <!-- InstanceBeginRepeat name="couvertures" --><!-- InstanceBeginRepeatEntry -->
+                <LI><!-- InstanceBeginEditable name="couverture" --><U><FONT COLOR=blue>[Dictionnaire pratique de thérapeutique chien, chat et NAC]</FONT></U><!-- InstanceEndEditable --></LI>
+                <!-- InstanceEndRepeatEntry --><!-- InstanceBeginRepeatEntry -->
+                <LI><!-- InstanceBeginEditable name="couverture" --><U><FONT COLOR=blue>[Duncan & Prasse's veterinary laboratory medicine : clinical pathology]</FONT></U><!-- InstanceEndEditable --></LI>
+                <!-- InstanceEndRepeatEntry --><!-- InstanceBeginRepeatEntry -->
+                <LI><!-- InstanceBeginEditable name="couverture" --><U><FONT COLOR=blue>[Small animal gastroenterology]</FONT></U><!-- InstanceEndEditable --></LI>
+                <!-- InstanceEndRepeatEntry --><!-- InstanceBeginRepeatEntry -->
+                <LI><!-- InstanceBeginEditable name="couverture" --><U><FONT COLOR=blue>[Zoonotic pathogens in the food chain]</FONT></U><!-- InstanceEndEditable --></LI>
+                <!-- InstanceEndRepeatEntry --><!-- InstanceBeginRepeatEntry -->
+                <LI><!-- InstanceBeginEditable name="couverture" --><U><FONT COLOR=blue>[Care of Australian wildlife : for gardeners, landholders and wildlife carers]</FONT></U><!-- InstanceEndEditable --></LI>
+                <!-- InstanceEndRepeatEntry --><!-- InstanceBeginRepeatEntry -->
+                <LI><!-- InstanceBeginEditable name="couverture" --><U><FONT COLOR=blue>[Blackwell's five-minute veterinary consult : clinical companion : small animal emergency and critical care]</FONT></U><!-- InstanceEndEditable --></LI>
+                <!-- InstanceEndRepeatEntry --><!-- InstanceBeginRepeatEntry -->
+                <LI><!-- InstanceBeginEditable name="couverture" --><U><FONT COLOR=blue>[Small animal bandaging, casting, and splinting techniques]</FONT></U><!-- InstanceEndEditable --></LI>
+                <!-- InstanceEndRepeatEntry --><!-- InstanceBeginRepeatEntry -->
+                <LI><!-- InstanceBeginEditable name="couverture" --><U><FONT COLOR=blue>[Kirk and Bistner's handbook of veterinary procedures and emergency treatment]</FONT></U><!-- InstanceEndEditable --></LI>
+                <!-- InstanceEndRepeatEntry --><!-- InstanceBeginRepeatEntry -->
+                <LI><!-- InstanceBeginEditable name="couverture" --><U><FONT COLOR=blue>[BSAVA small animal formulary]</FONT></U><!-- InstanceEndEditable --></LI>
+                <!-- InstanceEndRepeatEntry --><!-- InstanceEndRepeat -->
+              </UL>
+            
+          
+        
+         
+      <!--  /umcontenu --> 
+    
+    <!--  /umcontenant --> 
+  
+  <!--  /ummenuetcontenu -->
+  <HR>
+  <!-- #BeginLibraryItem "/Library/pieddepage.lbi" -->
+  <U><FONT COLOR=blue>Urgence</FONT></U> |  <U><FONT COLOR=blue>Vie priv&eacute;e</FONT></U> | <U><FONT COLOR=blue>Offres d'emploi</FONT></U> |  <U><FONT COLOR=blue>Mon courriel</FONT></U> |  <U><FONT COLOR=blue>StudiUM</FONT></U> |  <U><FONT COLOR=blue>iTunes U</FONT></U> | <U><FONT COLOR=blue>Nous &eacute;crire</FONT></U> &nbsp; <U><FONT COLOR=blue>[Fils des nouvelles UdeM]</FONT></U>
+  <!-- #EndLibraryItem -->
+<!-- InstanceBeginEditable name="javascriptpied" --><!-- InstanceEndEditable -->
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<!-- InstanceEnd --></HTML>

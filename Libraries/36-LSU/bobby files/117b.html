@@ -1,0 +1,715 @@
+
+<HTML>
+<HEAD>
+  <TITLE>LSU Libraries -- Faculty and Staff Directory</TITLE>
+  <META CONTENT="text/html; charset=iso-8859-1">
+  <!-- **** layout stylesheet **** -->
+ 
+ <!--   **** color scheme stylesheet **** -->
+   
+  
+
+.hours a{position:relative;}/* set stacking context*/
+.hours a span{
+visibility:hidden;/* hide message initially*/
+position:absolute;
+top:-55px;
+left:90px;
+width:250px;
+padding-left:20px;
+background:#eeeeee;
+color:#000;
+border:1px inset black;
+z-index:1000;
+}
+
+.hours a:hover{visibility:visible}/* ie bug needed to make span show*/
+.hours a:hover span{visibility:visible;}/* reveal image*/
+
+  
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+  
+   <!-- **** layout stylesheet **** 
+  <link rel="stylesheet" type="text/css" href="http://www.lib.lsu.edu/style/libraries.css" />-->
+  <!-- **** color scheme stylesheet **** -->
+  
+  <!-- **** printer friendly stylesheet **** -->
+  
+ 
+  
+@media only screen and (max-device-width: 480px) {  	#mobilepop {
+		width:760px;
+		height:auto;
+		margin:0 10px;
+		padding:0;
+		/*display:none; */
+		overflow:hidden;
+	}
+	#mobilecont {
+		width:760px;
+		background:#FDD023;
+		color:#333333;
+		padding:10px;
+		font-size:12px;
+		font-family:Arial, Helvetica, sans-serif;
+		text-align:center;
+		border:1px solid #ffffff;
+		line-height:115% !important;
+	} }
+	
+	#mobilecont, #mobilepop {display: none;}
+	
+
+ 
+
+<TITLE>LSU Libraries</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">[INLINE]
+
+
+	
+    	<P><EM>On a mobile device?</EM></P>
+        <P>View the LSU Libraries Mobile Website at<BR> <U><FONT COLOR=blue>http://www.lib.lsu.edu/m/</FONT></U></P>
+        <!-- <p style="fontsize:2em;"><input type="button" name="closempop" value="Stay" onClick="javascript:mobilepop('close');" /> <input type="button" name="redirectmpop" value="Go to Mobile Site" onClick="javascript:mobilepop('redirect');" /> </p>-->
+    
+
+ 
+<HTML>
+<HEAD>
+<META CONTENT="text/html; charset=utf-8">
+<!--<base href="http://www.lib.lsu.edu"  />-->
+
+
+
+
+ 
+
+
+
+
+////////////THIS IS THE EXTERNAL LINKS NEW WINDOW JS//////////////////
+
+function exLinks() {
+<!-- Copyright 2005 Bontrager Connection, LLC
+// More info: "Automatic New Window for External Links" 
+//    at /library/
+// Also see http://BontragerConnection.com/
+//
+// List the domain names that shall not be put into new 
+//    windows when the link is clicked. If you use both 
+//    the www.example.com and example.com versions of 
+//    your domain name, list them both. The domains need 
+//    to be all one line between the quotation marks on 
+//    the line below, the names separated with a comma.
+//    Do not specify http:// URLs, just domain names.
+
+var Domains = "www.lib.lsu.edu,lib.lsu.edu,lsu.edu,www.lsu.edu,test.lib.lsu.edu,news.blogs.lib.lsu.edu,lsu.louislibraries.org,grok.lsu.edu,itsweb.lsu.edu";
+
+////////////////////////////////////////////
+// No other customizations are necessary. //
+////////////////////////////////////////////
+if(Domains.indexOf(" ") != 1) {
+   var splitarray = Domains.split(" ");
+   Domains = splitarray.join("");
+}
+Domains = Domains.toLowerCase();
+var DomainsArray = Domains.split(",");
+for(var i = 0; i < document.links.length; i++) {
+   if(document.links[i].hostname.length < 1) 
+   { continue; }
+   if(document.links[i].target.length > 0)
+   { continue; }
+   var h = document.links[i].hostname.toLowerCase();
+   var makeNewWindow = true;
+   for(var ii = 0; ii < DomainsArray.length; ii++) {
+      if(DomainsArray[ii] != h) 
+      { continue; }
+      makeNewWindow = false;
+      break;
+   }
+   if(makeNewWindow == true)
+   { document.links[i].title = 'This link will take you outside LSU.edu.'; }
+}
+//-->
+}
+
+
+function mobilepop(action) {
+	if (action == "close") document.getElementById('mobilepop').style.display = "none";
+	else if (action == "redirect") window.location.href = "http://www.lib.lsu.edu/m/";
+}
+
+function mobilepopOL() {	
+//	if (document.location == "http://www.lib.lsu.edu/index.html" || document.location == "http://www.lib.lsu.edu/") {
+//		if (screen.width 
+
+<!-- The following JavaScript code gets the current date from the viewer's machine. --> 
+
+<!-- tag to hide script from older browsers that don't support JavaScript
+function display_todays_date()
+{
+var today = new Date();
+var numerical_day=today.getDay();
+var numerical_month=today.getMonth();
+var date=today.getDate();
+var year=today.getFullYear();
+var weekday_array = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+var day_of_the_week = weekday_array[numerical_day];
+var month_array = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+var month_name = month_array[numerical_month];
+var date_string=day_of_the_week+', '+month_name+' '+date+', '+year;
+document.write(date_string);
+}
+//-->
+
+  
+	#mobilepop {
+		/*position:absolute;
+		top:10px;
+		left:10px;*/
+		width:760px;
+		height:auto;
+		margin:0 10px;
+		padding:0;
+		display:none;
+		overflow:hidden;
+	}
+	#mobilecont {
+		width:760px;
+		background:#FDD023;
+		color:#333333;
+		padding:10px;
+		font-size:12px;
+		font-family:Arial, Helvetica, sans-serif;
+		text-align:center;
+		border:1px solid #ffffff;
+		line-height:115% !important;
+	}
+
+<!-- End the current date script. --> 
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+	[INLINE]
+
+
+	
+		
+    	<P><EM>On a mobile device?</EM></P>
+        <P>View the LSU Libraries Mobile Website at<BR> <U><FONT COLOR=blue>http://www.lib.lsu.edu/m/</FONT></U></P>
+        <!-- <p style="fontsize:2em;"><input type="button" name="closempop" value="Stay" onClick="javascript:mobilepop('close');" /> <input type="button" name="redirectmpop" value="Go to Mobile Site" onClick="javascript:mobilepop('redirect');" /> </p>-->
+	    
+	
+
+
+	<!--Begin Utility Bar-->
+	<UL>
+	<LI><U><FONT COLOR=blue>
+		[Text Only]</FONT></U>
+		<U><FONT COLOR=blue>[Login to MyLSU]</FONT></U>
+	</LI> 
+	<LI> Baton Rouge, Louisiana | 
+	<!--Begin date display-->
+	display_todays_date();
+	<!--end date display-->
+	</LI> 
+
+ 	<LI>
+	<FORM>
+		 
+		<INPUT WIDTH="17" NAME="image" HEIGHT="14" TYPE="image">
+		<INPUT VALUE="Search lsu.edu" NAME="q" SIZE="20" TYPE="text">
+		<INPUT VALUE="lsu.edu" NAME="sitesearch" TYPE="hidden"> 
+		</FORM>
+	</LI>
+
+</UL>
+<!--End Utility Bar   -->
+		
+ 
+<U><FONT COLOR=blue></FONT></U>
+
+	<UL>
+ 	  <LI><U><FONT COLOR=blue>LSU Libraries</FONT></U><!-- Begin Home Item -->
+    
+       <!-- <div class="dropdown_2columns">--><!-- Begin 2 columns container -->
+    
+    <!--        <div class="col_2">
+                <h2>Welcome !</h2>
+            </div>
+    
+            <div class="col_2">
+                <p>Welcome to the LSU Libraries web site.  </p>             
+                <p>The LSU Libraries web site is a gateway to the information and research needs of the LSU community.  It can be used to locate books, link to ejournal articles, communicate with subject librarians and other library staff and faculty members.</p>             
+            </div>
+    
+            <div class="col_2">
+                <h2>Cross Browser Support</h2>
+            </div>
+            
+            <div class="col_1">
+                <img src="img/browsers.png" width="125" height="48" alt="" />
+            </div>
+            
+            <div class="col_1">
+                <p>This mega menu has been tested in all major browsers.</p>
+            </div>
+          
+        </div>--><!-- End 2 columns container -->
+    
+    </LI><!-- End Home Item -->
+    
+         <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////          ABOUT US                   ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+ 	   	 <LI><U><FONT COLOR=blue>About Us</FONT></U><!-- Begin 5 columns Item -->
+        <!-- Begin 5 columns container -->
+        
+             
+                <H2>Welcome to the LSU Libraries Website!</H2>
+                <P>The LSU Libraries web site is a gateway to the information and research needs of the LSU community. It can be used to locate books, link to ejournal articles, and to communicate with subject librarians and other library staff and faculty members.
+</P>
+            
+             
+            
+                <H3>Information</H3>
+     <!--           <p class="black_box">This is a dark grey box text. Fusce in metus at enim porta lacinia vitae a arcu. Sed sed lacus nulla mollis porta quis.</p>-->
+     
+            <UL> 
+            <LI><U><FONT COLOR=blue>About the Libraries</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Driving Directions</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Employment</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Hours</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Policies</FONT></U></LI>
+            
+            </UL>
+            
+   		        
+                <H3>Directory</H3>
+                <UL>
+                <LI><U><FONT COLOR=blue>All</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Faculty</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Subject Librarians</FONT></U></LI>
+              <!--  <li><a href="http://www.lib.lsu.edu/sp/subjects/staff.php?letter=By Department">By Departments</a></li>-->
+                </UL>
+                
+                
+             
+            
+               <H3>Frequently Dialed Numbers</H3>
+               
+              <P>- Circulation (fines, borrowing): 578-2058<BR> 
+              - Reference (help finding information): 578-5652<BR>
+              - Music Resources: 578-4674<BR>
+              - Special Collections: 578-6568 </P>
+            
+           &nbsp; 
+                   
+                   
+                   
+                   <U><FONT COLOR=blue>[INLINE]</FONT></U>
+                   
+                     <U><FONT COLOR=blue>[INLINE]</FONT></U>
+                  <U><FONT COLOR=blue> [INLINE]</FONT></U>
+                   <U><FONT COLOR=blue> [INLINE] </FONT></U>
+                  
+            
+                
+                
+         
+ 
+        
+        <!-- End 5 columns container -->
+     </LI><!-- End 5 columns Item -->
+     
+     <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////          RESEARCH TOOLS             ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+     
+     <LI><U><FONT COLOR=blue>Research Tools</FONT></U><!-- Begin 4 columns Item -->
+    
+        <!-- Begin 4 columns container -->
+        
+               
+            
+                <H3>Find Books</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Online Catalog</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>WorldCat Local</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Subject Guides</FONT></U></LI>
+<!--                    <li><a href="http://www.lib.lsu.edu/sp/subjects/index.php">Subject Guides</a></li> -->
+                    <LI><U><FONT COLOR=blue>Gov't Documents</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Reserves</FONT></U>
+                    <!-- <li><a href="#">more</a></li>-->
+                </UL>   
+                             
+                   
+                <H3>Find Articles</H3> 
+                <UL>
+                    <LI><U><FONT COLOR=blue>Indexes &amp; Databases</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Ejournals</FONT></U></LI>
+                 <!--   <li><a href="#">How to find Articles</a></li>-->
+                </UL>   
+                 
+                <H3>Other</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Gov't Documents</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Other Resources</FONT></U></LI>
+                </UL>   
+            
+               
+                <H3>Help</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Subject Librarians</FONT></U></LI>
+<!--                <li><a href="http://www.lib.lsu.edu/sp/subjects/staff.php?letter=Subject Librarians AZ">Subject Librarians</a></li> -->
+                    <LI><U><FONT COLOR=blue>Tutorials</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Technical Help</FONT></U></LI>
+                </UL>   
+            
+   
+        <!-- End 4 columns container -->
+    
+    </LI><!-- End 4 columns Item -->
+    
+  
+    <!-- Start services -->
+         <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////             SERVICES                ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+    
+        <LI><U><FONT COLOR=blue>Services</FONT></U><!-- Begin 4 columns Item -->
+    
+        <!-- Begin 4 columns container -->
+        
+    <!--        <div class="col_3">
+                <h2>Research</h2>
+            </div>
+    -->      
+         
+            
+            
+                    <H3>Instruction</H3>
+                <UL>
+                
+                    <LI><U><FONT COLOR=blue>Instruction Webpage</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>LIS 1001</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Tutorial Center (141 Middleton)</FONT></U>
+                    
+                    <LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Tutorials</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Request Instruction</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Reserve a Classroom</FONT></U></LI>
+               
+                </UL>   
+                 
+            
+       
+  
+    
+            
+            
+                <H3>Borrowing</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Interlibrary Loan</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Your Library Account</FONT></U></LI>
+              
+                    <LI><U><FONT COLOR=blue>Circulation Policies</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Reserves</FONT></U></LI>
+                   <!-- <li><a href="#">more</a></li>-->
+                </UL>   
+                
+                 <H3>Other</H3>
+                <UL>
+                <LI><U><FONT COLOR=blue>Disability Services</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Distance Education</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Study/ Presentation Rooms</FONT></U>
+                </UL>
+                 
+            
+    
+            
+            
+                <H3>Technology</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Help Desk</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Print Desk</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Find a Computer</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Technical Help</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Visualization Services Center (109 Middleton)</FONT></U>
+                 
+                </UL>  
+                 
+            
+    
+     <!--       <div class="col_1">
+            
+                <h3>Misc</h3>
+                <ul>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Logo</a></li>
+                    <li><a href="#">Flash</a></li>
+                    <li><a href="#">Illustration</a></li>
+                    <li><a href="#">More...</a></li>
+                </ul>   
+                 
+            </div>
+            -->
+        <!-- End 4 columns container -->
+    
+    </LI><!-- End 4 columns Item -->
+    
+    <!-- end services -->
+    
+         <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////             DEPARTMENTS             ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+
+	<LI><U><FONT COLOR=blue>Departments</FONT></U>
+    
+		
+        
+                
+                
+                    <UL>
+                        <LI><U><FONT COLOR=blue>Acquisitions</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Circulation</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Education Resources</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Gov't Documents</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Interlibrary Loan</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Music Resources</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Reference</FONT></U></LI>                     
+                        <LI><U><FONT COLOR=blue>Special Collections</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>More</FONT></U></LI>
+              
+                    </UL>   
+                     
+                
+                
+		
+        
+	</LI>
+
+
+     <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////              HELP                   ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+
+    <LI><U><FONT COLOR=blue>Help</FONT></U><!-- Begin 3 columns Item -->
+    
+        <!-- Begin 3 columns container -->
+            
+            
+                <H2>Help</H2>
+            
+            
+             
+    
+                <UL>
+                    <LI><U><FONT COLOR=blue>Technical Help</FONT></U></LI>
+                   
+                    <LI><U><FONT COLOR=blue>Tutorial Center</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Call Us</FONT></U> 225.578.8875</LI>
+                
+                </UL>   
+    
+            
+            
+            
+    
+                <UL>
+                    <LI><U><FONT COLOR=blue>Research Help</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Help Desk</FONT></U> 225.578.3375</LI>
+                    <LI><U><FONT COLOR=blue>Email Us</FONT></U></LI>
+               
+                </UL>   
+    
+            
+            
+            
+    
+                <UL>
+                    <LI><U><FONT COLOR=blue>FAQ</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>IM Us</FONT></U></LI>
+              
+                </UL>   
+    
+            
+            
+            
+                <H2>Search the Libraries Web Site</H2>
+                
+                     <FORM>
+                <INPUT WIDTH="17" NAME="image" HEIGHT="14" TYPE="image">
+                <INPUT NAME="q" TYPE="text">
+                <INPUT VALUE="www.lib.lsu.edu" NAME="sitesearch" TYPE="hidden">
+                </FORM>
+            
+            
+          <!--  <div class="col_3">
+                <img src="img/02.jpg" width="70" height="70" class="img_left imgshadow" alt="" />
+                <p><strong>Tutorial Lab</strong> Located in 141 Middleton Library, the lab offers tutoring in Math....(this should go under instruction)<a href="#">Read more...</a></p>
+    <br clear="all" />
+                <img src="img/01.jpg" width="70" height="70" class="img_left imgshadow" alt="" />
+                <p>Aliquam elementum felis quis felis consequat scelerisque. Fusce sed lectus at arcu mollis accumsan at nec nisi. Aliquam pretium mollis fringilla. Vestibulum tempor facilisis malesuada. <a href="#">Read more...</a></p>
+            </div>
+        -->
+        <!-- End 3 columns container -->
+        
+    </LI><!-- End 3 columns Item -->
+    
+         <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////           A TO Z                    ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+
+<LI><U><FONT COLOR=blue>A to Z</FONT></U></LI>
+</UL>
+  
+
+ 
+
+ 
+ 
+
+<H1>Faculty and Staff Directory</H1><!--	<h1>Faculty and Staff Directory</h1>-->
+	<P>The area code for all phone numbers is <EM>225</EM></P>
+	 Related links: 
+	 <U><FONT COLOR=blue>Quick Dial</FONT></U> | 
+     <U><FONT COLOR=blue>Subject Librarians</FONT></U> | 
+<!--	 <a href="http://test.lib.lsu.edu/sp/subjects/staff.php?letter=Subject%20Librarians%20AZ">Subject Librarians</a> |  -->
+	 <U><FONT COLOR=blue>All LSU Libraries Faculty</FONT></U> |
+	 <U><FONT COLOR=blue>GAs</FONT></U> |
+	 <U><FONT COLOR=blue>Committees</FONT></U> | 
+	 <U><FONT COLOR=blue>LOUIS Staff</FONT></U> 
+	 
+	<P>
+	<FORM>
+	<INPUT NAME="q" TYPE="text">
+	<INPUT VALUE="fname" NAME="field" TYPE="hidden">
+	<INPUT VALUE="yes" NAME="searching" TYPE="hidden">
+  	<INPUT VALUE="Search" NAME="Submit" TYPE="submit">  <EM>search last name OR first name (not both)</EM>
+	</FORM>
+	  </P>
+	 
+<P><HR><BR> <EM>Abbott, James</EM><BR>Facilities Manager<BR>Special Collections<BR><U><FONT COLOR=blue>jabbott@lsu.edu</FONT></U><BR>578-6548 <P><HR><BR> <EM>Abraham, Jennifer</EM><BR>Director, T. Harry Williams Center for Oral History<BR>Special Collections<BR><U><FONT COLOR=blue>jabrah1@lsu.edu</FONT></U><BR>578-7439 <P><HR><BR> <EM>Administrative Services</EM><BR>578-6897 <P><HR><BR> <EM>Aguero, Mauricio</EM><BR>Graduate Assistant<BR>Music Resources<BR><U><FONT COLOR=blue>maguer1@lsu.edu</FONT></U><BR>578-4674 <P><HR><BR> <EM>Albertine, Sissy</EM><BR>Photographic Collections<BR>Special Collections<BR><U><FONT COLOR=blue>salbert@lsu.edu</FONT></U><BR>578-6556 <P><HR><BR> <EM>Allen, Susan</EM><BR>Collection Management<BR><U><FONT COLOR=blue>spallen@lsu.edu</FONT></U><BR>578-7934 <P><HR><BR><U><FONT COLOR=blue> <EM>Anderson, John</EM></FONT></U><BR>Map Librarian and Director<BR>LSU Cartographic Information Center<BR><U><FONT COLOR=blue>janders@lsu.edu</FONT></U><BR>578-6247 <P><HR><BR><U><FONT COLOR=blue> <EM>Armstrong, William</EM></FONT></U><BR>Collection Development Coordinator<BR>Collection Development<BR><U><FONT COLOR=blue>notwwa@lsu.edu</FONT></U><BR>578-2738 <P><HR><BR> <EM>Arrighi, Marsha</EM><BR>Department Head<BR>Acquisitions Services<BR><U><FONT COLOR=blue>marrigh@lsu.edu</FONT></U><BR>578-8539 <P><HR><BR> <EM>Atchison, Debbie</EM><BR>Collection Management<BR><U><FONT COLOR=blue>datchis@lsu.edu</FONT></U><BR>578-9436 <P><HR><BR><U><FONT COLOR=blue> <EM>Bensman, Steve</EM></FONT></U><BR>Cataloging<BR><U><FONT COLOR=blue>notsjb@lsu.edu</FONT></U><BR>578-6932 <P><HR><BR> <EM>Bertrand, Kendra</EM><BR>Administrative Services<BR><U><FONT COLOR=blue>kbertr1@lsu.edu</FONT></U><BR>578-4368 <P><HR><BR> <EM>Bertrand, Shayne</EM><BR>Circulation<BR><U><FONT COLOR=blue>cbertr1@lsu.edu</FONT></U><BR>578-4226 <P><HR><BR> <EM>Bienvenu, Germain</EM><BR>Public Services<BR>Special Collections<BR><U><FONT COLOR=blue>gbienve@lsu.edu</FONT></U><BR>578-6566 <P><HR><BR> <EM>Bigelow, Robert</EM><BR>Education Resources<BR><U><FONT COLOR=blue>rbigelo@lsu.edu</FONT></U><BR>578-2349 <P><HR><BR><U><FONT COLOR=blue> <EM>Blessinger, Kelly</EM></FONT></U><BR>Reference Assistant Coordinator<BR>Reference<BR><U><FONT COLOR=blue>kblessi@lsu.edu</FONT></U><BR>578-8538 <P><HR><BR><U><FONT COLOR=blue> <EM>Bolton, Judy</EM></FONT></U><BR>Department Head, Public Services<BR>Special Collections<BR><U><FONT COLOR=blue>jbolton@lsu.edu</FONT></U><BR>578-6545 <P><HR><BR> <EM>Book Barn</EM><BR><U><FONT COLOR=blue>bbfriends@lsu.edu</FONT></U><BR>578-5925 <P><HR><BR><U><FONT COLOR=blue> <EM>Braunstein, Stephanie</EM></FONT></U><BR>Government Documents/ Microforms<BR>Reference<BR><U><FONT COLOR=blue>sbraunst@lsu.edu</FONT></U><BR>578-7021 <P><HR><BR> <EM>Brewer, Tom</EM><BR>Computer Analyst<BR>Library Systems<BR><U><FONT COLOR=blue>nottmb@lsu.edu</FONT></U><BR>578-6940 <P><HR><BR> <EM>Browning, Lydia</EM><BR>Administrative Coordinator<BR>Dean&#039;s Office<BR><U><FONT COLOR=blue>lbrow17@lsu.edu</FONT></U><BR>578-2217 <P><HR><BR> <EM>Buman, Nathan</EM><BR>Graduate Assistant, Civil War Book Review<BR>Special Collections<BR><U><FONT COLOR=blue>nbuman1@lsu.edu</FONT></U><BR>578-3553 <P><HR><BR><U><FONT COLOR=blue> <EM>Caminita, Cristina</EM></FONT></U><BR>Agriculture and Instruction Librarian<BR>Reference<BR><U><FONT COLOR=blue>ccamin1@lsu.edu</FONT></U><BR>578-9433 <P><HR><BR> <EM>Campbell, Gayle</EM><BR>Department Head<BR>Interlibrary Borrowing<BR><U><FONT COLOR=blue>gcampb2@lsu.edu</FONT></U><BR>578-2057 <P><HR><BR> <EM>Cannon, Debbie</EM><BR>Government Documents<BR><U><FONT COLOR=blue>dcannon@lsu.edu</FONT></U><BR>578-7208 <P><HR><BR><U><FONT COLOR=blue> <EM>Cargill, Jennifer</EM></FONT></U><BR>Dean of Libraries<BR>Dean&#039;s Office<BR><U><FONT COLOR=blue>cargill@lsu.edu</FONT></U><BR>578-2217 <P><HR><BR> <EM>Carnes, Jesse</EM><BR>Collection Management<BR><U><FONT COLOR=blue>notjic@lsu.edu</FONT></U><BR>578-3342 <P><HR><BR> <EM>Carrasco, Carlos</EM><BR>Computer Analyst<BR>Library Systems<BR><U><FONT COLOR=blue>carrasco@lsu.edu</FONT></U><BR>578-4236 <P><HR><BR> <EM>Carter, Anitra</EM><BR>Collection Management<BR><U><FONT COLOR=blue>acarte2@lsu.edu</FONT></U><BR>578-2358 <P><HR><BR> <EM>Cartographic Information Center</EM><BR>578-6247 <P><HR><BR><U><FONT COLOR=blue> <EM>Chalaron, Peggy</EM></FONT></U><BR>Department Head<BR>Education Resources<BR><U><FONT COLOR=blue>pchalar@lsu.edu</FONT></U><BR>578-7068 <P><HR><BR><U><FONT COLOR=blue> <EM>Charney, Laura</EM></FONT></U><BR>LA Newspaper Project Mgr.<BR>Special Collections<BR><U><FONT COLOR=blue>lcharn1@lsu.edu</FONT></U><BR>578-6529 <P><HR><BR> <EM>Circulation Desk</EM><BR>578-2058 <P><HR><BR> <EM>Coffee Shop</EM><BR>578-3719 <P><HR><BR> <EM>Collection Development</EM><BR>578-6572 <P><HR><BR> <EM>Collection Management</EM><BR>578-6897 <P><HR><BR> <EM>Comardelle, Inga</EM><BR>Collection Management<BR><U><FONT COLOR=blue>icomar1@lsu.edu</FONT></U><BR>578-7319 <P><HR><BR><U><FONT COLOR=blue> <EM>Costello, Gina</EM></FONT></U><BR>Digital Services Librarian<BR>Special Collections<BR><U><FONT COLOR=blue>gcoste1@lsu.edu</FONT></U><BR>578-3686 <P><HR><BR> <EM>Cowan, Barry</EM><BR>University Archives<BR>Special Collections<BR><U><FONT COLOR=blue>bcowan@lsu.edu</FONT></U><BR>578-6943 <P><HR><BR><U><FONT COLOR=blue> <EM>Daugherty, Alice</EM></FONT></U><BR>Assessment Librarian<BR>Reference<BR><U><FONT COLOR=blue>adaugher@lsu.edu</FONT></U><BR>578-7652 <P><HR><BR> <EM>Deans Office Fax</EM><BR>578-6825 <P><HR><BR><U><FONT COLOR=blue> <EM>Diamond, Tom</EM></FONT></U><BR>Head of Reference and Collection Development Services<BR>Reference<BR><U><FONT COLOR=blue>notted@lsu.edu</FONT></U><BR>578-6572 <P><HR><BR> <EM>Education Resources</EM><BR>578-2349 <P><HR><BR> <EM>Faulkner, Cory</EM><BR>Graduate Assistant<BR>Special Collections<BR><U><FONT COLOR=blue>cfaulk6@lsu.edu</FONT></U><BR><P><HR><BR> <EM>Fellin, Elaine</EM><BR>Collection Management<BR><U><FONT COLOR=blue>efellin@lsu.edu</FONT></U><BR>578-3341 <P><HR><BR> <EM>Ferstel, Sarah</EM><BR>Reference<BR><U><FONT COLOR=blue>sferst1@lsu.edu</FONT></U><BR>578-7195 <P><HR><BR> <EM>Fix Library Building</EM><BR><U><FONT COLOR=blue>libfix@lsu.edu</FONT></U><BR><P><HR><BR> <EM>Fontenot, Jeremy</EM><BR>Carrel Manager<BR>Circulation<BR><U><FONT COLOR=blue>jfont27@lsu.edu</FONT></U><BR>578-1443 <P><HR><BR><U><FONT COLOR=blue> <EM>Fontenot, Mitch</EM></FONT></U><BR>Information Literacy/Outreach Librarian<BR>Reference<BR><U><FONT COLOR=blue>mfonten@lsu.edu</FONT></U><BR>578-7374 <P><HR><BR> <EM>Ford, Jason</EM><BR>Acquisitions<BR>Special Collections<BR><U><FONT COLOR=blue>jford1@lsu.edu</FONT></U><BR>578-7078 <P><HR><BR> <EM>Fourth Floor</EM><BR>578-6926 <P><HR><BR> <EM>Friends of the LSU Libraries</EM><BR><U><FONT COLOR=blue>bbfriends@lsu.edu</FONT></U><BR>578-5925 <P><HR><BR> <EM>Garbush, Charles</EM><BR>Clerk<BR>Distributions<BR>578-5296 <P><HR><BR> <EM>Gore, Robbie</EM><BR>Computer Analyst<BR>Library Systems<BR><U><FONT COLOR=blue>wgore2@lsu.edu</FONT></U><BR>578-2288 <P><HR><BR> <EM>Government Documents</EM><BR>578-2570 <P><HR><BR><U><FONT COLOR=blue> <EM>Griffin, Linda Smith</EM></FONT></U><BR>Department Head<BR>Cataloging<BR><U><FONT COLOR=blue>lgriffi@lsu.edu</FONT></U><BR>578-4685 <P><HR><BR> <EM>Haddad, Stephen</EM><BR>Graduate Assistant<BR>Government Documents<BR><U><FONT COLOR=blue>shadda4@lsu.edu</FONT></U><BR><P><HR><BR> <EM>Hanson, Diane</EM><BR>Interlibrary Loan<BR><U><FONT COLOR=blue>dshanson@lsu.edu</FONT></U><BR>578-8560 <P><HR><BR> <EM>Harrell, Gabe</EM><BR>Digital Services<BR>Special Collections<BR><U><FONT COLOR=blue>jharre7@lsu.edu</FONT></U><BR>578-7352 <P><HR><BR> <EM>Hartman, Lindsey</EM><BR>Graduate Assistant<BR>Music Resources<BR><U><FONT COLOR=blue>lhartm1@tigers.lsu.edu</FONT></U><BR><P><HR><BR> <EM>Henderson, Luana</EM><BR>Manuscripts Processing<BR>Special Collections<BR><U><FONT COLOR=blue>lphende@lsu.edu</FONT></U><BR>578-6554 <P><HR><BR><U><FONT COLOR=blue> <EM>Henson, Jo Ann</EM></FONT></U><BR>Business Reference Librarian<BR>Reference<BR><U><FONT COLOR=blue>jjhenson@lsu.edu</FONT></U><BR>578-6575 <P><HR><BR> <EM>Hess, Erin McMenamin</EM><BR>Manuscripts Processing/Digital Assets<BR>Special Collections<BR><U><FONT COLOR=blue>emcmen1@lsu.edu</FONT></U><BR>578-6577 <P><HR><BR> <EM>Hill Memorial Library</EM><BR>578-6544 <P><HR><BR> <EM>Hill Memorial Library Information Desk</EM><BR>578-6544 <P><HR><BR> <EM>Hill Memorial Library Reading Room</EM><BR>Acquisitions Services<BR>578-6568 <P><HR><BR><U><FONT COLOR=blue> <EM>Hires, Will</EM></FONT></U><BR>Engineering and Scholarly Communications Librarian<BR>Reference<BR><U><FONT COLOR=blue>whires1@lsu.edu</FONT></U><BR>578-8264 <P><HR><BR> <EM>Hollins, Rosalind</EM><BR>Cataloging<BR><U><FONT COLOR=blue>rhollin@lsu.edu</FONT></U><BR>578-7320 <P><HR><BR><U><FONT COLOR=blue> <EM>Hrycaj, Paul</EM></FONT></U><BR>Reference Librarian/Information Literacy Librarian<BR>Reference<BR><U><FONT COLOR=blue>phryca1@lsu.edu</FONT></U><BR>578-2629 <P><HR><BR> <EM>Hutson, Doris</EM><BR>Government Documents<BR><U><FONT COLOR=blue>dchutso@lsu.edu</FONT></U><BR>578-7204 <P><HR><BR> <EM>ILB Fax</EM><BR>578-6992 <P><HR><BR> <EM>ILL Fax</EM><BR>578-5723 <P><HR><BR> <EM>Information</EM><BR>578-5652 <P><HR><BR> <EM>Inter-Library Borrowing</EM><BR><U><FONT COLOR=blue>libilb@lsu.edu</FONT></U><BR>578-2138 <P><HR><BR> <EM>Inter-Library Lending</EM><BR><U><FONT COLOR=blue>libill@lsu.edu</FONT></U><BR>578-8560 <P><HR><BR> <EM>ITS Help Desk</EM><BR>578-3375 <P><HR><BR> <EM>ITS Print Desk</EM><BR>578-7554 <P><HR><BR> <EM>Jarreau, Mona</EM><BR>Reserve Desk<BR>Circulation<BR><U><FONT COLOR=blue>mjarrea@lsu.edu</FONT></U><BR>578-6722 <P><HR><BR> <EM>Jewett, Leah Wood</EM><BR>Exhibitions Coordinator<BR>Special Collections<BR><U><FONT COLOR=blue>lwood@lsu.edu</FONT></U><BR>578-6558 <P><HR><BR> <EM>Jones, Amy</EM><BR>Graduate Assistant<BR>Special Collections<BR><U><FONT COLOR=blue>ajon169@tigers.lsu.edu</FONT></U><BR><P><HR><BR> <EM>Jones, Katie</EM><BR>Graduate Assistant<BR>Reference<BR><U><FONT COLOR=blue>mjon131@lsu.edu</FONT></U><BR>578-7232 <P><HR><BR> <EM>Juneau, Jason</EM><BR>4th Floor Stacks Supervisor<BR>Circulation<BR><U><FONT COLOR=blue>jjunea2@lsu.edu</FONT></U><BR>578-6926 <P><HR><BR><U><FONT COLOR=blue> <EM>Kelsey, Sigrid</EM></FONT></U><BR>Electronic Reference Resources and Web Development Coordinator<BR>Reference<BR><U><FONT COLOR=blue>skelsey@lsu.edu</FONT></U><BR>578-2720  <P><HR><BR> <EM>Kimrey, Jacob</EM><BR>Microfilming<BR>Special Collections<BR><U><FONT COLOR=blue>jkimre1@lsu.edu</FONT></U><BR>578-6567 <P><HR><BR> <EM>Knippers, Amanda</EM><BR>Business Manager<BR>Library Administration<BR><U><FONT COLOR=blue>aknipp1@lsu.edu</FONT></U><BR>578-7318 <P><HR><BR><U><FONT COLOR=blue> <EM>Kuyper-Rushing, Lois</EM></FONT></U><BR>Department Head<BR>Music Resources<BR><U><FONT COLOR=blue>lkuyper@lsu.edu</FONT></U><BR>578-4622 <P><HR><BR> <EM>Laatsch, David</EM><BR>Graduate Assistant<BR>Special Collections<BR><U><FONT COLOR=blue>dlaats1@lsu.edu</FONT></U><BR><P><HR><BR><U><FONT COLOR=blue> <EM>Laver, Tara Zachary</EM></FONT></U><BR>Curator of Manuscripts<BR>Special Collections<BR><U><FONT COLOR=blue>tzachar@lsu.edu</FONT></U><BR>578-6546 <P><HR><BR> <EM>Law Library</EM><BR>578-4042 <P><HR><BR> <EM>LeBlanc, Aimee</EM><BR>Graduate Assistant<BR>Interlibrary Borrowing<BR><U><FONT COLOR=blue>alebl79@lsu.edu</FONT></U><BR><P><HR><BR> <EM>LeDee, Mikel</EM><BR>Music Resources<BR><U><FONT COLOR=blue>mledee1@lsu.edu</FONT></U><BR>578-4674 <P><HR><BR><U><FONT COLOR=blue> <EM>Lee, Sheila Y.</EM></FONT></U><BR>LA Newspaper Project<BR>Special Collections<BR><U><FONT COLOR=blue>slee10@lsu.edu</FONT></U><BR>578-6339 <P><HR><BR> <EM>LeJeune, Elisa</EM><BR>Graduate Assistant<BR>Cataloging<BR><U><FONT COLOR=blue>elejeu4@lsu.edu</FONT></U><BR><P><HR><BR><U><FONT COLOR=blue> <EM>Lercher, Aaron</EM></FONT></U><BR>Mathematics Librarian<BR>Reference<BR><U><FONT COLOR=blue>alerche1@lsu.edu</FONT></U><BR>578-4778 <P><HR><BR> <EM>Library Office</EM><BR>578-2217 <P><HR><BR> <EM>Library Systems Division</EM><BR>578-3215 <P><HR><BR> <EM>LOUIS</EM><BR>578-3700 <P><HR><BR> <EM>Lounsberry, Megan</EM><BR>Interlibrary Borrowing<BR><U><FONT COLOR=blue>mlouns1@lsu.edu</FONT></U><BR>578-9424 <P><HR><BR><U><FONT COLOR=blue> <EM>Martin, Mark</EM></FONT></U><BR>Processing Archivist<BR>Special Collections<BR><U><FONT COLOR=blue>mmarti3@lsu.edu</FONT></U><BR>578-6501 <P><HR><BR> <EM>McHugh, Cara</EM><BR>Graduate Assistant<BR>Reference<BR><U><FONT COLOR=blue>cmchug2@lsu.edu</FONT></U><BR><P><HR><BR> <EM>Melancon, Brian</EM><BR>Computer Manager<BR>Library Systems<BR><U><FONT COLOR=blue>bmelan1@lsu.edu</FONT></U><BR>578-9427 <P><HR><BR> <EM>Metz, Eric (Chad)</EM><BR>Circulation<BR><U><FONT COLOR=blue>emetz2@lsu.edu</FONT></U><BR>578-1407 <P><HR><BR> <EM>Michael, Cayce</EM><BR>Interlibrary Borrowing<BR><U><FONT COLOR=blue>cmichael@lsu.edu</FONT></U><BR>578-9424 <P><HR><BR> <EM>Michel, Ashley</EM><BR>Collection Management<BR><U><FONT COLOR=blue>amichel@lsu.edu</FONT></U><BR>578-7280 <P><HR><BR> <EM>Middleton Library Information</EM><BR>578-5652 <P><HR><BR><U><FONT COLOR=blue> <EM>Morrison, Don</EM></FONT></U><BR>Special Collections<BR><U><FONT COLOR=blue>dpmorris@lsu.edu</FONT></U><BR>578-6557 <P><HR><BR> <EM>Motsinger, Susan</EM><BR>Collection Management<BR><U><FONT COLOR=blue>smotsin@lsu.edu</FONT></U><BR>578-8623 <P><HR><BR> <EM>Mungall, Catherine</EM><BR>Collection Management<BR><U><FONT COLOR=blue>cmungal@lsu.edu</FONT></U><BR>578-2911 <P><HR><BR> <EM>Music Resources</EM><BR>Music Resources<BR>578-4674 <P><HR><BR><U><FONT COLOR=blue> <EM>Nicholson, Joseph</EM></FONT></U><BR>Cataloger<BR>Cataloging<BR><U><FONT COLOR=blue>nicholjr@lsu.edu</FONT></U><BR>578-8143 <P><HR><BR> <EM>Oral History T. Harry Williams Center for</EM><BR>578-6577 <P><HR><BR> <EM>Palermo, JoAnn</EM><BR>Published Materials Processing<BR>Special Collections<BR><U><FONT COLOR=blue>notjep@lsu.edu</FONT></U><BR>578-4035 <P><HR><BR> <EM>Personnel</EM><BR>578-7798 <P><HR><BR> <EM>Phone Renewal</EM><BR>578-2665 <P><HR><BR> <EM>Plank, Elissa</EM><BR>Department Head<BR>Circulation<BR><U><FONT COLOR=blue>esp1061@lsu.edu</FONT></U><BR>578-3216 <P><HR><BR> <EM>Pye, Nicole</EM><BR>Graduate Assistant<BR>Circulation<BR><U><FONT COLOR=blue>npye1@lsu.edu</FONT></U><BR>578-2058 <P><HR><BR><U><FONT COLOR=blue> <EM>Rasmussen, Hans</EM></FONT></U><BR>Cataloger<BR>Special Collections<BR><U><FONT COLOR=blue>hrasmuss@lsu.edu</FONT></U><BR>578-4803 <P><HR><BR> <EM>Reference</EM><BR>578-5652 <P><HR><BR> <EM>Reference Fax</EM><BR>578-9432 <P><HR><BR> <EM>Reserve Materials Desk</EM><BR>578-6722 <P><HR><BR> <EM>Richard, Caroline</EM><BR>Manuscripts Processing<BR>Special Collections<BR><U><FONT COLOR=blue>crich@lsu.edu</FONT></U><BR>578-6554 <P><HR><BR><U><FONT COLOR=blue> <EM>Riquelmy, Christina</EM></FONT></U><BR>Rare Book Cataloger<BR>Special Collections<BR><U><FONT COLOR=blue>criquel@lsu.edu</FONT></U><BR>578-6533 <P><HR><BR> <EM>Rogers, Paulette</EM><BR>Government Documents<BR><U><FONT COLOR=blue>progers@lsu.edu</FONT></U><BR>578-7206 <P><HR><BR><U><FONT COLOR=blue> <EM>Russo, Michael</EM></FONT></U><BR>Instruction Coordinator<BR>Reference<BR><U><FONT COLOR=blue>mrusso1@lsu.edu</FONT></U><BR>578-6823 <P><HR><BR> <EM>Shows, Kim Tran</EM><BR>Acquisitions Services<BR><U><FONT COLOR=blue>khtran@lsu.edu</FONT></U><BR>578-3319 <P><HR><BR> <EM>Signater, Jordan</EM><BR>Circulation<BR><U><FONT COLOR=blue>jsigna1@lsu.edu</FONT></U><BR>578-1224 <P><HR><BR> <EM>Simmerman, Karl</EM><BR>Graduate Assistant<BR>Circulation<BR><U><FONT COLOR=blue>ksimmer1@lsu.edu</FONT></U><BR><P><HR><BR> <EM>Smith, Anne</EM><BR>Processing<BR>Special Collections<BR><U><FONT COLOR=blue>alsmith@lsu.edu</FONT></U><BR>578-6835 <P><HR><BR><U><FONT COLOR=blue> <EM>Smyth, Elaine</EM></FONT></U><BR>Head of Special Collections<BR>Special Collections<BR><U><FONT COLOR=blue>esmyth@lsu.edu</FONT></U><BR>578-6552 <P><HR><BR> <EM>Special Collections Admin. Office</EM><BR>578-6544 <P><HR><BR> <EM>Special Collections Admin. Office Fax</EM><BR>578-9425 <P><HR><BR> <EM>Special Collections Reference</EM><BR>578-6568 <P><HR><BR> <EM>Staub, Melba</EM><BR>Interlibrary Borrowing<BR><U><FONT COLOR=blue>mstaub@lsu.edu</FONT></U><BR>578-9424 <P><HR><BR> <EM>Stowe, John</EM><BR>Acquisitions Services<BR><U><FONT COLOR=blue>jstowe@lsu.edu</FONT></U><BR>578-3003 <P><HR><BR> <EM>Taylor, Dana</EM><BR>Department Head<BR>Collection Management<BR><U><FONT COLOR=blue>notdlr@lsu.edu</FONT></U><BR>578-4039 <P><HR><BR><U><FONT COLOR=blue> <EM>Taylor, Michael</EM></FONT></U><BR>Assistant Curator of Books<BR>Special Collections<BR><U><FONT COLOR=blue>mltaylor@lsu.edu</FONT></U><BR>578-6547 <P><HR><BR> <EM>Thibodeaux, Trey</EM><BR>3rd Floor Stacks<BR>Circulation<BR><U><FONT COLOR=blue>ethibo3@lsu.edu</FONT></U><BR>578-6927 <P><HR><BR> <EM>Third Floor</EM><BR>578-6927 <P><HR><BR> <EM>Tiegs, Jennifer</EM><BR>Digital Services<BR>Special Collections<BR><U><FONT COLOR=blue>jtiegs@lsu.edu</FONT></U><BR>578-7548 <P><HR><BR> <EM>Tutorial Center CAS</EM><BR>578-7119 <P><HR><BR> <EM>University Archives</EM><BR>578-6943 <P><HR><BR> <EM>Vallance, Brenda</EM><BR>Collection Management<BR><U><FONT COLOR=blue>bvallan@lsu.edu</FONT></U><BR>578-7932 <P><HR><BR> <EM>Varin, Vanessa</EM><BR>Graduate Assistant<BR>Special Collections<BR><U><FONT COLOR=blue>vvarin1@lsu.edu</FONT></U><BR><P><HR><BR><U><FONT COLOR=blue> <EM>Veeder, Hillary</EM></FONT></U><BR>Art and Design Librarian<BR>Reference<BR><U><FONT COLOR=blue>hveede1@lsu.edu</FONT></U><BR>578-7197 <P><HR><BR> <EM>Velez, Nanci</EM><BR>University Archives<BR>Special Collections<BR><U><FONT COLOR=blue>nvelez2@lsu.edu</FONT></U><BR>578-6943 <P><HR><BR> <EM>Veterinary Medicine Library School of</EM><BR>578-9800 <P><HR><BR> <EM>Villarreal, Susan</EM><BR>Collection Management<BR><U><FONT COLOR=blue>svillarr@lsu.edu</FONT></U><BR>578-7639 <P><HR><BR> <EM>Walden, Glenn</EM><BR>Music Resources<BR><U><FONT COLOR=blue>gwalden@lsu.edu</FONT></U><BR>578-2900 <P><HR><BR> <EM>Williams, Travis</EM><BR>Graduate Assistant<BR>Special Collections<BR><U><FONT COLOR=blue>twill65@lsu.edu</FONT></U><BR><P><HR><BR> <EM>Zaske, Dawn</EM><BR>Coordinator of Personnel Services<BR>Dean&#039;s Office<BR><U><FONT COLOR=blue>dzaske@lsu.edu</FONT></U><BR>578-7798 
+
+  
+ 
+ <U><FONT COLOR=blue>[LSU Logo]</FONT></U>
+<BR><U><FONT COLOR=blue>LSU Libraries</FONT></U>
+<BR>Baton Rouge, LA 70803
+<BR>Tel (225) 578-5652
+<BR>Fax (225) 578-9432 
+
+
+
+<!-- AddThis Button END -->
+<BR> 
+
+<UL>
+<LI><U><FONT COLOR=blue>LSU Libraries</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Contact Us</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Mobile Website</FONT></U></LI>
+<!--<li><a href="http://www.lsu.edu">Louisiana State University</a></li>-->
+<LI>
+<U><FONT COLOR=blue>[Library Blog]</FONT></U>
+<U><FONT COLOR=blue>[RSS Feed]</FONT></U>
+<U><FONT COLOR=blue>[Library Facebook Page]</FONT></U>
+<U><FONT COLOR=blue>[Library Twitter Page] </FONT></U>
+<!-- AddThis Button BEGIN -->
+
+//var addthis_config = {
+ //  ui_click: true
+//}
+
+<!--a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa4a8b0c2a79cf3130">
+<img style="verticalalign:middle;" src="http://s7.addthis.com/static/btn/v2/lgbookmarken.gif" width="125" height="16" alt="Bookmark and Share" style="border:0" />
+</a>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=xa4a8b0c2a79cf3130"></script> -->
+</LI>
+</UL>
+<BR>
+<CENTER>Copyright &copy; 1996 - <!--#config timefmt="%Y" --><!--#echo var="DATE_LOCAL" --> LSU Libraries<BR> <!--<img src="/images/external.png" /><span class="small">Links away from LSU.edu</span> --></CENTER><BR>
+
+
+<!--<div class="right">
+<a href="http://www.lsu150.com/"><img src="/images/150year.jpg" /></a>
+
+
+</div> -->
+
+<BR>
+ 
+ 
+
+
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22589452-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ </BODY BGCOLOR="#FFFFFF" TEXT="#000000"></HTML>

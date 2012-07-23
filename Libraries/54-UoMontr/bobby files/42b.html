@@ -1,0 +1,720 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<HTML>
+    <HEAD>
+        <TITLE>PAPYRUS - Université de Montréal: Accueil</TITLE>
+        <META CONTENT="text/html; charset=UTF-8">
+        <META NAME="Generator" CONTENT="DSpace">
+        
+        
+        
+        
+
+        
+
+        
+    
+    
+    <!-- Ajout de la méthode de redirection -->
+    
+    function gup( name )
+    {
+    	//
+    	// Function qui permet d'extraire un parametre spécifique dans un url
+    	//
+    	
+    	name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+    	var regexS = "[\\?&]"+name+"=([^&#]*)";
+    	var regex = new RegExp( regexS );
+    	var results = regex.exec( window.location.href );
+    	if( results == null )
+    		return "";
+    	else
+    		return results[1];
+    }
+    
+    function ChangeLanguage(languageToGo) 
+    {
+    	var cURL = document.location.href; // URL courante
+    	var nURL = cURL; // URL de redirection
+    	var paramLocal = gup("locale"); // Parametre local 
+    	
+    	if (paramLocal.length > 0)
+    	{
+    		nURL = nURL.replace("locale=" + paramLocal, "locale=" + languageToGo);
+    		//alert("1. \nParametre local : \n" + languageToGo + "\n\nVieux lien : \n" + cURL + "\n\nRedirection vers : \n" + nURL);
+    	}
+    	else
+    	{
+    		if(cURL.indexOf('?') > 0)
+    		{
+    			nURL = nURL + "&locale=" + languageToGo;
+    			//alert("2. \nParametre local : \n" + languageToGo + "\n\nVieux lien : \n" + cURL + "\n\nRedirection vers : \n" + nURL);
+    		}
+    		else
+    		{
+    			nURL = nURL + "?locale=" + languageToGo;
+    			//alert("3. \nParametre local : \n" + languageToGo + "\n\nVieux lien : \n" + cURL + "\n\nRedirection vers : \n" + nURL);
+    		}
+    	}
+    	
+    	window.location.href= nURL;
+    }
+    
+
+    
+    </HEAD>
+
+    
+    
+    <BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		
+        
+        
+
+
+        <TABLE>
+
+						<TR>
+							<TD><U><FONT COLOR=blue>[Logo UdeM]</FONT></U></TD>
+							<TD></TD>
+							<TD>
+								
+								
+											
+								<TABLE>
+								<FORM>
+								<TR>
+
+								<TD>
+								<U><FONT COLOR=blue>Répertoires</FONT></U>
+								| <U><FONT COLOR=blue>Facultés</FONT></U>
+								| <U><FONT COLOR=blue>Bibliothèques</FONT></U>		
+								| <U><FONT COLOR=blue>Actualités</FONT></U>		
+								| <U><FONT COLOR=blue>Sites A-Z</FONT></U>
+								<!-- | <a target="_blank" class="menuUdem" href="https://www.portail.umontreal.ca/">Mon portail UdeM</a> -->
+								| Recherche sites UdeM:<INPUT VALUE="" NAME="q" MAXLENGTH="40" SIZE="10" TYPE="text"><INPUT VALUE="fr" NAME="hl" TYPE="hidden"><INPUT VALUE="UTF-8" NAME="ie" TYPE="hidden"><INPUT VALUE="ok" TYPE="submit">&nbsp;
+								</TD>
+
+
+								</TR>
+								</FORM>
+								</TABLE>
+					
+							</TD>
+					</TR>
+
+					<TR>
+						<TD></TD>
+					</TR> 
+
+
+					<TR>
+						<TD></TD>
+						<TD></TD>
+						<TD></TD>
+					</TR>
+				
+					<TR>
+					   	<TD></TD>
+					</TR> 
+				
+
+					<TR>
+						<TD>&nbsp;</TD>
+						<TD></TD>
+						<TD><U><FONT COLOR=blue>[DSpace]</FONT></U></TD>
+						<TD></TD>
+						<TD>
+							<U><FONT COLOR=blue>[INLINE]</FONT></U></TD>					
+					</TR>
+
+
+
+					<TR>
+					   	<TD>
+					   							   		
+					   		 
+															
+															        <FORM>
+															          <INPUT NAME="locale" TYPE="hidden">
+															        </FORM>
+															        <P>
+															
+															        <U><FONT COLOR=blue>
+															            français</FONT></U>&nbsp;
+
+														
+															        <U><FONT COLOR=blue>
+															            English</FONT></U>&nbsp;
+
+														
+															</P>
+													 
+							
+
+					</TD>
+			</TR>
+
+
+        </TABLE>
+        
+
+
+        
+
+
+
+
+
+        
+
+        
+        <TABLE>
+
+            
+            <TR>
+
+            
+
+            <TD>
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- DEBUT FICHIER NAVBARDEFAULT.JSP -->
+
+<FORM>
+
+  <TABLE>
+    <TR>
+      <TD>
+
+        <TABLE>
+          <TR>
+            <TD>Chercher&nbsp;dans&nbsp;le&nbsp;dépôt:</TD>
+          </TR>
+          <TR>
+            <TD>
+              
+              <!-- tag_alex ici on a l'insertion de la recherche -->
+              <INPUT NAME="query" SIZE="12" TYPE="text">
+              <INPUT VALUE="ok" NAME="submit" TYPE="submit">
+              &nbsp;&nbsp;<U><FONT COLOR=blue>Recherche avancée</FONT></U>
+
+            </TD>
+          </TR>
+        </TABLE>
+      </TD>
+    </TR>
+  </TABLE>
+</FORM>
+
+
+<TABLE>
+
+  <TR>
+    <TD>
+      <U><FONT COLOR=blue>Accueil</FONT></U>
+    </TD>
+  </TR>
+
+  <TR>
+    <TD>
+      <U><FONT COLOR=blue>Nouvel utilisateur?</FONT></U>
+    </TD>
+  </TR>
+
+
+
+
+  <TR>
+    <TD>Parcourir le dépôt par:</TD>
+  </TR>
+
+  <TR>
+    <TD>
+      <U><FONT COLOR=blue>Communautés&nbsp;et<BR>&nbsp;collections</FONT></U>
+    </TD>
+  </TR>
+
+
+
+
+
+
+
+		<TR>
+
+    	<TD>
+     			<U><FONT COLOR=blue>Date</FONT></U>
+    	</TD>
+ 		</TR>
+	
+		<TR>
+
+    	<TD>
+     			<U><FONT COLOR=blue>Auteur</FONT></U>
+    	</TD>
+ 		</TR>
+	
+		<TR>
+
+    	<TD>
+     			<U><FONT COLOR=blue>Directeur de recherche</FONT></U>
+    	</TD>
+ 		</TR>
+	
+		<TR>
+
+    	<TD>
+     			<U><FONT COLOR=blue>Titre</FONT></U>
+    	</TD>
+ 		</TR>
+	
+		<TR>
+
+    	<TD>
+     			<U><FONT COLOR=blue>Sujet</FONT></U>
+    	</TD>
+ 		</TR>
+	
+		<TR>
+
+    	<TD>
+     			<U><FONT COLOR=blue>Programme (thèses et mémoires)</FONT></U>
+    	</TD>
+ 		</TR>
+	
+
+
+
+  <TR>
+    <TD>Services personnalisés:</TD>
+  </TR>
+
+  <TR>
+    <TD>
+      <U><FONT COLOR=blue>Espace personnel</FONT></U>
+      &nbsp;&nbsp;utilisateurs autorisés 
+    </TD>
+  </TR>
+
+  <TR>
+    <TD>
+      <U><FONT COLOR=blue>Déposer&nbsp;un&nbsp;document</FONT></U>
+    </TD>
+  </TR>
+
+  <TR>
+    <TD>
+      <U><FONT COLOR=blue>Alertes&nbsp;courriel</FONT></U>
+    </TD>
+  </TR>
+
+
+  <TR>
+    <TD>
+      <U><FONT COLOR=blue>Modifier mon profil</FONT></U>
+    </TD>
+  </TR>
+
+
+
+        
+  <TR>
+    <TD>
+      <U><FONT COLOR=blue>Statistiques</FONT></U> 
+    </TD>
+  </TR>              
+
+
+  <TR>
+    <TD>
+      
+<!-- Javascript starts here
+document.write('<a href="#" onClick="var popupwin = window.open(\'/jspui/help/index_fr.html\',\'dspacepopup\',\'height=500,width=700,resizable,scrollbars\');popupwin.focus();return false;">Aide<\/a>');
+// -->
+<U><FONT COLOR=blue>Aide</FONT></U>
+    </TD>
+  </TR>
+
+  <TR>
+    <TD>
+     <U><FONT COLOR=blue>Contacts&nbsp;et<BR>&nbsp;commentaires</FONT></U>
+    </TD>
+  </TR>
+
+
+</TABLE>
+
+            </TD>
+
+            
+
+            
+            
+            
+            <TD>
+
+
+
+                
+
+<!-- FIN FICHIER HEADERDEFAULT.JSP -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					
+
+<TABLE> <!-- table 1-->
+   <TR>
+     	<TD>
+     		  <!-- p style="border:2px green dotted;padding:6px;"><span style="color:red ;fontsize:12px;">Veuillez prendre note qu’un dépôt fait entre le 23 décembre et le 4 janvier sera vérifié au retour du congé des fêtes, soit  le jeudi 5 janvier 2012.</span></p --><!-- p style="border:2px #FF4500 dotted;padding:6px;"><span style="color:#FF4500 ;fontsize:12px;">Veuillez prendre note que le système Papyrus sera inaccessible le mardi 14 février 2012 de 7h00 à 12h00 EST pour permettre une miseàjour du système.</span></p --><P>Bienvenue dans <EM>Papyrus</EM>, le dépôt institutionnel de l'Université de Montréal. Vous trouverez ici des travaux de recherche de nos professeurs et chercheurs ainsi que des thèses et mémoires de nos étudiants.</P><H4>Communiqués</H4><P>24 au 30 octobre 2011 : <U><FONT COLOR=blue>Semaine internationale du libre accès</FONT></U><BR>1er octobre 2011 : <U><FONT COLOR=blue>Thèses et mémoires électroniques dans Papyrus</FONT></U> : deux an déjà... et plus de 2000 thèses en ligne!</P>
+        	  <!-- CSS a revoir -->
+               <H2>Communautés de recherche et d'enseignement représentées dans Papyrus</H2>
+                
+                
+                
+                <P></P>
+
+
+ 	<UL>
+                  <LI>
+                            <U><FONT COLOR=blue>Association des diplômés de l’Université de Montréal</FONT></U>
+
+            [&nbsp;397&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>Centre de recherche en éthique de l'UdeM</FONT></U>
+
+            [&nbsp;293&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>Département de kinésiologie</FONT></U>
+
+            [&nbsp;31&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>Direction des bibliothèques</FONT></U>
+
+            [&nbsp;83&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>École d'optométrie</FONT></U>
+
+            [&nbsp;4&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>Faculté de droit</FONT></U>
+
+            [&nbsp;779&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>Faculté de l'aménagement</FONT></U>
+
+            [&nbsp;101&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>Faculté de médecine</FONT></U>
+
+            [&nbsp;887&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>Faculté de médecine dentaire</FONT></U>
+
+            [&nbsp;17&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>Faculté de médecine vétérinaire</FONT></U>
+
+            [&nbsp;85&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>Faculté de musique</FONT></U>
+
+            [&nbsp;35&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>Faculté de pharmacie</FONT></U>
+
+            [&nbsp;63&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>Faculté des arts et des sciences</FONT></U>
+
+            [&nbsp;31&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>Faculté des sciences de l'éducation</FONT></U>
+
+            [&nbsp;130&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>Faculté des sciences infirmières</FONT></U>
+
+            [&nbsp;63&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>Faculté de théologie et de sciences des religions</FONT></U>
+
+            [&nbsp;70&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>FAS - Centre d'études classiques</FONT></U>
+
+            [&nbsp;6&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>FAS - Département d'anthropologie</FONT></U>
+
+            [&nbsp;82&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>FAS - Département de chimie</FONT></U>
+
+            [&nbsp;98&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>FAS - Département de communication</FONT></U>
+
+            [&nbsp;31&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>FAS - Département de démographie</FONT></U>
+
+            [&nbsp;35&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>FAS - Département de géographie</FONT></U>
+
+            [&nbsp;36&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>FAS - Département de linguistique et de traduction</FONT></U>
+
+            [&nbsp;27&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>FAS - Département de littérature comparée</FONT></U>
+
+            [&nbsp;52&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>FAS - Département de littératures et de langues modernes</FONT></U>
+
+            [&nbsp;36&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>FAS - Département de mathématiques et de statistique</FONT></U>
+
+            [&nbsp;54&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>FAS - Département de philosophie</FONT></U>
+
+            [&nbsp;83&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>FAS - Département de physique</FONT></U>
+
+            [&nbsp;75&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>FAS - Département de psychologie</FONT></U>
+
+            [&nbsp;168&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>FAS - Département de science politique</FONT></U>
+
+            [&nbsp;58&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>FAS - Département de sciences biologiques</FONT></U>
+
+            [&nbsp;53&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>FAS - Département de sciences économiques</FONT></U>
+
+            [&nbsp;1282&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>FAS - Département des littératures de langue française</FONT></U>
+
+            [&nbsp;96&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>FAS - Département de sociologie</FONT></U>
+
+            [&nbsp;91&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>FAS - Département d'études anglaises</FONT></U>
+
+            [&nbsp;15&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>FAS - Département d'histoire</FONT></U>
+
+            [&nbsp;51&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>FAS - Département d'histoire de l'art et d'études cinématographiques</FONT></U>
+
+            [&nbsp;55&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>FAS - Département d'informatique et de recherche opérationnelle</FONT></U>
+
+            [&nbsp;114&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>FAS - École de bibliothéconomie et des sciences de l'information (EBSI)</FONT></U>
+
+            [&nbsp;68&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>FAS - École de criminologie</FONT></U>
+
+            [&nbsp;82&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>FAS - École de psychoéducation</FONT></U>
+
+            [&nbsp;49&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>FAS - École de relations industrielles</FONT></U>
+
+            [&nbsp;502&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>FAS - École de service social</FONT></U>
+
+            [&nbsp;24&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>Service de la gestion de documents et des archives</FONT></U>
+
+            [&nbsp;4&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>Thèses et mémoires de l’Université de Montréal</FONT></U>
+
+            [&nbsp;3570&nbsp;]
+                  <LI>
+                            <U><FONT COLOR=blue>Vitrine interdisciplinaire</FONT></U>
+
+            [&nbsp;86&nbsp;]
+
+	</UL>
+  
+					
+			
+		</TD>
+	 </TR>
+	</TABLE> <!-- /table 1-->
+	
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+                <P>&nbsp;</P>
+                </TD>
+
+            
+
+                <TD>
+                    
+
+    
+	    
+	    
+	  <P>
+	
+	    <U><FONT COLOR=blue>[RSS]</FONT></U><BR>
+	
+	    
+	    </P>
+	
+
+    <P><U><FONT COLOR=blue>À propos de Papyrus...</FONT></U><P><U><FONT COLOR=blue>Questions fréquentes</FONT></U><P><U><FONT COLOR=blue>Droit d'auteur et politiques d'éditeurs</FONT></U> [avril 2009]<P><U><FONT COLOR=blue>Comment interroger Papyrus à distance?</FONT></U><P></P><!-- video debut --><EMBED></EMBED><!-- video fin --><P>Introduction à la notion de libre accès dans les universités.</P><BR><!-- video debut --><EMBED></EMBED><!-- video fin --><P>Droits d'auteur et publication savante [en]</P> <BR><P>Recherche dans d'autres dépôts:<BR>			 <FORM>[OAIster] <INPUT VALUE="wc_org_oaister" NAME="qt" TYPE="hidden"><INPUT NAME="q" MAXLENGTH="255" SIZE="24" TYPE="text"><INPUT VALUE="ok" NAME="submit2" TYPE="submit"></FORM><BR><!-- OpenDOAR : Google CSE Search Box Begins --><FORM>      [OpenDOAR]  <INPUT NAME="q" MAXLENGTH="255" SIZE="24" TYPE="text"><INPUT VALUE="ok" NAME="sa" TYPE="submit">  <INPUT VALUE="016766439200934687091:ln-icm1qyko" NAME="cx" TYPE="hidden">  <INPUT VALUE="FORID:11" NAME="cof" TYPE="hidden">  <INPUT VALUE="0" NAME="filter" TYPE="hidden">    </FORM><!-- OpenDOAR : Google CSE Search Box Ends --><!-- BASE debut -->  <FORM>          [BASE]        <INPUT NAME="q" MAXLENGTH="255" SIZE="24" TYPE="text"><INPUT VALUE="ok" TYPE="submit">       <INPUT VALUE="en" NAME="l" TYPE="hidden">       <INPUT VALUE="all" NAME="s" TYPE="hidden">       <INPUT VALUE="dcresen" NAME="refid" TYPE="hidden">      </FORM><!-- BASE end -->					<FORM>	          [Google Scholar]	<INPUT VALUE="" NAME="q" MAXLENGTH="255" SIZE="24" TYPE="text"><INPUT VALUE="ok" TYPE="submit">	<INPUT VALUE="UTF-8" NAME="ie" TYPE="hidden"><INPUT VALUE="UTF-8" NAME="oe" TYPE="hidden"><INPUT VALUE="fr" NAME="hl" TYPE="hidden"> 	</FORM>		
+    
+                </TD>
+
+            </TR>
+
+            
+             <TR>
+                <TD>
+                	
+                  <TABLE>
+ 											<TR>
+                          <TD>&copy; <U><FONT COLOR=blue>Direction des bibliothèques</FONT></U>, <U><FONT COLOR=blue>Université de Montréal</FONT></U>, 2008.</TD>
+                          <TD>Ce site utilise l'application <U><FONT COLOR=blue>DSpace</FONT></U>, Version 1.5.1</TD>
+                      </TR>
+
+ 											<TR>
+						  						<TD><U><FONT COLOR=blue>À propos des certificats SSL</FONT></U></TD>
+                      </TR>
+
+                  </TABLE>
+                    
+                </TD>
+            </TR>
+            
+            
+        </TABLE>
+		 <!-- umenveloppe -->
+			
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+			
+			
+			try {
+			var pageTracker = _gat._getTracker("UA-305727-1");
+			pageTracker._trackPageview();
+			} catch(err) {}		
+			
+			try {
+			var testTracker = _gat._getTracker("UA-8791511-3");
+			testTracker._setDomainName(".bib.umontreal.ca");
+			testTracker._setAllowHash(false);
+			testTracker._trackPageview();
+			} catch(err) {}
+    </BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>

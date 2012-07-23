@@ -1,0 +1,89 @@
+<HTML>
+<HEAD>
+<!--
+     NOTE:
+     To include graphics on this page, place the graphics in the public subdirectory
+	 and use links such as:
+     <img src="/public/logo.gif">
+     It is important to use /public/ instead of just public/ since some EZproxy
+     login URLs are not be relative to /
+<meta name="viewport" content="width=devicewidth">
+-->
+
+
+
+  function getCookie(c_name) {
+	if (document.cookie.length>0) {
+	  c_start=document.cookie.indexOf(c_name + "=");
+	  if (c_start!=-1) {
+		c_start=c_start + c_name.length+1;
+		c_end=document.cookie.indexOf(";",c_start);
+		if (c_end==-1) {
+		  c_end=document.cookie.length;
+		}
+		return unescape(document.cookie.substring(c_start,c_end));
+	  }
+	}
+	return "";
+  }
+  var cookieContent = getCookie('validUser');
+  var cookieEzpContent = getCookie('ezproxy');
+  if (cookieContent.length>0) { //If logged int WayneAuth
+	if (cookieEzpContent.length');
+		$("#user").val(username);
+		$("#pass").val(pword);
+		$("#loginformdiv").append("Logging in...");
+		$("#ezpform").submit();
+	  });
+	}
+  }
+
+
+
+
+	 #login {
+	 	width: 400px;
+		border: 2px solid #0c5449;
+		padding:6px;
+		margin-top: 50px;
+		margin-left:auto;
+		margin-right:auto;
+		}
+	 #login h2 {
+		color:#0c5449;
+		}
+	 .warning { color: red;}
+	 .small { font-size:smaller;}
+	 .loginnotice { text-align:center; font-weight:bold;}
+
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+  <H2>EZProxy Login[requires log in if off campus] </H2>
+  <P>In order to use this resource you must enter your
+  	 <U><FONT COLOR=blue>AccessID</FONT></U> and
+	 password (the same one as Pipeline, Blackboard, and WSU email).</P>
+  <P>
+  <FORM>
+    <INPUT VALUE="http://www.lib.wayne.edu/law/resources/cilp/" NAME="url" TYPE="hidden">
+    ACCESS ID:
+    <INPUT NAME="user" TYPE="text">
+    <BR>
+    Password:
+    <INPUT NAME="pass" TYPE="password">
+    <BR>
+    <INPUT VALUE="Login" TYPE="submit">
+  </FORM>
+  </P>
+  <P>Experiencing <U><FONT COLOR=blue>problems connecting</FONT></U>?  </P>
+<P>&nbsp;</P>
+
+<P>The EZProxy login page is changing!</P>
+
+<P>Starting March 12, the EZ Proxy login page will be updated to more closely resemble the library website.  This won't change the functionality, and you can continue to use library resources from off campus without any interruption.</P>
+<P>[New EZProxy Login Screen]</P>
+
+
+
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>

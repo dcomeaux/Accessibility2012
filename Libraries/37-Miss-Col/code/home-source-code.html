@@ -1,0 +1,1337 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+
+<head>
+
+<title>University of Missouri Libraries</title>
+
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+
+
+<link href="css/gateway2011.css" media="screen" rel="stylesheet" type="text/css" />
+
+<link href="css/tabsgateway/home-search-box.css" rel="stylesheet" type="text/css" />
+
+<link href="css/jcarousel2010/skins/ellis/skin.css" rel="stylesheet" type="text/css" />
+
+<link href="http://mulibraries.missouri.edu/css/JQueryUI/css/gold/jquery-ui-1.8.4.custom.css" rel="stylesheet" type="text/css"/>
+
+<link href="http://mulibraries.missouri.edu/css/tabsgateway/jqueryui-gateway-tabs.css" rel="stylesheet" type="text/css"/>
+
+<link href="http://mulibraries.missouri.edu/css/hoverIntent/hoverintent.css" rel="stylesheet" type="text/css"/>
+
+
+
+<script type="text/javascript" src="scripts/home-searchbox/home-search-box.js"></script>
+
+<script type="text/javascript" src="scripts/home-searchbox/home-search-box-extras.js"></script>
+
+<script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>
+
+<script type="text/javascript" src="scripts/jcarousel2010/jquery.jcarousel.min.js"></script>
+
+<script type="text/javascript" src="scripts/JQueryUI/jquery-ui-1.8.4.custom.min.js"></script>
+
+<script type="text/javascript" src="scripts/hoverIntent/hoverintent.js"></script>
+
+<script type="text/javascript" src="scripts/gatewayeffects.js"></script>
+
+<!--[if lte IE 6]>
+
+<link href="css/tabsgateway/home-ie-5and6.css" rel="stylesheet" type="text/css" />
+
+<![endif]-->
+
+<!--[if IE 7]>
+
+<link href="css/tabsgateway/home-ie-7.css" rel="stylesheet" type="text/css" />
+
+<link href="css/hoverIntent/hoverintent-ie7.css" rel="stylesheet" type="text/css" />
+
+<![endif]-->
+
+
+
+<!--[if lt IE 7]>
+
+<script defer type="text/javascript" src="http://mulibraries.missouri.edu/css/pngfix.js"></script>
+
+<![endif]-->
+
+
+
+ 
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+var mycarousel_itemList = [
+
+		{"pic": "http://mulibraries.missouri.edu/images/communication/food-revolutions.jpg", "title": "Food Revolutions: Science and Nutrition, 1700-1920", "description": "", "url": "http://mulibraries.missouri.edu/blogs/Announcements/?p=899"},
+
+	{"pic": "http://mulibraries.missouri.edu/images/communication/FennellArtExhibit.jpg", "title": "Art by John Fennell on Display in Bookmark Cafe", "description": "", "url": "http://mulibraries.missouri.edu/blogs/Announcements/?p=879"},
+
+	{"pic": "http://mulibraries.missouri.edu/images/communication/QuietComputerLab.jpg", "title": "Computer Quiet Area Available in Room 114", "description": "", "url": "http://mulibraries.missouri.edu/blogs/Announcements/?p=876"},
+
+	{"pic": "http://mulibraries.missouri.edu/images/communication/GradStudent.jpg", "title": "Graduate Student Workshops", "description": "", "url": "http://mulibraries.missouri.edu/guides/classestours/graduatestudents.htm"},
+
+	{"pic": "http://mulibraries.missouri.edu/images/communication/taxbanner.jpg", "title": "Tax Forms Available", "description": "", "url": "http://mulibraries.missouri.edu/collections/documents/mo/2011tax.htm"}
+
+  
+
+];
+
+ 
+
+function mycarousel_itemVisibleInCallback(carousel, item, i, state, evt)
+
+{
+
+    // The index() method calculates the index from a
+
+    // given index who is out of the actual item range.
+
+    var idx = carousel.index(i, mycarousel_itemList.length);
+
+    carousel.add(i, mycarousel_getItemHTML(mycarousel_itemList[idx - 1]));
+
+};
+
+
+
+function mycarousel_itemVisibleOutCallback(carousel, item, i, state, evt)
+
+{
+
+    carousel.remove(i);
+
+};
+
+
+
+
+
+
+
+/**
+
+ * Item html creation helper.
+
+ */
+
+function mycarousel_getItemHTML(item)
+
+{
+
+    return '<a href="' + item.url + '"><img src="' + item.pic + '" style="border: 0 none;" alt="" /></a><div class="carousel-text"><span class="carousel-title">' + item.title + '</span><span class="carousel-description">' + item.description + '</span> <a href="' + item.url + '">Read more</a></div>';
+
+};
+
+
+
+
+
+jQuery(document).ready(function() {							
+
+    jQuery('#mycarousel').jcarousel({		
+
+        auto: 20,
+
+		animation: 1500,
+
+		scroll: 1,
+
+		wrap: 'circular',
+
+		itemVisibleInCallback: {onBeforeAnimation: mycarousel_itemVisibleInCallback},
+
+        itemVisibleOutCallback: {onAfterAnimation: mycarousel_itemVisibleOutCallback}
+
+    });
+
+});
+
+</script>
+
+
+
+ 
+
+<SCRIPT Language = "JAVASCRIPT">
+
+
+
+var theImages = new Array() 
+
+
+
+theImages[0] = 'http://mulibraries.missouri.edu/images/contactus/Anne.jpg'
+
+theImages[1] = 'http://mulibraries.missouri.edu/images/contactus/Gwen.jpg'
+
+theImages[2] = 'http://mulibraries.missouri.edu/images/contactus/Marie.jpg'
+
+theImages[3] = 'http://mulibraries.missouri.edu/images/contactus/Rachel.jpg'
+
+theImages[4] = 'http://mulibraries.missouri.edu/images/contactus/Wayne.jpg'
+
+theImages[5] = 'http://mulibraries.missouri.edu/images/contactus/cindy.jpg'
+
+theImages[6] = 'http://mulibraries.missouri.edu/images/contactus/mike.jpg'
+
+theImages[7] = 'http://mulibraries.missouri.edu/images/contactus/brenda.jpg'
+
+theImages[8] = 'http://mulibraries.missouri.edu/images/contactus/rhonda.jpg'
+
+theImages[9] = 'http://mulibraries.missouri.edu/images/contactus/sandy.jpg' 
+
+
+
+var j = 0
+
+var p = theImages.length;
+
+var preBuffer = new Array()
+
+for (i = 0; i < p; i++){
+
+   preBuffer[i] = new Image()
+
+   preBuffer[i].src = theImages[i]
+
+}
+
+var whichImage = Math.round(Math.random()*(p-1));
+
+
+
+function showImage(){
+
+document.write('<img title="  A Librarian" src="'+theImages[whichImage]+'" border="0" alt="A Librarian" style="position:relative;left:-15px;top: 5px" align="right"  />');
+
+}
+
+
+
+ 
+
+</SCRIPT>
+
+
+
+
+
+
+
+
+
+<!--
+
+Crazy Egg code
+
+-->
+
+<script type="text/javascript">
+
+setTimeout(function(){var a=document.createElement("script");
+
+var b=document.getElementsByTagName('script')[0];
+
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/3460.js?"+Math.floor(new Date().getTime()/3600000);
+
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+
+</script>
+
+
+
+
+
+
+
+<!--
+
+Google Analytics code 
+
+external links should be formated like this;
+
+<a href="http://www.example.com" onClick="recordOutboundLink(this, 'Outbound Links', 'example.com');return false;">
+
+-->
+
+<script type="text/javascript">
+
+function recordOutboundLink(link, category, action) {
+
+  try {
+
+    var myTracker=_gat._getTrackerByName();
+
+    _gaq.push(['myTracker._trackEvent', ' + category + ', ' + action + ']);
+
+    setTimeout('document.location = "' + link.href + '"', 100)
+
+  }catch(err){}
+
+}
+
+</script>
+
+
+
+
+
+<!--
+
+Google Analytics code 
+
+-->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+
+  _gaq.push(['_setAccount', 'UA-1438571-1']);
+
+  _gaq.push(['_setDomainName', '.missouri.edu']);
+
+  _gaq.push(['_trackPageview']);
+
+
+
+  (function() {
+
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+
+  })();
+
+
+
+</script>
+
+ 
+
+ 
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+<div id="page-container"> 
+
+
+
+
+
+
+
+<div id="header_ellis"><img align="left" alt=" MU Libraries" border="nan" src="http://mulibraries.missouri.edu/images/headers/gateway-words2.png" style="border: medium none; text-decoration: none;" usemap="#mapheader" /> <map id="MapHeader" name="MapHeader">
+
+<area alt="University of Missouri" coords="21,12,67,71" href="http://www.mizzou.edu" shape="rect" />
+
+<area alt="MU Libraries" coords="74,12,337,73" href="http://mulibraries.missouri.edu" shape="rect" />
+
+</map> 
+
+<form action="http://mulibraries.missouri.edu/search/website/searchbox.aspx" method="post">
+
+<div class="toplinks">
+
+<a href="http://mulibraries.missouri.edu/AZindex.htm" title="Site Index">A-Z Index </a>&#160;<img alt="navbar" src="http://mulibraries.missouri.edu/images/nav-bar-right.png" /> 
+
+<input id="GatewayUpperRightSiteSearchTextbox" name="GatewayUpperRightSiteSearchTextbox" onClick="this.value=''" size="8" class="toplinksTextBox"
+
+onblur="this.value = this.value || this.defaultValue; this.style.color = '#999';" 
+
+onfocus="this.value=''; this.style.color = '#000';" 
+
+type="text" value="Search Site" />
+
+<input type="hidden" name="searchtype" value="SiteSearch"/>
+
+<input id="GatewayUpperRightSiteSearchSubmitButton" name="GatewayUpperRightSiteSearchSubmitButton" class="toplinksButton" type="submit" value="Search Site" />
+
+<input type="hidden" name="requestedfrom"  value="GatewayMain" />
+
+</div>
+
+
+
+</form>
+
+</div>
+
+
+
+<div id="nav-band">
+
+<div class="container clearfix" id="nav-container">
+
+<ul class="clearfix" id="nav">
+
+	<li id="libraries">
+
+    	<a href="http://mulibraries.missouri.edu/collections/default.htm">Libraries</a>
+
+	     <ul> 
+
+				  <li><a  href="http://mulibraries.missouri.edu/collections/ellis.htm">Ellis Library</a></li>				
+
+                  <li><a  href="http://mulibraries.missouri.edu/engineering/">Engineering &amp; Technology</a></li>                  
+
+                  <li><a  href="http://mulibraries.missouri.edu/geology/">Geological Sciences</a></li>  				
+
+
+
+<li><a onClick="recordOutboundLink(this, 'Outgoing Gateway', 'HealthSciences');return false;" href="http://library.muhealth.org/">Health Sciences</a></li>
+
+
+
+                  <li><a  href="http://mulibraries.missouri.edu/journalism/">Journalism</a></li>				
+
+                  <li><a  href="http://mulibraries.missouri.edu/math/">Mathematical Sciences</a></li>			
+
+				  <li><a  href="http://mulibraries.missouri.edu/missourian/">Missourian Newspaper Library</a></li>			
+
+                  <li><a  href="http://muarchives.missouri.edu/" onClick="recordOutboundLink(this, 'Outgoing Gateway', 'UniversityArchives');return false;">University Archives</a></li>	
+
+				  <li><a  href="http://vetmedlibrary.missouri.edu/" onClick="recordOutboundLink(this, 'Outgoing Gateway', 'VeterinaryMedical');return false;">Veterinary Medical</a></li>			  
+
+                  <li><a  href="http://www.law.missouri.edu/library/" onClick="recordOutboundLink(this, 'Outgoing Gateway', 'LawLibrary');return false;">MU Law Library</a></li>	
+
+                  <li><a  href="http://mulibraries.missouri.edu/collections/">More...</a></li>				   
+
+				   
+
+				   
+
+		</ul>
+
+    </li>
+
+
+
+	<li id="collections">
+
+      <a  href="http://mulibraries.missouri.edu/collections/default.htm">Collections</a>
+
+	    <ul> 
+
+
+
+                  <li><a  onClick="recordOutboundLink(this, 'Outgoing Gateway', 'mospace');return false;"
+
+href="https://mospace.umsystem.edu/xmlui/">MOspace: Institutional Repository</a></li>  	
+
+
+
+                  <li><a  href="http://mulibraries.missouri.edu/search/resources/default.htm">Digital Collections</a></li>				 	 
+
+                  <li><a  href="http://mulibraries.missouri.edu/specialcollections/">Special Collections &amp; Rare Books</a></li>                 
+
+                  <li><a  href="http://libraryguides.missouri.edu/govdocs">Government Documents</a></li>                   
+
+
+
+                  <li><a  onClick="recordOutboundLink(this, 'Outgoing Gateway', 'StateHistoricalSociety');return false;"
+
+href="http://shs.umsystem.edu/index.shtml">State Historical Society</a></li>  
+
+                                    
+
+                  <li><a  href="http://mulibraries.missouri.edu/collections/">More...</a></li>				   
+
+
+
+	    </ul>
+
+    </li>
+
+      
+
+
+
+	<li id="information">
+
+	  <a href="http://mulibraries.missouri.edu/resourcesfor/default.htm">Information  for You</a>  
+
+		<ul>
+
+			<li><a  href="http://mulibraries.missouri.edu/resourcesfor/undergrad.htm">Undergraduates</a></li>
+
+			<li><a  href="http://mulibraries.missouri.edu/resourcesfor/grad-students/default.htm">Graduate Students</a></li>
+
+			<li><a  href="http://mulibraries.missouri.edu/resourcesfor/faculty/default.htm">Faculty &amp; Staff</a></li>
+
+
+
+			<li><a  href="http://libraryguides.missouri.edu/distance"
+
+onClick="recordOutboundLink(this, 'Outgoing Gateway', 'distancelearners');return false;"
+
+>Distance Learners</a></li>
+
+
+
+			<li><a  href="http://mulibraries.missouri.edu/resourcesfor/international/">International Students </a></li>
+
+			<li><a  href="http://mulibraries.missouri.edu/resourcesfor/alumni.htm">Alumni </a></li>
+
+            <li><a href="http://mulibraries.missouri.edu/resourcesfor/personswithdisabilities/default.htm">Persons with Disabilities</a></li>
+
+            <li><a href="http://mulibraries.missouri.edu/resourcesfor/visitingscholars.htm">Visiting Scholars</a></li>
+
+            <li><a href="http://mulibraries.missouri.edu/resourcesfor/visitors/default.htm">Visitors</a></li>
+
+			<li><a  href="http://mulibraries.missouri.edu/resourcesfor/default.htm">More...</a></li>
+
+		</ul>
+
+    </li>
+
+
+
+
+
+	<li id="homeworkhelp">
+
+	  <a href="http://mulibraries.missouri.edu/guides/help.htm">Homework &amp; Research Help</a>  
+
+	 
+
+		<ul> 
+
+	
+
+		<li><a href="http://mulibraries.missouri.edu/guides/default.htm#tabs-2">Subject Guides</a></li>
+
+    	<li><a href="http://mulibraries.missouri.edu/guides/default.htm#tabs-3">Course Guides</a></li>
+
+		<li><a href="http://mulibraries.missouri.edu/guides/classestours/rap.htm">Research Assistance Program</a></li>
+
+		<li><a  href="http://mulibraries.missouri.edu/guides/reserves/">Course Reserves (Print/ERes)</a></li>
+
+		<li><a  href="http://mulibraries.missouri.edu/guides/classestours/default.htm">Classes &amp; Tours</a></li>
+
+        <li><a href="http://mulibraries.missouri.edu/guides/classestours/basicrequest.php">Request an Instruction Session</a></li>
+
+		<li><a  href="http://mulibraries.missouri.edu/showmehow/videos/">Tutorials &amp; Videos</a></li>
+
+		<li><a  href="http://mulibraries.missouri.edu/guides/WritingCiting.htm">Writing &amp; Citing</a></li>
+
+    		<li><a  href="http://writery.missouri.edu/appointments/Appointment_Locations_library.html" 
+
+onClick="recordOutboundLink(this, 'Outgoing Gateway', 'writingtutors');return false;"
+
+>Writing Tutors</a></li>
+
+   
+
+<li> <a href="http://mulibraries.missouri.edu/guides/classestours/instructiononeminuteevaluation.aspx">One Minute Evaluation</a>     </li>
+
+
+
+ 
+
+            <li> <a href="http://mulibraries.missouri.edu/guides/help.htm">More...</a>     </li>
+
+	
+
+		</ul>
+
+   </li>
+
+
+
+
+
+	<li id="howto">
+
+	  <a href="http://mulibraries.missouri.edu/showmehow/default.htm">Show Me How To</a> 
+
+
+
+		<ul>
+
+		<li><a href="http://mulibraries.missouri.edu/guides/findingjournalarticles/default.htm">Find journal articles</a></li>
+
+		<li><a href="http://mulibraries.missouri.edu/guides/findingbooks/default.htm">Find books</a></li>                    
+
+		<li><a href="http://mulibraries.missouri.edu/showmehow/requestbooks.htm">Request books</a></li>
+
+		<li><a href="http://mulibraries.missouri.edu/showmehow/renewbooks.htm">Renew books</a></li>
+
+		<li><a href="http://mulibraries.missouri.edu/showmehow/findemplid.htm">Find my ID #</a></li>
+
+		<li><a href="http://mulibraries.missouri.edu/guides/WritingCiting.htm">Find citation guides</a></li>
+
+		<li><a href="http://mulibraries.missouri.edu/showmehow/dissertations.htm">Find dissertations</a></li>
+
+		<li><a href="http://mulibraries.missouri.edu/showmehow/finddvd.htm">Find DVDs</a></li>
+
+		<li><a href="http://mulibraries.missouri.edu/guides/plagiarism.htm">Avoid plagiarism</a></li>
+
+		<li><a href="http://mulibraries.missouri.edu/showmehow/videos/">View library tutorials/videos</a></li>
+
+    
+
+		<li><a href="http://mulibraries.missouri.edu/showmehow/default.htm">More...</a></li>
+
+		</ul>
+
+    </li>
+
+
+
+	<li id="researchtools">
+
+	  <a href="http://mulibraries.missouri.edu/guides/tooltips.htm">Research Tools</a>  
+
+
+
+		<ul>
+
+		<li><a  href="http://libraryguides.missouri.edu/libx">LibX</a></li>
+
+		<li><a  href="http://libraryguides.missouri.edu/endnote">EndNote</a></li>
+
+		<li><a  href="http://libraryguides.missouri.edu/zotero">Zotero</a></li>
+
+
+
+		<li><a  onClick="recordOutboundLink(this, 'Outgoing Gateway', 'ncsu_citationbuilder');return false;"
+
+ href="http://www.lib.ncsu.edu/lobo2/citationbuilder/citationbuilder.php">Citation Builder</a></li>
+
+
+
+		<li><a  href="http://mulibraries.missouri.edu/guides/default.htm">Research Guides</a></li>
+
+		</ul>
+
+	</li>
+
+
+
+	<li id="accounts">
+
+	  <a href="http://mulibraries.missouri.edu/showmehow/myaccounts.htm">my Accounts</a> 
+
+ 
+
+		<ul>
+
+		<li><a  onClick="recordOutboundLink(this, 'Outgoing Gateway', 'myaccounts_RenewBook');return false;"
+
+href="http://laurel.lso.missouri.edu/patroninfo">Renew a Book</a></li>
+
+		<li><a  onClick="recordOutboundLink(this, 'Outgoing Gateway', 'myaccounts_ReadingHistory');return false;"
+
+href="http://laurel.lso.missouri.edu/patroninfo">Set up my Reading History</a></li>
+
+		<li><a  onClick="recordOutboundLink(this, 'Outgoing Gateway', 'myaccounts_StudyRoomResv');return false;"
+
+href="https://mulibraries.missouri.edu/mrbs">Reserve a Study Room</a></li>
+
+		<li><a  onClick="recordOutboundLink(this, 'Outgoing Gateway', 'Illiad');return false;"
+
+href="https://ill.mul.missouri.edu/">Track my ILL@MU requests</a></li> 
+
+
+
+		<li><a  href="http://mulibraries.missouri.edu/showmehow/myaccounts.htm">More...</a></li>
+
+		</ul>
+
+	</li>
+
+    
+
+ 
+
+</ul>
+
+</div>
+
+</div>
+
+
+
+
+
+<div id="content">
+
+
+
+<div class="columnLeft">
+
+
+
+<img src="http://mulibraries.missouri.edu/images/gateway/left-columnboxtop.jpg" alt="I need to... Section" />
+
+<div class="box">
+
+<a title="I need to" href="http://mulibraries.missouri.edu/showmehow/self-service.htm"><h3>I need to...</h3></a>
+
+<ul>
+
+<li><a title="Find a Specific Article" onClick="recordOutboundLink(this, 'Outgoing Gateway', '1cateJournalarticle_leftcol');return false;"  href="http://proxy.mul.missouri.edu/login?url=http://mulibraries.1cate.com">Find a Specific Article</a></li>
+
+<li><a title="Find a Specific Journal" onClick="recordOutboundLink(this, 'Outgoing Gateway', '1cateJournal_leftcol');return false;"  href="http://proxy.mul.missouri.edu/login?url=http://mulibraries.1cate.com">Find a Specific Journal</a></li><li><a title="Find a Specific Book"  onClick="recordOutboundLink(this, 'Outgoing Gateway', 'bookfinder2');return false;" href="http://mulibraries.missouri.edu/search/bookfinder.aspx">Find a Specific Book</a></li>
+
+<li><a title="Search ERes / Electronic Reserves" onClick="recordOutboundLink(this, 'Outgoing Gateway', 'eresSearch_leftcol');return false;"  href="http://eres.missouri.edu/eres/courseindex.aspx?page=search">Find eReserves (ERes)</a></li>
+
+<li><a title="Renew a Book"  onClick="recordOutboundLink(this, 'Outgoing Gateway', 'MERLIN_RenewBook_leftcol');return false;"  href="https://laurel.lso.missouri.edu/patroninfo%7ES11">Renew a Book</a></li>
+
+<li><a title="Request an item (ILL@MU)"  onClick="recordOutboundLink(this, 'Outgoing Gateway', 'Illiad_leftcol');return false;" href="https://ill.mul.missouri.edu/">Request an Item (ILL@MU)</a></li>
+
+<li><a title="Reserve a Study Room" onClick="recordOutboundLink(this, 'Outgoing Gateway', 'StudyRoomResv_leftcol');return false;" href="http://mulibraries.missouri.edu/mrbs">Reserve a Study Room</a></li>
+
+<li><a title="Search MERLIN Library Catalog"  onClick="recordOutboundLink(this, 'Outgoing Gateway', 'MERLIN_leftcol');return false;" href="http://laurel.lso.missouri.edu/search~S1">Search the MERLIN Catalog</a></li>
+
+</ul>
+
+</div>
+
+<img src="http://mulibraries.missouri.edu/images/gateway/left-columnboxbottom.jpg" alt="I need to... Section" />
+
+<br />
+
+<img src="http://mulibraries.missouri.edu/images/gateway/left-columnboxtop.jpg" alt="Research Guides Section"/>
+
+<div class="box">
+
+ <h3>Research Guides</h3> 
+
+<ul>
+
+<li><a title="Getting Started" href="http://mulibraries.missouri.edu/guides/default.htm#tabs-1">Getting Started</a></li>
+
+<li><a title="Subject Guides" href="http://mulibraries.missouri.edu/guides/default.htm#tabs-2">Subject Guides</a></li>
+
+<li><a title="Course Guides" href="http://mulibraries.missouri.edu/guides/default.htm#tabs-3">Course Guides</a></li>
+
+<li><a title="English 1000" href="http://mulibraries.missouri.edu/guides/default.htm#tabs-4">English 1000</a></li>
+
+ 
+
+</ul>
+
+</div>
+
+<img src="http://mulibraries.missouri.edu/images/gateway/left-columnboxbottom.jpg" alt="Research Guides Section"/>
+
+<br />
+
+<img src="http://mulibraries.missouri.edu/images/gateway/left-columnboxtop.jpg" alt="About the Libraries Section"/>
+
+<div class="box">
+
+<a title="About the MU Libraries" href="http://mulibraries.missouri.edu/about/default.htm"><h3>About the Libraries</h3></a>
+
+<ul>
+
+<li><a href="http://mulibraries.missouri.edu/about/hours.htm" title="Campus Library Hours">Hours</a> | 
+
+    <a href="http://mulibraries.missouri.edu/about/maps/default.htm" title="Library Directions and Maps">Maps</a></li>
+
+<li><a href="http://mulibraries.missouri.edu/about/employment.htm" title="Jobs and employment">Job Opportunities</a></li>
+
+<li><a title="Bookmark Cafe" href="http://mulibraries.missouri.edu/guides/virtour/cafe.htm">Bookmark Cafe</a></li>
+
+<li><a title="About the MU Libraries" href="http://mulibraries.missouri.edu/about/default.htm">More... <img   height="11" src="http://mulibraries.missouri.edu/images/arrow.gif" alt="More Information about the Libraries..."  id="GatewayLeftNavMoreAbout" name="GatewayLeftNavMoreAbout" border="0" width="15"/></a></li>
+
+</ul>
+
+</div>
+
+<img src="http://mulibraries.missouri.edu/images/gateway/left-columnboxbottom.jpg" alt="About the Libraries Section" />
+
+<br />  
+
+
+
+</div>
+
+
+
+<div class="columnMiddle">
+
+
+
+
+
+         <div class="ui-tabs ui-widget ui-widget-content ui-corner-all" id="tabs">
+
+         
+
+<ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+
+<li class="ui-state-default ui-corner-top"><a href="#tabs-1" title="Summon@MU: One-stop searching of local collections and scholarly resources for articles, books, movies, and more.">Summon@MU</a></li>
+
+<li class="ui-state-default ui-corner-top"><a href="#tabs-2" title="Books &amp; More: Search the MERLIN library catalog for books, dvds, journals, maps and more...">Books &amp; More</a></li>
+
+<li class="ui-state-default ui-corner-top"><a href="#tabs-3" title="Articles: Find an article on a topic">Articles</a></li>
+
+<li class="ui-state-default ui-corner-top"><a href="#tabs-4"  title="Databases: Find a specific database for your subject">Databases</a></li>
+
+</ul>
+
+
+
+
+
+
+
+<div class="ui-tabs-panel ui-widget-content ui-corner-bottom box" id="tabs-1">
+
+  <h3>Summon@MU
+
+    
+
+    <a href="http://mulibraries.missouri.edu/search/summonatmu.htm" title="Summon@MU: One-stop searching of local collections and scholarly resources for articles, books, movies, and more." onClick="recordOutboundLink(this, 'Outgoing Gateway', 'summon_infobutton');return false;"><img src="http://mulibraries.missouri.edu/images/gateway/Gold-i.gif" alt="Summon@MU databases Information page" width="20" height="18" border="0" align="top"  /></a>
+
+  <br />
+
+  <span style="font-size: 90%;">Search  local collections for articles, books, movies...</span>                            
+
+    
+
+  </h3>
+
+  <form name="search" method="post" action="http://mulibraries.missouri.edu/search/website/summon.aspx" autocomplete="off">
+
+    
+
+    <input id="GatewayTabSummonTextbox" name="GatewayTabSummonTextbox" type="text"  style="color:#999;"  size="30" 
+
+onblur="this.value = this.value || this.defaultValue; this.style.color = '#999';" 
+
+onfocus="this.value=''; this.style.color = '#000';" value="Be specific for best results"/> 
+
+<select id="GatewayTabSummonLimitby" name="GatewayTabSummonLimitby">
+
+            <option title="Additional limits for narrowing your search can be found on the left-hand side of the Summon search results page.">Search all</option>
+
+          <option value="Articles" title="Find journal articles on any topic">Articles</option>
+
+          <option value="All books" title="Search for books by author, title or subject">All books</option>
+
+          <option value="eBooks" title="Find an online book by author, title or subject">eBooks</option>
+
+          <option value="DVDs" title="Find movies that the libraries own">DVDs</option>
+
+          <option value="Article title" title="Find a specific article or articles that contain selected keywords in their titles">Article title</option>
+
+          <option value="Book title" title="Find a specific book title">Book title</option>
+
+          <option value="Journal finder" title="Search FindIt at MU for specific journal titles, e.g. Journal of the American Medical Association, not useful for searching on a topic">Journal title</option>
+
+          </select>
+
+             
+
+        <input type="hidden" name="searchtype" value="Summon"/>
+
+        <input type="hidden" name="requestedfrom"  value="GatewayMain" />
+
+               
+
+            <input type="submit" name="GatewayTabSummonSubmitButton" id="GatewayTabSummonSubmitButton"  value="Search Summon"/>
+
+  </form> 
+
+      
+
+      <p>&nbsp;</p><p>&nbsp;</p>
+
+       <a href="http://proxy.mul.missouri.edu/login?url=http://mulibraries.1cate.com" onClick="recordOutboundLink(this, 'Outgoing Gateway', 'searchbox_1cateJournal');return false;" title="Journal Finder: Find a Specific Journal">Journal Finder</a> &nbsp;|&nbsp;
+
+       <a href="http://mulibraries.missouri.edu/search/databases/subject.aspx" title="Databases by Subject">Databases by Subject</a>  &nbsp;|&nbsp;<a href="http://libraryguides.missouri.edu/content.php?pid=231059">Off-Campus Access</a> 
+
+</div>
+
+
+
+
+
+
+
+<div class="ui-tabs-panel ui-widget-content ui-corner-bottom box" id="tabs-2">
+
+<h3>Search the MERLIN catalog for books,  DVDs... at MU</h3>                             
+
+<form action="http://mulibraries.missouri.edu/search/website/searchbox.aspx" method="post" >
+
+<p>
+
+    <select id="GatewayTabMERLINLimitby" name="GatewayTabMERLINLimitby">
+
+        <option value="Keyword">Keyword</option>
+
+        <option value="TitleExact">Title (exact)</option>
+
+        <option value="TitleKeyword">Title (keyword)</option>                                       
+
+        <option value="Author">Author</option>
+
+        <option value="Subject">Subject</option>
+
+        <option value="Journal_Title">Journals, Newspapers</option>
+
+    </select> 
+
+    
+
+    <input type="text" maxlength="250" id="GatewayTabMERLINTextbox" name="GatewayTabMERLINTextbox" size="20" />
+
+    <input type="hidden" name="catalog"  value="MU" />
+
+    <input type="Submit" name="GatewayTabMERLINSubmitButton" id="GatewayTabMERLINSubmitButton"  value="Search MERLIN""/>
+
+    
+
+    <input type="hidden" name="searchtype" value="MERLIN"/>
+
+    <input type="hidden" name="requestedfrom"  value="GatewayMain" />
+
+</p>
+
+</form>
+
+                   <br />   <br />  <br />                      
+
+<br /><br />
+
+        
+
+                <a onClick="recordOutboundLink(this, 'Outgoing Gateway', 'BooksMore/MERLIN-UM');return false;" href="http://laurel.lso.missouri.edu/search~S"  title="All UM Campuses (MERLIN)">All UM Campuses (MERLIN)</a> &nbsp; | &nbsp;
+
+                <a onClick="recordOutboundLink(this, 'Outgoing Gateway', 'BooksMore/MOBIUS');return false;" href="http://laurel.lso.missouri.edu:2083">Missouri Libraries (MOBIUS)</a> 
+
+                <br /><br />                                 
+
+                <a title="Quick lookup tools: dictionaries, encyclopedias, style manuals, book reviews, chemicals, company information, societies, standards, music scores, images, and more..." href="http://mulibraries.missouri.edu/search/databases/type.aspx">Encyclopedias, etc.</a> &nbsp;|&nbsp;    
+
+                <a href="http://libraryguides.missouri.edu/ebooks">Ebooks</a> &nbsp;|&nbsp;
+
+                <a onClick="recordOutboundLink(this, 'Outgoing Gateway', 'GoogleBooks');return false;" href="http://books.google.com">Google Books</a> &nbsp;|&nbsp;  
+
+                <a href="http://mulibraries.missouri.edu/showmehow/finddvd.htm">DVDs</a> &nbsp;|&nbsp;  
+
+                <a href="http://mulibraries.missouri.edu/collections/newbooks/">New Books</a>  <br />   <br />   
+
+ 
+
+</div>
+
+
+
+<div class="ui-tabs-panel ui-widget-content ui-corner-bottom box" id="tabs-3">
+
+<h3>Find Articles on a Topic</h3>
+
+ 
+
+
+
+<!-- EBSCOhost Custom Search Box Begins -->
+
+<form action="http://mulibraries.missouri.edu/search/website/searchbox.aspx" method="post" >
+
+
+
+<div style="background-image: url(http://mulibraries.missouri.edu/images/gateway/ebscoresearchdatabases.gif); background-repeat: no-repeat; height: 72px; width: 380px; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 8pt; font-weight: bold; color: #353535;">
+
+<div style="padding-top: 5px; padding-left: 75px; text-align: left;"><span style="font-weight: bold; font-size: 9pt;"><a href="http://mulibraries.missouri.edu/search/databases/ebsco.htm">Search 40 databases at once</a> </span> <a href="http://mulibraries.missouri.edu/search/databases/ebsco.htm"><img src="images/gateway/Gold-i.gif" width="20" height="15" border="0" />    </a>
+
+<div>
+
+  <input id="GatewayTabEbscoTextbox" name="GatewayTabEbscoTextbox" size="20" style="font-size: 9pt; padding-left: 5px; margin-left: 0px;" type="text" />
+
+  <input style="font-size: 9pt; padding-left: 5px;" type="submit" name="GatewayTabEbscoSubmitButton" id="GatewayTabEbscoSubmitButton" value="Search Ebsco" />
+
+
+
+<input type="hidden" name="searchtype" value="EBSCO"/>
+
+<input type="hidden" name="requestedfrom"  value="GatewayMain" />
+
+<div id="includeFT"><input id="chkFullText" id="GatewayTabEbscoFullTextCheckbox" name="GatewayTabEbscoFullTextCheckbox" value="true" style="margin-left: 0px; font-size: 8px;" type="checkbox" /><label for="chkFullText">Full Text</label></div>
+
+</div>
+
+</div>
+
+ </div>
+
+</form>
+
+ <!-- EBSCOhost Custom Search Box Ends -->   
+
+ 
+
+ 
+
+ 
+
+   <p>&nbsp;</p>
+
+    
+
+   <p>&nbsp;</p>
+
+   <p><a href="http://mulibraries.missouri.edu/guides/findingjournalarticles/default.htm">How to find articles </a> |  &nbsp;<a href="http://mulibraries.missouri.edu/search/databases/subject.aspx">Find articles in databases by subject</a></p>
+
+</div>
+
+
+
+<div class="ui-tabs-panel ui-widget-content ui-corner-bottom box" id="tabs-4">
+
+
+
+ 
+
+<h3>Find articles in databases</h3>           
+
+         
+
+              
+
+                <br />
+
+              <a target="_self" href="http://mulibraries.missouri.edu/search/databases/default.aspx?title=A">A</a>&nbsp;   
+
+                <a target="_self" href="http://mulibraries.missouri.edu/search/databases/default.aspx?title=B">B</a>&nbsp;                              
+
+                <a target="_self" href="http://mulibraries.missouri.edu/search/databases/default.aspx?title=C">C</a>&nbsp;                              
+
+                <a target="_self" href="http://mulibraries.missouri.edu/search/databases/default.aspx?title=D">D</a>&nbsp;                              
+
+                <a target="_self" href="http://mulibraries.missouri.edu/search/databases/default.aspx?title=E">E</a>&nbsp;                              
+
+                <a target="_self" href="http://mulibraries.missouri.edu/search/databases/default.aspx?title=F">F</a>&nbsp;                              
+
+                <a target="_self" href="http://mulibraries.missouri.edu/search/databases/default.aspx?title=G">G</a>&nbsp;                              
+
+                <a target="_self" href="http://mulibraries.missouri.edu/search/databases/default.aspx?title=H">H</a>&nbsp;                              
+
+                <a target="_self" href="http://mulibraries.missouri.edu/search/databases/default.aspx?title=I">I</a>&nbsp;                              
+
+                <a target="_self" href="http://mulibraries.missouri.edu/search/databases/default.aspx?title=J">J</a>&nbsp;                              
+
+                <a target="_self" href="http://mulibraries.missouri.edu/search/databases/default.aspx?title=K">K</a>&nbsp;                              
+
+                <a target="_self" href="http://mulibraries.missouri.edu/search/databases/default.aspx?title=L">L</a>&nbsp;                              
+
+                <a target="_self" href="http://mulibraries.missouri.edu/search/databases/default.aspx?title=M">M</a>&nbsp;                              
+
+                <a target="_self" href="http://mulibraries.missouri.edu/search/databases/default.aspx?title=N">N</a>&nbsp;                              
+
+                <a target="_self" href="http://mulibraries.missouri.edu/search/databases/default.aspx?title=O">O</a>&nbsp;                              
+
+                <a target="_self" href="http://mulibraries.missouri.edu/search/databases/default.aspx?title=P">P</a>&nbsp;                              
+
+                <a target="_self" href="http://mulibraries.missouri.edu/search/databases/default.aspx?title=Q">Q</a>&nbsp;                              
+
+                <a target="_self" href="http://mulibraries.missouri.edu/search/databases/default.aspx?title=R">R</a>&nbsp;                              
+
+                <a target="_self" href="http://mulibraries.missouri.edu/search/databases/default.aspx?title=S">S</a>&nbsp;                              
+
+                <a target="_self" href="http://mulibraries.missouri.edu/search/databases/default.aspx?title=T">T</a>&nbsp;                              
+
+                <a target="_self" href="http://mulibraries.missouri.edu/search/databases/default.aspx?title=U">U</a>&nbsp;                              
+
+                <a target="_self" href="http://mulibraries.missouri.edu/search/databases/default.aspx?title=V">V</a>&nbsp;                              
+
+                <a target="_self" href="http://mulibraries.missouri.edu/search/databases/default.aspx?title=W">W</a>&nbsp;                              
+
+                <a target="_self" href="http://mulibraries.missouri.edu/search/databases/default.aspx?title=X">X</a>&nbsp;                              
+
+                <a target="_self" href="http://mulibraries.missouri.edu/search/databases/default.aspx?title=Y">Y</a>&nbsp;                              
+
+                <a target="_self" href="http://mulibraries.missouri.edu/search/databases/default.aspx?title=Z">Z</a>&nbsp; 
+
+              <br />
+
+              <form action="http://mulibraries.missouri.edu/search/website/searchbox.aspx" method="post" >Name of Database:                                   
+
+                <input id="GatewayTabDatabaseTextbox" name="GatewayTabDatabaseTextbox"   type="text"  value="" size="20" />                                   
+
+                <input type="submit" name="GatewayTabDatabaseSubmitButton" id="GatewayTabDatabaseSubmitButton" value="Search Database Names"  />                                 
+
+                <input type="hidden" name="searchtype" value="Databases"/>  
+
+                <input type="hidden" name="requestedfrom"  value="GatewayMain" />                        
+
+              </form>  
+
+             
+
+<p>&nbsp;</p>
+
+<p><a href="http://mulibraries.missouri.edu/search/databases/default.aspx">Popular Databases</a> &nbsp; | &nbsp; <a href="http://mulibraries.missouri.edu/search/databases/subject.aspx">Databases by Subject</a> &nbsp; <br />
+
+  <br />
+
+  <a href=" http://mulibraries.missouri.edu/search/databases/type.aspx">Databases by Type</a> &nbsp; | &nbsp; <a href="http://libraryguides.missouri.edu/content.php?pid=231059">Off-campus Access</a> <br />
+
+</p>
+
+<p><span style="font-size: .9em;"><a onClick="recordOutboundLink(this, 'Outgoing Gateway', 'googlescholar');return false;"  href="http://scholar.google.com/advanced_scholar_search">Google Scholar</a> &nbsp; | &nbsp; <a href="http://mulibraries.missouri.edu/search/databases/googlescholardirections.htm">Google Scholar help for MU</a></span></p>
+
+</div> 
+
+
+
+</div>                       
+
+         	
+
+                 
+
+		                
+
+            	         
+
+            
+
+                   
+
+         	     
+
+
+
+ <p></p><p></p>
+
+      <ul id="mycarousel" class="jcarousel-skin-ellis"> 
+
+    	 		<!-- The content will be dynamically loaded in here -->
+
+   	  </ul>
+
+  <div align="right"><a title="More News"  href="http://mulibraries.missouri.edu/blogs/Announcements">News Archive <img  height="11" src="http://mulibraries.missouri.edu/images/arrow.gif" alt="MU Libraries News Archive - More Information"  id="GatewayMidNavMoreAnnouncemoreNews" name="GatewayMidNavMoreAnnouncemoreNews"   border="0" width="15"/></a>
+
+  <br />
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+<div class="columnRight">
+
+<img src="http://mulibraries.missouri.edu/images/gateway/left-columnboxtop.jpg" alt="Contact Us Section" /> 
+
+<br />
+
+<div class="box">
+
+<a title="Ask a Librarian" href="http://mulibraries.missouri.edu/showmehow/contactus.aspx">
+
+<SCRIPT Language = "JAVASCRIPT">
+
+showImage();
+
+</SCRIPT>
+
+</a>
+
+<a title="Contact Us" href="http://mulibraries.missouri.edu/showmehow/contactus.aspx">
+
+<h3 style="_margin-top:-10px; #margin-top:-10px;">Contact Us</h3></a>
+
+<ul>
+
+<li><a title="Ask a Librarian" href="http://mulibraries.missouri.edu/showmehow/contactus.aspx">Ask a Librarian</a></li>
+
+<li><a title="Looking for a specific department or staff member?" href="http://mulibraries.missouri.edu/about/directories/default.htm">Staff Directories</a></li>
+
+  <li><a title="Report a problem accessing databases, ejournals, ERes or MERLIN" href="http://mulibraries.missouri.edu/showmehow/contactus.aspx?report">Report a problem</a></li>
+
+<li><a title="Give us your comments &amp; suggestions" href="http://mulibraries.missouri.edu/blogs/suggestions/index.php">Suggestions &amp; Comments</a></li>
+
+</ul>
+
+
+
+</div>
+
+<img src="http://mulibraries.missouri.edu/images/gateway/left-columnboxbottom.jpg" alt="Contact Us Section" />
+
+<br />
+
+ <!--   ABout the Libraries box
+
+<img src="http://mulibraries.missouri.edu/images/gateway/left-columnboxtop.jpg" />
+
+<div class="box">
+
+<a title="About the MU Libraries" href="http://mulibraries.missouri.edu/about/default.htm"><h3>About the Libraries</h3></a>
+
+<ul>
+
+<li><a href="http://mulibraries.missouri.edu/about/hours.htm" title="Campus Library Hours">Hours</a> | 
+
+    <a href="http://mulibraries.missouri.edu/about/maps/default.htm" title="Library Directions and Maps">Maps</a></li>
+
+<li><a href="http://mulibraries.missouri.edu/about/employment.htm" title="Jobs and employment">Job Opportunities</a></li>
+
+<li><a title="Bookmark Cafe" href="http://mulibraries.missouri.edu/guides/virtour/cafe.htm">Bookmark Cafe</a></li>
+
+<li><a title="About the MU Libraries" href="http://mulibraries.missouri.edu/about/default.htm">More... <img height="11" src="http://mulibraries.missouri.edu/images/arrow.gif" border=0 width="15"/></a></li>
+
+</ul>
+
+</div>
+
+<img src="http://mulibraries.missouri.edu/images/gateway/left-columnboxbottom.jpg" />
+
+<br />   -->
+
+<img src="http://mulibraries.missouri.edu/images/gateway/left-columnboxtop.jpg" alt="Information for... Section" />
+
+<div class="box">
+
+<a title="Information for..." href="http://mulibraries.missouri.edu/resourcesfor/"><h3>Information for...</h3></a>
+
+<ul>
+
+<li><a href="http://mulibraries.missouri.edu/resourcesfor/undergrad.htm" title="Undergraduates">Undergraduates</a></li>
+
+<li><a href="http://mulibraries.missouri.edu/resourcesfor/grad-students/default.htm"
+
+    title="Graduate Students">Graduate Students</a></li>
+
+<li><a href="http://mulibraries.missouri.edu/resourcesfor/faculty/default.htm" title="Faculty &amp; Staff">Faculty &amp; Staff</a></li>
+
+<li><a href="http://libraryguides.missouri.edu/distance">Distance Learners</a></li>
+
+<li><a title="More Resources for..." href="http://mulibraries.missouri.edu/resourcesfor/">More... <img   height="11" src="http://mulibraries.missouri.edu/images/arrow.gif" alt="More " id="GatewayRightNavMoreInformation" name="GatewayRightNavMoreInformation" border="0" width="15"/></a></li>
+
+
+
+</ul>
+
+</div>
+
+<img src="http://mulibraries.missouri.edu/images/gateway/left-columnboxbottom.jpg" alt="Information for... Section" />
+
+
+
+ 
+
+<a title="Give to the MU Libraries" href="http://mulibraries.missouri.edu/about/giving-to-the-libraries.htm">
+
+<img title="Give to the MU Libraries" src="http://mulibraries.missouri.edu/images/gateway/give1.jpg" border="0" alt="Give to the MU Libraries"   />
+
+</a>
+
+<br /><br />
+
+<div class="hours">  
+
+<div class="hoursInside">  
+
+<br />
+
+<b>Today's Hours</b><br />
+
+<b>(Ellis Library)</b><br /> 
+
+7:30 am to<br> 2:00 am<br>  
+
+<a href="http://mulibraries.missouri.edu/about/hours.htm" style="color:White;"   title="more hours...">more hours...<img src="http://mulibraries.missouri.edu/images/arrowgreen.jpg" id="GatewayRightNavMoreHours" name="GatewayRightNavMoreHours" alt="More hours information" border="0" /></a>
+
+</div>
+
+</div>
+
+
+
+<div class="social"> 
+
+<a title="MU Libraries on Social Networking Websites" href="http://mulibraries.missouri.edu/about/social.htm"><img src="http://mulibraries.missouri.edu/images/facebook_16.png" border="0" alt="MU Libraries on Social Networking Websites" title="MU Libraries on Social Networking Websites" /></a>
+
+&nbsp;
+
+<a title="MU Libraries on Social Networking Websites" href="http://mulibraries.missouri.edu/about/social.htm"><img src="http://mulibraries.missouri.edu/images/twitter_16.png" border="0" alt="MU Libraries on Social Networking Websites" title="MU Libraries on Social Networking Websites" /></a> 
+
+&nbsp;
+
+<a title="RSS Feeds" href="http://mulibraries.missouri.edu/rss/default.htm"><img src="http://mulibraries.missouri.edu/images/rss_16.png" border="0" alt="RSS Feeds" title="RSS Feeds" /></a>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+<div id="footer"> 
+
+<div class="footer-left">Copyright &#169; 2012, <a href="http://www.missouri.edu/dmca/">DMCA</a><br/>
+
+ MU Libraries, University of Missouri<br/>
+
+ 104 Ellis Library, Columbia, MO 65201<br/>
+
+ Ph: (573) 882-4701 <br/></div>
+
+<div class="footer-right">
+
+
+
+<a href="http://mulibraries.missouri.edu/showmehow/contactus.aspx#tabs-3">Contact the webmaster</a><br/>
+
+<a href="http://mulibraries.missouri.edu/showmehow/contactus.aspx#tabs-4">Report a problem with website</a>
+
+<br/>
+
+<a href="http://www.missouri.edu/disability-resources.php" title="EEO / ADA">EEO/ADA</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+

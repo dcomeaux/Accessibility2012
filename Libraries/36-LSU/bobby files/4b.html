@@ -1,0 +1,740 @@
+
+<HTML>
+<HEAD>
+<META CONTENT="text/html; charset=utf-8">
+<TITLE>LSU Libraries -- Hours</TITLE>
+
+
+  .dptable {width:189px;}
+  .dayOfWeek{display:inline; padding:2px; width:25px;}
+  .dateBox{cursor:pointer; background-color:#461D7C; padding:2px; color:#eeeeee;}
+  .dayOfWeekBox {color:#461D7C;font-size:10px;}
+  
+  div#picker {width:189px; position:absolute; visibility:hidden; background-color:#eeeeee; border:solid #000000 1px; font-size:10px; }
+  div#picker_year{background-color:#461D7C; color:#eeeeee; padding:2px; border-bottom:solid #ffffff 1px; font-weight:bold; text-decoration:none;}
+  div#picker_year a {text-decoration:none; color:#eeeeee;}
+  div#picker_month{padding:2px; border-bottom:solid #ffffff 1px; background:#cccccc;}
+  div#picker_month select {font-size:10px;margin:3px 0px;}
+ 
+
+function goocal() {
+
+	var selctedcal = document.goocal.location.value;
+
+	if(document.getElementById('location').value == "circ") {document.getElementById("goocallink").src.value = "https://www.google.com/calendar/render?cid=YmJkOWcwOTRzbWVnMTZ1bnNxcnFxMXBsMWtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ";}
+	if(document.getElementById('location').value == "ref") {document.getElementById("goocallink").src.value = "https://www.google.com/calendar/render?cid=anZqM285ajhnM2hmNGNzYTI1cDRsYXVvNW9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ";}
+	if(document.getElementById('location').value == "edu") {document.getElementById("goocallink").src.value = "https://www.google.com/calendar/render?cid=cWxvdHR0ODU4djJmanNtbjhnOGQ2c200ZDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ";}
+	if(document.getElementById('location').value == "music") {document.getElementById("goocallink").src.value = "https://www.google.com/calendar/render?cid=dGpoazdldGJmZXViNGhwZzljNWxkdjkxMzhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ";}
+	if(document.getElementById('location').value == "gov") {document.getElementById("goocallink").src.value = "https://www.google.com/calendar/render?cid=azNmZjBidDJybWJmYWRoZGx1c3BpMGl1MnNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ";}
+	if(document.getElementById('location').value == "hill") {document.getElementById("goocallink").src.value = "https://www.google.com/calendar/render?cid=dWU5aG50NGdmcjcyN3RlZjhlaWY4Zzc5MTBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ";}
+	if(document.getElementById('location').value == "ilb") {document.getElementById("goocallink").src.value = "https://www.google.com/calendar/render?cid=YW11dW9wNThhaDg5Yzdjbmg1ZnA4Z3E1aGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ";}
+
+}
+
+
+
+   <!-- **** layout stylesheet **** 
+  <link rel="stylesheet" type="text/css" href="http://www.lib.lsu.edu/style/libraries.css" />-->
+  <!-- **** color scheme stylesheet **** -->
+  
+  <!-- **** printer friendly stylesheet **** -->
+  
+ 
+  
+@media only screen and (max-device-width: 480px) {  	#mobilepop {
+		width:760px;
+		height:auto;
+		margin:0 10px;
+		padding:0;
+		/*display:none; */
+		overflow:hidden;
+	}
+	#mobilecont {
+		width:760px;
+		background:#FDD023;
+		color:#333333;
+		padding:10px;
+		font-size:12px;
+		font-family:Arial, Helvetica, sans-serif;
+		text-align:center;
+		border:1px solid #ffffff;
+		line-height:115% !important;
+	} }
+	
+	#mobilecont, #mobilepop {display: none;}
+	
+
+ 
+
+<TITLE>LSU Libraries</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">[INLINE]
+
+
+	
+    	<P><EM>On a mobile device?</EM></P>
+        <P>View the LSU Libraries Mobile Website at<BR> <U><FONT COLOR=blue>http://www.lib.lsu.edu/m/</FONT></U></P>
+        <!-- <p style="fontsize:2em;"><input type="button" name="closempop" value="Stay" onClick="javascript:mobilepop('close');" /> <input type="button" name="redirectmpop" value="Go to Mobile Site" onClick="javascript:mobilepop('redirect');" /> </p>-->
+    
+
+ 
+<HTML>
+<HEAD>
+<META CONTENT="text/html; charset=utf-8">
+<!--<base href="http://www.lib.lsu.edu"  />-->
+
+
+
+
+ 
+
+
+
+
+////////////THIS IS THE EXTERNAL LINKS NEW WINDOW JS//////////////////
+
+function exLinks() {
+<!-- Copyright 2005 Bontrager Connection, LLC
+// More info: "Automatic New Window for External Links" 
+//    at /library/
+// Also see http://BontragerConnection.com/
+//
+// List the domain names that shall not be put into new 
+//    windows when the link is clicked. If you use both 
+//    the www.example.com and example.com versions of 
+//    your domain name, list them both. The domains need 
+//    to be all one line between the quotation marks on 
+//    the line below, the names separated with a comma.
+//    Do not specify http:// URLs, just domain names.
+
+var Domains = "www.lib.lsu.edu,lib.lsu.edu,lsu.edu,www.lsu.edu,test.lib.lsu.edu,news.blogs.lib.lsu.edu,lsu.louislibraries.org,grok.lsu.edu,itsweb.lsu.edu";
+
+////////////////////////////////////////////
+// No other customizations are necessary. //
+////////////////////////////////////////////
+if(Domains.indexOf(" ") != 1) {
+   var splitarray = Domains.split(" ");
+   Domains = splitarray.join("");
+}
+Domains = Domains.toLowerCase();
+var DomainsArray = Domains.split(",");
+for(var i = 0; i < document.links.length; i++) {
+   if(document.links[i].hostname.length < 1) 
+   { continue; }
+   if(document.links[i].target.length > 0)
+   { continue; }
+   var h = document.links[i].hostname.toLowerCase();
+   var makeNewWindow = true;
+   for(var ii = 0; ii < DomainsArray.length; ii++) {
+      if(DomainsArray[ii] != h) 
+      { continue; }
+      makeNewWindow = false;
+      break;
+   }
+   if(makeNewWindow == true)
+   { document.links[i].title = 'This link will take you outside LSU.edu.'; }
+}
+//-->
+}
+
+
+function mobilepop(action) {
+	if (action == "close") document.getElementById('mobilepop').style.display = "none";
+	else if (action == "redirect") window.location.href = "http://www.lib.lsu.edu/m/";
+}
+
+function mobilepopOL() {	
+//	if (document.location == "http://www.lib.lsu.edu/index.html" || document.location == "http://www.lib.lsu.edu/") {
+//		if (screen.width 
+
+<!-- The following JavaScript code gets the current date from the viewer's machine. --> 
+
+<!-- tag to hide script from older browsers that don't support JavaScript
+function display_todays_date()
+{
+var today = new Date();
+var numerical_day=today.getDay();
+var numerical_month=today.getMonth();
+var date=today.getDate();
+var year=today.getFullYear();
+var weekday_array = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+var day_of_the_week = weekday_array[numerical_day];
+var month_array = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+var month_name = month_array[numerical_month];
+var date_string=day_of_the_week+', '+month_name+' '+date+', '+year;
+document.write(date_string);
+}
+//-->
+
+  
+	#mobilepop {
+		/*position:absolute;
+		top:10px;
+		left:10px;*/
+		width:760px;
+		height:auto;
+		margin:0 10px;
+		padding:0;
+		display:none;
+		overflow:hidden;
+	}
+	#mobilecont {
+		width:760px;
+		background:#FDD023;
+		color:#333333;
+		padding:10px;
+		font-size:12px;
+		font-family:Arial, Helvetica, sans-serif;
+		text-align:center;
+		border:1px solid #ffffff;
+		line-height:115% !important;
+	}
+
+<!-- End the current date script. --> 
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+	[INLINE]
+
+
+	
+		
+    	<P><EM>On a mobile device?</EM></P>
+        <P>View the LSU Libraries Mobile Website at<BR> <U><FONT COLOR=blue>http://www.lib.lsu.edu/m/</FONT></U></P>
+        <!-- <p style="fontsize:2em;"><input type="button" name="closempop" value="Stay" onClick="javascript:mobilepop('close');" /> <input type="button" name="redirectmpop" value="Go to Mobile Site" onClick="javascript:mobilepop('redirect');" /> </p>-->
+	    
+	
+
+
+	<!--Begin Utility Bar-->
+	<UL>
+	<LI><U><FONT COLOR=blue>
+		[Text Only]</FONT></U>
+		<U><FONT COLOR=blue>[Login to MyLSU]</FONT></U>
+	</LI> 
+	<LI> Baton Rouge, Louisiana | 
+	<!--Begin date display-->
+	display_todays_date();
+	<!--end date display-->
+	</LI> 
+
+ 	<LI>
+	<FORM>
+		 
+		<INPUT WIDTH="17" NAME="image" HEIGHT="14" TYPE="image">
+		<INPUT VALUE="Search lsu.edu" NAME="q" SIZE="20" TYPE="text">
+		<INPUT VALUE="lsu.edu" NAME="sitesearch" TYPE="hidden"> 
+		</FORM>
+	</LI>
+
+</UL>
+<!--End Utility Bar   -->
+		
+ 
+<U><FONT COLOR=blue></FONT></U>
+
+	<UL>
+ 	  <LI><U><FONT COLOR=blue>LSU Libraries</FONT></U><!-- Begin Home Item -->
+    
+       <!-- <div class="dropdown_2columns">--><!-- Begin 2 columns container -->
+    
+    <!--        <div class="col_2">
+                <h2>Welcome !</h2>
+            </div>
+    
+            <div class="col_2">
+                <p>Welcome to the LSU Libraries web site.  </p>             
+                <p>The LSU Libraries web site is a gateway to the information and research needs of the LSU community.  It can be used to locate books, link to ejournal articles, communicate with subject librarians and other library staff and faculty members.</p>             
+            </div>
+    
+            <div class="col_2">
+                <h2>Cross Browser Support</h2>
+            </div>
+            
+            <div class="col_1">
+                <img src="img/browsers.png" width="125" height="48" alt="" />
+            </div>
+            
+            <div class="col_1">
+                <p>This mega menu has been tested in all major browsers.</p>
+            </div>
+          
+        </div>--><!-- End 2 columns container -->
+    
+    </LI><!-- End Home Item -->
+    
+         <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////          ABOUT US                   ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+ 	   	 <LI><U><FONT COLOR=blue>About Us</FONT></U><!-- Begin 5 columns Item -->
+        <!-- Begin 5 columns container -->
+        
+             
+                <H2>Welcome to the LSU Libraries Website!</H2>
+                <P>The LSU Libraries web site is a gateway to the information and research needs of the LSU community. It can be used to locate books, link to ejournal articles, and to communicate with subject librarians and other library staff and faculty members.
+</P>
+            
+             
+            
+                <H3>Information</H3>
+     <!--           <p class="black_box">This is a dark grey box text. Fusce in metus at enim porta lacinia vitae a arcu. Sed sed lacus nulla mollis porta quis.</p>-->
+     
+            <UL> 
+            <LI><U><FONT COLOR=blue>About the Libraries</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Driving Directions</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Employment</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Hours</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Policies</FONT></U></LI>
+            
+            </UL>
+            
+   		        
+                <H3>Directory</H3>
+                <UL>
+                <LI><U><FONT COLOR=blue>All</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Faculty</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Subject Librarians</FONT></U></LI>
+              <!--  <li><a href="http://www.lib.lsu.edu/sp/subjects/staff.php?letter=By Department">By Departments</a></li>-->
+                </UL>
+                
+                
+             
+            
+               <H3>Frequently Dialed Numbers</H3>
+               
+              <P>- Circulation (fines, borrowing): 578-2058<BR> 
+              - Reference (help finding information): 578-5652<BR>
+              - Music Resources: 578-4674<BR>
+              - Special Collections: 578-6568 </P>
+            
+           &nbsp; 
+                   
+                   
+                   
+                   <U><FONT COLOR=blue>[INLINE]</FONT></U>
+                   
+                     <U><FONT COLOR=blue>[INLINE]</FONT></U>
+                  <U><FONT COLOR=blue> [INLINE]</FONT></U>
+                   <U><FONT COLOR=blue> [INLINE] </FONT></U>
+                  
+            
+                
+                
+         
+ 
+        
+        <!-- End 5 columns container -->
+     </LI><!-- End 5 columns Item -->
+     
+     <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////          RESEARCH TOOLS             ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+     
+     <LI><U><FONT COLOR=blue>Research Tools</FONT></U><!-- Begin 4 columns Item -->
+    
+        <!-- Begin 4 columns container -->
+        
+               
+            
+                <H3>Find Books</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Online Catalog</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>WorldCat Local</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Subject Guides</FONT></U></LI>
+<!--                    <li><a href="http://www.lib.lsu.edu/sp/subjects/index.php">Subject Guides</a></li> -->
+                    <LI><U><FONT COLOR=blue>Gov't Documents</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Reserves</FONT></U>
+                    <!-- <li><a href="#">more</a></li>-->
+                </UL>   
+                             
+                   
+                <H3>Find Articles</H3> 
+                <UL>
+                    <LI><U><FONT COLOR=blue>Indexes &amp; Databases</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Ejournals</FONT></U></LI>
+                 <!--   <li><a href="#">How to find Articles</a></li>-->
+                </UL>   
+                 
+                <H3>Other</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Gov't Documents</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Other Resources</FONT></U></LI>
+                </UL>   
+            
+               
+                <H3>Help</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Subject Librarians</FONT></U></LI>
+<!--                <li><a href="http://www.lib.lsu.edu/sp/subjects/staff.php?letter=Subject Librarians AZ">Subject Librarians</a></li> -->
+                    <LI><U><FONT COLOR=blue>Tutorials</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Technical Help</FONT></U></LI>
+                </UL>   
+            
+   
+        <!-- End 4 columns container -->
+    
+    </LI><!-- End 4 columns Item -->
+    
+  
+    <!-- Start services -->
+         <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////             SERVICES                ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+    
+        <LI><U><FONT COLOR=blue>Services</FONT></U><!-- Begin 4 columns Item -->
+    
+        <!-- Begin 4 columns container -->
+        
+    <!--        <div class="col_3">
+                <h2>Research</h2>
+            </div>
+    -->      
+         
+            
+            
+                    <H3>Instruction</H3>
+                <UL>
+                
+                    <LI><U><FONT COLOR=blue>Instruction Webpage</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>LIS 1001</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Tutorial Center (141 Middleton)</FONT></U>
+                    
+                    <LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Tutorials</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Request Instruction</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Reserve a Classroom</FONT></U></LI>
+               
+                </UL>   
+                 
+            
+       
+  
+    
+            
+            
+                <H3>Borrowing</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Interlibrary Loan</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Your Library Account</FONT></U></LI>
+              
+                    <LI><U><FONT COLOR=blue>Circulation Policies</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Reserves</FONT></U></LI>
+                   <!-- <li><a href="#">more</a></li>-->
+                </UL>   
+                
+                 <H3>Other</H3>
+                <UL>
+                <LI><U><FONT COLOR=blue>Disability Services</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Distance Education</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Study/ Presentation Rooms</FONT></U>
+                </UL>
+                 
+            
+    
+            
+            
+                <H3>Technology</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Help Desk</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Print Desk</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Find a Computer</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Technical Help</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Visualization Services Center (109 Middleton)</FONT></U>
+                 
+                </UL>  
+                 
+            
+    
+     <!--       <div class="col_1">
+            
+                <h3>Misc</h3>
+                <ul>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Logo</a></li>
+                    <li><a href="#">Flash</a></li>
+                    <li><a href="#">Illustration</a></li>
+                    <li><a href="#">More...</a></li>
+                </ul>   
+                 
+            </div>
+            -->
+        <!-- End 4 columns container -->
+    
+    </LI><!-- End 4 columns Item -->
+    
+    <!-- end services -->
+    
+         <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////             DEPARTMENTS             ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+
+	<LI><U><FONT COLOR=blue>Departments</FONT></U>
+    
+		
+        
+                
+                
+                    <UL>
+                        <LI><U><FONT COLOR=blue>Acquisitions</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Circulation</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Education Resources</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Gov't Documents</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Interlibrary Loan</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Music Resources</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Reference</FONT></U></LI>                     
+                        <LI><U><FONT COLOR=blue>Special Collections</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>More</FONT></U></LI>
+              
+                    </UL>   
+                     
+                
+                
+		
+        
+	</LI>
+
+
+     <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////              HELP                   ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+
+    <LI><U><FONT COLOR=blue>Help</FONT></U><!-- Begin 3 columns Item -->
+    
+        <!-- Begin 3 columns container -->
+            
+            
+                <H2>Help</H2>
+            
+            
+             
+    
+                <UL>
+                    <LI><U><FONT COLOR=blue>Technical Help</FONT></U></LI>
+                   
+                    <LI><U><FONT COLOR=blue>Tutorial Center</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Call Us</FONT></U> 225.578.8875</LI>
+                
+                </UL>   
+    
+            
+            
+            
+    
+                <UL>
+                    <LI><U><FONT COLOR=blue>Research Help</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Help Desk</FONT></U> 225.578.3375</LI>
+                    <LI><U><FONT COLOR=blue>Email Us</FONT></U></LI>
+               
+                </UL>   
+    
+            
+            
+            
+    
+                <UL>
+                    <LI><U><FONT COLOR=blue>FAQ</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>IM Us</FONT></U></LI>
+              
+                </UL>   
+    
+            
+            
+            
+                <H2>Search the Libraries Web Site</H2>
+                
+                     <FORM>
+                <INPUT WIDTH="17" NAME="image" HEIGHT="14" TYPE="image">
+                <INPUT NAME="q" TYPE="text">
+                <INPUT VALUE="www.lib.lsu.edu" NAME="sitesearch" TYPE="hidden">
+                </FORM>
+            
+            
+          <!--  <div class="col_3">
+                <img src="img/02.jpg" width="70" height="70" class="img_left imgshadow" alt="" />
+                <p><strong>Tutorial Lab</strong> Located in 141 Middleton Library, the lab offers tutoring in Math....(this should go under instruction)<a href="#">Read more...</a></p>
+    <br clear="all" />
+                <img src="img/01.jpg" width="70" height="70" class="img_left imgshadow" alt="" />
+                <p>Aliquam elementum felis quis felis consequat scelerisque. Fusce sed lectus at arcu mollis accumsan at nec nisi. Aliquam pretium mollis fringilla. Vestibulum tempor facilisis malesuada. <a href="#">Read more...</a></p>
+            </div>
+        -->
+        <!-- End 3 columns container -->
+        
+    </LI><!-- End 3 columns Item -->
+    
+         <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////           A TO Z                    ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+
+<LI><U><FONT COLOR=blue>A to Z</FONT></U></LI>
+</UL>
+  
+
+ 
+	 
+    
+
+<!-- ENTER ALL OF YOUR CONTENT BELOW THIS -->
+
+<H1>LSU Libraries' Hours</H1>
+<BR>
+
+
+<FORM><H2>Find Hours by Schedule</H2><SELECT NAME="sched"><OPTION></OPTION><OPTION VALUE="1313989200|1322546400|regular|Regular Fall Schedule|">Regular Fall Schedule&nbsp;&nbsp;(Aug 22 - Nov 29)</OPTION><OPTION VALUE="1315026000|1315198800|special|Labor Day Holiday|2">Labor Day Holiday&nbsp;&nbsp;(Sep 3 - Sep 5)</OPTION><OPTION VALUE="1317445200|1318050000|special|Fall Midterm Week|7">Fall Midterm Week&nbsp;&nbsp;(Oct 1 - Oct 8)</OPTION><OPTION VALUE="1318395600|1318568400|special|Fall Holiday|2">Fall Holiday&nbsp;&nbsp;(Oct 12 - Oct 14)</OPTION><OPTION VALUE="1322028000|1322200800|special|Thanksgiving Holiday|2">Thanksgiving Holiday&nbsp;&nbsp;(Nov 23 - Nov 25)</OPTION><OPTION VALUE="1322632800|1322805600|special|Concentrated Study Period|2">Concentrated Study Period&nbsp;&nbsp;(Nov 30 - Dec 2)</OPTION><OPTION VALUE="1322892000|1323496800|special|Fall Semester Final Exams|7">Fall Semester Final Exams&nbsp;&nbsp;(Dec 3 - Dec 10)</OPTION><OPTION VALUE="1323583200|1324620000|special|Fall Intersession|12">Fall Intersession&nbsp;&nbsp;(Dec 11 - Dec 23)</OPTION><OPTION VALUE="1324706400|1325484000|special|Christmas &amp; New Year's|9">Christmas &amp; New Year's&nbsp;&nbsp;(Dec 24 - Jan 2)</OPTION><OPTION VALUE="1325570400|1326693600|special|Winter Intersession|13">Winter Intersession&nbsp;&nbsp;(Jan 3 - Jan 16)</OPTION><OPTION VALUE="1326607200|1326693600|special|Martin Luther King, Jr. Holiday|1">Martin Luther King, Jr. Holiday&nbsp;&nbsp;(Jan 15 - Jan 16)</OPTION><OPTION VALUE="1326780000|1335848400|regular|Regular Spring Schedule|">Regular Spring Schedule&nbsp;&nbsp;(Jan 17 - May 1)</OPTION><OPTION VALUE="1329544800|1329804000|special|Mardi Gras Holiday|3">Mardi Gras Holiday&nbsp;&nbsp;(Feb 18 - Feb 21)</OPTION><OPTION VALUE="1330754400|1331359200|special|Spring Midterm Week|7">Spring Midterm Week&nbsp;&nbsp;(Mar 3 - Mar 10)</OPTION><OPTION VALUE="1333688400|1333861200|special|Easter Break|2">Easter Break&nbsp;&nbsp;(Apr 6 - Apr 8)</OPTION><OPTION VALUE="1333947600|1334379600|special|Spring Break 2012|5">Spring Break 2012&nbsp;&nbsp;(Apr 9 - Apr 14)</OPTION><OPTION VALUE="1335934800|1336107600|special|Concentrated Study Period|2">Concentrated Study Period&nbsp;&nbsp;(May 2 - May 4)</OPTION><OPTION VALUE="1336194000|1336885200|special|Spring Semester Final Exams|8">Spring Semester Final Exams&nbsp;&nbsp;(May 5 - May 13)</OPTION><OPTION VALUE="1336971600|1338699600|special|Spring Intersession|20">Spring Intersession&nbsp;&nbsp;(May 14 - Jun 3)</OPTION><OPTION VALUE="1338181200|1338181200|special|Memorial Day|31">Memorial Day&nbsp;&nbsp;(May 28 - May 28)</OPTION><OPTION VALUE="1338786000|1343019600|regular|Regular Summer Schedule|">Regular Summer Schedule&nbsp;&nbsp;(Jun 4 - Jul 23)</OPTION><OPTION VALUE="1341291600|1341464400|special|4th of July Holiday|2">4th of July Holiday&nbsp;&nbsp;(Jul 3 - Jul 5)</OPTION><OPTION VALUE="1341550800|1341723600|special|Exam Schedule Summer-B|2">Exam Schedule Summer-B&nbsp;&nbsp;(Jul 6 - Jul 8)</OPTION><OPTION VALUE="1343106000|1343278800|special|Exam Schedule Summer-A|2">Exam Schedule Summer-A&nbsp;&nbsp;(Jul 24 - Jul 26)</OPTION><OPTION VALUE="1343365200|1344747600|special|Summer Intersession I|16">Summer Intersession I&nbsp;&nbsp;(Jul 27 - Aug 12)</OPTION><OPTION VALUE="1344834000|1345352400|special|Summer Intersession II|6">Summer Intersession II&nbsp;&nbsp;(Aug 13 - Aug 19)</OPTION></SELECT></FORM><FORM><H2>Find Hours for a Specific Date </H2><INPUT NAME="formDate" TYPE="text">&nbsp;&nbsp;<U><FONT COLOR=blue>[INLINE]</FONT></U><U><FONT COLOR=blue>&lt;&lt;</FONT></U> Year <U><FONT COLOR=blue>&gt;&gt;</FONT></U> <SELECT><OPTION VALUE="1">January</OPTION><OPTION VALUE="2">February</OPTION><OPTION VALUE="3">March</OPTION><OPTION VALUE="4">April</OPTION><OPTION VALUE="5">May</OPTION><OPTION VALUE="6">June</OPTION><OPTION VALUE="7">July</OPTION><OPTION VALUE="8">August</OPTION><OPTION VALUE="9">September</OPTION><OPTION VALUE="10">October</OPTION><OPTION VALUE="11">November</OPTION><OPTION VALUE="12">December</OPTION></SELECT><TABLE><TR><TD>S</TD><TD>M</TD><TD>T</TD><TD>W</TD><TD>T</TD><TD>F</TD><TD>S</TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR></TABLE></FORM><BR>table#hours  {width:730px;padding:0px;margin:25px 0px;border-spacing:0px;border-collapse:collapse;background:#e1e1e1;table-layout:fixed;}table#hours td.tablehead {width:730px;background:#dddddd;font-size:14px;}table#hours td.tablehead2 {background:#eeeeee;color:#461d7c;}table#hours td.tdpicked {background:#FFF9D5;color:#000000;}table#hours td.tdpicked2 {background:#FCECAE;color:#000000;}table#hours td.tabletitle {font-weight:bold;color:#461d7c;padding:10px 0px;}table#hours td.tablesa {padding:5px;}table#hours td {text-align:center;border:1px #e1e1e1 solid;padding:5px 0px;margin:0px;background:#ffffff;}table#hours tr {padding:0px;margin:0px;}<TABLE><TR>	<TD>LSU Libraries Hours for Today</TD>	</TR><TR>	<TD>Service Area</TD>	<TD>Friday,<BR>
+March 9</TD>	<TD>Saturday,<BR>
+March 10</TD>	<TD>Sunday,<BR>
+March 11</TD>	</TR><TR>	<TD>Middleton Circulation <BR>578-2058</TD><TD>7:15 am - <BR>8:00 pm</TD><TD>10:00 am - <BR>5:00 pm</TD><TD>11:00 am - <BR>12:00 am</TD></TR><TR>	<TD>Middleton Reference <BR>578-5652</TD><TD>7:15 am - <BR>8:00 pm</TD><TD>10:00 am - <BR>5:00 pm</TD><TD>11:00 am - <BR>12:00 am</TD></TR><TR>	<TD>Education Resources<BR>227 Middleton<BR>578-2399</TD><TD>8:00 am - <BR>5:00 pm</TD><TD>12:00 pm - <BR>4:00 pm</TD><TD>2:00 pm - <BR>10:00 pm</TD></TR><TR>	<TD>Music Resources<BR>202 Middleton<BR>578-4674</TD><TD>8:00 am - <BR>5:00 pm</TD><TD>12:00 pm - <BR>4:00 pm</TD><TD>2:00 pm - <BR>10:00 pm</TD></TR><TR>	<TD>Government Documents<BR>53 Middleton<BR>578-2570</TD><TD>7:15 am - <BR>6:00 pm</TD><TD>10:00 am - <BR>4:00 pm</TD><TD>11:00 am - <BR>9:00 pm</TD></TR><TR>	<TD>Special Collections<BR>Hill Memorial Library<BR>578-6544</TD><TD>9:00 am - <BR>5:00 pm</TD><TD>9:00 am - <BR>1:00 pm</TD><TD>Closed</TD></TR><TR>	<TD>Interlibrary Borrowing<BR>126 Middleton<BR>578-2138</TD><TD>7:30 am - <BR>5:00 pm</TD><TD>Closed</TD><TD>Closed</TD></TR><TR>	<TD>NOTE: Library Hours Subject to Change. Call to confirm hours.<BR>
+													<BR>When Middleton Library is open after midnight, only the first and second floors will remain open. <BR>The third and fourth floors will close at midnight.</TD>	</TR></TABLE>
+<P><U><FONT COLOR=blue>Add LSU Libraries' Hours to Your Calendar!</FONT></U></P>
+<BR><HR><BR>
+
+<H2>Special Notices<BR></H2>
+
+
+<P>There are no special notices at this time.</P>
+
+<BR><HR><BR>
+
+<H2>LSU Libraries Schedule for Home Football Saturdays - Fall 2012<BR></H2>
+
+
+<H2>Middleton Library:</H2>
+<P>Middleton Library will be CLOSED on Saturdays when a home football game is scheduled.</P>
+
+<H2>Hill Memorial Library, Special Collections Reading Room:</H2>
+<P>Hill Memorial Library will be CLOSED on Saturdays when a home football game is scheduled.</P>
+
+<BR><HR><BR>
+
+<H2>Hours for Other Locations in Middleton Library (Holidays Excepted)</H2>                              <UL><LI><EM><U><FONT COLOR=blue>Faculty Technology Center</FONT></U></EM>, Middleton Room 109, 578-3375, Option 1  <BR> Monday-Friday 8:00 a.m. - 4:30 p.m.</LI><LI><EM><U><FONT COLOR=blue>Visualization Services Center</FONT></U></EM>, Middleton Room 109, 578-1877<BR> Monday-Friday  8:00 a.m. - 4:30 p.m.</LI>                       <LI><EM><U><FONT COLOR=blue>ITS Help Desk</FONT></U></EM>, Middleton Room 141, 578-3375<BR> Monday-Friday same schedule as Middleton Circulation </LI><LI><EM><U><FONT COLOR=blue>Print Center</FONT></U></EM>, Middleton Room 141, 578-7554<BR> Monday-Friday same schedule as Middleton Circulation </LI><LI><EM><U><FONT COLOR=blue>Center for Academic Success, Tutorial Center</FONT></U></EM>, Middleton Room 141, 578-7119<!--5787744--><BR>
+<EM>See the CAS web site for their hours</EM></LI>
+</UL>
+<P>NOTE: Library Hours Subject to Change. Call to confirm hours.</P>
+
+
+<!-- ENTER ALL OF YOUR CONTENT ABOVE THIS -->
+
+
+
+  
+ 
+ <U><FONT COLOR=blue>[LSU Logo]</FONT></U>
+<BR><U><FONT COLOR=blue>LSU Libraries</FONT></U>
+<BR>Baton Rouge, LA 70803
+<BR>Tel (225) 578-5652
+<BR>Fax (225) 578-9432 
+
+
+
+<!-- AddThis Button END -->
+<BR> 
+
+<UL>
+<LI><U><FONT COLOR=blue>LSU Libraries</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Contact Us</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Mobile Website</FONT></U></LI>
+<!--<li><a href="http://www.lsu.edu">Louisiana State University</a></li>-->
+<LI>
+<U><FONT COLOR=blue>[Library Blog]</FONT></U>
+<U><FONT COLOR=blue>[RSS Feed]</FONT></U>
+<U><FONT COLOR=blue>[Library Facebook Page]</FONT></U>
+<U><FONT COLOR=blue>[Library Twitter Page] </FONT></U>
+<!-- AddThis Button BEGIN -->
+
+//var addthis_config = {
+ //  ui_click: true
+//}
+
+<!--a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa4a8b0c2a79cf3130">
+<img style="verticalalign:middle;" src="http://s7.addthis.com/static/btn/v2/lgbookmarken.gif" width="125" height="16" alt="Bookmark and Share" style="border:0" />
+</a>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=xa4a8b0c2a79cf3130"></script> -->
+</LI>
+</UL>
+<BR>
+<CENTER>Copyright &copy; 1996 - 2012 LSU Libraries<BR> <!--<img src="/images/external.png" /><span class="small">Links away from LSU.edu</span> --></CENTER><BR>
+
+
+<!--<div class="right">
+<a href="http://www.lsu150.com/"><img src="/images/150year.jpg" /></a>
+
+
+</div> -->
+
+<BR>
+ 
+ 
+
+
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22589452-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>

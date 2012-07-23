@@ -1,0 +1,729 @@
+
+<HTML>
+  <HEAD>
+<META CONTENT="text/html; charset=utf-8">
+    <META CONTENT="text/html; charset=utf-8">
+
+            
+    <TITLE>Subject Librarians | Drexel University Libraries</TITLE>
+    
+    
+    
+    
+    
+    
+
+    
+
+
+    
+	
+	
+    
+	
+
+
+
+
+
+
+
+<!--//--><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" }, "viewsSlideshowSingleFrame": { "#views_slideshow_singleframe_main_homepage_slideshow_completeblock_1": { "num_divs": 3, "id_prefix": "#views_slideshow_singleframe_main_", "div_prefix": "#views_slideshow_singleframe_div_", "vss_id": "homepage_slideshow_completeblock_1", "timeout": "5000", "sort": 1, "effect": "fade", "speed": "500", "start_paused": 0, "delay": "0", "fixed_height": "1", "random": "1", "pause": "1", "pause_on_click": "0", "pause_when_hidden": 0, "pause_when_hidden_type": "full", "amount_allowed_visible": "", "remember_slide": 0, "remember_slide_days": "1", "controls": "0", "items_per_slide": "1", "pager": "2", "pager_type": "Numbered", "pager_hover": "2", "pager_click_to_page": 0, "image_count": "0", "nowrap": "0", "sync": "1", "advanced": "", "ie": { "cleartype": "true", "cleartypenobg": "false" } } } });
+//-->
+
+	
+	
+		$(document).ready(function() {
+			
+			$('#sm-offline').addClass('hide');
+			$('#sm-advisory').addClass('hide');
+			$('#sm-online').addClass('hide');
+			
+			var containsAdvisory = $("#node-4182").text().indexOf('Current Status: Service-wide Advisory') >= 0; // true
+			var containsOffline = $("#node-4182").text().indexOf('Current Status: Offline') >= 0; // true
+			
+			if(containsAdvisory){
+				$('#sm-advisory').addClass('show');
+				$('#sm-advisory').removeClass('hide');
+			}
+			
+			if(containsOffline){
+				$('#sm-offline').addClass('show');
+				$('#sm-offline').removeClass('hide');
+			}
+			
+			if(!containsAdvisory && !containsOffline){
+				$('#sm-advisory').addClass('hide');
+				$('#sm-advisory').removeClass('show');
+				$('#sm-offline').addClass('hide');
+				$('#sm-offline').removeClass('show')
+				;
+				$('#sm-online').addClass('show');
+				$('#sm-online').removeClass('hide');
+			}
+			
+		});
+	
+
+    
+    <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/drexellib30theme/fixie.css" />    <![endif]-->
+  </HEAD>
+  <BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+
+
+	<U><FONT COLOR=blue>[Drexel Library]</FONT></U>
+	<U><FONT COLOR=blue>[Libraries Home Button]</FONT></U>
+	<U><FONT COLOR=blue>[Drexel Health Sciences]</FONT></U>
+	<U><FONT COLOR=blue>[Search]</FONT></U>
+	<U><FONT COLOR=blue>[Services]</FONT></U>
+	<U><FONT COLOR=blue>[Get Help]</FONT></U>
+	<U><FONT COLOR=blue>[About]</FONT></U>
+    <U><FONT COLOR=blue>[Drexel University]</FONT></U>
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+	<H1>    <U><FONT COLOR=blue>  Services </FONT></U></H1>
+  
+
+
+	
+<UL>
+<LI><U><FONT COLOR=blue>Renew a Book</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Interlibrary Loan<BR>
+    </FONT></U></LI>
+<LI><U><FONT COLOR=blue>Subject Librarians</FONT></U></LI>
+<LI><U><FONT COLOR=blue>The Suggestion Box</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Reserve a Group Study Room</FONT></U></LI>
+</UL>
+
+    
+    
+    
+    
+    
+    
+
+
+    
+
+	<H1>Quick Search</H1>
+    
+	  <FORM>
+           <INPUT VALUE="016083094869134140650:ibrgznq8u7a" NAME="cx" TYPE="hidden">
+    <INPUT VALUE="FORID:9" NAME="cof" TYPE="hidden">
+    <INPUT VALUE="UTF-8" NAME="ie" TYPE="hidden">  
+            <P>
+
+                    <INPUT NAME="q" MAXLENGTH="255" SIZE="19" TYPE="text"></P>
+                   	<P>	<INPUT VALUE="keyword" NAME="sortByThis" TYPE="hidden">
+                          <SELECT NAME="destination">
+                          <OPTION VALUE="books">Books &amp; More</OPTION>
+                          <OPTION VALUE="catalog" SELECTED="selected">Articles &amp; More</OPTION>
+                          <OPTION VALUE="website">Website</OPTION>
+                    </SELECT></P>
+                    
+                        <INPUT VALUE="/index.html" NAME="page" TYPE="hidden">
+                        <INPUT VALUE="" NAME="combined" TYPE="hidden">
+
+                    <INPUT VALUE="Search" TYPE="submit">
+               </FORM>
+               
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+Library Chat is loading...
+$(document).ready(libChatPrint());
+
+
+
+
+    
+	<H1>      My Library Accounts </H1>
+  
+
+
+	
+<UL>
+    <LI><U><FONT COLOR=blue>My Personal Library [beta]</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>My Library Record / Renew Books</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>ILLiad<BR>
+    </FONT></U></LI>
+    <LI><U><FONT COLOR=blue>E-Z Borrow</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Current Status of Online Services</FONT></U></LI>
+</UL>
+    
+    
+    
+    
+    
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+	<H4>Subject Librarians</H4>
+
+
+
+                
+            
+
+
+
+  
+    <P>To learn more about available resources in your subject area, contact a reference/subject librarian using the information below.</P>
+<UL>
+<LI><U><FONT COLOR=blue>Business</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Careers</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Education</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Engineering</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Goodwin College</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Health Sciences</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Humanities/Social Sciences</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Library/Information Sciences</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Media Arts and Design</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Sciences and Math</FONT></U></LI>
+</UL>
+<P>&nbsp;</P>
+<H2></FONT></U>Business</H2>
+<P>
+    
+  
+  
+      
+      <TABLE>
+    
+    <TR>
+              <TH>
+                  </TH>
+              <TH>
+          Name        </TH>
+              <TH>
+          Email        </TH>
+              <TH>
+          Phone Number        </TH>
+              <TH>
+          Location        </TH>
+          </TR>
+  
+  
+          <TR>
+                  <TD>
+                      </TD>
+                  <TD>
+            Emily Missner          </TD>
+                  <TD>
+            edm25@drexel.edu          </TD>
+                  <TD>
+            215-895-6164          </TD>
+                  <TD>
+            Hagerty Library, Room 137          </TD>
+              </TR>
+      
+</TABLE>
+    
+  
+  
+  
+  
+  
+  
+ <BR>
+<U><FONT COLOR=blue>Reference Page</FONT></U><BR>
+<U><FONT COLOR=blue>LIBBIZKIT Archives</FONT></U> <U><FONT COLOR=blue>[RSS]</FONT></U></P>
+<H2></FONT></U>Careers</H2>
+<P>
+    
+  
+  
+      
+      <TABLE>
+    
+    <TR>
+              <TH>
+                  </TH>
+              <TH>
+          Name        </TH>
+              <TH>
+          Email        </TH>
+              <TH>
+          Phone Number        </TH>
+              <TH>
+          Location        </TH>
+          </TR>
+  
+  
+          <TR>
+                  <TD>
+                      </TD>
+                  <TD>
+            Brendan Johnson          </TD>
+                  <TD>
+            blj38@drexel.edu          </TD>
+                  <TD>
+            215-895-6843          </TD>
+                  <TD>
+            Hagerty Library, Room 136          </TD>
+              </TR>
+      
+</TABLE>
+    
+  
+  
+  
+  
+  
+  
+ <BR>
+<U><FONT COLOR=blue>Reference Page</FONT></U><BR>
+<U><FONT COLOR=blue>Careers&nbsp;Collection Blog</FONT></U> <U><FONT COLOR=blue>[RSS]</FONT></U></P>
+<H2></FONT></U>Education</H2>
+<P>
+    
+  
+  
+      
+      <TABLE>
+    
+    <TR>
+              <TH>
+                  </TH>
+              <TH>
+          Name        </TH>
+              <TH>
+          Email        </TH>
+              <TH>
+          Phone Number        </TH>
+              <TH>
+          Location        </TH>
+          </TR>
+  
+  
+          <TR>
+                  <TD>
+                      </TD>
+                  <TD>
+            Tim Siftar          </TD>
+                  <TD>
+            siftar@drexel.edu          </TD>
+                  <TD>
+            215-895-2762          </TD>
+                  <TD>
+            Hagerty Library, Room 134          </TD>
+              </TR>
+      
+</TABLE>
+    
+  
+  
+  
+  
+  
+  
+ <BR>
+<U><FONT COLOR=blue>Reference Page</FONT></U><BR>
+<U><FONT COLOR=blue>EdSchoolResearch Blog</FONT></U> <U><FONT COLOR=blue>[RSS]</FONT></U><BR>
+&nbsp;</P>
+<H2></FONT></U>Engineering</H2>
+<P>
+    
+  
+  
+      
+      <TABLE>
+    
+    <TR>
+              <TH>
+                  </TH>
+              <TH>
+          Name        </TH>
+              <TH>
+          Email        </TH>
+              <TH>
+          Phone Number        </TH>
+              <TH>
+          Location        </TH>
+          </TR>
+  
+  
+          <TR>
+                  <TD>
+                      </TD>
+                  <TD>
+            Jay Bhatt          </TD>
+                  <TD>
+            bhattjj@drexel.edu          </TD>
+                  <TD>
+            215-895-1873          </TD>
+                  <TD>
+            Hagerty Library, Room 132          </TD>
+              </TR>
+      
+</TABLE>
+    
+  
+  
+  
+  
+  
+  
+ <BR>
+<U><FONT COLOR=blue>Reference Page</FONT></U><U><FONT COLOR=blue><BR>
+EngLibrary Blog</FONT></U> <U><FONT COLOR=blue>[RSS]</FONT></U><U><FONT COLOR=blue><BR>
+Engineering Library Instruction Blog</FONT></U> <U><FONT COLOR=blue>[RSS]</FONT></U><U><FONT COLOR=blue><BR>
+Greening of Drexel Libraries Blog</FONT></U> [RSS]</P>
+<P>&nbsp;</P>
+<H2></FONT></U>Goodwin College Programs</H2>
+<P>
+    
+  
+  
+      
+      <TABLE>
+    
+    <TR>
+              <TH>
+                  </TH>
+              <TH>
+          Name        </TH>
+              <TH>
+          Email        </TH>
+              <TH>
+          Phone Number        </TH>
+              <TH>
+          Location        </TH>
+          </TR>
+  
+  
+          <TR>
+                  <TD>
+                      </TD>
+                  <TD>
+            Tim Siftar          </TD>
+                  <TD>
+            siftar@drexel.edu          </TD>
+                  <TD>
+            215-895-2762          </TD>
+                  <TD>
+            Hagerty Library, Room 134          </TD>
+              </TR>
+      
+</TABLE>
+    
+  
+  
+  
+  
+  
+  
+ <BR>
+<U><FONT COLOR=blue>Reference Page</FONT></U><BR>
+<U><FONT COLOR=blue>GoodwinResearch Blog</FONT></U> <U><FONT COLOR=blue>[RSS]</FONT></U><BR>
+&nbsp;</P>
+<H2></FONT></U>Health Sciences</H2>
+<P><TABLE>
+
+<TR>
+<TD>&nbsp;</TD>
+<TD>Name/Position</TD>
+<TD>Contact</TD>
+</TR>
+<TR>
+<TD>[Image of a caduceus]</TD>
+<TD><U><FONT COLOR=blue>See Health Sciences Libraries Reference Staff<BR>
+            </FONT></U><U><FONT COLOR=blue><BR>
+            </FONT></U><U><FONT COLOR=blue>Medicine/Health Sciences Blog</FONT></U> <U><FONT COLOR=blue>[RSS]</FONT></U></TD>
+<TD>215-762-7184</TD>
+</TR>
+
+</TABLE>
+</P>
+<H2></FONT></U>Humanities/Social Sciences</H2>
+<P>
+    
+  
+  
+      
+      <TABLE>
+    
+    <TR>
+              <TH>
+                  </TH>
+              <TH>
+          Name        </TH>
+              <TH>
+          Email        </TH>
+              <TH>
+          Phone Number        </TH>
+              <TH>
+          Location        </TH>
+          </TR>
+  
+  
+          <TR>
+                  <TD>
+                      </TD>
+                  <TD>
+            Larry Milliken          </TD>
+                  <TD>
+            larry.milliken@drexel.edu          </TD>
+                  <TD>
+            215-895-2765          </TD>
+                  <TD>
+            Hagerty Library, Room 131          </TD>
+              </TR>
+      
+</TABLE>
+    
+  
+  
+  
+  
+  
+  
+ <BR>
+<U><FONT COLOR=blue>Reference Page<BR>
+</FONT></U><U><FONT COLOR=blue>DrexelSocialSciencesLib Blog</FONT></U> <U><FONT COLOR=blue>[RSS]</FONT></U><BR>
+<U><FONT COLOR=blue>DrexelHumanitiesLib Blog</FONT></U> <U><FONT COLOR=blue>[RSS]</FONT></U><U><FONT COLOR=blue></FONT></U></P>
+<P></P>
+<H2></FONT></U>Library/Information Sciences</H2>
+<P>
+    
+  
+  
+      
+      <TABLE>
+    
+    <TR>
+              <TH>
+                  </TH>
+              <TH>
+          Name        </TH>
+              <TH>
+          Email        </TH>
+              <TH>
+          Phone Number        </TH>
+              <TH>
+          Location        </TH>
+          </TR>
+  
+  
+          <TR>
+                  <TD>
+                      </TD>
+                  <TD>
+            Tim Siftar          </TD>
+                  <TD>
+            siftar@drexel.edu          </TD>
+                  <TD>
+            215-895-2762          </TD>
+                  <TD>
+            Hagerty Library, Room 134          </TD>
+              </TR>
+      
+</TABLE>
+    
+  
+  
+  
+  
+  
+  
+ <BR>
+<U><FONT COLOR=blue>Reference Page</FONT></U><BR>
+<U><FONT COLOR=blue>iSchoolResearch Blog</FONT></U> <U><FONT COLOR=blue>[RSS]</FONT></U><U><FONT COLOR=blue><BR>
+</FONT></U><BR>
+&nbsp;</P>
+<H2></FONT></U>Media Arts and Design</H2>
+<P>
+    
+  
+  
+      
+      <TABLE>
+    
+    <TR>
+              <TH>
+                  </TH>
+              <TH>
+          Name        </TH>
+              <TH>
+          Email        </TH>
+              <TH>
+          Phone Number        </TH>
+              <TH>
+          Location        </TH>
+          </TR>
+  
+  
+          <TR>
+                  <TD>
+                      </TD>
+                  <TD>
+            Tom Ipri          </TD>
+                  <TD>
+            tai22@drexel.edu          </TD>
+                  <TD>
+            215-895-2772          </TD>
+                  <TD>
+            Hagerty Library, Room 135          </TD>
+              </TR>
+      
+</TABLE>
+    
+  
+  
+  
+  
+  
+  
+ <U><FONT COLOR=blue><BR>
+</FONT></U><BR>
+&nbsp;</P>
+<H2></FONT></U>Sciences and Math</H2>
+<P>
+    
+  
+  
+      
+      <TABLE>
+    
+    <TR>
+              <TH>
+                  </TH>
+              <TH>
+          Name        </TH>
+              <TH>
+          Email        </TH>
+              <TH>
+          Phone Number        </TH>
+              <TH>
+          Location        </TH>
+          </TR>
+  
+  
+          <TR>
+                  <TD>
+                      </TD>
+                  <TD>
+            Peggy Dominy          </TD>
+                  <TD>
+            dominymf@drexel.edu          </TD>
+                  <TD>
+            215-895-2754          </TD>
+                  <TD>
+            Hagerty Library, Room 126          </TD>
+              </TR>
+      
+</TABLE>
+    
+  
+  
+  
+  
+  
+  
+ <BR>
+<U><FONT COLOR=blue>Reference Page</FONT></U><BR>
+<U><FONT COLOR=blue>DrexelBioscience Blog</FONT></U> <U><FONT COLOR=blue>[RSS]</FONT></U><BR>
+<U><FONT COLOR=blue>DrexelChemistry Blog</FONT></U> <U><FONT COLOR=blue>[RSS]</FONT></U><BR>
+<U><FONT COLOR=blue>DrexelMath Blog</FONT></U> <U><FONT COLOR=blue>[RSS]</FONT></U><BR>
+<U><FONT COLOR=blue>DrexelPhysics Blog</FONT></U> <U><FONT COLOR=blue>[RSS]</FONT></U></P>
+  
+  
+    
+          <UL><LI></LI>
+</UL>
+     
+
+            
+            
+				<P>Content Editor: <U><FONT COLOR=blue>Shawn Woodson</FONT></U><BR>
+				Last Updated: 01/05/2012</P>
+			
+
+
+
+
+
+
+
+
+
+
+
+<P><U><FONT COLOR=blue>[feedback]</FONT></U>  <U><FONT COLOR=blue>About Us</FONT></U> | <U><FONT COLOR=blue>Downloads</FONT></U> | <U><FONT COLOR=blue>Contact Us</FONT></U> | <U><FONT COLOR=blue>Site Index</FONT></U> | <U><FONT COLOR=blue>Site Map</FONT></U> | <U><FONT COLOR=blue>Legal Research Center</FONT></U> <U><FONT COLOR=blue>[Facebook]</FONT></U> <U><FONT COLOR=blue>[Twitter]</FONT></U></P>
+
+
+
+
+
+
+
+
+	<P>Copyright &#169; 2012 Drexel University Libraries, 33rd and Market Streets, Philadelphia, PA 19104.  All rights reserved  &nbsp;&nbsp;|  &nbsp;&nbsp;<U><FONT COLOR=blue>Privacy Policy</FONT></U></P>
+
+		<P>Powered by Drupal [Druplicon icon]</P>
+	
+	
+<P><U><FONT COLOR=blue>See mobile version</FONT></U></P>
+
+	
+
+         
+                      
+<!--//--><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA16932781"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".googleanalytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//-->
+
+    
+
+  </BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>

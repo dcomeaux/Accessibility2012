@@ -1,0 +1,437 @@
+﻿<HTML>
+<HEAD>
+<TITLE>Shepard Library</TITLE>
+<META CONTENT="text/html; charset=UTF-8">
+
+
+
+
+
+<!-- modifed dar, 192008, inserted code for Jquery tabs.  See http://jquery.com/ for documentation.-->
+
+
+
+
+
+
+
+
+<!--
+
+/* styles specific to the search page */
+  
+#tab1, #tab2, #tab3, #tab4 {  
+	border: 1px solid #aaa; 
+	background: #fff; 
+	margin: 0 10px;
+	height: 180px;
+	}
+
+table.searchfeatures label { fontweight: bold; marginleft: 10px;}
+table.optionalSearchLimit { width: 235px; background: #eee; bordercollapse: collapse; borderwidth: 6px; borderstyle: double; bordercolor: #fff; padding: 0; marginleft: 40px; margintop: 2px}
+table.optionalSearchLimit h3 { paddingleft: 10px; }
+table.browseNewTitles {   width: 120px; }
+table.browseNewTitles .searchButton { margin: 0 0 0 0; }
+table.basicSearch { 
+		height: 100px; 
+		left: 60px;
+		top: 10px;
+		margintop: 0px;
+		marginright: 0px;
+		marginleft: 0px;
+		marginbottom: 10px;
+		}
+
+.exampleSearch, #keywordExampleDiv { fontsize: 11px; color: #333;}
+
+#info {
+  width:100%; marginleft:0px; height:160px;
+  }
+#info ul {
+  display:block;
+  margin:10px 0;
+  padding:0px;
+  liststyle:none;
+  }
+#info li {
+  position:relative;
+  display:block;
+  float: left;
+  margin: 5px 20px;
+  width:220px; height:120px;
+  borderleft:1px solid #49314B;borderright:1px solid #49314B;borderbottom:1px solid #49314B;
+  padding:10px;
+  }
+
+#info li p {fontsize:11px; margin:1px;}  
+  
+#info h4 {
+fontsize:14px; margin:0px 3px 5px 3px;
+  }
+
+#searchTable {
+	
+		position: relative;
+		verticalalign: top;
+		left: 60px;
+		top: 10px;
+		margintop: 0px;
+		marginright: 0px;
+		marginleft: 0px;
+		marginbottom: 10px;		
+
+	}
+
+#boolean {
+	position: relative;
+	/* top: 13px; */
+	left: 5px;
+	bottom: 12px;
+	padding: 0;
+}
+-->
+
+
+
+var i=0;
+var time = 15000;
+function displayIMG()
+{
+if(i==0)
+{
+document.all["Img1"].src="http://web.nccu.edu/shepardlibrary/images/1.jpg";
+i=1;
+}
+else if(i==1)
+{
+document.all["Img1"].src="http://web.nccu.edu/shepardlibrary/images/2.jpg";
+i=2;
+}
+else if(i==2)
+{
+document.all["Img1"].src="http://web.nccu.edu/shepardlibrary/images/3.jpg";
+i=3;
+}
+else if(i==3)
+{
+document.all["Img1"].src="http://web.nccu.edu/shepardlibrary/images/4.jpg";
+i=4;
+}
+else if(i==4)
+{
+document.all["Img1"].src="http://web.nccu.edu/shepardlibrary/images/5.jpg";
+i=0;
+}
+window.setTimeout("displayIMG()",time);
+}
+
+
+
+
+<!--
+.style2 {fontsize: 13px}
+.style3 {fontsize: 11px}
+.STYLE4 {fontsize: 12px}
+.STYLE8 {
+	color: #660000;
+	fontweight: bold;
+	fontsize: 14px;
+}
+.STYLE9 {
+	fontsize: 18px;
+	color: #660000;
+	fontweight: bold;
+}
+.STYLE10 {fontsize: 16px}
+.STYLE5 {	fontsize: 18px;
+	fontweight: bold;
+}
+-->
+
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<TABLE>
+  <TR>
+      <TD><U><FONT COLOR=blue><BR>
+[CLIENT-SIDE IMAGE MAP]<BR>
+</FONT></U></TD>
+  </TR>
+</TABLE>
+  <TABLE>
+    <TR>
+	<TD>
+		<TABLE>
+		<TR>
+			<TD>&nbsp;
+			
+            </TD>
+		<TR> 
+			<TD>
+				<TABLE>
+				            <TR> 
+							  <TD><U><FONT COLOR=blue>[Help]</FONT></U></TD>
+                			</TR>
+							<TR> 
+            					<TD>[INLINE]</TD>
+       	 				    </TR>
+			                <TR> 
+			                  <TD><U><FONT COLOR=blue>[NCCU Homepage]</FONT></U></TD>
+                			</TR>
+                			<TR> 
+                  				<TD><U><FONT COLOR=blue>[Shepard Library Homepage]</FONT></U></TD>
+                			</TR>
+                			<TR> 
+                  				<TD><U><FONT COLOR=blue>[Director's Message]</FONT></U></TD>
+                			</TR>
+                			<TR> 
+                  				<TD><U><FONT COLOR=blue>[About the Shepard library]</FONT></U></TD>
+                			</TR>
+                			<TR> 
+                  				<TD><U><FONT COLOR=blue>[Shepard Library Hours]</FONT></U></TD>
+                			</TR>
+                			<TR> 
+                  				<TD><U><FONT COLOR=blue>[Shepard Library Directory]</FONT></U></TD>
+                			</TR>
+                			<TR> 
+                  				<TD><U><FONT COLOR=blue>[Shepard Library Services]</FONT></U></TD>
+                			</TR>
+                			<TR>
+                  				<TD><U><FONT COLOR=blue>[Find Library Materials]</FONT></U></TD>
+                			</TR>
+                			<TR> 
+                  				<TD><U><FONT COLOR=blue>[Research ]</FONT></U></TD>
+                			</TR>
+                			<TR> 
+                  				<TD><U><FONT COLOR=blue>[NCCU WebVPN (Off-Campus Access)]</FONT></U></TD>
+                			</TR>
+                			<TR> 
+                  				<TD><U><FONT COLOR=blue>[Other Libraries]</FONT></U></TD>
+                			<TR> 
+                  				<TD><U><FONT COLOR=blue>[NCCU Campus Map]</FONT></U></TD>
+                			</TR>
+                			<TR> 
+                  				<TD><U><FONT COLOR=blue>[Blackboard]</FONT></U></TD>
+                			</TR>
+                			<TR> 
+                  				<TD><U><FONT COLOR=blue>[My EOL]</FONT></U></TD>
+                			</TR>
+								<TR> 
+                  				<TD><U><FONT COLOR=blue>[What's New]</FONT></U></TD>
+                			</TR>
+								<TR> 
+                  				<TD><U><FONT COLOR=blue>[Library Site Map]</FONT></U></TD>
+                			</TR>
+   			  </TABLE>			</TD>
+		</TR>
+		<TR>
+			<TD><U><FONT COLOR=blue>[Shepard Library Address]</FONT></U></TD>
+	   	</TR>
+		</TABLE>
+    </TD>
+	<TD><TABLE>
+		<TR> 
+            		<TD>
+				<P>
+             			<BR>
+<BR>
+
+              			<MAP NAME="image1"></MAP>
+		              	displayIMG();
+           			  </P>
+           		<TABLE> 
+				<TR>
+					<TD>
+						
+					</TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+	<TR>
+		<TD>[INLINE]</TD>
+		<TD>[INLINE]</TD>
+		<TD>[INLINE]</TD>
+		<TD>[INLINE]</TD>
+		<TD>[INLINE]</TD>
+		<TD>[INLINE]</TD>
+	</TR>
+
+</TABLE>
+
+<TABLE>
+          <TR>
+            <TD>&nbsp;<EM><U><FONT COLOR=blue><EM>Library Services</EM></FONT></U><U><FONT COLOR=blue></FONT></U></EM></TD>
+            <TD>&nbsp;</TD>
+          </TR>
+          
+          <TR>
+            <TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<U><FONT COLOR=blue><EM>Borrowing and Circulation</EM></FONT></U><U><FONT COLOR=blue></FONT></U></TD>
+            <TD><U><FONT COLOR=blue><EM>Ask A Librarian </EM></FONT></U></TD>
+          </TR>
+          <TR>
+            <TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<U><FONT COLOR=blue><EM>My Account</EM></FONT></U> </TD>
+            <TD><U><FONT COLOR=blue><EM>Subject Guides - LibGuides </EM></FONT></U><U><FONT COLOR=blue></FONT></U><U><FONT COLOR=blue></FONT></U></TD>
+          </TR>
+          <TR>
+            <TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<U><FONT COLOR=blue><EM>Renew Materials </EM></FONT></U> </TD>
+            <TD><EM><U><FONT COLOR=blue>Research Help for Students</FONT></U></EM></TD>
+          </TR>
+          <TR>
+            <TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<U><FONT COLOR=blue><EM>Interlibrary Loan</EM></FONT></U></TD>
+            <TD><EM><U><FONT COLOR=blue>Library Instruction </FONT></U></EM></TD>
+          </TR>
+          <TR>
+            <TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<U><FONT COLOR=blue><EM>E-Reserve</EM></FONT></U>&nbsp;<U><FONT COLOR=blue>(Off-Campus via </FONT></U><U><FONT COLOR=blue>Web VPN</FONT></U><U><FONT COLOR=blue>)</FONT></U><U><FONT COLOR=blue></FONT></U></TD>
+            <TD><EM>Citation: </EM><U><FONT COLOR=blue></FONT></U></TD>
+          </TR>
+          
+          <TR>
+            <TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<U><FONT COLOR=blue><EM>Course Reserve</EM></FONT></U></TD>
+            <TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<U><FONT COLOR=blue>EndNotes</FONT></U></TD>
+          </TR>
+          <TR>
+            <TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<U><FONT COLOR=blue><EM>Other Library Catalogs</EM></FONT></U></TD>
+            <TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<U><FONT COLOR=blue>Landmarks Citation Machine</FONT></U></TD>
+          </TR>
+          <TR>
+            <TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<U><FONT COLOR=blue><EM>Borrowing from Other Libraries</EM></FONT></U> &nbsp;&nbsp;&nbsp;</TD>
+            <TD><U><FONT COLOR=blue><EM>Library Liaisons</EM></FONT></U><U><FONT COLOR=blue></FONT></U></TD>
+          </TR>
+          <TR>
+            <TD><EM>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</EM><U><FONT COLOR=blue><EM>Government Information</EM></FONT></U></TD>
+            <TD><U><FONT COLOR=blue><EM>Library Virtual Tour </EM>(Need </FONT></U><U><FONT COLOR=blue>Flash Player</FONT></U>) </TD>
+          </TR>
+          <TR>
+            <TD><EM>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<U><FONT COLOR=blue>Library Policies</FONT></U></EM></TD>
+            <TD><U><FONT COLOR=blue><EM>NCCU Digital Collection </EM></FONT></U></TD>
+          </TR>
+          
+          <TR>
+            <TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<U><FONT COLOR=blue><EM>Library Online Forms</EM></FONT></U></TD>
+            <TD><U><FONT COLOR=blue><EM><EM>University Archives and Records</EM></EM></FONT></U></TD>
+          </TR>
+          <TR>
+            <TD><EM>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<U><FONT COLOR=blue>Frequently Asked Questions </FONT></U></EM></TD>
+            <TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<U><FONT COLOR=blue>NCCU Digital Yearbooks </FONT></U></TD>
+          </TR>
+          <TR>
+            <TD><EM>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</EM><U><FONT COLOR=blue><EM>Copiers/Change Machine</EM></FONT></U></TD>
+            <TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<U><FONT COLOR=blue>NCCU Digital Campus Echos </FONT></U><U><FONT COLOR=blue></FONT></U></TD>
+          </TR>
+          <TR>
+            <TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<U><FONT COLOR=blue><EM>Computer Labs </EM></FONT></U><U><FONT COLOR=blue>(Login to </FONT></U><U><FONT COLOR=blue>myEOL</FONT></U> first) </TD>
+            <TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<U><FONT COLOR=blue>Dr. Henry Lewis Suggs' Collection </FONT></U><U><FONT COLOR=blue></FONT></U></TD>
+          </TR>
+          <TR>
+            <TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<U><FONT COLOR=blue><EM>Information  Technology Services </EM></FONT></U></TD>
+            <TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<U><FONT COLOR=blue>North Carolina Mutual Archives</FONT></U><U><FONT COLOR=blue></FONT></U></TD>
+          </TR>
+          <TR>
+            <TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<U><FONT COLOR=blue><EM>Student  Technology </EM></FONT></U></TD>
+            <TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<U><FONT COLOR=blue>Special Collection: Treasure Room </FONT></U></TD>
+          </TR>
+          <TR>
+            <TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<U><FONT COLOR=blue><EM>Blackboard </EM></FONT></U></TD>
+            <TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<U><FONT COLOR=blue>Rev. Charles Martin Collection</FONT></U></TD>
+          </TR>
+      </TABLE>        
+
+      <TD><H2 ALIGN="center"><U><FONT COLOR=blue>[INLINE]</FONT></U></H2>
+        <TABLE>
+          
+            
+            <TR>
+              <TD><U><FONT COLOR=blue>Director's Office</FONT></U></FONT></U></TD>
+              <TD>919-530-6475</TD>
+            </TR>
+            <TR>
+              <TD><U><FONT COLOR=blue>Circulation</FONT></U></TD>
+              <TD>919-530-6426</TD>
+            </TR>
+            <TR>
+              <TD><U><FONT COLOR=blue>Reference</FONT></U></TD>
+              <TD>919-530-6473</TD>
+            </TR>
+            <TR>
+              <TD><U><FONT COLOR=blue>Serials</FONT></U></TD>
+              <TD>919-530-6483</TD>
+            </TR>
+            <TR>
+              <TD><U><FONT COLOR=blue>More Information... </FONT></U></TD>
+              <TD>&nbsp;</TD>
+            </TR>
+          
+        </TABLE>
+
+        <P><U><FONT COLOR=blue>[INLINE]</FONT></U></P>
+        <H2 ALIGN="center">Regular Schedule</H2>
+	
+	<TABLE>
+          
+            <TR>
+              <TD>Monday - Thursday:</TD>
+              <TD>8:00 AM - 1:00 AM</TD>
+            </TR>
+            <TR>
+              <TD>Friday &amp; Saturday:</TD>
+              <TD>8:00 AM - 5:00 PM</TD>
+            </TR>
+            <TR>
+              <TD>Sunday:</TD>
+              <TD>2:00 PM - 1:00 AM</TD>
+            </TR>
+            <TR>
+              <TD><U><FONT COLOR=blue>More Information... </FONT></U></TD>
+              <TD>&nbsp;</TD>
+            </TR>
+          
+        </TABLE>
+        <P ALIGN="center">* Please call (919-530-6426)</P>
+        <P ALIGN="center"> &nbsp;for   updated library hours </P>
+        <P ALIGN="center"> Website Visitors in year 2009 &amp; 2010:</P>
+        <P ALIGN="center"> <U><FONT COLOR=blue>[free web counter]</FONT></U></P>
+	<P ALIGN="center">Last updated: April 13th, 2011&nbsp; </P>
+	<P ALIGN="center">Send comments to: <U><FONT COLOR=blue>Web Liaison</FONT></U></P></TD>
+    </TR>
+  </TABLE>
+
+  <BR>
+<BR>
+
+  <MAP NAME="footer5">
+    <AREA HREF="http://www.nccu.edu/" COORDS="107,10,347,27" SHAPE="rect">
+    <AREA HREF="http://web.nccu.edu/shepardlibrary/" COORDS="348,9,581,27" SHAPE="rect">
+    <AREA HREF="http://web.nccu.edu/shepardlibrary/about/shepardLibraryDrivingDirections.html" COORDS="591,9,930,27" SHAPE="rect">
+  </MAP>
+  <BR>
+
+<MAP NAME="header">
+  <AREA HREF="http://web.nccu.edu" COORDS="8,-28,299,18" SHAPE="rect">
+  <AREA HREF="http://web.nccu.edu/shepardlibrary/about/ShepardLibraryDirectory.html" COORDS="895,-6,972,18" SHAPE="rect">
+  <AREA HREF="http://www.nccu.edu/directory/" COORDS="818,-7,887,19" SHAPE="rect">
+  <AREA HREF="http://www.nccu.edu/knowledgebase/search.cfm?deptId=122" COORDS="759,-7,809,16" SHAPE="rect">
+  <AREA HREF="http://web.nccu.edu/shepardlibrary/" COORDS="0,22,503,67" SHAPE="rect">
+</MAP>
+
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+
+var pageTracker = _gat._getTracker("UA-1549785-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+
+var pageTracker = _gat._getTracker("UA-4076481-2");
+pageTracker._initData();
+pageTracker._trackPageview();
+
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>

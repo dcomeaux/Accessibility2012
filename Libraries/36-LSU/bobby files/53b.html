@@ -1,0 +1,781 @@
+
+<HTML>
+<HEAD>
+<META CONTENT="text/html; charset=utf-8">
+<!--<base href="http://www.lib.lsu.edu"  />-->
+
+
+
+
+ 
+
+
+
+
+////////////THIS IS THE EXTERNAL LINKS NEW WINDOW JS//////////////////
+
+function exLinks() {
+<!-- Copyright 2005 Bontrager Connection, LLC
+// More info: "Automatic New Window for External Links" 
+//    at /library/
+// Also see http://BontragerConnection.com/
+//
+// List the domain names that shall not be put into new 
+//    windows when the link is clicked. If you use both 
+//    the www.example.com and example.com versions of 
+//    your domain name, list them both. The domains need 
+//    to be all one line between the quotation marks on 
+//    the line below, the names separated with a comma.
+//    Do not specify http:// URLs, just domain names.
+
+var Domains = "www.lib.lsu.edu,lib.lsu.edu,lsu.edu,www.lsu.edu,test.lib.lsu.edu,news.blogs.lib.lsu.edu,lsu.louislibraries.org,grok.lsu.edu,itsweb.lsu.edu";
+
+////////////////////////////////////////////
+// No other customizations are necessary. //
+////////////////////////////////////////////
+if(Domains.indexOf(" ") != 1) {
+   var splitarray = Domains.split(" ");
+   Domains = splitarray.join("");
+}
+Domains = Domains.toLowerCase();
+var DomainsArray = Domains.split(",");
+for(var i = 0; i < document.links.length; i++) {
+   if(document.links[i].hostname.length < 1) 
+   { continue; }
+   if(document.links[i].target.length > 0)
+   { continue; }
+   var h = document.links[i].hostname.toLowerCase();
+   var makeNewWindow = true;
+   for(var ii = 0; ii < DomainsArray.length; ii++) {
+      if(DomainsArray[ii] != h) 
+      { continue; }
+      makeNewWindow = false;
+      break;
+   }
+   if(makeNewWindow == true)
+   { document.links[i].title = 'This link will take you outside LSU.edu.'; }
+}
+//-->
+}
+
+
+function mobilepop(action) {
+	if (action == "close") document.getElementById('mobilepop').style.display = "none";
+	else if (action == "redirect") window.location.href = "http://www.lib.lsu.edu/m/";
+}
+
+function mobilepopOL() {	
+//	if (document.location == "http://www.lib.lsu.edu/index.html" || document.location == "http://www.lib.lsu.edu/") {
+//		if (screen.width 
+
+<!-- The following JavaScript code gets the current date from the viewer's machine. --> 
+
+<!-- tag to hide script from older browsers that don't support JavaScript
+function display_todays_date()
+{
+var today = new Date();
+var numerical_day=today.getDay();
+var numerical_month=today.getMonth();
+var date=today.getDate();
+var year=today.getFullYear();
+var weekday_array = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+var day_of_the_week = weekday_array[numerical_day];
+var month_array = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+var month_name = month_array[numerical_month];
+var date_string=day_of_the_week+', '+month_name+' '+date+', '+year;
+document.write(date_string);
+}
+//-->
+
+  
+	#mobilepop {
+		/*position:absolute;
+		top:10px;
+		left:10px;*/
+		width:760px;
+		height:auto;
+		margin:0 10px;
+		padding:0;
+		display:none;
+		overflow:hidden;
+	}
+	#mobilecont {
+		width:760px;
+		background:#FDD023;
+		color:#333333;
+		padding:10px;
+		font-size:12px;
+		font-family:Arial, Helvetica, sans-serif;
+		text-align:center;
+		border:1px solid #ffffff;
+		line-height:115% !important;
+	}
+
+<!-- End the current date script. --> 
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+	[INLINE]
+
+
+	
+		
+    	<P><EM>On a mobile device?</EM></P>
+        <P>View the LSU Libraries Mobile Website at<BR> <U><FONT COLOR=blue>http://www.lib.lsu.edu/m/</FONT></U></P>
+        <!-- <p style="fontsize:2em;"><input type="button" name="closempop" value="Stay" onClick="javascript:mobilepop('close');" /> <input type="button" name="redirectmpop" value="Go to Mobile Site" onClick="javascript:mobilepop('redirect');" /> </p>-->
+	    
+	
+
+
+	<!--Begin Utility Bar-->
+	<UL>
+	<LI><U><FONT COLOR=blue>
+		[Text Only]</FONT></U>
+		<U><FONT COLOR=blue>[Login to MyLSU]</FONT></U>
+	</LI> 
+	<LI> Baton Rouge, Louisiana | 
+	<!--Begin date display-->
+	display_todays_date();
+	<!--end date display-->
+	</LI> 
+
+ 	<LI>
+	<FORM>
+		 
+		<INPUT WIDTH="17" NAME="image" HEIGHT="14" TYPE="image">
+		<INPUT VALUE="Search lsu.edu" NAME="q" SIZE="20" TYPE="text">
+		<INPUT VALUE="lsu.edu" NAME="sitesearch" TYPE="hidden"> 
+		</FORM>
+	</LI>
+
+</UL>
+<!--End Utility Bar   -->
+		
+ 
+<U><FONT COLOR=blue></FONT></U>
+
+	<UL>
+ 	  <LI><U><FONT COLOR=blue>LSU Libraries</FONT></U><!-- Begin Home Item -->
+    
+       <!-- <div class="dropdown_2columns">--><!-- Begin 2 columns container -->
+    
+    <!--        <div class="col_2">
+                <h2>Welcome !</h2>
+            </div>
+    
+            <div class="col_2">
+                <p>Welcome to the LSU Libraries web site.  </p>             
+                <p>The LSU Libraries web site is a gateway to the information and research needs of the LSU community.  It can be used to locate books, link to ejournal articles, communicate with subject librarians and other library staff and faculty members.</p>             
+            </div>
+    
+            <div class="col_2">
+                <h2>Cross Browser Support</h2>
+            </div>
+            
+            <div class="col_1">
+                <img src="img/browsers.png" width="125" height="48" alt="" />
+            </div>
+            
+            <div class="col_1">
+                <p>This mega menu has been tested in all major browsers.</p>
+            </div>
+          
+        </div>--><!-- End 2 columns container -->
+    
+    </LI><!-- End Home Item -->
+    
+         <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////          ABOUT US                   ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+ 	   	 <LI><U><FONT COLOR=blue>About Us</FONT></U><!-- Begin 5 columns Item -->
+        <!-- Begin 5 columns container -->
+        
+             
+                <H2>Welcome to the LSU Libraries Website!</H2>
+                <P>The LSU Libraries web site is a gateway to the information and research needs of the LSU community. It can be used to locate books, link to ejournal articles, and to communicate with subject librarians and other library staff and faculty members.
+</P>
+            
+             
+            
+                <H3>Information</H3>
+     <!--           <p class="black_box">This is a dark grey box text. Fusce in metus at enim porta lacinia vitae a arcu. Sed sed lacus nulla mollis porta quis.</p>-->
+     
+            <UL> 
+            <LI><U><FONT COLOR=blue>About the Libraries</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Driving Directions</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Employment</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Hours</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Policies</FONT></U></LI>
+            
+            </UL>
+            
+   		        
+                <H3>Directory</H3>
+                <UL>
+                <LI><U><FONT COLOR=blue>All</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Faculty</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Subject Librarians</FONT></U></LI>
+              <!--  <li><a href="http://www.lib.lsu.edu/sp/subjects/staff.php?letter=By Department">By Departments</a></li>-->
+                </UL>
+                
+                
+             
+            
+               <H3>Frequently Dialed Numbers</H3>
+               
+              <P>- Circulation (fines, borrowing): 578-2058<BR> 
+              - Reference (help finding information): 578-5652<BR>
+              - Music Resources: 578-4674<BR>
+              - Special Collections: 578-6568 </P>
+            
+           &nbsp; 
+                   
+                   
+                   
+                   <U><FONT COLOR=blue>[INLINE]</FONT></U>
+                   
+                     <U><FONT COLOR=blue>[INLINE]</FONT></U>
+                  <U><FONT COLOR=blue> [INLINE]</FONT></U>
+                   <U><FONT COLOR=blue> [INLINE] </FONT></U>
+                  
+            
+                
+                
+         
+ 
+        
+        <!-- End 5 columns container -->
+     </LI><!-- End 5 columns Item -->
+     
+     <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////          RESEARCH TOOLS             ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+     
+     <LI><U><FONT COLOR=blue>Research Tools</FONT></U><!-- Begin 4 columns Item -->
+    
+        <!-- Begin 4 columns container -->
+        
+               
+            
+                <H3>Find Books</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Online Catalog</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>WorldCat Local</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Subject Guides</FONT></U></LI>
+<!--                    <li><a href="http://www.lib.lsu.edu/sp/subjects/index.php">Subject Guides</a></li> -->
+                    <LI><U><FONT COLOR=blue>Gov't Documents</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Reserves</FONT></U>
+                    <!-- <li><a href="#">more</a></li>-->
+                </UL>   
+                             
+                   
+                <H3>Find Articles</H3> 
+                <UL>
+                    <LI><U><FONT COLOR=blue>Indexes &amp; Databases</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Ejournals</FONT></U></LI>
+                 <!--   <li><a href="#">How to find Articles</a></li>-->
+                </UL>   
+                 
+                <H3>Other</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Gov't Documents</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Other Resources</FONT></U></LI>
+                </UL>   
+            
+               
+                <H3>Help</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Subject Librarians</FONT></U></LI>
+<!--                <li><a href="http://www.lib.lsu.edu/sp/subjects/staff.php?letter=Subject Librarians AZ">Subject Librarians</a></li> -->
+                    <LI><U><FONT COLOR=blue>Tutorials</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Technical Help</FONT></U></LI>
+                </UL>   
+            
+   
+        <!-- End 4 columns container -->
+    
+    </LI><!-- End 4 columns Item -->
+    
+  
+    <!-- Start services -->
+         <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////             SERVICES                ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+    
+        <LI><U><FONT COLOR=blue>Services</FONT></U><!-- Begin 4 columns Item -->
+    
+        <!-- Begin 4 columns container -->
+        
+    <!--        <div class="col_3">
+                <h2>Research</h2>
+            </div>
+    -->      
+         
+            
+            
+                    <H3>Instruction</H3>
+                <UL>
+                
+                    <LI><U><FONT COLOR=blue>Instruction Webpage</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>LIS 1001</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Tutorial Center (141 Middleton)</FONT></U>
+                    
+                    <LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Tutorials</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Request Instruction</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Reserve a Classroom</FONT></U></LI>
+               
+                </UL>   
+                 
+            
+       
+  
+    
+            
+            
+                <H3>Borrowing</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Interlibrary Loan</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Your Library Account</FONT></U></LI>
+              
+                    <LI><U><FONT COLOR=blue>Circulation Policies</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Reserves</FONT></U></LI>
+                   <!-- <li><a href="#">more</a></li>-->
+                </UL>   
+                
+                 <H3>Other</H3>
+                <UL>
+                <LI><U><FONT COLOR=blue>Disability Services</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Distance Education</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Study/ Presentation Rooms</FONT></U>
+                </UL>
+                 
+            
+    
+            
+            
+                <H3>Technology</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Help Desk</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Print Desk</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Find a Computer</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Technical Help</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Visualization Services Center (109 Middleton)</FONT></U>
+                 
+                </UL>  
+                 
+            
+    
+     <!--       <div class="col_1">
+            
+                <h3>Misc</h3>
+                <ul>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Logo</a></li>
+                    <li><a href="#">Flash</a></li>
+                    <li><a href="#">Illustration</a></li>
+                    <li><a href="#">More...</a></li>
+                </ul>   
+                 
+            </div>
+            -->
+        <!-- End 4 columns container -->
+    
+    </LI><!-- End 4 columns Item -->
+    
+    <!-- end services -->
+    
+         <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////             DEPARTMENTS             ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+
+	<LI><U><FONT COLOR=blue>Departments</FONT></U>
+    
+		
+        
+                
+                
+                    <UL>
+                        <LI><U><FONT COLOR=blue>Acquisitions</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Circulation</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Education Resources</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Gov't Documents</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Interlibrary Loan</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Music Resources</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Reference</FONT></U></LI>                     
+                        <LI><U><FONT COLOR=blue>Special Collections</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>More</FONT></U></LI>
+              
+                    </UL>   
+                     
+                
+                
+		
+        
+	</LI>
+
+
+     <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////              HELP                   ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+
+    <LI><U><FONT COLOR=blue>Help</FONT></U><!-- Begin 3 columns Item -->
+    
+        <!-- Begin 3 columns container -->
+            
+            
+                <H2>Help</H2>
+            
+            
+             
+    
+                <UL>
+                    <LI><U><FONT COLOR=blue>Technical Help</FONT></U></LI>
+                   
+                    <LI><U><FONT COLOR=blue>Tutorial Center</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Call Us</FONT></U> 225.578.8875</LI>
+                
+                </UL>   
+    
+            
+            
+            
+    
+                <UL>
+                    <LI><U><FONT COLOR=blue>Research Help</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Help Desk</FONT></U> 225.578.3375</LI>
+                    <LI><U><FONT COLOR=blue>Email Us</FONT></U></LI>
+               
+                </UL>   
+    
+            
+            
+            
+    
+                <UL>
+                    <LI><U><FONT COLOR=blue>FAQ</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>IM Us</FONT></U></LI>
+              
+                </UL>   
+    
+            
+            
+            
+                <H2>Search the Libraries Web Site</H2>
+                
+                     <FORM>
+                <INPUT WIDTH="17" NAME="image" HEIGHT="14" TYPE="image">
+                <INPUT NAME="q" TYPE="text">
+                <INPUT VALUE="www.lib.lsu.edu" NAME="sitesearch" TYPE="hidden">
+                </FORM>
+            
+            
+          <!--  <div class="col_3">
+                <img src="img/02.jpg" width="70" height="70" class="img_left imgshadow" alt="" />
+                <p><strong>Tutorial Lab</strong> Located in 141 Middleton Library, the lab offers tutoring in Math....(this should go under instruction)<a href="#">Read more...</a></p>
+    <br clear="all" />
+                <img src="img/01.jpg" width="70" height="70" class="img_left imgshadow" alt="" />
+                <p>Aliquam elementum felis quis felis consequat scelerisque. Fusce sed lectus at arcu mollis accumsan at nec nisi. Aliquam pretium mollis fringilla. Vestibulum tempor facilisis malesuada. <a href="#">Read more...</a></p>
+            </div>
+        -->
+        <!-- End 3 columns container -->
+        
+    </LI><!-- End 3 columns Item -->
+    
+         <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////           A TO Z                    ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+
+<LI><U><FONT COLOR=blue>A to Z</FONT></U></LI>
+</UL>
+  
+
+ 
+ <!--<link rel="stylesheet" type="text/css" href="/sp/assets/css/default.css" />
+-->
+  <H1>Database List: N</H1> 
+
+  
+    
+    
+
+    <U><FONT COLOR=blue>A</FONT></U><U><FONT COLOR=blue>B</FONT></U><U><FONT COLOR=blue>C</FONT></U><U><FONT COLOR=blue>D</FONT></U><U><FONT COLOR=blue>E</FONT></U><U><FONT COLOR=blue>F</FONT></U><U><FONT COLOR=blue>G</FONT></U><U><FONT COLOR=blue>H</FONT></U><U><FONT COLOR=blue>I</FONT></U><U><FONT COLOR=blue>J</FONT></U><U><FONT COLOR=blue>K</FONT></U><U><FONT COLOR=blue>L</FONT></U><U><FONT COLOR=blue>M</FONT></U>N<U><FONT COLOR=blue>O</FONT></U><U><FONT COLOR=blue>P</FONT></U><U><FONT COLOR=blue>R</FONT></U><U><FONT COLOR=blue>S</FONT></U><U><FONT COLOR=blue>T</FONT></U><U><FONT COLOR=blue>U</FONT></U><U><FONT COLOR=blue>V</FONT></U><U><FONT COLOR=blue>W</FONT></U><U><FONT COLOR=blue>Z</FONT></U><U><FONT COLOR=blue>All</FONT></U>    
+   
+    
+      
+        
+    <TABLE><TR><TD>[more information]  [Open Access]</TD><TD><U><FONT COLOR=blue>National Criminal Justice Reference Service (NCJRS)</FONT></U> 
+				
+				Contains bibliographic summaries of more than 150,000 publications on  criminal justice, including Federal, state, and local government  reports, books, research reports, journal articles, and unpublished  research. Subject areas include corrections, courts, drugs and crime,  law enforcement, juvenile justice, crime statistics, and victims of  crime, with 6,000 citations added each year through semi-annual updates.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Naxos Music Library</FONT></U> 
+				
+				Naxos Music Library is the most comprehensive collection of classical music available online. It includes the complete <EM>Naxos</EM> and <EM>Marco Polo</EM> catalogues of over approximately 253,000 tracks, including Classical music, Jazz, World, Folk and Chinese music.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>NBER Working Papers</FONT></U> 
+				
+				NBER researchers initially report their findings in scientific papers  aimed at other professional economists in academic institutions,  business, government, and the business media around the world. Nearly  700 NBER Working Papers are published each year, and many subsequently  appear in scholarly journals.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information]  [Open Access]</TD><TD><U><FONT COLOR=blue>NCI 3D</FONT></U> 
+				
+				2D and 3D information compiled by the National Cancer Institute, and  augmented by MDL.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Nematological Abstracts via CabDirect</FONT></U> 
+				
+				Including the CAB Abstracts and CAB Health, this is the leading database  for literature related to agriculture and applied life sciences,  including strong international coverage.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>NESC Code</FONT></U> 
+				
+				The NESC is one of the most popular titles from IEEE, and is now  full-text accessible in IEEE Xplore for subscribers of the IEL and the  IEEE All Inclusive Standards Online Subscription. Published exclusively  by the IEEE, the National Electrical Safety Code (NESC&reg;) sets the ground  rules for practical safeguarding of persons during the installation,  operation, or maintenance of electric supply and communication Lines and  associated equipment. Subscribers to IEL, and the IEEE All-Inclusive  Standards package can access the 2007 version of the NESC in IEEE  Xplore.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>netLibrary</FONT></U> 
+				
+				netLibrary is now eBook Collection (EBSCOhost), a collection of almost 40,000 reference,  scholarly, and professional e-books (full text electronic books) from  university and commercial presses, covering a variety of disciplines.  <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information]  [Some full text available] [Open Access]</TD><TD><U><FONT COLOR=blue>Networked Digital Library of Theses and Dissertations</FONT></U> 
+				
+				A database containing full text access to theses and  dissertations written at schools who are members of the Networked Digital  Library of Theses and Dissertations.  <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Neurosciences Abstracts (CSA)</FONT></U> 
+				
+				Covers major advances and their implications in all aspects of  vertebrate and invertebrate  neuroscience, emphasizing basic research  studies but also including special coverage of neural  diseases,  neuroimaging, dementias, pain, drug addiction, and memory. Monthly.  13,200 abstracts annually.  <U><FONT COLOR=blue>Journals indexed by this database</FONT></U>.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>New Testament Abstracts Online</FONT></U> 
+				
+				New Testament Abstracts Online is a product of a partnership between  ATLA and the Weston Jesuit School of Theology. The database is an  indispensable research and bibliographic aid for scholars, librarians,  clergy and students of the New Testament and its historical milieu. The  database contains more than 38,000 article abstracts, 1,200 review  abstracts, 13,500 book abstracts, and 50 software abstracts. Each year  an additional 2,100 articles from more than 500 periodicals in numerous  languages are selected for inclusion. In addition, approximately 800  current books are also summarized annually. Article coverage in the  database dates back to 1985.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information]  [Open Access]</TD><TD><U><FONT COLOR=blue>New York Public Library Digital Gallery</FONT></U> 
+				
+				NYPL Digital Gallery provides access to over 275,000  images digitized from primary sources and printed rarities in the  collections of The New York Public Library, including illuminated  manuscripts, historical maps, vintage posters, rare prints and  photographs, illustrated books, printed ephemera, and more.  <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>NewsBank</FONT></U> 
+				
+				&quot;The most comprehensive collection of full-text newspapers globally,   Access World News provides extensive coverage at any level&mdash;local, state,   regional, national and international. This fully searchable Web-based   resource features the vast majority of the top U.S. newspapers by   circulation, along with hundreds of hard-to-find local and regional   titles, most of which are unavailable elsewhere. Additionally, Access   World News offers hundreds of international news sources from scores of   countries on six continents, translated into English when written in   other languages.&quot; (Newsbank) <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Newspaper Source</FONT></U> 
+				
+				The Newspaper Source database provides selected full text for nearly 30  national (U.S.) and international newspapers, including USA Today, The  Christian Science Monitor, The Washington Post, The Times (London), The  Toronto Star, etc. The database also contains selected full text for  more than 200 regional (U.S.) newspapers, including The Chicago Tribune,  The Detroit Free Press, The Miami Herald, The New York Daily News, The  San Jose Mercury News, etc. In addition, full text television &amp;  radio news transcripts are provided from CBS News, FOX News, NPR, etc.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] </TD><TD><U><FONT COLOR=blue>Nineteenth Century Short Title Catalogue</FONT></U> 
+				
+				Nineteenth Century Short Title Catalogue (NSTC) provides an exhaustive  bibliography of over 1.2 million records for the 19th-century holdings  of eight of the world's top research libraries. It covers virtually all  printed materials published in the U.S.and the British Empire from 1801  to 1919.  <BR><BR><EM>You can access this resource by searching the <U><FONT COLOR=blue>C19: Nineteenth Century Index</FONT></U> Online.</EM><BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>North American Women&#039;s Drama</FONT></U> 
+				
+				North American Women's Drama will bring together more  than 1,500 plays, along with related biographical, production, and  theatrical information. The collection begins with the works of Mercy  Otis Warren and Susanna Haswell Rowson in colonial times and will span  the 19th and 20th centuries to the present. It is planned to include  contemporary playwrights, such as Tina Howe, Beth Henley, Marsha Norman,  Maria Irene Fornes, Megan Terry, and Paula Vogel.<BR>
+<BR>
+Many of the  works are rare, hard to find or out of print. Almost a quarter of the  collection consists of previously unpublished plays. The following  authors are targeted for inclusion: Susan Glaspell, Sophie Treadwell,  Rachel Crothers, Mae West, Lilian Hellman, Gertrude Stein, Adrienne  Kennedy, Ntozake Shange, Cherrie Moraga, Eve Ensler, Wendy Wasserstein,  Marsha Norman, Tina Howe, and Emily Mann. <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>North American Women&#039;s Letters and Diaries</FONT></U> 
+				
+				North American Women's Letters and Diaries is the largest collection of  women's diaries and correspondence ever assembled. Spanning more than  300 years, brings the personal experiences of some 1,325 women to  researchers, students, and general readers.<BR><BR>  The collection  includes some 150,000 pages of published letters and diaries from  individuals writing from Colonial times to 1950, including more than  6,000 pages of previously unpublished materials. Drawn from more than  600 sources, including journal articles, pamphlets, newsletters,  monographs, and conference proceedings, much of the material is in  copyright. Represented are all age groups and life stages, all  ethnicities, many geographical regions, the famous and the not so  famous. It includes some 300 biographies to enhance the use of the  database.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information]  [Open Access]</TD><TD><U><FONT COLOR=blue>NTIS (National Technical Information Service)</FONT></U> 
+				
+				The National Technical Information Service (NTIS) is the nation's  largest central resource for government-funded scientific, technical,  engineering, and business related information available today. As part  of the U.S. Department of Commerce, NTIS supports the nation's economic  growth by providing access to information that stimulates innovation and  discovery.  The main NTIS website allows for searching but does <EM>not</EM> provide free access to full-text documents.<BR><BR><U><FONT COLOR=blue>See Also DARTS</FONT></U>.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Nursing and Allied Health Source</FONT></U> 
+				
+				ProQuest Nursing &amp; Allied Health SourceTM provides users with  reliable healthcare information covering nursing, allied health,  alternative and complementary medicine, and much more. This versatile  database is designed to meet the needs of researchers at healthcare  facilities as well as nursing and allied health programs at academic  institutions. ProQuest Nursing &amp; Allied Health Source provides  abstracting and indexing for more than 650 titles, with over 580 titles  in full-text. <BR><BR>  ProQuest Nursing &amp; Allied Health Source  covers over 70 wide-ranging topics including: Cytology, Nursing,  Nutrition, Oncology, Pediatric Care, Pharmacology, Public Health, and  Radiology.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Nutrition Abstracts (Human) via CabDirect</FONT></U> 
+				
+				Including the CAB Abstracts and CAB Health, this is the leading database  for literature related to agriculture and applied life sciences,  including strong international coverage.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Nutrition Abstracts (Livestock) via CabDirect</FONT></U> 
+				
+				Including the CAB Abstracts and CAB Health, this is the leading database  for literature related to agriculture and applied life sciences,  including strong international coverage.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U></TABLE>        
+    
+    
+	
+
+	
+    
+        
+        
+            Key to Icons
+        
+         
+
+<P>
+[Information]  Information<BR>
+
+
+ [Restricted Resource]  Campus Faculty, Staff &amp; Students only<BR>
+
+ 
+<U><FONT COLOR=blue>[Some full text available] Some full text</FONT></U><BR>
+
+
+<U><FONT COLOR=blue>[Open Access Resource] Open Access (freely available to anyone)</FONT></U><BR>
+
+
+<U><FONT COLOR=blue>[Trial] Free Trials</FONT></U><BR>
+
+
+
+<!--<img src="http://www.lib.lsu.edu/sp/assets/images/icons/camera.gif" border="0" alt="Resource includes images"> Images<br />
+
+<img src="http://www.lib.lsu.edu/sp/assets/images/icons/television.gif" border="0" alt="Resource includes video"> Video files<br />
+
+<img src="http://www.lib.lsu.edu/sp/assets/images/icons/sound.gif" border="0" alt="Resource includes audio"> Audio files<br />
+-->
+</P>
+ 
+    
+    
+    
+        <!-- start pluslet -->
+    <!-- this is the newest databases pluslet maybe add back in after we go to the wide format... -->
+     
+        
+            Newest Databases
+        
+         <UL>
+<LI><U><FONT COLOR=blue>NewsBank</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Rock and Roll, Counter Culture, Peace and Protest</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Victorian Popular Culture</FONT></U></LI>
+<LI><U><FONT COLOR=blue>The First World War: Personal Experience</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Mass Observation Online</FONT></U></LI>
+</UL>
+ 
+     
+    <!-- end pluslet -->
+    
+      
+        
+            Information User Restrictions
+        
+          
+        
+<P>        Use of the LSU Libraries' electronic resources is subject to U.S. Copyright Law. Excessive downloading, printing, and/or electronic dissemination of resource content by the user is prohibited. Restrictions on other uses may apply. Electronic information subsidized by the LSU Libraries is for use in LSU classes and research. Databases are restricted to academic use only. Fair use guidelines are specifically applicable to use of information in a University setting. These are included in the <U><FONT COLOR=blue>Libraries Copyright Policy</FONT></U>.
+</P>
+<P>See the <U><FONT COLOR=blue>Database Access Policy</FONT></U> for information regarding authorized users.</P>
+        
+        
+    
+    
+    
+
+    <BR>
+	
+
+
+
+<BR>
+ 
+ <U><FONT COLOR=blue>[LSU Logo]</FONT></U>
+<BR><U><FONT COLOR=blue>LSU Libraries</FONT></U>
+<BR>Baton Rouge, LA 70803
+<BR>Tel (225) 578-5652
+<BR>Fax (225) 578-9432 
+
+
+
+<!-- AddThis Button END -->
+<BR> 
+
+<UL>
+<LI><U><FONT COLOR=blue>LSU Libraries</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Contact Us</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Mobile Website</FONT></U></LI>
+<!--<li><a href="http://www.lsu.edu">Louisiana State University</a></li>-->
+<LI>
+<U><FONT COLOR=blue>[Library Blog]</FONT></U>
+<U><FONT COLOR=blue>[RSS Feed]</FONT></U>
+<U><FONT COLOR=blue>[Library Facebook Page]</FONT></U>
+<U><FONT COLOR=blue>[Library Twitter Page] </FONT></U>
+<!-- AddThis Button BEGIN -->
+
+//var addthis_config = {
+ //  ui_click: true
+//}
+
+<!--a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa4a8b0c2a79cf3130">
+<img style="verticalalign:middle;" src="http://s7.addthis.com/static/btn/v2/lgbookmarken.gif" width="125" height="16" alt="Bookmark and Share" style="border:0" />
+</a>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=xa4a8b0c2a79cf3130"></script> -->
+</LI>
+</UL>
+<BR>
+<CENTER>Copyright &copy; 1996 - <!--#config timefmt="%Y" --><!--#echo var="DATE_LOCAL" --> LSU Libraries<BR> <!--<img src="/images/external.png" /><span class="small">Links away from LSU.edu</span> --></CENTER><BR>
+
+
+<!--<div class="right">
+<a href="http://www.lsu150.com/"><img src="/images/150year.jpg" /></a>
+
+
+</div> -->
+
+<BR>
+ 
+ 
+
+
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22589452-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+    $(document).ready(function(){
+
+
+        var stripeholder = ".zebra";
+        // add rowstriping
+        stripeR();
+
+
+        $("[id*=show]").live("change", function() {
+
+            var showtype_id = $(this).attr("id").split("-");
+            //alert("u clicked: " + showtype_id[1]);
+            unStripeR();
+            $(".type-" + showtype_id[1]).toggle();
+            stripeR();
+
+        });
+
+        // show db details
+        $("img[id*=bib-]").live("click", function() {
+            var bib_id = $(this).attr("id").split("-");
+            $(this).parent().parent().find(".list_bonus").toggle()
+        });
+
+        function stripeR(container) {
+            $(".zebra").not(":hidden").filter(":even").addClass("evenrow");
+            $(".zebra").not(":hidden").filter(":odd").addClass("oddrow");
+        }
+
+        function unStripeR () {
+            $(".zebra").removeClass("evenrow");
+            $(".zebra").removeClass("oddrow");
+        }
+
+
+    });

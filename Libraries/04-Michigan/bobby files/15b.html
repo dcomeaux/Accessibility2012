@@ -1,0 +1,957 @@
+
+<HTML>
+  <HEAD>
+<META CONTENT="text/html; charset=utf-8">
+    <!-- <base href=""> -->
+    <TITLE>Announcements | MLibrary</TITLE>
+                    <META CONTENT="text/html; charset=utf-8">
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--//--><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" }, "lightbox2": { "rtl": 0, "file_path": "/(\\w\\w/)files", "default_image": "/sites/www.lib.umich.edu/modules/lightbox2/images/brokenimage.jpg", "border_size": 20, "font_color": "666", "box_color": "fff", "top_position": "", "overlay_opacity": 0.9, "overlay_color": "333", "disable_close_click": 1, "resize_sequence": 0, "resize_speed": 200, "fade_in_speed": 200, "slide_down_speed": 200, "use_alt_layout": 0, "disable_resize": 0, "disable_zoom": 0, "force_show_nav": 0, "loop_items": 0, "node_link_text": "View Image Details", "node_link_target": 0, "image_count": "Image !current of !total", "video_count": "Video !current of !total", "page_count": "Page !current of !total", "lite_press_x_close": "press \x3ca href=\"#\" onclick=\"hideLightbox(); return FALSE;\"\x3e\x3ckbd\x3ex\x3c/kbd\x3e\x3c/a\x3e to close", "download_link_text": "", "enable_login": false, "enable_contact": false, "keys_close": "c x 27", "keys_previous": "p 37", "keys_next": "n 39", "keys_zoom": "z", "keys_play_pause": "32", "display_image_size": "", "image_node_sizes": "()", "trigger_lightbox_classes": "", "trigger_lightbox_group_classes": "", "trigger_slideshow_classes": "", "trigger_lightframe_classes": "", "trigger_lightframe_group_classes": "", "custom_class_handler": 0, "custom_trigger_classes": "", "disable_for_gallery_lists": true, "disable_for_acidfree_gallery_lists": true, "enable_acidfree_videos": true, "slideshow_interval": 5000, "slideshow_automatic_start": 0, "slideshow_automatic_exit": 1, "show_play_pause": 1, "pause_on_next_click": 0, "pause_on_previous_click": true, "loop_slides": 0, "iframe_width": 600, "iframe_height": 400, "iframe_border": 1, "enable_video": 0 }, "mlibrary_loading_gif": "sites/www.lib.umich.edu/modules/mlibrary/images/loading.gif", "arg": [ "announcements" ], "mlibrary_browse": { "ui_select_item_url": "/mlibrary_browse_ui_select_item.html" }, "mlibrary_search": { "tabs": [ "mlibrary", "articles", "catalog" ], "options": "\'mlibrary\',\'articles\',\'catalog\'" } });
+//-->
+
+    <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/sites/www.lib.umich.edu/themes/mlibrary/fixie.css" />    <![endif]-->
+  </HEAD>
+  <BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+    
+      
+      
+        <!-- sidebar -->
+        
+          
+          <U><FONT COLOR=blue>[MLibrary Logo]</FONT></U>          
+          
+            <U><FONT COLOR=blue>[University of Michigan]</FONT></U>          
+                    &nbsp;
+        <!-- sidebar -->
+
+        
+          
+          
+          
+						
+								
+							&nbsp;<!-- /alerts -->
+								
+							
+								
+									<UL><LI><U><FONT COLOR=blue>About</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Services</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Libraries &amp; Departments</FONT></U></LI>
+</UL> | 
+									<UL><LI><U><FONT COLOR=blue>MGet It</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Search Tools</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Catalog (Mirlyn)</FONT></U></LI>
+</UL>								<!-- /navcontent -->
+							<!-- /nav -->
+								
+							
+
+
+  
+  
+  
+  
+  <U><FONT COLOR=blue>Login for Favorites</FONT></U>
+
+
+
+							
+						<!-- /alertsnavcontainer -->
+						
+					<!-- /header -->
+          
+          
+                          
+
+  <H2>Search</H2>
+
+  <U><FONT COLOR=blue>[Search]</FONT></U><INPUT VALUE="MLibrary" TYPE="button"><INPUT VALUE="ArticlesPlus" TYPE="button"><INPUT VALUE="Catalog" TYPE="button"><FORM>
+<INPUT VALUE="" NAME="op" TYPE="hidden">
+
+ Search MLibrary: 
+ <INPUT VALUE="" NAME="query" MAXLENGTH="128" SIZE="23" TYPE="text">
+
+<INPUT VALUE="" NAME="op" TYPE="submit">
+
+ <INPUT VALUE="searchtools" NAME="left[searchtools]" CHECKED="checked" TYPE="checkbox"> Databases
+
+
+ <INPUT VALUE="mirlyn" NAME="left[mirlyn]" CHECKED="checked" TYPE="checkbox"> Catalog (Mirlyn)
+
+
+ <INPUT VALUE="ejournals" NAME="left[ejournals]" CHECKED="checked" TYPE="checkbox"> Online Journals
+
+
+ <INPUT VALUE="libguides" NAME="right[libguides]" CHECKED="checked" TYPE="checkbox"> Research Guides
+
+
+ <INPUT VALUE="website" NAME="right[website]" CHECKED="checked" TYPE="checkbox"> Library Webpages
+
+
+ <INPUT VALUE="digitalcollections" NAME="right[digitalcollections]" CHECKED="checked" TYPE="checkbox"> Collections
+
+<INPUT VALUE="" NAME="op" TYPE="submit">
+<INPUT VALUE="mlibrary" NAME="search_tab" TYPE="hidden">
+
+ <INPUT VALUE="scholarly" NAME="articles[scholarly]" TYPE="checkbox"> Limit to peer-reviewed journals
+
+
+ <INPUT VALUE="newspapers" NAME="articles[newspapers]" TYPE="checkbox"> Exclude newspaper articles
+
+
+ <INPUT VALUE="fulltext" NAME="articles[fulltext]" TYPE="checkbox"> Limit to articles with full text online
+
+
+ <INPUT VALUE="local" NAME="articles[local]" TYPE="checkbox"> Add results beyond MLibrary
+
+<U><FONT COLOR=blue>Advanced Articles<EM>Plus</EM> Search</FONT></U>Catalog Search Options
+ <INPUT VALUE="all" NAME="catalog" CHECKED="checked" TYPE="radio"> Keywords
+
+
+ <INPUT VALUE="title" NAME="catalog" TYPE="radio"> Title
+
+
+ <INPUT VALUE="author" NAME="catalog" TYPE="radio"> Author
+
+
+ <INPUT VALUE="subject" NAME="catalog" TYPE="radio"> Subject
+
+
+ <INPUT VALUE="hlb" NAME="catalog" TYPE="radio"> Academic Discipline
+
+
+ <INPUT VALUE="callnumber" NAME="catalog" TYPE="radio"> Call Number
+
+
+ <INPUT VALUE="isn" NAME="catalog" TYPE="radio"> ISSN/ISBN/etc
+
+<INPUT VALUE="form-b765cdb8b083e7bc6b3808720fcade2e" NAME="form_build_id" TYPE="hidden">
+<INPUT VALUE="mlibrary_search_form_setup" NAME="form_id" TYPE="hidden">
+
+</FORM>
+
+
+
+
+  <H2>Browse</H2>
+
+  <U><FONT COLOR=blue>[Browse]</FONT></U><FORM>
+
+ <SELECT NAME="selects"><OPTION VALUE="0"></OPTION><OPTION VALUE="1"></OPTION></SELECT>
+
+<INPUT VALUE="" NAME="op" TYPE="submit">
+<INPUT VALUE="" NAME="op" TYPE="submit">
+<INPUT VALUE="form-762373c6a0537cf88d5c79997c7a9692" NAME="form_build_id" TYPE="hidden">
+<INPUT VALUE="mlibrary_browse_ui_form" NAME="form_id" TYPE="hidden">
+
+</FORM>
+
+
+
+
+  <H2>Get Help</H2>
+
+  [Get Help]<U><FONT COLOR=blue>Ask a Librarian</FONT></U><U><FONT COLOR=blue>Using the Library</FONT></U><UL><LI> <U><FONT COLOR=blue>- Chat</FONT></U></LI><LI> <U><FONT COLOR=blue>- Email</FONT></U></LI><LI> <U><FONT COLOR=blue>- Phone</FONT></U></LI><LI> <U><FONT COLOR=blue>- In Person</FONT></U></LI><LI> <U><FONT COLOR=blue>Subject Specialists</FONT></U></LI></UL><UL><LI> <U><FONT COLOR=blue>Research Guides</FONT></U></LI><LI> <U><FONT COLOR=blue>Instruction &amp; Workshops</FONT></U></LI><LI> <U><FONT COLOR=blue>Searchpath</FONT></U></LI><LI> <U><FONT COLOR=blue>Off-Campus Access</FONT></U></LI><LI> <U><FONT COLOR=blue>Video Tutorials</FONT></U></LI></UL>
+
+                      <!-- /searchoptions -->
+
+          
+            
+            <!-- breadcrumbs -->
+                        <U><FONT COLOR=blue>Home</FONT></U> &gt; Announcements<!-- /breadcrumbs -->
+                        
+            <!-- admintabs -->
+                        
+            <!-- content area -->
+                                    <!-- mission & help  not sure when these show up... -->
+                        <!-- /mission, /help -->
+            
+            
+  
+    
+  
+  
+  
+  
+    <H4>Announcements by Category March 2012</H4>
+
+    
+  
+  
+      
+      <UL><LI><U><FONT COLOR=blue>Resources (14)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>General (12)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Facilities (3)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>People (1)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Workshops (1)</FONT></U></LI>
+</UL>    
+  
+  
+  
+  
+  
+  
+   
+
+  
+  
+
+  
+  
+  
+  
+    <H4>Announcements by Month </H4>
+
+    
+  
+  
+      
+      <UL><LI><U><FONT COLOR=blue>March 2012</FONT></U></LI>
+<LI><U><FONT COLOR=blue>February 2012</FONT></U></LI>
+<LI><U><FONT COLOR=blue>January 2012</FONT></U></LI>
+<LI><U><FONT COLOR=blue>December 2011</FONT></U></LI>
+<LI><U><FONT COLOR=blue>November 2011</FONT></U></LI>
+<LI><U><FONT COLOR=blue>October 2011</FONT></U></LI>
+<LI><U><FONT COLOR=blue>September 2011</FONT></U></LI>
+<LI><U><FONT COLOR=blue>August 2011</FONT></U></LI>
+<LI><U><FONT COLOR=blue>July 2011</FONT></U></LI>
+<LI><U><FONT COLOR=blue>June 2011</FONT></U></LI>
+<LI><U><FONT COLOR=blue>May 2011</FONT></U></LI>
+<LI><U><FONT COLOR=blue>April 2011</FONT></U></LI>
+<LI><U><FONT COLOR=blue>March 2011</FONT></U></LI>
+<LI><U><FONT COLOR=blue>February 2011</FONT></U></LI>
+<LI><U><FONT COLOR=blue>January 2011</FONT></U></LI>
+<LI><U><FONT COLOR=blue>December 2010</FONT></U></LI>
+<LI><U><FONT COLOR=blue>November 2010</FONT></U></LI>
+<LI><U><FONT COLOR=blue>October 2010</FONT></U></LI>
+<LI><U><FONT COLOR=blue>September 2010</FONT></U></LI>
+<LI><U><FONT COLOR=blue>August 2010</FONT></U></LI>
+<LI><U><FONT COLOR=blue>July 2010</FONT></U></LI>
+<LI><U><FONT COLOR=blue>June 2010</FONT></U></LI>
+<LI><U><FONT COLOR=blue>May 2010</FONT></U></LI>
+<LI><U><FONT COLOR=blue>April 2010</FONT></U></LI>
+<LI><U><FONT COLOR=blue>March 2010</FONT></U></LI>
+<LI><U><FONT COLOR=blue>February 2010</FONT></U></LI>
+<LI><U><FONT COLOR=blue>January 2010</FONT></U></LI>
+<LI><U><FONT COLOR=blue>December 2009</FONT></U></LI>
+<LI><U><FONT COLOR=blue>November 2009</FONT></U></LI>
+<LI><U><FONT COLOR=blue>October 2009</FONT></U></LI>
+<LI><U><FONT COLOR=blue>September 2009</FONT></U></LI>
+<LI><U><FONT COLOR=blue>August 2009</FONT></U></LI>
+<LI><U><FONT COLOR=blue>July 2009</FONT></U></LI>
+<LI><U><FONT COLOR=blue>June 2009</FONT></U></LI>
+</UL>    
+  
+  
+  
+  
+  
+  
+   
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+      
+        <H3> Announcements for March, 2012</H3>
+      
+      
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue></FONT></U>		
+		<H2><U><FONT COLOR=blue>APS publications now accessible through VPN</FONT></U></H2>March 7, 2012<EM>Resources</EM><P>Our longstanding issue with VPN authorization and APS access violations has been resolved. All users should now be able to access APS publications online using the VPN. Please contact <U><FONT COLOR=blue>sciencelibrary@umich.edu</FONT></U> if you are still experiencing any difficulties.</P>    
+        
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+
+    
+        
+      
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue></FONT></U>		
+		<H2><U><FONT COLOR=blue>Natura</FONT></U></H2>March 6, 2012<EM>General</EM><P>Natura<BR>
+March 3 - March 9<BR>
+Reception March 9<BR>
+5:00 - 11:00 p.m.<BR>
+Gallery</P>
+<P>Natura is an exhibition of fine art photography in which each piece depicts a natural object, but has its own surreal interpretation from which the viewer can examine more closely a specific facet of the scene, usually gone unnoticed.</P>
+<P>Natura is the premier exhibition of photographer and SoMTD student JD Dennison.</P>
+<P>Gallery Hours: M-F, 12-6 p.m.</P>    
+        
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+
+    
+        
+      
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue>[Image of catalog covers]</FONT></U>		
+		<H2><U><FONT COLOR=blue>The  Exhibit Catalog &quot;Sacred Hands&quot; in HT!</FONT></U></H2>March 2, 2012<EM>General</EM><P>Though the last day of the display &quot;Sacred Hands: and exhibit of manuscripts with texts of the three Abrahamic faiths&quot; is March 4 (Sunday) we now have a permament electronic record of the exhibit. The catalog has been cataloged in Mirlyn and is <U><FONT COLOR=blue>available online </FONT></U>through HT.</P>
+<P>Our thanks go to Kelly Witchen and Kevin Hawkins for making this possible.</P>
+    
+        
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+
+    
+        
+      
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue>[source: http://www.flickr.com/photos/70278718@N00/4703228]</FONT></U>		
+		<H2><U><FONT COLOR=blue>Catalog Confessions: Drop us a Note</FONT></U></H2>February 28, 2012<EM>General</EM><P>This project connects our Library with the important issue of student mental health by gathering anonymous submissions on the back of cards harvested from the <U><FONT COLOR=blue>Graduate Library's</FONT></U> card catalogs. Catalog Confessions launches the week of March 7 to coincide with the 10th annual Depression on College Campuses Conference.</P>    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+
+    
+        
+      
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue>[Photo of a eaudio book title on an iPod]</FONT></U>		
+		<H2><U><FONT COLOR=blue>OneClick Digital e-Audio Books</FONT></U></H2>February 26, 2012<EM>Resources</EM><P>Help us test drive a new e-audio product.</P>
+<P>MLibrary is currently running a trial of the Recorded Books <U><FONT COLOR=blue>OneClick Digital</FONT></U> e-Audio book platform.&nbsp;</P>
+<P>OneClick Digital provides UM faculty, staff, and students access to a variety of books in a downloadable e-audio format.&nbsp; They can be listened to on your computer or transferred to a digital device such as an iPod or MP3 player.</P>    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+
+    
+        
+      
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue>[JSTOR logo]</FONT></U>		
+		<H2><U><FONT COLOR=blue>New Resource: JSTOR Collections Acquired</FONT></U></H2>February 21, 2012<EM>Resources</EM><P>MLibrary is pleased to announce that it has acquired four new JSTOR journal archive collections. We now provide access to the <EM>Arts &amp; Sciences V</EM>, <EM>Arts &amp; Sciences VI</EM>, <EM>Arts &amp; Sciences VIII</EM>, and <EM>Arts &amp; Sciences IX </EM>collections comprising back files of more than 500 additional scholarly journals in the humanities and social sciences.</P>    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+
+    
+          
+      
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue>[Mini-Comics Day at the Duderstadt. March 10, 10am - 6pm]</FONT></U>		
+		<H2><U><FONT COLOR=blue>Mini-Comics Day at the Duderstadt</FONT></U></H2>February 20, 2012<EM>General</EM><P>The Art, Architecture, and Engineering Library is hosting its 2nd  annual Mini-Comics Day on March 10, 2012 from 10am to 6pm. Participants  are challenged to write and draw a complete mini-comic within the span  of a day.</P>
+<P><EM>Registration is now open-- send email to <U><FONT COLOR=blue>minicomics-2012@umich.edu</FONT></U> to sign up!</EM></P>
+<P><U><FONT COLOR=blue>http://www.lib.umich.edu/minicomicsday</FONT></U></P>    
+        
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+
+    
+        
+      
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue>[Collage of Michigan Daily Images]</FONT></U>		
+		<H2><U><FONT COLOR=blue>New Resource:  Michigan Daily Alumni Photographers</FONT></U></H2>February 17, 2012<EM>Resources</EM>
+In collaboration with the <U><FONT COLOR=blue>Bentley Historical Library</FONT></U>, as part of their Michigan Daily Alumni Photographers Project, MLibrary's Digital Library Production Service has created a new digitized <U><FONT COLOR=blue>collection</FONT></U> showcasing&nbsp;the works of alumni photographers on&nbsp;<U><FONT COLOR=blue><EM>The Michigan Daily</EM></FONT></U> staff during their time at the University of Michigan.
+
+    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+
+    
+        
+      
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue></FONT></U>		
+		<H2><U><FONT COLOR=blue>Factiva available on all three campuses</FONT></U></H2>February 16, 2012<EM>Resources</EM><P>Thanks to the Kresge Business Administration Library, the University Library is pleased to announce access for all three U-M campuses to a new online resource: <U><FONT COLOR=blue>Factiva</FONT></U>. (Previously this database was available only to constituents of and walk-in users to the Stephen M. Ross School of Business.)</P>
+    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+
+    
+        
+      
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue></FONT></U>		
+		<H2><U><FONT COLOR=blue>Oehrli, Hallman, and Downing to Present at SXSW Film Festival</FONT></U></H2>February 15, 2012<EM>People</EM><P><U><FONT COLOR=blue>Angie Oehrli</FONT></U> (Learning Librarian), <U><FONT COLOR=blue>Phil Hallman</FONT></U> (Film Studies Librarian) and <U><FONT COLOR=blue>Karen Downing</FONT></U> (Foundations &amp; Grants Librarian) will be included in the panel&nbsp;<U><FONT COLOR=blue>Dig Deep:&nbsp;Libraries, Archives and Filmmaking</FONT></U> at the SXSW Film Festival in Austin, Texas, on Tuesday, March 13, 2012.</P>
+    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+
+    
+        
+      
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue></FONT></U>		
+		<H2><U><FONT COLOR=blue>New Resource: ProQuest Statistical Datasets</FONT></U></H2>February 12, 2012<EM>Resources</EM><P>The University Library is happy to announce that the U-M Ann Arbor campus has access to an important resource for finding statistics and using them to create tables, maps and reports:&nbsp;<U><FONT COLOR=blue>ProQuest Statistical Datasets</FONT></U>
+&nbsp;
+</P>    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+
+    
+        
+      
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue></FONT></U>		
+		<H2><U><FONT COLOR=blue>Materials Collection Open House March 13th</FONT></U></H2>February 10, 2012<EM>Resources</EM><P>You are invited to the  Art, Architecture and Engineering Library's open house on March 13th for our new materials collection. The UM   Library is leasing the collection from Material  ConneXion&reg;, a leading  global platform for innovative and sustainable  materials used in  design, building and manufacturing. The collection  consists of samples  of 200 materials, a selected subset of the over  6,500 materials found  in the Materials ConneXion&reg;  <U><FONT COLOR=blue>database</FONT></U>.</P>    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+
+    
+        
+      
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue>[Students studying in a Shapiro Library group study room]</FONT></U>		
+		<H2><U><FONT COLOR=blue>Study Rooms Reservations</FONT></U></H2>February 8, 2012<EM>Facilities</EM><P>Looking for a group study room? You can reserve a study room in advance via our online forms.</P>    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+
+    
+        
+      
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue></FONT></U>		
+		<H2><U><FONT COLOR=blue>News and Links</FONT></U></H2>February 1, 2012<EM>Resources</EM><EM><U><FONT COLOR=blue>University of Michigan eyes e-books as a way to lower soaring textbook costs</FONT></U></EM>
+<EM>1/9/12</EM>
+<U><FONT COLOR=blue><EM>University taking steps toward e-textbook use</EM></FONT></U>
+<EM>11/29/11</EM>
+    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+
+    
+        
+      
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue>[Stylized image of a laptop.]</FONT></U>		
+		<H2><U><FONT COLOR=blue>Register for Upcoming Workshops</FONT></U></H2>January 31, 2012<EM>Workshops</EM><P>MLibrary staff offer many subject- and technology-related workshops throughout the year. The Faculty Exploratory offers <U><FONT COLOR=blue>hands-on technology workshops</FONT></U> while the <U><FONT COLOR=blue>University Library workshops</FONT></U> can get you up-to-speed on specific resources, tools, funding strategies, just to name few. Online registration is quick and easy!</P>    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+
+    
+        
+      
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue>[CultureGrams]</FONT></U>		
+		<H2><U><FONT COLOR=blue>New Resource: CultureGrams</FONT></U></H2>January 17, 2012<EM>Resources</EM><P>The University Library is pleased to announce access for all three U-M campuses to a new online resource: <U><FONT COLOR=blue>CultureGrams</FONT></U></P>    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+
+    
+        
+      
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue>[EBM logo]</FONT></U>		
+		<H2><U><FONT COLOR=blue>Focus on MPublishing: UM Faculty Reprints</FONT></U></H2>January 8, 2012<EM>Resources</EM><P>The University of Michigan MPublishing Faculty Reprints is a service designed to  put out-of-print books written by UM faculty back into circulation, both  online and in print, making them openly accessible and affordable.</P>    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+
+    
+        
+      
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue>[Undergraduate Research Award poster image]</FONT></U>		
+		<H2><U><FONT COLOR=blue>MLibrary Undergraduate Student Research Award</FONT></U></H2>December 6, 2011<EM>General</EM><P>In recognition of the extraordinary academic achievements of our undergraduate students, the <U><FONT COLOR=blue>Shapiro Undergraduate Library</FONT></U> announces the 2nd Annual MLibrary Undergraduate Student Research Award for excellence in library research conducted in support of an undergraduate student project.</P>
+<P>Students who have written or participated in a research paper/project from Spring 2011-Winter 2012 term are encouraged to submit their work for consideration. Faculty sponsorship is required for the award application.</P>
+    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+
+    
+          
+      
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue>[Photo of an iPod listening to an audio book]</FONT></U>		
+		<H2><U><FONT COLOR=blue>Downloadable E-Audio Books (MyiLibrary) Platform Retired </FONT></U></H2>December 4, 2011<EM>Resources</EM>
+The MyiLibrary Audio Books are being transitioned to a new audio book service called Recorded Books OneClickDigital. The transition to the Recorded Books OneClickDigital platform is expected to happen during Winter term 2012 but a specific date for the transition has not yet been announced. We will provide updates as more information becomes available.&nbsp; Unfortunately this means that&nbsp; we do not have access to e-audio books.
+    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+
+    
+        
+      
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue>[Masthead Logo of The Chronicle of Higher Education ]</FONT></U>		
+		<H2><U><FONT COLOR=blue>New!  Complete Access to Chronicle of Higher Education Digital Edition</FONT></U></H2>December 2, 2011<EM>Resources</EM><P>The University Library is very pleased to announce that all three U-M campuses now have institutional online access to the complete <U><FONT COLOR=blue><EM><EM>Chronicle of Higher Education Digital Edition</EM></EM></FONT></U> website providing expanded content from the <EM>Chronicle</EM>.</P>
+<P>All current U-M faculty, students and staff (as well as visitors using guest workstations in U-M libraries) who navigate to the <EM>Chronicle</EM>&rsquo;s website through the library link at <U><FONT COLOR=blue>http://www.lib.umich.edu/database/link/558334</FONT></U> will have access to the full content of the website, which is updated throughout the day and includes the latest news in academe.&nbsp; </P>    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+
+    
+        
+      
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue>[Photo of a stack a library books.]</FONT></U>		
+		<H2><U><FONT COLOR=blue>Suggest a Book for the Collections</FONT></U></H2>December 1, 2011<EM>General</EM><P>The University Library encourages you to make suggestions for additions to our collections. If you would like to suggest a new book, journal, DVD, etc. for purchase by the Library, please fill out our <U><FONT COLOR=blue>purchase suggestion form</FONT></U>.&nbsp; Your suggestion will be forwarded to the appropriate library <U><FONT COLOR=blue>subject specialist</FONT></U> for consideration. Because we obtain new materials every day, please check the <U><FONT COLOR=blue>library catalog</FONT></U> before submitting your suggestion.</P>    
+        
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+
+    
+        
+      
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue>[Photo of audio tape and circuit board.]</FONT></U>		
+		<H2><U><FONT COLOR=blue>Visit GroundWorks Media Conversion Lab</FONT></U></H2>November 29, 2011<EM>Facilities</EM><P>The <U><FONT COLOR=blue>GroundWorks Media Conversion Lab</FONT></U> in the James and Anne Duderstadt Center (North Campus) is your place to create and to convert audio, video, and print media to a digital format. Resources in this lab include powerful video editing stations, professional-grade software, drawing tablets, document/art digital scanners, <U><FONT COLOR=blue>large-format poster printers</FONT></U>, and a sound-proof recording booth.</P>    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+
+    
+        
+      
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue>[Image of the Ask a Librarian IM box]</FONT></U>		
+		<H2><U><FONT COLOR=blue>Need Help? Got Questions? IM Us!</FONT></U></H2>October 31, 2011<EM>General</EM><P>Need help with your library-related research, class assignment, or research project? Instant message (IM) a librarian for assistance via the <U><FONT COLOR=blue>Ask a Librarian</FONT></U> service!</P>    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+
+    
+        
+      
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue></FONT></U>		
+		<H2><U><FONT COLOR=blue>Places &amp; Spaces: Mapping Science</FONT></U></H2>May 11, 2011<EM>General</EM><P>Are you interested in seeing science from above? Curious to see what impact one single person or invention can have? Keen to find pockets of innovation? Desperate for better tools to manage the information flood? Or are you simply fascinated by maps?</P>
+<P>
+</P>    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+
+    
+        
+      
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue></FONT></U>		
+		<H2><U><FONT COLOR=blue>Computer and Video Game Archive featured in Chronicle of Higher Ed</FONT></U></H2>May 10, 2011<EM>General</EM><P>An article in the <U><FONT COLOR=blue>Chronicle of Higher Education</FONT></U> on library video game rooms features <U><FONT COLOR=blue>AAEL's Computer and Video Game Archive</FONT></U> and quotes <U><FONT COLOR=blue>David Carter</FONT></U>, engineering librarian.</P>
+<P>The full article can be found here:&nbsp;<U><FONT COLOR=blue>Video-Game Rooms Become the Newest Library Space Invaders</FONT></U></P>    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+
+    
+        
+      
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue></FONT></U>		
+		<H2><U><FONT COLOR=blue>New Website for Korean DVD Collections</FONT></U></H2>April 11, 2011<EM>General</EM><P>The Asia Library's Korean Collection has released a new website for navigating Korean DVD collections:</P>    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+
+    
+        
+      
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue></FONT></U>		
+		<H2><U><FONT COLOR=blue>MLibrary Review Resources</FONT></U></H2>March 20, 2011<EM>Resources</EM><P>Book reviews provide critical information about a book&rsquo;s reception at the time of its publication. The Library provides complete full-text online coverage to three major book review journals: The <U><FONT COLOR=blue><EM>London Review of Book</EM>s </FONT></U>(1979- present), <EM><U><FONT COLOR=blue>The New York Review of Books </FONT></U></EM>(1963- present), and <EM><U><FONT COLOR=blue>The New York Times Book Review </FONT></U></EM>(1896- present).</P>    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+
+    
+        
+      
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue></FONT></U>		
+		<H2><U><FONT COLOR=blue>Paul Courant joins ARTstor Board of Trustees</FONT></U></H2>March 16, 2011<EM>General</EM><P>ARTstor, a nonprofit digital library, recently announced that Paul Courant has joined its Board of Trustees. Founded by the Andrew W. Mellon Foundation,&nbsp;<U><FONT COLOR=blue>ARTstor</FONT></U>&rsquo;s mission is to support the use of digital technology to enhance scholarship, teaching, and learning in the arts and associated fields.</P>    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+
+    
+        
+      
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue></FONT></U>		
+		<H2><U><FONT COLOR=blue>Kamada Collection at Asia Library</FONT></U></H2>March 12, 2010<EM>Resources</EM><P>Staff of the  University of Michigan <U><FONT COLOR=blue>Asia Library</FONT></U> have recently uncovered a cache of old  Japanese books, consisting of approximately 2,000 volumes, and mostly dating to  the eighteenth and nineteenth centuries. The materials constitute the Kamada  Collection, which the Library purchased from Japan during the 1940s, while Japan  remained under Allied Occupation.</P>    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+
+    
+      
+  
+  
+  
+  
+  
+  
+   
+
+  
+  
+
+  
+
+                                    <!-- /content area -->
+            
+          <!-- /nodecontainer -->
+          
+        <!-- /main -->
+        
+       <!-- /container -->
+      
+      <!-- footercontainer -->
+      
+        <!-- footer -->
+        
+          
+            
+
+  <H2>Quick Links</H2>
+
+  
+  
+    <UL><LI><U><FONT COLOR=blue>My Library Account</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Online Journal List</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Library Hours</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Webmail</FONT></U></LI>
+<LI><U><FONT COLOR=blue>CTools</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Wolverine Access</FONT></U></LI>
+<LI><U><FONT COLOR=blue>MLibrary Mobile</FONT></U></LI>
+<LI><U><FONT COLOR=blue></FONT></U></LI>
+</UL>
+  
+
+          
+          <!-- /footer -->
+          
+            
+
+  <H2>MTagger</H2>
+
+  
+
+jQuery.mtagger.base += '/mtagger';
+
+
+  
+    <U><FONT COLOR=blue>[MTagger]tag this page</FONT></U>
+    <U><FONT COLOR=blue>mtagger</FONT></U>
+  
+  
+   
+
+
+  $('#tagCloud').addCloud({ separator: ' ',url:'http://www.lib.umich.edu/announcements'});
+
+
+
+
+  <H2>CONTACT</H2>
+
+  <P>We welcome your 
+<U><FONT COLOR=blue>feedback</FONT></U> on our web site.</P><P>University Library<BR>818 Hatcher Graduate Library South<BR>913 S. University Avenue<BR>Ann Arbor, MI 48109-1190</P>
+
+
+
+  <H2>Copyright</H2>
+
+  Access this page at: http://www.lib.umich.edu/announcements<U><FONT COLOR=blue> [Creative Commons License] [Creative Commons]</FONT></U><P>Except where otherwise noted, this work is subject to a Creative Commons Attribution 3.0 license. <U><FONT COLOR=blue>Details and exceptions</FONT></U>.</P><P>&copy;2012, Regents of the University of Michigan</P>
+
+          
+        
+       <!-- /footercontainer -->
+        
+    <!-- /wrapper -->
+    
+<!--//--><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA13416208"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = "/files/googleanalytics/ga.js?2";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//-->
+
+  </BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>

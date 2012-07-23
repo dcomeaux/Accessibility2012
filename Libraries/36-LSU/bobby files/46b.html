@@ -1,0 +1,769 @@
+
+<HTML>
+<HEAD>
+<META CONTENT="text/html; charset=utf-8">
+<!--<base href="http://www.lib.lsu.edu"  />-->
+
+
+
+
+ 
+
+
+
+
+////////////THIS IS THE EXTERNAL LINKS NEW WINDOW JS//////////////////
+
+function exLinks() {
+<!-- Copyright 2005 Bontrager Connection, LLC
+// More info: "Automatic New Window for External Links" 
+//    at /library/
+// Also see http://BontragerConnection.com/
+//
+// List the domain names that shall not be put into new 
+//    windows when the link is clicked. If you use both 
+//    the www.example.com and example.com versions of 
+//    your domain name, list them both. The domains need 
+//    to be all one line between the quotation marks on 
+//    the line below, the names separated with a comma.
+//    Do not specify http:// URLs, just domain names.
+
+var Domains = "www.lib.lsu.edu,lib.lsu.edu,lsu.edu,www.lsu.edu,test.lib.lsu.edu,news.blogs.lib.lsu.edu,lsu.louislibraries.org,grok.lsu.edu,itsweb.lsu.edu";
+
+////////////////////////////////////////////
+// No other customizations are necessary. //
+////////////////////////////////////////////
+if(Domains.indexOf(" ") != 1) {
+   var splitarray = Domains.split(" ");
+   Domains = splitarray.join("");
+}
+Domains = Domains.toLowerCase();
+var DomainsArray = Domains.split(",");
+for(var i = 0; i < document.links.length; i++) {
+   if(document.links[i].hostname.length < 1) 
+   { continue; }
+   if(document.links[i].target.length > 0)
+   { continue; }
+   var h = document.links[i].hostname.toLowerCase();
+   var makeNewWindow = true;
+   for(var ii = 0; ii < DomainsArray.length; ii++) {
+      if(DomainsArray[ii] != h) 
+      { continue; }
+      makeNewWindow = false;
+      break;
+   }
+   if(makeNewWindow == true)
+   { document.links[i].title = 'This link will take you outside LSU.edu.'; }
+}
+//-->
+}
+
+
+function mobilepop(action) {
+	if (action == "close") document.getElementById('mobilepop').style.display = "none";
+	else if (action == "redirect") window.location.href = "http://www.lib.lsu.edu/m/";
+}
+
+function mobilepopOL() {	
+//	if (document.location == "http://www.lib.lsu.edu/index.html" || document.location == "http://www.lib.lsu.edu/") {
+//		if (screen.width 
+
+<!-- The following JavaScript code gets the current date from the viewer's machine. --> 
+
+<!-- tag to hide script from older browsers that don't support JavaScript
+function display_todays_date()
+{
+var today = new Date();
+var numerical_day=today.getDay();
+var numerical_month=today.getMonth();
+var date=today.getDate();
+var year=today.getFullYear();
+var weekday_array = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+var day_of_the_week = weekday_array[numerical_day];
+var month_array = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+var month_name = month_array[numerical_month];
+var date_string=day_of_the_week+', '+month_name+' '+date+', '+year;
+document.write(date_string);
+}
+//-->
+
+  
+	#mobilepop {
+		/*position:absolute;
+		top:10px;
+		left:10px;*/
+		width:760px;
+		height:auto;
+		margin:0 10px;
+		padding:0;
+		display:none;
+		overflow:hidden;
+	}
+	#mobilecont {
+		width:760px;
+		background:#FDD023;
+		color:#333333;
+		padding:10px;
+		font-size:12px;
+		font-family:Arial, Helvetica, sans-serif;
+		text-align:center;
+		border:1px solid #ffffff;
+		line-height:115% !important;
+	}
+
+<!-- End the current date script. --> 
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+	[INLINE]
+
+
+	
+		
+    	<P><EM>On a mobile device?</EM></P>
+        <P>View the LSU Libraries Mobile Website at<BR> <U><FONT COLOR=blue>http://www.lib.lsu.edu/m/</FONT></U></P>
+        <!-- <p style="fontsize:2em;"><input type="button" name="closempop" value="Stay" onClick="javascript:mobilepop('close');" /> <input type="button" name="redirectmpop" value="Go to Mobile Site" onClick="javascript:mobilepop('redirect');" /> </p>-->
+	    
+	
+
+
+	<!--Begin Utility Bar-->
+	<UL>
+	<LI><U><FONT COLOR=blue>
+		[Text Only]</FONT></U>
+		<U><FONT COLOR=blue>[Login to MyLSU]</FONT></U>
+	</LI> 
+	<LI> Baton Rouge, Louisiana | 
+	<!--Begin date display-->
+	display_todays_date();
+	<!--end date display-->
+	</LI> 
+
+ 	<LI>
+	<FORM>
+		 
+		<INPUT WIDTH="17" NAME="image" HEIGHT="14" TYPE="image">
+		<INPUT VALUE="Search lsu.edu" NAME="q" SIZE="20" TYPE="text">
+		<INPUT VALUE="lsu.edu" NAME="sitesearch" TYPE="hidden"> 
+		</FORM>
+	</LI>
+
+</UL>
+<!--End Utility Bar   -->
+		
+ 
+<U><FONT COLOR=blue></FONT></U>
+
+	<UL>
+ 	  <LI><U><FONT COLOR=blue>LSU Libraries</FONT></U><!-- Begin Home Item -->
+    
+       <!-- <div class="dropdown_2columns">--><!-- Begin 2 columns container -->
+    
+    <!--        <div class="col_2">
+                <h2>Welcome !</h2>
+            </div>
+    
+            <div class="col_2">
+                <p>Welcome to the LSU Libraries web site.  </p>             
+                <p>The LSU Libraries web site is a gateway to the information and research needs of the LSU community.  It can be used to locate books, link to ejournal articles, communicate with subject librarians and other library staff and faculty members.</p>             
+            </div>
+    
+            <div class="col_2">
+                <h2>Cross Browser Support</h2>
+            </div>
+            
+            <div class="col_1">
+                <img src="img/browsers.png" width="125" height="48" alt="" />
+            </div>
+            
+            <div class="col_1">
+                <p>This mega menu has been tested in all major browsers.</p>
+            </div>
+          
+        </div>--><!-- End 2 columns container -->
+    
+    </LI><!-- End Home Item -->
+    
+         <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////          ABOUT US                   ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+ 	   	 <LI><U><FONT COLOR=blue>About Us</FONT></U><!-- Begin 5 columns Item -->
+        <!-- Begin 5 columns container -->
+        
+             
+                <H2>Welcome to the LSU Libraries Website!</H2>
+                <P>The LSU Libraries web site is a gateway to the information and research needs of the LSU community. It can be used to locate books, link to ejournal articles, and to communicate with subject librarians and other library staff and faculty members.
+</P>
+            
+             
+            
+                <H3>Information</H3>
+     <!--           <p class="black_box">This is a dark grey box text. Fusce in metus at enim porta lacinia vitae a arcu. Sed sed lacus nulla mollis porta quis.</p>-->
+     
+            <UL> 
+            <LI><U><FONT COLOR=blue>About the Libraries</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Driving Directions</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Employment</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Hours</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Policies</FONT></U></LI>
+            
+            </UL>
+            
+   		        
+                <H3>Directory</H3>
+                <UL>
+                <LI><U><FONT COLOR=blue>All</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Faculty</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Subject Librarians</FONT></U></LI>
+              <!--  <li><a href="http://www.lib.lsu.edu/sp/subjects/staff.php?letter=By Department">By Departments</a></li>-->
+                </UL>
+                
+                
+             
+            
+               <H3>Frequently Dialed Numbers</H3>
+               
+              <P>- Circulation (fines, borrowing): 578-2058<BR> 
+              - Reference (help finding information): 578-5652<BR>
+              - Music Resources: 578-4674<BR>
+              - Special Collections: 578-6568 </P>
+            
+           &nbsp; 
+                   
+                   
+                   
+                   <U><FONT COLOR=blue>[INLINE]</FONT></U>
+                   
+                     <U><FONT COLOR=blue>[INLINE]</FONT></U>
+                  <U><FONT COLOR=blue> [INLINE]</FONT></U>
+                   <U><FONT COLOR=blue> [INLINE] </FONT></U>
+                  
+            
+                
+                
+         
+ 
+        
+        <!-- End 5 columns container -->
+     </LI><!-- End 5 columns Item -->
+     
+     <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////          RESEARCH TOOLS             ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+     
+     <LI><U><FONT COLOR=blue>Research Tools</FONT></U><!-- Begin 4 columns Item -->
+    
+        <!-- Begin 4 columns container -->
+        
+               
+            
+                <H3>Find Books</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Online Catalog</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>WorldCat Local</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Subject Guides</FONT></U></LI>
+<!--                    <li><a href="http://www.lib.lsu.edu/sp/subjects/index.php">Subject Guides</a></li> -->
+                    <LI><U><FONT COLOR=blue>Gov't Documents</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Reserves</FONT></U>
+                    <!-- <li><a href="#">more</a></li>-->
+                </UL>   
+                             
+                   
+                <H3>Find Articles</H3> 
+                <UL>
+                    <LI><U><FONT COLOR=blue>Indexes &amp; Databases</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Ejournals</FONT></U></LI>
+                 <!--   <li><a href="#">How to find Articles</a></li>-->
+                </UL>   
+                 
+                <H3>Other</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Gov't Documents</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Other Resources</FONT></U></LI>
+                </UL>   
+            
+               
+                <H3>Help</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Subject Librarians</FONT></U></LI>
+<!--                <li><a href="http://www.lib.lsu.edu/sp/subjects/staff.php?letter=Subject Librarians AZ">Subject Librarians</a></li> -->
+                    <LI><U><FONT COLOR=blue>Tutorials</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Technical Help</FONT></U></LI>
+                </UL>   
+            
+   
+        <!-- End 4 columns container -->
+    
+    </LI><!-- End 4 columns Item -->
+    
+  
+    <!-- Start services -->
+         <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////             SERVICES                ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+    
+        <LI><U><FONT COLOR=blue>Services</FONT></U><!-- Begin 4 columns Item -->
+    
+        <!-- Begin 4 columns container -->
+        
+    <!--        <div class="col_3">
+                <h2>Research</h2>
+            </div>
+    -->      
+         
+            
+            
+                    <H3>Instruction</H3>
+                <UL>
+                
+                    <LI><U><FONT COLOR=blue>Instruction Webpage</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>LIS 1001</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Tutorial Center (141 Middleton)</FONT></U>
+                    
+                    <LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Tutorials</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Request Instruction</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Reserve a Classroom</FONT></U></LI>
+               
+                </UL>   
+                 
+            
+       
+  
+    
+            
+            
+                <H3>Borrowing</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Interlibrary Loan</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Your Library Account</FONT></U></LI>
+              
+                    <LI><U><FONT COLOR=blue>Circulation Policies</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Reserves</FONT></U></LI>
+                   <!-- <li><a href="#">more</a></li>-->
+                </UL>   
+                
+                 <H3>Other</H3>
+                <UL>
+                <LI><U><FONT COLOR=blue>Disability Services</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Distance Education</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Study/ Presentation Rooms</FONT></U>
+                </UL>
+                 
+            
+    
+            
+            
+                <H3>Technology</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Help Desk</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Print Desk</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Find a Computer</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Technical Help</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Visualization Services Center (109 Middleton)</FONT></U>
+                 
+                </UL>  
+                 
+            
+    
+     <!--       <div class="col_1">
+            
+                <h3>Misc</h3>
+                <ul>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Logo</a></li>
+                    <li><a href="#">Flash</a></li>
+                    <li><a href="#">Illustration</a></li>
+                    <li><a href="#">More...</a></li>
+                </ul>   
+                 
+            </div>
+            -->
+        <!-- End 4 columns container -->
+    
+    </LI><!-- End 4 columns Item -->
+    
+    <!-- end services -->
+    
+         <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////             DEPARTMENTS             ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+
+	<LI><U><FONT COLOR=blue>Departments</FONT></U>
+    
+		
+        
+                
+                
+                    <UL>
+                        <LI><U><FONT COLOR=blue>Acquisitions</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Circulation</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Education Resources</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Gov't Documents</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Interlibrary Loan</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Music Resources</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Reference</FONT></U></LI>                     
+                        <LI><U><FONT COLOR=blue>Special Collections</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>More</FONT></U></LI>
+              
+                    </UL>   
+                     
+                
+                
+		
+        
+	</LI>
+
+
+     <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////              HELP                   ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+
+    <LI><U><FONT COLOR=blue>Help</FONT></U><!-- Begin 3 columns Item -->
+    
+        <!-- Begin 3 columns container -->
+            
+            
+                <H2>Help</H2>
+            
+            
+             
+    
+                <UL>
+                    <LI><U><FONT COLOR=blue>Technical Help</FONT></U></LI>
+                   
+                    <LI><U><FONT COLOR=blue>Tutorial Center</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Call Us</FONT></U> 225.578.8875</LI>
+                
+                </UL>   
+    
+            
+            
+            
+    
+                <UL>
+                    <LI><U><FONT COLOR=blue>Research Help</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Help Desk</FONT></U> 225.578.3375</LI>
+                    <LI><U><FONT COLOR=blue>Email Us</FONT></U></LI>
+               
+                </UL>   
+    
+            
+            
+            
+    
+                <UL>
+                    <LI><U><FONT COLOR=blue>FAQ</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>IM Us</FONT></U></LI>
+              
+                </UL>   
+    
+            
+            
+            
+                <H2>Search the Libraries Web Site</H2>
+                
+                     <FORM>
+                <INPUT WIDTH="17" NAME="image" HEIGHT="14" TYPE="image">
+                <INPUT NAME="q" TYPE="text">
+                <INPUT VALUE="www.lib.lsu.edu" NAME="sitesearch" TYPE="hidden">
+                </FORM>
+            
+            
+          <!--  <div class="col_3">
+                <img src="img/02.jpg" width="70" height="70" class="img_left imgshadow" alt="" />
+                <p><strong>Tutorial Lab</strong> Located in 141 Middleton Library, the lab offers tutoring in Math....(this should go under instruction)<a href="#">Read more...</a></p>
+    <br clear="all" />
+                <img src="img/01.jpg" width="70" height="70" class="img_left imgshadow" alt="" />
+                <p>Aliquam elementum felis quis felis consequat scelerisque. Fusce sed lectus at arcu mollis accumsan at nec nisi. Aliquam pretium mollis fringilla. Vestibulum tempor facilisis malesuada. <a href="#">Read more...</a></p>
+            </div>
+        -->
+        <!-- End 3 columns container -->
+        
+    </LI><!-- End 3 columns Item -->
+    
+         <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////           A TO Z                    ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+
+<LI><U><FONT COLOR=blue>A to Z</FONT></U></LI>
+</UL>
+  
+
+ 
+ <!--<link rel="stylesheet" type="text/css" href="/sp/assets/css/default.css" />
+-->
+  <H1>Database List: G</H1> 
+
+  
+    
+    
+
+    <U><FONT COLOR=blue>A</FONT></U><U><FONT COLOR=blue>B</FONT></U><U><FONT COLOR=blue>C</FONT></U><U><FONT COLOR=blue>D</FONT></U><U><FONT COLOR=blue>E</FONT></U><U><FONT COLOR=blue>F</FONT></U>G<U><FONT COLOR=blue>H</FONT></U><U><FONT COLOR=blue>I</FONT></U><U><FONT COLOR=blue>J</FONT></U><U><FONT COLOR=blue>K</FONT></U><U><FONT COLOR=blue>L</FONT></U><U><FONT COLOR=blue>M</FONT></U><U><FONT COLOR=blue>N</FONT></U><U><FONT COLOR=blue>O</FONT></U><U><FONT COLOR=blue>P</FONT></U><U><FONT COLOR=blue>R</FONT></U><U><FONT COLOR=blue>S</FONT></U><U><FONT COLOR=blue>T</FONT></U><U><FONT COLOR=blue>U</FONT></U><U><FONT COLOR=blue>V</FONT></U><U><FONT COLOR=blue>W</FONT></U><U><FONT COLOR=blue>Z</FONT></U><U><FONT COLOR=blue>All</FONT></U>    
+   
+    
+      
+        
+    <TABLE><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Gale Virtual Reference Library</FONT></U> 
+				
+				Gale Virtual Reference Library is a collection of reference eBooks from  Gale and their publishing partners.  There are thousands of full-text  eBooks available for full-text searching.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>GaleNet</FONT></U> 
+				
+				Includes Biography &amp; Genealogy Master Index, Biography Resource  Center, Exploring Poetry, Literature Resource Center, Scribner Writers  Series, and Twayne's Authors Series.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Garland Encyclopedia of World Music Online </FONT></U> 
+				
+				The Garland Encyclopedia of World Music Online is   the first comprehensive online resource devoted to music research of  all  the world's peoples. More than 9,000 pages of material, combined  with  entries by more than 700 expert contributors from all over the  world,  make this the most complete body of work focused on world music. &nbsp; Each  volume contains an overview of the region, a survey of its  musical  heritage, traditions and themes; and a description of specific  musical  genres, practices, and performances. Articles include detailed   photographs that show musicians, musical instrument, and the cultural   context of dances, rituals, and ceremonies. Other images include   drawings, maps, and musical examples for further study. Since its first   publication in 1997, The Garland Encyclopedia of World Music has been   the pre-eminent reference work for research in ethnomusicology. It has   won numerous awards, including the Dartmouth Medal, the New York Public   Library Outstanding Reference Book award, and Library Journal's award  as  one of the 50 Reference Sources for the Millennium. Now for the  first  time, the entire set of 10 print volumes is available as a  single,  integrated online database, with additional features from  Alexander  Street Press. &nbsp; The second release  includes the entire set of 10 print volumes  (over 9,200 pages) as well  as complete indexing for genre, subject,  instrument, place, person,  ensemble, and cultural group, as well as  links to the associated audio  examples for each volume. <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information]  [Open Access]</TD><TD><U><FONT COLOR=blue>GENE-TOX</FONT></U> 
+				
+				GENE-TOX - Peer-reviewed mutagenicity test data from the EPA.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] </TD><TD><U><FONT COLOR=blue>GEOBASE</FONT></U><BR><EM>Note: </EM><EM>This is a Dialog database. Searches in this database will be conducted by a librarian or library staff at no charge to the patron. If you wish to have a search conducted in this database, please consult the Middleton Library Reference Desk or contact the </EM> 
+				
+				GEOBASE is a unique bibliographic database covering worldwide research  literature in physical and human geography, earth and environmental  sciences, ecology, and related disciplines. In addition to providing  comprehensive coverage of the core scientific and technical periodicals,  Geobase has a unique coverage of non-English language and less readily  available publications. Over 2,000 journals are fully covered with an  additional 3,000 having partial coverage. Over 2,000 books, monographs,  conference proceedings, and reports are also included.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>GEOREF</FONT></U> 
+				
+				This database is a comprehensive geoscience resource containing over 2.2  million bibliographic records covering subjects such as mineralogy and  crystallography, general mineralogy, mineralogy of silicates, and  mineralogy of non-silicates. Bibliographic records from more than 3,000  journals are included in the database as well as journal articles,  books, maps, conference papers, reports, and theses. Over 60,000  references are added to the GeoRef database annually. Geology of North  America is covered from 1785 to the present, and geology of the world is  covered from 1933 to the present. This database is produced by the  American Geological Institute. <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Global Insight</FONT></U> 
+				
+				Global Insight/DRI Global Economics Provides access to comprehensive  economic and financial indicators for over fifty countries. Locate  historical statistics for indicators such as the consumer and producer  price indexes, futures and options markets, exchange rates, population,  and housing.<BR><BR> Global Insight/DRI Global Economics Provides access  to comprehensive economic and financial indicators for over fifty  countries. Locate historical statistics for indicators such as the  consumer and producer price indexes, futures and options markets,  exchange rates, population, and housing.  http://www.ihsglobalinsight.com/About/ The data bases available in our  Global Insight subscription are: Balance of Payments - IMF (IMFBOP);  Basic Economics - Daily (BASIC/D); Basic Economics - Foreign Exchange  (BASIC/FX); Basic Economics - Weekly (BASIC/W); Basic Economics (BASIC);  Canada Primary Source (DBCAND); Commodities - Crops (CI/CROPS);  Commodities - Financials (CI/FINANCIALS); Commodities - Foods  (CI/FOODS); Commodities - Industrials (CI/InduSTRIALS); Commodities -  Metals (CI/METALS); Direction of Trade - IMF (IMFDOT); Dow Jones World  Stock Index (INDEX/DOW); Financial Markets Indexes (INDEX/DATA); Flow of  Funds (FUNDS); France (FR); Germany (GY); International Automotive  Database (AUTODB); International Economic (DRIINTL); International  Financial Statistics - IMF (IMF); Italy Economic - Banca d'Italia  (IT/BDIT); Italy Economic - Confindustria (IT/CONFIN); Money Markets and  Fixed Income (FACS/DATA); Netherlands (NL); OECD Main Economic  Indicators (OECDMEI); OECD National Income Accounts (OECDNIA); South  Africa (SA); Spain (SP); U.S. and Canadian Equities (DRISEC); U.S.  Central - National Assoc. of Realtors (USCEN/NAR); U.S. Central (USCEN);  U.S. Industrial &amp; Regional Economic (MARKETS); U.S. Prices  (USPRICE); United Kingdom (UK)<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information]  [Some full text available] [Open Access]</TD><TD><U><FONT COLOR=blue>Google Books</FONT></U> 
+				
+				Book Search works just like web search. Try a search on Google Books or  on Google.com. When they find a book with content that contains a match  for your search terms, they'll link to it in your search results. If the  book is out of copyright, or the publisher has given them permission,  you'll be able to see a preview of the book, and in some cases the  entire text. If it's in the public domain, you're free to download a PDF  copy. They've created reference pages for every book so you can quickly  find all kinds of relevant information: book reviews, web references,  maps and more. See an example. If you find a book you like, click on the  &quot;Buy this book&quot; and &quot;Borrow this book&quot; links to see where you can buy  or borrow it.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Google Scholar</FONT></U> 
+				
+				Google Scholar provides a simple way to broadly search for scholarly  literature. From one place, you can search across many disciplines and  sources: peer-reviewed papers, theses, books, abstracts and articles,  from academic publishers, professional societies, preprint repositories,  universities and other scholarly organizations. Google Scholar helps  you identify the most relevant research across the world of scholarly  research.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information]  [Open Access]</TD><TD><U><FONT COLOR=blue>GPO Access</FONT></U> 
+				
+				Provides online access to the U.S. Government Printing Office. This  service was mandated by  Public Law 103-40 (June 8, 1993), &quot;The  Government Printing Office Electronic Information  Access Enhancement  Act of 1993,&quot; to make the Federal Register and other Congressional  information available to the public.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Grassland and Forage Abstracts via CabDirect</FONT></U> 
+				
+				Including the CAB Abstracts and CAB Health, this is the leading database  for literature related to agriculture and applied life sciences,  including strong international coverage.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information]  [Open Access]</TD><TD><U><FONT COLOR=blue>Green Book</FONT></U> 
+				
+				Contains the Overview of Entitlement Programs by the U.S. House of Representatives' Committee on Ways and Means.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>GreenFILE</FONT></U> 
+				
+				GreenFILE indexes scholarly and general interest titles, as well as  government documents and reports. This resource offers a unique  perspective on the positive and negative ways humans affect the  environment. Drawing on the connection between the environment and  disciplines such as agriculture, education, law, health and technology,  GreenFILE serves as an informative resource for anyone concerned about  the issues facing our planet. The database contains nearly 300,000  records, full text for selected titles and searchable cited references  for more than 200 titles as well. <BR><BR> <U><FONT COLOR=blue>Non-LSU Affiliates may click here to access GreenFILE Abstracts for free.</FONT></U><BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Grove Dictionary of Art</FONT></U> 
+				
+				The most comprehensive online reference resource for  all aspects of the visual arts worldwide  from prehistory to the present  day. The Grove Dictionary of Art contains 45,000 articles on  every  aspect of the visual arts - painting, sculpture, graphic arts,  architecture, decorative arts  and photography - from prehistory to the  present day. Compiled over a period of 15 years, it  represents the work  of more than 6,800 scholars from around the world, each writing on his  or her own specialist field of study. <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Grove Dictionary of Music is now part of Oxford Music Online</FONT></U> 
+				
+				Oxford Music Online also contains The Oxford Companion to Music (2002),  which offers more than 8,000 articles on composers, performers,  conductors, individual works, instruments and notation, forms and  genres; The Oxford Dictionary of Music, Second Edition, Revised (2006)  will similarly supplement Grove's more extensive coverage with content  geared toward undergraduates and general users. Both of these sources  are included in a subscription to Grove Music Online.  Oxford Music Online is also pleased to feature Colin Larkin's landmark  Encyclopedia of Popular Music &mdash; online for the first time by popular  demand. The most comprehensive reference work devoted exclusively to  popular music, EPM is the authoritative biographical encyclopedia of  rock, pop, and jazz artists, covering popular music from 1900 to the  present. It is exhaustive, meticulous, authoritative &mdash; and incredibly  fun to read.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U></TABLE>        
+    
+    
+	
+
+	
+    
+        
+        
+            Key to Icons
+        
+         
+
+<P>
+[Information]  Information<BR>
+
+
+ [Restricted Resource]  Campus Faculty, Staff &amp; Students only<BR>
+
+ 
+<U><FONT COLOR=blue>[Some full text available] Some full text</FONT></U><BR>
+
+
+<U><FONT COLOR=blue>[Open Access Resource] Open Access (freely available to anyone)</FONT></U><BR>
+
+
+<U><FONT COLOR=blue>[Trial] Free Trials</FONT></U><BR>
+
+
+
+<!--<img src="http://www.lib.lsu.edu/sp/assets/images/icons/camera.gif" border="0" alt="Resource includes images"> Images<br />
+
+<img src="http://www.lib.lsu.edu/sp/assets/images/icons/television.gif" border="0" alt="Resource includes video"> Video files<br />
+
+<img src="http://www.lib.lsu.edu/sp/assets/images/icons/sound.gif" border="0" alt="Resource includes audio"> Audio files<br />
+-->
+</P>
+ 
+    
+    
+    
+        <!-- start pluslet -->
+    <!-- this is the newest databases pluslet maybe add back in after we go to the wide format... -->
+     
+        
+            Newest Databases
+        
+         <UL>
+<LI><U><FONT COLOR=blue>NewsBank</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Rock and Roll, Counter Culture, Peace and Protest</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Victorian Popular Culture</FONT></U></LI>
+<LI><U><FONT COLOR=blue>The First World War: Personal Experience</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Mass Observation Online</FONT></U></LI>
+</UL>
+ 
+     
+    <!-- end pluslet -->
+    
+      
+        
+            Information User Restrictions
+        
+          
+        
+<P>        Use of the LSU Libraries' electronic resources is subject to U.S. Copyright Law. Excessive downloading, printing, and/or electronic dissemination of resource content by the user is prohibited. Restrictions on other uses may apply. Electronic information subsidized by the LSU Libraries is for use in LSU classes and research. Databases are restricted to academic use only. Fair use guidelines are specifically applicable to use of information in a University setting. These are included in the <U><FONT COLOR=blue>Libraries Copyright Policy</FONT></U>.
+</P>
+<P>See the <U><FONT COLOR=blue>Database Access Policy</FONT></U> for information regarding authorized users.</P>
+        
+        
+    
+    
+    
+
+    <BR>
+	
+
+
+
+<BR>
+ 
+ <U><FONT COLOR=blue>[LSU Logo]</FONT></U>
+<BR><U><FONT COLOR=blue>LSU Libraries</FONT></U>
+<BR>Baton Rouge, LA 70803
+<BR>Tel (225) 578-5652
+<BR>Fax (225) 578-9432 
+
+
+
+<!-- AddThis Button END -->
+<BR> 
+
+<UL>
+<LI><U><FONT COLOR=blue>LSU Libraries</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Contact Us</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Mobile Website</FONT></U></LI>
+<!--<li><a href="http://www.lsu.edu">Louisiana State University</a></li>-->
+<LI>
+<U><FONT COLOR=blue>[Library Blog]</FONT></U>
+<U><FONT COLOR=blue>[RSS Feed]</FONT></U>
+<U><FONT COLOR=blue>[Library Facebook Page]</FONT></U>
+<U><FONT COLOR=blue>[Library Twitter Page] </FONT></U>
+<!-- AddThis Button BEGIN -->
+
+//var addthis_config = {
+ //  ui_click: true
+//}
+
+<!--a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa4a8b0c2a79cf3130">
+<img style="verticalalign:middle;" src="http://s7.addthis.com/static/btn/v2/lgbookmarken.gif" width="125" height="16" alt="Bookmark and Share" style="border:0" />
+</a>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=xa4a8b0c2a79cf3130"></script> -->
+</LI>
+</UL>
+<BR>
+<CENTER>Copyright &copy; 1996 - <!--#config timefmt="%Y" --><!--#echo var="DATE_LOCAL" --> LSU Libraries<BR> <!--<img src="/images/external.png" /><span class="small">Links away from LSU.edu</span> --></CENTER><BR>
+
+
+<!--<div class="right">
+<a href="http://www.lsu150.com/"><img src="/images/150year.jpg" /></a>
+
+
+</div> -->
+
+<BR>
+ 
+ 
+
+
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22589452-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+    $(document).ready(function(){
+
+
+        var stripeholder = ".zebra";
+        // add rowstriping
+        stripeR();
+
+
+        $("[id*=show]").live("change", function() {
+
+            var showtype_id = $(this).attr("id").split("-");
+            //alert("u clicked: " + showtype_id[1]);
+            unStripeR();
+            $(".type-" + showtype_id[1]).toggle();
+            stripeR();
+
+        });
+
+        // show db details
+        $("img[id*=bib-]").live("click", function() {
+            var bib_id = $(this).attr("id").split("-");
+            $(this).parent().parent().find(".list_bonus").toggle()
+        });
+
+        function stripeR(container) {
+            $(".zebra").not(":hidden").filter(":even").addClass("evenrow");
+            $(".zebra").not(":hidden").filter(":odd").addClass("oddrow");
+        }
+
+        function unStripeR () {
+            $(".zebra").removeClass("evenrow");
+            $(".zebra").removeClass("oddrow");
+        }
+
+
+    });

@@ -1,0 +1,602 @@
+
+<HTML><!-- InstanceBegin template="/Templates/main.dwt.php" codeOutsideHTMLIsLocked="false" -->
+<HEAD>
+		<META CONTENT="text/html; charset=utf-8">
+	<!-- InstanceBeginEditable name="doctitle" -->
+<TITLE>WSU Libraries: Classroom Request Form</TITLE>
+<!-- InstanceEndEditable -->
+	<META CONTENT="en-us">
+	<META NAME="keywords" CONTENT="Wayne State University, WSU, Library System, Libraries">
+	<META NAME="description" CONTENT="The online resources and services of the Wayne State University Libraries">
+	<META NAME="author" CONTENT="libwebmaster@wayne.edu">
+	<META NAME="Copyright" CONTENT="Copyright (c) 2012 Wayne State University">
+    
+	
+    
+	
+	
+	#main { background: #fff url('/inc/img/pix/pix3.jpg') 25px 50px repeat-y; }
+
+	<!--[if lte IE 7]><link rel="stylesheet" href="/inc/css/ie/all.css" type="text/css" media="all" /><![endif]-->
+	<!--[if lte IE 6]><link rel="stylesheet" href="/inc/css/ie/6.css" type="text/css" media="all" />
+    <script type="text/javascript" language="javascript" src="/inc/js/unitpngfix.js"></script><![endif]-->
+	<!--[if lte IE 5]><link rel="stylesheet" href="/inc/css/ie/5win.css" type="text/css" media="all" /><![endif]-->
+    
+    
+    
+    
+	document.write("#functionmenu { display: none; }");
+    
+	<!-- InstanceBeginEditable name="head" -->
+	
+	
+		<!--
+		.required {
+			color:#900;
+		}
+		.recordingz {
+			backgroundcolor:#9F9;
+		}
+		.hardwarez {
+			backgroundcolor:#FFC;
+		}
+		.trainingz {
+			backgroundcolor:#CFF;
+		}
+		.rec_subnote1 {
+			fontsize:.8em;
+		}    
+		.secondaryQuestions {
+			marginleft:30px;
+		}
+		.error {
+			color:#900;
+		}
+		.success {
+			color:#060;
+		}
+		-->
+    
+    
+    
+
+		$(function(){  
+			
+			function showHideFields() {		  
+				if ($("#training").is(':checked')) {
+					$(".training").slideDown("fast");
+				}
+				else {
+					$(".training").slideUp("fast");
+				}
+				if ($("#hardware").is(':checked')) {
+					$(".hardware").slideDown("fast");
+				}
+				else {
+					$(".hardware").slideUp("fast");
+				}
+				if ($("#recording").is(':checked')) {
+					$(".recording").slideDown("fast");
+				}
+				else {
+					$(".recording").slideUp("fast");
+				}
+				if ($("#training").is(':checked') || $("#hardware").is(':checked') || $("#recording").is(':checked')) {
+					$(".sub").removeAttr('disabled');	
+				}
+				else {
+					$(".sub").attr('disabled', 'disabled');						
+				}
+			}
+			
+			$('.req_type').click(showHideFields);  
+			showHideFields();
+		
+		});
+	  
+	
+
+<!-- InstanceEndEditable -->
+	 
+    
+        
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+	
+    
+    
+    	<!-- NOTE: LOGGING INTO PIPELINE, BLACKBOARD OR WEBMAIL ALSO LOGS USER INTO EZPROXY -->
+
+  
+      <U><FONT COLOR=blue>Pipeline</FONT></U>
+      | <U><FONT COLOR=blue>Blackboard</FONT></U>
+      | <U><FONT COLOR=blue>Webmail</FONT></U>
+  
+  
+  <U><FONT COLOR=blue>My Library Account</FONT></U>
+    
+
+
+
+
+	
+	<P><U><FONT COLOR=blue>Wayne State University</FONT></U></P>
+    
+    
+    <UL>
+    <LI><U><FONT COLOR=blue>Library System</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Neef Law Library</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Shiffman Medical Library</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>More</FONT></U></LI>
+    </UL>
+    
+ <!-- #header --> 		
+		
+        
+            
+            
+            <H1><U><FONT COLOR=blue>Library System</FONT></U></H1>
+      
+                        <UL>
+              <LI><U><FONT COLOR=blue>Resources</FONT></U>
+              <UL>
+              	<LI><U><FONT COLOR=blue>All Resources</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Catalog</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Article Databases</FONT></U></LI>
+                 <LI><U><FONT COLOR=blue>Digital Collections</FONT></U></LI>
+                 <!-- test to increase visibility of Dig Commons Apr22 JM -->
+                 <LI><U><FONT COLOR=blue>Digital Commons</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>E-Books</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>E-Journals</FONT></U></LI>
+				
+              	<LI><U><FONT COLOR=blue>Guides</FONT></U></LI>
+                			<LI><U><FONT COLOR=blue>Reference Tools</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Special Collections</FONT></U></LI>
+								              </UL></LI>
+              <LI><U><FONT COLOR=blue>Services</FONT></U>
+              <UL>
+              	<LI><U><FONT COLOR=blue>All Services</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Ask-A-Librarian</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Borrowing</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Classroom Support</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Computing</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Events Support</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Faculty/Grad Research Support</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Interlibrary Loan</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Instruction</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Reserves</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Room Reservations</FONT></U></LI>
+  </UL></LI>
+              <LI><U><FONT COLOR=blue>Library Info</FONT></U>
+              <UL>
+              	<LI><U><FONT COLOR=blue>All Information</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>About</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Contact Info/ Staff Directory</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Hours</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Maps and Directions</FONT></U></LI>
+       			<LI><U><FONT COLOR=blue>News</FONT></U>				</LI>				<LI><U><FONT COLOR=blue>Policies</FONT></U></LI>
+				              </UL></LI>
+              <LI><U><FONT COLOR=blue>Quicklinks</FONT></U>
+                <UL>
+                  <LI><U><FONT COLOR=blue>Alerting Services</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Assignment Planner</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Bibliographic Software</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Citation Linker</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Faculty Video Media Request</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>First Year Students</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Library Liaisons</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Office for Teaching and Learning</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Renew Books</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Request Equipment</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Retired Faculty</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>re:Search</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Student Technology Studio</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Suggest a Title</FONT></U></LI>
+                </UL>
+              </LI>
+            </UL>
+            <!-- #nav -->
+                 
+
+            
+<H1>WSU Libraries</H1> <!-- FOR PRINT -->
+			<!-- InstanceBeginEditable name="content" -->
+    <H2>Classroom Technology Request Form</H2>
+	        <FORM>
+            
+                <INPUT VALUE="" NAME="training" TYPE="hidden">
+                <INPUT VALUE="" NAME="hardware" TYPE="hidden">
+                <INPUT VALUE="" NAME="recording" TYPE="hidden">
+                Select your class location
+                <SELECT NAME="room_id">
+                                    <OPTION VALUE="33">Cohn - 124</OPTION>
+                                    <OPTION VALUE="34">Cohn - 126</OPTION>
+                                    <OPTION VALUE="35">Cohn - 128</OPTION>
+                                    <OPTION VALUE="38">Cohn - 220</OPTION>
+                                    <OPTION VALUE="265">Deroy - 46</OPTION>
+                                    <OPTION VALUE="266">Deroy - 146</OPTION>
+                                    <OPTION VALUE="3">General Lectures - 100</OPTION>
+                                    <OPTION VALUE="4">General Lectures - 150</OPTION>
+                                    <OPTION VALUE="8">Kresge - 110</OPTION>
+                                    <OPTION VALUE="57">Kresge - 201</OPTION>
+                                    <OPTION VALUE="58">Kresge - 202</OPTION>
+                                    <OPTION VALUE="72">Manoogian - 9</OPTION>
+                                    <OPTION VALUE="73">Manoogian - 12</OPTION>
+                                    <OPTION VALUE="74">Manoogian - 15</OPTION>
+                                    <OPTION VALUE="75">Manoogian - 20</OPTION>
+                                    <OPTION VALUE="76">Manoogian - 21</OPTION>
+                                    <OPTION VALUE="77">Manoogian - 24</OPTION>
+                                    <OPTION VALUE="78">Manoogian - 25</OPTION>
+                                    <OPTION VALUE="79">Manoogian - 28</OPTION>
+                                    <OPTION VALUE="80">Manoogian - 31</OPTION>
+                                    <OPTION VALUE="81">Manoogian - 37</OPTION>
+                                    <OPTION VALUE="82">Manoogian - 43</OPTION>
+                                    <OPTION VALUE="83">Manoogian - 54</OPTION>
+                                    <OPTION VALUE="84">Manoogian - 55</OPTION>
+                                    <OPTION VALUE="85">Manoogian - 58</OPTION>
+                                    <OPTION VALUE="86">Manoogian - 61</OPTION>
+                                    <OPTION VALUE="87">Manoogian - 64</OPTION>
+                                    <OPTION VALUE="88">Manoogian - 65</OPTION>
+                                    <OPTION VALUE="89">Manoogian - 68</OPTION>
+                                    <OPTION VALUE="90">Manoogian - 69</OPTION>
+                                    <OPTION VALUE="91">Manoogian - 75</OPTION>
+                                    <OPTION VALUE="92">Manoogian - 79</OPTION>
+                                    <OPTION VALUE="93">Manoogian - 91</OPTION>
+                                    <OPTION VALUE="94">Manoogian - 112</OPTION>
+                                    <OPTION VALUE="95">Manoogian - 120</OPTION>
+                                    <OPTION VALUE="97">Manoogian - 124</OPTION>
+                                    <OPTION VALUE="98">Manoogian - 128</OPTION>
+                                    <OPTION VALUE="99">Manoogian - 150</OPTION>
+                                    <OPTION VALUE="318">Manoogian - 154</OPTION>
+                                    <OPTION VALUE="331">Manoogian - 160</OPTION>
+                                    <OPTION VALUE="333">Manoogian - 166</OPTION>
+                                    <OPTION VALUE="100">Manoogian - 201</OPTION>
+                                    <OPTION VALUE="101">Manoogian - 205</OPTION>
+                                    <OPTION VALUE="102">Manoogian - 211</OPTION>
+                                    <OPTION VALUE="103">Manoogian - 212</OPTION>
+                                    <OPTION VALUE="104">Manoogian - 215</OPTION>
+                                    <OPTION VALUE="105">Manoogian - 218</OPTION>
+                                    <OPTION VALUE="106">Manoogian - 221</OPTION>
+                                    <OPTION VALUE="107">Manoogian - 224</OPTION>
+                                    <OPTION VALUE="108">Manoogian - 225</OPTION>
+                                    <OPTION VALUE="109">Manoogian - 235</OPTION>
+                                    <OPTION VALUE="110">Manoogian - 237</OPTION>
+                                    <OPTION VALUE="111">Manoogian - 243</OPTION>
+                                    <OPTION VALUE="112">Manoogian - 253</OPTION>
+                                    <OPTION VALUE="113">Manoogian - 256</OPTION>
+                                    <OPTION VALUE="114">Manoogian - 259</OPTION>
+                                    <OPTION VALUE="115">Manoogian - 262</OPTION>
+                                    <OPTION VALUE="116">Manoogian - 263</OPTION>
+                                    <OPTION VALUE="117">Manoogian - 266</OPTION>
+                                    <OPTION VALUE="118">Manoogian - 269</OPTION>
+                                    <OPTION VALUE="119">Manoogian - 275</OPTION>
+                                    <OPTION VALUE="120">Manoogian - 279</OPTION>
+                                    <OPTION VALUE="121">Manoogian - 280</OPTION>
+                                    <OPTION VALUE="122">Manoogian - 288</OPTION>
+                                    <OPTION VALUE="123">Manoogian - 289</OPTION>
+                                    <OPTION VALUE="124">Manoogian - 293</OPTION>
+                                    <OPTION VALUE="125">Manoogian - 297</OPTION>
+                                    <OPTION VALUE="453">Oakland Center - 102</OPTION>
+                                    <OPTION VALUE="455">Oakland Center - 103</OPTION>
+                                    <OPTION VALUE="457">Oakland Center - 111</OPTION>
+                                    <OPTION VALUE="459">Oakland Center - 115</OPTION>
+                                    <OPTION VALUE="335">Oakland Center - 130</OPTION>
+                                    <OPTION VALUE="461">Oakland Center - 138</OPTION>
+                                    <OPTION VALUE="463">Oakland Center - 148</OPTION>
+                                    <OPTION VALUE="337">Oakland Center - 156</OPTION>
+                                    <OPTION VALUE="339">Oakland Center - 160</OPTION>
+                                    <OPTION VALUE="467">Oakland Center - 206</OPTION>
+                                    <OPTION VALUE="447">Oakland Center - 208</OPTION>
+                                    <OPTION VALUE="469">Oakland Center - 210</OPTION>
+                                    <OPTION VALUE="449">Oakland Center - 214</OPTION>
+                                    <OPTION VALUE="341">Oakland Center - 216</OPTION>
+                                    <OPTION VALUE="343">Oakland Center - 218</OPTION>
+                                    <OPTION VALUE="471">Oakland Center - 302</OPTION>
+                                    <OPTION VALUE="345">Oakland Center - 304</OPTION>
+                                    <OPTION VALUE="473">Oakland Center - 305</OPTION>
+                                    <OPTION VALUE="347">Oakland Center - 307</OPTION>
+                                    <OPTION VALUE="349">Oakland Center - 308</OPTION>
+                                    <OPTION VALUE="351">Oakland Center - 311</OPTION>
+                                    <OPTION VALUE="353">Oakland Center - 313</OPTION>
+                                    <OPTION VALUE="355">Oakland Center - 314</OPTION>
+                                    <OPTION VALUE="357">Oakland Center - 317</OPTION>
+                                    <OPTION VALUE="359">Oakland Center - 319</OPTION>
+                                    <OPTION VALUE="361">Oakland Center - 322</OPTION>
+                                    <OPTION VALUE="363">Oakland Center - 323</OPTION>
+                                    <OPTION VALUE="365">Oakland Center - 326</OPTION>
+                                    <OPTION VALUE="367">Oakland Center - 327</OPTION>
+                                    <OPTION VALUE="369">Oakland Center - 328</OPTION>
+                                    <OPTION VALUE="371">Oakland Center - 329</OPTION>
+                                    <OPTION VALUE="373">Oakland Center - 404</OPTION>
+                                    <OPTION VALUE="375">Oakland Center - 408</OPTION>
+                                    <OPTION VALUE="377">Oakland Center - 412</OPTION>
+                                    <OPTION VALUE="379">Oakland Center - 426</OPTION>
+                                    <OPTION VALUE="381">Oakland Center - 427</OPTION>
+                                    <OPTION VALUE="383">Oakland Center - 428</OPTION>
+                                    <OPTION VALUE="385">Oakland Center - 505</OPTION>
+                                    <OPTION VALUE="387">Oakland Center - 506</OPTION>
+                                    <OPTION VALUE="389">Oakland Center - 507</OPTION>
+                                    <OPTION VALUE="475">Oakland Center - 512</OPTION>
+                                    <OPTION VALUE="391">Oakland Center - 513</OPTION>
+                                    <OPTION VALUE="477">Oakland Center - 514</OPTION>
+                                    <OPTION VALUE="393">Oakland Center - 515</OPTION>
+                                    <OPTION VALUE="395">Oakland Center - 522</OPTION>
+                                    <OPTION VALUE="479">Oakland Center - 523</OPTION>
+                                    <OPTION VALUE="397">Oakland Center - 524</OPTION>
+                                    <OPTION VALUE="399">Oakland Center - 525</OPTION>
+                                    <OPTION VALUE="401">Oakland Center - 528</OPTION>
+                                    <OPTION VALUE="403">Oakland Center - 529</OPTION>
+                                    <OPTION VALUE="405">Oakland Center - 602</OPTION>
+                                    <OPTION VALUE="407">Oakland Center - 604</OPTION>
+                                    <OPTION VALUE="409">Oakland Center - 605</OPTION>
+                                    <OPTION VALUE="411">Oakland Center - 607</OPTION>
+                                    <OPTION VALUE="413">Oakland Center - 608</OPTION>
+                                    <OPTION VALUE="415">Oakland Center - 610</OPTION>
+                                    <OPTION VALUE="417">Oakland Center - 611</OPTION>
+                                    <OPTION VALUE="419">Oakland Center - 613</OPTION>
+                                    <OPTION VALUE="421">Oakland Center - 614</OPTION>
+                                    <OPTION VALUE="423">Oakland Center - 616</OPTION>
+                                    <OPTION VALUE="425">Oakland Center - 620</OPTION>
+                                    <OPTION VALUE="427">Oakland Center - 622</OPTION>
+                                    <OPTION VALUE="429">Oakland Center - 623</OPTION>
+                                    <OPTION VALUE="431">Oakland Center - 627</OPTION>
+                                    <OPTION VALUE="433">Oakland Center - 628</OPTION>
+                                    <OPTION VALUE="435">Oakland Center - 629</OPTION>
+                                    <OPTION VALUE="481">Oakland Center - 706</OPTION>
+                                    <OPTION VALUE="437">Oakland Center - 706</OPTION>
+                                    <OPTION VALUE="439">Oakland Center - 708</OPTION>
+                                    <OPTION VALUE="441">Oakland Center - 718</OPTION>
+                                    <OPTION VALUE="443">Oakland Center - 724</OPTION>
+                                    <OPTION VALUE="445">Oakland Center - 728</OPTION>
+                                    <OPTION VALUE="147">Old Main - 103</OPTION>
+                                    <OPTION VALUE="149">Old Main - 105</OPTION>
+                                    <OPTION VALUE="151">Old Main - 106</OPTION>
+                                    <OPTION VALUE="152">Old Main - 111</OPTION>
+                                    <OPTION VALUE="153">Old Main - 116</OPTION>
+                                    <OPTION VALUE="154">Old Main - 121</OPTION>
+                                    <OPTION VALUE="155">Old Main - 129</OPTION>
+                                    <OPTION VALUE="156">Old Main - 134</OPTION>
+                                    <OPTION VALUE="157">Old Main - 137</OPTION>
+                                    <OPTION VALUE="158">Old Main - 143</OPTION>
+                                    <OPTION VALUE="159">Old Main - 145</OPTION>
+                                    <OPTION VALUE="160">Old Main - 151</OPTION>
+                                    <OPTION VALUE="161">Old Main - 159</OPTION>
+                                    <OPTION VALUE="162">Old Main - 162</OPTION>
+                                    <OPTION VALUE="163">Old Main - 165</OPTION>
+                                    <OPTION VALUE="164">Old Main - 168</OPTION>
+                                    <OPTION VALUE="165">Old Main - 171</OPTION>
+                                    <OPTION VALUE="166">Old Main - 174</OPTION>
+                                    <OPTION VALUE="174">Old Main - 204</OPTION>
+                                    <OPTION VALUE="170">Old Main - 215</OPTION>
+                                    <OPTION VALUE="179">Old Main - 1107</OPTION>
+                                    <OPTION VALUE="180">Old Main - 1111</OPTION>
+                                    <OPTION VALUE="181">Old Main - 1114</OPTION>
+                                    <OPTION VALUE="182">Old Main - 1115</OPTION>
+                                    <OPTION VALUE="183">Old Main - 1119</OPTION>
+                                    <OPTION VALUE="184">Old Main - 1129</OPTION>
+                                    <OPTION VALUE="186">Old Main - 1133</OPTION>
+                                    <OPTION VALUE="308">Old Main - 1134</OPTION>
+                                    <OPTION VALUE="310">Old Main - 1137</OPTION>
+                                    <OPTION VALUE="312">Old Main - 1151</OPTION>
+                                    <OPTION VALUE="191">Old Main - 1162</OPTION>
+                                    <OPTION VALUE="192">Old Main - 1163</OPTION>
+                                    <OPTION VALUE="193">Old Main - 1165</OPTION>
+                                    <OPTION VALUE="194">Old Main - 1168</OPTION>
+                                    <OPTION VALUE="195">Old Main - 1171</OPTION>
+                                    <OPTION VALUE="196">Old Main - 1172</OPTION>
+                                    <OPTION VALUE="197">Old Main - 1305</OPTION>
+                                    <OPTION VALUE="243">Prentis Hall - 2</OPTION>
+                                    <OPTION VALUE="316">Prentis Hall - 8</OPTION>
+                                    <OPTION VALUE="244">Prentis Hall - 10</OPTION>
+                                    <OPTION VALUE="247">Prentis Hall - 15</OPTION>
+                                    <OPTION VALUE="245">Prentis Hall - 17</OPTION>
+                                    <OPTION VALUE="248">Prentis Hall - 19</OPTION>
+                                    <OPTION VALUE="267">Purdy - 250</OPTION>
+                                    <OPTION VALUE="268">Purdy - 338</OPTION>
+                                    <OPTION VALUE="15">Science Hall - 1109</OPTION>
+                                    <OPTION VALUE="16">Science Hall - 1117</OPTION>
+                                    <OPTION VALUE="17">Science Hall - 1125</OPTION>
+                                    <OPTION VALUE="18">Science Hall - 2009</OPTION>
+                                    <OPTION VALUE="19">Science Hall - 2025</OPTION>
+                                    <OPTION VALUE="296">SEL - 221</OPTION>
+                                    <OPTION VALUE="292">SEL - 437</OPTION>
+                                    <OPTION VALUE="294">SEL - 537</OPTION>
+                                    <OPTION VALUE="10">Shapero Hall - 100</OPTION>
+                                    <OPTION VALUE="284">State Hall - 25</OPTION>
+                                    <OPTION VALUE="286">State Hall - 27</OPTION>
+                                    <OPTION VALUE="288">State Hall - 35</OPTION>
+                                    <OPTION VALUE="290">State Hall - 37</OPTION>
+                                    <OPTION VALUE="130">State Hall - 101</OPTION>
+                                    <OPTION VALUE="131">State Hall - 106</OPTION>
+                                    <OPTION VALUE="132">State Hall - 111</OPTION>
+                                    <OPTION VALUE="133">State Hall - 112</OPTION>
+                                    <OPTION VALUE="134">State Hall - 113</OPTION>
+                                    <OPTION VALUE="135">State Hall - 114</OPTION>
+                                    <OPTION VALUE="139">State Hall - 115</OPTION>
+                                    <OPTION VALUE="136">State Hall - 116</OPTION>
+                                    <OPTION VALUE="140">State Hall - 117</OPTION>
+                                    <OPTION VALUE="141">State Hall - 118</OPTION>
+                                    <OPTION VALUE="142">State Hall - 123</OPTION>
+                                    <OPTION VALUE="143">State Hall - 125</OPTION>
+                                    <OPTION VALUE="144">State Hall - 127</OPTION>
+                                    <OPTION VALUE="145">State Hall - 128</OPTION>
+                                    <OPTION VALUE="203">State Hall - 129</OPTION>
+                                    <OPTION VALUE="202">State Hall - 131</OPTION>
+                                    <OPTION VALUE="22">State Hall - 134</OPTION>
+                                    <OPTION VALUE="204">State Hall - 135</OPTION>
+                                    <OPTION VALUE="205">State Hall - 137</OPTION>
+                                    <OPTION VALUE="206">State Hall - 201</OPTION>
+                                    <OPTION VALUE="23">State Hall - 206</OPTION>
+                                    <OPTION VALUE="207">State Hall - 208</OPTION>
+                                    <OPTION VALUE="208">State Hall - 211</OPTION>
+                                    <OPTION VALUE="209">State Hall - 212</OPTION>
+                                    <OPTION VALUE="210">State Hall - 213</OPTION>
+                                    <OPTION VALUE="211">State Hall - 214</OPTION>
+                                    <OPTION VALUE="212">State Hall - 215</OPTION>
+                                    <OPTION VALUE="213">State Hall - 216</OPTION>
+                                    <OPTION VALUE="214">State Hall - 217</OPTION>
+                                    <OPTION VALUE="215">State Hall - 218</OPTION>
+                                    <OPTION VALUE="216">State Hall - 219</OPTION>
+                                    <OPTION VALUE="24">State Hall - 224</OPTION>
+                                    <OPTION VALUE="217">State Hall - 228</OPTION>
+                                    <OPTION VALUE="218">State Hall - 229</OPTION>
+                                    <OPTION VALUE="219">State Hall - 231</OPTION>
+                                    <OPTION VALUE="25">State Hall - 234</OPTION>
+                                    <OPTION VALUE="201">State Hall - 235</OPTION>
+                                    <OPTION VALUE="220">State Hall - 237</OPTION>
+                                    <OPTION VALUE="298">State Hall - 303</OPTION>
+                                    <OPTION VALUE="269">State Hall - 306</OPTION>
+                                    <OPTION VALUE="278">State Hall - 319</OPTION>
+                                    <OPTION VALUE="280">State Hall - 321</OPTION>
+                                    <OPTION VALUE="282">State Hall - 323</OPTION>
+                                    <OPTION VALUE="300">State Hall - 324</OPTION>
+                                    <OPTION VALUE="273">State Hall - 325</OPTION>
+                                    <OPTION VALUE="274">State Hall - 327</OPTION>
+                                    <OPTION VALUE="275">State Hall - 328</OPTION>
+                                    <OPTION VALUE="276">State Hall - 329</OPTION>
+                                    <OPTION VALUE="302">State Hall - 331</OPTION>
+                                    <OPTION VALUE="328">State Hall - 333</OPTION>
+                                    <OPTION VALUE="27">State Hall - 334</OPTION>
+                                    <OPTION VALUE="465">UGL - 206</OPTION>
+                                 
+                </SELECT>
+                <INPUT VALUE="Next" TYPE="submit">
+            
+        </FORM>  
+                
+        <P>Questions about the new request form? Contact <U><FONT COLOR=blue>Matt Wisotsky</FONT></U></P>
+  
+<!-- InstanceEndEditable -->
+<P><EM>WSU Libraries</EM><BR>
+
+						   3100 David Adamany Undergraduate Library<BR>
+
+						   5155 Gullen Mall<BR>
+
+						   Detroit, MI USA 48202<BR>
+
+						   (313) 577-4023 / 5525 - fax</P> <!-- FOR PRINT -->
+            <!-- #content -->
+		<!-- #main -->
+		
+		
+
+
+	
+    <P>
+    Follow us on:&nbsp;
+        <U><FONT COLOR=blue>
+        	[Follow waynestatelib on Twitter]</FONT></U>
+        <U><FONT COLOR=blue>
+        	[Follow waynestatelib on foursquare]</FONT></U>
+        <U><FONT COLOR=blue>[Follow wsuinst on YouTube]</FONT></U>
+  
+
+    </P>
+	<P>&copy;2009 - 2012 Wayne State University Board of Governors</P>
+	<UL>
+	<LI><U><FONT COLOR=blue>Suggestions</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Privacy</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Acceptable Use</FONT></U></LI>
+	</UL>
+    <FORM>
+    <INPUT VALUE="utf-8" NAME="ie" TYPE="hidden">
+    <INPUT VALUE="utf-8" NAME="oe" TYPE="hidden">
+    <INPUT VALUE="" NAME="q" TYPE="text"><BR>
+    <P><INPUT VALUE="www.lib.wayne.edu" NAME="domains" TYPE="hidden"><INPUT VALUE="" NAME="sitesearch" TYPE="radio"><INPUT VALUE="www.lib.wayne.edu" NAME="sitesearch" CHECKED="checked" TYPE="radio"></P>
+    <P><INPUT VALUE="Search this site" NAME="btnG" TYPE="submit"> <U><FONT COLOR=blue>Sitemap</FONT></U></P>
+    </FORM>
+    <UL>
+    <LI><U><FONT COLOR=blue>View Mobile Site</FONT></U></LI>
+    </UL>	
+    
+	
+	
+	<UL>
+	<LI>Libraries</LI>
+	<LI><U><FONT COLOR=blue>University Libraries</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Shiffman Medical Library</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Arthur Neef Law Library</FONT></U></LI>
+	</UL>
+	<UL>
+	<LI>Associated Programs</LI>
+	<LI><U><FONT COLOR=blue>DALNET</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>School of Library and<BR>Information Science</FONT></U></LI>
+	</UL>
+	
+	<UL>
+	<LI>Library Information</LI>
+	<LI><U><FONT COLOR=blue>About</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Contact Info/ Staff Directory</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Hours</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Maps and Directions</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>News</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Policies</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Neef Staff Responsibilities</FONT></U></LI>
+	</UL>
+	
+	
+	
+	<UL>
+	<LI>Resources</LI>
+	<LI><U><FONT COLOR=blue>Catalog</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Article Databases</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Digital Collections</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>DigitalCommons@WSU</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>E-Books</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>E-Journals</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Guides</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Reference Tools</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Special Collections</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Citation Management Options</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Shiffman Mobile</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Shiffman Timesavers</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Neef CILP</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Neef Government Documents</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Neef Law Collections</FONT></U></LI>
+	</UL>
+	
+	<UL>
+	<LI>Sites &amp; Projects</LI>
+	<LI><U><FONT COLOR=blue>Chapbooks</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Hezy Shoshani Elephant Research</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>First Year Experience</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Jacob Lawrence Traveling Exhibition</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Journal Review</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>NCA Accreditation</FONT></U></LI>
+	</UL>
+
+	
+	
+	<UL>
+	<LI>Services</LI>
+	<LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Borrowing</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Computing</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Faculty/Graduate Research Support</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>ILL (Interlibrary Loan)</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Instruction</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Media</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Reserves</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Room Reservations</FONT></U></LI>
+	</UL>
+    
+    <UL>
+	<LI>Shiffman Health Information Outreach</LI>
+	<LI><U><FONT COLOR=blue>African-American Health Disparities</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Community Health Information Services</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Detroit Community AIDS Library</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Michigan Go Local</FONT></U></LI>
+    </UL>
+	
+
+
+<!-- #footer -->
+
+	<!-- #container --> 
+    &nbsp;     
+	<!-- #wrapper -->
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<!-- InstanceEnd --></HTML>

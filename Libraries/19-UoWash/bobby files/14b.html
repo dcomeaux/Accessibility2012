@@ -1,0 +1,223 @@
+
+<HTML>
+
+<HEAD>
+<TITLE>UW Libraries - Off-Campus Access Tools</TITLE>
+<META CONTENT="text/html; charset=utf-8">
+
+<META NAME="DC.Creator.Affiliation" CONTENT="University of Washington Libraries. IT Services">
+<META NAME="DC.Creator" CONTENT="Jennifer Ward">
+<META NAME="DC.Subject" CONTENT="proxy server, bookmarklet, tools, ezproxy">
+<META NAME="DC.Description" CONTENT="Tools for enhancing off-campus access to libraries' resources. Includes proxy bookmarklet.">
+
+
+@import url(/css/top.css); 
+h4 {font-family: Helvetica, Verdana, Arial, sans-serif !important; font-size: 1em !important; font-weight: bold !important; padding: 0 !important;}
+
+
+<!-- this includes scripts to make the menus, crumbs and proxy button work -->
+<!-- Alerts -->
+
+<!-- Libraries elements -->
+
+
+
+<!-- YUI menus -->
+
+
+
+
+
+<!-- Tabs/Accordions -->
+
+<!-- Qwidget -->
+
+
+<!-- Urchin analytics -->
+
+urchinTracker();
+@import url(/css/print.css);
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<!-- this next bit builds the top navigation -->
+<U><FONT COLOR=blue>Skip to content</FONT></U>    
+
+  
+      createProxyLink();
+	  <U><FONT COLOR=blue>Off-Campus Access</FONT></U>
+    
+  <UL>
+      <LI><U><FONT COLOR=blue>UW Home</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Directories</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Maps</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>MyUW</FONT></U></LI>
+  </UL>
+  <U><FONT COLOR=blue>[UW Home]</FONT></U>
+  
+  <!-- LIBRARIES MENU -->
+     <UL>
+      <LI>Libraries:</LI>
+      <LI><U><FONT COLOR=blue>Bothell</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Tacoma</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Health Sciences</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>All</FONT></U></LI>
+     </UL>
+    
+
+
+
+  	  	
+      
+        <U><FONT COLOR=blue>&lt;Home [University of Washington Libraries]</FONT></U>
+      
+      
+        <U><FONT COLOR=blue>ask us!</FONT></U>
+      <U><FONT COLOR=blue>email</FONT></U> | <U><FONT COLOR=blue>chat</FONT></U> | <U><FONT COLOR=blue>phone</FONT></U> | <U><FONT COLOR=blue>text</FONT></U> 
+      
+      
+        
+		        <UL>
+          <LI><U><FONT COLOR=blue>UW WorldCat</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>UW Catalog</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Site</FONT></U></LI>
+        </UL>
+        <FORM>
+          UW WorldCat
+          <INPUT VALUE="Search UW Libraries and beyond" NAME="q" SIZE="30" TYPE="text">
+          <INPUT VALUE="Go" TYPE="submit"><BR>
+          <U><FONT COLOR=blue>advanced search</FONT></U> | <U><FONT COLOR=blue>help</FONT></U>
+        </FORM>
+        <FORM>
+          UW Catalog
+          <INPUT VALUE="X" NAME="searchtype" TYPE="hidden">
+          <INPUT VALUE="Search UW Libraries only" NAME="searcharg" SIZE="30" TYPE="text">
+          <INPUT VALUE="Go" TYPE="submit"><BR>
+          <U><FONT COLOR=blue>advanced search</FONT></U>
+        </FORM>
+        <FORM>
+          <INPUT VALUE="008936132526005358774:sx8jrb0rpjo" NAME="cx" TYPE="hidden">
+          <INPUT VALUE="FORID:9" NAME="cof" TYPE="hidden">
+          Site Search
+          <INPUT VALUE="Search this website" NAME="q" SIZE="30" TYPE="text">
+          <INPUT VALUE="Go" TYPE="submit">
+        </FORM>
+$(function() {$("#wcl .sap-content ul.tabs").tabs("#wcl .sap-content > form");}); 
+        
+      
+  
+        
+
+
+	<U><FONT COLOR=blue>Log into <EM>Your Library Account</EM></FONT></U>
+	
+	
+	<UL>
+		<LI><U><FONT COLOR=blue>Find It</FONT></U></LI>
+		<LI><U><FONT COLOR=blue>Using the Libraries</FONT></U></LI>
+		<LI><U><FONT COLOR=blue>About</FONT></U></LI>
+		<LI><U><FONT COLOR=blue>How Do I...?</FONT></U></LI>
+	  </UL>
+	
+
+displayLibAlert();
+createBreadcrumbs();
+
+
+
+<H1>Off-Campus Access Tools</H1>
+
+<H2>Proxy Bookmarklet</H2>
+
+<P>If you often do your research from off-campus, we recommend you install the proxy bookmarklet on your browser's bookmarks toolbar.  The bookmarklet lets you log into the proxy without having to browse from the UW Libraries website.</P>
+<H4>Installation Instructions</H4>
+<P>Add this link to your browser's favorites or bookmarks: "<U><FONT COLOR=blue>UW Libraries Proxy Bookmarklet</FONT></U>"<BR>
+To add a bookmark you can:</P>
+<UL>
+  <LI>Drag it to the browser's toolbar or bookmarks folder
+  <LI>Right-click and add it</LI>
+  <LI>Or if you are on a touch device, create a bookmark but edit the bookmark's url to contain the following line of code instead of a web address:<BR>
+</LI></UL>
+<BLOCKQUOTE>javascript:void(location.href=%22http://offcampus.lib.washington.edu/login?url=%22+location.href</BLOCKQUOTE>
+
+<P>You might see a security alert that the "favorite may not be safe", although it is. Click "yes" to continue.</P>
+
+<H4>Notes:</H4>
+<UL>
+  <LI>The bookmarklet is compatible with most web browsers and platforms as long as your bookmarks or favorites allow javascript. </LI>
+  <LI>If the links toolbar is not  visible in your browser, you can try to enable it under the View > Toolbars menu. </LI>
+  <LI>You can also save the bookmarklet in your bookmarks folder instead of the  toolbar.</LI>
+</UL>
+
+
+
+
+
+ 
+<H4>How To Use the Proxy Bookmarklet</H4>
+<OL>
+  <LI>Once you have installed the proxy bookmarklet, navigate to a webpage that is restricted. </LI>
+  <LI>Once you are on the page, click on the proxy bookmarklet in your browser's toolbar, and you will be redirected through the proxy server. </LI>
+</OL>
+<UL>
+  <LI> In some cases you may need to use the browser's "Back" button to return to the resource URL, not the vendor's login/error page.</LI>
+  <LI>Licensed content is provided by a number of vendors and some content may not be purchased directly from the source you are using. In this case you will need to start from the Libraries' <U><FONT COLOR=blue>web site</FONT></U> or <U><FONT COLOR=blue>catalog</FONT></U> to see if we have access to this resource.<BR></LI>
+  <LI><U><FONT COLOR=blue><EM>More off-campus access help and FAQ &gt;</EM></FONT></U></LI>
+  </UL>
+<H4>More about Connecting from Off-Campus</H4>
+<UL>
+  <LI><U><FONT COLOR=blue>What is the UW Libraries off-campus proxy?</FONT></U></LI>
+  <LI><U><FONT COLOR=blue>Connecting to a URL through the Proxy</FONT></U></LI>
+  <!--<li><a href="connect.html#links">Formatting URLs for Syllabi or Bibliographies</a></li>-->
+</UL>
+
+<!--<hr style="clear: both;" />
+<h2 id="urlproxy">Proxy or UnProxy a URL</h2>
+<div style="width: 56%;">
+<p>If you have a URL and want to proxy it, enter the URL below:<br />
+<form method="get" action="http://www.lib.washington.edu/asp/proxy/proxyme.pl" class="formbg">
+  <label for="target">URL to proxy:</label>
+  <br />
+  <input type="text" name="target" style="width: 80%;" />
+  <input type="submit" value="log in" />
+</form>
+</p>
+<p>To &quot;unproxy&quot; a URL so you can cite it in a bibliography or access it from on campus, enter the proxied URL here:<br />
+<form method="get" action="http://www.lib.washington.edu/asp/proxy/unproxyme.pl" class="formbg">
+  <label for="source">URL to unproxy:</label>
+  <br />
+  <input type="text" name="source" style="width: 80%;" />
+  <input type="submit" value="get" />
+</form>
+</p></div>-->
+
+
+  <!-- server automatically updates last modified date -->
+  
+  <U><FONT COLOR=blue>Contact Us</FONT></U> <BR>
+   Last modified:  Wednesday December 21, 2011 (tawataoc)
+
+
+
+
+    
+	<UL>
+          <LI><U><FONT COLOR=blue>Libraries Home</FONT></U></LI>
+		  <LI><U><FONT COLOR=blue>Site Map</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Site Search</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Privacy</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Contact Us</FONT></U></LI>
+      </UL>
+        <P>&copy; 1998-2011 University of Washington Libraries<BR>
+          Box 352900 Seattle, WA 98195-2900 USA<BR>
+	  phone: 206-543-0242
+        </P>
+	
+
+
+
+        var uwJsHost = (("https:" == document.location.protocol) ? "https://" : "http://");
+	    document.write(unescape("%3Cscript src='" + uwJsHost + "emergency.washington.edu/alert.js' type='text/javascript'%3E%3C/script%3E"));
+      
+displayAlert();
+</HTML>

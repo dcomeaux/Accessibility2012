@@ -1,0 +1,877 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>University of Arizona Libraries</title>
+    <meta name="description" content="Discover online and print resources, explore study spaces, get live research help, and more." />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="en-us" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/sites/default/files/ualibraries_favicon_0.ico" type="image/x-icon" />
+
+<link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?U" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?U" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system.css?U" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system-menus.css?U" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/user/user.css?U" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/theme/content-module.css?U" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?U" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views/css/views.css?U" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/ualibraries/css/global.css?U" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/ualibraries/css/sub.css?U" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/ualibraries/css/messages.css?U" />
+
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/ualibraries/css/home.css" />
+    <!--[if IE]>
+    <link rel="stylesheet" type="text/css" media="all" href="/sites/all/themes/ualibraries/css/home-ie.css" />
+    <![endif]-->
+
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" type="text/css" media="all" href="/sites/all/themes/ualibraries/css/global-ie7.css" />
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/ualibraries/css/ual_specific.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/ualibraries/css/content-manager.css" />
+
+<script type="text/javascript" src="/sites/all/modules/jquery_update/replace/jquery.min.js?U"></script>
+<script type="text/javascript" src="/misc/drupal.js?U"></script>
+<script type="text/javascript" src="/sites/all/themes/ualibraries/js/site.js?U"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/" });
+//--><!]]>
+</script>
+
+    <!-- JAVASCRIPT LIBRARY FOR HEADLINES -->
+    <!-- 2006 version provided by Esser doesn't work with MSIE, new version breaks both FF and IE -->
+    <!--script type="text/javascript" src="/sites/all/themes/ualibraries/js/jquery.mousewheel.js"></script-->
+    <script type="text/javascript" src="/sites/all/themes/ualibraries/js/jquery.tools.min.js"></script>
+
+    <!-- JAVASCRIPT LIBRARY FOR HOME PAGE TABS AND OTHER SEARCH OPTIONS -->
+    <script type="text/javascript" src="/sites/all/themes/ualibraries/js/home.js"></script>
+   <script type="text/javascript" src="http://libraryh3lp.com/js/libraryh3lp.js?multi,poll,popup"></script>
+    <script type="text/javascript" charset="utf-8">
+    <!--
+    
+    jQuery(document).ready(function() {
+
+        // tabs
+				// Start with a default value on load
+				strTitle = 'All Resources';
+				
+        jQuery('ul.tabs a').click(function() {
+            strTitle = jQuery(this).attr('title');
+
+            //strFormId = '#' + strTitle.replace(' ', '-') + '-form';
+            //strFormId = strFormId.toLowerCase();
+            jQuery('ul.tabs a').removeClass('selected');
+            jQuery(this).addClass('selected');
+
+            //jQuery('#category-search form').hide();
+            //jQuery('#category-search ' + strFormId).show();
+
+            switch(strTitle)
+            {
+               case 'All Resources':
+                  jQuery('#WCLSearchForm').attr('class','all-resources-form');
+                  jQuery('#WCLSearchIcon').attr('src', '/sites/all/themes/ualibraries/images/home/search/icons/all-resources.gif');
+                  jQuery('#t').attr('value', 'all');
+                  jQuery('#j').attr('value', 'all');
+									jQuery('#WCLExampleText').text('Items like: History or Art, Nature, African Queen');
+                  break;
+               case 'Books':
+                  jQuery('#WCLSearchForm').attr('class','books-form');
+                  jQuery('#WCLSearchIcon').attr('src', '/sites/all/themes/ualibraries/images/home/search/icons/books.gif');
+                  jQuery('#t').attr('value', 'books');
+                  jQuery('#j').attr('value', 'books');
+									jQuery('#WCLExampleText').text('Items like: Wind in the willows, History of Art');
+                  break;
+               case 'Articles':
+                  jQuery('#WCLSearchForm').attr('class','articles-form');
+                  jQuery('#WCLSearchIcon').attr('src', '/sites/all/themes/ualibraries/images/home/search/icons/articles.gif');
+                  jQuery('#t').attr('value', 'articles');
+                  jQuery('#j').attr('value', 'articles');
+									jQuery('#WCLExampleText').text('Items like: Indications and results of hip resurfacing');
+                  break;
+               case 'Media':
+                  jQuery('#WCLSearchForm').attr('class','media-form');
+                  jQuery('#WCLSearchIcon').attr('src', '/sites/all/themes/ualibraries/images/home/search/icons/media.gif');
+                  jQuery('#t').attr('value', 'video');
+                  jQuery('#j').attr('value', 'video');
+									jQuery('#WCLExampleText').text('Items like: Yojimbo, African queen');
+                  break;
+               default:
+                  jQuery('#WCLSearchForm').attr('class','all-resources-form');
+                  jQuery('#WCLSearchIcon').attr('src', '/sites/all/themes/ualibraries/images/home/search/icons/all-resources.gif');
+                  jQuery('#t').attr('value', 'all');
+                  jQuery('#j').attr('value', 'all');
+									jQuery('#WCLExampleText').text('Items like: History or Art, Nature, African Queen');
+                  break;
+            }
+
+            return false;
+        });
+
+         // Make sure that user's who click the back button
+         // end up on the same tab they left on.
+         jQuery('ul.tabs a').removeClass('selected');
+         switch(jQuery('#j').attr('value'))
+         {
+            case 'all':
+               jQuery('#WCLSearchForm').attr('class','all-resources-form');
+               jQuery('#WCLSearchIcon').attr('src', '/sites/all/themes/ualibraries/images/home/search/icons/all-resources.gif');
+               jQuery('#t').attr('value', 'all');
+               jQuery('#allLink').addClass('selected');
+							 jQuery('#WCLExampleText').text('Items like: iPhone, earthquakes+California');
+               break;
+            case 'books':
+               jQuery('#WCLSearchForm').attr('class','books-form');
+               jQuery('#WCLSearchIcon').attr('src', '/sites/all/themes/ualibraries/images/home/search/icons/books.gif');
+               jQuery('#t').attr('value', 'books');
+               jQuery('#booksLink').addClass('selected');
+							 jQuery('#WCLExampleText').text('Items like: Wind in the willows, History of Art');
+               break;
+            case 'articles':
+               jQuery('#WCLSearchForm').attr('class','articles-form');
+               jQuery('#WCLSearchIcon').attr('src', '/sites/all/themes/ualibraries/images/home/search/icons/articles.gif');
+               jQuery('#t').attr('value', 'articles');
+               jQuery('#articlesLink').addClass('selected');
+							 jQuery('#WCLExampleText').text('Items like: Indications and results of hip resurfacing');
+               break;
+            case 'video':
+               jQuery('#WCLSearchForm').attr('class','media-form');
+               jQuery('#WCLSearchIcon').attr('src', '/sites/all/themes/ualibraries/images/home/search/icons/media.gif');
+               jQuery('#t').attr('value', 'video');
+               jQuery('#mediaLink').addClass('selected');
+							 jQuery('#WCLExampleText').text('Items like: Yojimbo, African queen');
+               break;
+            default:
+               jQuery('#WCLSearchForm').attr('class','all-resources-form');
+               jQuery('#WCLSearchIcon').attr('src', '/sites/all/themes/ualibraries/images/home/search/icons/all-resources.gif');
+               jQuery('#t').attr('value', 'all');
+               jQuery('#allLink').addClass('selected');
+							 jQuery('#WCLExampleText').text('Items like: History or Art, Nature, African Queen');
+               break;
+         }
+
+
+        // type of search
+        jQuery('#searchByOptions').change(function() {
+            searchType = jQuery('#searchByOptions option:selected').text();
+            searchType = searchType.toLowerCase();
+						
+            switch(searchType)
+            {
+               case 'keyword':
+                  //jQuery('#f').attr('value', 'k');
+                  jQuery('#WCLExampleText').text('Examples: iPhone, earthquakes+California');
+                  break;
+               case 'title':
+                  //jQuery('#f').attr('value', 't');
+									switch(strTitle) {
+									   case 'Articles':
+                        jQuery('#WCLExampleText').text('Example: Indications and results of hip resurfacing');
+												break;
+									   default:
+										    jQuery('#WCLExampleText').text('Examples: Gone With the Wind, Merchant of Venice');
+												break;
+									}
+                  break;
+               case 'author':
+                  //jQuery('#f').attr('value', 'a');
+                  jQuery('#WCLExampleText').text('Examples: Einstein, Albert');
+                  break;
+               case 'subject':
+                  //jQuery('#f').attr('value', 's');
+                  jQuery('#WCLExampleText').text('Examples: Woodstock, Colorado River');
+                  break;
+               default:
+                  //jQuery('#f').attr('value', 'k');
+                  jQuery('#WCLExampleText').text('Examples: iPhone, earthquakes+California');
+                  break;
+            }
+
+            return false;
+        });
+
+                    // Get type of search
+
+
+        // other search options
+
+        jQuery('#slider').hide();
+        jQuery('#expander a').removeClass('active');
+        jQuery('#headlines').removeClass('expanded');
+
+        jQuery("#expander a").click(function() {
+            if (jQuery('#slider').is(':hidden')) {
+                jQuery('#expander a').addClass('active');
+                jQuery('#headlines').addClass('expanded');
+                // jQuery('#slider').slideToggle('normal');
+                jQuery('#slider').show();
+            } else {
+                jQuery('#slider').hide();
+                jQuery('#headlines').removeClass('expanded');
+                // jQuery('#slider').slideUp('normal', function() {
+                //     jQuery('#expander a').removeClass('active');
+                // });
+            }
+            return false;
+        });
+
+				jQuery('#q').focus(function() {
+            if ($(this).val() == "Search UA Libraries and Worldwide") {
+                $(this).val('');
+            }
+						$(this).css('color', '#333');
+         }); 
+
+				jQuery('#ualcatsearch').focus(function() {
+            if ($(this).val() == "Search UA Libraries") {
+                $(this).val('');
+            }
+						$(this).css('color', '#333');
+         }); 
+				 
+				jQuery('#SS_CFocusTag').focus(function() {
+            if ($(this).val() == "Search for E-Journals") {
+                $(this).val('');
+            }
+						$(this).css('color', '#333');
+         });
+
+        // scroller
+        jQuery('div.scrollable').scrollable({
+            vertical: true,
+            keyboard: false,
+            size: 3
+        });
+
+
+/*
+        jQuery('div.scrollable').mousewheel(function(e, d) {
+
+           // get handle to the API upon initialization
+           var api = $("div.scrollable").scrollable({api: true});
+
+           // change speed for mousewheel scrolling
+           api.getConf().speed = 50;
+
+           // Move scrolling pane up or down
+           if(d > 0)
+              api.next();
+           else
+              api.prev();
+
+           // change speed back to default
+           api.getConf().speed = 400;
+
+            //prevent the page from scrolling
+            return false;
+
+
+        });
+
+*/
+
+      /***** Fix to make IE expand the hours select box options like Firefox does. Undoubtedly it would be better to move some of this (e.g., the CSS) elsewhere. 
+			       Still needed for some weird IE flakiness, set width to 200  -- Gene *****/
+
+      shrink_hours_dropdown = function() {
+        if ($.browser.msie) {
+          $(this).width('180px');
+        }
+      }
+
+      expand_hours_dropdown = function() {
+        if ($.browser.msie) {
+          // This looks weird, I know. But width() without arguments is the computed width.
+          $(this).parent().width($(this).parent().width());
+          $(this).width(200);
+        }
+      }
+
+      jQuery('#hoursOptions').ready(function() {
+        if ($.browser.msie) {
+          if ($('#hoursOptionsContainer').length == 0) {
+            $('#hoursOptions').wrap("<div id='hoursOptionsContainer' style='float: right; overflow: hidden; position: relative;' />");
+            $('#hoursOptionsContainer').prev().wrap('<div />').css('float', 'left').css('padding-top', '3px').css('padding-left', '3px');
+          }
+        }
+      });
+
+      jQuery('#hoursOptions').mousedown(expand_hours_dropdown);
+
+      jQuery('#hoursOptions').blur(shrink_hours_dropdown).change(shrink_hours_dropdown);
+
+      /***** End of IE fix. *****/
+
+      jQuery('#hoursOptions').change(function() {
+        branchLocation = jQuery('#hoursOptions option:selected').val();
+
+        jQuery.getJSON('/applications/hours/building_parts/today/' + branchLocation + '.json', function(data) {
+          jQuery('#student-hours').val(data.student);
+          jQuery('#public-hours').val(data.public);
+        });
+      });
+
+      // Make sure it's set on load
+      jQuery('#hoursOptions').change();
+
+/*      jQuery('#hoursOptions').change(function() {
+
+            branchLocation = jQuery('#hoursOptions option:selected').val();
+
+            var hours = $.ajax({
+            url: "applications/hours/ajaxHours.php",
+            type: "GET",
+            data: ({id : branchLocation}),
+            async: false
+            }).responseText;
+
+            //alert(hours);
+            hours = hours.split("|");
+            var studentHrs = hours[0];
+            var publicHrs  = hours[1];
+            //alert(publicHrs);
+            if(studentHrs == "Unavailable")
+               jQuery('#student-hours').attr('style', 'font-style:italic;');
+            else
+               jQuery('#student-hours').attr('style', '');
+
+            if(publicHrs == "Unavailable")
+               jQuery('#public-hours').attr('style', 'font-style:italic;');
+            else
+               jQuery('#public-hours').attr('style', '');
+
+            jQuery('#student-hours').val(studentHrs);
+            jQuery('#public-hours').val(publicHrs);
+
+            return false;
+        });
+
+
+         // Make sure the hours are set when we first arrive
+         branchLocation = jQuery('#hoursOptions option:selected').val();
+
+         var hours = $.ajax({
+            url: "applications/hours/ajaxHours.php",
+            type: "GET",
+            data: ({id : branchLocation}),
+            async: false
+         }).responseText;
+
+         hours = hours.split("|");
+         var studentHrs = hours[0];
+         var publicHrs  = hours[1];
+
+         if(studentHrs == "Unavailable")
+            jQuery('#student-hours').attr('style', 'font-style:italic;');
+         else
+            jQuery('#student-hours').attr('style', '');
+
+         if(publicHrs == "Unavailable")
+            jQuery('#public-hours').attr('style', 'font-style:italic;');
+         else
+            jQuery('#public-hours').attr('style', '');
+
+         jQuery('#student-hours').val(studentHrs);
+         jQuery('#public-hours').val(publicHrs);*/
+
+    });
+
+    // -->
+    </script>
+
+  </head>
+
+  <body class="front not-logged-in page-node one-sidebar sidebar-right">
+
+    <div id="wrapper">
+    <a name="top"></a>
+
+      <div id="header"><a href="http://www.arizona.edu/"><img src="/sites/all/themes/ualibraries/images/university-of-arizona.gif" alt="The University of Arizona&reg;" /></a></div>
+
+
+      <div id="main">
+
+        <div id="utility-nav">
+
+          <ul class="left">
+            <li><a href="/">Libraries Home</a></li>
+          </ul>
+
+<ul class="right piped"><li class="menu-453 first"><a href="/search/site" title="">Search This Site</a></li>
+<li class="menu-287"><a href="http://www.library.arizona.edu/news/" title="">News &amp; Events</a></li>
+<li class="menu-288"><a href="http://giving.library.arizona.edu/" title="">Giving to the Libraries</a></li>
+<li class="menu-653 last"><a href="https://sabio.library.arizona.edu/patroninfo/" title="">My Account</a></li>
+</ul>
+        </div>
+
+        <div id="banner"><a href="/"><img src="/sites/all/themes/ualibraries/images/the-university-of-arizona-libraries.jpg" alt="The University of Arizona University Libraries" /></a></div>
+
+        <div id="nav">
+
+<ul class="menu"><li class="expanded first"><a href="/search/index.html" title="">Search &amp; Find</a><ul class="menu"><li class="leaf first"><a href="/search/catalog/index.html?shortname=ualcat" title="">Library Catalog</a></li>
+<li class="leaf"><a href="/search/callnumbers" title="Call Number Location Guide">Call Number Locations</a></li>
+<li class="leaf"><a href="/search/articles/index.php" title="">Articles &amp; Databases</a></li>
+<li class="leaf"><a href="/search/articles/dbfind.php?shortname=ejournals" title="">E-Journals</a></li>
+<li class="leaf"><a href="/search/subjects/" title="">Subject Guides</a></li>
+<li class="leaf"><a href="/search/research-writing/index.html" title="Research &amp; Writing Help">Research &amp; Writing Help</a></li>
+<li class="leaf"><a href="/search/reference" title="">Reference Resources</a></li>
+<li class="leaf"><a href="/search/digital-collections/" title="">Digital Collections</a></li>
+<li class="leaf last"><a href="/search/site" title="">Search This Site</a></li>
+</ul></li>
+<li class="expanded"><a href="/services/index.html" title="">Services</a><ul class="menu"><li class="leaf first"><a href="/services/a2z/index.html" title="">Services A-Z</a></li>
+<li class="leaf"><a href="/services/borrowing/index.html" title="">Borrowing Information</a></li>
+<li class="collapsed"><a href="/services/equipment-lending" title="Equipment Lending">Equipment Lending</a></li>
+<li class="collapsed"><a href="/ic/index.html" title="Information Commons">Information Commons</a></li>
+<li class="leaf"><a href="/services/express-document-center" title="Express Document Center">Print, Copy, Scan</a></li>
+<li class="leaf"><a href="/services/ill/index.html" title="Interlibrary Loan (ILL)">Interlibrary Loan</a></li>
+<li class="leaf"><a href="/services/docdel/index.html" title="">Document Delivery</a></li>
+<li class="leaf"><a href="/services/faculty/index.html" title="">For Faculty &amp; Instructors</a></li>
+<li class="leaf last"><a href="/services/gradstudents" title="Research Support For UA Graduate Students">For Graduate Students</a></li>
+</ul></li>
+<li class="expanded"><a href="/help/index.html" title="">Help</a><ul class="menu"><li class="leaf first"><a href="/help/how/index.html" title="">How Do I...?</a></li>
+<li class="collapsed"><a href="/ask" title="">Ask a Librarian</a></li>
+<li class="leaf"><a href="/about/faq/index.html" title="">Frequently Asked Questions</a></li>
+<li class="leaf last"><a href="/help/feedback/index.php" title="Send Us Feedback">Send Us Feedback</a></li>
+</ul></li>
+<li class="expanded"><a href="/about/index.html" title="">About the Libraries</a><ul class="menu"><li class="leaf first"><a href="/about/organization/index.html" title="">Our Organization</a></li>
+<li class="collapsed"><a href="/about/details.html" title="">Visiting the Libraries</a></li>
+<li class="leaf"><a href="/about/libraries/index.html" title="">Libraries &amp; Collections</a></li>
+<li class="leaf"><a href="/about/employment/index.html" title="">Employment</a></li>
+<li class="leaf"><a href="/about/faq/index.html" title="">Frequently Asked Questions</a></li>
+<li class="leaf"><a href="http://www.library.arizona.edu/about/contact/" title="">Contact Information</a></li>
+<li class="leaf last"><a href="http://giving.library.arizona.edu/" title="">Giving to the Libraries</a></li>
+</ul></li>
+<li class="expanded"><a href="/university_libraries" title="">University Libraries</a><ul class="menu"><li class="leaf first"><a href="/about/libraries/MainLibrary.html" title="">Main Library</a></li>
+<li class="leaf"><a href="/about/libraries/scienglibr.html" title="">Science Engineering Library</a></li>
+<li class="leaf"><a href="http://speccoll.library.arizona.edu/" title="">Special Collections</a></li>
+<li class="leaf"><a href="http://www.creativephotography.org" title="">Center for Creative Photography</a></li>
+<li class="leaf"><a href="/about/libraries/fineartslibr.html" title="">Fine Arts Library</a></li>
+<li class="leaf last"><a href="/affiliates" title="">Affiliates</a></li>
+</ul></li>
+<li class="expanded last"><a href="/ask" title="Ask a Librarian">Ask a Librarian</a><ul class="menu"><li class="leaf first"><a href="/help/ask/" onclick="libraryh3lp.openChat('http://libraryh3lp.com/chat/ual_main_chat@chat.libraryh3lp.com?skin=7615&amp;theme=dudes&amp;title=University%20Libraries%20Chat&amp;identity=UA%20Librarian', {width: 388, height: 310}); return false;" title="">UA Library Chat</a></li>
+<li class="leaf"><a href="/help/ask/email" title="">Email Reference</a></li>
+<li class="leaf"><a href="/help/ask/talk" title="">Talk to a Person</a></li>
+<li class="leaf last"><a href="/help/ask/meet" title="">Meet With a Librarian</a></li>
+</ul></li>
+</ul>
+        </div>
+
+        <div id="home">
+
+          <div id="content">
+
+            <!-- START CATALOG SEARCH BOX -->
+            <div id="library-search">
+
+              <ul class="tabs">
+                <li><a href="/?search=all" id="allLink" title="All Resources" class="selected">All Resources</a></li>
+                <li><a href="/?search=books" id="booksLink" title="Books" >Books</a></li>
+                <li><a href="/?search=articles" id="articlesLink" title="Articles" >Articles</a></li>
+                <li><a href="/?search=media" id="mediaLink" title="Media" >Media</a></li>
+              </ul>
+
+              <div id="category-search">
+                <form id="WCLSearchForm" class="all-resources-form" action="/sys/worldcatlocal/" method="get" style="display: block;">
+
+                  <div class="icon"><img id="WCLSearchIcon" src="/sites/all/themes/ualibraries/images/home/search/icons/all-resources.gif" alt="All Resources" /></div>
+
+                  <fieldset>
+                    <!-- The following field is used for users who click the back button. -->
+                    <input type="text" id="j" name="j" style="width:1px;height:1px;position:absolute;top:-1000px;left:-10000px;display:none;" value="" />
+                    <input type="hidden" id="t" name="t" value="all" />
+                    <select name="searchByOptions" id="searchByOptions">
+                      <option value="k">Keyword</option>
+                      <option value="t">Title</option>
+                      <option value="a">Author</option>
+                      <option value="s">Subject</option>
+                    </select>
+                    <input class="search" type="text" name="q" id="q" value="Search UA Libraries and Worldwide" />
+                    <input class="submit" type="image" src="/sites/all/themes/ualibraries/images/home/search/search.gif" alt="Search" />
+                  </fieldset>
+                </form>
+
+                <div class="info">
+                  <!--<a href="http://www.worldcat.org" class="worldcat"><img src="/sites/all/themes/ualibraries/images/home/search/worldcat.gif" alt="WorldCat" /></a>-->
+                  <a href="/help/worldCatLocal/" class="worldcat"><img src="/sites/all/themes/ualibraries/images/home/search/wclhelp.gif" alt="WorldCat" id="wclhelp"/></a>
+                  <div id="WCLExampleText">Examples: iPhone, earthquakes+California</div>
+                  <!--<a href="/help/worldCatLocal/" class="help"><img src="/sites/all/themes/ualibraries/images/home/search/help.gif" alt="Help" /></a>-->
+
+                  <a href="http://ezproxy.library.arizona.edu/login?url=http://universityofarizona.worldcat.org/advancedsearch">WorldCat Advanced Search</a>
+                  <br />
+                  <a href="/search/catalog/index.html?shortname=ualcat" class="help" style="line-height:10px;">Search UA Library Catalog</a>
+                </div>
+              </div>
+
+              <div id="expander"><a href="/?options=all" class="active">Other Search Options - Library Catalog, Databases, &amp; E-Journals</a></div>
+
+              <div id="slider" >
+
+                <form id="library-catalog" action="http://www.library.arizona.edu/sys/catalog/" method="get">
+
+                  <fieldset>
+                    <h3 title="Find out which books, journals, videos, or other items the library owns."><a href="http://sabio.library.arizona.edu/search/X">Library Catalog</a></h3>
+                    <select name="searchType">
+                      <option value="k">Keyword</option>
+                      <option value="t">Title</option>
+                      <option value="a">Author</option>
+                      <option value="s">Subject</option>
+                      <!--
+                      <option value="j">Journal Title</option>
+                      <option value="m">Medical Subject</option>
+                      -->
+                    </select>
+                    <input class="search" type="text" name="searchTerms" id="ualcatsearch" value="Search UA Libraries" />
+                    <input class="submit" type="image" src="/sites/all/themes/ualibraries/images/home/search/search.gif" alt="Search" />
+                  </fieldset>
+
+                  <div class="top-corners"></div>
+                  <div class="bottom-corners"></div>
+                </form>
+                <!-- END CATALOG SEARCH BOX -->
+
+
+                <!-- START DATABASE SEARCH BOX -->
+                <form id="databases" action="/search/articles/dbBySubject.php" method="post">
+                  <fieldset>
+
+                    <h3 title="Search for articles by author, title, or topic in fulltext and print journals and newspapers. ">
+                    <a href="/search/articles/">Articles &amp; Databases</a></h3>
+
+                    <p>Find databases by TITLE:</p>
+
+                    <ul>
+                      <li><a href="/search/articles/dbByTitle.php?titlechar=1">1</a></li>
+                      <li><a href="/search/articles/dbByTitle.php?titlechar=2">2</a></li>
+                      <li><a href="/search/articles/dbByTitle.php?titlechar=A">A</a></li>
+                      <li><a href="/search/articles/dbByTitle.php?titlechar=B">B</a></li>
+                      <li><a href="/search/articles/dbByTitle.php?titlechar=C">C</a></li>
+                      <li><a href="/search/articles/dbByTitle.php?titlechar=D">D</a></li>
+                      <li><a href="/search/articles/dbByTitle.php?titlechar=E">E</a></li>
+                      <li><a href="/search/articles/dbByTitle.php?titlechar=F">F</a></li>
+                      <li><a href="/search/articles/dbByTitle.php?titlechar=G">G</a></li>
+                      <li><a href="/search/articles/dbByTitle.php?titlechar=H">H</a></li>
+                      <li><a href="/search/articles/dbByTitle.php?titlechar=I">I</a></li>
+                      <li><a href="/search/articles/dbByTitle.php?titlechar=J">J</a></li>
+                      <li><a href="/search/articles/dbByTitle.php?titlechar=K">K</a></li>
+                      <li><a href="/search/articles/dbByTitle.php?titlechar=L">L</a></li>
+                      <li><a href="/search/articles/dbByTitle.php?titlechar=M">M</a></li>
+                      <li><a href="/search/articles/dbByTitle.php?titlechar=N">N</a></li>
+                      <li><a href="/search/articles/dbByTitle.php?titlechar=O">O</a></li>
+                      <li><a href="/search/articles/dbByTitle.php?titlechar=P">P</a></li>
+                      <li><a href="/search/articles/dbByTitle.php?titlechar=Q">Q</a></li>
+                      <li><a href="/search/articles/dbByTitle.php?titlechar=R">R</a></li>
+                      <li><a href="/search/articles/dbByTitle.php?titlechar=S">S</a></li>
+                      <li><a href="/search/articles/dbByTitle.php?titlechar=T">T</a></li>
+                      <li><a href="/search/articles/dbByTitle.php?titlechar=U">U</a></li>
+                      <li><a href="/search/articles/dbByTitle.php?titlechar=V">V</a></li>
+                      <li><a href="/search/articles/dbByTitle.php?titlechar=W">W</a></li>
+                      <li><a href="/search/articles/dbByTitle.php?titlechar=X">X</a></li>
+                      <li><a href="/search/articles/dbByTitle.php?titlechar=Y">Y</a></li>
+                      <li><a href="/search/articles/dbByTitle.php?titlechar=Z">Z</a></li>
+                      <li><a href="/search/articles/dbByTitle.php?titlechar=ALL">All</a></li>
+                    </ul>
+
+                    <p>Find databases by SUBJECT AREA:</p>
+
+                    <select name="subjectID">
+                      <option value="ALL">All Subjects</option>
+                      <option value="208">Africana Studies (African American and African)</option>
+<option value="207">Agriculture</option>
+<option value="209">American Indian Studies</option>
+<option value="210">American Literature</option>
+<option value="211">Anthropology</option>
+<option value="212">Architecture</option>
+<option value="213">Archives</option>
+<option value="214">Art</option>
+<option value="215">Arts and Humanities (General)</option>
+<option value="216">Asian Studies</option>
+<option value="217">Astronomy</option>
+<option value="218">Biography</option>
+<option value="219">Biology</option>
+<option value="220">Books in Print</option>
+<option value="221">Botany</option>
+<option value="222">Business</option>
+<option value="223">Chemistry</option>
+<option value="224">Classics</option>
+<option value="225">Climatology/Meteorology</option>
+<option value="226">Communication</option>
+<option value="227">Computers/MIS</option>
+<option value="228">Criminal Justice</option>
+<option value="229">Current Events</option>
+<option value="230">Dance</option>
+<option value="231">Data Sets</option>
+<option value="232">Dissertations</option>
+<option value="233">Drama/Theater Arts</option>
+<option value="234">Economics</option>
+<option value="235">Education</option>
+<option value="236">Electronic Journals</option>
+<option value="237">Electronics</option>
+<option value="238">Engineering</option>
+<option value="239">English Literature</option>
+<option value="240">Film/Media Arts</option>
+<option value="241">Food</option>
+<option value="315">French Studies</option>
+<option value="294">Gay, Lesbian, Bisexual, Transgender Studies</option>
+<option value="242">Gender Studies</option>
+<option value="243">General Indexes to All Subjects</option>
+<option value="244">Geography</option>
+<option value="245">Geology</option>
+<option value="314">German Studies</option>
+<option value="246">Government</option>
+<option value="247">Health Sciences</option>
+<option value="248">History</option>
+<option value="249">Humanities</option>
+<option value="250">Journalism</option>
+
+<option value="251">Landscape Architecture</option>
+<option value="252">Languages</option>
+<option value="253">Latin American Studies</option>
+<option value="254">Law</option>
+<option value="255">Library Science</option>
+<option value="256">Life Sciences</option>
+<option value="257">Linguistics</option>
+<option value="258">Literature</option>
+<option value="260">Mathematics</option>
+<option value="261">Media Arts/Film</option>
+<option value="262">Medicine</option>
+<option value="263">Meteorology/Climatology</option>
+<option value="264">Mexican American Studies</option>
+<option value="265">Middle Eastern Studies</option>
+<option value="259">MIS</option>
+<option value="266">Multidisciplinary Indexes</option>
+<option value="267">Music</option>
+<option value="268">News/Newspapers</option>
+<option value="269">Nutrition</option>
+<option value="270">Patents</option>
+<option value="271">Philosophy</option>
+<option value="272">Photography</option>
+<option value="273">Physics</option>
+<option value="274">Planning (Urban Design, etc.)</option>
+<option value="275">Plants</option>
+<option value="276">Politics</option>
+<option value="277">Psychology</option>
+<option value="278">Public Policy</option>
+<option value="279">Religion</option>
+<option value="280">Russian and Slavic Studies</option>
+<option value="281">Science (General)</option>
+<option value="282">Social Sciences (General)</option>
+<option value="283">Sociology</option>
+<option value="316">Spanish and Portuguese</option>
+<option value="284">Spatial Data</option>
+<option value="285">Standards</option>
+<option value="286">Technical Reports</option>
+<option value="287">Theater Arts/Drama</option>
+<option value="288">Trademarks</option>
+<option value="289">Transportation</option>
+<option value="290">Water</option>
+<option value="291">Women's Studies</option>
+<option value="292">Zoology</option>
+                    </select>
+                    <input class="submit" type="image" src="/sites/all/themes/ualibraries/images/home/search/search.gif" alt="Search" />
+
+                  </fieldset>
+
+                  <div class="top-corners"></div>
+                  <div class="bottom-corners"></div>
+
+                </form>
+                <!-- END DATABASE SEARCH BOX -->
+
+                <!-- START E-JOURNALS SEARCH BOX -->
+                <form id="e-journals" action="http://zp9vv3zm2k.search.serialssolutions.com/" method="get">
+
+                  <fieldset>
+
+                    <h3 title="Search or browse our list of fulltext, electronic journals &amp; newspapers."><a href="/search/articles/dbfind.php?shortname=ejournals">E-Journals</a></h3>
+
+                    <p>Find ALPHABETICALLY:</p>
+
+                    <ul>
+                      <li><a href="http://zp9vv3zm2k.search.serialssolutions.com/?V=1.0&amp;L=ZP9VV3ZM2K&amp;N=100&amp;S=T_AZ&amp;C=0">#'s</a></li>
+                      <li><a href="http://zp9vv3zm2k.search.serialssolutions.com/?V=1.0&amp;L=ZP9VV3ZM2K&amp;N=100&amp;S=T_AZ&amp;C=A">A</a></li>
+                      <li><a href="http://zp9vv3zm2k.search.serialssolutions.com/?V=1.0&amp;L=ZP9VV3ZM2K&amp;N=100&amp;S=T_AZ&amp;C=B">B</a></li>
+                      <li><a href="http://zp9vv3zm2k.search.serialssolutions.com/?V=1.0&amp;L=ZP9VV3ZM2K&amp;N=100&amp;S=T_AZ&amp;C=C">C</a></li>
+                      <li><a href="http://zp9vv3zm2k.search.serialssolutions.com/?V=1.0&amp;L=ZP9VV3ZM2K&amp;N=100&amp;S=T_AZ&amp;C=D">D</a></li>
+                      <li><a href="http://zp9vv3zm2k.search.serialssolutions.com/?V=1.0&amp;L=ZP9VV3ZM2K&amp;N=100&amp;S=T_AZ&amp;C=E">E</a></li>
+                      <li><a href="http://zp9vv3zm2k.search.serialssolutions.com/?V=1.0&amp;L=ZP9VV3ZM2K&amp;N=100&amp;S=T_AZ&amp;C=F">F</a></li>
+                      <li><a href="http://zp9vv3zm2k.search.serialssolutions.com/?V=1.0&amp;L=ZP9VV3ZM2K&amp;N=100&amp;S=T_AZ&amp;C=G">G</a></li>
+                      <li><a href="http://zp9vv3zm2k.search.serialssolutions.com/?V=1.0&amp;L=ZP9VV3ZM2K&amp;N=100&amp;S=T_AZ&amp;C=H">H</a></li>
+                      <li><a href="http://zp9vv3zm2k.search.serialssolutions.com/?V=1.0&amp;L=ZP9VV3ZM2K&amp;N=100&amp;S=T_AZ&amp;C=I">I</a></li>
+                      <li><a href="http://zp9vv3zm2k.search.serialssolutions.com/?V=1.0&amp;L=ZP9VV3ZM2K&amp;N=100&amp;S=T_AZ&amp;C=J">J</a></li>
+                      <li><a href="http://zp9vv3zm2k.search.serialssolutions.com/?V=1.0&amp;L=ZP9VV3ZM2K&amp;N=100&amp;S=T_AZ&amp;C=K">K</a></li>
+                      <li><a href="http://zp9vv3zm2k.search.serialssolutions.com/?V=1.0&amp;L=ZP9VV3ZM2K&amp;N=100&amp;S=T_AZ&amp;C=L">L</a></li>
+                      <li><a href="http://zp9vv3zm2k.search.serialssolutions.com/?V=1.0&amp;L=ZP9VV3ZM2K&amp;N=100&amp;S=T_AZ&amp;C=M">M</a></li>
+                      <li><a href="http://zp9vv3zm2k.search.serialssolutions.com/?V=1.0&amp;L=ZP9VV3ZM2K&amp;N=100&amp;S=T_AZ&amp;C=N">N</a></li>
+                      <li><a href="http://zp9vv3zm2k.search.serialssolutions.com/?V=1.0&amp;L=ZP9VV3ZM2K&amp;N=100&amp;S=T_AZ&amp;C=O">O</a></li>
+                      <li><a href="http://zp9vv3zm2k.search.serialssolutions.com/?V=1.0&amp;L=ZP9VV3ZM2K&amp;N=100&amp;S=T_AZ&amp;C=P">P</a></li>
+                      <li><a href="http://zp9vv3zm2k.search.serialssolutions.com/?V=1.0&amp;L=ZP9VV3ZM2K&amp;N=100&amp;S=T_AZ&amp;C=Q">Q</a></li>
+                      <li><a href="http://zp9vv3zm2k.search.serialssolutions.com/?V=1.0&amp;L=ZP9VV3ZM2K&amp;N=100&amp;S=T_AZ&amp;C=R">R</a></li>
+                      <li><a href="http://zp9vv3zm2k.search.serialssolutions.com/?V=1.0&amp;L=ZP9VV3ZM2K&amp;N=100&amp;S=T_AZ&amp;C=S">S</a></li>
+                      <li><a href="http://zp9vv3zm2k.search.serialssolutions.com/?V=1.0&amp;L=ZP9VV3ZM2K&amp;N=100&amp;S=T_AZ&amp;C=T">T</a></li>
+                      <li><a href="http://zp9vv3zm2k.search.serialssolutions.com/?V=1.0&amp;L=ZP9VV3ZM2K&amp;N=100&amp;S=T_AZ&amp;C=U">U</a></li>
+                      <li><a href="http://zp9vv3zm2k.search.serialssolutions.com/?V=1.0&amp;L=ZP9VV3ZM2K&amp;N=100&amp;S=T_AZ&amp;C=V">V</a></li>
+                      <li><a href="http://zp9vv3zm2k.search.serialssolutions.com/?V=1.0&amp;L=ZP9VV3ZM2K&amp;N=100&amp;S=T_AZ&amp;C=W">W</a></li>
+                      <li><a href="http://zp9vv3zm2k.search.serialssolutions.com/?V=1.0&amp;L=ZP9VV3ZM2K&amp;N=100&amp;S=T_AZ&amp;C=X">X</a></li>
+                      <li><a href="http://zp9vv3zm2k.search.serialssolutions.com/?V=1.0&amp;L=ZP9VV3ZM2K&amp;N=100&amp;S=T_AZ&amp;C=Y">Y</a></li>
+                      <li><a href="http://zp9vv3zm2k.search.serialssolutions.com/?V=1.0&amp;L=ZP9VV3ZM2K&amp;N=100&amp;S=T_AZ&amp;C=Z">Z</a></li>
+                      <li><a href="/search/articles/dbfind.php?shortname=ejournals">All</a></li>
+                    </ul>
+
+                    <input value="1.0" name="V" type="hidden" />
+                    <input value="100" name="N" type="hidden" />
+                    <input name="L" value="ZP9VV3ZM2K" type="hidden" />
+                    <select name="S">
+                       <option value="AC_T_B">Title begins with</option>
+                       <option value="AC_T_M">Title equals</option>
+                       <option value="T_W_A">Title contains all words</option>
+                       <option value="I_M">ISSN equals</option>
+                    </select>
+                    <input class="search" id="SS_CFocusTag" name="C" style="width:202px" value="Search for E-Journals" />
+                    <input class="submit" type="image" src="/sites/all/themes/ualibraries/images/home/search/search.gif" alt="Search" />
+
+                  </fieldset>
+
+                  <div class="top-corners"></div>
+                  <div class="bottom-corners"></div>
+
+                </form>
+
+                <!-- END E-JOURNALS SEARCH BOX -->
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div id="sidebar">
+
+            <div id="today-in-the-libraries">
+
+              <strong class="left">Today in the Libraries</strong>
+              <strong class="right">Sun Mar 04, 2012</strong>
+
+
+              <form id="hours" action="" method="get">
+
+                <fieldset>
+                  <span>Building:</span>
+                  <select id="hoursOptions" name="hoursOptions" style="width:180px">
+                  <option value='1'>Main Library</option>
+                  <option value='14'>Bookend Cafe</option>
+                  <option value='6'>Center for Creative Photography</option>
+                  <option value='9'>Fine Arts Library</option>
+                  <option value='10'>Science and Engineering Library</option>
+                  <option value='13'>Special Collections</option>
+                  </select>
+                </fieldset>
+
+
+                <fieldset>
+
+                  <div style="float: left;"><a href="/about/hours/"><img src="sites/all/themes/ualibraries/images/home/clock.gif" alt="Hours" /></a></div>
+
+                  <label for="student-hours">UA Hrs</label>
+                  <input id="student-hours" type="text" name="student-hours" value="" readonly="readonly" />
+                  <br />
+                  <label for="public-hours">Public Hrs</label>
+                  <input id="public-hours" type="text" name="public-hours" value="" readonly="readonly" />
+
+                </fieldset>
+                <a href="/applications/hours/">More detailed hours</a>
+
+              </form>
+
+              <ul>
+<li><a href="/news/entries/view/2652">"Ansel Adams: The View from Here" (exhibit)</a></li>
+<li><a href="/news/entries/view/2609">"Becoming Arizona: The Valentine State" (exhibit)</a></li>
+</ul>
+              <ul class="piped">
+                <li><a href="/news/">View All Events</a></li>
+                <li><a href="/news/entries/calendar">Event Calendar</a></li>
+              </ul>
+
+            </div>
+
+            <div id="headlines" class="expanded">
+
+              <a class="arrow prevPage"><img src="sites/all/themes/ualibraries/images/home/headlines/up.gif" alt="Up" /></a>
+
+              <div class="scrollable vertical">
+                <div class="items">
+                  <div><img src="/sites/all/themes/ualibraries/images/ua_specific/blocka.png" alt="User Survey Directly Impacts Library Services and Resources" /><p><a href="/news/entries/view/2677">User Survey Directly Impacts Library Services and Resources</a><br />The University Libraries at the ...</p></div>
+<div><img src="/news/img/uploads/centennial_exhibit_cabdiv2.jpg" alt=""Becoming Arizona: The Valentine State" (exhibit)" /><p><a href="/news/entries/view/2609">"Becoming Arizona" (exhibit)</a><br />New exhibit and lecture series celebrate 100 years of Arizona ...</p></div>
+<div><img src="/sites/all/themes/ualibraries/images/ua_specific/blocka.png" alt="Trial Database: Anthropology Online" /><p><a href="/news/entries/view/2670">Trial Database: Anthropology Online</a><br />The University Libraries are pleased to offer trial access to ...</p></div>
+<div><img src="/news/img/uploads/Alfred_T_Diaz_San_Manuel_AZ_1962_sq.jpg" alt="“Company Town: Arizona’s Copper Mining Communities During 100 Years of Statehood” (exhibit) " /><p><a href="/news/entries/view/2664">“Company Town" (exhibit) </a><br />A new exhibit at the UA Science-Engineering Library shares 100 years of ...</p></div>
+<div><img src="/news/img/uploads/ual_event_mailer_cabdiv2.jpg" alt="Mark Your Calendars!" /><p><a href="/news/entries/view/2672">Mark Your Calendars!</a><br />Interested in what's going on at the Libraries? View our Spring 2012 event ...</p></div>
+<div><img src="/sites/all/themes/ualibraries/images/ua_specific/blocka.png" alt="Find UA Theses &amp; Dissertations in the Campus Repository " /><p><a href="/news/entries/view/2673">Find UA Theses & Dissertations in the Campus Repository </a><br />The UA Campus Repository is the go-to ...</p></div>
+<div><img src="/news/img/uploads/2012-03-01-163602AZcentennial_Event_350sq.jpg" alt=""Life, Family and the Arizona Mining Community: A Gendered Perspective"" /><p><a href="/news/entries/view/2675">"Life, Family and the Arizona Mining Community: A Gendered Perspective"</a><br />Anna Ochoa O&rsquo;Leary, a ...</p></div>
+<div><img src="/news/img/uploads/2011-12-14-114531CCP_camera_lens_sq.jpg" alt=""Ansel Adams: The View from Here" (exhibit)" /><p><a href="/news/entries/view/2652">"Ansel Adams: The View from Here" (exhibit)</a><br />Perhaps no photographer's work has enjoyed such ...</p></div>
+<div><img src="/news/img/uploads/UWP.jpg" alt="Arizona is Up with People! Dinner & Show" /><p><a href="/news/entries/view/2665">Arizona is Up with People! Dinner & Show</a><br />Gala performance from Up with People to launch archive ...</p></div>
+<div><img src="/news/img/uploads/map_terr_of_az_sq.jpg" alt="“Mapping Arizona: From Mexican Territory to U.S. State” (exhibit) " /><p><a href="/news/entries/view/2662">"Mapping Arizona" (exhibit)</a><br />A new exhibit, &ldquo;Mapping Arizona: From Mexican Territory to U.S. ...</p></div>
+<div><img src="/sites/all/themes/ualibraries/images/ua_specific/blocka.png" alt="Trial Database: Ethnographic Video Online " /><p><a href="/news/entries/view/2671">Trial Database: Ethnographic Video Online </a><br />The University Libraries are pleased to offer trial ...</p></div>
+<div><img src="/sites/all/themes/ualibraries/images/ua_specific/blocka.png" alt="Trial Database: Classic Mexican Cinema" /><p><a href="/news/entries/view/2676">Trial Database: Classic Mexican Cinema</a><br />The University Libraries are pleased to offer trial access ...</p></div>
+                </div>
+              </div>
+
+              <a class="arrow nextPage"><img src="sites/all/themes/ualibraries/images/home/headlines/down.gif" alt="Down" /></a>
+
+            </div>
+
+          </div>
+
+          <div class="clear"></div>
+
+        </div>
+
+      </div>
+
+      <div id="footer">
+
+The University of Arizona Libraries | 1510 E. University Blvd. | Tucson, AZ 85721-0055 | Tel 520.621.6406 | Fax 520.621.9733<br />
+
+<a href="mailto:webadmin@u.library.arizona.edu">webadmin@u.library.arizona.edu</a> | <a href="/about/policies">Library Policies</a>       </div>
+
+    </div>
+
+
+
+
+
+   <script type="text/javascript">
+
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+   </script>
+
+   <script type="text/javascript">
+
+   var pageTracker = _gat._getTracker("UA-5627973-1");
+
+   pageTracker._setDomainName(".library.arizona.edu");
+
+   pageTracker._trackPageview();
+</script>
+
+
+
+
+
+  </body>
+
+</html>
+<!--
+
+
+
+-->

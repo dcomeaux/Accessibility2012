@@ -1,0 +1,229 @@
+
+<HTML><!-- #BeginTemplate "/Templates/main3.dwt" --><!-- DW6 -->
+<HEAD>
+<META CONTENT="text/html; charset=utf-8">
+<!-- #BeginEditable "doctitle" --> 
+<TITLE>Ask a Librarian</TITLE>
+
+
+.ask, .ask td {
+border : 1px solid #000;
+}
+.style1 {
+	font-weight: bold;
+	color: #c03;
+}
+h3 img {
+vertical-align : middle;
+margin-right: 10px;
+border : 0;
+}
+
+<!-- #EndEditable -->
+@import "/libraries/styles/main3.css";
+@import "/libraries/styles/print3.css";
+<META NAME="robots" CONTENT="index, follow">
+<!-- #BeginEditable "head" --><!-- #EndEditable -->
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+
+
+
+<U><FONT COLOR=blue>[University of Wisconsin-Milwaukee]</FONT></U>
+
+
+
+<U><FONT COLOR=blue>UWM Libraries</FONT></U><BR>
+Imagine Discover Succeed
+
+
+
+<FORM>
+<SELECT NAME="url">
+<OPTION VALUE="/libraries/" SELECTED="selected">Libraries Home</OPTION>
+<OPTION VALUE="/libraries/sitemap.cfm">Site Map/Search</OPTION>
+<OPTION VALUE="nopick">--------------------</OPTION>
+<OPTION VALUE="https://ezproxy.lib.uwm.edu/login?url=http://xerxes.library.wisconsin.edu/uwm/">Resources</OPTION>
+<OPTION VALUE="https://millib.wisconsin.edu/vwebv/searchBasic">Library Catalog</OPTION>
+<OPTION VALUE="nopick">--------------------</OPTION>
+<OPTION VALUE="http://guides.library.uwm.edu/">Help</OPTION>
+<OPTION VALUE="/libraries/ask/">Ask a Librarian</OPTION>
+<OPTION VALUE="nopick">--------------------</OPTION>
+<OPTION VALUE="/libraries/links.cfm">UWM Links</OPTION>
+</SELECT>
+<INPUT VALUE="Go" TYPE="submit">
+</FORM>
+
+
+
+
+
+<!-- #BeginEditable "contents" -->
+
+<!--
+<div style="paddingtop:8px;fontsize:14px;fontfamily:arial;fontweight:bold;textalign:center;border:2px dotted #000;background:#D9EBD9;width:260px;margin:auto;marginbottom:12px;">
+<p>How was your service today?</p>
+<p>Please take a short survey @ <br />
+<a href="http://bit.ly/libfeedback">http://bit.ly/libfeedback</a></p>
+</div>
+-->
+
+<H2>Ask a Librarian</H2>
+<P>Help yourself! Before asking your question, check out our <EM><U><FONT COLOR=blue>Frequently Asked Questions</FONT></U></EM> pages; the answer to your question may already be there. The <U><FONT COLOR=blue>Services at a Glance</FONT></U> pages have additional information.</P>
+<HR>
+<TABLE>
+  <TR>
+    <TD><H3><U><FONT COLOR=blue>Chat</FONT></U></H3>
+      <BLOCKQUOTE>
+        <P><U><FONT COLOR=blue>Online chat with a librarian</FONT></U> (via your web browser) is available <EM>24/7/365 </EM> via our live online reference system.</P>
+<P>Several library departments offer direct chat as well:</P>
+
+<UL>
+<LI><U><FONT COLOR=blue>American Geographical Society Library</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Archives</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Distance Education</FONT></U> </LI>
+<LI><U><FONT COLOR=blue>Interlibrary Loan</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Music</FONT></U> </LI>
+</UL>
+</BLOCKQUOTE></TD>
+    <TD><H3>Live Help</H3>
+      <BLOCKQUOTE>
+
+<P>You may chat with UW-Milwaukee librarians whenever the Ask a Librarian Desk is staffed. [<U><FONT COLOR=blue>hours</FONT></U>]
+At other times you may chat with other librarians, who will help you with using our library collections and services.</P>
+
+      </BLOCKQUOTE>
+      <P ALIGN="center">
+
+<!-- 
+        <object width="290" height="375" >
+          <param name="movie" value="http://widget.meebo.com/mm.swf?uEvqlbkMES"/>
+          <embed src="http://widget.meebo.com/mm.swf?uEvqlbkMES" type="application/xshockwaveflash" wmode="transparent" width="290" height="375"></embed>
+        </object>
+-->
+
+<!--#config timefmt="%H"--><!--#set var="hour" value="$DATE_LOCAL" -->
+<!--#config timefmt="%w"--><!--#set var="weekday" value="$DATE_LOCAL" -->
+<!--#if expr="((
+($hour=13 || $hour=14 || $hour=15 || $hour=16 || $hour=17 || $hour=18 || $hour=19 || $hour=20) && $weekday=0)
+ || (($hour=08 || $hour=09 || $hour=10 || $hour=11 || $hour=12 || $hour=13 || $hour=14 || $hour=15 || $hour=16 || $hour=17 || $hour=18 || $hour=19 || $hour=20) && $weekday >= 1 && $weekday <= 4)
+ || (($hour=08 || $hour=09 || $hour=10 || $hour=11 || $hour=12 || $hour=13 || $hour=14 || $hour=15 || $hour=16) && $weekday = 5)
+ || (($hour=10 || $hour=11 || $hour=12 || $hour=13 || $hour=14 || $hour=15 || $hour=16) && $weekday = 6))"-->
+<!--#include virtual="/libraries/ssi/meebo.txt" -->
+<!--#else-->
+<!--#include virtual="/libraries/ssi/quidget.txt" -->
+<!--#endif -->
+<P>
+
+
+<EMBED></EMBED>
+
+<BR>
+How was your service today?<BR>
+Please complete a <U><FONT COLOR=blue><EM>quick survey</EM></FONT></U> after your chat.</P> 
+      </P>
+      <BLOCKQUOTE>
+        <P>Please note that this service is monitored by librarians working at the desk. During busy times, there may be a delay in responding.</P>
+        <P>You can also reach us through an existing IM program by sending an instant message to any one of the following accounts:</P>
+        <UL>
+          <LI><EM>AIM:</EM> askuwmlibraries1</LI>
+          <LI><EM>Google Talk </EM>askuwmlibraries1</LI>
+          <LI><EM>Meebo:</EM> askuwmlibraries1</LI>
+          <LI><EM>MSN:</EM> askuwmlibraries1</LI>
+          <LI><EM>Yahoo:</EM> askuwmlibraries</LI>
+        </UL>
+      </BLOCKQUOTE></TD>
+</TR>
+  <TR>
+    <TD><HR>
+      <H3><U><FONT COLOR=blue>E-Mail</FONT></U></H3>
+      <BLOCKQUOTE>
+        <P>Please fill out the <U><FONT COLOR=blue>Ask a Librarian via E-Mail</FONT></U> form to send your question.</P>
+      </BLOCKQUOTE></TD>
+</TR>
+  <TR>
+    <TD><HR>
+      <H3>In Person</H3>
+      <BLOCKQUOTE>
+        <P> Visit the  Ask a Librarian Desk, (located on the first floor, west wing) for help using the library. [<U><FONT COLOR=blue>hours</FONT></U>]</P>
+        <P>For in-depth assistance, a <U><FONT COLOR=blue>research consultation </FONT></U>service is available. </P>
+      </BLOCKQUOTE></TD>
+</TR>
+  <TR>
+    <TD><HR>
+      <H3>Telephone</H3>
+      <BLOCKQUOTE>
+        <P>You can reach us by phone at (414) 229-4659
+          <!-- or 18778938583 (toll free)-->
+          .          </P>
+      </BLOCKQUOTE></TD>
+</TR>
+  <TR>
+    <TD><HR>
+<H3>Text</H3>
+<BLOCKQUOTE>
+<P>Send a text to 265010 and start your message with askuwmlibraries1. [<U><FONT COLOR=blue>hours</FONT></U>]</P>
+<P>If your mobile allows text-to-IM you can reach us at askuwmlibraries1.</P>
+<P>Note that using this service may result in a standard text messaging charge from your wireless service provider. </P>
+</BLOCKQUOTE>
+<HR>
+      <H3>Postal Mail</H3>
+      <BLOCKQUOTE>
+        <P> The mailing address for the UWM Libraries is: P.&nbsp;O. Box 604, Milwaukee WI 53201-0604.</P>
+      </BLOCKQUOTE></TD>
+</TR>
+  <TR>
+    <TD><HR>
+      <H3>Fax</H3>
+      <BLOCKQUOTE>
+        <P> You can send a facsimile to the UWM Libraries at (414) 229-6791.</P>
+      </BLOCKQUOTE></TD>
+</TR>
+</TABLE>
+<HR>
+<!-- #EndEditable -->
+
+
+
+
+<DL>
+<DT>University of Wisconsin-Milwaukee Libraries</DT>
+<DD>P.O. Box 604, 2311 East Hartford Avenue</DD>
+<DD>Milwaukee WI 53201-0604</DD>
+<DD>(414) 229-4785</DD>
+</DL>
+
+
+
+<P><U><FONT COLOR=blue></FONT></U></P>
+
+
+
+<DL>
+<DT>Last updated on January 17, 2012.</DT>
+<DD><U><FONT COLOR=blue>Conditions of Use</FONT></U> | <U><FONT COLOR=blue>Privacy Information</FONT></U></DD>
+<DD><U><FONT COLOR=blue>Contact Us</FONT></U></DD>
+</DL>
+
+
+
+
+
+
+
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2721612-10']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+
+
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<!-- #EndTemplate --></HTML>

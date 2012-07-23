@@ -1,0 +1,484 @@
+
+<HTML><!-- InstanceBegin template="/Templates/sectionPNJ.dwt" codeOutsideHTMLIsLocked="false" -->
+<HEAD>
+<META CONTENT="text/html; charset=iso-8859-1">
+<!-- Modele v2.5 (20111216) Rev: 960 -->
+<META CONTENT="IE=EmulateIE7">
+
+<!-- InstanceBeginEditable name="doctitle" -->
+<TITLE>Nous &eacute;crire - Biblioth&egrave;ques - Universit&eacute; de Montr&eacute;al</TITLE>
+<!-- InstanceEndEditable -->
+
+
+<!-- Début des styles locaux -->
+
+
+
+
+
+#titre-section {display: none;}
+
+
+<!-- Fin des styles locaux -->
+<!-- InstanceParam name="META_Auteur" type="text" value="" -->
+<!-- InstanceParam name="META_Description" type="text" value="" -->
+<!-- InstanceParam name="META_Mots_cles" type="text" value="" -->
+
+<META CONTENT="fr">
+<META NAME="Author" CONTENT="">
+<META NAME="Description" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+
+
+<META NAME="dc.creator" CONTENT="">
+<META NAME="dc.description" CONTENT="">
+<META NAME="dc.subject" CONTENT="">
+<META NAME="dc.language" CONTENT="fr-CA">
+
+
+
+
+
+
+
+
+
+<!--[if lte IE 6]>
+<style>
+div#ummenuvertical div#menu ul * { height: 1px; }
+</style>
+<![endif]-->
+
+
+<!-- InstanceBeginEditable name="MetadonneesDG" -->
+<!-- InstanceEndEditable -->
+
+<!-- Début des scripts locaux -->
+
+
+
+<!-- Insérez les scripts dans cette région, à partir de 
+     la page Web pour qu'ils n'affectent que la 
+	 page en cours -->
+<!-- InstanceBeginEditable name="javascript" -->
+
+<!--script type="text/javascript" src="http://www.bib.umontreal.ca/JS/jqueryvalidate/1.1.1/jquery.validate.min.js"></script>
+<script type="text/javascript" src="http://www.bib.umontreal.ca/JS/jqueryvalidate/1.1.1/jquery.validate.i18n.fr.js"></script-->
+
+
+<!--script type="text/javascript" src="http://www.bib.umontreal.ca/JS/simpleforms/simpleforms.min.js"></script-->
+
+// 0;
+		}
+		return true
+	}, "Veuillez inscrire un sujet concernant votre message.");*/
+/*
+	// validate the form when it is submitted
+	var validator = $("#bib-1biblios").validate({
+		debug: false,
+		submitHandler: function(form) {
+			// On ne soumet pas le champ conditionnel "autre-sujet" si le message sélectionné n'est pas "Autre"
+			if ($('#sujet-principal').val() != 'Autre') {
+				$('#autre-sujet').val('').attr('disabled', 'disabled');
+			}
+			// Disable submit button to prevent multiple submits
+			$(form).find(':submit').each(function() {
+				$(this).attr('disabled','disabled');
+				$(this).attr('oldText', $(this).text());
+				$(this).text('Envoi...');
+				});
+			form.submit();
+		}
+	});*/
+	// Reset handler
+	$('.simple-form :reset').click(function() {
+		//setTimeout("$('#sujet-principal').trigger('change');",1);
+		$(this.form).find(':submit').each(function() {
+			$(this).text($(this).attr('oldText'));
+			$(this).removeAttr('disabled');
+			$(this).removeAttr('oldText');
+		});
+		// TODO: Fix bug in IE: the 'change' event won't firein 'select' when reset is done
+	});
+	$('.simple-form').bind('reset', function() {
+		$('#autre-sujet').removeAttr('disabled');
+		$('#question-autre').hide();
+	});
+	// Ajout de validation des contrôles  quand la valeur change
+	$('select', '#bib-1biblios').change(function() {
+		//$("#bib-1biblios").validate().element(this);
+	});
+	// Initialisation du champ conditionnel "Autre sujet"
+	var qAutre = $('#question-autre');
+	if ($('#sujet-principal').val() == 'Autre') {
+		qAutre.show();
+	} else {
+		qAutre.hide();
+		$('#autre-sujet').val('');
+	}
+	// Gestion de l'affichage du champs conditionnel "Autre sujet"
+	$('#sujet-principal').change(function() {
+		if ($(this).val() == 'Autre') {
+			qAutre.show('fast');
+			setTimeout("$('#autre-sujet').focus();",250); // délais pour IE
+		}
+		else {
+			qAutre.hide('fast');
+			$('#autre-sujet').val('');
+		}
+	});
+});
+$(window).unload(function() {
+	// Enable the submit button again so that if the user goes back in the browser's history (in Firefox), the submit button is available again
+	$('.simple-form :submit').each(function() {
+		$(this).text($(this).attr('oldText'));
+		$(this).removeAttr('disabled');
+		$(this).removeAttr('oldText');
+	});
+	$('#autre-sujet').removeAttr('disabled');
+});
+//]]>
+
+<!-- InstanceEndEditable -->
+<!-- Fin des scripts locaux -->
+<!-- Les styles générés par Dreamweaver/Contribute sont insérés ici. 
+     Utilisez cette région modifiable au besoin pour y mettre les styles propres à la page en cours. -->
+<!-- InstanceBeginEditable name="CSS" -->
+
+
+
+#recommencer
+{
+	border: none;
+	color: blue;
+	background-color: transparent;
+	display: inline;
+	font-size: 0.9em;
+	cursor: hand;
+	cursor: pointer;
+}
+
+#recommencer:hover
+{
+	text-decoration: underline;
+}
+
+#envoyer
+{
+	cursor: hand;
+	cursor: pointer;
+}
+
+.input-submit {
+    position: relative;
+    -moz-box-shadow: 0 0 3px #888888;
+    background: url("http://www.bib.umontreal.ca/modele/2.3/images/iu/bouton-recherche.png") no-repeat scroll 100% top transparent !important;
+    border: medium none;
+    color: #FFFFFF;
+    font-size: 0.8em;
+    height: 21px;
+    line-height: 17px;
+    margin: 0;
+    padding: 2px 2.2em 5px 0.5em;
+    text-transform: uppercase;
+    width: auto;
+	
+    float: none;
+}
+
+form.cmxform label
+{
+	text-align:left;
+	width:auto;
+}
+
+form.cmxform label.error,
+label.error
+{
+	margin-left:0 !IMPORTANT;
+	width:200px !IMPORTANT;
+}
+
+form.simple-form .desactive
+{
+	display: none;
+}
+
+.important
+{
+	color: #FF0000;
+}
+
+#question-autre label.error
+{
+	width: 100% !IMPORTANT;
+	margin-left: 5.3em !IMPORTANT;
+}
+
+<!-- InstanceEndEditable -->
+<!-- Fin des styles locaux -->
+
+
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+  <UL>
+    <LI><U><FONT COLOR=blue>Aller au contenu [1]</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Aller au menu du site [2]</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Aller aux liens rapides [3]</FONT></U></LI>
+  </UL><!-- #BeginLibraryItem "/Library/navigationUdeM.lbi" -->
+<!--  ************************** MENU DE NAVIGATION UDEM ************************** -->
+<!--  ************************** NE DOIT JAMAIS ETRE EDITE ************************ -->
+<U><FONT COLOR=blue>[Universit&eacute; de Montr&eacute;al]</FONT></U>
+  <HR>
+  <U><FONT COLOR=blue>R&eacute;pertoires</FONT></U> |  <U><FONT COLOR=blue>Facult&eacute;s</FONT></U> |  <U><FONT COLOR=blue>Biblioth&egrave;ques</FONT></U> |  <U><FONT COLOR=blue>Plan campus</FONT></U> |  <U><FONT COLOR=blue>Sites A-Z </FONT></U> |  <U><FONT COLOR=blue>Mon portail UdeM</FONT></U>
+  <BR>
+  <FORM>
+    Texte recherch&eacute; : 
+    
+    <INPUT VALUE="" NAME="q" MAXLENGTH="255" TYPE="text">
+    <INPUT TYPE="image">
+    <BR>
+    Rechercher dans : 
+    <INPUT VALUE="Atrium" NAME="sitesearch" TYPE="radio">
+    Atrium
+    <INPUT VALUE="umontreal.ca" NAME="sitesearch" CHECKED="checked" TYPE="radio">
+    UdeM
+    
+  </FORM>
+  <FORM>
+    <!-- On force IE à utiliser UTF8 lors de l'envoie des données --> 
+    <!--[if lt IE 9]><input name="iehack" type="hidden" value="&#9760;" /><![endif]-->
+    <INPUT VALUE="Basic" NAME="mode" TYPE="hidden">
+    <INPUT VALUE="default_tab" NAME="tab" TYPE="hidden">
+    <INPUT VALUE="1" NAME="indx" TYPE="hidden">
+    <INPUT VALUE="true" NAME="dum" TYPE="hidden">
+    <INPUT VALUE="rank" NAME="srt" TYPE="hidden">
+    <INPUT VALUE="UM" NAME="vid" TYPE="hidden">
+    <INPUT VALUE="" NAME="frbg" TYPE="hidden">
+    Texte recherch&eacute; : 
+    
+    <INPUT VALUE="" NAME="vl(freeText0)" MAXLENGTH="255" TYPE="text">
+    <INPUT TYPE="image">
+    <BR>
+    Rechercher dans :  
+    <INPUT VALUE="Atrium" NAME="sitesearch" TYPE="radio">
+    Atrium
+    <INPUT VALUE="umontreal.ca" NAME="sitesearch" CHECKED="checked" TYPE="radio">
+    UdeM
+    
+  </FORM>
+
+<!-- #EndLibraryItem --><HR>
+  
+    <P>Sauter les liens rapides</FONT></U></P>
+    
+      <U><FONT COLOR=blue>[Les biblioth&egrave;ques / UdeM]</FONT></U>
+    <!-- #BeginLibraryItem "/Library/bandeaucommun.lbi" -->
+<UL>
+  <LI><U><FONT COLOR=blue>Catalogue <EM>Atrium</EM></FONT></U>
+    <UL>
+      <LI><U><FONT COLOR=blue>Démarrer <EM>Atrium</EM></FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Guide <EM>Atrium</EM></FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Renouveler vos emprunts</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Votre dossier de lecteur</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Réserve de cours</FONT></U></LI>
+    </UL>
+  </LI>
+  <LI><U><FONT COLOR=blue>Ressources &eacute;lectroniques</FONT></U>
+    <UL>
+      <LI><U><FONT COLOR=blue>Maestro (bases de données)</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Périodiques électroniques</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Dictionnaires et encyclopédies</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Information statistique</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Données géospatiales</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Papyrus (Dépôt institutionnel numérique)</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Calypso (Collections d'objets numériques)</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Accès hors-campus (Proxy)</FONT></U></LI>
+    </UL>
+  </LI>
+  <LI><U><FONT COLOR=blue>Formation</FONT></U>
+    <UL>
+      <LI><U><FONT COLOR=blue>Activités offertes</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Guides</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Compétence informationnelle</FONT></U></LI>
+    </UL>
+  </LI>
+  <LI><U><FONT COLOR=blue>Obtenir un document</FONT></U>
+    <UL>
+      <LI><U><FONT COLOR=blue>Obtenir un article</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Obtenir une thèse / un mémoire</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Prêt réseau UdeM</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Prêt entre bibliothèques</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Catalogues <BR>
+        d'autres bibliothèques</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Modalités de prêt</FONT></U></LI>
+    </UL>
+  </LI>
+  <LI><U><FONT COLOR=blue>Horaires</FONT></U></LI>
+  <LI><U><FONT COLOR=blue>Nous joindre</FONT></U></LI>
+</UL>
+<!-- #EndLibraryItem -->
+  
+  
+    <TABLE>
+      <TR>
+        <TD>&nbsp;</TD>
+        <TD><U><FONT COLOR=blue>Nous joindre</FONT></U> </TD>
+      </TR>
+    </TABLE>
+  
+  
+  
+    
+      
+        <P>Sauter le menu du site</FONT></U></P><!-- #BeginLibraryItem "/Library/menusectionPNJ.lbi" -->
+<UL>
+  <LI><U><FONT COLOR=blue>Bibliothèques, Direction et services</FONT></U></LI>
+  <LI>Par courriel
+    <UL>
+      <LI><U><FONT COLOR=blue>Questions générales</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Services de prêt</FONT></U></LI>
+    </UL>
+  </LI>
+  <LI><U><FONT COLOR=blue>Bibliothécaires par discipline</FONT></U></LI>
+  <LI><U><FONT COLOR=blue>Liste des bibliothèques d'attache</FONT></U></LI>
+  <LI><U><FONT COLOR=blue>Horaires</FONT></U></LI>
+  <LI><U><FONT COLOR=blue>Foire aux questions (FAQ)</FONT></U></LI>
+  <LI><U><FONT COLOR=blue>Index A-Z</FONT></U></LI>
+</UL>
+<!-- Lien vers la page d'accueil -->
+<U><FONT COLOR=blue>&middot; Retour &agrave; la page d'accueil &middot;</FONT></U>
+<!-- #EndLibraryItem -->
+    
+    <!--  /ummenuvertical -->
+    <HR>
+    
+      
+        Fil d'ariane...
+        </FONT></U>
+        <!-- InstanceBeginEditable name="Titre de la section" --><!-- InstanceEndEditable -->
+        <!-- InstanceBeginEditable name="Titre de la page" -->
+        <H1> Nous &eacute;crire</H1>
+        <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="Contenu" -->
+        
+          <P> Si votre message concerne le renouvellement d'un document ou des problèmes avec votre dossier du lecteur, consultez la page « <U><FONT COLOR=blue>Renouveler, emprunter, r&eacute;server des documents&#8230;</FONT></U> ». </P>
+          <P> Si vous avez besoin d'aide, vous pouvez également <U><FONT COLOR=blue>téléphoner au service de référence</FONT></U> de votre bibliothèque d'attache. </P>
+          <P> Pour nous envoyer un message&nbsp;(une équipe répond aux messages du lundi au vendredi, durant les heures normales de bureau), remplir le formulaire suivant. </P>
+          
+            <FORM>
+              <P> <EM>* Champs obligatoires</EM> </P>
+              
+                Identification
+                <TABLE>
+                  <TR>
+                    <TD><EM>*</EM>Votre nom&nbsp;: </TD>
+                    <TD><INPUT NAME="nom_diffuseur" SIZE="30" TYPE="text"></TD>
+                  </TR>
+                  <TR>
+                    <TD><EM>*</EM>Votre adresse de courriel&nbsp;: </TD>
+                    <TD><INPUT NAME="courriel_diffuseur" SIZE="30" TYPE="text"></TD>
+                  </TR>
+                  <TR>
+                    <TD>&nbsp;&nbsp;Votre num&eacute;ro de t&eacute;l&eacute;phone&nbsp;: </TD>
+                    <TD><INPUT NAME="T&eacute;l&eacute;phone" SIZE=" 20" TYPE="text">
+                      <BR>
+                      Dans certains cas, il peut être nécessaire de vous r&eacute;pondre par t&eacute;l&eacute;phone.</TD>
+                  </TR>
+                  <TR>
+                    <TD><EM>*</EM>Membre de la communaut&eacute;<BR>
+                      universitaire? </TD>
+                    <TD><INPUT VALUE="Oui" NAME="Usager UdeM" TYPE="radio">
+                      Oui
+                      <INPUT VALUE="Non" NAME="Usager UdeM" TYPE="radio">
+                      Non</TD>
+                  </TR>
+                  <TR>
+                    <TD><EM>*</EM>Votre facult&eacute; ou votre d&eacute;partement : </TD>
+                    <TD><INPUT NAME="Facult&eacute;/d&eacute;partement" SIZE="25" TYPE="text"></TD>
+                  </TR>
+                  <TR>
+                    <TD><EM>*</EM>Votre statut&nbsp;: </TD>
+                    <TD><SELECT NAME="Statut" SIZE="1">
+                        <OPTION VALUE="" SELECTED="selected"></OPTION>
+                        <OPTION VALUE="Professeur"> Professeur </OPTION>
+                        <OPTION VALUE="&Eacute;tudiant de 3e cycle">&Eacute;tudiant de 3e cycle</OPTION>
+                        <OPTION VALUE="&Eacute;tudiant de 2e cycle">&Eacute;tudiant de 2e cycle</OPTION>
+                        <OPTION VALUE="&Eacute;tudiant de 1er cycle">&Eacute;tudiant de 1er cycle</OPTION>
+                        <OPTION> Chercheur </OPTION>
+                        <OPTION VALUE="Charg&eacute; de cours">Charg&eacute; de cours</OPTION>
+                        <OPTION VALUE="Employ&eacute;">Employ&eacute;</OPTION>
+                        <OPTION VALUE="Autre">Autre</OPTION>
+                      </SELECT></TD>
+                  </TR>
+                </TABLE>
+              
+              
+                Votre message
+                <P>
+                  <EM>*</EM>Votre message concerne&nbsp;:
+                  <BR>
+                  <SELECT NAME="Sujet" SIZE="1">
+                    <OPTION VALUE="- Le nouvel Atrium">Le nouvel Atrium</OPTION>
+                    <OPTION VALUE="- Probl&egrave;me avec une ressource r&eacute;serv&eacute;e">Un probl&egrave;me avec une ressource &eacute;lectronique &laquo; r&eacute;serv&eacute;e UdeM &raquo; </OPTION>
+                    <OPTION VALUE="- Aide pour retrouver un/des document(s)"> Une demande d'aide pour retrouver un/des document(s) </OPTION>
+                    <OPTION VALUE="- Demande de renseignement"> Une demande de renseignement </OPTION>
+                    <OPTION VALUE="Autre">Autre sujet&hellip;</OPTION>
+                  </SELECT>
+                </P>
+                <P>
+                  <EM>*</EM>Sujet :
+                  <INPUT NAME="Autre sujet" SIZE="55" TYPE="text">
+                </P>
+                <P>
+                  <EM>*</EM>Veuillez saisir votre message ci-dessous&nbsp;:
+                  <BR>
+                  <TEXTAREA ROWS="10" NAME="Message" COLS="60">
+</TEXTAREA>
+                </P>
+              
+              
+                <INPUT VALUE="Nous joindre par courriel" NAME="mailform_nom_formulaire" TYPE="hidden">
+                <INPUT VALUE="Direction des biblioth&egrave;ques" NAME="nom_destinataire" TYPE="hidden">
+                <INPUT VALUE="http://www.bib.umontreal.ca/db/pnj_courriel.htm?submit=ok" NAME="mailform_url" TYPE="hidden">
+                <!-- redirection directe vers mailform_url, sans message de confirmation -->
+                <INPUT VALUE="true" NAME="mailform_noseq_nepasconfirmer" TYPE="hidden">
+                <INPUT VALUE="" NAME="courriel_destinataire" TYPE="hidden">
+                <INPUT VALUE="bib-1biblios" NAME="sujet" TYPE="hidden">
+                <INPUT VALUE="true" NAME="mailform_affichage_ligne" TYPE="hidden">
+                <!-- Si true, le courrier est envoyé en tâche de fond. Pas de feedback en cas d'erreur. Par contre si le serveur SMTP est surchargé, le script ne plantera pas. -->
+                <INPUT VALUE="false" NAME="mailform_tdf" TYPE="hidden">
+                <!-- Champs qui ne sont pas inclus dans le corps de la demande expédiée -->
+                <INPUT VALUE="mailform_nom_formulaire|courriel_destinataire|courriel_diffuseur|nom_destinataire|envoyer|recommencer|sujet" NAME="mailform_cacherchamps" TYPE="hidden">
+                <!-- Numéro de séquence pour ce formulaire -->
+                <INPUT VALUE="52" NAME="mailform_noseq" TYPE="hidden">
+                <!-- Si true, le formulaire ne sera pas envoyé à l'administrateur du formulaire dans la table des numéros de séquence. -->
+                <INPUT VALUE="true" NAME="mailform_noseq_silencieux" TYPE="hidden">
+                <!-- Si true, le numéro de séquence est affiché dans le sujet -->
+                <INPUT VALUE="true" NAME="mailform_noseq_sujet" TYPE="hidden">
+                Envoyer
+                |
+                Recommencer
+              
+            </FORM>
+          
+        
+        
+          
+            <P>Votre message a &eacute;t&eacute; achemin&eacute; avec succ&egrave;s! </P>
+            <P>Nous vous remercions d'avoir utilis&eacute; ce service. Nous tenterons d'y r&eacute;pondre dans les plus brefs d&eacute;lais.</P>
+          
+        
+        <!-- InstanceEndEditable --> 
+      <!--  /umcontenu --> 
+    
+    <!--  /umcontenant --> 
+  
+  <!--  /ummenuetcontenu -->
+  <HR>
+  <!-- #BeginLibraryItem "/Library/pieddepage.lbi" -->
+  <U><FONT COLOR=blue>Urgence</FONT></U> |  <U><FONT COLOR=blue>Vie priv&eacute;e</FONT></U> | <U><FONT COLOR=blue>Offres d'emploi</FONT></U> |  <U><FONT COLOR=blue>Mon courriel</FONT></U> |  <U><FONT COLOR=blue>StudiUM</FONT></U> |  <U><FONT COLOR=blue>iTunes U</FONT></U> | <U><FONT COLOR=blue>Nous &eacute;crire</FONT></U> &nbsp; <U><FONT COLOR=blue>[Fils des nouvelles UdeM]</FONT></U>
+  <!-- #EndLibraryItem -->
+<!-- InstanceBeginEditable name="javascriptpied" --><!-- InstanceEndEditable -->
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<!-- InstanceEnd --></HTML>

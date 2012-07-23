@@ -1,0 +1,868 @@
+
+<HTML>
+<HEAD>
+<META CONTENT="text/html; charset=utf-8">
+<!--<base href="http://www.lib.lsu.edu"  />-->
+
+
+
+
+ 
+
+
+
+
+////////////THIS IS THE EXTERNAL LINKS NEW WINDOW JS//////////////////
+
+function exLinks() {
+<!-- Copyright 2005 Bontrager Connection, LLC
+// More info: "Automatic New Window for External Links" 
+//    at /library/
+// Also see http://BontragerConnection.com/
+//
+// List the domain names that shall not be put into new 
+//    windows when the link is clicked. If you use both 
+//    the www.example.com and example.com versions of 
+//    your domain name, list them both. The domains need 
+//    to be all one line between the quotation marks on 
+//    the line below, the names separated with a comma.
+//    Do not specify http:// URLs, just domain names.
+
+var Domains = "www.lib.lsu.edu,lib.lsu.edu,lsu.edu,www.lsu.edu,test.lib.lsu.edu,news.blogs.lib.lsu.edu,lsu.louislibraries.org,grok.lsu.edu,itsweb.lsu.edu";
+
+////////////////////////////////////////////
+// No other customizations are necessary. //
+////////////////////////////////////////////
+if(Domains.indexOf(" ") != 1) {
+   var splitarray = Domains.split(" ");
+   Domains = splitarray.join("");
+}
+Domains = Domains.toLowerCase();
+var DomainsArray = Domains.split(",");
+for(var i = 0; i < document.links.length; i++) {
+   if(document.links[i].hostname.length < 1) 
+   { continue; }
+   if(document.links[i].target.length > 0)
+   { continue; }
+   var h = document.links[i].hostname.toLowerCase();
+   var makeNewWindow = true;
+   for(var ii = 0; ii < DomainsArray.length; ii++) {
+      if(DomainsArray[ii] != h) 
+      { continue; }
+      makeNewWindow = false;
+      break;
+   }
+   if(makeNewWindow == true)
+   { document.links[i].title = 'This link will take you outside LSU.edu.'; }
+}
+//-->
+}
+
+
+function mobilepop(action) {
+	if (action == "close") document.getElementById('mobilepop').style.display = "none";
+	else if (action == "redirect") window.location.href = "http://www.lib.lsu.edu/m/";
+}
+
+function mobilepopOL() {	
+//	if (document.location == "http://www.lib.lsu.edu/index.html" || document.location == "http://www.lib.lsu.edu/") {
+//		if (screen.width 
+
+<!-- The following JavaScript code gets the current date from the viewer's machine. --> 
+
+<!-- tag to hide script from older browsers that don't support JavaScript
+function display_todays_date()
+{
+var today = new Date();
+var numerical_day=today.getDay();
+var numerical_month=today.getMonth();
+var date=today.getDate();
+var year=today.getFullYear();
+var weekday_array = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+var day_of_the_week = weekday_array[numerical_day];
+var month_array = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+var month_name = month_array[numerical_month];
+var date_string=day_of_the_week+', '+month_name+' '+date+', '+year;
+document.write(date_string);
+}
+//-->
+
+  
+	#mobilepop {
+		/*position:absolute;
+		top:10px;
+		left:10px;*/
+		width:760px;
+		height:auto;
+		margin:0 10px;
+		padding:0;
+		display:none;
+		overflow:hidden;
+	}
+	#mobilecont {
+		width:760px;
+		background:#FDD023;
+		color:#333333;
+		padding:10px;
+		font-size:12px;
+		font-family:Arial, Helvetica, sans-serif;
+		text-align:center;
+		border:1px solid #ffffff;
+		line-height:115% !important;
+	}
+
+<!-- End the current date script. --> 
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+	[INLINE]
+
+
+	
+		
+    	<P><EM>On a mobile device?</EM></P>
+        <P>View the LSU Libraries Mobile Website at<BR> <U><FONT COLOR=blue>http://www.lib.lsu.edu/m/</FONT></U></P>
+        <!-- <p style="fontsize:2em;"><input type="button" name="closempop" value="Stay" onClick="javascript:mobilepop('close');" /> <input type="button" name="redirectmpop" value="Go to Mobile Site" onClick="javascript:mobilepop('redirect');" /> </p>-->
+	    
+	
+
+
+	<!--Begin Utility Bar-->
+	<UL>
+	<LI><U><FONT COLOR=blue>
+		[Text Only]</FONT></U>
+		<U><FONT COLOR=blue>[Login to MyLSU]</FONT></U>
+	</LI> 
+	<LI> Baton Rouge, Louisiana | 
+	<!--Begin date display-->
+	display_todays_date();
+	<!--end date display-->
+	</LI> 
+
+ 	<LI>
+	<FORM>
+		 
+		<INPUT WIDTH="17" NAME="image" HEIGHT="14" TYPE="image">
+		<INPUT VALUE="Search lsu.edu" NAME="q" SIZE="20" TYPE="text">
+		<INPUT VALUE="lsu.edu" NAME="sitesearch" TYPE="hidden"> 
+		</FORM>
+	</LI>
+
+</UL>
+<!--End Utility Bar   -->
+		
+ 
+<U><FONT COLOR=blue></FONT></U>
+
+	<UL>
+ 	  <LI><U><FONT COLOR=blue>LSU Libraries</FONT></U><!-- Begin Home Item -->
+    
+       <!-- <div class="dropdown_2columns">--><!-- Begin 2 columns container -->
+    
+    <!--        <div class="col_2">
+                <h2>Welcome !</h2>
+            </div>
+    
+            <div class="col_2">
+                <p>Welcome to the LSU Libraries web site.  </p>             
+                <p>The LSU Libraries web site is a gateway to the information and research needs of the LSU community.  It can be used to locate books, link to ejournal articles, communicate with subject librarians and other library staff and faculty members.</p>             
+            </div>
+    
+            <div class="col_2">
+                <h2>Cross Browser Support</h2>
+            </div>
+            
+            <div class="col_1">
+                <img src="img/browsers.png" width="125" height="48" alt="" />
+            </div>
+            
+            <div class="col_1">
+                <p>This mega menu has been tested in all major browsers.</p>
+            </div>
+          
+        </div>--><!-- End 2 columns container -->
+    
+    </LI><!-- End Home Item -->
+    
+         <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////          ABOUT US                   ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+ 	   	 <LI><U><FONT COLOR=blue>About Us</FONT></U><!-- Begin 5 columns Item -->
+        <!-- Begin 5 columns container -->
+        
+             
+                <H2>Welcome to the LSU Libraries Website!</H2>
+                <P>The LSU Libraries web site is a gateway to the information and research needs of the LSU community. It can be used to locate books, link to ejournal articles, and to communicate with subject librarians and other library staff and faculty members.
+</P>
+            
+             
+            
+                <H3>Information</H3>
+     <!--           <p class="black_box">This is a dark grey box text. Fusce in metus at enim porta lacinia vitae a arcu. Sed sed lacus nulla mollis porta quis.</p>-->
+     
+            <UL> 
+            <LI><U><FONT COLOR=blue>About the Libraries</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Driving Directions</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Employment</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Hours</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Policies</FONT></U></LI>
+            
+            </UL>
+            
+   		        
+                <H3>Directory</H3>
+                <UL>
+                <LI><U><FONT COLOR=blue>All</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Faculty</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Subject Librarians</FONT></U></LI>
+              <!--  <li><a href="http://www.lib.lsu.edu/sp/subjects/staff.php?letter=By Department">By Departments</a></li>-->
+                </UL>
+                
+                
+             
+            
+               <H3>Frequently Dialed Numbers</H3>
+               
+              <P>- Circulation (fines, borrowing): 578-2058<BR> 
+              - Reference (help finding information): 578-5652<BR>
+              - Music Resources: 578-4674<BR>
+              - Special Collections: 578-6568 </P>
+            
+           &nbsp; 
+                   
+                   
+                   
+                   <U><FONT COLOR=blue>[INLINE]</FONT></U>
+                   
+                     <U><FONT COLOR=blue>[INLINE]</FONT></U>
+                  <U><FONT COLOR=blue> [INLINE]</FONT></U>
+                   <U><FONT COLOR=blue> [INLINE] </FONT></U>
+                  
+            
+                
+                
+         
+ 
+        
+        <!-- End 5 columns container -->
+     </LI><!-- End 5 columns Item -->
+     
+     <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////          RESEARCH TOOLS             ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+     
+     <LI><U><FONT COLOR=blue>Research Tools</FONT></U><!-- Begin 4 columns Item -->
+    
+        <!-- Begin 4 columns container -->
+        
+               
+            
+                <H3>Find Books</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Online Catalog</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>WorldCat Local</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Subject Guides</FONT></U></LI>
+<!--                    <li><a href="http://www.lib.lsu.edu/sp/subjects/index.php">Subject Guides</a></li> -->
+                    <LI><U><FONT COLOR=blue>Gov't Documents</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Reserves</FONT></U>
+                    <!-- <li><a href="#">more</a></li>-->
+                </UL>   
+                             
+                   
+                <H3>Find Articles</H3> 
+                <UL>
+                    <LI><U><FONT COLOR=blue>Indexes &amp; Databases</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Ejournals</FONT></U></LI>
+                 <!--   <li><a href="#">How to find Articles</a></li>-->
+                </UL>   
+                 
+                <H3>Other</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Gov't Documents</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Other Resources</FONT></U></LI>
+                </UL>   
+            
+               
+                <H3>Help</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Subject Librarians</FONT></U></LI>
+<!--                <li><a href="http://www.lib.lsu.edu/sp/subjects/staff.php?letter=Subject Librarians AZ">Subject Librarians</a></li> -->
+                    <LI><U><FONT COLOR=blue>Tutorials</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Technical Help</FONT></U></LI>
+                </UL>   
+            
+   
+        <!-- End 4 columns container -->
+    
+    </LI><!-- End 4 columns Item -->
+    
+  
+    <!-- Start services -->
+         <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////             SERVICES                ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+    
+        <LI><U><FONT COLOR=blue>Services</FONT></U><!-- Begin 4 columns Item -->
+    
+        <!-- Begin 4 columns container -->
+        
+    <!--        <div class="col_3">
+                <h2>Research</h2>
+            </div>
+    -->      
+         
+            
+            
+                    <H3>Instruction</H3>
+                <UL>
+                
+                    <LI><U><FONT COLOR=blue>Instruction Webpage</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>LIS 1001</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Tutorial Center (141 Middleton)</FONT></U>
+                    
+                    <LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Tutorials</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Request Instruction</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Reserve a Classroom</FONT></U></LI>
+               
+                </UL>   
+                 
+            
+       
+  
+    
+            
+            
+                <H3>Borrowing</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Interlibrary Loan</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Your Library Account</FONT></U></LI>
+              
+                    <LI><U><FONT COLOR=blue>Circulation Policies</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Reserves</FONT></U></LI>
+                   <!-- <li><a href="#">more</a></li>-->
+                </UL>   
+                
+                 <H3>Other</H3>
+                <UL>
+                <LI><U><FONT COLOR=blue>Disability Services</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Distance Education</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Study/ Presentation Rooms</FONT></U>
+                </UL>
+                 
+            
+    
+            
+            
+                <H3>Technology</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Help Desk</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Print Desk</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Find a Computer</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Technical Help</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Visualization Services Center (109 Middleton)</FONT></U>
+                 
+                </UL>  
+                 
+            
+    
+     <!--       <div class="col_1">
+            
+                <h3>Misc</h3>
+                <ul>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Logo</a></li>
+                    <li><a href="#">Flash</a></li>
+                    <li><a href="#">Illustration</a></li>
+                    <li><a href="#">More...</a></li>
+                </ul>   
+                 
+            </div>
+            -->
+        <!-- End 4 columns container -->
+    
+    </LI><!-- End 4 columns Item -->
+    
+    <!-- end services -->
+    
+         <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////             DEPARTMENTS             ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+
+	<LI><U><FONT COLOR=blue>Departments</FONT></U>
+    
+		
+        
+                
+                
+                    <UL>
+                        <LI><U><FONT COLOR=blue>Acquisitions</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Circulation</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Education Resources</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Gov't Documents</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Interlibrary Loan</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Music Resources</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Reference</FONT></U></LI>                     
+                        <LI><U><FONT COLOR=blue>Special Collections</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>More</FONT></U></LI>
+              
+                    </UL>   
+                     
+                
+                
+		
+        
+	</LI>
+
+
+     <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////              HELP                   ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+
+    <LI><U><FONT COLOR=blue>Help</FONT></U><!-- Begin 3 columns Item -->
+    
+        <!-- Begin 3 columns container -->
+            
+            
+                <H2>Help</H2>
+            
+            
+             
+    
+                <UL>
+                    <LI><U><FONT COLOR=blue>Technical Help</FONT></U></LI>
+                   
+                    <LI><U><FONT COLOR=blue>Tutorial Center</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Call Us</FONT></U> 225.578.8875</LI>
+                
+                </UL>   
+    
+            
+            
+            
+    
+                <UL>
+                    <LI><U><FONT COLOR=blue>Research Help</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Help Desk</FONT></U> 225.578.3375</LI>
+                    <LI><U><FONT COLOR=blue>Email Us</FONT></U></LI>
+               
+                </UL>   
+    
+            
+            
+            
+    
+                <UL>
+                    <LI><U><FONT COLOR=blue>FAQ</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>IM Us</FONT></U></LI>
+              
+                </UL>   
+    
+            
+            
+            
+                <H2>Search the Libraries Web Site</H2>
+                
+                     <FORM>
+                <INPUT WIDTH="17" NAME="image" HEIGHT="14" TYPE="image">
+                <INPUT NAME="q" TYPE="text">
+                <INPUT VALUE="www.lib.lsu.edu" NAME="sitesearch" TYPE="hidden">
+                </FORM>
+            
+            
+          <!--  <div class="col_3">
+                <img src="img/02.jpg" width="70" height="70" class="img_left imgshadow" alt="" />
+                <p><strong>Tutorial Lab</strong> Located in 141 Middleton Library, the lab offers tutoring in Math....(this should go under instruction)<a href="#">Read more...</a></p>
+    <br clear="all" />
+                <img src="img/01.jpg" width="70" height="70" class="img_left imgshadow" alt="" />
+                <p>Aliquam elementum felis quis felis consequat scelerisque. Fusce sed lectus at arcu mollis accumsan at nec nisi. Aliquam pretium mollis fringilla. Vestibulum tempor facilisis malesuada. <a href="#">Read more...</a></p>
+            </div>
+        -->
+        <!-- End 3 columns container -->
+        
+    </LI><!-- End 3 columns Item -->
+    
+         <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////           A TO Z                    ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+
+<LI><U><FONT COLOR=blue>A to Z</FONT></U></LI>
+</UL>
+  
+
+ 
+ <!--<link rel="stylesheet" type="text/css" href="/sp/assets/css/default.css" />
+-->
+  <H1>Database List: C</H1> 
+
+  
+    
+    
+
+    <U><FONT COLOR=blue>A</FONT></U><U><FONT COLOR=blue>B</FONT></U>C<U><FONT COLOR=blue>D</FONT></U><U><FONT COLOR=blue>E</FONT></U><U><FONT COLOR=blue>F</FONT></U><U><FONT COLOR=blue>G</FONT></U><U><FONT COLOR=blue>H</FONT></U><U><FONT COLOR=blue>I</FONT></U><U><FONT COLOR=blue>J</FONT></U><U><FONT COLOR=blue>K</FONT></U><U><FONT COLOR=blue>L</FONT></U><U><FONT COLOR=blue>M</FONT></U><U><FONT COLOR=blue>N</FONT></U><U><FONT COLOR=blue>O</FONT></U><U><FONT COLOR=blue>P</FONT></U><U><FONT COLOR=blue>R</FONT></U><U><FONT COLOR=blue>S</FONT></U><U><FONT COLOR=blue>T</FONT></U><U><FONT COLOR=blue>U</FONT></U><U><FONT COLOR=blue>V</FONT></U><U><FONT COLOR=blue>W</FONT></U><U><FONT COLOR=blue>Z</FONT></U><U><FONT COLOR=blue>All</FONT></U>    
+   
+    
+      
+        
+    <TABLE><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>C19: Nineteenth Century Index</FONT></U> 
+				
+				C19 Index is the bibliographic spine of 19th century  research, providing integrated access to the most important finding aids  for books, periodicals, official publications, newspapers and archives.  Users of C19 Index can query its 12 collections simultaneously, or can  conduct more detailed research using collection specific search screens.  C19 Index is a dynamic and growing resource, currently containing over  20 million bibliographic records for a full range of 19th century source  material. The links below provide more detail on the 12 collections  available in C19 Index.   <BR>
+<BR>
+C19 Index draws on 12 collections: 
+<UL>
+    <LI>American Periodicals Series</LI>
+    <LI>Archive Finder</LI>
+    <LI>British Periodicals</LI>
+    <LI>Dictionary of Nineteenth Century Journalism</LI>
+    <LI>House of Commons Parlimentary Papers</LI>
+    <LI>The Nineteenth Century</LI>
+    <LI>Nineteenth-Century Short Title Catalogue (NSTC)</LI>
+    <LI>Palmer's Index to the Times</LI>
+    <LI>Periodicals Index Online / Periodicals Archive Online (formerly Periodicals Contents Index (PCI) and PCI Full Text)</LI>
+    <LI>Poole's Index to Periodical Literature</LI>
+    <LI>The Wellesley Index to Victorian Periodicals, 1824-1900</LI>
+    <LI>the U.S. Congressional Serial Set</LI>
+</UL>  <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>CAB Reviews Archive</FONT></U> 
+				
+				A brand new reviews publication, using CABI's 90 years of expertise in  this area. CAB Reviews will complement the subject coverage of CAB  Abstracts, by focusing on animal science, veterinary medicine; applied  plant sciences; agriculture; nutrition and food science; natural  resources and environmental sciences. <BR> <BR> CAB Reviews will provide  the scientists, academics and students working in these fields with  analysis and information on the current research to complement their own  assessment. It will be an authoritative resource to help them keep  abreast of the latest developments and place their research efforts into  context.  			 		<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] </TD><TD><U><FONT COLOR=blue>CabDirect</FONT></U> 
+				
+				Including the CAB Abstracts and CAB Health, this is the leading database  for literature related to agriculture and applied life sciences,  including strong international coverage.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>CAJ: China Academic Journals</FONT></U> 
+				
+				CAJ is the most comprehensive, full-text database of  Chinese journals in the world. It comprises ten Series databases; of  these, LSU Libraries provides access to Series F:  Literature/History/Philosophy. <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Cambridge Histories Online</FONT></U> 
+				
+				Online access to the renowned texts of the Cambridge Histories series,  with access to the most up to date and authoritative scholarly content.   Coverage includes American and British history, general history, music,  religious studies, theater and performing arts, and more.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Cambridge Scientific Abstracts (CSA)</FONT></U> 
+				
+				Large collection of indexes, each of which focuses on a specific scientific field.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Cambridge University Press</FONT></U> 
+				
+				Welcome to Cambridge Journals Online (CJO), providing full text for over  one hundred journals in the sciences, social sciences, and humanities.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Caribbean Literature</FONT></U> 
+				
+				Starting with the literature produced in Spanish and French colonies in  the 1800s, the collection offers an extensive selection of 19th- and  20th-century works from every Caribbean country. As the database grows,  we will supplement the novels, short stories, and poems of these artists  with author interviews and reference works, including dictionaries of  various Creole languages.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information]  [Open Access]</TD><TD><U><FONT COLOR=blue>CARIS (Current Agriculture Research Information System)</FONT></U> 
+				
+				CARIS is the Current Agricultural Research Information System, which was  created by FAO in 1975 to identify and to facilitate the exchange of  information about current agricultural research projects being carried  out by - or on behalf of - developing countries.  An international  system, working on a cooperative basis, CARIS identifies projects  dealing with all aspects of agriculture: plant and animal production and  protection; post harvest processing of primary agricultural products;  forestry; fisheries; agricultural engineering; natural resources and the  environment as related to agriculture; food and human nutrition;  agricultural economics; rural development, and agricultural  administration; legislation, information, education and extension.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information]  [Some full text available] [Open Access]</TD><TD><U><FONT COLOR=blue>Catalog of Federal Domestic Assistance</FONT></U> 
+				
+				The Catalog of Federal Domestic Assistance is a government-wide  compendium of Federal programs, projects, services, and activities which  provide assistance or benefits to the  American public. It contains  financial and nonfinancial assistance programs administered by  departments and establishments of the Federal government.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information]  [Some full text available] [Open Access]</TD><TD><U><FONT COLOR=blue>Catalog of U.S. Government Publications</FONT></U><BR><EM>Note: </EM><EM>Unrestricted Access</EM> 
+				
+				The Catalog is a search and retrieval service that provides  bibliographic records of U.S. Government information products. Use it to  link to Federal agency online resources or identify materials  distributed to Federal Depository Libraries. Coverage begins with  January 1994 and new records are added daily. New Electronic Titles  contains online titles that are the latest entries in the Catalog or are  in the queue to be added to it. <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>CCH - Commerce Clearing House Tax Research</FONT></U> 
+				
+				This service provides information on federal tax, state tax, business  entity planning, financial and estate planning, securities, federal  banking law, capital changes, documents in the federal tax library, and  government contracts from 1971 to the present.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>CCH Tax Research</FONT></U> 
+				
+				This service provides information on federal tax, state tax, business  entity planning, financial and estate planning, securities, federal  banking law, capital changes, documents in the federal tax library, and  government contracts from 1971 to the present.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Census DVD Research</FONT></U><BR><EM>Note: </EM><EM>Available in Government Documents/Microforms, Middleton Basement, Room 53. Ask for assistance at Government Documents/Microforms Service Desk and see Library’s main informational pages for hours.</EM> 
+				
+				This database includes CDs and DVDs with census datasets for complete  historical analysis: Neighborhood Change Database, 1990 Long Form in  2000 Boundaries, 1980 in 2000 Boundaries, CensusCD 1990 Blocks, Census  Reference Package (1970, 1980, and 1990 Long Form products), Census 2000  Package (Long Form, Short Form, Redistricting, Blocks).<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information]  [Open Access]</TD><TD><U><FONT COLOR=blue>Census of Agriculture 1992/1997/2002</FONT></U> 
+				
+				Provides data on number of farms, land in farms, land use, irrigation,  crops, livestock,  poultry, value of farm products sold, hired farm  labor, injuries and deaths, direct sales for  human consumption,  production expenses, and operator characteristics. The  CD-ROM version  of the study of the United States' production agriculture taken every   five years at the national, state and county level. <BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information]  [Some full text available] [Open Access]</TD><TD><U><FONT COLOR=blue>CERN Document Server</FONT></U> 
+				
+				Over 650,000 bibliographic records, including 320,000 fulltext  documents, of interest to people working in particle physics and related  areas. Covers preprints, articles, books, journals, photographs, and  much more.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] </TD><TD><U><FONT COLOR=blue>Chemical Abstracts</FONT></U><BR><EM>Note: </EM><EM>You must first register before you can connect to CAS.  Click the "i" for instructions.</EM> 
+				
+				Scifinder is a database from Chemical Abstracts Service  offering  electronic access to Chemical Abstracts, which contains the largest  substance database, CAS  Registry, with more than 24 million  substances--including 12 million organic  substances. It is also the  world's most comprehensive database of chemical  literature and patents,  containing the most current information, with daily  updating by CAS  scientists. <BR><BR> We are now using the web version of SciFinder. <EM>You must first register before you can connect to CAS.</EM>  To register, click on the link we have provided in PAWS under Library  Resources, Off-campus access. During registration, you will create your  own username and password which you will subsequently use to logon to  SciFinder from the above link. <U><FONT COLOR=blue>Go to PAWS Registration.</FONT></U><BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information]  [Open Access]</TD><TD><U><FONT COLOR=blue>Chemical Carcinogenesis Research Information System (CCRIS)</FONT></U> 
+				
+				Chemical Carcinogenesis Research Information System - carcinogenicity,   mutagenicity, tumor promotion, and tumor inhibition data provided by the   National Cancer Institute (NCI).<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information]  [Open Access]</TD><TD><U><FONT COLOR=blue>ChemIDplus</FONT></U> 
+				
+				Numerous chemical synonyms, structures, regulatory list information, and  links to other databases containing information about the chemicals.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Children&#039;s Literature Comprehensive Database</FONT></U> 
+				
+				The Children's Literature Comprehensive Database (CLCD), offers more than 110,000 reviews of children's books-all full text.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] </TD><TD><U><FONT COLOR=blue>Choices</FONT></U> 
+				
+				Choices&nbsp; is an online version of the print edition of Simmons Study of Media and Markets. Choices&nbsp; provides marketing data that can be cross-tabulated to create demographic and psychographic profiles of consumers.<BR><BR> This database is part of Simmons OneView. To access it, you must go to the Simmons OneView database entry:<BR><BR> <U><FONT COLOR=blue>Simmons OneView</FONT></U> <BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>CINAHL Plus with Full Text</FONT></U> 
+				
+				CINAHL Plus with Full Text provides indexing for 3,024  journals from the fields of nursing and allied health, with coverage  dating as far back as 1937. <BR>
+<BR>
+Offering complete coverage of  English-language nursing journals and publications from the National  League for Nursing and the American Nurses' Association, CINAHL Plus  with Full Text covers nursing, biomedicine, health sciences  librarianship, alternative/complementary medicine, consumer health and  17 allied health disciplines. In addition, this database offers access  to health care books, nursing dissertations, selected conference  proceedings, standards of practice, educational software, audiovisuals  and book chapters, as well as Evidence-Based Care Sheets. Searchable  cited references for more than 1,160 journals are also included.
+<BR>
+<BR>
+CINAHL Plus with Full Text provides full text for 337 journals, plus  legal cases, clinical innovations, critical paths, drug records,  research instruments and clinical trials. PDF backfiles to 1937 are also  included.   <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Cinema Image Gallery</FONT></U> 
+				
+				Cinema Image Gallery presents the history of  movie-making through a wide range of high-quality images of films in  production: directors working on-set with the stars, set, costume and  production design as well as hair and make-up shots and rare behind-the  scenes material. Cinema Image Gallery also offers an extensive TV stills  archive featuring classic and modern TV: comedies, dramas, series, TV  movies, game shows and thousands of pictures of the stars of this  medium.<BR> &nbsp;  <UL>     <LI>Approximately 200,000 superior-quality images - substantial quarterly additions</LI>     <LI>Presents a wide range of time and place&mdash;spans over a hundred years,  from the latter part of the 19th century to the beginning of the 21st  century.</LI>     <LI>rovides unprecedented access to movies and television for education, research, and enjoyment.</LI>     <LI>A treasure-trove of over 4,000 poster art and lobby cards used to promote the movies.</LI>     <LI>All images rights cleared for education use.</LI>     <LI>Links to reviews and other articles about the titles.</LI>     <LI>Links to full video, free online, for almost 100 films. Examples: A  Farewell to Arms (1932), The Hunchback of Notre Dame (1945), Cyrano De  Bergerac (1950), Our Town (1940), and Birth of a Nation (1915).</LI>     <LI>Portrait photography and biographies of the stars of film and TV.</LI>     <LI>Links to biographies.</LI>     <LI>Search by Title, Director, Actor Names, Genre, Country of  Production, Subject of Film, Screenwriter, Awards (Academy Award, Best  Costume Design, Best Screenplay, Cannes Film Festival, Screen Actors  Guild)</LI> </UL> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information]  [Some full text available] [Open Access]</TD><TD><U><FONT COLOR=blue>CiteSeer Scientific Literature Digital Library</FONT></U> 
+				
+				CiteSeer is a scientific literature digital library and search engine  that focuses primarily on the literature in computer and information  science. CiteSeer aims to improve the dissemination and feedback of the  scientific literature and to provide improvements in functionality,  usability, availability, cost, comprehensiveness, efficiency, and  timeliness in the access of scientific and scholarly knowledge.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Civil War: A Newspaper Perspective</FONT></U> 
+				
+				A collection of African-American newspapers containing information   about the cultural life and history during the 1800s, including  first-hand  reports of the major events and issues of the day, such as  the Mexican  War, Presidential and congressional addresses,  congressional abstracts,  business and commodity markets, the  humanities, world travel, and  religion. The database also contain large  numbers of early biographies,  vital statistics, essays and editorials,  poetry and prose, and advertisements  all of which embody the  African-American experience.  <BR><BR> The database contains articles from the following journals: Freedom's   Journal (New York, NY), The Colored American (Weekly Advocate)  (New  York, NY), The North Star (Rochester, NY), The National Era   (Washington, D.C.), Provincial Freeman (Chatham, Canada West),   Frederick Douglass Paper (Rochester, NY), The Christian Recorder   (Philadelphia, PA). Offers full-text online news, business, legal,  legislative, and regulatory  information, updated daily.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Classical Scores Library</FONT></U> 
+				
+				Classical Scores Library will contain 400,000 pages of  classical scores from both in-copyright and public domain editions. The  major composers output is represented, as well as many lesser known  composers and works. <BR>
+<BR>
+Content in the first release includes 800  scores (approx. 25,000 pages) of in-copyright material from Boosey and  Hawkes and selected material from the University Music Editions  microfilm series. 49 composers' works are included in this release,  including notable 20th-century composers such as Aaron Copland, Benjamin  Britten, Igor Stravinsky, and Ned Rorem. This first release contains 16  full operas, 7 oratorios, over 50 string quartets, 27 symphonies, 60  concerti, and more.
+<BR><BR>
+The collection includes works spanning  time periods from the Renaissance to the 21st century. Coverage of  score types is comprehensive, with full scores, study scores, piano and  vocal scores, and piano reductions.   <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Classical Singer</FONT></U> 
+				
+				The online version of music journal &quot;Classical Singer,&quot; which  specializes in classical music and opera related news and information.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>CollegeSource Online</FONT></U><BR><EM>Note: </EM><EM>Only available in Middleton Library</EM> 
+				
+				Features over 11,400 College Catalogs in complete cover-to-cover  original page format--including 2-year, 4-year, graduate, and  professional schools.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Combined Chemical Dictionary on CD-ROM</FONT></U><BR><EM>Note: </EM><EM>Available in Middleton 109 via Start/Programs/Combined Chemical Dictionary.</EM> 
+				
+				The Combined Chemical Dictionary on CD-ROM provides  access to descriptive and numerical data on chemical, physical and  biological properties of compounds; systematic and common names of  compounds; literature references; structure diagrams and their  associated connection tables. Entries come from the following  dictionaries: <BR> <BR> <EM>Dictionary of Analytical Reagents</EM> (16,000 compounds) <BR> <EM>Dictionary of Carbohydrates</EM> (29,000 compounds) <BR> <EM>Dictionary of Drugs</EM> (47,000 compounds) <BR> <EM>Dictionary of Inorganic and Organometallic Compounds</EM> (105,600 compounds) <BR> <EM>Dictionary of Natural Products</EM> (200,000 compounds) <BR> <EM>Dictionary of Organic Compounds</EM> (281,000 compounds) <BR><BR> Searching can be done by structure, CAS-RN, name, molecular formula, property values and other points of access. <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Communication and Mass Media Complete</FONT></U> 
+				
+				Communication &amp; Mass Media Complete provides robust and quality  research information in areas related to communication and mass media.  This database originated with the acquisition and subsequent merging of  two popular databases in the fields of communication and mass media  studies -- CommSearch (formerly produced by the National Communication  Association (NCA)), and Mass Media Articles Index (formerly produced by  Pennsylvania State University). Communication &amp; Mass Media Complete  provides an invaluable resource for students, researchers, and educators  interested in any and all aspects of communication and mass media.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] </TD><TD><U><FONT COLOR=blue>Compact Disclosure</FONT></U><BR><EM>Note: </EM><EM>CD-ROM available at the Middleton Library Reference Desk</EM> 
+				
+				Access financial statements, company ratios, corporate stock ownership (CD-ROM version), and management reports.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information]  [Open Access]</TD><TD><U><FONT COLOR=blue>Company Reports</FONT></U> 
+				
+				The Company Reports database includes brief bibliographic information on  10-K and Annual Reports held in print and microform at Middleton  Library in Government Documents. The reports are from various companies  throughout the United States from the early 20th century to the present.  The Company Reports database is searchable by Company Name and Document  Type (10-K or Annual Report).<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Compendex</FONT></U> 
+				
+				Compendex is a bibliographic database of engineering research  literature, containing references to over 5000 engineering journals and  conferences. Ei covers literature that makes a definite contribution to  knowledge in the subject areas of engineering and applied science. About  half the citations (from 2600 journals and conferences) include  abstracts and indexing in the records. CompendexWeb is the internet  version of Engineering Index, the world's premier source of engineering  abstracts. The database adds about 220,000 abstracts yearly. Abstracts  come from 2600 engineering journals, conferences, and reports. All areas  of engineering are covered. Approximately 22% of the database is  conference literature, and 90% of the source documents are in English.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Compustat</FONT></U><BR><EM>Note: </EM><EM>Available on CD-ROM at the Middleton Library Reference Desk. Also access is available through WRDS (Wharton Research Data Services).</EM> 
+				
+				Compustat contains fundamental financial, statistical, and market data  for corporations listed on the New York Stock Exchange, American  StockExchange, National Association of Securities Dealers Automated  Quotations, and Over-the-Counter markets. Locate annual income statement  data, quarterly data, financial ratios, number of employees, business  segments, geographic areas, industry composites, aggregates, and  indexes.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Computer Science Index</FONT></U> 
+				
+				The Computer Science Index (formerly called Computer Literature Index), a  database created by EBSCO Publishing, provides abstracting and indexing  of academic journals, professional publications and other reference  sources at the highest scholarly and technical levels of computer  science. The database contains more than 300,000 records from more than  500 periodicals and books, with coverage dating back to the mid 1950s.<BR><BR>   Computer Science Index focuses on subjects such as artificial  intelligence, expert systems, system design, data structures, computer  theory, computer systems and architecture, software engineering,  human-computer interaction, new technologies, social and professional  context, and much more. Enhancements to the original database include  hundreds of new titles and searchable references for key academic  journals. The product also includes editor-selected articles from  magazine and journal titles in related areas of study.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Computer Source</FONT></U> 
+				
+				Computer Source provides researchers with the latest  information and current trends in high technology. This database offers  full text for more than 300 publications, covering topics such as  computer science, programming, artificial intelligence, cybernetics,  information systems, robotics, and software and provides indexing and  abstracts for nearly 450 publications. <BR> <BR> Computer Source offers  full text journals such as AI Communications, Applied Artificial  Intelligence, Computer Science Education, Cybernetics &amp; Systems,  Electromagnetics, Expert Systems, Information Systems Research,  International Journal of Computational Engineering Science,  International Journal of Electronics, International Journal of  Foundations of Computer Science, International Journal of Systems  Science, Journal of Information Systems, Journal of Management  Information Systems, MIS Quarterly, Monte Carlo Methods &amp;  Applications, Neural Computation, Theory of Computing Systems,  Transactions of the Institute of Measurement &amp; Control and many  more.  <BR> <BR> Leading general magazines are also provided  including: <EM>eWeek</EM>, <EM>Fast Company</EM>, <EM>MacWorld</EM>, <EM>PC Magazine</EM>, <EM>PC World</EM>, <EM>Red  Herring</EM>, <EM>Software Magazine</EM>, and more. Many full text titles are available in  native (searchable) PDF, or scanned-in-color. Full text information in  this database dates as far back as 1985. <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Conference Papers Index</FONT></U> 
+				
+				Provides citations to papers and poster sessions presented at  conferences in physics, engineering and materials science, and, since  1995, in the life sciences, environmental sciences and the aquatic  sciences. Information is derived from final programs, abstracts booklets  and published proceedings, and questionnaire responses. Begins 1982.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Congressional Hearings (see ProQuest Congressional Hearings)</FONT></U> 
+				
+				The ProQuest Congressional Hearings Digital Collection includes full  transcripts of the proceedings, including all oral statements, committee  questions, and discussion. Also included are the texts of related  reports, statistical analyses, correspondence, exhibits, and articles  presented by witnesses or inserted into the record by committee members  and staff.   NOTE: Use Advanced Search to select only the Hearings.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information]  [Open Access]</TD><TD><U><FONT COLOR=blue>Core Historical Literature of Agriculture (CHLA)</FONT></U> 
+				
+				The Core Historical Literature of Agriculture (CHLA) is a core  electronic collection of agricultural texts published between the early  nineteenth century and the middle to late twentieth century. Full-text  materials cover agricultural economics, agricultural engineering, animal  science, crops and their protection, food science,forestry, human  nutrition, rural sociology, and soil science. Scholars have selected the  titles in this collection for their historical importance. Their  evaluations and 4,500 core titles are detailed in the seven  volume  series The Literature of the Agricultural Sciences, Wallace C. Olsen,  series editor.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Counseling and Therapy in Video</FONT></U> 
+				
+				Features more than 175 therapists practicing more than 50 separate  therapeutic approaches. From Arnold Lazarus on Behavioral Therapy to  Irvin Yalom on Group Therapy, this collection features renowned experts  explaining and applying their methods in a variety of real-to-life  situations and environments.  <BR><BR> Several types of videos and supplementary materials have been chosen to  provide a well-rounded collection that will be of interest to students,  academics, and professionals alike.  <BR><BR> Counseling Sessions and Demonstrations include filmed footage of actual  therapy sessions, re-enacted therapy sessions, and scripted sessions  designed by counseling professionals to illustrate common issues and  scenarios that arise during courses of therapy.  <BR><BR> Consultations feature experts in particular courses of therapy offering  advice on the application of their methods. These videos often include  scenes of counseling sessions interspersed with analysis and discussion  between the consultant, the practicing therapists, and the clients.  <BR><BR> Lectures, presentations, and interviews feature well-known therapists  discussing their own work and issues affecting the larger fields of  mental health and wellness.  <BR><BR> Teaching and Discussion Guides are downloadable PDF documents designed  to facilitate the use of the videos in an educational setting.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Country Reports via Business Source Complete</FONT></U> 
+				
+				Business Source&reg; Complete is a scholarly business database, providing  the leading collection of bibliographic and full text content.  <BR><BR>Business Source Complete exceeds all other databases available  in terms of its premium content of peer-reviewed, business related  journals. Included as part of the comprehensive coverage offered by this  database are indexing and abstracts for the most important scholarly  business journals, dating back as far as 1886.  <BR><BR>In addition to the searchable cited references provided for more  than 1,200 journals, Business Source Complete contains detailed author  profiles for the 40,000 most-cited authors in the database. Journal  ranking studies reveal that Business Source Complete is the  overwhelmingly superior database for full text journals in all  disciplines of business, including marketing, management, MIS, POM,  accounting, finance and economics. Additional full text, non-journal  content includes financial data, books, monographs, major reference  works, conference proceedings, case studies, investment research  reports, industry reports, market research reports, country reports,  company profiles, SWOT analyses and more.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>County and City Data Book</FONT></U> 
+				
+				Provides data on counties, cities of 5000 or more, and towns and places  of over 2500, including extensive data from the 1990 Census. Coverage  includes land area, population, households, vital statistics, labor  force, education, crime, and for cities, form of government.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information]  [Open Access]</TD><TD><U><FONT COLOR=blue>County Business Patterns</FONT></U> 
+				
+				Compiles data on numbers of employees, payroll, and numbers of  establishments for major industries in the United States,  on federal,  state, and county levels.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>CQ Press</FONT></U> 
+				
+				Created and hosted by CQ Press, the CQ Press Electronic Library (CQEL)  is the definitive reference resource for research in American  government, politics, history, public policy, and current affairs. A  wealth of CQ Press resources and years of journalistic and editorial  expertise are combined in this indispensable reference collection. These  reference products offer researchers&mdash;whether students, scholars,  professionals, or interested citizens&mdash;a range of tools for discovering  and understanding CQ Press's authoritative content.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>CQ Researcher Plus Archive</FONT></U> 
+				
+				The CQ Researcher explores a single &quot;hot&quot; issue in the news each week.  Topics range from social and teen issues to environment, health,  education and science and technology. There are 44 reports, each around  12,000 words, produced each year. The reports include a pro-con feature,  a chronology, bibliographies and a list of contacts.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>CQ Weekly</FONT></U> 
+				
+				Each issue of CQ Weekly - in your stacks or fully archived to 1983 on  the Web - looks forward and back. Your readers get in-depth reports on  issues looming on the congressional horizon, plus a complete wrap up the  previous week's news, including the status of bills in play,  behind-the-scenes maneuvering, committee and floor activity, debates and  all roll-call votes.  Just as important, CQ Weekly is written in plain-English prose that  makes it easy for people &quot;outside the beltway&quot; to understand complex  legislation, and its ramifications, just as well as any Washington  insider.  Simply put, no matter what legislative issue your readers follow or  research, CQ Weekly is the one source that can be relied on to cover it,  to make it simple to understand, and to do so in a manner that is  even-handed and accurate.  CQ Weekly Online includes an archive dating back to 1983 and access by  IP authentication. Search by topic, page number, committee, &quot;exact  phrases or words,&quot; bill number, byline or reporter and by Boolean  full-text and date searches. Detailed floor votes dating back to August  1983 are easily retrieved.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Credo Reference</FONT></U> 
+				
+				Credo Reference is a general reference solution for learners and  librarians. Offering 551 hundred highly-regarded titles from over 70  publishers; Credo General Reference covers every major subject. <BR><BR> Credo Reference is an online reference service made up of full-text  books from the world's best publishers. Whether you're working on a  research paper, trying to win trivia or just curious, Credo Reference  has something for you. <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Crop Physiology Abstracts via CabDirect</FONT></U> 
+				
+				Including the CAB Abstracts and CAB Health, this is the leading database  for literature related to agriculture and applied life sciences,  including strong international coverage.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>CSA Illustrata: Natural Sciences</FONT></U> 
+				
+				CSA Illustrata: Natural Sciences is the first in a  series of CSA Illustrata databases of searchable tables, figures,  graphs, charts and other illustrations from the scholarly research and  technical literature. <BR>
+<BR>
+CSA Illustrata: Natural Sciences is interdisciplinary, covering a wide variety of journals from all major areas such as:
+<BR><BR>
+Biology, Earth Sciences, Environmental Studies, Medical Sciences,  Agriculture, Fish and Fisheries, Education, Geography, Veterinary  Science, Food and Food Industries, Pharmacy and Pharmacology,  Meteorology, Public Health and Safety, Water Resources, Conservation,  and Forests and Forestry. <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Current Index to Statistics</FONT></U> 
+				
+				The Current Index to Statistics is a bibliographic index to publications  in statistics and related fields. References are drawn from 162 core  journals (as of 2005) that are fully indexed, non-core journals from  which articles are selected that have statistical content, proceedings  and edited books, and other sources. The CIS Extended Database (CIS-ED), available on-line (Web edition)  indexes the entire contents of &quot;core journals&quot;, in most cases from 1975  (or first issue if later) to the current end year, and pre-1975 coverage  for several of them, selected articles since 1975 from about 1200  additional journals (cumulatively), and about 11,000 books in statistics  published since 1975.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U></TABLE>        
+    
+    
+	
+
+	
+    
+        
+        
+            Key to Icons
+        
+         
+
+<P>
+[Information]  Information<BR>
+
+
+ [Restricted Resource]  Campus Faculty, Staff &amp; Students only<BR>
+
+ 
+<U><FONT COLOR=blue>[Some full text available] Some full text</FONT></U><BR>
+
+
+<U><FONT COLOR=blue>[Open Access Resource] Open Access (freely available to anyone)</FONT></U><BR>
+
+
+<U><FONT COLOR=blue>[Trial] Free Trials</FONT></U><BR>
+
+
+
+<!--<img src="http://www.lib.lsu.edu/sp/assets/images/icons/camera.gif" border="0" alt="Resource includes images"> Images<br />
+
+<img src="http://www.lib.lsu.edu/sp/assets/images/icons/television.gif" border="0" alt="Resource includes video"> Video files<br />
+
+<img src="http://www.lib.lsu.edu/sp/assets/images/icons/sound.gif" border="0" alt="Resource includes audio"> Audio files<br />
+-->
+</P>
+ 
+    
+    
+    
+        <!-- start pluslet -->
+    <!-- this is the newest databases pluslet maybe add back in after we go to the wide format... -->
+     
+        
+            Newest Databases
+        
+         <UL>
+<LI><U><FONT COLOR=blue>NewsBank</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Rock and Roll, Counter Culture, Peace and Protest</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Victorian Popular Culture</FONT></U></LI>
+<LI><U><FONT COLOR=blue>The First World War: Personal Experience</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Mass Observation Online</FONT></U></LI>
+</UL>
+ 
+     
+    <!-- end pluslet -->
+    
+      
+        
+            Information User Restrictions
+        
+          
+        
+<P>        Use of the LSU Libraries' electronic resources is subject to U.S. Copyright Law. Excessive downloading, printing, and/or electronic dissemination of resource content by the user is prohibited. Restrictions on other uses may apply. Electronic information subsidized by the LSU Libraries is for use in LSU classes and research. Databases are restricted to academic use only. Fair use guidelines are specifically applicable to use of information in a University setting. These are included in the <U><FONT COLOR=blue>Libraries Copyright Policy</FONT></U>.
+</P>
+<P>See the <U><FONT COLOR=blue>Database Access Policy</FONT></U> for information regarding authorized users.</P>
+        
+        
+    
+    
+    
+
+    <BR>
+	
+
+
+
+<BR>
+ 
+ <U><FONT COLOR=blue>[LSU Logo]</FONT></U>
+<BR><U><FONT COLOR=blue>LSU Libraries</FONT></U>
+<BR>Baton Rouge, LA 70803
+<BR>Tel (225) 578-5652
+<BR>Fax (225) 578-9432 
+
+
+
+<!-- AddThis Button END -->
+<BR> 
+
+<UL>
+<LI><U><FONT COLOR=blue>LSU Libraries</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Contact Us</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Mobile Website</FONT></U></LI>
+<!--<li><a href="http://www.lsu.edu">Louisiana State University</a></li>-->
+<LI>
+<U><FONT COLOR=blue>[Library Blog]</FONT></U>
+<U><FONT COLOR=blue>[RSS Feed]</FONT></U>
+<U><FONT COLOR=blue>[Library Facebook Page]</FONT></U>
+<U><FONT COLOR=blue>[Library Twitter Page] </FONT></U>
+<!-- AddThis Button BEGIN -->
+
+//var addthis_config = {
+ //  ui_click: true
+//}
+
+<!--a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa4a8b0c2a79cf3130">
+<img style="verticalalign:middle;" src="http://s7.addthis.com/static/btn/v2/lgbookmarken.gif" width="125" height="16" alt="Bookmark and Share" style="border:0" />
+</a>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=xa4a8b0c2a79cf3130"></script> -->
+</LI>
+</UL>
+<BR>
+<CENTER>Copyright &copy; 1996 - <!--#config timefmt="%Y" --><!--#echo var="DATE_LOCAL" --> LSU Libraries<BR> <!--<img src="/images/external.png" /><span class="small">Links away from LSU.edu</span> --></CENTER><BR>
+
+
+<!--<div class="right">
+<a href="http://www.lsu150.com/"><img src="/images/150year.jpg" /></a>
+
+
+</div> -->
+
+<BR>
+ 
+ 
+
+
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22589452-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+    $(document).ready(function(){
+
+
+        var stripeholder = ".zebra";
+        // add rowstriping
+        stripeR();
+
+
+        $("[id*=show]").live("change", function() {
+
+            var showtype_id = $(this).attr("id").split("-");
+            //alert("u clicked: " + showtype_id[1]);
+            unStripeR();
+            $(".type-" + showtype_id[1]).toggle();
+            stripeR();
+
+        });
+
+        // show db details
+        $("img[id*=bib-]").live("click", function() {
+            var bib_id = $(this).attr("id").split("-");
+            $(this).parent().parent().find(".list_bonus").toggle()
+        });
+
+        function stripeR(container) {
+            $(".zebra").not(":hidden").filter(":even").addClass("evenrow");
+            $(".zebra").not(":hidden").filter(":odd").addClass("oddrow");
+        }
+
+        function unStripeR () {
+            $(".zebra").removeClass("evenrow");
+            $(".zebra").removeClass("oddrow");
+        }
+
+
+    });

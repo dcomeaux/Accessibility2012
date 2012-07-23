@@ -1,0 +1,999 @@
+
+<HTML>
+  <HEAD>
+    <TITLE>University of Southern Mississippi Libraries</TITLE>
+    <META CONTENT="text/html; charset=utf-8">
+    
+    
+   
+    
+
+
+
+
+
+
+ 
+    <!-- Additional CSS Start -->
+     
+    
+    /* SpryTabbedPanels.css - version 0.4 - Spry Pre-Release 1.6 */
+
+/* Copyright (c) 2006. Adobe Systems Incorporated. All rights reserved. */
+
+/* Horizontal Tabbed Panels
+ *
+ * The default style for a TabbedPanels widget places all tab buttons
+ * (left aligned) above the content panel.
+ */
+
+/* This is the selector for the main TabbedPanels container. For our
+ * default style, this container does not contribute anything visually,
+ * but it is floated left to make sure that any floating or clearing done
+ * with any of its child elements are contained completely within the
+ * TabbedPanels container, to minimize any impact or undesireable
+ * interaction with other floated elements on the page that may be used
+ * for layout.
+ *
+ * If you want to constrain the width of the TabbedPanels widget, set a
+ * width on the TabbedPanels container. By default, the TabbedPanels widget
+ * expands horizontally to fill up available space.
+ *
+ * The name of the class ("TabbedPanels") used in this selector is not
+ * necessary to make the widget function. You can use any class name you
+ * want to style the TabbedPanels container.
+ */
+.TabbedPanels {
+    margin-left: -75px;
+    padding: 0px;
+    float: left;
+    clear: none;
+    width: 100%; /* IE Hack to force proper layout when preceded by a paragraph. (hasLayout Bug)*/
+}
+
+/* This is the selector for the TabGroup. The TabGroup container houses
+ * all of the tab buttons for each tabbed panel in the widget. This container
+ * does not contribute anything visually to the look of the widget for our
+ * default style.
+ *
+ * The name of the class ("TabbedPanelsTabGroup") used in this selector is not
+ * necessary to make the widget function. You can use any class name you
+ * want to style the TabGroup container.
+ */
+.TabbedPanelsTabGroup {
+margin-left: 5px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    
+    width: 410px;
+}
+
+/* This is the selector for the TabbedPanelsTab. This container houses
+ * the title for the panel. This is also the tab "button" that the user clicks
+ * on to activate the corresponding content panel so that it appears on top
+ * of the other tabbed panels contained in the widget.
+ *
+ * For our default style, each tab is positioned relatively 1 pixel down from
+ * where it wold normally render. This allows each tab to overlap the content
+ * panel that renders below it. Each tab is rendered with a 1 pixel bottom
+ * border that has a color that matches the top border of the current content
+ * panel. This gives the appearance that the tab is being drawn behind the
+ * content panel.
+ *
+ * The name of the class ("TabbedPanelsTab") used in this selector is not
+ * necessary to make the widget function. You can use any class name you want
+ * to style this tab container.
+ */
+.TabbedPanelsTab {
+    position: relative;
+    top: 1px;
+    float: left;
+    padding: 4px 10px;
+    margin: 0px 1px 0px 0px;
+    font: bold 0.7em sans-serif;
+    background-color: #cecece;
+    list-style: none;
+    border-left: solid 1px #CCC;
+    border-bottom: solid 1px #999;
+    border-top: solid 1px #999;
+    border-right: solid 1px #999;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    cursor: pointer;
+}
+
+/* This selector is an example of how to change the appearnce of a tab button
+ * container as the mouse enters it. The class "TabbedPanelsTabHover" is
+ * programatically added and removed from the tab element as the mouse enters
+ * and exits the container.
+ */
+.TabbedPanelsTabHover {
+    background-color: #cecece;
+}
+
+/* This selector is an example of how to change the appearance of a tab button
+ * container after the user has clicked on it to activate a content panel.
+ * The class "TabbedPanelsTabSelected" is programatically added and removed
+ * from the tab element as the user clicks on the tab button containers in
+ * the widget.
+ *
+ * As mentioned above, for our default style, tab buttons are positioned
+ * 1 pixel down from where it would normally render. When the tab button is
+ * selected, we change its bottom border to match the background color of the
+ * content panel so that it looks like the tab is part of the content panel.
+ */
+.TabbedPanelsTabSelected {
+    color: white;
+    border-bottom: 1px solid #272727;
+    background-color: #272727;
+}
+
+/* This selector is an example of how to make a link inside of a tab button
+ * look like normal text. Users may want to use links inside of a tab button
+ * so that when it gets focus, the text *inside* the tab button gets a focus
+ * ring around it, instead of the focus ring around the entire tab.
+ */
+.TabbedPanelsTab a {
+    color: black;
+    text-decoration: none;
+}
+
+/* This is the selector for the ContentGroup. The ContentGroup container houses
+ * all of the content panels for each tabbed panel in the widget. For our
+ * default style, this container provides the background color and borders that
+ * surround the content.
+ *
+ * The name of the class ("TabbedPanelsContentGroup") used in this selector is
+ * not necessary to make the widget function. You can use any class name you
+ * want to style the ContentGroup container.
+ */
+.TabbedPanelsContentGroup {
+    clear: both;
+    border-left: solid 1px #CCC;
+    border-bottom: solid 1px #CCC;
+    border-top: solid 1px #999;
+    border-right: solid 1px #999;
+    background-color: #cecece;
+    width:410px;
+    margin-left:5px;
+    margin-bottom:5px;
+}
+
+/* This is the selector for the Content panel. The Content panel holds the
+ * content for a single tabbed panel. For our default style, this container
+ * provides some padding, so that the content is not pushed up against the
+ * widget borders.
+ *
+ * The name of the class ("TabbedPanelsContent") used in this selector is
+ * not necessary to make the widget function. You can use any class name you
+ * want to style the Content container.
+ */
+.TabbedPanelsContent {
+    padding: 4px;
+}
+
+/* This selector is an example of how to change the appearnce of the currently
+ * active container panel. The class "TabbedPanelsContentVisible" is
+ * programatically added and removed from the content element as the panel
+ * is activated/deactivated.
+ */
+.TabbedPanelsContentVisible {
+}
+
+/* Vertical Tabbed Panels
+ *
+ * The following rules override some of the default rules above so that the
+ * TabbedPanels widget renders with its tab buttons along the left side of
+ * the currently active content panel.
+ *
+ * With the rules defined below, the only change that will have to be made
+ * to switch a horizontal tabbed panels widget to a vertical tabbed panels
+ * widget, is to use the "VTabbedPanels" class on the top-level widget
+ * container element, instead of "TabbedPanels".
+ */
+
+/* This selector floats the TabGroup so that the tab buttons it contains
+ * render to the left of the active content panel. A border is drawn around
+ * the group container to make it look like a list container.
+ */
+.VTabbedPanels .TabbedPanelsTabGroup {
+    float: left;
+    width: 10em;
+    height: 20em;
+    background-color: #272727;
+    position: relative;
+    border-top: solid 1px #999;
+    border-right: solid 1px #999;
+    border-left: solid 1px #CCC;
+    border-bottom: solid 1px #CCC;
+}
+
+/* This selector disables the float property that is placed on each tab button
+ * by the default TabbedPanelsTab selector rule above. It also draws a bottom
+ * border for the tab. The tab button will get its left and right border from
+ * the TabGroup, and its top border from the TabGroup or tab button above it.
+ */
+.VTabbedPanels .TabbedPanelsTab {
+    float: none;
+    margin: 0px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+/* This selector disables the float property that is placed on each tab button
+ * by the default TabbedPanelsTab selector rule above. It also draws a bottom
+ * border for the tab. The tab button will get its left and right border from
+ * the TabGroup, and its top border from the TabGroup or tab button above it.
+ */
+.VTabbedPanels .TabbedPanelsTabSelected {
+    background-color: #272727;
+    color: white;
+    border-bottom: solid 1px #999;
+}
+
+/* This selector floats the content panels for the widget so that they
+ * render to the right of the tabbed buttons.
+ */
+.VTabbedPanels .TabbedPanelsContentGroup {
+    clear: none;
+    float: left;
+    padding: 0px;
+    width: 30em;
+    height: 20em;
+}
+
+.t4columnLines {
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #666666;
+    padding-bottom: 7px;
+}
+.t4columnLinesBottom {
+    border-bottom-color: #666666;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+.t4catalogSearch1 {
+    margin-top: auto;
+    margin-left: 25px;
+}
+.t4catalogSearch2 {
+    margin-top: 4px;
+    margin-left: 0px;
+}
+.t4WholeTableBorder {
+    border: 1px solid #000000;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.t4AndInfo1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+.t4newAndInfo2 {
+    margin-bottom: 10px;
+}
+
+
+.t4featuredResource {
+    padding-left: 15px;
+}
+
+
+
+#mainContent {
+    padding: 0px;
+    float: right;
+    width: 200px;
+    margin-left: 55px;
+    /*border-right-width: thin;
+    border-right-style: solid;
+    border-top-color: #000000;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+#body1 a
+{
+color: #000;
+text-decoration: underline;
+}
+
+#body1 a:hover
+{
+color: #808080;
+
+text-decoration: underline;  
+}   
+    
+html
+{
+    height: 100%;
+    background-color: #272727;
+}
+
+body
+{
+    font-family: Arial, Helvetica, Verdana, "Bitstream Vera Sans", sans-serif; 
+    font-size: 81.25%;
+    padding: 0;
+    margin: 0;
+    line-height: 150%;
+}
+
+.submit
+{
+    background: url('/assets/images/buttonbg.gif') #D7D7D7 repeat-x center;
+    border-top: 1px solid #C4C4C4;
+    border-left: 1px solid #C4C4C4;
+    border-right: 1px solid #C4C4C4;
+    border-bottom: 1px solid #6C6C6C;
+    color: #000000;
+}
+
+#pageWidth
+{
+    width: 960px;
+    margin: 0 auto;
+}
+
+#skiplinks
+{
+    display:none;
+}
+
+#headerImage
+{
+    float: left;
+    margin-top: .75em;
+    border: 0;
+}
+
+#search
+{
+    float: right;
+    margin-right: .16em;
+    
+}
+
+#searchBox
+{
+    background-image: url("/assets/images/searchBox2.png");
+    height: 27px;
+    width: 525px;
+    margin-top: .7em;
+}
+
+#searchBoxContent
+{
+    clear: left;
+    padding-left: .8em;
+    padding-top: .2em;
+}
+
+#searchBoxTextLabel
+{
+    display: none;
+}
+
+#searchBoxForm
+{
+    margin: 0em;
+     
+}
+
+.searchBoxText
+{
+    width: 9.5em;
+    font-size: .8em;
+    color: #818181;
+    border: 1px solid #979797;
+    padding: 0;
+}
+
+.searchBoxTextSubmit
+{
+    vertical-align:middle;
+    margin-left: -5px;
+
+}
+
+#searchBoxLinks
+{
+    color: #000000;
+    font-size: .90em;
+}
+
+#searchBoxLinks a:link, #searchBoxLinks a:visited, #searchBoxLinks a:active
+{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+    text-decoration: none;
+    font-size: .8em;
+    padding-left: .9em;
+    padding-right: .9em; 
+}
+
+#searchBoxLinks a:hover
+{
+    text-decoration: underline;
+}
+
+#sectionSeperator
+{
+    clear: left;
+}
+
+#quickLinks
+{
+    z-index: 999;
+    position: absolute;
+    font-size: .7em;
+    margin-left: 21em;
+    background-color: #a1a1a1;
+    border: 1px solid #FFFFFF;
+    width: 14em;
+    display: none;
+}
+
+#quickLinks a:link, #quickLinks a:visited, #quickLinks a:active
+{
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+#quickLinks a:hover
+{
+    text-decoration: underline;
+}
+.quickLinksLink
+{
+    padding: .75em;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+#mainContainerTopBorder
+{
+    
+    background-image: url("/assets/images/mainContentTopBorder.jpg");
+    background-repeat: no-repeat;
+    border: 0em;
+    margin: 0em;
+    padding: 0em;
+    height: 45px;  
+    margin-bottom: 0px;
+}
+
+#headerLinks
+{
+    
+    width: 100%;
+    padding-top: .45em;
+    float: left;
+    color: #333333;
+    font-size: 1.077em;
+    border: 0em;
+    font-family: "Lucida Sans Unicode","Lucida Grande",sans-serif;
+}
+
+#headerLinks a:link, #headerLinks a:visited, #headerLinks a:active
+{
+    color: #000000;
+    text-decoration: none;
+}
+
+#headerLinks a:hover
+{
+    color: #333333;
+    text-decoration: underline;
+}
+
+.headerLinksSpacer
+{
+    font-size: 1.25em;
+    padding-left: .8em;
+    padding-right: .8em;
+}
+
+
+#mainContainer
+{
+    padding: 0em;
+    margin: 0em;
+    border: 0em;
+    background-image: url("/assets/images/mainContentSideBorders.jpg");
+    background-repeat: repeat-y;
+}
+
+#mainContainerHeader
+{
+    padding: 0;
+    margin-top: -.7em;
+    background-image: url("/assets/images/applicationHeader.png");
+    background-repeat: no-repeat;
+    height: 50px;
+}
+
+#mainContainerHeaderText
+{
+    padding-left: 1em;
+    padding-top: .4em;
+    color: #000000;
+    font-size: 2.031em;
+    font-family: "Lucida Sans Unicode",sans-serif; 
+}
+
+#mainContainerBody
+{
+    text-align: left;
+    padding-left: 1em;
+    padding-right: 1em;
+
+}
+
+#mainContainerBottomBorder
+{
+    background-image: url("/assets/images/mainContentBottomBorder.jpg");
+    background-repeat: no-repeat;
+    margin: 0em;
+    padding: 0em;
+    height: 24px;
+}
+
+#footerLinks
+{
+    padding-left: 3em;
+    padding-top: .95em;
+    float: left;
+    color: #FFBA00;
+    font-size: .925em;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+}
+
+#footerLinks a:link, #footerLinks a:visited, #footerLinks a:active
+{
+    color: #FFBA00;
+    text-decoration: none;
+    
+}
+
+#footerLinks a:hover
+{
+    text-decoration: underline;
+}
+
+.footerLinksSpacer
+{
+    font-size: 1.34em;
+    padding-left: .6em;
+    padding-right: .6em;
+}
+
+#footerLinksImageSpacer
+{
+    padding-right: 8.5em;
+}
+
+.footerImageLinks
+{
+    border: 0;
+    padding-left: .2em;
+    padding-right: .2em;
+    vertical-align: bottom;
+    
+}
+
+#footerText
+{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+    padding-left: 14em;
+    padding-top: 2em;
+    float:left;
+    font-size: .88em;
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 190%;
+    display: inline;
+    position:relative;
+}
+
+.renderAdjacentLinksDistinctly
+{
+    display:none;
+}
+
+
+
+.valigner
+{
+height:100%;
+width: 0px;
+vertical-align: middle;
+visibility: hidden;
+}
+
+#newIndexBelowSearch {
+font-size:100%;
+    padding-left:5px;
+    padding-top:5px;
+    padding-bottom:5px;
+    clear: both;
+    border:1px #CCC solid;
+    width:405px;
+    margin-left: -70px;
+    margin-top: 0px;
+    margin-bottom:5px;
+    position: realitive;
+    
+}
+
+#newsboxtext
+{
+width: 165%;
+margin-left: -30px;
+}
+
+#newsboxtext span{
+position:relative;
+left:10px;
+}
+    
+    
+   <!-- Additional CSS End -->
+    <META NAME="copyright" CONTENT="&copy; 2011 Southern Miss">
+    <META NAME="keywords" CONTENT="the university of southern mississippi, southern miss, usm, hattiesburg university, southern, mississippi southern college">
+    <META NAME="description" CONTENT="National Center for Spectator Sports Safety Security Registration -  This program is used to training sports venues personnel in the needed safety and security techniques in order to keep sports venues safe.">
+    <META NAME="language" CONTENT="en-US">
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+  
+    
+    function unhideQuestions()
+    {
+        document.getElementById('quickLinks').style.display = "block";
+    }
+        function hideQuestions()
+    {
+        document.getElementById('quickLinks').style.display = "none";
+    }
+    
+    <!-- Any Additional Header Start -->
+    <!-- Any Additional Header End -->
+  </HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+  
+    <U><FONT COLOR=blue>Skip to main content</FONT></U> |
+    <U><FONT COLOR=blue>Skip to the bottom of the page</FONT></U> |
+    <!-- 508 Skip Links Start -->
+    <!-- 508 Skip Links End -->
+  
+  
+        <U><FONT COLOR=blue>[Home]</FONT></U>
+        
+          
+            
+              <FORM>
+              
+                <U><FONT COLOR=blue>University Home</FONT></U> | 
+                <U><FONT COLOR=blue>Hours</FONT></U> | 
+                <U><FONT COLOR=blue>Events</FONT></U> | 
+                <U><FONT COLOR=blue>Directory</FONT></U> | 
+                <U><FONT COLOR=blue>Quick Links</FONT></U> <U><FONT COLOR=blue>[Show Quick Links]</FONT></U>
+              
+                Search this site: 
+                <INPUT NAME="q" MAXLENGTH="256" TYPE="text">
+                <INPUT NAME="op" TYPE="image">
+                  
+                   <INPUT VALUE="cook_library" NAME="site" TYPE="hidden">
+                  <INPUT VALUE="0" NAME="entqr" TYPE="hidden">
+                        <INPUT VALUE="xml_no_dtd" NAME="output" TYPE="hidden">
+                        <INPUT VALUE="date:D:L:d1" NAME="sort" TYPE="hidden">
+                        <INPUT VALUE="cook_library" NAME="client" TYPE="hidden">
+                        <INPUT VALUE="1" NAME="ud" TYPE="hidden">
+                        <INPUT VALUE="0" NAME="search.x" TYPE="hidden">
+                        <INPUT VALUE="UTF-8" NAME="oe" TYPE="hidden">
+                        <INPUT VALUE="UTF-8" NAME="ie" TYPE="hidden">
+                        <INPUT VALUE="cook_library" NAME="proxystylesheet" TYPE="hidden">
+                        <INPUT VALUE="0" NAME="search.y" TYPE="hidden">
+              </FORM>
+              
+                <U><FONT COLOR=blue>Circulation Policy</FONT></U>
+                
+                <U><FONT COLOR=blue>My Library Account</FONT></U>
+                <U><FONT COLOR=blue>Off-campus Access</FONT></U>
+                <U><FONT COLOR=blue>Plagiarism Tutorial</FONT></U>
+                <U><FONT COLOR=blue>Printing</FONT></U>
+                <U><FONT COLOR=blue>Style Guide Help</FONT></U>
+              
+            
+          
+        
+        
+        &nbsp;
+        
+        
+        &nbsp;
+          <U><FONT COLOR=blue>About</FONT></U> |
+          <U><FONT COLOR=blue>Services</FONT></U> |
+          <U><FONT COLOR=blue>Help &amp; FAQ</FONT></U> |
+          <U><FONT COLOR=blue>Ask-A-Librarian</FONT></U>|
+          <U><FONT COLOR=blue>Find Items</FONT></U> |
+          <U><FONT COLOR=blue>Article Databases</FONT></U> |
+          <U><FONT COLOR=blue>Library Catalog</FONT></U> 
+        
+        
+        
+        
+       
+          
+            </FONT></U>
+                 
+          <!-- Page Content Start -->
+         
+       <!--    
+     <table align="center" width="100%" style="border: solid;" ><tr><td align="center">The University Libraries catalogs, both Classic Catalog and Encore, will be unavailable for a few hours beginning at 5 p.m. on Monday, February 20, 2012. University Libraries apologize for the inconvenience while these necessary system upgrades are installed.</td></tr></table> <br />
+
+-->
+
+
+
+
+
+<TABLE>
+    <TR>
+      <TD>
+
+
+<TABLE>
+         <TABLE>
+        <TR>
+          <TD>    
+         <UL>
+              <LI>Catalog Quick Search</LI>
+              <LI>E-Journals</LI>
+              <LI>Google Scholar</LI>
+              <LI>E-Reference</LI>
+            
+            </UL>
+        
+            
+                <!-- for all [] please insert correct URL for correct search destination direction. 
+Example: http://encore.scottsdaleaz.gov -->
+<FORM>   
+<INPUT VALUE="target" NAME="formids" TYPE="hidden">
+<INPUT VALUE="eng" NAME="lang" TYPE="hidden">
+<INPUT VALUE="def" NAME="suite" TYPE="hidden">
+
+<INPUT VALUE="" NAME="submitmode" TYPE="hidden">
+<INPUT VALUE="lang,suite" NAME="reservedids" TYPE="hidden">
+<INPUT VALUE="" NAME="submitname" TYPE="hidden">
+
+<TABLE>
+ 
+ <TR><TD><EM>Catalog Quick Search</EM><BR>
+<INPUT VALUE="" NAME="target" SIZE="20" TYPE="text"><BR>
+<INPUT VALUE="Search" TYPE="submit">
+        </TD>
+    <TD><P>[new catalog logo]<BR><U><FONT COLOR=blue>&raquo; My Library Account</FONT></U></P></TD>
+  </TR>
+ 
+</TABLE>
+</FORM>     
+              
+              
+              
+              
+              
+            
+                <!-- main gray table -->
+                <FORM>
+                  <INPUT VALUE="" NAME="" TYPE="hidden">
+                   
+  <INPUT VALUE="Titles" NAME="SF" TYPE="HIDDEN">
+  <INPUT VALUE="10906" NAME="id" TYPE="hidden">
+  <INPUT VALUE="1276056" NAME="sid" TYPE="hidden">
+  
+  <!-- [2007.05.17.EA] TD 1826 -->
+  <INPUT VALUE="" NAME="LH" TYPE="hidden">
+  
+  <INPUT VALUE="" NAME="lang.subject" TYPE="hidden">
+  
+  <INPUT VALUE="" NAME="lang.menu" TYPE="hidden">
+  <INPUT VALUE="en" NAME="lang" TYPE="hidden">
+                  <!-- ejournal search -->
+                 <EM>E-Journal Collection</EM><BR>
+                  Journal Title
+                  <!-- end of search text field -->
+                  <!-- search types -->
+                 
+                  <INPUT VALUE="" NAME="KW" TYPE="text">
+                  <BR>
+            <INPUT VALUE="Contains" NAME="ST" TYPE="radio">Contains</INPUT>  
+
+            <INPUT VALUE="Begins" NAME="ST" CHECKED TYPE="radio">Begins With</INPUT> 
+            <INPUT VALUE="Exact" NAME="ST" TYPE="radio">Exact Match</INPUT><BR>
+
+                  
+                    <INPUT VALUE="Search" TYPE="Submit">
+                    
+                  <U><FONT COLOR=blue>E-journals Home Page</FONT></U><BR>
+                    <!-- end search types -->
+                </FORM>
+              
+            <EM>Search Google Scholar</EM><BR>
+                  <FORM>
+    <TABLE>
+      <TR>
+        <TD><INPUT VALUE="" NAME="q" MAXLENGTH="256" SIZE="20">
+          <INPUT VALUE="en" NAME="hl" TYPE="hidden">
+          <INPUT VALUE="Search" NAME="btnG" TYPE="submit"></TD>
+        <TD><U><FONT COLOR=blue>Advanced Scholar Search</FONT></U><BR>
+          <U><FONT COLOR=blue>Scholar Preferences</FONT></U><BR>
+          <U><FONT COLOR=blue>Off-Campus Access</FONT></U></TD>
+        <TD></TD>
+      </TR>
+      <TR>
+        <TD><BR>
+          <!--
+function fnOnClickIP() {document.f.as_sdt[0].checked = true;document.f.as_sdt[1].checked = false;}// -->
+          <INPUT VALUE="200000001" NAME="as_sdt" CHECKED TYPE="radio">
+          Articles
+          (
+          <INPUT NAME="as_sdtp" CHECKED TYPE="checkbox">
+          include patents
+          )
+          <INPUT VALUE="200000002" NAME="as_sdt" TYPE="radio">
+          Legal opinions and journals
+          </TD>
+      </TR>
+    </TABLE>
+  </FORM>
+
+               
+        
+       <EM>Search E-Reference Collection</EM>
+                  <FORM>
+                    <INPUT VALUE="prefer" NAME="meta_long" TYPE="hidden">
+                    <INPUT VALUE="1" NAME="new_meta" TYPE="hidden">
+                    <INPUT VALUE="credo" NAME="from" TYPE="hidden">
+                    <INPUT VALUE="" NAME="term" MAXLENGTH="80" SIZE="30" TYPE="text">
+                    <INPUT VALUE="Search" TYPE="submit">
+
+                    <BR><BR>
+                    <U><FONT COLOR=blue>More Information</FONT></U>  | <U><FONT COLOR=blue>Browse by Subject</FONT></U> <BR>
+                  </FORM>
+              
+        
+        
+        
+        
+    
+          
+          <!-- IRS box
+          
+          <div id="newIndexBelowSearch">
+         <img src="/assets/images/irs_symbol.gif" alt="irs symbol" width="50" height="44" align="absmiddle"> <a href="http://www.irs.gov/formspubs/index.html" target="_blank">Federal Tax Forms</a> | 
+           <a href="http://www.mstc.state.ms.us/index.html" target="_blank">MS State Tax Forms</a> </div> 
+                -->
+           
+        <TABLE>
+        <TR>
+             <TD><UL>
+             <LI><U><FONT COLOR=blue>Databases by Subject</FONT></U></LI>
+              <LI><U><FONT COLOR=blue>Special Collections</FONT></U> </LI>
+           <LI><U><FONT COLOR=blue>Interlibrary Loan</FONT></U></LI>
+         <LI><U><FONT COLOR=blue>Style Guide Help</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Library Instruction</FONT></U></LI>
+         
+          
+           </UL>
+         </TD>
+          
+               <TD>
+               <UL>
+               <LI><U><FONT COLOR=blue>Search Library Reserves</FONT></U></LI>
+               <LI><U><FONT COLOR=blue>Tutorials</FONT></U></LI>
+               <LI><U><FONT COLOR=blue>Circulation Policy</FONT></U></LI>
+               
+              <LI><U><FONT COLOR=blue>Libraries and Collections</FONT></U></LI>
+               <LI><U><FONT COLOR=blue>Friends of the Library</FONT></U> </LI>
+              
+               </UL>
+               </TD>
+               </TR>
+               </TABLE>
+         
+    
+        
+               </TD>
+             
+          <TD>
+              
+                  <!-- <img src="media/newsAndInfoTitle_5.gif" class="libnewstitle" alt=""> -->
+
+                  <UL> <H3>News and Announcements</H3></UL> 
+           <UL>
+            
+           
+          
+          
+       
+          
+           
+            <LI> <U><FONT COLOR=blue>Exhibit – Banned and Challenged Books:<BR> Issues of Freedom</FONT></U><BR>February 2-March 30, 2012 <BR>Cook Library Lobby Exhibit Cases</LI> 
+           <LI><BR></LI>
+           <LI> <U><FONT COLOR=blue>Books24x7 Now Available through<BR> University Libraries</EM></FONT></U><BR>Online</LI>
+
+             
+           <!--
+           <li style="liststyle: none; background: url(/assets/images/healing_news.jpg) norepeat top left; paddingleft: 100px; height: 100px;"> <span><a href="about_us/news/jonathanodell_news.html">Event  Friends of University Libraries<br /> hosts author Jonathan Odell</a><br />March 06, 2012, 8:00 p.m.<br />The Powerhouse Restaurant, Hattiesburg</span></li>
+         <li style="liststyle: none; background: url(/assets/images/iotm_2012_news.jpg) norepeat top left; paddingleft: 100px; height: 100px;"> <span><a href="spcol/exhibitions/item_of_the_month/iotm_feb_12.html">Item of the Month – <i>Weep No More, My Lady</i></a><br />February 2012<br />Online</li></span>
+               
+          -->
+           <LI><BR></LI>
+           <LI><U><FONT COLOR=blue>News</FONT></U> |  <U><FONT COLOR=blue>Events</FONT></U> | <U><FONT COLOR=blue>Exhibits</FONT></U> | <U><FONT COLOR=blue>Newsletter</FONT></U></LI>
+           </UL> </TD></TR>
+      </TABLE></TD>
+  
+ 
+  
+  </TABLE>
+
+
+
+
+<!-- end tabbed panels group -->
+</TABLE>
+
+
+            <!-- Page Content End -->
+          &nbsp;
+        
+          
+            &nbsp;
+          
+    </FONT></U>
+        
+           <U><FONT COLOR=blue>Contact</FONT></U> |
+          <U><FONT COLOR=blue>Giving</FONT></U> |
+         
+          <U><FONT COLOR=blue>Mobile Site</FONT></U> 
+      
+        
+        <BR>
+        
+        
+          The University of Southern Mississippi | University Libraries | 118 College Drive #5053 | Hattiesburg, MS 39406-0001
+        
+        
+  
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>
+
+<!--
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+//-->
+
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+
+var pageTracker = _gat._getTracker("UA-21126442-1");
+pageTracker._trackPageview();

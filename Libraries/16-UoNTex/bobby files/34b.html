@@ -1,0 +1,875 @@
+
+
+
+
+<HTML>
+
+  
+    
+    
+    
+    
+    
+    
+
+  
+
+  <HEAD>
+    <META CONTENT="text/html;charset=utf-8">
+
+    <META CONTENT="IE=8">
+<META NAME="google-site-verification" CONTENT="PtEp_13Kqy8X05sXiK1E6cq7U7ZbnJAmtjKAUcSovrM">
+
+    <TITLE>
+        Research Tools
+        &mdash;
+        University of North Texas Libraries
+    </TITLE>
+
+    
+      
+        <BASE HREF="http://www.library.unt.edu/research-tools/research-tools">
+      
+    
+
+    <META NAME="generator" CONTENT="Plone - http://plone.org">
+
+    <META NAME="DC.date.created" CONTENT="2007-07-10 22:04:17">
+    <META NAME="DC.format" CONTENT="text/html">
+    <META NAME="DC.creator" CONTENT="siteadmin">
+    <META NAME="DC.type" CONTENT="Page">
+    <META NAME="DC.date.modified" CONTENT="2011-03-01 09:08:33">
+
+    <!-- Plone ECMAScripts -->
+    
+      
+        
+            
+                
+                
+                
+            
+            
+                
+                
+                <!--  
+/*  tabberoptions.js  */
+document.write('<style type="text/css">.tabber{display:none;}<\/style>');
+
+var tabberOptions = {
+   manualStartup:true,
+
+  'cookie':"tabber", /* Name to use for the cookie */
+
+  'onLoad': function(argsObj)
+  {
+    var t = argsObj.tabber;
+    var i;
+
+    /* Optional: Add the id of the tabber to the cookie name to allow
+       for multiple tabber interfaces on the site.  If you have
+       multiple tabber interfaces (even on different pages) I suggest
+       setting a unique id on each one, to avoid having the cookie set
+       the wrong tab.
+    */
+    if (t.id) {
+      t.cookie = t.id + t.cookie;
+    }
+
+    /* If a cookie was previously set, restore the active tab */
+    i = parseInt(getCookie(t.cookie));
+    if (isNaN(i)) { return; }
+    t.tabShow(i);
+  },
+
+  'onClick':function(argsObj)
+  {
+    var c = argsObj.tabber.cookie;
+    var i = argsObj.index;
+    setCookie(c, i);
+  }
+};
+
+/*==================================================
+  Cookie functions
+  ==================================================*/
+function setCookie(name, value, expires, path, domain, secure) {
+    var path = '/';
+    document.cookie= name + "=" + escape(value) +
+        ((expires) ? "; expires=" + expires.toGMTString() : "") +
+        ((path) ? "; path=" + path : "") +
+        ((domain) ? "; domain=" + domain : "") +
+        ((secure) ? "; secure" : "");
+}
+
+function getCookie(name) {
+    var dc = document.cookie;
+    var prefix = name + "=";
+    var begin = dc.indexOf("; " + prefix);
+    if (begin == 1) {
+        begin = dc.indexOf(prefix);
+        if (begin != 0) return null;
+    } else {
+        begin += 2;
+    }
+    var end = document.cookie.indexOf(";", begin);
+    if (end == 1) {
+        end = dc.length;
+    }
+    return unescape(dc.substring(begin + prefix.length, end));
+}
+function deleteCookie(name, path, domain) {
+    if (getCookie(name)) {
+        document.cookie = name + "=" +
+            ((path) ? "; path=" + path : "") +
+            ((domain) ? "; domain=" + domain : "") +
+            "; expires=Thu, 01Jan70 00:00:01 GMT";
+    }
+}
+
+                     // -->
+                
+            
+            
+                
+                
+                
+            
+        
+    
+    
+
+    
+	
+          
+        
+            
+                
+                    
+                    
+                        <!-- @import url(http://www.library.unt.edu/portal_css/untlibraryskin/ploneStyles6627.css); -->
+                    
+                    
+                
+            
+            
+                
+                    
+                    
+                    
+                
+            
+            
+                
+                    
+                    
+                    
+                
+            
+            
+                
+                    
+                    
+                        <!-- @import url(http://www.library.unt.edu/portal_css/untlibraryskin/ploneStyles6705.css); -->
+                    
+                    
+                
+            
+            
+                
+                    
+                    
+                        <!-- @import url(http://www.library.unt.edu/portal_css/untlibraryskin/ploneStyles0303.css); -->
+                    
+                    
+                
+            
+        
+    
+        
+        
+    
+
+    <!-- Internet Explorer CSS Fixes -->
+    <!--[if IE]>
+        <style type="text/css" media="all">@import url(http://www.library.unt.edu/IEFixes.css);</style>
+    <![endif]-->
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Disable IE6 image toolbar -->
+    <META CONTENT="no">
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3629573-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+
+
+  </HEAD>
+
+  <BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+    
+
+      
+
+        
+          <P>
+            <U><FONT COLOR=blue>Skip to content.</FONT></U> |
+
+            <U><FONT COLOR=blue>Skip to navigation</FONT></U>
+          </P>
+
+             
+
+
+
+
+<H2>Library Catalog</H2>
+    <FORM>
+    
+        <INPUT VALUE="12" NAME="searchscope" TYPE="hidden">
+        Search Library Online Catalog 
+        <SELECT NAME="searchtype">
+          <OPTION VALUE="X" SELECTED="selected">Keyword</OPTION>
+          <OPTION VALUE="t">Title</OPTION>
+          <OPTION VALUE="a">Author</OPTION>
+          <OPTION VALUE="d">Subject Heading</OPTION>
+          <OPTION VALUE="c">LC Call Number</OPTION>
+          <OPTION VALUE="l">Dewey Call Number</OPTION>
+          <OPTION VALUE="v">Journal Title</OPTION>
+          <OPTION VALUE="m">Other Call No</OPTION>
+        </SELECT><BR>
+        <INPUT NAME="searcharg" MAXLENGTH="75" SIZE="35" TYPE="text">
+        <INPUT VALUE="D" NAME="SORT" TYPE="hidden">
+        <INPUT VALUE="Search" NAME="Submit" TYPE="submit">
+     
+     </FORM>
+  &nbsp;
+ 
+
+<H2>Electronic Resources</H2>
+   <FORM>
+        Search Electronic Resources 
+       <SELECT NAME="search_type">
+         <OPTION VALUE="keyword">Keyword</OPTION>
+         <OPTION VALUE="title">Title</OPTION>
+         <OPTION VALUE="subject">Subject</OPTION>
+         <OPTION VALUE="course_code">Course Code</OPTION>
+       </SELECT><BR>
+       <INPUT NAME="search_text" SIZE="35" TYPE="text">
+       <INPUT VALUE="Search" NAME="new_search" TYPE="submit">
+   </FORM>
+ &nbsp;
+ 
+
+
+<H2>Digital Collections</H2>
+<FORM>
+        Search Digital Collections 
+   <SELECT NAME="t">
+     <OPTION VALUE="fulltext">fulltext</OPTION>
+     <OPTION VALUE="metadata">metadata</OPTION>
+     <OPTION VALUE="dc.title">title</OPTION>
+     <OPTION VALUE="dc.subject">subject</OPTION>
+     <OPTION VALUE="dc.creator">creator</OPTION>
+   </SELECT><BR>
+   <INPUT NAME="q" SIZE="35" TYPE="text">
+   <INPUT VALUE="Search" TYPE="submit">
+</FORM>
+ &nbsp;
+
+
+
+
+
+   <H2>This Website</H2> 
+     <FORM>
+
+        Search this Web Site
+
+        
+        <INPUT NAME="SearchableText" SIZE="35" TYPE="text">
+
+        <INPUT VALUE="Search" TYPE="submit">
+
+
+    </FORM>
+
+&nbsp;
+
+
+
+
+    
+    
+    &nbsp;
+    
+    
+      tabberAutomatic(tabberOptions);
+    
+
+
+
+
+             
+    <U><FONT COLOR=blue>
+        <!-- removed this line: tal:replace="structure here/library_banner.gif", added external logos location -->
+       <!-- <img alt="UNT Libraries" title="UNT Libraries" src="http://web3.unt.edu/mmdl/lib_logo/index.php" /> -->
+
+    </FONT></U>
+
+
+             
+    <H5>Sections</H5>
+
+    <UL>
+        <LI>
+            <U><FONT COLOR=blue>UNT Libraries Home</FONT></U></LI>
+        <LI>
+            <U><FONT COLOR=blue>UNT Library Catalog</FONT></U></LI>
+        <LI>
+            <U><FONT COLOR=blue>Electronic Resources</FONT></U></LI>
+        <LI>
+            <U><FONT COLOR=blue>About the Libraries</FONT></U></LI>
+        <LI>
+            <U><FONT COLOR=blue>Libraries and Collections</FONT></U></LI>
+        <LI>
+            <U><FONT COLOR=blue>Library Services</FONT></U></LI>
+        <LI>
+            <U><FONT COLOR=blue>Research Tools</FONT></U></LI>
+    </UL>
+
+          
+
+      
+
+      <!-- -->
+
+      
+
+      <TABLE>
+        
+          <TR>
+            
+            <TD>
+              
+                
+                  
+
+    
+        
+
+        
+            
+
+<DL>
+    <DT>
+        
+        <U><FONT COLOR=blue>Navigation</FONT></U>
+       
+        
+    </DT>
+
+    <DD>
+        <UL>
+
+            <LI>
+                
+                   
+                       <U><FONT COLOR=blue>
+                       
+                       Research Tools
+                       </FONT></U>
+                   
+                
+            </LI>
+            
+
+
+
+<LI>
+
+    
+
+    
+        
+        <U><FONT COLOR=blue>Subject Guides</FONT></U>
+        
+    
+
+    
+    
+</LI>
+
+
+<LI>
+
+    
+
+    
+        
+        <U><FONT COLOR=blue>Class Pages</FONT></U>
+        
+    
+
+    
+    
+</LI>
+
+
+<LI>
+
+    
+
+    
+        
+        <U><FONT COLOR=blue>Call Number Location Guides</FONT></U>
+        
+    
+
+    
+    
+</LI>
+
+
+<LI>
+
+    
+
+    
+        
+        <U><FONT COLOR=blue>Citation Guides and Style Manuals</FONT></U>
+        
+    
+
+    
+    
+</LI>
+
+
+<LI>
+
+    
+
+    
+        
+        <U><FONT COLOR=blue>Quick Reference</FONT></U>
+        
+    
+
+    
+    
+</LI>
+
+
+<LI>
+
+    
+
+    
+        
+        <U><FONT COLOR=blue>Reserve Materials</FONT></U>
+        
+    
+
+    
+    
+</LI>
+
+
+<LI>
+
+    
+
+    
+        
+        <U><FONT COLOR=blue>Other Library Catalogs</FONT></U>
+        
+    
+
+    
+    
+</LI>
+
+
+<LI>
+
+    
+
+    
+        
+        <U><FONT COLOR=blue>Tutorials</FONT></U>
+        
+    
+
+    
+    
+</LI>
+
+
+<LI>
+
+    
+
+    
+        
+        <U><FONT COLOR=blue>Web Tools</FONT></U>
+        
+    
+
+    
+    
+</LI>
+
+
+<LI>
+
+    
+
+    
+        
+        <U><FONT COLOR=blue>Tips &amp; Tricks</FONT></U>
+        
+    
+
+    
+    
+</LI>
+
+
+
+
+        </UL>
+        
+        
+    </DD>
+</DL>
+
+
+        
+
+        
+
+        
+    
+
+                
+                &nbsp;
+              
+            </TD>
+            
+
+            
+            <TD>
+
+           
+
+
+    <U><FONT COLOR=blue>Home</FONT></U>
+    
+        &rsaquo;
+        
+    
+    
+        
+            
+            
+            Research Tools
+         
+    
+
+
+
+              
+                
+
+                  
+
+                  
+
+                    </FONT></U>
+
+                    
+
+    
+
+
+
+                    
+
+                    
+    
+
+        
+    
+
+    <H5>Document Actions</H5>
+
+    <UL>
+    
+        <LI>
+            <U><FONT COLOR=blue>
+
+                [Send this page to somebody]
+            </FONT></U>
+        </LI>
+    
+    
+        <LI>
+            <U><FONT COLOR=blue>
+
+                [Print this page]
+            </FONT></U>
+        </LI>
+    
+
+    </UL>
+    
+
+    
+
+
+
+        <H1>Research Tools</H1>
+    
+        
+    
+        
+            
+<P>In order to make your information search as simple and fruitful as possible, the librarians at UNT have collected together&nbsp;a number of resources to assist you in your research.</P>
+<P>The Quick Reference pages give you instant access to a collection of&nbsp;public&nbsp;internet resources on a variety of popular topics. Our <U><FONT COLOR=blue>Subject Guides</FONT></U> and <U><FONT COLOR=blue>Class Pages</FONT></U> pull together sources from both our print collections as well as electronic sources directed at either a particular course taught at UNT or in a focused subject area. <U><FONT COLOR=blue>Online tutorials</FONT></U> allow you to learn new research methods and strategies at your own pace and at your convenience.</P>
+<P>Once you have found an item in the <U><FONT COLOR=blue>catalog </FONT></U>that you want to take a closer look at, the <U><FONT COLOR=blue>Call Number Location Guides</FONT></U> can help you quickly track down where in the maze of bookshelves it can be found. And once you've found that perfect item, the <U><FONT COLOR=blue>Citation Guides and Style Manuals</FONT></U> page can help you cite it correctly in your research.</P>
+
+        
+
+        
+    
+        
+            
+        
+    
+
+
+        
+
+    
+        
+
+        
+          
+            This page is maintained by
+
+          <U><FONT COLOR=blue>Site Administrator</FONT></U>
+
+          &mdash;
+          
+          
+        
+
+        
+            
+            last modified
+            
+            Tuesday, March 01, 2011. 09:08 AM
+        
+
+        
+
+        
+
+
+        
+
+        
+
+        
+    
+
+
+    
+
+
+    
+    
+
+
+                    
+                      
+                 
+    
+        
+    
+
+                    
+
+                  
+
+                
+
+              
+            </TD>
+            
+
+            
+            <TD>
+              
+                
+                  
+
+    
+        
+
+        
+
+            
+        
+            <DL>
+                <DT>Info</DT>
+                <DD><UL><LI><U><FONT COLOR=blue>Ask Us</FONT></U></LI></UL>
+<UL><LI><U><FONT COLOR=blue>Special Audiences</FONT></U><BR></LI><LI><U><FONT COLOR=blue>How do I... (FAQ)</FONT></U></LI><LI><U><FONT COLOR=blue>Library Hours</FONT></U></LI><LI><U><FONT COLOR=blue>Locations &amp; Maps</FONT></U><BR></LI><LI><U><FONT COLOR=blue>News &amp; Events</FONT></U></LI></UL>
+<H2><EM>Looking for journal articles?&nbsp;</EM></H2>
+<P><EM>Try out our new <U><FONT COLOR=blue>Find Articles (Beta)</FONT></U> search!&nbsp;</EM></P>
+<P><EM>Don't forget to <U><FONT COLOR=blue>let us know what you think</FONT></U> about it.</EM></P>
+<P>&nbsp;</P>
+</DD>
+            </DL>
+        
+    
+
+
+        
+    
+
+                
+                &nbsp;
+              
+            </TD>
+            
+          </TR>
+        
+      </TABLE>
+      
+
+      <!-- -->
+
+
+      <HR>
+
+      
+
+        
+
+        <UL>
+
+    <LI><U><FONT COLOR=blue>UNT Libraries Home</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Search the Site</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Sitemap</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Permalink</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Tell us how we are doing</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Report a Problem</FONT></U></LI>
+
+</UL>
+
+
+
+        
+      
+
+      
+
+      <P>UNT and State of Texas: 
+           <U><FONT COLOR=blue>UNT</FONT></U> |
+           <U><FONT COLOR=blue>UNT Search</FONT></U> | 
+           <U><FONT COLOR=blue>UNT News and Events</FONT></U> |
+           <U><FONT COLOR=blue>State of Texas</FONT></U> |
+           <U><FONT COLOR=blue>State-wide Search</FONT></U>
+      </P>
+      
+      <P>Policies:  
+            <U><FONT COLOR=blue>UNT Web Accessibility Policy</FONT></U> | 
+            <U><FONT COLOR=blue>AA/EOE/ADA</FONT></U> |
+            <U><FONT COLOR=blue>Privacy Statement</FONT></U> |
+            <U><FONT COLOR=blue>Disclaimer</FONT></U>
+      </P> 
+
+
+
+ <U><FONT COLOR=blue>University Of North Texas Libraries</FONT></U>
+ 
+  1155 Union Circle #305190
+  Denton
+, 
+  TX 76203-5017
+
+ 
+ (940) 565-2413
+               <P>
+                  <U><FONT COLOR=blue>
+                  Locations, Maps, and Shipping.
+                  </FONT></U>
+               </P>
+
+
+       <U><FONT COLOR=blue>
+        Credits
+      </FONT></U>
+
+
+   <U><FONT COLOR=blue>
+      [Government Information Connection]
+   </FONT></U>
+
+
+   <U><FONT COLOR=blue>
+      [The UNT Libraries are on Facebook]
+   </FONT></U>
+
+
+      
+      
+
+    
+
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>

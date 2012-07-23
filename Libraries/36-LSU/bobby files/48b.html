@@ -1,0 +1,870 @@
+
+<HTML>
+<HEAD>
+<META CONTENT="text/html; charset=utf-8">
+<!--<base href="http://www.lib.lsu.edu"  />-->
+
+
+
+
+ 
+
+
+
+
+////////////THIS IS THE EXTERNAL LINKS NEW WINDOW JS//////////////////
+
+function exLinks() {
+<!-- Copyright 2005 Bontrager Connection, LLC
+// More info: "Automatic New Window for External Links" 
+//    at /library/
+// Also see http://BontragerConnection.com/
+//
+// List the domain names that shall not be put into new 
+//    windows when the link is clicked. If you use both 
+//    the www.example.com and example.com versions of 
+//    your domain name, list them both. The domains need 
+//    to be all one line between the quotation marks on 
+//    the line below, the names separated with a comma.
+//    Do not specify http:// URLs, just domain names.
+
+var Domains = "www.lib.lsu.edu,lib.lsu.edu,lsu.edu,www.lsu.edu,test.lib.lsu.edu,news.blogs.lib.lsu.edu,lsu.louislibraries.org,grok.lsu.edu,itsweb.lsu.edu";
+
+////////////////////////////////////////////
+// No other customizations are necessary. //
+////////////////////////////////////////////
+if(Domains.indexOf(" ") != 1) {
+   var splitarray = Domains.split(" ");
+   Domains = splitarray.join("");
+}
+Domains = Domains.toLowerCase();
+var DomainsArray = Domains.split(",");
+for(var i = 0; i < document.links.length; i++) {
+   if(document.links[i].hostname.length < 1) 
+   { continue; }
+   if(document.links[i].target.length > 0)
+   { continue; }
+   var h = document.links[i].hostname.toLowerCase();
+   var makeNewWindow = true;
+   for(var ii = 0; ii < DomainsArray.length; ii++) {
+      if(DomainsArray[ii] != h) 
+      { continue; }
+      makeNewWindow = false;
+      break;
+   }
+   if(makeNewWindow == true)
+   { document.links[i].title = 'This link will take you outside LSU.edu.'; }
+}
+//-->
+}
+
+
+function mobilepop(action) {
+	if (action == "close") document.getElementById('mobilepop').style.display = "none";
+	else if (action == "redirect") window.location.href = "http://www.lib.lsu.edu/m/";
+}
+
+function mobilepopOL() {	
+//	if (document.location == "http://www.lib.lsu.edu/index.html" || document.location == "http://www.lib.lsu.edu/") {
+//		if (screen.width 
+
+<!-- The following JavaScript code gets the current date from the viewer's machine. --> 
+
+<!-- tag to hide script from older browsers that don't support JavaScript
+function display_todays_date()
+{
+var today = new Date();
+var numerical_day=today.getDay();
+var numerical_month=today.getMonth();
+var date=today.getDate();
+var year=today.getFullYear();
+var weekday_array = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+var day_of_the_week = weekday_array[numerical_day];
+var month_array = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+var month_name = month_array[numerical_month];
+var date_string=day_of_the_week+', '+month_name+' '+date+', '+year;
+document.write(date_string);
+}
+//-->
+
+  
+	#mobilepop {
+		/*position:absolute;
+		top:10px;
+		left:10px;*/
+		width:760px;
+		height:auto;
+		margin:0 10px;
+		padding:0;
+		display:none;
+		overflow:hidden;
+	}
+	#mobilecont {
+		width:760px;
+		background:#FDD023;
+		color:#333333;
+		padding:10px;
+		font-size:12px;
+		font-family:Arial, Helvetica, sans-serif;
+		text-align:center;
+		border:1px solid #ffffff;
+		line-height:115% !important;
+	}
+
+<!-- End the current date script. --> 
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+	[INLINE]
+
+
+	
+		
+    	<P><EM>On a mobile device?</EM></P>
+        <P>View the LSU Libraries Mobile Website at<BR> <U><FONT COLOR=blue>http://www.lib.lsu.edu/m/</FONT></U></P>
+        <!-- <p style="fontsize:2em;"><input type="button" name="closempop" value="Stay" onClick="javascript:mobilepop('close');" /> <input type="button" name="redirectmpop" value="Go to Mobile Site" onClick="javascript:mobilepop('redirect');" /> </p>-->
+	    
+	
+
+
+	<!--Begin Utility Bar-->
+	<UL>
+	<LI><U><FONT COLOR=blue>
+		[Text Only]</FONT></U>
+		<U><FONT COLOR=blue>[Login to MyLSU]</FONT></U>
+	</LI> 
+	<LI> Baton Rouge, Louisiana | 
+	<!--Begin date display-->
+	display_todays_date();
+	<!--end date display-->
+	</LI> 
+
+ 	<LI>
+	<FORM>
+		 
+		<INPUT WIDTH="17" NAME="image" HEIGHT="14" TYPE="image">
+		<INPUT VALUE="Search lsu.edu" NAME="q" SIZE="20" TYPE="text">
+		<INPUT VALUE="lsu.edu" NAME="sitesearch" TYPE="hidden"> 
+		</FORM>
+	</LI>
+
+</UL>
+<!--End Utility Bar   -->
+		
+ 
+<U><FONT COLOR=blue></FONT></U>
+
+	<UL>
+ 	  <LI><U><FONT COLOR=blue>LSU Libraries</FONT></U><!-- Begin Home Item -->
+    
+       <!-- <div class="dropdown_2columns">--><!-- Begin 2 columns container -->
+    
+    <!--        <div class="col_2">
+                <h2>Welcome !</h2>
+            </div>
+    
+            <div class="col_2">
+                <p>Welcome to the LSU Libraries web site.  </p>             
+                <p>The LSU Libraries web site is a gateway to the information and research needs of the LSU community.  It can be used to locate books, link to ejournal articles, communicate with subject librarians and other library staff and faculty members.</p>             
+            </div>
+    
+            <div class="col_2">
+                <h2>Cross Browser Support</h2>
+            </div>
+            
+            <div class="col_1">
+                <img src="img/browsers.png" width="125" height="48" alt="" />
+            </div>
+            
+            <div class="col_1">
+                <p>This mega menu has been tested in all major browsers.</p>
+            </div>
+          
+        </div>--><!-- End 2 columns container -->
+    
+    </LI><!-- End Home Item -->
+    
+         <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////          ABOUT US                   ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+ 	   	 <LI><U><FONT COLOR=blue>About Us</FONT></U><!-- Begin 5 columns Item -->
+        <!-- Begin 5 columns container -->
+        
+             
+                <H2>Welcome to the LSU Libraries Website!</H2>
+                <P>The LSU Libraries web site is a gateway to the information and research needs of the LSU community. It can be used to locate books, link to ejournal articles, and to communicate with subject librarians and other library staff and faculty members.
+</P>
+            
+             
+            
+                <H3>Information</H3>
+     <!--           <p class="black_box">This is a dark grey box text. Fusce in metus at enim porta lacinia vitae a arcu. Sed sed lacus nulla mollis porta quis.</p>-->
+     
+            <UL> 
+            <LI><U><FONT COLOR=blue>About the Libraries</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Driving Directions</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Employment</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Hours</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Policies</FONT></U></LI>
+            
+            </UL>
+            
+   		        
+                <H3>Directory</H3>
+                <UL>
+                <LI><U><FONT COLOR=blue>All</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Faculty</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Subject Librarians</FONT></U></LI>
+              <!--  <li><a href="http://www.lib.lsu.edu/sp/subjects/staff.php?letter=By Department">By Departments</a></li>-->
+                </UL>
+                
+                
+             
+            
+               <H3>Frequently Dialed Numbers</H3>
+               
+              <P>- Circulation (fines, borrowing): 578-2058<BR> 
+              - Reference (help finding information): 578-5652<BR>
+              - Music Resources: 578-4674<BR>
+              - Special Collections: 578-6568 </P>
+            
+           &nbsp; 
+                   
+                   
+                   
+                   <U><FONT COLOR=blue>[INLINE]</FONT></U>
+                   
+                     <U><FONT COLOR=blue>[INLINE]</FONT></U>
+                  <U><FONT COLOR=blue> [INLINE]</FONT></U>
+                   <U><FONT COLOR=blue> [INLINE] </FONT></U>
+                  
+            
+                
+                
+         
+ 
+        
+        <!-- End 5 columns container -->
+     </LI><!-- End 5 columns Item -->
+     
+     <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////          RESEARCH TOOLS             ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+     
+     <LI><U><FONT COLOR=blue>Research Tools</FONT></U><!-- Begin 4 columns Item -->
+    
+        <!-- Begin 4 columns container -->
+        
+               
+            
+                <H3>Find Books</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Online Catalog</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>WorldCat Local</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Subject Guides</FONT></U></LI>
+<!--                    <li><a href="http://www.lib.lsu.edu/sp/subjects/index.php">Subject Guides</a></li> -->
+                    <LI><U><FONT COLOR=blue>Gov't Documents</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Reserves</FONT></U>
+                    <!-- <li><a href="#">more</a></li>-->
+                </UL>   
+                             
+                   
+                <H3>Find Articles</H3> 
+                <UL>
+                    <LI><U><FONT COLOR=blue>Indexes &amp; Databases</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Ejournals</FONT></U></LI>
+                 <!--   <li><a href="#">How to find Articles</a></li>-->
+                </UL>   
+                 
+                <H3>Other</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Gov't Documents</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Other Resources</FONT></U></LI>
+                </UL>   
+            
+               
+                <H3>Help</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Subject Librarians</FONT></U></LI>
+<!--                <li><a href="http://www.lib.lsu.edu/sp/subjects/staff.php?letter=Subject Librarians AZ">Subject Librarians</a></li> -->
+                    <LI><U><FONT COLOR=blue>Tutorials</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Technical Help</FONT></U></LI>
+                </UL>   
+            
+   
+        <!-- End 4 columns container -->
+    
+    </LI><!-- End 4 columns Item -->
+    
+  
+    <!-- Start services -->
+         <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////             SERVICES                ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+    
+        <LI><U><FONT COLOR=blue>Services</FONT></U><!-- Begin 4 columns Item -->
+    
+        <!-- Begin 4 columns container -->
+        
+    <!--        <div class="col_3">
+                <h2>Research</h2>
+            </div>
+    -->      
+         
+            
+            
+                    <H3>Instruction</H3>
+                <UL>
+                
+                    <LI><U><FONT COLOR=blue>Instruction Webpage</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>LIS 1001</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Tutorial Center (141 Middleton)</FONT></U>
+                    
+                    <LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Tutorials</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Request Instruction</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Reserve a Classroom</FONT></U></LI>
+               
+                </UL>   
+                 
+            
+       
+  
+    
+            
+            
+                <H3>Borrowing</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Interlibrary Loan</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Your Library Account</FONT></U></LI>
+              
+                    <LI><U><FONT COLOR=blue>Circulation Policies</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Reserves</FONT></U></LI>
+                   <!-- <li><a href="#">more</a></li>-->
+                </UL>   
+                
+                 <H3>Other</H3>
+                <UL>
+                <LI><U><FONT COLOR=blue>Disability Services</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Distance Education</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Study/ Presentation Rooms</FONT></U>
+                </UL>
+                 
+            
+    
+            
+            
+                <H3>Technology</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Help Desk</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Print Desk</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Find a Computer</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Technical Help</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Visualization Services Center (109 Middleton)</FONT></U>
+                 
+                </UL>  
+                 
+            
+    
+     <!--       <div class="col_1">
+            
+                <h3>Misc</h3>
+                <ul>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Logo</a></li>
+                    <li><a href="#">Flash</a></li>
+                    <li><a href="#">Illustration</a></li>
+                    <li><a href="#">More...</a></li>
+                </ul>   
+                 
+            </div>
+            -->
+        <!-- End 4 columns container -->
+    
+    </LI><!-- End 4 columns Item -->
+    
+    <!-- end services -->
+    
+         <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////             DEPARTMENTS             ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+
+	<LI><U><FONT COLOR=blue>Departments</FONT></U>
+    
+		
+        
+                
+                
+                    <UL>
+                        <LI><U><FONT COLOR=blue>Acquisitions</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Circulation</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Education Resources</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Gov't Documents</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Interlibrary Loan</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Music Resources</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Reference</FONT></U></LI>                     
+                        <LI><U><FONT COLOR=blue>Special Collections</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>More</FONT></U></LI>
+              
+                    </UL>   
+                     
+                
+                
+		
+        
+	</LI>
+
+
+     <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////              HELP                   ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+
+    <LI><U><FONT COLOR=blue>Help</FONT></U><!-- Begin 3 columns Item -->
+    
+        <!-- Begin 3 columns container -->
+            
+            
+                <H2>Help</H2>
+            
+            
+             
+    
+                <UL>
+                    <LI><U><FONT COLOR=blue>Technical Help</FONT></U></LI>
+                   
+                    <LI><U><FONT COLOR=blue>Tutorial Center</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Call Us</FONT></U> 225.578.8875</LI>
+                
+                </UL>   
+    
+            
+            
+            
+    
+                <UL>
+                    <LI><U><FONT COLOR=blue>Research Help</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Help Desk</FONT></U> 225.578.3375</LI>
+                    <LI><U><FONT COLOR=blue>Email Us</FONT></U></LI>
+               
+                </UL>   
+    
+            
+            
+            
+    
+                <UL>
+                    <LI><U><FONT COLOR=blue>FAQ</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>IM Us</FONT></U></LI>
+              
+                </UL>   
+    
+            
+            
+            
+                <H2>Search the Libraries Web Site</H2>
+                
+                     <FORM>
+                <INPUT WIDTH="17" NAME="image" HEIGHT="14" TYPE="image">
+                <INPUT NAME="q" TYPE="text">
+                <INPUT VALUE="www.lib.lsu.edu" NAME="sitesearch" TYPE="hidden">
+                </FORM>
+            
+            
+          <!--  <div class="col_3">
+                <img src="img/02.jpg" width="70" height="70" class="img_left imgshadow" alt="" />
+                <p><strong>Tutorial Lab</strong> Located in 141 Middleton Library, the lab offers tutoring in Math....(this should go under instruction)<a href="#">Read more...</a></p>
+    <br clear="all" />
+                <img src="img/01.jpg" width="70" height="70" class="img_left imgshadow" alt="" />
+                <p>Aliquam elementum felis quis felis consequat scelerisque. Fusce sed lectus at arcu mollis accumsan at nec nisi. Aliquam pretium mollis fringilla. Vestibulum tempor facilisis malesuada. <a href="#">Read more...</a></p>
+            </div>
+        -->
+        <!-- End 3 columns container -->
+        
+    </LI><!-- End 3 columns Item -->
+    
+         <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////           A TO Z                    ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+
+<LI><U><FONT COLOR=blue>A to Z</FONT></U></LI>
+</UL>
+  
+
+ 
+ <!--<link rel="stylesheet" type="text/css" href="/sp/assets/css/default.css" />
+-->
+  <H1>Database List: I</H1> 
+
+  
+    
+    
+
+    <U><FONT COLOR=blue>A</FONT></U><U><FONT COLOR=blue>B</FONT></U><U><FONT COLOR=blue>C</FONT></U><U><FONT COLOR=blue>D</FONT></U><U><FONT COLOR=blue>E</FONT></U><U><FONT COLOR=blue>F</FONT></U><U><FONT COLOR=blue>G</FONT></U><U><FONT COLOR=blue>H</FONT></U>I<U><FONT COLOR=blue>J</FONT></U><U><FONT COLOR=blue>K</FONT></U><U><FONT COLOR=blue>L</FONT></U><U><FONT COLOR=blue>M</FONT></U><U><FONT COLOR=blue>N</FONT></U><U><FONT COLOR=blue>O</FONT></U><U><FONT COLOR=blue>P</FONT></U><U><FONT COLOR=blue>R</FONT></U><U><FONT COLOR=blue>S</FONT></U><U><FONT COLOR=blue>T</FONT></U><U><FONT COLOR=blue>U</FONT></U><U><FONT COLOR=blue>V</FONT></U><U><FONT COLOR=blue>W</FONT></U><U><FONT COLOR=blue>Z</FONT></U><U><FONT COLOR=blue>All</FONT></U>    
+   
+    
+      
+        
+    <TABLE><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>IBA (International Bibliography of Art)</FONT></U> 
+				
+				International Bibliography of Art (IBA) is the successor to the  Bibliography of the History of Art (BHA) and covers the time period from  2008 - present.  For the years, 1975-2007, see <U><FONT COLOR=blue>BHA</FONT></U>.     Authoritative coverage of international scholarship is provided for  European art from late antiquity to the present, American art from the  colonial era to the present, and global art since 1945. Visual arts in  all media are also covered: painting, sculpture, drawing, video,  installations, new media, decorative and applied arts, museum studies  and conservation, archaeology, folk art and material culture, classical  studies, antiques, architectural history.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>IBISWorld</FONT></U> 
+				
+				IBISWorld is a comprehensive collection of hundreds of Industry Market  Research reports. Industries represented include Agriculture; Mining;  Utilities; Construction; Manufacturing; Wholesale Trade; Retail Trade;  Transportation; Information; Finance; Real Estate; Technical and  Scientific; Waste Management; Education; Healthcare; Recreation; and  Food Services.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>IEEE Xplore</FONT></U> 
+				
+				<EM>IEEE/IET Electronic Library (IEL)</EM> Abstract records and full text articles published since 1988 with select content published since 1893 from: <UL><LI>IEEE journals, transactions, and magazines, including early access documents</LI><LI>IEEE conference proceedings</LI><LI>IET journals</LI><LI>IET conference proceedings</LI><LI>IEEE published standards and redline versions</LI><LI>IEEE Standards Dictionary Online</LI></UL> <P>Access to the AbstractPlus records and select full text published since 2005 from:<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <EM>VDE VERLAG conference proceedings</EM></P> <EM>IEEE-Wiley eBooks Library Purchase<BR></EM>&nbsp;&nbsp;&nbsp; Full text access to all IEEE-Wiley eBooks titles copyrighted in the year(s) 1974-2014.The online version of several IEEE journals, magazines, and proceedings.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>IHS Global Insight</FONT></U> 
+				
+				Global Insight/DRI Global Economics Provides access to comprehensive  economic and financial indicators for over fifty countries. Locate  historical statistics for indicators such as the consumer and producer  price indexes, futures and options markets, exchange rates, population,  and housing.<BR><BR> Global Insight/DRI Global Economics Provides access  to comprehensive economic and financial indicators for over fifty  countries. Locate historical statistics for indicators such as the  consumer and producer price indexes, futures and options markets,  exchange rates, population, and housing.  http://www.ihsglobalinsight.com/About/ The data bases available in our  Global Insight subscription are: Balance of Payments - IMF (IMFBOP);  Basic Economics - Daily (BASIC/D); Basic Economics - Foreign Exchange  (BASIC/FX); Basic Economics - Weekly (BASIC/W); Basic Economics (BASIC);  Canada Primary Source (DBCAND); Commodities - Crops (CI/CROPS);  Commodities - Financials (CI/FINANCIALS); Commodities - Foods  (CI/FOODS); Commodities - Industrials (CI/InduSTRIALS); Commodities -  Metals (CI/METALS); Direction of Trade - IMF (IMFDOT); Dow Jones World  Stock Index (INDEX/DOW); Financial Markets Indexes (INDEX/DATA); Flow of  Funds (FUNDS); France (FR); Germany (GY); International Automotive  Database (AUTODB); International Economic (DRIINTL); International  Financial Statistics - IMF (IMF); Italy Economic - Banca d'Italia  (IT/BDIT); Italy Economic - Confindustria (IT/CONFIN); Money Markets and  Fixed Income (FACS/DATA); Netherlands (NL); OECD Main Economic  Indicators (OECDMEI); OECD National Income Accounts (OECDNIA); South  Africa (SA); Spain (SP); U.S. and Canadian Equities (DRISEC); U.S.  Central - National Assoc. of Realtors (USCEN/NAR); U.S. Central (USCEN);  U.S. Industrial &amp; Regional Economic (MARKETS); U.S. Prices  (USPRICE); United Kingdom (UK)<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Illustrata: Natural Sciences (CSA)</FONT></U> 
+				
+				CSA Illustrata: Natural Sciences is the first in a  series of CSA Illustrata databases of searchable tables, figures,  graphs, charts and other illustrations from the scholarly research and  technical literature. <BR>
+<BR>
+CSA Illustrata: Natural Sciences is interdisciplinary, covering a wide variety of journals from all major areas such as: 
+<BR>
+<BR>
+Biology, Earth Sciences, Environmental Studies, Medical Sciences,  Agriculture, Fish and Fisheries, Education, Geography, Veterinary  Science, Food and Food Industries, Pharmacy and Pharmacology,  Meteorology, Public Health and Safety, Water Resources, Conservation,  andForests and Forestry. <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Illustrated Civil War Newspapers and Magazines</FONT></U> 
+				
+				<EM>Illustrated Civil War Newspapers and Magazines: Important and Rare  Periodicals from Confederate, Union, Abolitionist, and British Presses</EM>  database contains 65,000 pages drawn from 49 periodicals, including 15  campaign newspapers, most of them illustrated 3,720 issues published  from 1860 to 1865. Originally printed in 16 different cities, many of  the publications are now rare and hard to find, with an item sometimes  extant only in a single archive. Carefully sought out and compiled from  17 different museum, library, and private collections, including those  of the American Antiquarian Society and the Chicago Historical Society.   Illustrated Civil War Newspapers and Magazines is currently offered on  the HarpWeek platform, which was specially designed for this kind of  content, allowing the user to view re-keyed tables of contents, full  page images, or browsable thumbnails.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Images of the American Civil War</FONT></U> 
+				
+				Images of the American Civil War: Photographs, Posters, and Ephemera  presents the dramatic imagery of nineteenth-century Americana as  experienced from the social, military, and political perspectives. At  completion, the collection will present 75,000 images drawn from  archives around the country, documenting the camp and battle experiences  of Union and Confederate soldiers of all ranks, time spent in hospitals  and in prisons, civilian life in cities and towns close to and far from  the front lines of war, and the demeanor of the politicians whose  decisions could bring the nation together or tear it apart. Many of the  images in the collection were captured by famous and lesser-known  innovators working with the burgeoning medium of nineteenth-century  photography. Additionally, graphical content such as envelopes, song  sheets, recruiting posters, imprints, and cartoons give users the  ability to research how wartime America illustrated their times  visually. With Images of the American Civil War: Photographs, Posters,  and Ephemera, researchers and students can now see the moments&mdash;both  monumental and mundane--that occurred as the nation stood divided.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information]  [Some full text available] [Open Access]</TD><TD><U><FONT COLOR=blue>In The First Person</FONT></U> 
+				
+				In the First Person is a landmark index to English language personal  narratives, including letters, diaries, memoirs, autobiographies, and  oral histories. Working with archives, repositories, publishers, and  individuals we've indexed first person narratives from hundreds of  published volumes&mdash;those that are publicly available on the Web and those  that are held by repositories and archives around the world.<BR><BR>   Future updates will contain full-text sources and hundreds of thousands  of bibliographic records. The index will allow users perform in-depth  field and keyword searches across all letters, diaries, oral histories,  memoirs, and autobiographies within Alexander Street Press  databases&mdash;more than one million pages of editorially selected materials  spanning 400 years. The index also applies the same extensive search  tools to scholarly materials that are freely available on the Web. With a  single search, users can perform keyword searches across thousands of  personal narratives from the English-speaking world.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Index Islamicus</FONT></U> 
+				
+				The Index Islamicus database indexes literature on Islam, the Middle  East and the Muslim world. It is produced by an editorial team working  at the School of Oriental and African Studies in London, established to  transmit knowledge about Islamic and Middle East studies, which have  traditionally been part of the curriculum of SOAS. Records included in  the database cover almost 100 years of publications on the world of  Islam.<BR><BR>  Material cited in the Index Islamicus includes not only  work written about the Middle East, but also about the other main Muslim  areas of Asia and Africa, plus Muslim minorities elsewhere. Over 3,000  journals are monitored for inclusion in the database, together with  conference proceedings, monographs, multi-authored works and book  reviews. Journals and books are indexed down to the article and chapter  level.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Index of Christian Art</FONT></U> 
+				
+				A thematic and iconographic index of early Christian and Medieval art  objects. Besides iconographic descriptions of works of art, the database  includes bibliographic records, and information such as style, school,  location, and more.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Index to American Periodicals 1700 - 1850</FONT></U> 
+				
+				Two &quot;Indexes to Early American Periodicals,&quot; covering  the time periods from 1741 to 1850 and thought to include all known  periodical publications that had their inception and ending during this  time periods. <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Index to Foreign Legal Periodicals</FONT></U> 
+				
+				The Index to Foreign Legal Periodicals, produced by The American  Association of Law Libraries, provides access to legal literature  worldwide, covering all forms of foreign (non-Anglo-American) law.  This  includes comparative law and legal systems, such as Islamic law;  socialist law; public and private international law; and transnational  commercial law.   The data is not limited by country of publication, but rather type of  publication.  Thus, while publications concerning British and American  law are not included, British and American publications concerning  foreign law are included. The types of documents covered include journal articles, congress  reports, essay collections, yearbooks, and book reviews.  The database encompasses all languages.  Materials in Greek, Cyrillic,  and East Asian vernacular are Romanized according to Library of Congress  standards.  Arabic and Hebrew titles are translated into English or  French.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] </TD><TD><U><FONT COLOR=blue>Index to Printed Music </FONT></U> 
+				
+				IPM is the only electronic resource for finding  individual pieces of music published in standard scholarly editions.  Included is music from ancient Greek times to the present. Detailed  indexing makes IPM an invaluable resource for music researchers and  students, as content is searchable by composer name or ID, editor,  genre, language, librettist, format, publisher name, series, title,  instrumentation and/or number of instruments, and results can be limited  by genre and/or language.  <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] </TD><TD><U><FONT COLOR=blue>Index to Scientific and Technical Proceedings</FONT></U><BR><EM>Note: </EM><EM>CD-ROM Available at Middleton Library Reference Desk (Call Numbers Q101 .I55 USER GUIDE, Q101 .I55 QUICK REFERENCE GUIDE, Q101 .I55 2002/2006, Q101 .I55 2000/2004, Q101 .I55 1998/2002, Q101 .I55 1997/2001)</EM> 
+				
+				Indexes the published literature of the most significant conferences,  symposia, seminars,  colloquia, workshops, and conventions in a wide  range of disciplines in science and technology over the last five years.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] </TD><TD><U><FONT COLOR=blue>Index to Social Sciences and Humanities Proceedings</FONT></U><BR><EM>Note: </EM><EM>Available only on CD-ROM at the Middleton Reference Desk. (Call Numbers Z7163 .I52, Z7163 .I52 QUICK REFERENCE GUIDE, Z7163 .I52 1993/2002, Z7163 .I52 1992/2001)</EM> 
+				
+				Covers the most significant conference proceedings in the social sciences and humanities over the last five years.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Index Veterinarius</FONT></U> 
+				
+				Including the CAB Abstracts and CAB Health, this is the leading database  for literature related to agriculture and applied life sciences,  including strong international coverage.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Industrial &amp; Applied Microbiology Abstracts (Microbiology A)</FONT></U> 
+				
+				Assembles findings and practical applications in agricultural, food and  beverage, chemical, and  pharmaceutical industries -- including  antibiotic and antimicrobial agents, contamination,  ripening, and  fermentation processes for foods, wines and beer, soil microbiology,  plant  diseases, biodegradation, isolation and identification of  microorganisms. Monthly. 7,700 abstracts annually. <U><FONT COLOR=blue>Journals indexed by this database</FONT></U>.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Industry Reports via Business Source Complete</FONT></U> 
+				
+				Business Source&reg; Complete is the world's definitive  scholarly business database, providing the leading collection of  bibliographic and full text content.  <BR>
+<BR>
+Business Source Complete exceeds all other databases available  in terms of its premium content of peer-reviewed, business related  journals. Included as part of the comprehensive coverage offered by this  database are indexing and abstracts for the most important scholarly  business journals, dating back as far as 1886. 
+<BR>
+<BR>
+In addition to the searchable cited references provided for more  than 1,200 journals, Business Source Complete contains detailed author  profiles for the 40,000 most-cited authors in the database. Journal  ranking studies reveal that Business Source Complete is the  overwhelmingly superior database for full text journals in all  disciplines of business, including marketing, management, MIS, POM,  accounting, finance and economics. Additional full text, non-journal  content includes financial data, books, monographs, major reference  works, conference proceedings, case studies, investment research  reports, industry reports, market research reports, country reports,  company profiles, SWOT analyses and more.  <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Information Science and Technology Abstracts</FONT></U> 
+				
+				This library and information science database provides references and  abstracts from more than 450 publications covering the world's  literature in librarianship, information science and related  disciplines. Coverage in Information Science &amp; Technology Abstracts  dates back to 1966.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>INFORMS Journal Archive</FONT></U> 
+				
+				This interface will allow you to search the complete  INFORMS Journal Archive from 1952 - present. LSU Libraries access  includes up to 1997 for all journals, and some up to present. <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Ingenta</FONT></U> 
+				
+				Allows for the ordering of articles, from periodicals  not owned by LSU, by faculty, research staff, and graduate students for  research or instructional use. These orders are subsidized by the  library. <BR>
+<BR>
+Please review the <U><FONT COLOR=blue>Ingenta policies</FONT></U> before accessing. 
+<BR>
+<BR>
+Accessing Ingenta: <EM>Instructions</EM> <BR>
+<BR>
+Accessing Ingenta: Instruction Sheet <BR>
+<BR>
+(For any questions or additional information see the Interlibrary Borrowing web page (<U><FONT COLOR=blue>http://www.lib.lsu.edu/lib/ilb/</FONT></U> ) or call (225) 578-2138.<BR>
+<BR>
+<OL>
+    <LI>Finding your way to the Louisiana State University Gateway Logon Screen:
+    <OL>
+        <LI>From the LSU Libraries homepage (<U><FONT COLOR=blue>http://www.lib.lsu.edu/</FONT></U>), click on the Ingenta link under Services.</LI>
+        <LI>Navigate  through the subsequent connection/authentication pages - if you are  connecting to the LSU Ingenta gateway from off campus, you are required  to demonstrate your university affiliation by entering your 17-digit  Tiger Card ID Number and your PIN.</LI>
+        <LI>After authentication/connection to the gateway, you arrive at the Logon Screen.</LI>
+    </OL>
+    </LI>
+    <LI>Logging in to the Louisiana State University Ingenta Gateway:
+    <OL>
+        <LI>University  Faculty, Research Staff, and Graduate Students are able to create User  IDs and Passwords for use in logging into the Ingenta gateway. At any  time after you create a User ID and Password and forget either, you can  retrieve this information by clicking the &quot;forgot your password?&quot; link  on the Logon Screen.</LI>
+        <LI>New users have two options for creating User IDs and Passwords:
+        <OL>
+            <LI>Creating a User ID and Password by entering your 17-digit Tiger Card ID Number:
+            <OL>
+                <LI>Enter your 17-digit Tiger Card ID Number in the field on the Logon page that asks for it specifically.</LI>
+                <LI>Once  you are recognized as a Faculty member, Research Staff, or Graduate  Student, you will be taken to a registration page where you can create a  User ID and Password for using the LSU Ingenta Gateway.</LI>
+                <LI>Now  that you have a User ID and Password, you can login to the gateway from  the Logon Page - your profile is saved and your User ID is now, already,  connected to our Patrons Deposit Account, which is used to subsidize  your Ingenta purchases (up to $50 per article).</LI>
+                <LI>If your ID  Number is not recognized by Ingenta, then you should register for a User  ID and Password by clicking the Register button on the Logon Page. Some  users' IDs are not recognized at the beginning of a semester, before  new patron information is sent to Ingenta.</LI>
+            </OL>
+            </LI>
+            <LI>Creating a User ID and Password by registering as a new user:
+            <OL>
+                <LI>Click  the Register button on the Logon Page to complete the registration  form; the only difference between registering by clicking the Register  button and registering by entering your 17-digit Tiger Card ID number is  that you will not be connected to the Patrons Deposit Account if you  register by clicking the Register button.</LI>
+                <LI>Therefore, after completing this form and selecting a User ID and Password, send an email to Gayle Campbell at <U><FONT COLOR=blue>libilb@lsu.edu</FONT></U>  with your User ID and Password, telling her that you are a new user and  would like to be connected to the Patrons Deposit Account.</LI>
+                <LI>She will connect your profile to the account, which is used to subsidize your Ingenta purchases (up to $50 per article).</LI>
+            </OL>
+            </LI>
+        </OL>
+        </LI>
+        <LI>You  can always use your User ID and Password, once you have them, to login  to the LSU Ingenta Gateway, and you should always use your original User  ID - if you create a second User ID, it will not be connected to the  Patrons Deposit Account and your article purchases will not be  subsidized by LSU Libraries.</LI>
+    </OL>
+    </LI>
+</OL>  <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] </TD><TD><U><FONT COLOR=blue>Inspec</FONT></U><BR><EM>Note: </EM><EM>Searches in this database will be conducted by a librarian or library staff at no charge to the patron. If you wish to have a search conducted in this database, please consult the Middleton Library Reference Desk or contact the appropriate subject liaison</EM> 
+				
+				INSPEC (The Database for Physics, Electronics and Computing) corresponds to the three Science Abstracts print publications: <EM>Physics Abstracts, Electrical and Electronics Abstracts</EM>, and <EM> Computer and Control Abstracts</EM>.  Approximately 16 percent of the database's source publications are in  languages other than English, but all articles are abstracted and  indexed in English. Author-prepared abstracts are used when available.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>INSPEC Archive</FONT></U> 
+				
+				The INSPEC Archive provides electronic access to the entire collection  of Science Abstracts Journals (back to volume one) dating from 1898 to  1968. Coverage includes physics, electrical engineering, electronics,  computing and control engineering.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Institute of Physics (IOP)</FONT></U> 
+				
+				IOPscience is a new online service for journal content published by IOP.  It contains more than 250,000 articles, from 1874 to the present day.  It's been designed to give you easy access to scientific, technical and  medical content. The content in IOPscience has been organized by more  than 6,000 classifications using PACS and MSC codes in physics,  astronomy and mathematics, so you will easily discover scientific  research that matches your specific needs and interests.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information]  [Open Access]</TD><TD><U><FONT COLOR=blue>Integrated Risk Information System (IRIS)</FONT></U> 
+				
+				Integrated Risk Information System - data from the Environmental  Protection  Agency (EPA) in support of human health risk assessment,  focusing on hazard  identification and dose-response assessment.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information]  [Open Access]</TD><TD><U><FONT COLOR=blue>International Classification of Diseases</FONT></U> 
+				
+				Compiled by the National Center for Health Statistics and the Health Care Financing Administration.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>International Critical Tables of Numerical Data, Physics, Chemistry, and Technology</FONT></U> 
+				
+				Knovel brings essential Sci-tech reference data to life in a virtual  technical library that solves problems for engineers, applied scientists  and librarians worldwide.  On one interface the Knovel Library combines  authoritative reference content from major Sci-tech publishers  including John Wiley &amp; Sons, McGraw-Hill and Elsevier. This data is  enhanced with time-saving analytical tools to help analyze and  manipulate the data. <BR><BR>  Users can analyze and reorganize the data  in over 800 full-text engineering and scientific reference works,  handbooks, and databases Knovel. They can sort, filter and export data  from 'live tables', resolve equations and plot graphs, capture values  from existing graphs and perform 'what if' experiments on the data.  Knovel's uniquely powerful research platform integrates a intuitive yet  powerful search engine with a user friendly browse capability to allow  the user to discover data in ways which are close to real information  seeking behavior.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>International Encyclopedia of Communication Online</FONT></U> 
+				
+				The International Encyclopedia of Communication Online  provides instant access to the most authoritative and up-to-date  scholarship in the field of Communication Studies.  <BR>
+<BR>
+The content is accessible in a number of ways:
+<UL>
+    <LI>Browse table of contents</LI>
+    <LI>Use Explore for sophisticated browsing across subjects, people, periods, places, and key topics</LI>
+    <LI>Use Quick Search found on top right hand corner of</LI>
+</UL>  <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>International Station Meteorological Climate Summary</FONT></U><BR><EM>Note: </EM><EM>Available at the Middleton Library Reference Desk</EM> 
+				
+				Includes maps and graphs of climatic data prepared through the joint  effort of several agencies. Data is provided in three types of summary:  Summaries of Meteorological Observations; Surface Observation Climatic  Summaries; and World Wide Airfield Summaries.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>International Tables for Crystallography</FONT></U> 
+				
+				International Tables for Crystallography is the  definitive resource and reference work for crystallography and  structural science.  <BR> <BR> Each of the eight volumes in the series contains articles and tables of  data relevant to crystallographic research and to applications of  crystallographic methods in all sciences concerned with the structure  and properties of materials. Emphasis is given to symmetry, diffraction  methods and techniques of crystal-structure determination, and the  physical and chemical properties of crystals. The data are accompanied  by discussions of theory, practical explanations and examples, all of  which are useful for teaching.  <BR> <BR> International Tables for Crystallography comprises 6,000 pages including  nearly 2,000 pages of symmetry tables which are vital for the analysis  of crystal structures:  <UL>     <LI>Volume A: Space-group symmetry, 5e</LI>     <LI>Volume A1: Symmetry relations between space groups, 2e</LI>     <LI>Volume B: Reciprocal space, 3e</LI>     <LI>Volume C: Mathematical, physical and chemical tables, 3e</LI>     <LI>Volume D: Physical properties of crystals</LI>     <LI>Volume E: Subperiodic groups, 2e</LI>     <LI>Volume F: Crystallography of biological macromolecules</LI>     <LI>Volume G: Definition and exchange of crystallographic data</LI> </UL> This edition includes new editions of Volumes A1 and E, making  International Tables the most up-to-date, dynamic, and comprehensive  reference work available to crystallographers, and to all those who use  crystallography across a wide range of fields. <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Internet and Personal Computing Abstracts</FONT></U> 
+				
+				Internet &amp; Personal Computing Abstracts (IPCA) (formerly  Microcomputer Abstracts) provides abstracts and indexing for literature  related to personal computing products and developments in business, the  Internet, the home, and all other applied areas. IPCA content coverage  extends back to the 1980s. Over 400 of the most important trade  publications, mainstream computer magazines, and professional journals  are covered, including those that focus on specific topics such as  Macintosh &amp; Windows platforms, programming, web development and  more. Special emphasis is also given to hardware and software reviews.   Internet &amp; Personal Computing Abstracts includes content from such  titles as Byte.com, PC World, Macworld, and Linux Journal. The product  also includes editor-selected articles from hundreds of popular magazine  titles.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>IOPscience</FONT></U> 
+				
+				IOPscience is a new online service for journal content published by IOP.  It contains more than 250,000 articles, from 1874 to the present day.  It's been designed to give you easy access to scientific, technical and  medical content. The content in IOPscience has been organized by more  than 6,000 classifications using PACS and MSC codes in physics,  astronomy and mathematics, so you will easily discover scientific  research that matches your specific needs and interests.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>iPoll</FONT></U> 
+				
+				iPOLL is a one-stop comprehensive source for polling data. It includes,  every major US survey firm &ndash; over 150 organizations; Academic,  commercial, and media polls; More than one-half million questions and  answers; Opinions and behaviors; Topical coverage from crime to politics  to diplomacy to social behavior; 1935 to yesterday; Question-level  retrieval with links to full results; and Links from questions to study  abstracts and questionnaires.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Irrigation and Drainage Abstracts via CabDirect</FONT></U> 
+				
+				Including the CAB Abstracts and CAB Health, this is the leading database  for literature related to agriculture and applied life sciences,  including strong international coverage.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>ITER</FONT></U> 
+				
+				Iter is a not-for-profit research project with  partners in Toronto (the headquarters), New York City, and Tempe. Iter  was created for the advancement of learning in the study and teaching of  the Middle Ages and Renaissance (400-1700) through the development of  online resources. The Iter Databases include: <BR> <BR> <EM>The Iter Bibliography</EM>:  Iter's bibliography includes literature pertaining to the Middle Ages  and Renaissance (400-1700). Citations for books, journal material  (articles, reviews, review articles, bibliographies, catalogues,  abstracts and discographies) are included, as are citations for essays  in books (including entries in conference proceedings, festschriften,  encyclopedias and exhibition catalogues).  <BR> <BR> <EM>International Directory of Scholars</EM>:  The International Directory of Scholars (IDS) is the fortunate result  of a convergence of interests of the Renaissance Society of America  (RSA), who wanted a major revision of its own Directory, and the  Sixteenth Century Society and Conference (SCSC), who wanted to transform  its highly respected Scholars of Early Modern Studies into an online  database. The IDS is a comprehensive resource which accommodates not  only the usual directory contact information, but also detailed  information on the research and teaching careers of scholars around the  world.<BR> <BR> <EM>Iter Italicum</EM>: Brill Academic Publishers and Iter  are pleased to announce the publication of the first online edition of  Paul Oskar Kristeller's Iter Italicum, the most comprehensive finding  list available of previously uncatalogued or incompletely catalogued  Renaissance humanistic manuscripts found in libraries and collections  all over the world. Originally published in six volumes between 1963 and  1992, it is an essential tool for any scholar working in the fields of  classical, medieval and Renaissance studies.<BR> <BR> <EM>Early Theatre</EM>:  Iter, in partnership with the Centre for Reformation and Renaissance  Studies at Victoria University in the University of Toronto, is pleased  to offer online access to Early Theatre (ET). Authorized users can  search, view, and print the full-text of volume 1 (1998), volume 2  (1999), and volume 4 (2001) to the current issue. Volume 3 (2000) is  forthcoming.<BR> <BR> <EM>Renaissance and Reformation / Renaissance et R&eacute;forme</EM>:  Iter, in partnership with the Centre for Reformation and Renaissance  Studies at Victoria University in the University of Toronto, is pleased  to offer online access to Renaissance and Reformation / Renaissance et  R&eacute;forme (RR). Authorized users can search, view, and print the full-text  of the journal from volume 24, no. 1 (2000).<BR> <BR> <EM>Renaissance Quarterly</EM>:  Iter, in partnership with the Renaissance Society of America, is  pleased to offer online access to Renaissance Quarterly (RQ). Authorized  users can search, view, and print the full-text of the journal from  volume 53, no. 1 (2000).<BR> <BR> <EM>Aestimatio</EM>: Aestimatio provides  critical, timely assessments of books published in the history of what  was called science from antiquity up to the early modern period in  cultures ranging from Spain to India, and from Africa to northern  Europe. The aim is to allow reviewers the opportunity to engage  critically both the results of research in the history of science and  how these results are obtained.<BR> <BR> <EM>Baptisteria Sacra</EM>: This  index offers detailed descriptions of fonts from the early Christian  period to the 17th century. The link currently leads to the project web  site, where individuals can learn more about the project and search  sample records at no charge. In the future, access to the full index  will be available, through a subscription to Iter.<BR> <BR> <EM>Electronic Capito Project</EM>:  The Electronic Capito Project provides the text of letters from and to  Wolfgang Capito which are either unpublished or have been published  before 1850 and are therefore difficult to access. The link currently  leads to the project web site, where individuals can learn more about  the project and search sample records at no charge. <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U></TABLE>        
+    
+    
+	
+
+	
+    
+        
+        
+            Key to Icons
+        
+         
+
+<P>
+[Information]  Information<BR>
+
+
+ [Restricted Resource]  Campus Faculty, Staff &amp; Students only<BR>
+
+ 
+<U><FONT COLOR=blue>[Some full text available] Some full text</FONT></U><BR>
+
+
+<U><FONT COLOR=blue>[Open Access Resource] Open Access (freely available to anyone)</FONT></U><BR>
+
+
+<U><FONT COLOR=blue>[Trial] Free Trials</FONT></U><BR>
+
+
+
+<!--<img src="http://www.lib.lsu.edu/sp/assets/images/icons/camera.gif" border="0" alt="Resource includes images"> Images<br />
+
+<img src="http://www.lib.lsu.edu/sp/assets/images/icons/television.gif" border="0" alt="Resource includes video"> Video files<br />
+
+<img src="http://www.lib.lsu.edu/sp/assets/images/icons/sound.gif" border="0" alt="Resource includes audio"> Audio files<br />
+-->
+</P>
+ 
+    
+    
+    
+        <!-- start pluslet -->
+    <!-- this is the newest databases pluslet maybe add back in after we go to the wide format... -->
+     
+        
+            Newest Databases
+        
+         <UL>
+<LI><U><FONT COLOR=blue>NewsBank</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Rock and Roll, Counter Culture, Peace and Protest</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Victorian Popular Culture</FONT></U></LI>
+<LI><U><FONT COLOR=blue>The First World War: Personal Experience</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Mass Observation Online</FONT></U></LI>
+</UL>
+ 
+     
+    <!-- end pluslet -->
+    
+      
+        
+            Information User Restrictions
+        
+          
+        
+<P>        Use of the LSU Libraries' electronic resources is subject to U.S. Copyright Law. Excessive downloading, printing, and/or electronic dissemination of resource content by the user is prohibited. Restrictions on other uses may apply. Electronic information subsidized by the LSU Libraries is for use in LSU classes and research. Databases are restricted to academic use only. Fair use guidelines are specifically applicable to use of information in a University setting. These are included in the <U><FONT COLOR=blue>Libraries Copyright Policy</FONT></U>.
+</P>
+<P>See the <U><FONT COLOR=blue>Database Access Policy</FONT></U> for information regarding authorized users.</P>
+        
+        
+    
+    
+    
+
+    <BR>
+	
+
+
+
+<BR>
+ 
+ <U><FONT COLOR=blue>[LSU Logo]</FONT></U>
+<BR><U><FONT COLOR=blue>LSU Libraries</FONT></U>
+<BR>Baton Rouge, LA 70803
+<BR>Tel (225) 578-5652
+<BR>Fax (225) 578-9432 
+
+
+
+<!-- AddThis Button END -->
+<BR> 
+
+<UL>
+<LI><U><FONT COLOR=blue>LSU Libraries</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Contact Us</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Mobile Website</FONT></U></LI>
+<!--<li><a href="http://www.lsu.edu">Louisiana State University</a></li>-->
+<LI>
+<U><FONT COLOR=blue>[Library Blog]</FONT></U>
+<U><FONT COLOR=blue>[RSS Feed]</FONT></U>
+<U><FONT COLOR=blue>[Library Facebook Page]</FONT></U>
+<U><FONT COLOR=blue>[Library Twitter Page] </FONT></U>
+<!-- AddThis Button BEGIN -->
+
+//var addthis_config = {
+ //  ui_click: true
+//}
+
+<!--a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa4a8b0c2a79cf3130">
+<img style="verticalalign:middle;" src="http://s7.addthis.com/static/btn/v2/lgbookmarken.gif" width="125" height="16" alt="Bookmark and Share" style="border:0" />
+</a>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=xa4a8b0c2a79cf3130"></script> -->
+</LI>
+</UL>
+<BR>
+<CENTER>Copyright &copy; 1996 - <!--#config timefmt="%Y" --><!--#echo var="DATE_LOCAL" --> LSU Libraries<BR> <!--<img src="/images/external.png" /><span class="small">Links away from LSU.edu</span> --></CENTER><BR>
+
+
+<!--<div class="right">
+<a href="http://www.lsu150.com/"><img src="/images/150year.jpg" /></a>
+
+
+</div> -->
+
+<BR>
+ 
+ 
+
+
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22589452-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+    $(document).ready(function(){
+
+
+        var stripeholder = ".zebra";
+        // add rowstriping
+        stripeR();
+
+
+        $("[id*=show]").live("change", function() {
+
+            var showtype_id = $(this).attr("id").split("-");
+            //alert("u clicked: " + showtype_id[1]);
+            unStripeR();
+            $(".type-" + showtype_id[1]).toggle();
+            stripeR();
+
+        });
+
+        // show db details
+        $("img[id*=bib-]").live("click", function() {
+            var bib_id = $(this).attr("id").split("-");
+            $(this).parent().parent().find(".list_bonus").toggle()
+        });
+
+        function stripeR(container) {
+            $(".zebra").not(":hidden").filter(":even").addClass("evenrow");
+            $(".zebra").not(":hidden").filter(":odd").addClass("oddrow");
+        }
+
+        function unStripeR () {
+            $(".zebra").removeClass("evenrow");
+            $(".zebra").removeClass("oddrow");
+        }
+
+
+    });

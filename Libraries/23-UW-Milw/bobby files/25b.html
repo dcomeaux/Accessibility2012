@@ -1,0 +1,31 @@
+<P>Help</P>
+<FORM>
+<P>Search for help on:
+<INPUT VALUE="0" NAME="gid" TYPE="hidden">
+<INPUT NAME="search" SIZE="20" TYPE="text">
+<INPUT VALUE="Go" TYPE="submit"></P>
+</FORM>
+<UL>
+<LI><U><FONT COLOR=blue>Frequently Asked Questions</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Research &amp; Course Guides</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+</UL>
+<!--#config timefmt="%H"--><!--#set var="hour" value="$DATE_LOCAL" -->
+<!--#config timefmt="%w"--><!--#set var="weekday" value="$DATE_LOCAL" -->
+<!--#if expr="((
+($hour=13 || $hour=14 || $hour=15 || $hour=16 || $hour=17 || $hour=18 || $hour=19 || $hour=20) && $weekday=0)
+ || (($hour=08 || $hour=09 || $hour=10 || $hour=11 || $hour=12 || $hour=13 || $hour=14 || $hour=15 || $hour=16 || $hour=17 || $hour=18 || $hour=19 || $hour=20) && $weekday >= 1 && $weekday <= 4)
+ || (($hour=08 || $hour=09 || $hour=10 || $hour=11 || $hour=12 || $hour=13 || $hour=14 || $hour=15 || $hour=16) && $weekday = 5)
+ || (($hour=10 || $hour=11 || $hour=12 || $hour=13 || $hour=14 || $hour=15 || $hour=16) && $weekday = 6))"-->
+<!--#include virtual="/libraries/ssi/meebo.txt" -->
+<!--#else-->
+<!--#include virtual="/libraries/ssi/quidget.txt" -->
+<!--#endif -->
+<P>
+
+
+<EMBED></EMBED>
+
+<BR>
+How was your service today?<BR>
+Please complete a <U><FONT COLOR=blue><EM>quick survey</EM></FONT></U> after your chat.</P>

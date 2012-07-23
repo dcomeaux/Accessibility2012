@@ -1,0 +1,980 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en">
+
+  
+    
+    
+    
+    
+    
+    
+
+  
+
+  <head>
+    <meta http-equiv="Content-Type"
+          content="text/html;charset=utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+<meta name="google-site-verification" content="PtEp_13Kqy8X05sXiK1E6cq7U7ZbnJAmtjKAUcSovrM" />
+
+    <title>
+        Welcome to the UNT Library
+        &mdash;
+        University of North Texas Libraries
+    </title>
+
+    
+      
+        <base href="http://www.library.unt.edu/front-page" />
+      
+    
+
+    <meta name="generator" content="Plone - http://plone.org" />
+
+    <meta content="The mission of the University of North Texas (UNT) Libraries is to acquire, preserve, provide access to, and disseminate recorded knowledge in all its forms."
+          name="DC.description" />
+    <meta content="The mission of the University of North Texas (UNT) Libraries is to acquire, preserve, provide access to, and disseminate recorded knowledge in all its forms."
+          name="description" />
+    <meta content="text/html" name="DC.format" />
+    <meta content="Page" name="DC.type" />
+    <meta content="webmaster" name="DC.creator" />
+    <meta content="Libraries, UNT, University of North Texas"
+          name="keywords" />
+    <meta content="2006-10-10 14:28:30"
+          name="DC.date.created" />
+    <meta content="Libraries, UNT, University of North Texas"
+          name="DC.subject" />
+    <meta content="2012-02-24 14:15:34"
+          name="DC.date.modified" />
+
+    <!-- Plone ECMAScripts -->
+    
+      
+        
+            
+                <script type="text/javascript"
+                        src="http://www.library.unt.edu/portal_javascripts/untlibraryskin/ploneScripts5521.js">
+                </script>
+                
+            
+            
+                
+                
+                <script type="text/javascript"><!--  
+/* - tabberoptions.js - */
+document.write('<style type="text/css">.tabber{display:none;}<\/style>');
+
+
+
+var tabberOptions = {
+
+   manualStartup:true,
+
+
+
+  'cookie':"tabber", /* Name to use for the cookie */
+
+
+
+  'onLoad': function(argsObj)
+
+  {
+
+    var t = argsObj.tabber;
+
+    var i;
+
+
+
+    /* Optional: Add the id of the tabber to the cookie name to allow
+
+       for multiple tabber interfaces on the site.  If you have
+
+       multiple tabber interfaces (even on different pages) I suggest
+
+       setting a unique id on each one, to avoid having the cookie set
+
+       the wrong tab.
+
+    */
+
+    if (t.id) {
+
+      t.cookie = t.id + t.cookie;
+
+    }
+
+
+
+    /* If a cookie was previously set, restore the active tab */
+
+    i = parseInt(getCookie(t.cookie));
+
+    if (isNaN(i)) { return; }
+
+    t.tabShow(i);
+
+  },
+
+
+
+  'onClick':function(argsObj)
+
+  {
+
+    var c = argsObj.tabber.cookie;
+
+    var i = argsObj.index;
+
+    setCookie(c, i);
+
+  }
+
+};
+
+
+
+/*==================================================
+
+  Cookie functions
+
+  ==================================================*/
+
+function setCookie(name, value, expires, path, domain, secure) {
+
+    var path = '/';
+
+    document.cookie= name + "=" + escape(value) +
+
+        ((expires) ? "; expires=" + expires.toGMTString() : "") +
+
+        ((path) ? "; path=" + path : "") +
+
+        ((domain) ? "; domain=" + domain : "") +
+
+        ((secure) ? "; secure" : "");
+
+}
+
+
+
+function getCookie(name) {
+
+    var dc = document.cookie;
+
+    var prefix = name + "=";
+
+    var begin = dc.indexOf("; " + prefix);
+
+    if (begin == -1) {
+
+        begin = dc.indexOf(prefix);
+
+        if (begin != 0) return null;
+
+    } else {
+
+        begin += 2;
+
+    }
+
+    var end = document.cookie.indexOf(";", begin);
+
+    if (end == -1) {
+
+        end = dc.length;
+
+    }
+
+    return unescape(dc.substring(begin + prefix.length, end));
+
+}
+
+function deleteCookie(name, path, domain) {
+
+    if (getCookie(name)) {
+
+        document.cookie = name + "=" +
+
+            ((path) ? "; path=" + path : "") +
+
+            ((domain) ? "; domain=" + domain : "") +
+
+            "; expires=Thu, 01-Jan-70 00:00:01 GMT";
+
+    }
+
+}
+
+                     // --></script>
+                
+            
+            
+                <script type="text/javascript"
+                        src="http://www.library.unt.edu/portal_javascripts/untlibraryskin/tabber.js">
+                </script>
+                
+            
+            
+                
+                
+                <script type="text/javascript"><!--  
+/* Merged Plone Javascript file
+ * This file is dynamically assembled from separate parts.
+ * Some of these parts have 3rd party licenses or copyright information attached
+ * Such information is valid for that section,
+ * not for the entire composite file
+ * originating files are separated by - filename.js -
+ */
+
+                     // --></script>
+                
+            
+        
+    
+    
+
+    
+	
+          
+        
+            
+                
+                    
+                    
+                        <style type="text/css"><!-- @import url(http://www.library.unt.edu/portal_css/untlibraryskin/ploneStyles6627.css); --></style>
+                    
+                    
+                
+            
+            
+                
+                    <link rel="alternate stylesheet"
+                          type="text/css" media="screen"
+                          href="http://www.library.unt.edu/portal_css/untlibraryskin/ploneStyles3274.css"
+                          title="Small Text" />
+                    
+                    
+                
+            
+            
+                
+                    <link rel="alternate stylesheet"
+                          type="text/css" media="screen"
+                          href="http://www.library.unt.edu/portal_css/untlibraryskin/ploneStyles7436.css"
+                          title="Large Text" />
+                    
+                    
+                
+            
+            
+                
+                    
+                    
+                        <style type="text/css"><!-- @import url(http://www.library.unt.edu/portal_css/untlibraryskin/ploneStyles6705.css); --></style>
+                    
+                    
+                
+            
+            
+                
+                    
+                    
+                        <style type="text/css" media="all"><!-- @import url(http://www.library.unt.edu/portal_css/untlibraryskin/ploneStyles0303.css); --></style>
+                    
+                    
+                
+            
+        
+    
+        
+        
+    
+
+    <!-- Internet Explorer CSS Fixes -->
+    <!--[if IE]>
+        <style type="text/css" media="all">@import url(http://www.library.unt.edu/IEFixes.css);</style>
+    <![endif]-->
+
+    <link rel="shortcut icon" type="image/x-icon"
+          href="http://www.library.unt.edu/favicon.ico" />
+
+    <link rel="home" href="http://www.library.unt.edu"
+          title="Front page" />
+    <link rel="search"
+          href="http://www.library.unt.edu/search_form"
+          title="Search this site" />
+    <link rel="author"
+          href="http://www.library.unt.edu/author/webmaster"
+          title="Author information" />
+    <link rel="contents"
+          href="http://www.library.unt.edu/sitemap"
+          title="Site Map" />
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Disable IE6 image toolbar -->
+    <meta http-equiv="imagetoolbar" content="no" />
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    
+      
+      
+    
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3629573-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+  </head>
+
+  <body class="section-front-page" dir="ltr">
+    <div id="visual-portal-wrapper">
+
+      <div id="portal-top">
+
+        <div id="portal-header">
+          <p class="hiddenStructure">
+            <a accesskey="2"
+               href="http://www.library.unt.edu/#documentContent">Skip to content.</a> |
+
+            <a accesskey="6"
+               href="http://www.library.unt.edu/#portlet-navigation-tree">Skip to navigation</a>
+          </p>
+
+             <div id="portal-searchbox">
+
+<div class="tabber">
+
+<div class="tabbertab">
+<h2>Library Catalog</h2>
+    <form method="get" action="http://iii.library.unt.edu/search/X">
+    <div>
+        <input type="hidden" name="searchscope" value="12" />
+        <label class="searchnote">Search Library Online Catalog</label> 
+        <select name="searchtype">
+          <option selected="selected" value="X">Keyword</option>
+          <option value="t">Title</option>
+          <option value="a">Author</option>
+          <option value="d">Subject Heading</option>
+          <option value="c">LC Call Number</option>
+          <option value="l">Dewey Call Number</option>
+          <option value="v">Journal Title</option>
+          <option value="m">Other Call No</option>
+        </select><br />
+        <input alt="search the library catalog" type="text" name="searcharg" size="35" maxlength="75" class="librarySearchWidgetTextInput searchFormTextInput" onblur="syncText(this.value); return false;" />
+        <input type="hidden" name="SORT" value="D" />
+        <input type="submit" value="Search" name="Submit" class="searchFormSubmit" />
+     </div>
+     </form>
+  <div class="visualClear">&nbsp;</div>
+ </div>
+<div class="tabbertab">
+<h2>Electronic Resources</h2>
+   <form name="search_form" method="post" action="http://irservices.library.unt.edu/search_ais.php">
+        <label class="searchnote">Search Electronic Resources</label> 
+       <select name="search_type">
+         <option value="keyword">Keyword</option>
+         <option value="title">Title</option>
+         <option value="subject">Subject</option>
+         <option value="course_code">Course Code</option>
+       </select><br />
+       <input alt="search the electronic resources database" name="search_text" id="search_text" type="text" size="35" class="librarySearchWidgetTextInput searchFormTextInput" onblur="syncText(this.value); return false;" />
+       <input name="new_search" value="Search" type="submit" class="searchFormSubmit" />
+   </form>
+ <div class="visualClear">&nbsp;</div>
+</div> 
+
+<div class="tabbertab">
+<h2>Digital Collections</h2>
+<form name="basic" method="get" action="http://digital2.library.unt.edu/search/">
+        <label class="searchnote">Search Digital Collections</label> 
+   <select name="t">
+     <option value="fulltext">fulltext</option>
+     <option value="metadata">metadata</option>
+     <option value="dc.title">title</option>
+     <option value="dc.subject">subject</option>
+     <option value="dc.creator">creator</option>
+   </select><br />
+   <input alt="search the digital collections" name="q" size="35" type="text" class="librarySearchWidgetTextInput searchFormTextInput" onblur="syncText(this.value); return false;" />
+   <input value="Search" type="submit" class="searchFormSubmit" />
+</form>
+ <div class="visualClear">&nbsp;</div>
+</div>
+
+
+
+<div class="tabbertab">
+   <h2>This Website</h2> 
+     <form name="searchform"
+           action="http://www.library.unt.edu/search"
+           style="white-space:nowrap" onsubmit="">
+
+        <label for="searchGadget" class="searchnote"
+               style="display:block; ">Search this Web Site</label>
+
+        <div class="LSBox" style="margin-top: .6em; ">
+        <input id="searchGadget" name="SearchableText"
+               type="text" size="35" title="Search Site"
+               accesskey="4"
+               class="visibility:visible searchFormTextInput"
+               onblur="syncText(this.value); return false;" />
+
+        <input type="submit" class="searchFormSubmit"
+               value="Search" />
+
+
+    </div></form>
+
+<div class="visualClear">&nbsp;</div>
+</div>
+
+</div>
+<div class="visualNoPrint">
+    
+    
+    <div class="visualClear">&nbsp;</div>
+    
+    <script type="text/javascript">
+      tabberAutomatic(tabberOptions);
+    </script>
+
+</div>
+</div>
+
+             
+    <a id="portal-logo" href="http://www.library.unt.edu"
+       accesskey="1">
+        <!-- removed this line: tal:replace="structure here/library_banner.gif", added external logos location -->
+       <!-- <img alt="UNT Libraries" title="UNT Libraries" src="http://web3.unt.edu/mmdl/lib_logo/index.php" /> -->
+<img src="http://www.library.unt.edu/library_banner.gif" alt="" title="" height="58" width="351" />
+    </a>
+
+
+             
+    <h5 class="hiddenStructure">Sections</h5>
+
+    <ul id="portal-globalnav">
+        <li id="portaltab-index_html" class="plain">
+            <a href="http://www.library.unt.edu">UNT Libraries Home</a></li>
+        <li id="portaltab-library_catalog" class="selected">
+            <a href="http://iii.library.unt.edu">UNT Library Catalog</a></li>
+        <li id="portaltab-electronic_resources"
+            class="plain">
+            <a href="http://irservices.library.unt.edu/">Electronic Resources</a></li>
+        <li id="portaltab-about_the_libraries" class="plain">
+            <a href="http://www.library.unt.edu/about">About the Libraries</a></li>
+        <li id="portaltab-libraries_and_collections"
+            class="plain">
+            <a href="http://www.library.unt.edu/libraries-and-collections">Libraries and Collections</a></li>
+        <li id="portaltab-library_services" class="plain">
+            <a href="http://www.library.unt.edu/services">Library Services</a></li>
+        <li id="portaltab-research_tools" class="plain">
+            <a href="http://www.library.unt.edu/research-tools">Research Tools</a></li>
+    </ul>
+
+          </div>
+
+      </div>
+
+      <div class="visualClear" id="clear-space-before-wrapper-table"><!-- --></div>
+
+      
+
+      <table id="portal-columns">
+        <tbody>
+          <tr>
+            
+            
+            
+
+            
+            <td id="portal-column-content">
+
+           <div id="portal-breadcrumbs">
+
+
+    <a href="http://www.library.unt.edu">Home</a>
+    
+
+</div>
+
+              
+                <div id="content" class="">
+
+                  
+
+                  <div class="documentContent" id="region-content">
+
+                    <a name="documentContent"></a>
+
+                    
+
+    
+
+
+
+                    
+
+                    
+    
+
+        <div class="documentActions">
+    
+
+    <h5 class="hiddenStructure">Document Actions</h5>
+
+    <ul>
+    
+        <li>
+            <a href="http://www.library.unt.edu/front-page/sendto_form">
+
+                <img src="http://www.library.unt.edu/mail_icon.gif"
+                     alt="Send this page to somebody"
+                     title="Send this page to somebody"
+                     id="icon-sendto" />
+            </a>
+        </li>
+    
+    
+        <li>
+            <a href="javascript:this.print();">
+
+                <img src="http://www.library.unt.edu/print_icon.gif"
+                     alt="Print this page"
+                     title="Print this page" id="icon-print" />
+            </a>
+        </li>
+    
+
+    </ul>
+    
+
+    
+
+</div>
+
+        <h1 class="documentFirstHeading">Welcome to the UNT Library</h1>
+    
+        
+    
+        <div class="plain">
+            
+
+<table class="plain" width="100%">
+
+<tbody>
+
+<tr>
+
+<td>
+
+<p><strong>Looking for journal articles? Try out our new <a title="Find Articles (Beta)" class="internal-link" href="/find-articles">Find Articles <span class="importantNote">(Beta)</span></a> search! Don't forget to <a class="external-link" href="http://ui.library.unt.edu/project-manager/forms/feedback-unt-libraries-find-articles-beta">let us know what you think</a><span class="ss_sprite ss_external-link-grey"> about it.</span></strong></p>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<div id="catalogResourcesCollections">
+
+<h2><a href="http://iii.library.unt.edu/">UNT Library Catalog</a></h2>
+
+<ul class="visualNoMarker">
+
+<li><a title="Search for books and other library materials" href="http://iii.library.unt.edu/">Find Books</a></li>
+
+<li><a class="external-link" href="http://iii.library.unt.edu/search%7ES7/X">Find Music</a></li>
+
+<li><a class="external-link" href="http://iii.library.unt.edu/search%7ES6/X">Find Media</a></li>
+
+<li><a href="http://iii.library.unt.edu/patroninfo">Renew Your Materials</a></li>
+
+<li><a href="http://iii.library.unt.edu/search/r">Find Course Reserves</a></li></ul>
+
+<p class="moreLink"><a title="Go to UNT Library Online Catalog Home" href="http://iii.library.unt.edu/">More...</a></p>
+
+<h2><a title="Go to Electronic Resource Home" href="http://irservices.library.unt.edu/">Electronic Resources</a></h2>
+
+<ul class="visualNoMarker">
+
+<li><a title="Search full-text articles and more" href="/find-articles">Find Articles <span class="importantNote">(Beta)</span></a></li>
+
+<li><a title="Search indexes, abstracts, and databases" href="http://irservices.library.unt.edu/">Find Databases</a></li>
+
+<li><a title="Search full-text journals" href="http://dq4wu5nl3d.search.serialssolutions.com/">Find E-Journal Titles</a></li>
+
+<li><a title="Search 200 newspapers from 55 countries" href="http://irservices.library.unt.edu/resource.cfm?ai_id=374">Find E-Newspapers</a></li>
+
+<li><a title="Search only books available online" href="http://irservices.library.unt.edu/books_index.cfm">Find E-books</a></li></ul>
+
+<p class="moreLink"><a title="Go to Electronic Resource Home" href="http://irservices.library.unt.edu/">More...</a></p>
+
+<h2><a title="List of collections, exhibits, finding aids, and individual library" href="/libraries-and-collections">Libraries &amp; Collections</a></h2>
+
+<ul class="visualNoMarker">
+
+<li><a title="A list of UNT On-campus Libraries" href="/libraries-and-collections/libraries">Libraries</a></li>
+
+<li><a title="A list of special collections and the information about those collections" href="/libraries-and-collections/special-collections">Special Collections</a></li><li><a title="Digital Collections" class="internal-link" href="/libraries-and-collections/digital-collections">Digital Collections</a></li>
+
+<li><a title="A list of current and past UNT Libraries' online exhibits" href="/libraries-and-collections/exhibits">Exhibits</a></li>
+
+<li><a title="An index listing of all of the UNT Libraries' collections, finding aids, and exhibitions" href="/libraries-and-collections/a-z">Libraries &amp; Collections A to Z</a></li></ul>
+
+<p class="moreLink"><a title="Libraries and Collections Home" href="/libraries-and-collections">More...</a></p>
+
+</div>
+
+<div id="aboutServicesTools">
+
+<h2><a title="Hours, directions, staff directories, and library administrative information" href="/about">About the Libraries</a></h2>
+
+<ul class="visualNoMarker">
+
+<li><a title="Information about operation hours of the various buildings and library units" href="/about/library-hours">Library Hours</a></li>
+
+<li><a title="Locations and Maps" href="/about/locations-and-maps">Locations &amp; Maps</a></li>
+
+<li><a title="Staff and Departmental Directories" href="/about/staff-and-departmental-directories">Staff &amp; Departmental Directory</a></li>
+
+<li><a title="Employment Opportunities" href="/administrativeoffice/employment">Employment Opportunities</a></li>
+
+<li><a title="Giving to the Libraries" href="/about/giving">Giving to the Libraries<br /></a></li></ul>
+
+<p class="moreLink"><a title="All about the libraries" href="/about">More...</a></p>
+
+<h2><a title="Checkout, reserve, material delievery, interlibrary loan, reference, computing, printing and photocopying information" href="/services">Library Services</a></h2>
+
+<ul class="visualNoMarker">
+
+<li><a title="Information about checks out materials, reserves, material delivery and late fees" href="/circulation">Circulation<br /></a></li>
+
+<li><a title="Information about interlibrary loan and document delivery service" href="/ill">Interlibrary Loan</a></li>
+
+<li><a title="Library Instruction" class="internal-link" href="/library-instruction">Library Instruction</a></li>
+
+<li><a title="Information about public station, wireless internet and laptop check out" href="/services/computing">Computing</a></li></ul>
+
+<br />
+
+<p class="moreLink"><a title="All about the library services" href="/services">More...</a></p>
+
+<h2><a title="Information for your research topics" href="/research-tools">Research Tools</a></h2>
+
+<ul class="visualNoMarker"><li><a title="Subject Guides" class="internal-link" href="/research-tools/guides">Subject Guides</a></li><li><a title="Study resources by courses" href="/research-tools/class-pages">Class Pages</a></li><li><a title="Citation Guides and Style Manuals" href="/govinfo/browse-topics/citation-guides-and-style-manuals">Citation Guides &amp; Style Manuals</a></li><li><a title="Tutorials on using electronic resources and more " href="/research-tools/tutorials">Tutorials</a></li><li><a title="Quick Reference" href="/ris/quick-reference">Quick Reference</a></li></ul>
+
+<p class="moreLink"><a title="All about the research tools" href="/research-tools">More...</a></p>
+
+</div>
+
+<div class="visualClear">&nbsp;</div>
+
+<h2 style="text-align: left;" class="contentHeading"><strong>Did you know...?</strong> <br /></h2>
+
+<em><strong></strong></em>
+
+<div class="visualClear"><a class="external-link" href="http://www.library.unt.edu/mmdl/news-events/a-new-look-and-feel-for-the-unt-libraries-catalog/"></a>
+
+<p><img class="image-left" src="/assets/images/did-you-know/thank%20a%20teacher.jpg/image_preview" alt="Thank a Teacher" />Has a UNT teacher made a difference in your life?</p>
+
+<p> UNT students have a new way to say “Thanks” through the “<a class="external-link" href="http://thanks.unt.edu/">Thank a Teacher</a>” Program here at UNT. Take a minute to share your thanks!</p>
+
+</div>
+
+
+        </div>
+
+        <div id="relatedItems">
+    
+        
+            
+        
+    
+</div>
+
+        <div>
+
+    <div class="documentByLine">
+        
+
+        
+          <span class="documentAuthor">
+            This page is maintained by
+
+          <a href="mailto:">webmaster</a>
+
+          &mdash;
+          
+          </span>
+        
+
+        <span class="documentModified">
+            <span>
+            last modified
+            </span>
+            Friday, February 24, 2012. 02:15 PM
+        </span>
+
+        
+
+        
+
+
+        
+
+        
+
+        <div class="reviewHistory">
+    
+</div>
+
+    </div>
+
+</div>
+    
+    
+
+
+                    
+                      
+                 
+    
+        
+    
+
+                    
+
+                  </div>
+
+                </div>
+
+              
+            </td>
+            
+
+            
+            <td id="portal-column-two">
+              <div class="visualPadding">
+                
+                  
+
+    
+        
+
+        
+
+            
+        
+            <dl class="portlet" id="askusPortlet">
+                <dt class="portletHeader">Ask Us</dt>
+                <dd class="noted odd"><a title="Ask Us" class="internal-link" href="/ris/ask-us"><img id="ask-us-home" class="image-inline" src="/assets/images/site-images/ask_us.jpg/image_preview" alt="Ask Us" /></a></dd>
+            </dl>
+        
+    
+
+
+        
+    
+    
+        
+
+        
+
+            
+        
+            <dl class="portlet" id="infoPortlet">
+                <dt class="portletHeader">Info</dt>
+                <dd class="noted odd">
+
+<p>&nbsp;</p>
+
+<p><span class="Apple-style-span"><span class="Apple-style-span">
+
+</span></span></p>
+
+<h2 class="contentHeading"><a title="Information for Special Audiences" href="/services/for-special-audiences">Information For</a></h2>
+
+<ul><li><a title="Faculty" href="/services/for-special-audiences/faculty">Faculty</a><a title="Off-Campus Users" href="/services/for-special-audiences/offcampus"><br /></a></li><li><a title="Off-Campus Users" href="/services/for-special-audiences/offcampus">Off-Campus Users</a><br /></li><li><a title="Visitors" href="/services/for-special-audiences/visitors">Visitors</a><a title="Special Needs" href="/services/for-special-audiences/special-needs"><br /></a></li><li><a title="Special Needs" href="/services/for-special-audiences/special-needs">Users with Special Needs<br /></a></li></ul>
+
+<h2 class="contentHeading"><a title="FAQ" href="/about/faq">How do I... (FAQ)</a></h2>
+
+</dd>
+            </dl>
+        
+    
+
+
+        
+    
+    
+        
+
+        
+
+            
+        
+            <dl class="portlet" id="newsAndEvents">
+                <dt class="portletHeader">News and Events</dt>
+                <dd class="noted odd">
+
+<ul><li><a title="Audio Center changes" class="internal-link" href="/music/news-events/audio-center-changes">Audio Center Changes</a> <br /></li><li>Mar 5 Workshops: <a title="Introduction to NCast, Audacity and Handbrake" class="internal-link" href="/eagle-commons/news-events/introduction-to-ncast-audacity-and-handbrake-2">Introduction to NCast, Audacity, and Handbrake</a>, <a title="Introduction to Library Services Workshop March 5th" class="internal-link" href="/library-instruction/news-events/introduction-to-library-services-workshop">Introduction to Library Services</a>, &amp; <a title="Library Research Workshop March 5th" class="internal-link" href="/library-instruction/news-events/library-research-workshop-2">Library Research</a></li><li>Mar 6 &amp; 7 The Doc Spot Film Series: <a title="No Job for a Woman" class="internal-link" href="/media/news-events/docspot/no-job">No Job for a Woman</a></li><li>Mar 7 <a title="March Game On!! @ UNT Libraries" class="internal-link" href="/media/news-events/gaming/march-game-on-unt-libraries">Game On!! @ UNT Libraries</a></li><li>Mar 7 Workshop: <a title="RefWorks Workshop March 7th" class="internal-link" href="/library-instruction/news-events/refworks-workshop-3">RefWorks</a></li><li>Mar 8 Workshops: <a title="Engineering Village: Making it Work for You! March 8" class="internal-link" href="/discoverypark/events-and-announcements/engineering-village-4">Engineering Village: Making it Work for You</a>, <a title="Research Tips: Sciences &amp; Engineering March 8 @ 7:00 p.m." class="internal-link" href="/discoverypark/events-and-announcements/research-tips-6">Research Tips: Sciences and Engineering</a> 7:00 p.m., &amp; <a title="Research Tips: Sciences &amp; Engineering March 8 @ 8:00 p.m." class="internal-link" href="/discoverypark/events-and-announcements/research-tips-7">Research Tips: Sciences and Engineering</a> 8:00 p.m. </li></ul>
+
+<div align="right"><a class="external-link" href="../news-and-events/library-news/">More News | </a><a title="Current Events" class="internal-link" href="/news-and-events/current-events">More Events</a></div>
+
+<div align="right"><a class="internal-link" href="/news-and-events/library-news"></a><a title="News and Events" class="internal-link" href="/assets/news-and-events"><br /></a></div>
+
+</dd>
+            </dl>
+        
+    
+
+
+
+        
+    
+
+                
+                &nbsp;
+              </div>
+            </td>
+            
+          </tr>
+        </tbody>
+      </table>
+      
+
+      <div class="visualClear" id="clear-space-before-footer"><!-- --></div>
+
+
+      <hr class="netscape4" />
+
+      
+
+        <div id="portal-footer">
+
+        <ul id="portal-siteactions">
+
+    <li id="siteaction-untlibraryhome"><a
+    href="http://www.library.unt.edu" accesskey=""
+    title="UNT Libraries Home">UNT Libraries Home</a></li>
+    <li id="siteaction-search_the_site"><a
+    href="http://www.library.unt.edu/search_form"
+    accesskey="" title="Search the Site">Search the Site</a></li>
+    <li id="siteaction-sitemap"><a
+    href="http://www.library.unt.edu/sitemap" accesskey="3"
+    title="Sitemap">Sitemap</a></li>
+    <li id="siteaction-tell-us"><a
+    href="http://www.library.unt.edu/forms/tell-us"
+    accesskey="" title="Tell us how we are doing">Tell us how we are doing</a></li>
+    <li id="siteaction-report_a_problem"><a
+    href="https://ui.library.unt.edu/project-manager/user?destination=node/add/ticket"
+    accesskey="" title="Report a Problem">Report a Problem</a></li>
+
+</ul>
+
+</div>
+
+        <div id="portal-colophon">
+      
+
+      
+
+      <p>UNT and State of Texas: 
+           <a href="http://www.unt.edu/" title="University of North Texas">UNT</a> |
+           <a href="http://www.unt.edu/search/">UNT Search</a> | 
+           <a href="http://www.unt.edu/newsandevents.htm">UNT News and Events</a> |
+           <a href="http://www.texasonline.com/portal/tol">State of Texas</a> |
+           <a href="http://www.tsl.state.tx.us/trail/">State-wide Search</a>
+      </p>
+      
+      <p>Policies:  
+            <a href="http://www.unt.edu/policy/UNT_Policy/volume2/5_1.html">UNT Web Accessibility Policy</a> | 
+            <a href="http://www.unt.edu/aaeoeada.html">AA/EOE/ADA</a> |
+            <a href="http://www.unt.edu/unt_ps.html">Privacy Statement</a> |
+            <a href="http://www.unt.edu/disclaimer.htm">Disclaimer</a>
+      </p> 
+
+
+<div class="vcard">
+ <div class="fn org"><a class="url"
+                        href="http://www.library.unt.edu">University Of North Texas Libraries</a></div>
+ <div class="adr">
+  <div class="post-office-box">1155 Union Circle #305190</div>
+  <span class="locality">Denton</span>
+, 
+  <span class="region">TX</span> <span class="postal-code">76203-5017</span>
+
+ </div>
+ <div class="tel">(940) 565-2413</div>
+               <p class="discreet">
+                  <a href="http://www.library.unt.edu/about/locations-and-maps">
+                  Locations, Maps, and Shipping.
+                  </a>
+               </p>
+</div>
+
+       <a href="http://www.library.unt.edu/about/credits/" title="This site was built using Plone CMS. Click for more information about copyright and other related information.">
+        Credits
+      </a>
+
+<div>
+   <a href="http://www.library.unt.edu/govinfo/">
+      <img alt="Government Information Connection"
+           src="http://www.library.unt.edu/govinfo/govinfo/government-information-connection/image_thumb" />
+   </a>
+</div>
+<div>
+   <a href="http://www.facebook.com/pages/UNT-Libraries/189997581023527?sk=wall">
+      <img alt="The UNT Libraries are on Facebook"
+           src="http://www.library.unt.edu/assets/images/site-images/facebook.png" />
+   </a>
+</div>
+
+      </div>
+      
+
+    </div>
+
+</body>
+</html>
+
+

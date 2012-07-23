@@ -1,0 +1,433 @@
+
+<HTML><!-- InstanceBegin template="/Templates/main.dwt.php" codeOutsideHTMLIsLocked="false" -->
+<HEAD>
+		<META CONTENT="text/html; charset=utf-8">
+	<!-- InstanceBeginEditable name="doctitle" -->
+<TITLE>WSU Libraries : Find an item in the library</TITLE>
+<!-- InstanceEndEditable -->
+	<META CONTENT="en-us">
+	<META NAME="keywords" CONTENT="Wayne State University, WSU, Library System, Libraries">
+	<META NAME="description" CONTENT="The online resources and services of the Wayne State University Libraries">
+	<META NAME="author" CONTENT="libwebmaster@wayne.edu">
+	<META NAME="Copyright" CONTENT="Copyright (c) 2012 Wayne State University">
+    
+	
+    
+	
+	
+	#main { background: #fff url('/inc/img/pix/pix7.jpg') 25px 50px repeat-y; }
+
+	<!--[if lte IE 7]><link rel="stylesheet" href="/inc/css/ie/all.css" type="text/css" media="all" /><![endif]-->
+	<!--[if lte IE 6]><link rel="stylesheet" href="/inc/css/ie/6.css" type="text/css" media="all" />
+    <script type="text/javascript" language="javascript" src="/inc/js/unitpngfix.js"></script><![endif]-->
+	<!--[if lte IE 5]><link rel="stylesheet" href="/inc/css/ie/5win.css" type="text/css" media="all" /><![endif]-->
+    
+    
+    
+    
+	document.write("#functionmenu { display: none; }");
+    
+	<!-- InstanceBeginEditable name="head" -->
+
+
+
+
+
+
+<!--<script type="text/javascript" language="javascript" src="js/tabsearch.js"></script>-->
+
+    $(document).ready(function() {
+    /* Tab Search */
+$("#tabsearch").tabs({ cookie:{ } });
+var COOKIE_NAME = 'ui-tabs-1'; // for mapping
+	var THE_TAB = $.cookie(COOKIE_NAME);
+	if (THE_TAB == null) { THE_TAB = 0; }
+	else { THE_TAB = parseInt(THE_TAB); }
+
+//	//hack for firefox
+//	if (jQuery.browser.mozilla || jQuery.browser.safari)	{
+//		THE_TAB++;	
+//	}
+
+	
+	$("#thetabs a").removeClass("highlight");
+	$("#thetabs li").removeClass("highlight");
+	var HIGHLIGHT_TAB = $("#thetabs a").eq(THE_TAB);
+	HIGHLIGHT_TAB.addClass("highlight");
+	HIGHLIGHT_TAB.parent().addClass("highlight");
+
+	$("#thetabs a").click(function() {
+		$("#thetabs a").removeClass("highlight");
+		$("#thetabs li").removeClass("highlight");
+		$(this).addClass("highlight");
+		$(this).parent().addClass("highlight");
+	});
+		
+ 	/* Flexbox */
+	 $('.callNumber').flexbox('JSON_subjects.php',{
+			watermark: 'Type a subject to search',
+			width: 375,
+			paging: {  
+				pageSize: 10  
+			},
+			onSelect: function() {  
+					$('#maps1').submit();
+				 }  
+		});
+		 
+		 //hides the flexbox area if JS is enabled in the browser
+		 $('#nojs').hide();  
+		 $('.callNumberNoJS').attr("disabled", "disabled");
+     });	
+
+<!-- InstanceEndEditable -->
+	 
+    
+        
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+	
+    
+    
+    	<!-- NOTE: LOGGING INTO PIPELINE, BLACKBOARD OR WEBMAIL ALSO LOGS USER INTO EZPROXY -->
+
+  
+      <U><FONT COLOR=blue>Pipeline</FONT></U>
+      | <U><FONT COLOR=blue>Blackboard</FONT></U>
+      | <U><FONT COLOR=blue>Webmail</FONT></U>
+  
+  
+  <U><FONT COLOR=blue>My Library Account</FONT></U>
+    
+
+
+
+
+	
+	<P><U><FONT COLOR=blue>Wayne State University</FONT></U></P>
+    
+    
+    <UL>
+    <LI><U><FONT COLOR=blue>Library System</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Neef Law Library</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Shiffman Medical Library</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>More</FONT></U></LI>
+    </UL>
+    
+ <!-- #header --> 		
+		
+        
+            
+            
+            <H1><U><FONT COLOR=blue>Library System</FONT></U></H1>
+      
+                        <UL>
+              <LI><U><FONT COLOR=blue>Resources</FONT></U>
+              <UL>
+              	<LI><U><FONT COLOR=blue>All Resources</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Catalog</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Article Databases</FONT></U></LI>
+                 <LI><U><FONT COLOR=blue>Digital Collections</FONT></U></LI>
+                 <!-- test to increase visibility of Dig Commons Apr22 JM -->
+                 <LI><U><FONT COLOR=blue>Digital Commons</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>E-Books</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>E-Journals</FONT></U></LI>
+				
+              	<LI><U><FONT COLOR=blue>Guides</FONT></U></LI>
+                			<LI><U><FONT COLOR=blue>Reference Tools</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Special Collections</FONT></U></LI>
+								              </UL></LI>
+              <LI><U><FONT COLOR=blue>Services</FONT></U>
+              <UL>
+              	<LI><U><FONT COLOR=blue>All Services</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Ask-A-Librarian</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Borrowing</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Classroom Support</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Computing</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Events Support</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Faculty/Grad Research Support</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Interlibrary Loan</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Instruction</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Reserves</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Room Reservations</FONT></U></LI>
+  </UL></LI>
+              <LI><U><FONT COLOR=blue>Library Info</FONT></U>
+              <UL>
+              	<LI><U><FONT COLOR=blue>All Information</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>About</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Contact Info/ Staff Directory</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Hours</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Maps and Directions</FONT></U></LI>
+       			<LI><U><FONT COLOR=blue>News</FONT></U>				</LI>				<LI><U><FONT COLOR=blue>Policies</FONT></U></LI>
+				              </UL></LI>
+              <LI><U><FONT COLOR=blue>Quicklinks</FONT></U>
+                <UL>
+                  <LI><U><FONT COLOR=blue>Alerting Services</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Assignment Planner</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Bibliographic Software</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Citation Linker</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Faculty Video Media Request</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>First Year Students</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Library Liaisons</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Office for Teaching and Learning</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Renew Books</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Request Equipment</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Retired Faculty</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>re:Search</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Student Technology Studio</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Suggest a Title</FONT></U></LI>
+                </UL>
+              </LI>
+            </UL>
+            <!-- #nav -->
+                 
+
+            
+<H1>WSU Libraries</H1> <!-- FOR PRINT -->
+			<!-- InstanceBeginEditable name="content" -->
+        
+<!--
+@media print {
+		.noprint {
+		display:none;
+	}
+}
+#content .required {
+	fontstyle: italic;
+	margintop: 0px;
+	paddingtop: 0px; }
+#content legend {
+    color: #000;
+	fontsize: 1.125em;
+	fontweight: bold; }
+#content label {
+  float: left;
+  width: 25%;
+  marginright: 0.5em;
+  textalign: right; }
+#content label.nofloat {
+  width: auto;
+  float: none;
+  textalign: left; }
+.uitabshide {
+    position: absolute;
+    left: 10000px;
+}
+-->
+
+
+        <H2>Find an item in the library</H2>
+        <P>Here you can map call numbers to locations in the library system. Simply select a library, enter a call number or subject, and the system will show the approximate location of that item on the shelves.  For more information, please watch <U><FONT COLOR=blue>our video about the mapping system.</FONT></U></P>
+
+        
+        
+                
+          <UL>
+            <LI><U><FONT COLOR=blue>Map by call number</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Map by Subject</FONT></U></LI>
+          </UL>
+          
+                    
+            <FORM>
+              <P>
+                Select a library:
+                <SELECT NAME="mapCode">
+                <OPTION VALUE="pbstk">Purdy/Kresge Library</OPTION>
+                <OPTION VALUE="ubstk">Undergraduate Library</OPTION>
+                <OPTION VALUE="sbstk">Science and Engineering Library</OPTION>
+                <OPTION VALUE="mbstk">Shiffman Medical Library</OPTION>
+                 <OPTION VALUE="lbstk">Neef Law Library</OPTION>
+                </SELECT>
+              </P>
+              <P>
+                Enter a call number:
+                <INPUT VALUE="" NAME="callNumber" MAXLENGTH="60" SIZE="22" TYPE="text">
+                <INPUT VALUE="Maps" NAME="ID" TYPE="hidden">
+                <INPUT VALUE="Search" TYPE="submit">
+              </P>
+            </FORM>
+          
+          
+                    
+            <FORM>
+              <P>
+                    Select a library:
+                    <SELECT NAME="mapCode">
+                    <OPTION VALUE="pbstk">Purdy/Kresge Library</OPTION>
+                    <OPTION VALUE="ubstk">Undergraduate Library</OPTION>
+                    <OPTION VALUE="sbstk">Science and Engineering Library</OPTION>
+                    <OPTION VALUE="mbstk">Shiffman Medical Library</OPTION>
+                    <OPTION VALUE="lbstk">Neef Law Library</OPTION>
+                    </SELECT>
+              </P>
+              <P>
+                Select a subject:
+              
+			                
+                <SELECT NAME="callNumber">
+                  <OPTION VALUE="">Select a subject</OPTION><OPTION VALUE="AS1">Academies & Learned Societies</OPTION><OPTION VALUE="QC220">Acoustics (Sound)</OPTION><OPTION VALUE="BH1">Aesthetics</OPTION><OPTION VALUE="PK6701">Afghan, Baluchi, Kurdish, Ossetic Lang./Lit.</OPTION><OPTION VALUE="PL8000">African Languages</OPTION><OPTION VALUE="PL8009.5">African Literature</OPTION><OPTION VALUE="PT6500">Afrikaans Literature</OPTION><OPTION VALUE="S1">Agriculture, Gen.</OPTION><OPTION VALUE="UG622">Air Force</OPTION><OPTION VALUE="PG9501">Albanian Lang./Lit.</OPTION><OPTION VALUE="QA150">Algebra</OPTION><OPTION VALUE="PM101">American Indian Languages/Lit.</OPTION><OPTION VALUE="PS1">American Literature</OPTION><OPTION VALUE="QD71">Analytical Chemistry</OPTION><OPTION VALUE="QA801">Analytical Mechanics</OPTION><OPTION VALUE="QP501">Animal Biochem./Exper. Pharmacology</OPTION><OPTION VALUE="SF1">Animal Culture</OPTION><OPTION VALUE="GN1">Anthropology (Gen.)</OPTION><OPTION VALUE="SH1">Aquaculture & Fisheries</OPTION><OPTION VALUE="PJ6001">Arabic, Ethiopian Lang./Lit.</OPTION><OPTION VALUE="CC1">Archaeology (General)</OPTION><OPTION VALUE="NA1">Architecture</OPTION><OPTION VALUE="CD921">Archives</OPTION><OPTION VALUE="UA1">Armies - Org., Distribution</OPTION><OPTION VALUE="PM8001">Artificial Lang./Lit.-Secret Lang.</OPTION><OPTION VALUE="UF1">Artillery</OPTION><OPTION VALUE="NX1">Arts in General</OPTION><OPTION VALUE="QB1">Astronomy</OPTION><OPTION VALUE="G1001">Atlases</OPTION><OPTION VALUE="C1">Auxiliary Sciences of History</OPTION><OPTION VALUE="PG8001">Baltic Lang./Lit.</OPTION><OPTION VALUE="BS1">Bible</OPTION><OPTION VALUE="CT1">Biography</OPTION><OPTION VALUE="QH301">Biology (Gen.)</OPTION><OPTION VALUE="QL671">Birds</OPTION><OPTION VALUE="Z278">Bookselling & Publ.</OPTION><OPTION VALUE="RV1">Botanic, Thomsonian, Eclectic Med.</OPTION><OPTION VALUE="QK1">Botany (Gen.)</OPTION><OPTION VALUE="QK475">Botany (Specific fields)</OPTION><OPTION VALUE="TG1">Bridge Engineering</OPTION><OPTION VALUE="PN1990">Broadcasting</OPTION><OPTION VALUE="BQ1">Buddhism</OPTION><OPTION VALUE="TH1">Building Construction</OPTION><OPTION VALUE="PG801">Bulgarian Lang./Lit.</OPTION><OPTION VALUE="HF5001">Business, Bus. Admin.</OPTION><OPTION VALUE="GA101">Cartography</OPTION><OPTION VALUE="PC3801">Catalan Lang./Lit.</OPTION><OPTION VALUE="UE1">Cavalry, Armor</OPTION><OPTION VALUE="PB1201">Celtic Languages/Literatures</OPTION><OPTION VALUE="DK670">Central Asian & Far Eastern Rep.</OPTION><OPTION VALUE="TP1">Chemical Technology</OPTION><OPTION VALUE="QD1">Chemistry (Gen.)</OPTION><OPTION VALUE="PL1001">Chinese Language</OPTION><OPTION VALUE="PL2250">Chinese Literature</OPTION><OPTION VALUE="QL605">Chordates - Vertebrates</OPTION><OPTION VALUE="BR1">Christianity</OPTION><OPTION VALUE="CE1">Chronology</OPTION><OPTION VALUE="GV1800">Circuses, Carnivals, Etc.</OPTION><OPTION VALUE="PA3000">Classical Literature, Gen.</OPTION><OPTION VALUE="PA1">Classical Philology</OPTION><OPTION VALUE="JA1">Coll. & Gen. Works - Treatises</OPTION><OPTION VALUE="AC1">Collections</OPTION><OPTION VALUE="LH1">College & School Magazines, Papers</OPTION><OPTION VALUE="HV1">Colonies & Colonization</OPTION><OPTION VALUE="JV1">Colonies & Colonization</OPTION><OPTION VALUE="PN6700">Comics & Comic Lit.</OPTION><OPTION VALUE="HF1">Commerce (Gen.)</OPTION><OPTION VALUE="HT1">Communities, Classes, Races</OPTION><OPTION VALUE="TK5105.5">Computer Networks</OPTION><OPTION VALUE="QA76.6">Computer Programming</OPTION><OPTION VALUE="QA75.5">Computer Science, Gen.</OPTION><OPTION VALUE="QA76.75">Computer Software</OPTION><OPTION VALUE="QA76.38">Computers, Gen.</OPTION><OPTION VALUE="S900">Conservation of Natural Resources, Land</OPTION><OPTION VALUE="JK1">Const. Hist & Admin. U.S.</OPTION><OPTION VALUE="JQ1">Const. Hist. & Admin. Asia, Africa</OPTION><OPTION VALUE="JL1">Const. Hist. & Admin. Canada, Latin America</OPTION><OPTION VALUE="JN1">Const. Hist. & Admin. Europe</OPTION><OPTION VALUE="QC170">Constitution & Prop. of Matter</OPTION><OPTION VALUE="JF1">Constitutional Hist. & Admin.</OPTION><OPTION VALUE="PJ2001">Coptic Lang./Lit.</OPTION><OPTION VALUE="Z551">Copyright, Intel. Prop.</OPTION><OPTION VALUE="Z102.5">Cryptography Paleography</OPTION><OPTION VALUE="QD901">Crystallography</OPTION><OPTION VALUE="PJ2401">Cushitic Lang./Lit.</OPTION><OPTION VALUE="Q300">Cybernetics</OPTION><OPTION VALUE="QH573">Cytology</OPTION><OPTION VALUE="PG4001">Czech Lang./Lit.</OPTION><OPTION VALUE="PC890">Dalmatian Language/Lit.</OPTION><OPTION VALUE="GV1580">Dancing</OPTION><OPTION VALUE="PD3001">Danish Language</OPTION><OPTION VALUE="PT7601">Danish Literature</OPTION><OPTION VALUE="PK7001">Dardic, Armenian, Caucasian Lang./Lit.</OPTION><OPTION VALUE="NK1">Decorative/Applied Arts</OPTION><OPTION VALUE="RK1">Dentistry</OPTION><OPTION VALUE="RL1">Dermatology</OPTION><OPTION VALUE="AG1">Dictionaries, Gen. Reference</OPTION><OPTION VALUE="CD1">Diplomatics</OPTION><OPTION VALUE="RC633">Diseases of Organs, Glands, Systems</OPTION><OPTION VALUE="RC936">Diseases of Regions of the Body</OPTION><OPTION VALUE="BT1">Doctrinal Theology</OPTION><OPTION VALUE="TX1">Domestic Engineering</OPTION><OPTION VALUE="PN1600">Drama (Gen.)</OPTION><OPTION VALUE="PL4601">Dravidian Lang./Lit.</OPTION><OPTION VALUE="PF1">Dutch Language</OPTION><OPTION VALUE="PT5001">Dutch Literature</OPTION><OPTION VALUE="QE500">Dynamic & Structural Geology</OPTION><OPTION VALUE="LB1139.2">Early Childhood Thru Primary</OPTION><OPTION VALUE="BX1">Eastern Christian Churches & Ecumenism</OPTION><OPTION VALUE="DAW1">Eastern Europe, General</OPTION><OPTION VALUE="QH540">Ecology</OPTION><OPTION VALUE="QH705">Economic Biology</OPTION><OPTION VALUE="HC1">Economic Hist. & Conditions</OPTION><OPTION VALUE="HB1">Economic Theory</OPTION><OPTION VALUE="HD2321">Economics - Industry</OPTION><OPTION VALUE="HD1">Economics - Production</OPTION><OPTION VALUE="LB1705">Education/Training of Teachers</OPTION><OPTION VALUE="PJ1001">Egyptian Lang./Lit.</OPTION><OPTION VALUE="TK1">Electrical Engineering</OPTION><OPTION VALUE="QC501">Electricity, Magnetism, Nuclear Physics</OPTION><OPTION VALUE="AE1">Encyclopedias</OPTION><OPTION VALUE="PR1">English Literature</OPTION><OPTION VALUE="PE1">English Philology/Lang.</OPTION><OPTION VALUE="GE1">Environmental Sciences</OPTION><OPTION VALUE="TD1">Environmental Technology</OPTION><OPTION VALUE="CN1">Epigraphy, Inscriptions</OPTION><OPTION VALUE="BJ1">Ethics</OPTION><OPTION VALUE="GN301">Ethnology & Ethnography</OPTION><OPTION VALUE="QL750">Ethology, Anatomy, Embryology</OPTION><OPTION VALUE="QC120">Experimental Mechanics</OPTION><OPTION VALUE="HQ1">Family, Marriage, Women, Sexual Life</OPTION><OPTION VALUE="PL490">Far Eastern Lang./Lit.</OPTION><OPTION VALUE="PD7581">Faroese Literature</OPTION><OPTION VALUE="PZ1">Fiction in English</OPTION><OPTION VALUE="HG1">Finance (Gen.)</OPTION><OPTION VALUE="QL614">Fishes</OPTION><OPTION VALUE="PF1001">Flemish Lang.</OPTION><OPTION VALUE="PT6000">Flemish Literature since 1830</OPTION><OPTION VALUE="GR1">Folklore</OPTION><OPTION VALUE="RA1001">Forensic Medicine</OPTION><OPTION VALUE="SD1">Forestry</OPTION><OPTION VALUE="PC2001">French Lang.,Provencal Lang./Lit.</OPTION><OPTION VALUE="PQ1">French Literature</OPTION><OPTION VALUE="GV1199">Games & Amusements</OPTION><OPTION VALUE="Z1001">Gen. Bibliography</OPTION><OPTION VALUE="TA1">Gen. Engineering</OPTION><OPTION VALUE="T1">Gen. Technology</OPTION><OPTION VALUE="CS1">Genealogy</OPTION><OPTION VALUE="L1">General Education</OPTION><OPTION VALUE="M1">General Music</OPTION><OPTION VALUE="QH426">Genetics</OPTION><OPTION VALUE="G1">Geography (General)</OPTION><OPTION VALUE="QE1">Geology, Gen.</OPTION><OPTION VALUE="QA440">Geometry, Topology</OPTION><OPTION VALUE="GB400">Geomorphology</OPTION><OPTION VALUE="QC801">Geophysics, Geomagnetism</OPTION><OPTION VALUE="PF3001">German Language</OPTION><OPTION VALUE="PT1">German Literature</OPTION><OPTION VALUE="PD1">Germanic Philology/Languages</OPTION><OPTION VALUE="QA166">Graph Theory</OPTION><OPTION VALUE="NC1">Graphic Arts, Drawing, Design</OPTION><OPTION VALUE="PA203">Greek Language</OPTION><OPTION VALUE="PA3050">Greek Literature</OPTION><OPTION VALUE="RG1">Gynecology & Obstetrics</OPTION><OPTION VALUE="DX1">Gypsies</OPTION><OPTION VALUE="TT1">Handicrafts, Arts & Crafts</OPTION><OPTION VALUE="QC251">Heat</OPTION><OPTION VALUE="PJ4501">Hebrew, Aramaic & Syriac Lang.</OPTION><OPTION VALUE="CR1">Heraldry</OPTION><OPTION VALUE="LB2300">Higher Education</OPTION><OPTION VALUE="TE1">Highway Engineering</OPTION><OPTION VALUE="B790">Hist. & Systems, Modern</OPTION><OPTION VALUE="CB1">Hist. of Civilization & Culture</OPTION><OPTION VALUE="LA1">Hist. of Education</OPTION><OPTION VALUE="AZ0">Hist. of Scholarship & Learning</OPTION><OPTION VALUE="D1">History (General)</OPTION><OPTION VALUE="DT1">History - Africa</OPTION><OPTION VALUE="E1">History - Americas (General, Indian, N. Amer.)</OPTION><OPTION VALUE="DS1">History - Asia</OPTION><OPTION VALUE="DB1">History - Austria, Austro-Hungarian Empire</OPTION><OPTION VALUE="F1000">History - British America, Canada</OPTION><OPTION VALUE="F2155">History - Caribbean</OPTION><OPTION VALUE="F1421">History - Central America</OPTION><OPTION VALUE="DS501">History - Eastern Asia, SE Asia, Far East</OPTION><OPTION VALUE="DR1">History - Eastern Europe, Balkan Pen.</OPTION><OPTION VALUE="DB901">History - Eastern Europe, Central Area</OPTION><OPTION VALUE="DJK1">History - Eastern Europe, Gen.</OPTION><OPTION VALUE="DC1">History - France, Andorra, Monoco</OPTION><OPTION VALUE="DD1">History - Germany</OPTION><OPTION VALUE="DA1">History - Great Britain</OPTION><OPTION VALUE="DF1">History - Greece</OPTION><OPTION VALUE="DG1">History - Italy</OPTION><OPTION VALUE="F1401">History - Latin America, Spanish America</OPTION><OPTION VALUE="DE1">History - Med. Region, Greco-Roman World</OPTION><OPTION VALUE="F1201">History - Mexico</OPTION><OPTION VALUE="DJ1">History - Netherlands (Holland)</OPTION><OPTION VALUE="DH1">History - Netherlands (Low Countries/Belg.)</OPTION><OPTION VALUE="DU1">History - Oceania (South seas)</OPTION><OPTION VALUE="DK4010">History - Poland</OPTION><OPTION VALUE="DP501">History - Portugal</OPTION><OPTION VALUE="DK1">History - Russia</OPTION><OPTION VALUE="F2201">History - South America</OPTION><OPTION VALUE="DS330">History - Southern Asia, Indian Ocean</OPTION><OPTION VALUE="DP1">History - Spain</OPTION><OPTION VALUE="DS41">History - SW Asia, Ancient Orient, Near East</OPTION><OPTION VALUE="DQ1">History - Switzerland</OPTION><OPTION VALUE="E300">History - United States (1790-1855)</OPTION><OPTION VALUE="E656">History - United States (After Civil War)</OPTION><OPTION VALUE="E140">History - United States (Colonial)</OPTION><OPTION VALUE="E201">History - United States (Revolutionary)</OPTION><OPTION VALUE="E441">History - United States (Slavery & Civil War)</OPTION><OPTION VALUE="F1601">History - West Indies</OPTION><OPTION VALUE="Z1">History of Books</OPTION><OPTION VALUE="D901">History of Europe (General)</OPTION><OPTION VALUE="DL1">History- Northern Europe, Scandinavia</OPTION><OPTION VALUE="RX1">Homeopathy</OPTION><OPTION VALUE="QM1">Human Anatomy</OPTION><OPTION VALUE="GF1">Human Ecology (Anthropogeography)</OPTION><OPTION VALUE="SK1">Hunting Sports</OPTION><OPTION VALUE="TC1">Hydraulic Engineering</OPTION><OPTION VALUE="GB651">Hydrology</OPTION><OPTION VALUE="PM1">Hyperborean Lang./Lit of American & Asia</OPTION><OPTION VALUE="HV6000">Immigration & Emigration</OPTION><OPTION VALUE="JV6000">Immigration & Emigration</OPTION><OPTION VALUE="RC581">Immunologic, Nutritional & Metabolic Diseases</OPTION><OPTION VALUE="LD1">Ind. Inst. - U.S.</OPTION><OPTION VALUE="LE1">Ind. Inst. America (except U.S.)</OPTION><OPTION VALUE="LG1">Ind. Inst. Asia, Africa, Oceania</OPTION><OPTION VALUE="LF1">Ind. Inst. Europe</OPTION><OPTION VALUE="AI1">Indexes</OPTION><OPTION VALUE="BF207">Individual Psychology</OPTION><OPTION VALUE="PK101">Indo-Aryan Lang.</OPTION><OPTION VALUE="PK2902">Indo-Aryan Lit.</OPTION><OPTION VALUE="PL3521">Indo-Chinese, Karen, Thai Lang./Lit.</OPTION><OPTION VALUE="PK1">Indo-Iranian Philology/Lit.</OPTION><OPTION VALUE="UD1">Infantry</OPTION><OPTION VALUE="RC109">Infectious & Parasitic Diseases</OPTION><OPTION VALUE="ZA1">Information Resources</OPTION><OPTION VALUE="QD146">Inorganic Chemistry (Gen.)</OPTION><OPTION VALUE="M5">Instrumental Music</OPTION><OPTION VALUE="RC1">Internal Medicine, Gen.</OPTION><OPTION VALUE="JX1">International Law</OPTION><OPTION VALUE="JZ1">International Relations (new)</OPTION><OPTION VALUE="QL362">Invertebrates</OPTION><OPTION VALUE="PK6001">Iranian Philology & Lit.</OPTION><OPTION VALUE="BP1">Islam, Bahaism, Theosophy</OPTION><OPTION VALUE="PC1001">Italian Lang., Sardinian Lang/Lit.</OPTION><OPTION VALUE="PQ4000">Italian Literature</OPTION><OPTION VALUE="PL522.9999">Japanese Language</OPTION><OPTION VALUE="PL700">Japanese Literature</OPTION><OPTION VALUE="PN3035">Jewish Theater</OPTION><OPTION VALUE="PN4699">Journalism, Periodical Press</OPTION><OPTION VALUE="BM1">Judaism</OPTION><OPTION VALUE="PZ5">Juvenile Lit., American & English</OPTION><OPTION VALUE="PZ11">Juvenile Lit., Foreign</OPTION><OPTION VALUE="PL901">Korean Language</OPTION><OPTION VALUE="PL950">Korean Literature</OPTION><OPTION VALUE="HD4801">Labor (Gen.)</OPTION><OPTION VALUE="PA2001">Latin Language</OPTION><OPTION VALUE="PA6000">Latin Literature</OPTION><OPTION VALUE="K1">Law (General)</OPTION><OPTION VALUE="KE1">Law - Canada</OPTION><OPTION VALUE="KEA0">Law - Canada, Provinces and Cities</OPTION><OPTION VALUE="KG1">Law - Latin America</OPTION><OPTION VALUE="KG1">Law - Latin America</OPTION><OPTION VALUE="KDZ1">Law - North American</OPTION><OPTION VALUE="KFX1">Law - U.S. Cities</OPTION><OPTION VALUE="KF1">Law - U.S. Federal, States, Territories</OPTION><OPTION VALUE="KD1">Law - United Kingdom</OPTION><OPTION VALUE="KK0">Law of Individual Countries</OPTION><OPTION VALUE="KFZ1">Law of Individual Territories</OPTION><OPTION VALUE="Z662">Libraries, Lib. Sci.</OPTION><OPTION VALUE="PN1">Literature - Authorship/Crit.</OPTION><OPTION VALUE="PN6010">Literature - Collections</OPTION><OPTION VALUE="ML1">Literature of Music</OPTION><OPTION VALUE="JS1">Local Government</OPTION><OPTION VALUE="BC1">Logic</OPTION><OPTION VALUE="PJ2301">Lybyco-Berber Lang./Lit.</OPTION><OPTION VALUE="PG1161">Macedonian Lang./Lit.</OPTION><OPTION VALUE="QA267">Machine Theory, Abstract Automation</OPTION><OPTION VALUE="BF173">Major Theories & Systems</OPTION><OPTION VALUE="QL700">Mammals</OPTION><OPTION VALUE="T58.6">Management Information Systems</OPTION><OPTION VALUE="GT1">Manners & Customs (Gen.)</OPTION><OPTION VALUE="TS1">Manufactures</OPTION><OPTION VALUE="G3190">Maps</OPTION><OPTION VALUE="VE1">Marines</OPTION><OPTION VALUE="QA299.6">Mathematical Analysis</OPTION><OPTION VALUE="GA1">Mathematical Geography</OPTION><OPTION VALUE="QA1">Mathematics (Gen.)</OPTION><OPTION VALUE="TJ1">Mechanical Engineering & Machinery</OPTION><OPTION VALUE="RA960">Medical Centers, Hospitals, Clinics</OPTION><OPTION VALUE="RA791">Medical Geography/Climatology</OPTION><OPTION VALUE="RA1">Medicine & the State</OPTION><OPTION VALUE="R1">Medicine, Gen.</OPTION><OPTION VALUE="QC851">Meteorology</OPTION><OPTION VALUE="QR1">Microbiology</OPTION><OPTION VALUE="QH201">Microscopy</OPTION><OPTION VALUE="PK1471">Middle Indo-Aryan Dialects</OPTION><OPTION VALUE="UB1">Military Admin.</OPTION><OPTION VALUE="UG1500">Military Astronautics, Space Warfare</OPTION><OPTION VALUE="UG1">Military Engineering</OPTION><OPTION VALUE="U1">Military Science, Gen.</OPTION><OPTION VALUE="UC1">Military Science, Maint. & Trans.</OPTION><OPTION VALUE="UH1">Military Science, Other Serv.</OPTION><OPTION VALUE="QE351">Mineralogy</OPTION><OPTION VALUE="TN1">Mining Engineering & Metallurgy</OPTION><OPTION VALUE="VG1">Minor Services of Navies</OPTION><OPTION VALUE="PG7900">Minor Slavic Dialects</OPTION><OPTION VALUE="PM7801">Mixed Languages - Creole, Pidgin English</OPTION><OPTION VALUE="T57.62">Modeling & Simulation</OPTION><OPTION VALUE="PD2401">Modern Icelandic Lang.</OPTION><OPTION VALUE="PT7351">Modern Icelandic Lit.</OPTION><OPTION VALUE="PB1">Modern Languages (Gen.)</OPTION><OPTION VALUE="PN1993">Motion Pictures</OPTION><OPTION VALUE="TL1">Motor Vehicles, Aeronautics, Astronautics</OPTION><OPTION VALUE="AM1">Museums, Collectors & Collecting</OPTION><OPTION VALUE="MT1">Music Instruction/Study</OPTION><OPTION VALUE="Z1201">Nat. Bibl. America</OPTION><OPTION VALUE="Z3001">Nat. Bibl. Asia, Africa, Aust.</OPTION><OPTION VALUE="Z1365">Nat. Bibl. Canada</OPTION><OPTION VALUE="Z2000">Nat. Bibl. Europe</OPTION><OPTION VALUE="Z1411">Nat. Bibl. Mexico, Central, So. America</OPTION><OPTION VALUE="Z1215">Nat. Bibl. U.S.</OPTION><OPTION VALUE="QH1">Natural History</OPTION><OPTION VALUE="VB1">Naval Administration</OPTION><OPTION VALUE="VM1">Naval Architecture, Shipbuilding</OPTION><OPTION VALUE="VC1">Naval Maintenance</OPTION><OPTION VALUE="VF1">Naval Ordnance</OPTION><OPTION VALUE="V1">Naval Science, Gen.</OPTION><OPTION VALUE="VD1">Naval Seamen</OPTION><OPTION VALUE="VA1">Navies, Org., Dist.</OPTION><OPTION VALUE="VK1">Navigation, Merchant Marine</OPTION><OPTION VALUE="RC254">Neoplasms, Tumors, Oncology</OPTION><OPTION VALUE="QP1">Neurophysiology</OPTION><OPTION VALUE="RC321">Neurosciences, Neurology</OPTION><OPTION VALUE="AN1">Newspapers</OPTION><OPTION VALUE="PL3301">Non-Chinese Languages of China</OPTION><OPTION VALUE="PD2501">Norwegian Lang.</OPTION><OPTION VALUE="PT8301">Norwegian Literature</OPTION><OPTION VALUE="QA101">Numeration, Arith., Elem. Math</OPTION><OPTION VALUE="CJ1">Numismatics</OPTION><OPTION VALUE="RT1">Nursing</OPTION><OPTION VALUE="BF1404">Occult Sciences</OPTION><OPTION VALUE="PL5001">Oceanic Lang./Lit.</OPTION><OPTION VALUE="GC1">Oceanography</OPTION><OPTION VALUE="HF5548">Office Automation</OPTION><OPTION VALUE="J1">Official Documents</OPTION><OPTION VALUE="PT7101">Old Norse Lit., Old Icelandic,</OPTION><OPTION VALUE="QA76.55">Online Data Processing</OPTION><OPTION VALUE="RE1">Ophthalmology</OPTION><OPTION VALUE="TA1630">Optical Data Processing</OPTION><OPTION VALUE="QC350">Optics, Light, Radiation</OPTION><OPTION VALUE="QD241">Organic Chemistry (Gen.)</OPTION><OPTION VALUE="PJ1">Oriental Philology/Lit.</OPTION><OPTION VALUE="RZ1">Other Systems of Medicine</OPTION><OPTION VALUE="RF1">Otorhinolaryngology</OPTION><OPTION VALUE="ND1">Painting</OPTION><OPTION VALUE="QE701">Paleontology</OPTION><OPTION VALUE="QE760.8">Paleozoology, Paleobotany, Palynology</OPTION><OPTION VALUE="BF1001">Parapsychology</OPTION><OPTION VALUE="GV1541">Parlor Magic/Tricks</OPTION><OPTION VALUE="RB1">Pathology</OPTION><OPTION VALUE="RJ1">Pediatrics</OPTION><OPTION VALUE="PN1560">Perf. Arts & Show Biz</OPTION><OPTION VALUE="AP1">Periodicals</OPTION><OPTION VALUE="Z8001">Personal Bibl.</OPTION><OPTION VALUE="QE420">Petrology</OPTION><OPTION VALUE="RS1">Pharmacy & Materia Medica</OPTION><OPTION VALUE="P1">Philology, Linguistics</OPTION><OPTION VALUE="B69">Philosophy/Gen. Works, Hist. & Systems</OPTION><OPTION VALUE="B1">Philosophy/Period., Societies, Cong.</OPTION><OPTION VALUE="TR1">Photography</OPTION><OPTION VALUE="QD450">Physical & Theor. Chemistry</OPTION><OPTION VALUE="GB1">Physical Geography</OPTION><OPTION VALUE="GV201">Physical Training</OPTION><OPTION VALUE="QC1">Physics (Gen.)</OPTION><OPTION VALUE="QK640">Plant Anatomy</OPTION><OPTION VALUE="SB1">Plant Culture</OPTION><OPTION VALUE="QK900">Plant Ecology</OPTION><OPTION VALUE="QK710">Plant Physiology</OPTION><OPTION VALUE="PN1010">Poetry (Gen.)</OPTION><OPTION VALUE="PG6001">Polish Lang./Lit.</OPTION><OPTION VALUE="JC1">Political Theory, Theory of the State</OPTION><OPTION VALUE="PC5001">Portuguese Language</OPTION><OPTION VALUE="PQ9000">Portuguese Literature</OPTION><OPTION VALUE="BV1">Practical Theology</OPTION><OPTION VALUE="GN700">Prehistoric Archaeology</OPTION><OPTION VALUE="Z116">Printing</OPTION><OPTION VALUE="NE1">Printmaking, Engraving</OPTION><OPTION VALUE="QA273">Probabilities, Math. Stats.</OPTION><OPTION VALUE="PN3311">Prose Technique</OPTION><OPTION VALUE="BX4800">Protestantism</OPTION><OPTION VALUE="PN6400">Proverbs</OPTION><OPTION VALUE="RC435">Psychiatry</OPTION><OPTION VALUE="BF1">Psychology</OPTION><OPTION VALUE="RA421">Pub. Health, Pub. Aspects of Med.</OPTION><OPTION VALUE="HJ1">Public Finance</OPTION><OPTION VALUE="KZ1">Public International Law</OPTION><OPTION VALUE="TF1">Railroad Engineering</OPTION><OPTION VALUE="GV1">Recreation</OPTION><OPTION VALUE="QE65">Regional Geology</OPTION><OPTION VALUE="BL1">Religions, Mythology, Rationalism</OPTION><OPTION VALUE="QH471">Reproduction & Life</OPTION><OPTION VALUE="QL640">Reptiles & Amphibians</OPTION><OPTION VALUE="PC901">Rhaeto-Romance Lang/Lit.</OPTION><OPTION VALUE="BX800">Roman Catholic Church</OPTION><OPTION VALUE="PC601">Romanian Language/Lit.</OPTION><OPTION VALUE="PC1">Romanic Philology & Languages</OPTION><OPTION VALUE="PG2001">Russian Lang.</OPTION><OPTION VALUE="PG2900">Russian Lit.</OPTION><OPTION VALUE="PT7001">Scandinavian Literature</OPTION><OPTION VALUE="LB2801">School Admin./Org.</OPTION><OPTION VALUE="Q1">Science (Gen.)</OPTION><OPTION VALUE="NB1">Sculpture</OPTION><OPTION VALUE="CD5001">Seals</OPTION><OPTION VALUE="LB1603">Secondary/Middle School Ed.</OPTION><OPTION VALUE="PJ3001">Semitic Philology, Assyrian/Sumerian Lang.</OPTION><OPTION VALUE="PG1200">Serbo-Croatian Lang/Lit</OPTION><OPTION VALUE="PG1">Slavic Lang./Lit (Gen.)</OPTION><OPTION VALUE="PG5201">Slovak Lang./Lit.</OPTION><OPTION VALUE="PG1801">Slovenian Lang/Lit</OPTION><OPTION VALUE="HN1">Social Hist., Social Prob., Social Reform</OPTION><OPTION VALUE="H1">Social Sciences - Gen.</OPTION><OPTION VALUE="BJ1801">Social Usages, Etiquette</OPTION><OPTION VALUE="HX1">Socialism, Communism, Anarchism</OPTION><OPTION VALUE="HS1">Societies - Secret, Benevolent, etc.</OPTION><OPTION VALUE="HM1">Sociology (Gen. & Theoretical)</OPTION><OPTION VALUE="PG5631">Sorbian Lang./Lit.</OPTION><OPTION VALUE="PC4001">Spanish Language</OPTION><OPTION VALUE="PQ7080">Spanish Lit. in America</OPTION><OPTION VALUE="PQ6001">Spanish Lit. in Europe</OPTION><OPTION VALUE="LC1">Spec. Aspects of Edu.</OPTION><OPTION VALUE="RC952">Spec. Situations & Cond. - Geriatric</OPTION><OPTION VALUE="QA76.9">Spec. Topics in Comp. Science</OPTION><OPTION VALUE="BF725">Special Aspects</OPTION><OPTION VALUE="QA76.8">Special Computers & Systems</OPTION><OPTION VALUE="HD9000">Special Industries & Trades</OPTION><OPTION VALUE="BD1">Speculative Philosophy</OPTION><OPTION VALUE="GV557">Sports</OPTION><OPTION VALUE="QE640">Sratigraphy</OPTION><OPTION VALUE="F721">State & Local Hist. - West</OPTION><OPTION VALUE="F476">State & Local Hist. Midwest, Mississippi Valley</OPTION><OPTION VALUE="F850.5">State & Local Hist. Pacific Coast</OPTION><OPTION VALUE="F206">State & Local Hist. South, Gulf States</OPTION><OPTION VALUE="F1">State & Local History, N. England, Atlantic Coast</OPTION><OPTION VALUE="HA1">Statistics</OPTION><OPTION VALUE="LJ1">Student Fraternities, Societies</OPTION><OPTION VALUE="Z5051">Subject Bibl.</OPTION><OPTION VALUE="RD1">Surgery</OPTION><OPTION VALUE="PD5001">Swedish Language</OPTION><OPTION VALUE="PT9201">Swedish Literature</OPTION><OPTION VALUE="LT1">Textbooks</OPTION><OPTION VALUE="PN2000">Theater (Gen.)</OPTION><OPTION VALUE="PN3151">Theater - Amateur, College Theatricals</OPTION><OPTION VALUE="PN3195">Theater - Minstrel Show, Spectacles,</OPTION><OPTION VALUE="PN2085">Theater - Stage, Accessories, Hist.</OPTION><OPTION VALUE="PN2860">Theater in Asia, Africa & Oceania</OPTION><OPTION VALUE="PN2570">Theater in Europe</OPTION><OPTION VALUE="PN2300">Theater in the Americas (not U.S.)</OPTION><OPTION VALUE="PN2220">Theater in the U.S.</OPTION><OPTION VALUE="LB1">Theory & Practice of Education</OPTION><OPTION VALUE="RM1">Therapeutics, Pharmacology</OPTION><OPTION VALUE="RA1190">Toxicology</OPTION><OPTION VALUE="HE1">Transportation & Communication</OPTION><OPTION VALUE="RC306">Tuberculosis</OPTION><OPTION VALUE="PN1865">Types of Drama</OPTION><OPTION VALUE="PG3801">Ukrainian Lang./Lit.</OPTION><OPTION VALUE="PL7501">Unclassified Lang./Lit. of Asia</OPTION><OPTION VALUE="PL1">Ural/Altaic Lang./Lit.</OPTION><OPTION VALUE="PH1">Uralic & Basque Lang./Lit.</OPTION><OPTION VALUE="SF600">Veterinary Med.</OPTION><OPTION VALUE="QR355">Virology</OPTION><OPTION VALUE="N1">Visual Arts in General</OPTION><OPTION VALUE="M1495">Vocal Music</OPTION><OPTION VALUE="QC81">Weights & Measures</OPTION><OPTION VALUE="SK351">Wildlife Management</OPTION><OPTION VALUE="Z40">Writing</OPTION><OPTION VALUE="AY1">Yearbooks Almanacs, Directories</OPTION><OPTION VALUE="QL1">Zoology (Gen.)</OPTION>                </SELECT>
+                <INPUT VALUE="Submit" TYPE="submit">
+                <INPUT VALUE="Maps" NAME="ID" TYPE="hidden">
+              
+
+			              
+              
+              </P>
+            </FORM>
+
+          
+        
+                 
+         
+                  <P><EM>This feature is also available directly from the catalog, by using the "explore" link and clicking the "Floor Map" icon.  Please note that not all items are currently available for mapping.</EM></P>         
+          
+          
+                 
+                    <H3></H3>                    
+                      
+          
+                     Library: <U><FONT COLOR=blue></FONT></U>, Floor <BR>
+            Call Number:  ()<BR>
+            Shelf Number Range:  <BR>
+          
+                
+                    
+            The red area is the approximate location of the item.
+            Questions? Problems? <U><FONT COLOR=blue>Let us know!</FONT></U>
+          
+
+
+        <!-- InstanceEndEditable -->
+<P><EM>WSU Libraries</EM><BR>
+
+						   3100 David Adamany Undergraduate Library<BR>
+
+						   5155 Gullen Mall<BR>
+
+						   Detroit, MI USA 48202<BR>
+
+						   (313) 577-4023 / 5525 - fax</P> <!-- FOR PRINT -->
+            <!-- #content -->
+		<!-- #main -->
+		
+		
+
+
+	
+    <P>
+    Follow us on:&nbsp;
+        <U><FONT COLOR=blue>
+        	[Follow waynestatelib on Twitter]</FONT></U>
+        <U><FONT COLOR=blue>
+        	[Follow waynestatelib on foursquare]</FONT></U>
+        <U><FONT COLOR=blue>[Follow wsuinst on YouTube]</FONT></U>
+  
+
+    </P>
+	<P>&copy;2009 - 2012 Wayne State University Board of Governors</P>
+	<UL>
+	<LI><U><FONT COLOR=blue>Suggestions</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Privacy</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Acceptable Use</FONT></U></LI>
+	</UL>
+    <FORM>
+    <INPUT VALUE="utf-8" NAME="ie" TYPE="hidden">
+    <INPUT VALUE="utf-8" NAME="oe" TYPE="hidden">
+    <INPUT VALUE="" NAME="q" TYPE="text"><BR>
+    <P><INPUT VALUE="www.lib.wayne.edu" NAME="domains" TYPE="hidden"><INPUT VALUE="" NAME="sitesearch" TYPE="radio"><INPUT VALUE="www.lib.wayne.edu" NAME="sitesearch" CHECKED="checked" TYPE="radio"></P>
+    <P><INPUT VALUE="Search this site" NAME="btnG" TYPE="submit"> <U><FONT COLOR=blue>Sitemap</FONT></U></P>
+    </FORM>
+    <UL>
+    <LI><U><FONT COLOR=blue>View Mobile Site</FONT></U></LI>
+    </UL>	
+    
+	
+	
+	<UL>
+	<LI>Libraries</LI>
+	<LI><U><FONT COLOR=blue>University Libraries</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Shiffman Medical Library</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Arthur Neef Law Library</FONT></U></LI>
+	</UL>
+	<UL>
+	<LI>Associated Programs</LI>
+	<LI><U><FONT COLOR=blue>DALNET</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>School of Library and<BR>Information Science</FONT></U></LI>
+	</UL>
+	
+	<UL>
+	<LI>Library Information</LI>
+	<LI><U><FONT COLOR=blue>About</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Contact Info/ Staff Directory</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Hours</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Maps and Directions</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>News</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Policies</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Neef Staff Responsibilities</FONT></U></LI>
+	</UL>
+	
+	
+	
+	<UL>
+	<LI>Resources</LI>
+	<LI><U><FONT COLOR=blue>Catalog</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Article Databases</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Digital Collections</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>DigitalCommons@WSU</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>E-Books</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>E-Journals</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Guides</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Reference Tools</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Special Collections</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Citation Management Options</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Shiffman Mobile</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Shiffman Timesavers</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Neef CILP</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Neef Government Documents</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Neef Law Collections</FONT></U></LI>
+	</UL>
+	
+	<UL>
+	<LI>Sites &amp; Projects</LI>
+	<LI><U><FONT COLOR=blue>Chapbooks</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Hezy Shoshani Elephant Research</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>First Year Experience</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Jacob Lawrence Traveling Exhibition</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Journal Review</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>NCA Accreditation</FONT></U></LI>
+	</UL>
+
+	
+	
+	<UL>
+	<LI>Services</LI>
+	<LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Borrowing</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Computing</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Faculty/Graduate Research Support</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>ILL (Interlibrary Loan)</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Instruction</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Media</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Reserves</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Room Reservations</FONT></U></LI>
+	</UL>
+    
+    <UL>
+	<LI>Shiffman Health Information Outreach</LI>
+	<LI><U><FONT COLOR=blue>African-American Health Disparities</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Community Health Information Services</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Detroit Community AIDS Library</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Michigan Go Local</FONT></U></LI>
+    </UL>
+	
+
+
+<!-- #footer -->
+
+	<!-- #container --> 
+    &nbsp;     
+	<!-- #wrapper -->
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<!-- InstanceEnd --></HTML>

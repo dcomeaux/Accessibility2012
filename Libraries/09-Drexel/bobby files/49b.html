@@ -1,0 +1,372 @@
+
+<HTML>
+  <HEAD>
+<META CONTENT="text/html; charset=utf-8">
+    <META CONTENT="text/html; charset=utf-8">
+
+            
+    <TITLE>Borrowing from Other Libraries | Drexel University Libraries</TITLE>
+    
+    
+    
+    
+    
+    
+
+    
+
+
+    
+	
+	
+    
+	
+
+
+
+
+
+
+
+<!--//--><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" }, "viewsSlideshowSingleFrame": { "#views_slideshow_singleframe_main_homepage_slideshow_completeblock_1": { "num_divs": 3, "id_prefix": "#views_slideshow_singleframe_main_", "div_prefix": "#views_slideshow_singleframe_div_", "vss_id": "homepage_slideshow_completeblock_1", "timeout": "5000", "sort": 1, "effect": "fade", "speed": "500", "start_paused": 0, "delay": "0", "fixed_height": "1", "random": "1", "pause": "1", "pause_on_click": "0", "pause_when_hidden": 0, "pause_when_hidden_type": "full", "amount_allowed_visible": "", "remember_slide": 0, "remember_slide_days": "1", "controls": "0", "items_per_slide": "1", "pager": "2", "pager_type": "Numbered", "pager_hover": "2", "pager_click_to_page": 0, "image_count": "0", "nowrap": "0", "sync": "1", "advanced": "", "ie": { "cleartype": "true", "cleartypenobg": "false" } } } });
+//-->
+
+	
+	
+		$(document).ready(function() {
+			
+			$('#sm-offline').addClass('hide');
+			$('#sm-advisory').addClass('hide');
+			$('#sm-online').addClass('hide');
+			
+			var containsAdvisory = $("#node-4182").text().indexOf('Current Status: Service-wide Advisory') >= 0; // true
+			var containsOffline = $("#node-4182").text().indexOf('Current Status: Offline') >= 0; // true
+			
+			if(containsAdvisory){
+				$('#sm-advisory').addClass('show');
+				$('#sm-advisory').removeClass('hide');
+			}
+			
+			if(containsOffline){
+				$('#sm-offline').addClass('show');
+				$('#sm-offline').removeClass('hide');
+			}
+			
+			if(!containsAdvisory && !containsOffline){
+				$('#sm-advisory').addClass('hide');
+				$('#sm-advisory').removeClass('show');
+				$('#sm-offline').addClass('hide');
+				$('#sm-offline').removeClass('show')
+				;
+				$('#sm-online').addClass('show');
+				$('#sm-online').removeClass('hide');
+			}
+			
+		});
+	
+
+    
+    <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/drexellib30theme/fixie.css" />    <![endif]-->
+  </HEAD>
+  <BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+
+
+	<U><FONT COLOR=blue>[Drexel Library]</FONT></U>
+	<U><FONT COLOR=blue>[Libraries Home Button]</FONT></U>
+	<U><FONT COLOR=blue>[Drexel Health Sciences]</FONT></U>
+	<U><FONT COLOR=blue>[Search]</FONT></U>
+	<U><FONT COLOR=blue>[Services]</FONT></U>
+	<U><FONT COLOR=blue>[Get Help]</FONT></U>
+	<U><FONT COLOR=blue>[About]</FONT></U>
+    <U><FONT COLOR=blue>[Drexel University]</FONT></U>
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+	<H1>    <U><FONT COLOR=blue>  Services </FONT></U></H1>
+  
+
+
+	
+<UL>
+<LI><U><FONT COLOR=blue>Renew a Book</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Interlibrary Loan<BR>
+    </FONT></U></LI>
+<LI><U><FONT COLOR=blue>Subject Librarians</FONT></U></LI>
+<LI><U><FONT COLOR=blue>The Suggestion Box</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Reserve a Group Study Room</FONT></U></LI>
+</UL>
+
+    
+    
+    
+    
+    
+    
+
+
+    
+
+	<H1>Quick Search</H1>
+    
+	  <FORM>
+           <INPUT VALUE="016083094869134140650:ibrgznq8u7a" NAME="cx" TYPE="hidden">
+    <INPUT VALUE="FORID:9" NAME="cof" TYPE="hidden">
+    <INPUT VALUE="UTF-8" NAME="ie" TYPE="hidden">  
+            <P>
+
+                    <INPUT NAME="q" MAXLENGTH="255" SIZE="19" TYPE="text"></P>
+                   	<P>	<INPUT VALUE="keyword" NAME="sortByThis" TYPE="hidden">
+                          <SELECT NAME="destination">
+                          <OPTION VALUE="books">Books &amp; More</OPTION>
+                          <OPTION VALUE="catalog" SELECTED="selected">Articles &amp; More</OPTION>
+                          <OPTION VALUE="website">Website</OPTION>
+                    </SELECT></P>
+                    
+                        <INPUT VALUE="/index.html" NAME="page" TYPE="hidden">
+                        <INPUT VALUE="" NAME="combined" TYPE="hidden">
+
+                    <INPUT VALUE="Search" TYPE="submit">
+               </FORM>
+               
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+Library Chat is loading...
+$(document).ready(libChatPrint());
+
+
+
+
+    
+	<H1>      My Library Accounts </H1>
+  
+
+
+	
+<UL>
+    <LI><U><FONT COLOR=blue>My Personal Library [beta]</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>My Library Record / Renew Books</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>ILLiad<BR>
+    </FONT></U></LI>
+    <LI><U><FONT COLOR=blue>E-Z Borrow</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Current Status of Online Services</FONT></U></LI>
+</UL>
+    
+    
+    
+    
+    
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+	<H4>Borrowing from Other Libraries</H4>
+
+
+
+                
+            
+
+
+
+  
+    Use E-Z Borrow or Interlibrary Loan (ILLiad) services to get books, articles, and other materials not owned by Drexel University Libraries, or not currently available.  E-Z Borrow is only available to Drexel students, faculty and staff.  The Interlibrary Loan service is free to University faculty, staff, students, residents and fellows, and available for a fee to Tenet Hahnemann Hospital staff.
+&nbsp;
+Before placing a request in E-ZBorrow or ILLiad, please check <U><FONT COLOR=blue>online catalog</FONT></U>. You may request a hold on the book.  Books currently checked out will be held for pickup upon return. You will be notified by email when book is available for pickup.
+&nbsp;
+&nbsp;
+<H2></FONT></U>Borrow Books  via <U><FONT COLOR=blue>E-Z Borrow</FONT></U></H2>
+
+<UL>
+<LI>Borrow books fast from cooperating academic libraries.</LI>
+<LI>Most requests are filled within 4 days.</LI>
+<LI>Patrons are notified by email when their book is available for pickup.</LI>
+<LI>Other services &amp; policies, click <U><FONT COLOR=blue>here (ILL FAQ)</FONT></U>.</LI>
+<LI><U><FONT COLOR=blue>Connect to E-Z Borrow</FONT></U></LI>
+</UL>
+
+<P>&nbsp;</P>
+<BLOCKQUOTE></BLOCKQUOTE>
+
+<H2></FONT></U>Borrow Books, Articles, and more via <U><FONT COLOR=blue>ILLiad</FONT></U></H2>
+
+<UL>
+<LI>Borrow books not available through E-Z Borrow.</LI>
+<LI>Request journal articles, conference proceedings, and other materials.</LI>
+<LI>Other services &amp; policies, click <U><FONT COLOR=blue>here (ILL FAQ)</FONT></U>.</LI>
+<LI><U><FONT COLOR=blue>Connect to ILLiad</FONT></U></LI>
+<LI><U><FONT COLOR=blue>More about Interlibrary Loan services and policies</FONT></U></LI>
+</UL>
+
+<P>&nbsp;</P>
+<BLOCKQUOTE></BLOCKQUOTE>
+
+<!--
+<h2><a name="ill" id="ill"></a>Borrow Books, Articles, and more via <a href="http://illiad.library.drexel.edu/illiad/logon.html" _fcksavedurl="http://illiad.library.drexel.edu/illiad/logon.html" title="ILLiad">ILLiad</a></h2>
+<div>
+<ul>
+    <li>Borrow books not available through EZ Borrow.</li>
+    <li>Request journal articles, conference proceedings, and other materials.</li>
+    <li>Other services &amp; policies, click <a href="/services/illfaq.html" _fcksavedurl="/services/illfaq.html" title="ILL FAQ">here (ILL FAQ)</a>.</li>
+    <li><a title="Connect to ILLiad" href="http://illiad.library.drexel.edu/illiad/logon.html" _fcksavedurl="http://illiad.library.drexel.edu/illiad/logon.html">Connect to ILLiad</a></li>
+</ul>
+</div>
+<div>Use to order books not available through EZ Borrow, journal articles, conference proceedings and other materials.  Click on the appropriate library link below to fill out the online request form.</div>
+<div>
+<ul>
+    <li><a href="/services/illfaq.html" _fcksavedurl="/services/illfaq.html">More about Interlibrary Loan services and policies </a></li>
+</ul>
+<p>&nbsp;</p>
+</div>
+--><!--
+<h2><a name="ill" id="ill"></a>Borrow Books, Articles, and more via <a href="http://illiad.library.drexel.edu/illiad/logon.html" _fcksavedurl="http://illiad.library.drexel.edu/illiad/logon.html" title="ILLiad">ILLiad</a></h2>
+<div>
+<ul>
+    <li>Borrow books not available through EZ Borrow.</li>
+    <li>Request journal articles, conference proceedings, and other materials.</li>
+    <li>Other services &amp; policies, click <a href="/services/illfaq.html" _fcksavedurl="/services/illfaq.html" title="ILL FAQ">here (ILL FAQ)</a>.</li>
+    <li><a title="Connect to ILLiad" href="http://illiad.library.drexel.edu/illiad/logon.html" _fcksavedurl="http://illiad.library.drexel.edu/illiad/logon.html">Connect to ILLiad</a></li>
+</ul>
+</div>
+<div>Use to order books not available through EZ Borrow, journal articles, conference proceedings and other materials.  Click on the appropriate library link below to fill out the online request form.</div>
+<div>
+<ul>
+    <li><a href="/services/illfaq.html" _fcksavedurl="/services/illfaq.html">More about Interlibrary Loan services and policies </a></li>
+</ul>
+<p>&nbsp;</p>
+</div>
+--><H2></FONT></U>Document Delivery (Copy Service)</H2>
+The Libraries will provide delivery of articles from journals in our collections.
+
+<UL>
+<LI>Requests should be placed via ILLiad (above).</LI>
+<LI>At all libraries, this service is available to faculty.  At the Hahnemann and Queen Lane Libraries, it is also offered to students and University staff for a fee of $3 per article requested.</LI>
+</UL>
+<P>&nbsp;</P>
+
+<H2></FONT></U>Request/Hold Books via Library Catalog</H2>
+Use the Request choice in the <U><FONT COLOR=blue>library catalog</FONT></U> to have a book owned by a Drexel University Library held for pickup at that library, or another Drexel Library.
+<UL>
+<LI>Books currently checked out will be held for pickup upon return - use E-Z Borrow if needed quickly.</LI>
+<LI>You will be notified by email when book is available for pickup.</LI>
+</UL>
+<P>&nbsp;</P>
+
+<H2></FONT></U>Interlibrary Loan Contacts</H2>
+
+<UL>
+<LI>Hagerty Library 215-895-2769</LI>
+<LI>Hahnemann Library 215-762-7630</LI>
+<LI>Queen Lane Library 215-991-8740</LI>
+<LI>Legal Research Center 215-571-4724</LI>
+</UL>
+<P>&nbsp;</P>
+
+<H2></FONT></U>ILL Information for Other Libraries</H2>
+Information for other libraries that wish to borrow materials from Drexel Libraries is provided <U><FONT COLOR=blue>here</FONT></U>.
+Textbooks<BR>
+If we don't have it <U><FONT COLOR=blue>on reserve</FONT></U> or <U><FONT COLOR=blue>in our catalog</FONT></U>, you can rent textbooks from: 
+<UL>
+<LI><U><FONT COLOR=blue>Chegg</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Campus Book Rentals</FONT></U></LI>
+</UL>
+
+  
+  
+    
+          <UL><LI></LI>
+</UL>
+     
+
+            
+            
+				<P>Content Editor: <U><FONT COLOR=blue>Lynda Sadusky</FONT></U><BR>
+				Last Updated: 03/01/2012</P>
+			
+
+
+
+
+
+
+
+
+
+
+
+<P><U><FONT COLOR=blue>[feedback]</FONT></U>  <U><FONT COLOR=blue>About Us</FONT></U> | <U><FONT COLOR=blue>Downloads</FONT></U> | <U><FONT COLOR=blue>Contact Us</FONT></U> | <U><FONT COLOR=blue>Site Index</FONT></U> | <U><FONT COLOR=blue>Site Map</FONT></U> | <U><FONT COLOR=blue>Legal Research Center</FONT></U> <U><FONT COLOR=blue>[Facebook]</FONT></U> <U><FONT COLOR=blue>[Twitter]</FONT></U></P>
+
+
+
+
+
+
+
+
+	<P>Copyright &#169; 2012 Drexel University Libraries, 33rd and Market Streets, Philadelphia, PA 19104.  All rights reserved  &nbsp;&nbsp;|  &nbsp;&nbsp;<U><FONT COLOR=blue>Privacy Policy</FONT></U></P>
+
+		<P>Powered by Drupal [Druplicon icon]</P>
+	
+	
+<P><U><FONT COLOR=blue>See mobile version</FONT></U></P>
+
+	
+
+         
+                      
+<!--//--><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA16932781"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".googleanalytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//-->
+
+    
+
+  </BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>

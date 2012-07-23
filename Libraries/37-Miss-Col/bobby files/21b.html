@@ -1,0 +1,566 @@
+
+<HTML>
+<HEAD>
+
+<TITLE>Research Guides</TITLE>
+<META CONTENT="text/html; charset=utf-8">
+
+
+
+
+
+
+
+
+
+
+
+<!--[if lt IE 7]>
+<script defer type="text/javascript" src="http://mulibraries.missouri.edu/css/pngfix.js"></script>
+<![endif]-->
+
+<!--[if IE 7]>
+<link href="http://mulibraries.missouri.edu/css/hoverIntent/hoverintentie7.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+
+
+
+
+    .column, .floatcols {
+      float: left;
+      width: 33%;
+      padding: 0;
+      margin: 0;
+    }
+    
+ .column-wrapper {
+      overflow: hidden;
+}
+
+.lastupdate {display:none} .guideurl {display:none;}
+
+.guideshare {display:none;} 
+
+.printguideurl { display:none; }
+.emailalertlink { display: none; }
+
+
+    ul#mylistid{
+      width: 100%;
+      padding: 0;
+    }
+      
+    li.subject_link {
+      padding:2px 0;
+      margin: 2px 6px;
+      list-style-type: none;
+      font-size: 1.15em !important;
+    }
+    
+    li.subject_link:hover {
+      background: #eee;
+      cursor: pointer;
+    }
+    
+    a.toggle_button {
+      text-decoration: none;
+      text-align: center;
+      color: #666;
+      background: #ddd;
+      border: 1px solid #ccc;
+      font-weight:bold;
+      margin: auto 6px auto 0;
+      padding:1px 3px;
+      display:inline-block;
+      width:15px;
+      cursor: pointer;
+    }
+    
+    span.toggletext {
+      cursor: pointer;
+    }
+
+    ul.guide_links li {
+      margin:3px 3px 3px 26px;
+      list-style-type:disc;
+      font-size: .8em;
+    }
+      
+    ul.guide_links {
+      margin: 6px 0;
+      padding: 0;
+      line-height 1.5em;
+      
+    }
+      
+
+
+
+
+
+
+// jquery 1.4 required for wrap/unwrap functions
+google.load("jquery", "1.4");
+
+<!-- jquery.columns was written by Karl Swedberg. See the file source for more attribution information -->
+
+
+// Contributors: Dan Brubaker Horst, Laura J. Harris, thorbroo (#code4lib), Erin R. White, Derik Badman.
+// Code is licensed under a Creative Commons Atrribution license: http://creativecommons.org/licenses/by/3.0/us
+
+//compatibility mode for $ namespace (which might get used by other js libraries) better to use jQuery in these cases
+jQuery.noConflict();
+
+// Wrapping with: (function($){ ...code...})(jQuery); replaces '$' with 'jQuery'.
+(function($){
+    $(document).ready(function() {
+         $('#myScript').remove();
+      // creates the columns through the column plug loaded above
+      $('.mylist').columns({columns: 3});
+   
+      // 'hide' function is called on each of the 'ul' elements with the class 'guide_links'
+      $('ul.guide_links').hide();
+      
+      // DOM insert a link element inside of each of the subject list items.
+      $('li.subject_link').prepend('+');
+      
+      // enable toggle action on each Subject LI
+      $('li.subject_link').bind("click", function(){
+        // toggles text in the link between '+' and '-'.
+        if($(this).children('a.toggle_button').text() == '+'){
+          $(this).children('a.toggle_button').text('-');
+        } else {
+          $(this).children('a.toggle_button').text('+');
+        }
+        // Toggle the child 'ul' element
+        $(this).children('ul.guide_links').slideToggle("fast");
+      });
+    
+    $('a.subject_link_a').contents().unwrap();
+
+  });
+})(jQuery);
+
+
+$(document).ready(function(){
+window.scrollTo(0,0);
+});
+
+
+<!--
+Crazy Egg code
+-->
+
+    setTimeout(function(){var a=document.createElement("script");
+    var b=document.getElementsByTagName('script')[0];
+    a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/3460.js?"+Math.floor(new Date().getTime()/3600000);
+    a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+
+<!--
+Google Analytics code 
+external links should be formated like this;
+<a href="http://www.example.com" onClick="recordOutboundLink(this, 'Outbound Links', 'example.com');return false;">
+-->
+
+function recordOutboundLink(link, category, action) {
+  try {
+    var myTracker=_gat._getTrackerByName();
+    _gaq.push(['myTracker._trackEvent', ' + category + ', ' + action + ']);
+    setTimeout('document.location = "' + link.href + '"', 100)
+  }catch(err){}
+}
+
+<!--
+Google Analytics code 
+-->
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1438571-1']);
+  _gaq.push(['_setDomainName', '.missouri.edu']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<U><FONT COLOR=blue>Skip to main content</FONT></U>
+<H1>Navigation</H1>
+
+
+<U><FONT COLOR=blue>[INLINE]</FONT></U>
+<BR>
+[CLIENT-SIDE IMAGE MAP:  MU Libraries]<BR>
+ 
+<MAP NAME="MapHeader">
+<AREA HREF="http://www.mizzou.edu" COORDS="21,12,67,71" SHAPE="rect" ALT="University of Missouri">
+<AREA HREF="http://mulibraries.missouri.edu" COORDS="74,12,337,73" SHAPE="rect" ALT="MU Libraries">
+</MAP>
+<FORM>
+<U><FONT COLOR=blue>Help</FONT></U>&#160;[navbar] <U><FONT COLOR=blue>Summon@MU</FONT></U>&#160;[navbar] <U><FONT COLOR=blue>Books</FONT></U>&#160;[navbar] <U><FONT COLOR=blue>Journals</FONT></U>&#160;[navbar] <U><FONT COLOR=blue>Databases</FONT></U>&#160;[navbar] 
+<INPUT VALUE="Search Site" NAME="txtSearch" SIZE="10" TYPE="text">
+<INPUT VALUE="SiteSearch" NAME="searchtype" TYPE="hidden">
+<INPUT VALUE="HeaderMain" NAME="requestedfrom" TYPE="hidden">
+<INPUT VALUE="Search" NAME="Go" TYPE="submit">
+
+</FORM>
+
+
+
+<UL>
+<LI><U><FONT COLOR=blue>Libraries</FONT></U> 
+<UL>
+<LI><U><FONT COLOR=blue>Ellis Library</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Engineering &amp; Technology</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Geological Sciences</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Health Sciences</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Journalism</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Mathematical Sciences</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Missourian Newspaper Library</FONT></U></LI>
+<LI><U><FONT COLOR=blue>University Archives</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Veterinary Medical</FONT></U></LI>
+<LI><U><FONT COLOR=blue>MU Law Library</FONT></U></LI>
+<LI><U><FONT COLOR=blue>More...</FONT></U></LI>
+</UL>
+</LI>
+<LI><U><FONT COLOR=blue>Collections</FONT></U> 
+<UL>
+<LI><U><FONT COLOR=blue>MOspace: Institutional Repository</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Digital Collections</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Special Collections &amp; Rare Books</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Government Documents</FONT></U></LI>
+<LI><U><FONT COLOR=blue>State Historical Society</FONT></U></LI>
+<LI><U><FONT COLOR=blue>More...</FONT></U></LI>
+</UL>
+</LI>
+<LI><U><FONT COLOR=blue>Information for You</FONT></U> 
+<UL>
+<LI><U><FONT COLOR=blue>Undergraduates</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Graduate Students</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Faculty &amp; Staff</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Distance Learners</FONT></U></LI>
+<LI><U><FONT COLOR=blue>International Students</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Alumni</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Persons with Disabilities</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Visiting Scholars</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Visitors</FONT></U></LI>
+<LI><U><FONT COLOR=blue>More...</FONT></U></LI>
+</UL>
+</LI>
+<LI><U><FONT COLOR=blue>Homework &amp; Research Help</FONT></U> <BR>
+<UL>
+<LI><U><FONT COLOR=blue>Subject Guides</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Course Guides</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Research Assistance Program</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Course Reserves (Print/ERes)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Classes &amp; Tours</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Request an Instruction Session</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Tutorials &amp; Videos</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Writing &amp; Citing</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Writing Tutors</FONT></U></LI>
+<LI><U><FONT COLOR=blue>More...</FONT></U></LI>
+</UL>
+</LI>
+<LI><U><FONT COLOR=blue>Show Me How To</FONT></U> 
+<UL>
+<LI><U><FONT COLOR=blue>Find journal articles</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Find books</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Request books</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Renew books</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Find my ID #</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Find citation guides</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Find dissertations</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Find DVDs</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Avoid plagiarism</FONT></U></LI>
+<LI><U><FONT COLOR=blue>View library tutorials/videos</FONT></U></LI>
+<LI><U><FONT COLOR=blue>More...</FONT></U></LI>
+</UL>
+</LI>
+<LI><U><FONT COLOR=blue>Research Tools</FONT></U> 
+<UL>
+<LI><U><FONT COLOR=blue>LibX</FONT></U></LI>
+<LI><U><FONT COLOR=blue>EndNote</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Zotero</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Citation Builder</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Research Guides</FONT></U></LI>
+</UL>
+</LI>
+<LI><U><FONT COLOR=blue>my Accounts</FONT></U> 
+<UL>
+<LI><U><FONT COLOR=blue>Renew a Book</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Set up my Reading History</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Reserve a Study Room</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Track my ILL@MU requests</FONT></U></LI>
+<LI><U><FONT COLOR=blue>More...</FONT></U></LI>
+</UL>
+</LI>
+</UL>
+
+
+
+<U><FONT COLOR=blue>MU Libraries</FONT></U> &gt;
+	<U><FONT COLOR=blue>Guides</FONT></U> &gt; Research Guides
+
+
+
+
+</FONT></U> 
+<H1>Content</H1>
+<H2>Research Guides</H2><UL><LI><U><FONT COLOR=blue>Getting Started</FONT></U></LI><LI><U><FONT COLOR=blue>Subject Guides</FONT></U></LI><LI><U><FONT COLOR=blue>Course Guides</FONT></U></LI><LI><U><FONT COLOR=blue>English 1000</FONT></U></LI></UL><H3>Basic Research Guides</H3>
+<UL>
+<LI><U><FONT COLOR=blue>Brief Guide to Resources for Research</FONT></U>&#160; <BR><BR></LI>
+<LI><U><FONT COLOR=blue>English 1000 Basic Research Guide</FONT></U></LI>
+</UL>
+<P>&#160;</P>
+<UL>
+</UL>
+<EM>Places To Go Looking for Topic Ideas</EM> <BR><BR>
+<UL>
+<LI><U><FONT COLOR=blue>CQ Researcher</FONT></U> <U><FONT COLOR=blue>[Information button]</FONT></U><BR>Provides in-depth, objective, analytical reports on the most current and controversial issues of the day.</LI>
+<LI><FORM><INPUT NAME="fulltext"><INPUT VALUE="newsearch" NAME="action" TYPE="hidden"><INPUT NAME="sort" TYPE="hidden"> <INPUT VALUE="Search" TYPE="submit"></FORM></LI>
+<LI>
+</LI>
+</UL>
+<UL>
+<LI><U><FONT COLOR=blue>Gale Virtual Reference Library</FONT></U>&#160;&#160;<U><FONT COLOR=blue>[Information button]</FONT></U><BR>Encyclopedias, almanacs, and specialized reference sources for multidisciplinary research.</LI>
+<LI><FORM><INPUT VALUE="32975__morenetuomcolum" NAME="id" TYPE="hidden"> <INPUT NAME="keyword" MAXLENGTH="100"> <INPUT VALUE="Search" TYPE="submit"> <INPUT VALUE="GVRL" NAME="prod" TYPE="hidden"> <INPUT NAME="host" TYPE="hidden"> <INPUT NAME="pub" TYPE="hidden"></FORM></LI>
+</UL><H2>Subject Guides</H2>
+
+
+<H3>Course Guides</H3>
+<UL>
+<LI><U><FONT COLOR=blue>Agricultural Economics 1010:&#160; Introduction to Agribusiness Management</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Agricultural Economics 4971:&#160; Agribusiness Management Strategy</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Animal Sciences 2111</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Anthropology 2570: Parents and Offspring</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Anthropology 3560: Plagues and People</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Architectural Studies: Guide for Graduate Students</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Art History 2850 Introduction to Visual Culture</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Art Resources for Graduate Students</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Atmospheric Science: Guide for Graduate Students</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Basic Research: Brief Guide to Resources for Research</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Biochemistry 4974: Biochemistry Laboratory</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Biochemistry 9087: Seminar in Biochemistry</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Biodesign &amp; Innovation Fellows</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Biological Engineering/Food Science 8402</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Biological Sciences 3650: General Ecology</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Biological Sciences 4660: Plant Population Biology</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Biological Sciences 8050: Professional Survival Skills</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Biological Sciences/Fisheries &amp; Wildlife 2010</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Black In Missouri</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Chemistry: Guide for Graduate Students</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Comm 1200: Introduction to Speech Communication</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Contemporary Artists</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Educational Leadership&#160;and Policy Analysis Cohort Program</FONT></U></LI>
+<LI><U><FONT COLOR=blue>ELPA 9404: Inquiry in ELPA</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Engineering and Computer Science Research Guides</FONT></U></LI>
+<LI><U><FONT COLOR=blue>English 1000: All Course Research Guides</FONT></U></LI>
+<LI><U><FONT COLOR=blue>English 2000: Career Exploration Through Writing</FONT></U></LI>
+<LI><U><FONT COLOR=blue>English 2010: Identity in the Age of Cybercitizenship</FONT></U></LI>
+<LI><U><FONT COLOR=blue>English 2030: Professional Writing</FONT></U></LI>
+<LI><U><FONT COLOR=blue>English 2030: Professional Writing (Clark)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>English 2100: Writing About Literature</FONT></U></LI>
+<LI><U><FONT COLOR=blue>English 2100: Writing About Literature: "God, History, and the Imagination of Writers"</FONT></U></LI>
+<LI><U><FONT COLOR=blue>English 2100: Writing About Literature: "Hypocrites, Believers, and the Damned"</FONT></U></LI>
+<LI><U><FONT COLOR=blue>English 2100: Writing About Literature: "Musical Literature / Literary Music"</FONT></U></LI>
+<LI><U><FONT COLOR=blue>English 2100: Writing About Literature: "Nineteenth-Century British Authors"</FONT></U></LI>
+<LI><U><FONT COLOR=blue>English 2100: Writing About Literature: "Reading True/False"</FONT></U></LI>
+<LI><U><FONT COLOR=blue>English 2100: Writing About Literature: "Romantic Women, 1759-1817"</FONT></U></LI>
+<LI><U><FONT COLOR=blue>English 2100: The "Wicked City"</FONT></U></LI>
+<LI><U><FONT COLOR=blue>English 2200: Topics in British Literature: "Lies! False Documents, Fictional Frauds, and Literary Hoaxes"</FONT></U></LI>
+<LI><U><FONT COLOR=blue>English 2400/4420: Africana Womanism</FONT></U></LI>
+<LI><U><FONT COLOR=blue>English 2400/4420: Anglophone-Africana Literature, 1890-Present</FONT></U></LI>
+<LI><U><FONT COLOR=blue>English 2510 Creative Writing: Intermediate Fiction</FONT></U></LI>
+<LI><U><FONT COLOR=blue>English 3210: Survey of British Literature - Romanticism to the Present</FONT></U></LI>
+<LI><U><FONT COLOR=blue>English 4100: The American Historical Novel</FONT></U></LI>
+<LI><U><FONT COLOR=blue>English 4109/7109: The Western</FONT></U></LI>
+<LI><U><FONT COLOR=blue>English 4240/7240: Restoration and Eighteenth-Century Literature</FONT></U></LI>
+<LI><U><FONT COLOR=blue>English 4310/7310: 19th Century American Women Poets</FONT></U></LI>
+<LI><U><FONT COLOR=blue>English 4970: Language, Literacy, and the Liberal Arts</FONT></U></LI>
+<LI><U><FONT COLOR=blue>English 4970: Literature and Science</FONT></U></LI>
+<LI><U><FONT COLOR=blue>English 4970:Victorian Short Fiction</FONT></U></LI>
+<LI><U><FONT COLOR=blue>English 4996: Senior Honors Seminar</FONT></U></LI>
+<LI><U><FONT COLOR=blue>English 8310: Nineteenth Century American Novel</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Environmental Science 1100</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Extension: Library Services for Off-campus Personnel</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Film Studies 2005: Israeli Film</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Film Studies 3845: Modern Israeli Film</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Film Studies 4001/7001: The Western</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Finance 4020:&#160; Investments</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Finance 4620:&#160; Investment Strategy of Warren Buffett</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Food Science/Biological Engineering 8402</FONT></U></LI>
+<LI><U><FONT COLOR=blue>French 4993/7993: Women and French Language Literature</FONT></U></LI>
+<LI><U><FONT COLOR=blue>General Humanities 3120: Are the Mysteries Histories?</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Geography 4990: Senior Seminar in Geography</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Geography 8750: Research Methods</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Geological Sciences Guide</FONT></U></LI>
+<LI><U><FONT COLOR=blue>History 3570: European Women in the 19th Century</FONT></U></LI>
+<LI><U><FONT COLOR=blue>History 4000: The Age of Jefferson</FONT></U></LI>
+<LI><U><FONT COLOR=blue>History 4550: The Age of Vikings</FONT></U></LI>
+<LI><U><FONT COLOR=blue>History 4971: Karl Marx</FONT></U></LI>
+<LI><U><FONT COLOR=blue>History 4971: Martin Luther</FONT></U></LI>
+<LI><U><FONT COLOR=blue>History 4972: American Human Rights Policy</FONT></U></LI>
+<LI><U><FONT COLOR=blue>History 4972: Faith Healers, Prosperity Preachers and Televangelists in American Religion</FONT></U></LI>
+<LI><U><FONT COLOR=blue>History 4972: Research Seminar on C.S. Lewis</FONT></U></LI>
+<LI><U><FONT COLOR=blue>History 8211: U.S. History (Recent)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Human Development and Family Studies Graduate Students</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Human Development and Family Studies 2200: Research Methods</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Human Development and Family Studies 2400: Principles of Human Development</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Human Development and Family Studies 4970</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Human Development and Family Studies 8087: Children and Families in Poverty</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Human Development and Family Studies 8200: Tests and Measures</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Humanities Full Text Databases</FONT></U></LI>
+<LI><U><FONT COLOR=blue>IMSE 4750:&#160; Entrepreneurial Innovation Management:&#160; Enterprise Conception</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Journalism Guides</FONT></U></LI>
+<LI><U><FONT COLOR=blue>LTC8645: Second Language Acquisition</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Management 4700:&#160; Principles of Entrepreneurship</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Management 4710:&#160; The Entrepreneurial Process</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Management 4730:&#160; New Business Planning &amp; Management</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Management 4750:&#160; Entrepreneurial Innovation Management:&#160; Enterprise Conception</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Management 4970 - Chiles</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Management 4970 - Greening</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Management 8550:&#160; Launching a High Growth Venture</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Marketing 4050:&#160; Marketing Research</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Mathematics Guide</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Music Resources</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Natural Resources 1070</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Nutrition &amp; Exercise Science:Guide for Graduate Students</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Personal Financial Management:Guide for Graduate Students</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Physics 4985</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Physics: Guide for Graduate Students</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Plant Science 1010</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Political Science 9330: Research in Policy and Administration</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Psychology 4815: Cross-cultural Psychology</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Psychology 4825: Psychology@theMovies</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Psychology 4830: Psychology of Women</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Public Affairs 8520: Human Resource Management</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Public Affairs 8540: Local Government Administration</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Religious Studies 3005: The Body and Healing in Asian Religions</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Religious Studies 3990: Junior Seminar</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Religious Studies 4100/7100: Modern Perspectives in the Study of Religion</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Religious Studies 4320/7320: Introduction to Daoism</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Religious Studies/WGST 4750/7750: Women, Religion &amp; Culture</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Religious Studies 4990: Senior Seminar: Popular Religion, Comparative, and Theoretical Perspectives</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Social Work: New Graduate Students</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Sociology 2950: Social Research</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Special Education</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Sports Education</FONT></U></LI>
+<LI><U><FONT COLOR=blue>SSC 1150: Careers</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Statistics: Guide for Graduate Students</FONT></U></LI>
+<LI><U><FONT COLOR=blue>TAM 1100: Introduction to the Textile and Apparel Industry</FONT></U></LI>
+<LI><U><FONT COLOR=blue>TAM 4510: History of&#160;Western Dress</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Textile and Apparel Management</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Theatre: 2710</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Theatre&#160; Black Performers</FONT></U></LI>
+</UL>
+<H3><EM>Specialized Guides</EM></H3>
+<UL>
+<LI><U><FONT COLOR=blue>African American Writers</FONT></U></LI>
+<LI><U><FONT COLOR=blue>"L"ementary: Guide to Selected Education Resources</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Using Mediamark Research</FONT></U></LI>
+<LI><U><FONT COLOR=blue>English as a Second Language</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Why Use the Library Instead of Just Google</FONT></U></LI>
+</UL>
+<U><FONT COLOR=blue>Instructional Services</FONT></U>
+
+<H1>History 4972: Faith Healers, Prosperity Preachers, and Televangelists in American Religion</H1>
+<H3>English 1000 Guides</H3>
+<UL>
+<LI><U><FONT COLOR=blue>English 1000 Basic Research Guide</FONT></U></LI>
+<LI>
+</LI>
+<LI><U><FONT COLOR=blue>20th Century Historical Contexts</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Antihero in Film and Literature</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Arguments of Definition</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Art - Adaptation - Folklore</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Book Reviews of <EM>Generation Me</EM></FONT></U></LI>
+<LI><U><FONT COLOR=blue>Bob Dylan</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Careers</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Censorship Issues in America</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Civil &amp; Environmental Engineering (English 1000)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Cultural Artifacts in Historical Context</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Dance Form in the Film "Rize"</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Dialogical Essay</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Documentary Films</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Dream of Drift</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Editorial Cartoons</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Film Adaptations of Novels</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Foreign Countries and Culture</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Gender, Race, and Class in Popular Culture</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Graphic Novels &amp; Other Nonfiction Genres</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Hip Hop</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Historical Research, Resources for</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Historical Short Story Fiction</FONT></U></LI>
+<LI><U><FONT COLOR=blue>History as a Text</FONT></U></LI>
+<LI><U><FONT COLOR=blue>History of M.U. Departments &amp; Programs</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Horror Films</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Horror Films and the Family</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Identity Formation</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Immigration</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Immigration/The Economy/Ecological Issues</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Institutions</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Issues in Higher/Secondary Education</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Lies My Teacher Told Me</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Mechanical &amp; Aerospace Engineering (English 1000)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Media Bias</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Monsters and Outcasts in the Media</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Motifs and Archetypes in <EM>The Princess Bride</EM></FONT></U></LI>
+<LI><U><FONT COLOR=blue>Movie Remakes</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Music &amp; History</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Multigenerational Trauma</FONT></U></LI>
+<LI><U><FONT COLOR=blue>My Turn Articles</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Narrating the Experience of War</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Nobel Peace Prize Winners</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Orwell, Huxley and Social Issues</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Paintings and the History Surrounding Them</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Paintings and Poets</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Post-Civil War Regionalism and Race, Gender and Sexuality</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Problem-Solution Paper</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Researching a Paper - Willow Mullins</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Researching a Position On a Contemporary Issue</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Researching Social/Political Issues</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Researching the Context of <EM>Cat's Cradle</EM></FONT></U></LI>
+<LI><U><FONT COLOR=blue>Researching U.S. Culture</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Rites of Passage</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Rituals and Customs in Cultural Context</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Rogerian Argumentation</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Sixties Rock Music</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Slam Poetry</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Social Critique of the film "The Matrix"</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Social/Cultural Influences on Technology</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Social Issues (instructor: Kim McCaffrey)</FONT></U></LI>
+<LI>Stand-up Comedians</LI>
+<LI><U><FONT COLOR=blue>Subcultures</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Technology of Private and Public</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Travel Writing Assignment</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Travelogues</FONT></U></LI>
+<LI><U><FONT COLOR=blue>"Truthiness" in the Colbert Report</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Viewpoints: Generational Differences</FONT></U></LI>
+</UL>
+<P><U><FONT COLOR=blue>Tours and Instruction</FONT></U></P> 
+
+ <BR>
+
+ 
+<H1>Footer</H1>
+Copyright &#169; 2012, <U><FONT COLOR=blue>DMCA</FONT></U><BR>
+ MU Libraries, University of Missouri<BR>
+ 104 Ellis Library, Columbia, MO 65201<BR>
+ Ph: (573) 882-4701 <BR>
+
+<U><FONT COLOR=blue>Contact Us</FONT></U><BR>
+<U><FONT COLOR=blue>Report Website Problem</FONT></U>
+<BR>
+Last updated Mar 06, 2012<BR>
+ <U><FONT COLOR=blue>EEO/ADA</FONT></U>
+
+
+
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>

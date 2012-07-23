@@ -1,0 +1,285 @@
+<!--NO HEADERS-->
+
+  
+   
+   <HTML>
+   
+   <HEAD>
+
+   <META CONTENT="text/html; charset=iso-8859-1">
+
+
+#navcontainer { 
+  float: left;
+  left: 10;
+  margin: 0;
+  width: 177px;  
+  
+}
+
+
+#navcontainer ul {
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 0;    
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid #336699;
+  border-right: 0px;
+}
+            
+#navcontainer li {
+  padding: 0px;
+}
+                
+#navcontainer a {
+  color: #336699;
+  display: block;
+  padding: 0px;
+  border: 0px;
+  border-right: 2px solid #336699;
+  border-bottom: 1px solid #336699;
+}
+                              
+#navcontainer a:link, #navlist a:visited {
+  color: #FFFFFF;
+  background-color: #6699CC;
+  text-decoration: none;
+  height: 20px;
+}
+                                    
+#navcontainer a:hover {
+  background-color: #EEF6FD;
+  color:#EEF6FD;
+  background-color:#336699;
+  text-decoration:none;     
+  border-right: 0px;
+  height: 20px;
+}
+                                              
+a#current {
+  background-color: #6699CC;
+  height: 25px;
+}
+
+#selected {
+  z-index: 1;
+  background-color: #EEF6FD;
+  color: #336699;
+  height: 25px;
+  border-right: 0px;
+  border-left: 2px solid #336699;
+  border-top: 1px solid #336699;
+  border-bottom: 2px solid #336699;
+}
+          
+.active a:link{
+  display: inline;
+  background-color: #6699CC;
+  color: #FFFFFF;
+  border-right: 0px;
+  border-left: 2px solid #336699;
+  border-top: 2px solid #336699;
+  border-bottom: 2px solid #336699;
+}
+                                                        
+#content {
+  font-family: Arial, Helvetica, sans-serif;
+  float: left;
+  color: #336699;
+  background-color: #EEF6FD;
+  left: 210px;
+  margin: 0;
+  padding: 10px;
+  width: 500px;
+  border: 3px solid #336699;
+  border-left: 0px;
+}                
+
+.search {
+ font-family: Arial, Helvetica, sans-serif;
+ color: #B08A3E;
+ border-right: 1px solid #336699;
+ background-color: #FFFFFF;
+}
+
+.table {
+ font-family: Arial, Helvetica, sans-serif;
+ color: #336699;
+ background-color: #EEF6FD;  
+ font-weight: bold;
+}
+
+#content a:link {
+  color:#224E7B;
+  background-color:transparent; 
+} 
+    
+#content a:hover {
+  color:#FF6600;
+  text-decoration:underline;
+}
+          
+    
+   <!-- all browsers will load this stylesheet -->
+   
+   
+   <!-- older browsers should ignore this stylesheet call, -->
+   <!-- but newer browsers will swap the one they had loaded for this one -->
+   
+   @import url("https://styleserv.lib.unc.edu/aaltwo.css");
+   
+   
+   
+   <META NAME="description" CONTENT=" New Catalog ">
+   <META NAME="keywords" CONTENT=" UNC, Chapel Hill, Library Catalog ">
+   <TITLE>
+UNC Chapel Hill Libraries Catalog   </TITLE>
+   
+   
+				
+   </HEAD>
+   
+   <BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+
+<TABLE>
+<TR>
+<TD><U><FONT COLOR=blue>[University of North Carolina at Chapel Hill University Libraries logo]</FONT></U>
+</TD>
+<!-- <td width="20%" style="backgroundcolor: #77ABDD; height: 53px;"><a href="http://search.lib.unc.edu/" style="color:#fff; fontsize:12px;">Try our new catalog! (beta)</a></td> -->
+<TD><U><FONT COLOR=blue>[UNC Chapel Hill catalog (beta)]</FONT></U></TD>
+</TR>
+
+<TR>
+<TD> 
+<U><FONT COLOR=blue>My Library</FONT></U>
+&nbsp; | &nbsp; 
+<U><FONT COLOR=blue>Catalog Search Tips</FONT></U>
+&nbsp; | &nbsp; 
+<U><FONT COLOR=blue>Request Forms</FONT></U>
+&nbsp; | &nbsp; 
+<U><FONT COLOR=blue>Catalog</FONT></U>
+&nbsp; | &nbsp; 
+<U><FONT COLOR=blue>E-Research Tools</FONT></U>
+&nbsp; | &nbsp; 
+<U><FONT COLOR=blue>E-Journal Finder</FONT></U>
+&nbsp; | &nbsp; 
+<U><FONT COLOR=blue>Search TRLN</FONT></U>
+&nbsp; | &nbsp; 
+<U><FONT COLOR=blue>Need Help?</FONT></U>
+</TD>
+
+</TR>
+
+</TABLE>
+<BR>
+
+
+
+
+
+<!--specified form name and form element name so javascript will work. dhk 
+82404-->
+<!--<body onLoad="document.search.searcharg.focus();">-->
+
+
+[UNC-Chapel Hill Libraries Catalog]
+<!-- <a href="/instruct/opachelp/index.html"><img src="searchtips.gif" alt="Search Tips" width="80" height="40" border="0" align="right" /></a> -->
+
+<BR>
+ 
+<!--Begin the search box area--> 
+
+
+
+<FORM>
+<!-- Begin
+function qs(el)
+{ if (window.RegExp && window.encodeURIComponent)
+{var qe=encodeURIComponent(document.search.searcharg.value);
+if (el.href.indexOf("searcharg=")!=1)
+{ el.href=el.href.replace(new RegExp("searcharg=[^&$]*"),"searcharg="+qe);}
+ else {el.href+="&searcharg="+qe;}} return 1;}
+  // End -->
+<UL><LI><EM>&nbsp;Title</EM></LI><LI><U><FONT COLOR=blue>&nbsp;<EM>Journal Title</EM></FONT></U></LI><LI><U><FONT COLOR=blue>&nbsp;<EM>E-Journals</EM></FONT></U></LI><LI><U><FONT COLOR=blue>&nbsp;<EM>E-Books</EM></FONT></U></LI><LI><U><FONT COLOR=blue>&nbsp;<EM>Author</EM></FONT></U></LI><LI><U><FONT COLOR=blue>&nbsp;<EM>Keyword</EM></FONT></U></LI><LI><U><FONT COLOR=blue>&nbsp;<EM>Advanced Search</EM></FONT></U></LI><LI><U><FONT COLOR=blue>&nbsp;<EM>Subject Headings</EM></FONT></U></LI><LI><U><FONT COLOR=blue>&nbsp;<EM>Call Numbers</EM></FONT></U></LI><LI><U><FONT COLOR=blue>&nbsp;<EM>ISBN / ISSN &amp; Others</EM></FONT></U></LI><LI><U><FONT COLOR=blue>&nbsp;<EM>Series</EM></FONT></U></LI><LI><U><FONT COLOR=blue>&nbsp;<EM>Course Reserves</EM></FONT></U></LI>  </UL><EM>Enter the title (omit initial article).</EM><BR><BR><INPUT VALUE="t" NAME="searchtype" TYPE="hidden"> 
+
+
+<INPUT VALUE="" NAME="searcharg" MAXLENGTH="75" SIZE="40"> 
+
+<INPUT VALUE="D" NAME="SORT" TYPE="hidden">
+
+<BR><BR>
+<SELECT NAME="searchscope"><OPTION VALUE="1" SELECTED>All Libraries &amp; Collections</OPTION>
+<OPTION VALUE="32">All E-Resources</OPTION>
+<OPTION VALUE="33">E-Books</OPTION>
+<OPTION VALUE="14">Journals</OPTION>
+<OPTION VALUE="0">--------------------</OPTION>
+<OPTION VALUE="16">Archival Materials (Wilson Library)</OPTION>
+<OPTION VALUE="2">Art Library</OPTION>
+<OPTION VALUE="23">Carolina Pop. Center Library</OPTION>
+<OPTION VALUE="5">Davis (Main) Library</OPTION>
+<OPTION VALUE="6">Davis Reference</OPTION>
+<OPTION VALUE="8">GrantSource Library</OPTION>
+<OPTION VALUE="9">Health Sciences Library</OPTION>
+<OPTION VALUE="10">Highway Safety Library</OPTION>
+<OPTION VALUE="27">Info. &amp; Library Science Library</OPTION>
+<OPTION VALUE="29">K-12 International Resource Library</OPTION>
+<OPTION VALUE="4">Kenan Science Library</OPTION>
+<OPTION VALUE="15">Law Library</OPTION>
+<OPTION VALUE="17">Maps Collection (Davis Reference)</OPTION>
+<OPTION VALUE="12">Marine Sciences Library</OPTION>
+<OPTION VALUE="31">Media Resources Center</OPTION>
+<OPTION VALUE="19">Music Library</OPTION>
+<OPTION VALUE="36">North Carolina Botanical Garden Library</OPTION>
+<OPTION VALUE="20">North Carolina Collection (Wilson)</OPTION>
+<OPTION VALUE="13">Odum Institute Data Library</OPTION>
+<OPTION VALUE="21">Park Library (Journalism)</OPTION>
+<OPTION VALUE="24">Rare Book Collection (Wilson)</OPTION>
+<OPTION VALUE="25">Scholarship Resource Center Library</OPTION>
+<OPTION VALUE="26">School of Government Library</OPTION>
+<OPTION VALUE="3">Science Library Annex</OPTION>
+<OPTION VALUE="28">Stone Center Library</OPTION>
+<OPTION VALUE="30">Undergraduate Library (UL)</OPTION>
+</SELECT>
+<INPUT VALUE="Search" NAME="submit" TYPE="submit"><BR><BR><BR><BR></FORM><U><FONT COLOR=blue>Duke Libraries</FONT></U> | <U><FONT COLOR=blue>NCCU Libraries</FONT></U> | <U><FONT COLOR=blue>NCSU Libraries</FONT></U> | <U><FONT COLOR=blue>TRLN Libraries</FONT></U><!-- START NEW.INC FOOTER -->
+	
+
+&nbsp;
+
+
+		
+
+<!-- START NEW.INC FOOTER -->
+<U><FONT COLOR=blue>[Connect with us!]</FONT></U>	
+
+
+		
+<U><FONT COLOR=blue>Catalog Home</FONT></U>
+ | <U><FONT COLOR=blue>Libraries &amp; Collections</FONT></U>
+ | <U><FONT COLOR=blue>Hours</FONT></U>
+ | <U><FONT COLOR=blue>Interlibrary Loan</FONT></U>
+ | <U><FONT COLOR=blue>Other Catalogs</FONT></U>
+ | <U><FONT COLOR=blue>Libraries' Home</FONT></U>
+ | <U><FONT COLOR=blue>Privacy Policy</FONT></U>
+		
+
+	
+
+			<BR>
+
+Website comments or questions: <U><FONT COLOR=blue>Web Catalog Tech Support Team</FONT></U>
+<BR>Suggestions on Library Services? <U><FONT COLOR=blue>Give us your feedback</FONT></U>.
+		<BR>
+    		URL: http://www.lib.unc.edu/webcat/ <BR>
+	
+This page was last updated Monday, March 07, 2011.
+	
+
+
+
+
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>
+<!-- END NEW.INC FOOTER -->

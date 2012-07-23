@@ -1,0 +1,657 @@
+
+<HTML>
+  <HEAD>
+<META CONTENT="text/html; charset=utf-8">
+    <!-- <base href=""> -->
+    <TITLE>Article Search | MLibrary</TITLE>
+                    <META CONTENT="text/html; charset=utf-8">
+<!--[if IE 7]><link type="text/css" rel="stylesheet" media="all" href="/sites/www.lib.umich.edu/modules/article/articleie7.css" /><![endif]-->
+<!--[if IE 8]><link type="text/css" rel="stylesheet" media="all" href="/sites/www.lib.umich.edu/modules/article/articleie8.css" /><![endif]-->
+<META NAME="robots" CONTENT="noindex,nofollow"></META><!-- article -->
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--//--><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" }, "lightbox2": { "rtl": 0, "file_path": "/(\\w\\w/)files", "default_image": "/sites/www.lib.umich.edu/modules/lightbox2/images/brokenimage.jpg", "border_size": 20, "font_color": "666", "box_color": "fff", "top_position": "", "overlay_opacity": 0.9, "overlay_color": "333", "disable_close_click": 1, "resize_sequence": 0, "resize_speed": 200, "fade_in_speed": 200, "slide_down_speed": 200, "use_alt_layout": 0, "disable_resize": 0, "disable_zoom": 0, "force_show_nav": 0, "loop_items": 0, "node_link_text": "View Image Details", "node_link_target": 0, "image_count": "Image !current of !total", "video_count": "Video !current of !total", "page_count": "Page !current of !total", "lite_press_x_close": "press \x3ca href=\"#\" onclick=\"hideLightbox(); return FALSE;\"\x3e\x3ckbd\x3ex\x3c/kbd\x3e\x3c/a\x3e to close", "download_link_text": "", "enable_login": false, "enable_contact": false, "keys_close": "c x 27", "keys_previous": "p 37", "keys_next": "n 39", "keys_zoom": "z", "keys_play_pause": "32", "display_image_size": "", "image_node_sizes": "()", "trigger_lightbox_classes": "", "trigger_lightbox_group_classes": "", "trigger_slideshow_classes": "", "trigger_lightframe_classes": "", "trigger_lightframe_group_classes": "", "custom_class_handler": 0, "custom_trigger_classes": "", "disable_for_gallery_lists": true, "disable_for_acidfree_gallery_lists": true, "enable_acidfree_videos": true, "slideshow_interval": 5000, "slideshow_automatic_start": 0, "slideshow_automatic_exit": 1, "show_play_pause": 1, "pause_on_next_click": 0, "pause_on_previous_click": true, "loop_slides": 0, "iframe_width": 600, "iframe_height": 400, "iframe_border": 1, "enable_video": 0 }, "mlibrary_loading_gif": "sites/www.lib.umich.edu/modules/mlibrary/images/loading.gif", "arg": [ "articlesplus", "advanced" ], "mlibrary_browse": { "ui_select_item_url": "/mlibrary_browse_ui_select_item.html" }, "mlibrary_search": { "tabs": [ "mlibrary", "articles", "catalog" ], "options": "\'mlibrary\',\'articles\',\'catalog\'" } });
+//-->
+
+    <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/sites/www.lib.umich.edu/themes/mlibrary/fixie.css" />    <![endif]-->
+  </HEAD>
+  <BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+    
+      
+      
+        <!-- sidebar -->
+        
+          
+          <U><FONT COLOR=blue>[MLibrary Logo]</FONT></U>          
+          
+            <U><FONT COLOR=blue>[University of Michigan]</FONT></U>          
+                    &nbsp;
+        <!-- sidebar -->
+
+        
+          
+          
+          
+						
+								
+							&nbsp;<!-- /alerts -->
+								
+							
+								
+									<UL><LI><U><FONT COLOR=blue>About</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Services</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Libraries &amp; Departments</FONT></U></LI>
+</UL> | 
+									<UL><LI><U><FONT COLOR=blue>MGet It</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Search Tools</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Catalog (Mirlyn)</FONT></U></LI>
+</UL>								<!-- /navcontent -->
+							<!-- /nav -->
+								
+							
+
+
+  
+  
+  
+  
+  <U><FONT COLOR=blue>Login for Favorites</FONT></U>
+
+
+
+							
+						<!-- /alertsnavcontainer -->
+						
+					<!-- /header -->
+          
+          
+                          
+
+  <H2>Search</H2>
+
+  <U><FONT COLOR=blue>[Search]</FONT></U><INPUT VALUE="MLibrary" TYPE="button"><INPUT VALUE="ArticlesPlus" TYPE="button"><INPUT VALUE="Catalog" TYPE="button"><FORM>
+<INPUT VALUE="" NAME="op" TYPE="hidden">
+
+ Search MLibrary: 
+ <INPUT VALUE="" NAME="query" MAXLENGTH="128" SIZE="23" TYPE="text">
+
+<INPUT VALUE="" NAME="op" TYPE="submit">
+
+ <INPUT VALUE="searchtools" NAME="left[searchtools]" CHECKED="checked" TYPE="checkbox"> Databases
+
+
+ <INPUT VALUE="mirlyn" NAME="left[mirlyn]" CHECKED="checked" TYPE="checkbox"> Catalog (Mirlyn)
+
+
+ <INPUT VALUE="ejournals" NAME="left[ejournals]" CHECKED="checked" TYPE="checkbox"> Online Journals
+
+
+ <INPUT VALUE="libguides" NAME="right[libguides]" CHECKED="checked" TYPE="checkbox"> Research Guides
+
+
+ <INPUT VALUE="website" NAME="right[website]" CHECKED="checked" TYPE="checkbox"> Library Webpages
+
+
+ <INPUT VALUE="digitalcollections" NAME="right[digitalcollections]" CHECKED="checked" TYPE="checkbox"> Collections
+
+<INPUT VALUE="" NAME="op" TYPE="submit">
+<INPUT VALUE="mlibrary" NAME="search_tab" TYPE="hidden">
+
+ <INPUT VALUE="scholarly" NAME="articles[scholarly]" TYPE="checkbox"> Limit to peer-reviewed journals
+
+
+ <INPUT VALUE="newspapers" NAME="articles[newspapers]" TYPE="checkbox"> Exclude newspaper articles
+
+
+ <INPUT VALUE="fulltext" NAME="articles[fulltext]" TYPE="checkbox"> Limit to articles with full text online
+
+
+ <INPUT VALUE="local" NAME="articles[local]" TYPE="checkbox"> Add results beyond MLibrary
+
+<U><FONT COLOR=blue>Advanced Articles<EM>Plus</EM> Search</FONT></U>Catalog Search Options
+ <INPUT VALUE="all" NAME="catalog" CHECKED="checked" TYPE="radio"> Keywords
+
+
+ <INPUT VALUE="title" NAME="catalog" TYPE="radio"> Title
+
+
+ <INPUT VALUE="author" NAME="catalog" TYPE="radio"> Author
+
+
+ <INPUT VALUE="subject" NAME="catalog" TYPE="radio"> Subject
+
+
+ <INPUT VALUE="hlb" NAME="catalog" TYPE="radio"> Academic Discipline
+
+
+ <INPUT VALUE="callnumber" NAME="catalog" TYPE="radio"> Call Number
+
+
+ <INPUT VALUE="isn" NAME="catalog" TYPE="radio"> ISSN/ISBN/etc
+
+<INPUT VALUE="form-b736661a4553129834734cf8a204fbd5" NAME="form_build_id" TYPE="hidden">
+<INPUT VALUE="mlibrary_search_form_setup" NAME="form_id" TYPE="hidden">
+
+</FORM>
+
+
+
+
+  <H2>Browse</H2>
+
+  <U><FONT COLOR=blue>[Browse]</FONT></U><FORM>
+
+ <SELECT NAME="selects"><OPTION VALUE="0"></OPTION><OPTION VALUE="1"></OPTION></SELECT>
+
+<INPUT VALUE="" NAME="op" TYPE="submit">
+<INPUT VALUE="" NAME="op" TYPE="submit">
+<INPUT VALUE="form-b854c200022ccef83263b9d96b106146" NAME="form_build_id" TYPE="hidden">
+<INPUT VALUE="mlibrary_browse_ui_form" NAME="form_id" TYPE="hidden">
+
+</FORM>
+
+
+
+
+  <H2>Get Help</H2>
+
+  [Get Help]<U><FONT COLOR=blue>Ask a Librarian</FONT></U><U><FONT COLOR=blue>Using the Library</FONT></U><UL><LI> <U><FONT COLOR=blue>- Chat</FONT></U></LI><LI> <U><FONT COLOR=blue>- Email</FONT></U></LI><LI> <U><FONT COLOR=blue>- Phone</FONT></U></LI><LI> <U><FONT COLOR=blue>- In Person</FONT></U></LI><LI> <U><FONT COLOR=blue>Subject Specialists</FONT></U></LI></UL><UL><LI> <U><FONT COLOR=blue>Research Guides</FONT></U></LI><LI> <U><FONT COLOR=blue>Instruction &amp; Workshops</FONT></U></LI><LI> <U><FONT COLOR=blue>Searchpath</FONT></U></LI><LI> <U><FONT COLOR=blue>Off-Campus Access</FONT></U></LI><LI> <U><FONT COLOR=blue>Video Tutorials</FONT></U></LI></UL>
+
+                      <!-- /searchoptions -->
+
+          
+            
+            <!-- breadcrumbs -->
+                        <!-- /breadcrumbs -->
+                        
+            <!-- admintabs -->
+                        
+            <!-- content area -->
+                                    <!-- mission & help  not sure when these show up... -->
+                        <!-- /mission, /help -->
+            
+            &nbsp;
+
+  
+  
+    <H1><U><FONT COLOR=blue><EM>Articles</EM><EM>Plus</EM></FONT></U></H1>
+  
+  <!-- <div class="articleheaderabout">
+    <a href="/articlesplus">about Articles<em>Plus</em></a>
+  </div> -->
+  
+    
+      
+        <U><FONT COLOR=blue>&gt; About Articles<EM>Plus</EM></FONT></U>
+      
+      
+        
+           
+<EM>New!</EM> Save articles, databases, and online journals to your favorites. <U><FONT COLOR=blue>Read more</FONT></U>
+             <!--<a href = "http://umichlib.qualtrics.com/SE/?SID=SV_880asrR8lleCcXa">Take a survey</a> on finding articles online and have a chance to win one of five $50 Amazon.com gift certificates.-->
+             <!-- Articles<em>Plus</em> is MLibrary's new article search tool.  Please <a href = "http://www.lib.umich.edu/feedback?id=/articlesplus/">let us know what you think</a> of it. -->
+             <!--<a href="http://new.qualtrics.com/SE/?SID=SV_afsfSYOVI0QTyOo">Tell us what you think</a> about Articles<em>Plus</em> and you could win one of 3 $50 Amazon gift cards.-->
+           
+           <!--<span class="articleheaderbeta">BETA!</span> --><!--<span class="articleheadertext"><a href="http://new.qualtrics.com/SE/?SID=SV_afsfSYOVI0QTyOo">Tell us what you think</a> about Articles<em>Plus</em> (<a href="/articlesplus">or read more about it</a>).</span> -->
+        
+      
+<!--    </div>
+    <div class="articleheaderright"> -->
+      <!-- <div class="articleheaderthumbs">T Up/Down</div> -->
+    
+  
+
+
+
+
+  
+        
+
+<H2>Articles<EM>Plus</EM> Advanced Search</H2>
+<FORM>
+          
+          
+            <INPUT VALUE="1" NAME="scholarly" TYPE="checkbox"> Limit to peer-reviewed journals<BR>
+            <INPUT VALUE="1" NAME="newspapers" TYPE="checkbox"> Exclude newspaper articles<BR>
+            <INPUT VALUE="1" NAME="fulltext" TYPE="checkbox"> Limit to articles with full text online<BR>
+            <INPUT VALUE="1" NAME="local" TYPE="checkbox"> Add results beyond MLibrary<BR>
+          
+          
+          <TABLE>
+            
+            <TR>
+              <TD> Search </TD>
+              <TD>
+                <SELECT NAME="type[]">
+                  <OPTION VALUE="All" SELECTED="selected">All Fields</OPTION>
+                  <OPTION VALUE="Title">Title</OPTION>
+                  <OPTION VALUE="Author">Author</OPTION>
+                  <OPTION VALUE="PublicationTitle">Journal/Serial Title</OPTION>
+                  <OPTION VALUE="SubjectTerms">Subject</OPTION>
+                  <OPTION VALUE="Series">Series</OPTION>
+                  <OPTION VALUE="PublicationYear">Year of Publication</OPTION>
+                  <OPTION VALUE="ISSN">ISSN</OPTION>
+                  <OPTION VALUE="ISBN">ISBN</OPTION>
+                  <OPTION VALUE="PMID">PubMed ID</OPTION>
+                </SELECT>
+              </TD>
+              <TD><INPUT VALUE="" NAME="lookfor[]" SIZE="50" TYPE="text"></TD>
+            </TR>
+            <TR>
+              <TD>
+                <SELECT NAME="bool[]">
+                  <OPTION VALUE="AND" SELECTED="selected">AND</OPTION>
+                  <OPTION VALUE="OR">OR</OPTION>
+                </SELECT>
+              </TD>
+              <TD>
+                <SELECT NAME="type[]">
+                  <OPTION VALUE="All">All Fields</OPTION>
+                  <OPTION VALUE="Title">Title</OPTION>
+                  <OPTION VALUE="Author" SELECTED="selected">Author</OPTION>
+                  <OPTION VALUE="PublicationTitle">Journal/Serial Title</OPTION>
+                  <OPTION VALUE="SubjectTerms">Subject</OPTION>
+                  <OPTION VALUE="Series">Series</OPTION>
+                  <OPTION VALUE="PublicationYear">Year of Publication</OPTION>
+                  <OPTION VALUE="ISSN">ISSN</OPTION>
+                  <OPTION VALUE="ISBN">ISBN</OPTION>
+                  <OPTION VALUE="PMID">PubMed ID</OPTION>
+                </SELECT>
+              </TD>
+              <TD><INPUT VALUE="" NAME="lookfor[]" SIZE="50" TYPE="text"></TD>
+            </TR>
+            <TR>
+              <TD>
+                <SELECT NAME="bool[]">
+                  <OPTION VALUE="AND" SELECTED="selected">AND</OPTION>
+                  <OPTION VALUE="OR">OR</OPTION>
+                </SELECT>
+              </TD>
+              <TD>
+                <SELECT NAME="type[]">
+                  <OPTION VALUE="All">All Fields</OPTION>
+                  <OPTION VALUE="Title" SELECTED="selected">Title</OPTION>
+                  <OPTION VALUE="Author">Author</OPTION>
+                  <OPTION VALUE="PublicationTitle">Journal/Serial Title</OPTION>
+                  <OPTION VALUE="SubjectTerms">Subject</OPTION>
+                  <OPTION VALUE="Series">Series</OPTION>
+                  <OPTION VALUE="PublicationYear">Year of Publication</OPTION>
+                  <OPTION VALUE="ISSN">ISSN</OPTION>
+                  <OPTION VALUE="ISBN">ISBN</OPTION>
+                  <OPTION VALUE="PMID">PubMed ID</OPTION>
+                </SELECT>
+              </TD>
+              <TD><INPUT VALUE="" NAME="lookfor[]" SIZE="50" TYPE="text"></TD>
+            </TR>
+            <TR>
+              <TD>
+                <SELECT NAME="bool[]">
+                  <OPTION VALUE="AND" SELECTED="selected">AND</OPTION>
+                  <OPTION VALUE="OR">OR</OPTION>
+                </SELECT>
+              </TD>
+              <TD>
+                <SELECT NAME="type[]">
+                  <OPTION VALUE="All">All Fields</OPTION>
+                  <OPTION VALUE="Title">Title</OPTION>
+                  <OPTION VALUE="Author">Author</OPTION>
+                  <OPTION VALUE="PublicationTitle">Journal/Serial Title</OPTION>
+                  <OPTION VALUE="SubjectTerms" SELECTED="selected">Subject</OPTION>
+                  <OPTION VALUE="Series">Series</OPTION>
+                  <OPTION VALUE="PublicationYear">Year of Publication</OPTION>
+                  <OPTION VALUE="ISSN">ISSN</OPTION>
+                  <OPTION VALUE="ISBN">ISBN</OPTION>
+                  <OPTION VALUE="PMID">PubMed ID</OPTION>
+                </SELECT>
+              </TD>
+              <TD><INPUT VALUE="" NAME="lookfor[]" SIZE="50" TYPE="text"></TD>
+            </TR>
+          <TABLE>
+            <TR>
+              <TD>Year of Publication:</TD>
+              <TD>Language: </TD>
+              <TD>Format: </TD>
+            </TR>
+            <TR> 
+              <TD>
+          <SELECT NAME="published">
+            <OPTION VALUE="before">Before</OPTION>
+            <OPTION VALUE="after" SELECTED="selected">After</OPTION>
+            <OPTION VALUE="between">Between</OPTION>
+            <OPTION VALUE="in">In</OPTION>
+          </SELECT>
+          
+          <INPUT VALUE="" NAME="published_start" SIZE="4" TYPE="text">
+           and 
+            <INPUT VALUE="" NAME="published_end" SIZE="4" TYPE="text">
+          
+              </TD>
+              <TD>
+                <SELECT NAME="Language[]" MULTIPLE="" SIZE="10">
+                  <OPTION VALUE="All">All</OPTION>
+                  <OPTION VALUE="Afrikaans">Afrikaans</OPTION>
+                  <OPTION VALUE="Albanian">Albanian</OPTION>
+                  <OPTION VALUE="Altaic">Altaic</OPTION>
+                  <OPTION VALUE="Ancient">Ancient</OPTION>
+                  <OPTION VALUE="Arabic">Arabic</OPTION>
+                  <OPTION VALUE="Armenian">Armenian</OPTION>
+                  <OPTION VALUE="Austronesian">Austronesian</OPTION>
+                  <OPTION VALUE="Azerbaijani">Azerbaijani</OPTION>
+                  <OPTION VALUE="Basque">Basque</OPTION>
+                  <OPTION VALUE="Belarusian">Belarusian</OPTION>
+                  <OPTION VALUE="Bengali">Bengali</OPTION>
+                  <OPTION VALUE="Bhasa">Bhasa</OPTION>
+                  <OPTION VALUE="Bosnian">Bosnian</OPTION>
+                  <OPTION VALUE="Bulgarian">Bulgarian</OPTION>
+                  <OPTION VALUE="Burmese">Burmese</OPTION>
+                  <OPTION VALUE="Catalan">Catalan</OPTION>
+                  <OPTION VALUE="Chamorro">Chamorro</OPTION>
+                  <OPTION VALUE="Chinese">Chinese</OPTION>
+                  <OPTION VALUE="Croatian">Croatian</OPTION>
+                  <OPTION VALUE="Czech">Czech</OPTION>
+                  <OPTION VALUE="Danish">Danish</OPTION>
+                  <OPTION VALUE="Dutch">Dutch</OPTION>
+                  <OPTION VALUE="English">English</OPTION>
+                  <OPTION VALUE="Estonian">Estonian</OPTION>
+                  <OPTION VALUE="Finnish">Finnish</OPTION>
+                  <OPTION VALUE="French">French</OPTION>
+                  <OPTION VALUE="Gaelic">Gaelic</OPTION>
+                  <OPTION VALUE="Galician">Galician</OPTION>
+                  <OPTION VALUE="Georgian">Georgian</OPTION>
+                  <OPTION VALUE="German">German</OPTION>
+                  <OPTION VALUE="Greek">Greek</OPTION>
+                  <OPTION VALUE="Gujarati">Gujarati</OPTION>
+                  <OPTION VALUE="Hebrew">Hebrew</OPTION>
+                  <OPTION VALUE="High">High</OPTION>
+                  <OPTION VALUE="Hindi">Hindi</OPTION>
+                  <OPTION VALUE="Hungarian">Hungarian</OPTION>
+                  <OPTION VALUE="Icelandic">Icelandic</OPTION>
+                  <OPTION VALUE="Indic">Indic</OPTION>
+                  <OPTION VALUE="Indonesian">Indonesian</OPTION>
+                  <OPTION VALUE="Irish">Irish</OPTION>
+                  <OPTION VALUE="Italian">Italian</OPTION>
+                  <OPTION VALUE="Japanese">Japanese</OPTION>
+                  <OPTION VALUE="Javanese">Javanese</OPTION>
+                  <OPTION VALUE="Kannada">Kannada</OPTION>
+                  <OPTION VALUE="Kazakh">Kazakh</OPTION>
+                  <OPTION VALUE="Korean">Korean</OPTION>
+                  <OPTION VALUE="Latin">Latin</OPTION>
+                  <OPTION VALUE="Latvian">Latvian</OPTION>
+                  <OPTION VALUE="Lithuanian">Lithuanian</OPTION>
+                  <OPTION VALUE="Macedonian">Macedonian</OPTION>
+                  <OPTION VALUE="Maithili">Maithili</OPTION>
+                  <OPTION VALUE="Malay">Malay</OPTION>
+                  <OPTION VALUE="Malayalam">Malayalam</OPTION>
+                  <OPTION VALUE="Marathi">Marathi</OPTION>
+                  <OPTION VALUE="Middle">Middle</OPTION>
+                  <OPTION VALUE="Mongolian">Mongolian</OPTION>
+                  <OPTION VALUE="Nepal">Nepal</OPTION>
+                  <OPTION VALUE="Nepali">Nepali</OPTION>
+                  <OPTION VALUE="Norwegian">Norwegian</OPTION>
+                  <OPTION VALUE="Norwegian Bokm&aring;l">Norwegian Bokm&aring;l</OPTION>
+                  <OPTION VALUE="Occitan">Occitan</OPTION>
+                  <OPTION VALUE="Old French">Old French</OPTION>
+                  <OPTION VALUE="Oriya">Oriya</OPTION>
+                  <OPTION VALUE="Ottoman">Ottoman</OPTION>
+                  <OPTION VALUE="Pali">Pali</OPTION>
+                  <OPTION VALUE="Panjabi">Panjabi</OPTION>
+                  <OPTION VALUE="Papuan">Papuan</OPTION>
+                  <OPTION VALUE="Persian">Persian</OPTION>
+                  <OPTION VALUE="Polish">Polish</OPTION>
+                  <OPTION VALUE="Portuguese">Portuguese</OPTION>
+                  <OPTION VALUE="Prakrit">Prakrit</OPTION>
+                  <OPTION VALUE="Pushto">Pushto</OPTION>
+                  <OPTION VALUE="Rajasthani">Rajasthani</OPTION>
+                  <OPTION VALUE="Romanian">Romanian</OPTION>
+                  <OPTION VALUE="Russian">Russian</OPTION>
+                  <OPTION VALUE="Sanskrit">Sanskrit</OPTION>
+                  <OPTION VALUE="Serbian">Serbian</OPTION>
+                  <OPTION VALUE="Sindhi">Sindhi</OPTION>
+                  <OPTION VALUE="Slavic">Slavic</OPTION>
+                  <OPTION VALUE="Slovak">Slovak</OPTION>
+                  <OPTION VALUE="Slovenian">Slovenian</OPTION>
+                  <OPTION VALUE="Spanish">Spanish</OPTION>
+                  <OPTION VALUE="Sundanese">Sundanese</OPTION>
+                  <OPTION VALUE="Swahili">Swahili</OPTION>
+                  <OPTION VALUE="Swedish">Swedish</OPTION>
+                  <OPTION VALUE="Syriac">Syriac</OPTION>
+                  <OPTION VALUE="Tagalog">Tagalog</OPTION>
+                  <OPTION VALUE="Tahitian">Tahitian</OPTION>
+                  <OPTION VALUE="Tamil">Tamil</OPTION>
+                  <OPTION VALUE="Telugu">Telugu</OPTION>
+                  <OPTION VALUE="Thai">Thai</OPTION>
+                  <OPTION VALUE="Tibetan">Tibetan</OPTION>
+                  <OPTION VALUE="Turkish">Turkish</OPTION>
+                  <OPTION VALUE="Turkmen">Turkmen</OPTION>
+                  <OPTION VALUE="Ukrainian">Ukrainian</OPTION>
+                  <OPTION VALUE="Urdu">Urdu</OPTION>
+                  <OPTION VALUE="Uzbek">Uzbek</OPTION>
+                  <OPTION VALUE="Vietnamese">Vietnamese</OPTION>
+                  <OPTION VALUE="Welsh">Welsh</OPTION>
+                  <OPTION VALUE="Yiddish">Yiddish</OPTION>
+                </SELECT>
+              </TD>
+              <TD>
+                <SELECT NAME="ContentType[]" MULTIPLE="" SIZE="10">
+                  <OPTION VALUE="All">All</OPTION>
+                  <OPTION VALUE="Album">Album</OPTION>
+                  <OPTION VALUE="Architectural Drawing">Architectural Drawing</OPTION>
+                  <OPTION VALUE="Archival Material">Archival Material</OPTION>
+                  <OPTION VALUE="Archival Material/Manuscripts">Archival Material/Manuscripts</OPTION>
+                  <OPTION VALUE="Art">Art</OPTION>
+                  <OPTION VALUE="Article">Article</OPTION>
+                  <OPTION VALUE="Artifact">Artifact</OPTION>
+                  <OPTION VALUE="Atlas">Atlas</OPTION>
+                  <OPTION VALUE="Audio Recording">Audio Recording</OPTION>
+                  <OPTION VALUE="Blueprints">Blueprints</OPTION>
+                  <OPTION VALUE="Book / eBook">Book / eBook</OPTION>
+                  <OPTION VALUE="Book Chapter">Book Chapter</OPTION>
+                  <OPTION VALUE="Book Review">Book Review</OPTION>
+                  <OPTION VALUE="Case">Case</OPTION>
+                  <OPTION VALUE="Catalog">Catalog</OPTION>
+                  <OPTION VALUE="Ceremonial Object">Ceremonial Object</OPTION>
+                  <OPTION VALUE="Citation">Citation</OPTION>
+                  <OPTION VALUE="Clothing">Clothing</OPTION>
+                  <OPTION VALUE="Compact Disc">Compact Disc</OPTION>
+                  <OPTION VALUE="Computer File">Computer File</OPTION>
+                  <OPTION VALUE="Conference Proceeding">Conference Proceeding</OPTION>
+                  <OPTION VALUE="Course Reading">Course Reading</OPTION>
+                  <OPTION VALUE="Data Set">Data Set</OPTION>
+                  <OPTION VALUE="Database">Database</OPTION>
+                  <OPTION VALUE="Dissertation">Dissertation</OPTION>
+                  <OPTION VALUE="Drawing">Drawing</OPTION>
+                  <OPTION VALUE="Electronic Resource">Electronic Resource</OPTION>
+                  <OPTION VALUE="Equipment">Equipment</OPTION>
+                  <OPTION VALUE="Exam">Exam</OPTION>
+                  <OPTION VALUE="Film">Film</OPTION>
+                  <OPTION VALUE="Film Script">Film Script</OPTION>
+                  <OPTION VALUE="Finding Aid">Finding Aid</OPTION>
+                  <OPTION VALUE="Furnishing">Furnishing</OPTION>
+                  <OPTION VALUE="Government Document">Government Document</OPTION>
+                  <OPTION VALUE="Graphic Arts">Graphic Arts</OPTION>
+                  <OPTION VALUE="Houseware">Houseware</OPTION>
+                  <OPTION VALUE="Image">Image</OPTION>
+                  <OPTION VALUE="Implements">Implements</OPTION>
+                  <OPTION VALUE="Interactive Media">Interactive Media</OPTION>
+                  <OPTION VALUE="Journal / eJournal">Journal / eJournal</OPTION>
+                  <OPTION VALUE="Journal Article">Journal Article</OPTION>
+                  <OPTION VALUE="Learning Object">Learning Object</OPTION>
+                  <OPTION VALUE="Library Holding">Library Holding</OPTION>
+                  <OPTION VALUE="Magazine">Magazine</OPTION>
+                  <OPTION VALUE="Magazine Article">Magazine Article</OPTION>
+                  <OPTION VALUE="Manuscript">Manuscript</OPTION>
+                  <OPTION VALUE="Map">Map</OPTION>
+                  <OPTION VALUE="Market Research">Market Research</OPTION>
+                  <OPTION VALUE="Microfilm">Microfilm</OPTION>
+                  <OPTION VALUE="Microform">Microform</OPTION>
+                  <OPTION VALUE="Mixed">Mixed</OPTION>
+                  <OPTION VALUE="Model">Model</OPTION>
+                  <OPTION VALUE="Music Recording">Music Recording</OPTION>
+                  <OPTION VALUE="Music Score">Music Score</OPTION>
+                  <OPTION VALUE="Musical Instrument">Musical Instrument</OPTION>
+                  <OPTION VALUE="Newsletter">Newsletter</OPTION>
+                  <OPTION VALUE="Newspaper">Newspaper</OPTION>
+                  <OPTION VALUE="Newspaper Article">Newspaper Article</OPTION>
+                  <OPTION VALUE="Painting">Painting</OPTION>
+                  <OPTION VALUE="Pamphlet">Pamphlet</OPTION>
+                  <OPTION VALUE="Paper">Paper</OPTION>
+                  <OPTION VALUE="Patent">Patent</OPTION>
+                  <OPTION VALUE="Performance">Performance</OPTION>
+                  <OPTION VALUE="Personal Article">Personal Article</OPTION>
+                  <OPTION VALUE="Personal Narrative">Personal Narrative</OPTION>
+                  <OPTION VALUE="Photograph">Photograph</OPTION>
+                  <OPTION VALUE="Play">Play</OPTION>
+                  <OPTION VALUE="Poem">Poem</OPTION>
+                  <OPTION VALUE="Postcard">Postcard</OPTION>
+                  <OPTION VALUE="Poster">Poster</OPTION>
+                  <OPTION VALUE="Presentation">Presentation</OPTION>
+                  <OPTION VALUE="Print">Print</OPTION>
+                  <OPTION VALUE="Publication">Publication</OPTION>
+                  <OPTION VALUE="Publication Article">Publication Article</OPTION>
+                  <OPTION VALUE="Realia">Realia</OPTION>
+                  <OPTION VALUE="Reference">Reference</OPTION>
+                  <OPTION VALUE="Report">Report</OPTION>
+                  <OPTION VALUE="Research Guide">Research Guide</OPTION>
+                  <OPTION VALUE="Sheet Music">Sheet Music</OPTION>
+                  <OPTION VALUE="Slide">Slide</OPTION>
+                  <OPTION VALUE="Sound Recording">Sound Recording</OPTION>
+                  <OPTION VALUE="Special Collection">Special Collection</OPTION>
+                  <OPTION VALUE="Spoken Word Recording">Spoken Word Recording</OPTION>
+                  <OPTION VALUE="Standard">Standard</OPTION>
+                  <OPTION VALUE="Streaming Audio">Streaming Audio</OPTION>
+                  <OPTION VALUE="Streaming Video">Streaming Video</OPTION>
+                  <OPTION VALUE="Student Thesis">Student Thesis</OPTION>
+                  <OPTION VALUE="Technical Report">Technical Report</OPTION>
+                  <OPTION VALUE="Text">Text</OPTION>
+                  <OPTION VALUE="Tool">Tool</OPTION>
+                  <OPTION VALUE="Trade Publication Article">Trade Publication Article</OPTION>
+                  <OPTION VALUE="Transcript">Transcript</OPTION>
+                  <OPTION VALUE="Video Recording">Video Recording</OPTION>
+                  <OPTION VALUE="Web Resource">Web Resource</OPTION>
+                </SELECT>
+              </TD>
+            </TR>
+            <TR>
+              <TD>
+               <!-- Discipline: -->
+              </TD>
+            </TR>
+            <TR>
+              <TD>
+                <!-- <select name="Discipline[]">
+                  <option value="All">All</option>
+
+                </select> -->
+              </TD>
+            </TR>
+          </TABLE>
+          <INPUT VALUE="Search" NAME="submit" TYPE="submit">
+        </FORM>
+
+    
+          
+  <P ALIGN="center">Articles<EM>Plus</EM> results powered by SummonTM from Serials Solutions, a division of ProQuest</P>
+  
+ 
+
+
+                                    <!-- /content area -->
+            
+          <!-- /nodecontainer -->
+          
+        <!-- /main -->
+        
+       <!-- /container -->
+      
+      <!-- footercontainer -->
+      
+        <!-- footer -->
+        
+          
+            
+
+  <H2>Quick Links</H2>
+
+  
+  
+    <UL><LI><U><FONT COLOR=blue>My Library Account</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Online Journal List</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Library Hours</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Webmail</FONT></U></LI>
+<LI><U><FONT COLOR=blue>CTools</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Wolverine Access</FONT></U></LI>
+<LI><U><FONT COLOR=blue>MLibrary Mobile</FONT></U></LI>
+<LI><U><FONT COLOR=blue></FONT></U></LI>
+</UL>
+  
+
+          
+          <!-- /footer -->
+          
+            
+
+  <H2>MTagger</H2>
+
+  
+
+jQuery.mtagger.base += '/mtagger';
+
+
+  
+    <U><FONT COLOR=blue>[MTagger]tag this page</FONT></U>
+    <U><FONT COLOR=blue>mtagger</FONT></U>
+  
+  
+   
+
+
+  $('#tagCloud').addCloud({ separator: ' ',url:'http://www.lib.umich.edu/articlesplus/advanced'});
+
+
+
+
+  <H2>CONTACT</H2>
+
+  <P>We welcome your 
+<U><FONT COLOR=blue>feedback</FONT></U> on our web site.</P><P>University Library<BR>818 Hatcher Graduate Library South<BR>913 S. University Avenue<BR>Ann Arbor, MI 48109-1190</P>
+
+
+
+  <H2>Copyright</H2>
+
+  Access this page at: http://www.lib.umich.edu/articlesplus/advanced<U><FONT COLOR=blue> [Creative Commons License] [Creative Commons]</FONT></U><P>Except where otherwise noted, this work is subject to a Creative Commons Attribution 3.0 license. <U><FONT COLOR=blue>Details and exceptions</FONT></U>.</P><P>&copy;2012, Regents of the University of Michigan</P>
+
+          
+        
+       <!-- /footercontainer -->
+        
+    <!-- /wrapper -->
+    
+<!--//--><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA13416208"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = "/files/googleanalytics/ga.js?2";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//-->
+
+  </BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>

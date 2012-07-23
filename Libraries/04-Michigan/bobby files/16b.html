@@ -1,0 +1,307 @@
+
+<HTML>
+  <HEAD>
+<META CONTENT="text/html; charset=utf-8">
+    <!-- <base href=""> -->
+    <TITLE>MLibrary Feedback Form | MLibrary</TITLE>
+                    <META CONTENT="text/html; charset=utf-8">
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--//--><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" }, "lightbox2": { "rtl": 0, "file_path": "/(\\w\\w/)files", "default_image": "/sites/www.lib.umich.edu/modules/lightbox2/images/brokenimage.jpg", "border_size": 20, "font_color": "666", "box_color": "fff", "top_position": "", "overlay_opacity": 0.9, "overlay_color": "333", "disable_close_click": 1, "resize_sequence": 0, "resize_speed": 200, "fade_in_speed": 200, "slide_down_speed": 200, "use_alt_layout": 0, "disable_resize": 0, "disable_zoom": 0, "force_show_nav": 0, "loop_items": 0, "node_link_text": "View Image Details", "node_link_target": 0, "image_count": "Image !current of !total", "video_count": "Video !current of !total", "page_count": "Page !current of !total", "lite_press_x_close": "press \x3ca href=\"#\" onclick=\"hideLightbox(); return FALSE;\"\x3e\x3ckbd\x3ex\x3c/kbd\x3e\x3c/a\x3e to close", "download_link_text": "", "enable_login": false, "enable_contact": false, "keys_close": "c x 27", "keys_previous": "p 37", "keys_next": "n 39", "keys_zoom": "z", "keys_play_pause": "32", "display_image_size": "", "image_node_sizes": "()", "trigger_lightbox_classes": "", "trigger_lightbox_group_classes": "", "trigger_slideshow_classes": "", "trigger_lightframe_classes": "", "trigger_lightframe_group_classes": "", "custom_class_handler": 0, "custom_trigger_classes": "", "disable_for_gallery_lists": true, "disable_for_acidfree_gallery_lists": true, "enable_acidfree_videos": true, "slideshow_interval": 5000, "slideshow_automatic_start": 0, "slideshow_automatic_exit": 1, "show_play_pause": 1, "pause_on_next_click": 0, "pause_on_previous_click": true, "loop_slides": 0, "iframe_width": 600, "iframe_height": 400, "iframe_border": 1, "enable_video": 0 }, "mlibrary_loading_gif": "sites/www.lib.umich.edu/modules/mlibrary/images/loading.gif", "arg": [ "feedback" ], "mlibrary_browse": { "ui_select_item_url": "/mlibrary_browse_ui_select_item.html" }, "mlibrary_search": { "tabs": [ "mlibrary", "articles", "catalog" ], "options": "\'mlibrary\',\'articles\',\'catalog\'" } });
+//-->
+
+    <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/sites/www.lib.umich.edu/themes/mlibrary/fixie.css" />    <![endif]-->
+  </HEAD>
+  <BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+    
+      
+      
+        <!-- sidebar -->
+        
+          
+          <U><FONT COLOR=blue>[MLibrary Logo]</FONT></U>          
+          
+            <U><FONT COLOR=blue>[University of Michigan]</FONT></U>          
+                    &nbsp;
+        <!-- sidebar -->
+
+        
+          
+          
+          
+						
+								
+							&nbsp;<!-- /alerts -->
+								
+							
+								
+									<UL><LI><U><FONT COLOR=blue>About</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Services</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Libraries &amp; Departments</FONT></U></LI>
+</UL> | 
+									<UL><LI><U><FONT COLOR=blue>MGet It</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Search Tools</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Catalog (Mirlyn)</FONT></U></LI>
+</UL>								<!-- /navcontent -->
+							<!-- /nav -->
+								
+							
+
+
+  
+  
+  
+  
+  <U><FONT COLOR=blue>Login for Favorites</FONT></U>
+
+
+
+							
+						<!-- /alertsnavcontainer -->
+						
+					<!-- /header -->
+          
+          
+                          
+
+  <H2>Search</H2>
+
+  <U><FONT COLOR=blue>[Search]</FONT></U><INPUT VALUE="MLibrary" TYPE="button"><INPUT VALUE="ArticlesPlus" TYPE="button"><INPUT VALUE="Catalog" TYPE="button"><FORM>
+<INPUT VALUE="" NAME="op" TYPE="hidden">
+
+ Search MLibrary: 
+ <INPUT VALUE="" NAME="query" MAXLENGTH="128" SIZE="23" TYPE="text">
+
+<INPUT VALUE="" NAME="op" TYPE="submit">
+
+ <INPUT VALUE="searchtools" NAME="left[searchtools]" CHECKED="checked" TYPE="checkbox"> Databases
+
+
+ <INPUT VALUE="mirlyn" NAME="left[mirlyn]" CHECKED="checked" TYPE="checkbox"> Catalog (Mirlyn)
+
+
+ <INPUT VALUE="ejournals" NAME="left[ejournals]" CHECKED="checked" TYPE="checkbox"> Online Journals
+
+
+ <INPUT VALUE="libguides" NAME="right[libguides]" CHECKED="checked" TYPE="checkbox"> Research Guides
+
+
+ <INPUT VALUE="website" NAME="right[website]" CHECKED="checked" TYPE="checkbox"> Library Webpages
+
+
+ <INPUT VALUE="digitalcollections" NAME="right[digitalcollections]" CHECKED="checked" TYPE="checkbox"> Collections
+
+<INPUT VALUE="" NAME="op" TYPE="submit">
+<INPUT VALUE="mlibrary" NAME="search_tab" TYPE="hidden">
+
+ <INPUT VALUE="scholarly" NAME="articles[scholarly]" TYPE="checkbox"> Limit to peer-reviewed journals
+
+
+ <INPUT VALUE="newspapers" NAME="articles[newspapers]" TYPE="checkbox"> Exclude newspaper articles
+
+
+ <INPUT VALUE="fulltext" NAME="articles[fulltext]" TYPE="checkbox"> Limit to articles with full text online
+
+
+ <INPUT VALUE="local" NAME="articles[local]" TYPE="checkbox"> Add results beyond MLibrary
+
+<U><FONT COLOR=blue>Advanced Articles<EM>Plus</EM> Search</FONT></U>Catalog Search Options
+ <INPUT VALUE="all" NAME="catalog" CHECKED="checked" TYPE="radio"> Keywords
+
+
+ <INPUT VALUE="title" NAME="catalog" TYPE="radio"> Title
+
+
+ <INPUT VALUE="author" NAME="catalog" TYPE="radio"> Author
+
+
+ <INPUT VALUE="subject" NAME="catalog" TYPE="radio"> Subject
+
+
+ <INPUT VALUE="hlb" NAME="catalog" TYPE="radio"> Academic Discipline
+
+
+ <INPUT VALUE="callnumber" NAME="catalog" TYPE="radio"> Call Number
+
+
+ <INPUT VALUE="isn" NAME="catalog" TYPE="radio"> ISSN/ISBN/etc
+
+<INPUT VALUE="form-48a78f005acf549094a7182590745083" NAME="form_build_id" TYPE="hidden">
+<INPUT VALUE="mlibrary_search_form_setup" NAME="form_id" TYPE="hidden">
+
+</FORM>
+
+
+
+
+  <H2>Browse</H2>
+
+  <U><FONT COLOR=blue>[Browse]</FONT></U><FORM>
+
+ <SELECT NAME="selects"><OPTION VALUE="0"></OPTION><OPTION VALUE="1"></OPTION></SELECT>
+
+<INPUT VALUE="" NAME="op" TYPE="submit">
+<INPUT VALUE="" NAME="op" TYPE="submit">
+<INPUT VALUE="form-a1b71012b33969865ed4a8b1e5299fe5" NAME="form_build_id" TYPE="hidden">
+<INPUT VALUE="mlibrary_browse_ui_form" NAME="form_id" TYPE="hidden">
+
+</FORM>
+
+
+
+
+  <H2>Get Help</H2>
+
+  [Get Help]<U><FONT COLOR=blue>Ask a Librarian</FONT></U><U><FONT COLOR=blue>Using the Library</FONT></U><UL><LI> <U><FONT COLOR=blue>- Chat</FONT></U></LI><LI> <U><FONT COLOR=blue>- Email</FONT></U></LI><LI> <U><FONT COLOR=blue>- Phone</FONT></U></LI><LI> <U><FONT COLOR=blue>- In Person</FONT></U></LI><LI> <U><FONT COLOR=blue>Subject Specialists</FONT></U></LI></UL><UL><LI> <U><FONT COLOR=blue>Research Guides</FONT></U></LI><LI> <U><FONT COLOR=blue>Instruction &amp; Workshops</FONT></U></LI><LI> <U><FONT COLOR=blue>Searchpath</FONT></U></LI><LI> <U><FONT COLOR=blue>Off-Campus Access</FONT></U></LI><LI> <U><FONT COLOR=blue>Video Tutorials</FONT></U></LI></UL>
+
+                      <!-- /searchoptions -->
+
+          
+            
+            <!-- breadcrumbs -->
+                        <U><FONT COLOR=blue>Home</FONT></U><!-- /breadcrumbs -->
+                        
+            <!-- admintabs -->
+                        
+            <!-- content area -->
+                                    <!-- mission & help  not sure when these show up... -->
+                        <!-- /mission, /help -->
+            
+            
+<H2>Feedback Form</H2>
+
+<P>We look forward to hearing what you think about our library web site and welcome any ideas you may have for improving it. Please send us suggestions or comments using our form.  If you'd like a response, please fill in your email address and keep the &quot;I would like a response&quot;box checked. We will get back to you within 2 business days.</P>
+
+<P>If you're looking for reference help or if you want to report a problem with an online resource, please contact the <U><FONT COLOR=blue>Ask a Librarian</FONT></U> service.</P>
+<FORM>
+
+ Your Name: 
+ <INPUT VALUE="" NAME="Mfeedback_name" MAXLENGTH="40" SIZE="40" TYPE="text">
+ Name is optional
+
+
+ Your Email: 
+ <INPUT VALUE="" NAME="Mfeedback_email" MAXLENGTH="40" SIZE="40" TYPE="text">
+ Email is required if you would like a response.We will also use it to send you a copy of your feedback.
+
+
+ <INPUT VALUE="1" NAME="Mfeedback_response" CHECKED="checked" TYPE="checkbox"> I would like a response
+
+<INPUT VALUE="yes" NAME="Mfeedback_spam" TYPE="hidden">
+$('.nospam').val('no');
+ Subject: 
+ <INPUT VALUE="" NAME="Mfeedback_subject" MAXLENGTH="50" SIZE="50" TYPE="text">
+ What are you writing about?
+
+
+ Your comment or question: 
+ <TEXTAREA ROWS="5" NAME="Mfeedback_text" COLS="60"></TEXTAREA>
+ Please give us as much detail as possible.
+
+<INPUT VALUE="Send Feedback" NAME="op" TYPE="submit">
+<INPUT VALUE="Cancel" NAME="op" TYPE="submit">
+<INPUT VALUE="form-91509081ff4d2ec8fb0d9ad4d6601a8a" NAME="form_build_id" TYPE="hidden">
+<INPUT VALUE="Mfeedback_form" NAME="form_id" TYPE="hidden">
+
+</FORM>
+                                    <!-- /content area -->
+            
+          <!-- /nodecontainer -->
+          
+        <!-- /main -->
+        
+       <!-- /container -->
+      
+      <!-- footercontainer -->
+      
+        <!-- footer -->
+        
+          
+            
+
+  <H2>Quick Links</H2>
+
+  
+  
+    <UL><LI><U><FONT COLOR=blue>My Library Account</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Online Journal List</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Library Hours</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Webmail</FONT></U></LI>
+<LI><U><FONT COLOR=blue>CTools</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Wolverine Access</FONT></U></LI>
+<LI><U><FONT COLOR=blue>MLibrary Mobile</FONT></U></LI>
+<LI><U><FONT COLOR=blue></FONT></U></LI>
+</UL>
+  
+
+          
+          <!-- /footer -->
+          
+            
+
+  <H2>MTagger</H2>
+
+  
+
+jQuery.mtagger.base += '/mtagger';
+
+
+  
+    <U><FONT COLOR=blue>[MTagger]tag this page</FONT></U>
+    <U><FONT COLOR=blue>mtagger</FONT></U>
+  
+  
+   
+
+
+  $('#tagCloud').addCloud({ separator: ' ',url:'http://www.lib.umich.edu/feedback?id=/'});
+
+
+
+
+  <H2>CONTACT</H2>
+
+  <P>We welcome your 
+<U><FONT COLOR=blue>feedback</FONT></U> on our web site.</P><P>University Library<BR>818 Hatcher Graduate Library South<BR>913 S. University Avenue<BR>Ann Arbor, MI 48109-1190</P>
+
+
+
+  <H2>Copyright</H2>
+
+  Access this page at: http://www.lib.umich.edu/feedback<U><FONT COLOR=blue> [Creative Commons License] [Creative Commons]</FONT></U><P>Except where otherwise noted, this work is subject to a Creative Commons Attribution 3.0 license. <U><FONT COLOR=blue>Details and exceptions</FONT></U>.</P><P>&copy;2012, Regents of the University of Michigan</P>
+
+          
+        
+       <!-- /footercontainer -->
+        
+    <!-- /wrapper -->
+    
+<!--//--><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA13416208"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = "/files/googleanalytics/ga.js?2";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//-->
+
+  </BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>

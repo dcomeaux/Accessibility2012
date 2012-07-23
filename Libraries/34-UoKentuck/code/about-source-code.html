@@ -1,0 +1,1889 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+
+<head>
+
+<title>Homepage of  University of Kentucky Libraries</title>
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+
+<meta name="Keywords" content="Kentucky, libraries" />
+
+<meta name="author" content="University of Kentucky Libraries" />
+
+<meta http-equiv="imagetoolbar" content="no" />
+
+<meta name="Description" content="University of Kentucky Libraries" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+<link rel="alternate" type="application/rss+xml"
+
+	title="University of Kentucky Libraries News and Events"
+
+	href="news.xml" />
+
+
+
+<link rel="stylesheet" type="text/css" href="shared/styles.css" /><!-- our compressed stylings -->
+
+<script type="text/javascript" src="js/libraries.js"></script><!-- our compressed js -->
+
+<script type="text/javascript" src="js/localdata.js"></script><!-- for our research guides search box -->
+
+
+
+
+
+<!--[if IE 6]>
+
+<style type="text/css">
+
+#lib_search_box {float: right; width: 560px; margin: 20px 0 0 48px; position: absolute;
+
+#lib_branch_content_right {margin: 4px 0 0 0;}
+
+</style>
+
+<![endif]-->
+
+
+
+<!--[if IE 7]>
+
+<style type="text/css">
+
+#lib_search_box {float: right; width: 560px; margin: 20px 0 0 48px; position: absolute;}
+
+#lib_branch_content_right {margin: 4px 24px 20px 6px;}
+
+#branchleftnav {margin-top: -80px;}
+
+</style>
+
+<![endif]-->
+
+
+
+
+
+
+
+<script type="text/javascript" charset="utf-8">
+
+//<![CDATA[
+
+    $(document).ready(function() {
+
+      
+
+      function addMega(){
+
+        $(this).addClass("hovering");
+
+        }
+
+
+
+      function removeMega(){
+
+        $(this).removeClass("hovering");
+
+        }
+
+
+
+    var megaConfig = {
+
+         interval: 370,
+
+         sensitivity: 4,
+
+         over: addMega,
+
+         timeout: 500,
+
+         out: removeMega
+
+    };
+
+
+
+    $("li.mega").hoverIntent(megaConfig)
+
+      
+
+    });
+
+
+
+
+
+    //]]>
+
+    </script>
+
+ 
+
+<script type="text/javascript"> 
+
+var ajax = [];function pjx(args,fname,method) { this.target=args[1]; this.args=args[0]; method=(method)?method:'GET'; if(method=='post'){method='POST';} this.method = method; this.r=ghr(); this.url = this.getURL(fname);}function formDump(){ var all = []; var fL = document.forms.length; for(var f = 0;f<fL;f++){ var els = document.forms[f].elements; for(var e in els){ var tmp = (els[e].id != undefined)? els[e].id : els[e].name; if(typeof tmp != 'string'){continue;} if(tmp){ all[all.length]=tmp} } } return all;}function getVal(id) { if (id.constructor == Function ) { return id(); } if (typeof(id)!= 'string') { return id; } var element = document.getElementById(id); if( !element ) { for( var i=0; i<document.forms.length; i++ ){ element = document.forms[i].elements[id]; if( element ) break; } if( element && !element.type ) element = element[0]; } if(!element){ alert('ERROR: Cant find HTML element with id or name: ' + id+'. Check that an element with name or id='+id+' exists'); return 0; } if(element.type == 'select-one') { if(element.selectedIndex == -1) return; var item = element[element.selectedIndex]; return item.value || item.text; } if(element.type == 'select-multiple') { var ans = []; var k =0; for (var i=0;i<element.length;i++) { if (element[i].selected || element[i].checked ) { ans[k++]= element[i].value || element[i].text; } } return ans; } if(element.type == 'radio' || element.type == 'checkbox'){ var ans =[]; var elms = document.getElementsByTagName('input'); var endk = elms.length ; var i =0; for(var k=0;k<endk;k++){ if(elms[k].type== element.type && elms[k].checked && (elms[k].id==id||elms[k].name==id)){ ans[i++]=elms[k].value; } } return ans; } if( element.value == undefined ){ return element.innerHTML; }else{ return element.value; }}function fnsplit(arg) { var url=""; if(arg=='NO_CACHE'){return '&pjxrand='+Math.random()} if((typeof(arg)).toLowerCase() == 'object'){ for(var k in arg){ url += '&' + k + '=' + arg[k]; } }else if (arg.indexOf('__') != -1) { arga = arg.split(/__/); url += '&' + arga[0] +'='+ escape(arga[1]); } else { var res = getVal(arg) || ''; if(res.constructor != Array){ res = [res] } for(var i=0;i<res.length;i++) { var encoded = Base64.encode(res[i]); url += '&args=' + escape(encoded).replace(/\+/g,'%2b') + '&' + arg + '=' + escape(encoded).replace(/\+/g,'%2b'); } }   return url;}pjx.prototype = { send2perl : function(){ var r = this.r; var dt = this.target; this.pjxInitialized(dt); var url=this.url; var postdata; if(this.method=="POST"){ var idx=url.indexOf('?'); postdata = url.substr(idx+1); url = url.substr(0,idx); } r.open(this.method,url,true); ; if(this.method=="POST"){ r.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"); r.send(postdata); } if(this.method=="GET"){ r.send(null); } r.onreadystatechange = handleReturn; }, pjxInitialized : function(){}, pjxCompleted : function(){}, readyState4 : function(){ var rsp = unescape(this.r.responseText); /* the response from perl */ var splitval = '__pjx__'; /* to split text */ /* fix IE problems with undef values in an Array getting squashed*/ rsp = rsp.replace(splitval+splitval+'g',splitval+" "+splitval); var data = rsp.split(splitval); dt = this.target; if (dt.constructor != Array) { dt=[dt]; } if (data.constructor != Array) { data=[data]; } if (typeof(dt[0])!='function') { for ( var i=0; i<dt.length; i++ ) { var div = document.getElementById(dt[i]); if (div.type =='text' || div.type=='textarea' || div.type=='hidden' ) { div.value=data[i]; } else{ div.innerHTML = data[i]; } } } else if (typeof(dt[0])=='function') { dt[0].apply(this,data); } this.pjxCompleted(dt); }, getURL : function(fname) { var args = this.args; var url= 'fname=' + fname; for (var i=0;i<args.length;i++) { url=url + args[i]; } return url; }};handleReturn = function() { for( var k=0; k<ajax.length; k++ ) { if (ajax[k].r==null) { ajax.splice(k--,1); continue; } if ( ajax[k].r.readyState== 4) { ajax[k].readyState4(); ajax.splice(k--,1); continue; } }};var ghr=getghr();function getghr(){ if(typeof XMLHttpRequest != "undefined") { return function(){return new XMLHttpRequest();} } var msv= ["Msxml2.XMLHTTP.7.0", "Msxml2.XMLHTTP.6.0", "Msxml2.XMLHTTP.5.0", "Msxml2.XMLHTTP.4.0", "MSXML2.XMLHTTP.3.0", "MSXML2.XMLHTTP", "Microsoft.XMLHTTP"]; for(var j=0;j<=msv.length;j++){ try { A = new ActiveXObject(msv[j]); if(A){ return function(){return new ActiveXObject(msv[j]);} } } catch(e) { } } return false;}function jsdebug(){ var tmp = document.getElementById('pjxdebugrequest').innerHTML = "<br><pre>"; for( var i=0; i < ajax.length; i++ ) { tmp += '<a href= '+ ajax[i].url +' target=_blank>' + decodeURI(ajax[i].url) + ' </' + 'a><br>'; } document.getElementById('pjxdebugrequest').innerHTML = tmp + "</" + "pre>";}function find_param_pattern_value() { var args = find_param_pattern_value.arguments; for( var i=0; i<args[0].length;i++ ) { args[0][i] = fnsplit(args[0][i]); } var l = ajax.length; ajax[l]= new pjx(args,"find_param_pattern_value",args[2]); ajax[l].url = '/sfxlcl3/cgi/core/autocomplete_srv.cgi?list_size=10&id=param_pattern_value&class=AZLIST_VER3::Autocomplete&param_name_1=profile&param_value_1=default&' + ajax[l].url; ajax[l].send2perl(); ;}
+
+</script>
+
+
+
+<!-- <script type="text/javascript">
+
+	var AutocompleteObj_param_pattern_value = actb(document.getElementById('param_pattern_value'),new Array(), 'sfxlcl3', '\'param_chinese_checkbox_value\',\'param_textSearchType_value\'');
+
+	AutocompleteObj_param_pattern_value.actb_lim 		= '10';
+
+	AutocompleteObj_param_pattern_value.actb_bgColor 	= '#FAFBFC';
+
+	AutocompleteObj_param_pattern_value.actb_textColor = '#000000';
+
+	AutocompleteObj_param_pattern_value.actb_hColor 	= '#CDEDFC';
+
+	AutocompleteObj_param_pattern_value.actb_fFamily 	= 'Verdana';
+
+	AutocompleteObj_param_pattern_value.actb_fSize 	= '11px';
+
+	AutocompleteObj_param_pattern_value.actb_list_extra_width 	= 0;
+
+	AutocompleteObj_param_pattern_value.actb_more_results_available_msg 	= "More results are available...";
+
+	AutocompleteObj_param_pattern_value.actb_delimiter = new Array();
+
+</script>
+
+-->
+
+
+
+<script type="text/javascript">
+
+function clearMe(formfield){
+
+  if (formfield.defaultValue==formfield.value)
+
+   formfield.value = ""
+
+ }
+
+</script>
+
+
+
+<script type="text/javascript">
+
+	$(document).ready(function() {
+
+				   
+
+	function findValueCallback(event, data, formatted) {
+
+		$("<li>").html( !data ? "No match!" : "Selected: " + formatted).appendTo("#result");
+
+	}
+
+	
+
+	function formatItem(row) {
+
+		return row[0] + " (<strong>id: " + row[1] + "</strong>)";
+
+	}
+
+	function formatResult(row) {
+
+		return row[0].replace(/(<.+?>)/gi, '');
+
+	}
+
+	
+
+	$("#suggest1").autocomplete(guides, {
+
+		  formatItem: function(item) {
+
+		    return item.text;
+
+		  }
+
+		}).result(function(event, item) {
+
+		  location.href = item.url;
+
+		});
+
+
+
+	// This takes care of the selected databases select dropdown
+
+	$("#selected-dbs").selectBox();
+
+
+
+	
+
+});
+
+</script>
+
+
+
+<script type="text/javascript">
+
+
+
+	function Show_Stuff(Click_Menu)
+
+	// Function that will swap the display/no display for
+
+	// all content within span tags
+
+	{
+
+		Click_Menu = document.getElementById(Click_Menu);
+
+		if (Click_Menu.style.display == "none")
+
+		{
+
+		Click_Menu.style.display = "block";
+
+		}
+
+		else
+
+		{
+
+		Click_Menu.style.display = "none";
+
+		}
+
+	}
+
+
+
+</script>
+
+
+
+<script type="text/javascript">
+
+
+
+  var _gaq = _gaq || [];
+
+  _gaq.push(['_setAccount', 'UA-4968268-10']);
+
+  _gaq.push(['_trackPageview']);
+
+
+
+  (function() {
+
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+
+  })();
+
+
+
+</script>
+
+
+
+        
+
+</head>
+
+<body>
+
+
+
+
+
+<div id="lib_content"><!-- lib_content container -->
+
+<div id="inner_wrapper"><!-- inner white border -->
+
+
+
+<div id="libtopnavspace">
+<div id="contain_banner">
+<div id="lib_logo">
+<a href="/" alt="UK Libraries Logo"><img src="/images/UKLibraries_logo.png" alt="UK Libraries Logo" border="0" /></a>
+</div>
+</div>`<div id="libleftnav">
+
+
+
+<ul id="libmenu">
+
+	<li class="mega Home"><a href="/"><img src="images/trans.png" width="40" height="100%" alt="UK Libraries Home" title="Go back to UK Libraries Home Page" /></a>
+
+	<li class="mega"><a href="/CampusLibraries">Our Libraries</a>
+
+	<!-- This is the campus mega menu div -->
+
+		<div class="sub_menu">
+
+     						
+
+			<ul>
+
+	            <li><a href="/AIC">Agricultural Information Center</a></li>
+
+				<li><a href="/Design">Design Library</a></li>
+
+				<li><a href="/Educ">Education Library</a></li>
+
+				<li><a href="http://www.law.uky.edu/index.php?pid=37">Law Library</a></li>
+
+				<li><a href="/FALib">Lucille Caudill Little Fine Arts Library &amp; Learning Center</a></li>
+
+				<li><a href="/MCL">Medical Center Library</a></li>
+
+                </ul>
+
+                <ul>
+
+				<li><a href="/SciLib">Science Library</a></li>
+
+				<li><a href="/SEL">Shaver Engineering Library</a></li>
+
+				<li><a href="/SC">Special Collections</a></li>				
+
+				<li><a href="/WTYL">William T. Young Library</a></li>
+
+				<li><a href="/page.php?lweb_id=1019">Complete list including departments and service centers</a></li>
+
+			</ul>
+
+			<br style="clear: both" />
+
+			
+
+		</div>
+
+	</li>	
+
+	<li class="mega"><a href="/Services">Services</a>
+
+		<div class="sub_menu">
+
+			<ul>
+
+				<li><a href="/libpage.php?lweb_id=1022&llib_id=14">Audio Visual Services</a></li>
+
+				<li><a href="/BookExpress">Book Express</a></li>
+
+				<li><a href="/Borrow">Borrowing Information</a></li>
+
+				<li><a href="/Disability">Disability Services</a></li>
+
+				<li><a href="/DLLS">Distance Learning</a></li>
+
+				<li><a href="/ILL">Interlibrary loan</a></li>				
+
+				<li><a href="/MyAccount">My Account</a></li>
+
+				<li><a href="/page.php?lweb_id=15&ltab_id=154">Research Help and Consultations</a></li>
+
+                </ul>
+
+                <ul>
+
+				<li><a href="/page.php?lweb_id=990">Study &amp; Meeting Rooms</a></li>
+
+				<li><a href="/SRS">Services for Students</a></li>
+
+				<li><a href="/page.php?lweb_id=2">Services for Faculty &amp; Grad Students</a></li>
+
+				<li><a href="http://libguides.uky.edu/communitypatrons">Services for Community</a></li>
+
+				<li><a href="/page.php?lweb_id=1023">Storage Retrieval Services</a></li>
+
+				<li><a href="/Services">Complete List</a></li>
+
+			</ul>
+
+					
+
+		</div>
+
+	</li>
+
+	<li class="mega"><a href="/About">About</a>
+
+		<div class="sub_menu">
+
+
+
+			<ul>
+
+				<li class="news"><a href="/News">News</a></li>			
+
+				<li class="hours"><a href="/Hours">Hours</a></li>				
+
+				<li><a href="/Staff">Faculty and Staff Directory</a></li>
+
+				<li><a href="/Directions">Driving Directions, Parking &amp; Maps</a></li>
+
+				<li><a href="/libpage.php?lweb_id=989&llib_id=14">Room Reservations/Events Calendar - Young Library</a></li>
+
+                </ul>
+
+                <ul>
+
+				<li><a href="/Jobs">Employment Opportunities</a></li>
+
+				<li><a href="/page.php?lweb_id=988">About the UK Libraries (ARL Profile)</a></li>
+
+				<li><a href="/About">Complete List</a></li>
+
+			</ul>
+
+					
+
+		</div>
+
+	</li>
+
+	<li class="mega"><a href="/Research">Research Tools</a>
+
+		<div class="sub_menu">
+
+			<ul>
+
+				<li><a href="/ResearchGuides">Research Guides by Subject</a></li>
+
+				<li><a href="http://libguides.uky.edu/cat.php?cid=35601">Course Guides</a></li>
+
+			  	<li><a href="/page.php?lweb_id=15&ltab_id=24">Schedule a meeting with a librarian</a></li>
+
+                </ul>
+
+                <ul>
+
+			  	<li><a href="/Toolbox/">Research Toolbox</a></li>
+
+			  	<li><a href="/DBSearch">Electronic resources &amp; databases provided by UK</a></li>		  
+
+		</ul>
+
+ 		
+
+		</div>
+
+	</li>
+
+	<li class="mega"><a href="/Help">Help</a>
+
+		<div class="sub_menu">
+
+
+
+			<ul>
+
+				<li><a href="/Ask">Ask-a-Librarian for help, by email, phone or chat</a></li>
+
+				<li><a href="/page.php?lweb_id=18">Borrowing Information</a></li>
+
+				<li><a href="/Toolbox/">Your Research Toolbox (Tutorial)</a></li>
+
+				<li><a href="/page.php?lweb_id=16">Off-campus access</a></li>				
+
+				<li><a href="/page.php?lweb_id=21&ltab_id=673">How to Find Books &amp; Articles</a></li>
+
+                </ul>
+
+                <ul>
+
+				<li><a href="/Staff">Library Faculty and Staff Directory</a></li>
+
+				<li><a href="/page.php?lweb_id=15&ltab_id=780">Chat with a Librarian</a></li>
+
+				<li><a href="/page.php?lweb_id=21&ltab_id=713">Classes &amp; Tours</a></li>
+
+				<li><a href="/page.php?lweb_id=21&ltab_id=673">Using the Library</a></li>
+
+				<li><a href="/bydept.php?dept_id=2">Subject Librarians</a></li>
+
+			</ul>
+
+					
+
+		</div>
+
+	</li>
+
+	<li class="mega Index"><a href="/SiteIndex" class="mega">Site Index</a></li>
+
+	<li class="mega Ask"><a href="/Ask" class="mega">Ask-a-Librarian</a>
+
+    		<div class="sub_menu">
+
+			<ul>
+
+				<li><a href="mailto:refdesk@uky.edu">E-Mail the RefDesk</a></li>
+
+				<li><a href="/libpage.php?lweb_id=211&llib_id=12">E-Mail MCL</a></li>
+
+				<li><a href="/page.php?lweb_id=15&ltab_id=23">Phone</a></li>
+
+				<li><a href="/page.php?lweb_id=15&ltab_id=780">Chat</a></li>
+
+                </ul>
+
+                <ul>
+
+				<li><a href="/page.php?lweb_id=15&ltab_id=154">Consultation</a></li>
+
+				<li><a href="/bydept.php?dept_id=2">Subject Librarians</a></li>
+
+				<li><a href="/Ask">More</a></li>
+
+			</ul>
+
+					
+
+		</div>
+
+    </li>
+
+    <li class="mega Feedback">
+
+    	<A HREF="javascript:void(0)" onclick="window.open('feedback.php','welcome','width=500,height=500,menubar=no,status=yes,location=yes,toolbar=no,scrollbars=yes')" class="mega">Feedback</A>
+
+    </li>
+
+    <li class="mega Giving">
+
+    	<A HREF="/Giving" class="mega">Giving</A>
+
+    </li>
+
+    
+
+</ul>
+
+
+
+</div>
+
+</div><!-- Close of div libtopnavspace opened in header.tpl -->
+
+
+
+<!-- Our Plan B DIV -->
+
+	
+
+
+
+<div id="lib_content_left">
+
+<div id="lib_search_box_body">
+
+	
+
+	<!-- Put Search Box Here -->
+
+<!-- <div id="container" class="leftit"> -->
+
+
+
+<div id="sectionsearch" title="">
+
+
+
+<div id="TabbedPanels1" class="TabbedPanels">
+
+
+
+<ul class="TabbedPanelsTabGroup">
+
+	<!-- <li class="TabbedPanelsTab">Catalog</li>  -->
+
+	<li class="TabbedPanelsTab">Articles & Books</li>
+
+	<li class="TabbedPanelsTab">E-Journals</li>
+
+	<li class="TabbedPanelsTab">Databases</li>
+
+	<li class="TabbedPanelsTab">Site Search</li>
+
+	<li class="TabbedPanelsTab">Research Guides</li>
+
+	<li class="TabbedPanelsTab" onClick="Show_Stuff('gsdiv')">Guided Search</li>
+
+	<!-- <a class="TabbedPanelsTab" href="javascript:Show_Stuff('gsdiv')">Guided Search</a>
+
+   -->
+
+</ul>
+
+
+
+<div class="TabbedPanelsContentGroup">
+
+
+
+<!-- Articles+ Search -->
+
+
+
+<div class="TabbedPanelsContent">
+
+<div class="searchfield">
+
+<form name="worldcatsearch" id="worldcatsearch" method="get"
+
+	accept-charset="UTF-8" action="http://uky.worldcat.org/search"
+
+	target="_top"><select name='scope' id='scope' class='pulldown'>
+
+	<option value="0" disabled><label for='scope'>- select search limit -</label></option>
+
+	<option value="0" selected>Libraries Worldwide</option>
+
+	<option value="2">University of Kentucky Libraries</option>
+
+</select> <input type="hidden" name="qt" value="wc_org_uky" /> <input
+
+	type="text" name="q" id="q" size="50"
+
+	style="border: 1px solid #999; background: #fff; font: 0.8em 'Arial Unicode MS', Arial, Helvetica, Verdana, sans-serif;"
+
+	value="" /> <input type="hidden" name="oldscope" value="" /> <input
+
+	type="hidden" name="dblist" value="1290" /> <!-- <input type="hidden" name="fq" value="dt:art" />  -->
+
+
+
+<input type="submit" value="Go" name="wcsbtn2w" id="wcsbtn2w" alt="Go"
+
+	title="Search" /> <!-- <input type="submit" value="Go" name="wcsbtn2w" id="wcsbtn2w" alt="Go" title="Search" style="height: 26px; font-size: 15px; font-weight: bold; background: #94aac7; color: #fff" />
+
+ --></form>
+
+
+
+
+
+
+
+
+
+<!-- <span class="maincontenttext">Databases: Academic Search Premier</span> -->
+
+<!-- <span class="maincontenttext">Or use the full <a href="http://uky.worldcat.org/" class="maincontenttext"><u>WorldCat Local</u></a> resource.</span>  -->
+
+<span class="maincontenttext">Or use UK's <a href="/lnkr.php?lir_id=1056" class="searchlinks">InfoKat</a> Library Catalog, <a href="http://uky.worldcat.org/advancedsearch" class="searchlinks">WorldCat Local</a>, or <a href="/DBSearch" class="searchlinks">Database Resources</a>.</span>
+
+	</div>
+
+</div>
+
+
+
+
+
+<!-- End Articles+ Search --> <!-- E-Journals Search -->
+
+
+
+
+
+<div class="TabbedPanelsContent">
+
+<div class="searchfield">
+
+<form action="http://sfx.uky.edu/sfxlcl3/azlist/default" method="get"
+
+	name="az_user_form" id="az_user_form"><a class="ABC"
+
+	href="http://sfx.uky.edu/sfxlcl3/azlist/default?&amp;param_sid_save=37b9a54fe8be2dda784dcba2b93037ab&amp;param_lang_save=eng&amp;param_letter_group_save=&amp;param_perform_save=searchTitle&amp;param_letter_group_script_save=&amp;param_chinese_checkbox_save=0&amp;param_services2filter_save=getFullTxt&amp;param_current_view_save=detail&amp;param_jumpToPage_save=1&amp;param_type_save=textSearch&amp;param_textSearchType_save=contains&amp;&amp;param_type_value=browseLetterGroup&amp;param_jumpToPage_value=&amp;param_pattern_value=&amp;param_letter_group_value=0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9&amp;param_letter_group_script_value=Latin">0-9</a>
+
+
+
+<a class="ABC"
+
+	href="http://sfx.uky.edu/sfxlcl3/azlist/default?&amp;param_sid_save=37b9a54fe8be2dda784dcba2b93037ab&amp;param_lang_save=eng&amp;param_letter_group_save=&amp;param_perform_save=searchTitle&amp;param_letter_group_script_save=&amp;param_chinese_checkbox_save=0&amp;param_services2filter_save=getTxt&amp;param_current_view_save=detail&amp;param_jumpToPage_save=1&amp;param_type_save=textSearch&amp;param_textSearchType_save=contains&amp;&amp;param_type_value=browseLetterGroup&amp;param_jumpToPage_value=&amp;param_pattern_value=&amp;param_letter_group_value=A&amp;param_letter_group_script_value=Latin">A</a>
+
+
+
+
+
+<a class="ABC"
+
+	href="http://sfx.uky.edu/sfxlcl3/azlist/default?&amp;param_sid_save=37b9a54fe8be2dda784dcba2b93037ab&amp;param_lang_save=eng&amp;param_letter_group_save=&amp;param_perform_save=searchTitle&amp;param_letter_group_script_save=&amp;param_chinese_checkbox_save=0&amp;param_services2filter_save=getFullTxt&amp;param_current_view_save=detail&amp;param_jumpToPage_save=1&amp;param_type_save=textSearch&amp;param_textSearchType_save=contains&amp;&amp;param_type_value=browseLetterGroup&amp;param_jumpToPage_value=&amp;param_pattern_value=&amp;param_letter_group_value=B&amp;param_letter_group_script_value=Latin">B</a>
+
+
+
+
+
+<a class="ABC"
+
+	href="http://sfx.uky.edu/sfxlcl3/azlist/default?&amp;param_sid_save=37b9a54fe8be2dda784dcba2b93037ab&amp;param_lang_save=eng&amp;param_letter_group_save=&amp;param_perform_save=searchTitle&amp;param_letter_group_script_save=&amp;param_chinese_checkbox_save=0&amp;param_services2filter_save=getFullTxt&amp;param_current_view_save=detail&amp;param_jumpToPage_save=1&amp;param_type_save=textSearch&amp;param_textSearchType_save=contains&amp;&amp;param_type_value=browseLetterGroup&amp;param_jumpToPage_value=&amp;param_pattern_value=&amp;param_letter_group_value=C&amp;param_letter_group_script_value=Latin">C</a>
+
+
+
+
+
+<a class="ABC"
+
+	href="http://sfx.uky.edu/sfxlcl3/azlist/default?&amp;param_sid_save=37b9a54fe8be2dda784dcba2b93037ab&amp;param_lang_save=eng&amp;param_letter_group_save=&amp;param_perform_save=searchTitle&amp;param_letter_group_script_save=&amp;param_chinese_checkbox_save=0&amp;param_services2filter_save=getFullTxt&amp;param_current_view_save=detail&amp;param_jumpToPage_save=1&amp;param_type_save=textSearch&amp;param_textSearchType_save=contains&amp;&amp;param_type_value=browseLetterGroup&amp;param_jumpToPage_value=&amp;param_pattern_value=&amp;param_letter_group_value=D&amp;param_letter_group_script_value=Latin">D</a>
+
+
+
+
+
+<a class="ABC"
+
+	href="http://sfx.uky.edu/sfxlcl3/azlist/default?&amp;param_sid_save=37b9a54fe8be2dda784dcba2b93037ab&amp;param_lang_save=eng&amp;param_letter_group_save=&amp;param_perform_save=searchTitle&amp;param_letter_group_script_save=&amp;param_chinese_checkbox_save=0&amp;param_services2filter_save=getFullTxt&amp;param_current_view_save=detail&amp;param_jumpToPage_save=1&amp;param_type_save=textSearch&amp;param_textSearchType_save=contains&amp;&amp;param_type_value=browseLetterGroup&amp;param_jumpToPage_value=&amp;param_pattern_value=&amp;param_letter_group_value=E&amp;param_letter_group_script_value=Latin">E</a>
+
+
+
+<a class="ABC"
+
+	href="http://sfx.uky.edu/sfxlcl3/azlist/default?&amp;param_sid_save=37b9a54fe8be2dda784dcba2b93037ab&amp;param_lang_save=eng&amp;param_letter_group_save=&amp;param_perform_save=searchTitle&amp;param_letter_group_script_save=&amp;param_chinese_checkbox_save=0&amp;param_services2filter_save=getFullTxt&amp;param_current_view_save=detail&amp;param_jumpToPage_save=1&amp;param_type_save=textSearch&amp;param_textSearchType_save=contains&amp;&amp;param_type_value=browseLetterGroup&amp;param_jumpToPage_value=&amp;param_pattern_value=&amp;param_letter_group_value=F&amp;param_letter_group_script_value=Latin">F</a>
+
+
+
+<a class="ABC"
+
+	href="http://sfx.uky.edu/sfxlcl3/azlist/default?&amp;param_sid_save=37b9a54fe8be2dda784dcba2b93037ab&amp;param_lang_save=eng&amp;param_letter_group_save=&amp;param_perform_save=searchTitle&amp;param_letter_group_script_save=&amp;param_chinese_checkbox_save=0&amp;param_services2filter_save=getFullTxt&amp;param_current_view_save=detail&amp;param_jumpToPage_save=1&amp;param_type_save=textSearch&amp;param_textSearchType_save=contains&amp;&amp;param_type_value=browseLetterGroup&amp;param_jumpToPage_value=&amp;param_pattern_value=&amp;param_letter_group_value=G&amp;param_letter_group_script_value=Latin">G</a>
+
+
+
+<a class="ABC"
+
+	href="http://sfx.uky.edu/sfxlcl3/azlist/default?&amp;param_sid_save=37b9a54fe8be2dda784dcba2b93037ab&amp;param_lang_save=eng&amp;param_letter_group_save=&amp;param_perform_save=searchTitle&amp;param_letter_group_script_save=&amp;param_chinese_checkbox_save=0&amp;param_services2filter_save=getFullTxt&amp;param_current_view_save=detail&amp;param_jumpToPage_save=1&amp;param_type_save=textSearch&amp;param_textSearchType_save=contains&amp;&amp;param_type_value=browseLetterGroup&amp;param_jumpToPage_value=&amp;param_pattern_value=&amp;param_letter_group_value=H&amp;param_letter_group_script_value=Latin">H</a>
+
+
+
+<a class="ABC"
+
+	href="http://sfx.uky.edu/sfxlcl3/azlist/default?&amp;param_sid_save=37b9a54fe8be2dda784dcba2b93037ab&amp;param_lang_save=eng&amp;param_letter_group_save=&amp;param_perform_save=searchTitle&amp;param_letter_group_script_save=&amp;param_chinese_checkbox_save=0&amp;param_services2filter_save=getFullTxt&amp;param_current_view_save=detail&amp;param_jumpToPage_save=1&amp;param_type_save=textSearch&amp;param_textSearchType_save=contains&amp;&amp;param_type_value=browseLetterGroup&amp;param_jumpToPage_value=&amp;param_pattern_value=&amp;param_letter_group_value=I&amp;param_letter_group_script_value=Latin">I</a>
+
+
+
+<a class="ABC"
+
+	href="http://sfx.uky.edu/sfxlcl3/azlist/default?&amp;param_sid_save=37b9a54fe8be2dda784dcba2b93037ab&amp;param_lang_save=eng&amp;param_letter_group_save=&amp;param_perform_save=searchTitle&amp;param_letter_group_script_save=&amp;param_chinese_checkbox_save=0&amp;param_services2filter_save=getFullTxt&amp;param_current_view_save=detail&amp;param_jumpToPage_save=1&amp;param_type_save=textSearch&amp;param_textSearchType_save=contains&amp;&amp;param_type_value=browseLetterGroup&amp;param_jumpToPage_value=&amp;param_pattern_value=&amp;param_letter_group_value=J&amp;param_letter_group_script_value=Latin">J</a>
+
+
+
+<a class="ABC"
+
+	href="http://sfx.uky.edu/sfxlcl3/azlist/default?&amp;param_sid_save=37b9a54fe8be2dda784dcba2b93037ab&amp;param_lang_save=eng&amp;param_letter_group_save=&amp;param_perform_save=searchTitle&amp;param_letter_group_script_save=&amp;param_chinese_checkbox_save=0&amp;param_services2filter_save=getFullTxt&amp;param_current_view_save=detail&amp;param_jumpToPage_save=1&amp;param_type_save=textSearch&amp;param_textSearchType_save=contains&amp;&amp;param_type_value=browseLetterGroup&amp;param_jumpToPage_value=&amp;param_pattern_value=&amp;param_letter_group_value=K&amp;param_letter_group_script_value=Latin">K</a>
+
+
+
+<a class="ABC"
+
+	href="http://sfx.uky.edu/sfxlcl3/azlist/default?&amp;param_sid_save=37b9a54fe8be2dda784dcba2b93037ab&amp;param_lang_save=eng&amp;param_letter_group_save=&amp;param_perform_save=searchTitle&amp;param_letter_group_script_save=&amp;param_chinese_checkbox_save=0&amp;param_services2filter_save=getFullTxt&amp;param_current_view_save=detail&amp;param_jumpToPage_save=1&amp;param_type_save=textSearch&amp;param_textSearchType_save=contains&amp;&amp;param_type_value=browseLetterGroup&amp;param_jumpToPage_value=&amp;param_pattern_value=&amp;param_letter_group_value=L&amp;param_letter_group_script_value=Latin">L</a>
+
+
+
+<a class="ABC"
+
+	href="http://sfx.uky.edu/sfxlcl3/azlist/default?&amp;param_sid_save=37b9a54fe8be2dda784dcba2b93037ab&amp;param_lang_save=eng&amp;param_letter_group_save=&amp;param_perform_save=searchTitle&amp;param_letter_group_script_save=&amp;param_chinese_checkbox_save=0&amp;param_services2filter_save=getFullTxt&amp;param_current_view_save=detail&amp;param_jumpToPage_save=1&amp;param_type_save=textSearch&amp;param_textSearchType_save=contains&amp;&amp;param_type_value=browseLetterGroup&amp;param_jumpToPage_value=&amp;param_pattern_value=&amp;param_letter_group_value=M&amp;param_letter_group_script_value=Latin">M</a>
+
+
+
+<a class="ABC"
+
+	href="http://sfx.uky.edu/sfxlcl3/azlist/default?&amp;param_sid_save=37b9a54fe8be2dda784dcba2b93037ab&amp;param_lang_save=eng&amp;param_letter_group_save=&amp;param_perform_save=searchTitle&amp;param_letter_group_script_save=&amp;param_chinese_checkbox_save=0&amp;param_services2filter_save=getFullTxt&amp;param_current_view_save=detail&amp;param_jumpToPage_save=1&amp;param_type_save=textSearch&amp;param_textSearchType_save=contains&amp;&amp;param_type_value=browseLetterGroup&amp;param_jumpToPage_value=&amp;param_pattern_value=&amp;param_letter_group_value=N&amp;param_letter_group_script_value=Latin">N</a>
+
+
+
+<a class="ABC"
+
+	href="http://sfx.uky.edu/sfxlcl3/azlist/default?&amp;param_sid_save=37b9a54fe8be2dda784dcba2b93037ab&amp;param_lang_save=eng&amp;param_letter_group_save=&amp;param_perform_save=searchTitle&amp;param_letter_group_script_save=&amp;param_chinese_checkbox_save=0&amp;param_services2filter_save=getFullTxt&amp;param_current_view_save=detail&amp;param_jumpToPage_save=1&amp;param_type_save=textSearch&amp;param_textSearchType_save=contains&amp;&amp;param_type_value=browseLetterGroup&amp;param_jumpToPage_value=&amp;param_pattern_value=&amp;param_letter_group_value=O&amp;param_letter_group_script_value=Latin">O</a>
+
+
+
+<a class="ABC"
+
+	href="http://sfx.uky.edu/sfxlcl3/azlist/default?&amp;param_sid_save=37b9a54fe8be2dda784dcba2b93037ab&amp;param_lang_save=eng&amp;param_letter_group_save=&amp;param_perform_save=searchTitle&amp;param_letter_group_script_save=&amp;param_chinese_checkbox_save=0&amp;param_services2filter_save=getFullTxt&amp;param_current_view_save=detail&amp;param_jumpToPage_save=1&amp;param_type_save=textSearch&amp;param_textSearchType_save=contains&amp;&amp;param_type_value=browseLetterGroup&amp;param_jumpToPage_value=&amp;param_pattern_value=&amp;param_letter_group_value=P&amp;param_letter_group_script_value=Latin">P</a>
+
+
+
+<a class="ABC"
+
+	href="http://sfx.uky.edu/sfxlcl3/azlist/default?&amp;param_sid_save=37b9a54fe8be2dda784dcba2b93037ab&amp;param_lang_save=eng&amp;param_letter_group_save=&amp;param_perform_save=searchTitle&amp;param_letter_group_script_save=&amp;param_chinese_checkbox_save=0&amp;param_services2filter_save=getFullTxt&amp;param_current_view_save=detail&amp;param_jumpToPage_save=1&amp;param_type_save=textSearch&amp;param_textSearchType_save=contains&amp;&amp;param_type_value=browseLetterGroup&amp;param_jumpToPage_value=&amp;param_pattern_value=&amp;param_letter_group_value=Q&amp;param_letter_group_script_value=Latin">Q</a>
+
+
+
+<a class="ABC"
+
+	href="http://sfx.uky.edu/sfxlcl3/azlist/default?&amp;param_sid_save=37b9a54fe8be2dda784dcba2b93037ab&amp;param_lang_save=eng&amp;param_letter_group_save=&amp;param_perform_save=searchTitle&amp;param_letter_group_script_save=&amp;param_chinese_checkbox_save=0&amp;param_services2filter_save=getFullTxt&amp;param_current_view_save=detail&amp;param_jumpToPage_save=1&amp;param_type_save=textSearch&amp;param_textSearchType_save=contains&amp;&amp;param_type_value=browseLetterGroup&amp;param_jumpToPage_value=&amp;param_pattern_value=&amp;param_letter_group_value=R&amp;param_letter_group_script_value=Latin">R</a>
+
+
+
+<a class="ABC"
+
+	href="http://sfx.uky.edu/sfxlcl3/azlist/default?&amp;param_sid_save=37b9a54fe8be2dda784dcba2b93037ab&amp;param_lang_save=eng&amp;param_letter_group_save=&amp;param_perform_save=searchTitle&amp;param_letter_group_script_save=&amp;param_chinese_checkbox_save=0&amp;param_services2filter_save=getFullTxt&amp;param_current_view_save=detail&amp;param_jumpToPage_save=1&amp;param_type_save=textSearch&amp;param_textSearchType_save=contains&amp;&amp;param_type_value=browseLetterGroup&amp;param_jumpToPage_value=&amp;param_pattern_value=&amp;param_letter_group_value=S&amp;param_letter_group_script_value=Latin">S</a>
+
+
+
+
+
+<a class="ABC"
+
+	href="http://sfx.uky.edu/sfxlcl3/azlist/default?&amp;param_sid_save=37b9a54fe8be2dda784dcba2b93037ab&amp;param_lang_save=eng&amp;param_letter_group_save=&amp;param_perform_save=searchTitle&amp;param_letter_group_script_save=&amp;param_chinese_checkbox_save=0&amp;param_services2filter_save=getFullTxt&amp;param_current_view_save=detail&amp;param_jumpToPage_save=1&amp;param_type_save=textSearch&amp;param_textSearchType_save=contains&amp;&amp;param_type_value=browseLetterGroup&amp;param_jumpToPage_value=&amp;param_pattern_value=&amp;param_letter_group_value=T&amp;param_letter_group_script_value=Latin">T</a>
+
+
+
+<a class="ABC"
+
+	href="http://sfx.uky.edu/sfxlcl3/azlist/default?&amp;param_sid_save=37b9a54fe8be2dda784dcba2b93037ab&amp;param_lang_save=eng&amp;param_letter_group_save=&amp;param_perform_save=searchTitle&amp;param_letter_group_script_save=&amp;param_chinese_checkbox_save=0&amp;param_services2filter_save=getFullTxt&amp;param_current_view_save=detail&amp;param_jumpToPage_save=1&amp;param_type_save=textSearch&amp;param_textSearchType_save=contains&amp;&amp;param_type_value=browseLetterGroup&amp;param_jumpToPage_value=&amp;param_pattern_value=&amp;param_letter_group_value=U&amp;param_letter_group_script_value=Latin">U</a>
+
+
+
+
+
+<a class="ABC"
+
+	href="http://sfx.uky.edu/sfxlcl3/azlist/default?&amp;param_sid_save=37b9a54fe8be2dda784dcba2b93037ab&amp;param_lang_save=eng&amp;param_letter_group_save=&amp;param_perform_save=searchTitle&amp;param_letter_group_script_save=&amp;param_chinese_checkbox_save=0&amp;param_services2filter_save=getFullTxt&amp;param_current_view_save=detail&amp;param_jumpToPage_save=1&amp;param_type_save=textSearch&amp;param_textSearchType_save=contains&amp;&amp;param_type_value=browseLetterGroup&amp;param_jumpToPage_value=&amp;param_pattern_value=&amp;param_letter_group_value=V&amp;param_letter_group_script_value=Latin">V</a>
+
+
+
+<a class="ABC"
+
+	href="http://sfx.uky.edu/sfxlcl3/azlist/default?&amp;param_sid_save=37b9a54fe8be2dda784dcba2b93037ab&amp;param_lang_save=eng&amp;param_letter_group_save=&amp;param_perform_save=searchTitle&amp;param_letter_group_script_save=&amp;param_chinese_checkbox_save=0&amp;param_services2filter_save=getFullTxt&amp;param_current_view_save=detail&amp;param_jumpToPage_save=1&amp;param_type_save=textSearch&amp;param_textSearchType_save=contains&amp;&amp;param_type_value=browseLetterGroup&amp;param_jumpToPage_value=&amp;param_pattern_value=&amp;param_letter_group_value=W&amp;param_letter_group_script_value=Latin">W</a>
+
+
+
+<a class="ABC"
+
+	href="http://sfx.uky.edu/sfxlcl3/azlist/default?&amp;param_sid_save=37b9a54fe8be2dda784dcba2b93037ab&amp;param_lang_save=eng&amp;param_letter_group_save=&amp;param_perform_save=searchTitle&amp;param_letter_group_script_save=&amp;param_chinese_checkbox_save=0&amp;param_services2filter_save=getFullTxt&amp;param_current_view_save=detail&amp;param_jumpToPage_save=1&amp;param_type_save=textSearch&amp;param_textSearchType_save=contains&amp;&amp;param_type_value=browseLetterGroup&amp;param_jumpToPage_value=&amp;param_pattern_value=&amp;param_letter_group_value=X&amp;param_letter_group_script_value=Latin">X</a>
+
+
+
+<a class="ABC"
+
+	href="http://sfx.uky.edu/sfxlcl3/azlist/default?&amp;param_sid_save=37b9a54fe8be2dda784dcba2b93037ab&amp;param_lang_save=eng&amp;param_letter_group_save=&amp;param_perform_save=searchTitle&amp;param_letter_group_script_save=&amp;param_chinese_checkbox_save=0&amp;param_services2filter_save=getFullTxt&amp;param_current_view_save=detail&amp;param_jumpToPage_save=1&amp;param_type_save=textSearch&amp;param_textSearchType_save=contains&amp;&amp;param_type_value=browseLetterGroup&amp;param_jumpToPage_value=&amp;param_pattern_value=&amp;param_letter_group_value=Y&amp;param_letter_group_script_value=Latin">Y</a>
+
+
+
+<a class="ABC"
+
+	href="http://sfx.uky.edu/sfxlcl3/azlist/default?&amp;param_sid_save=37b9a54fe8be2dda784dcba2b93037ab&amp;param_lang_save=eng&amp;param_letter_group_save=&amp;param_perform_save=searchTitle&amp;param_letter_group_script_save=&amp;param_chinese_checkbox_save=0&amp;param_services2filter_save=getFullTxt&amp;param_current_view_save=detail&amp;param_jumpToPage_save=1&amp;param_type_save=textSearch&amp;param_textSearchType_save=contains&amp;&amp;param_type_value=browseLetterGroup&amp;param_jumpToPage_value=&amp;param_pattern_value=&amp;param_letter_group_value=Z&amp;param_letter_group_script_value=Latin">Z</a>
+
+
+
+
+
+<a class="ABC"
+
+	href="http://sfx.uky.edu/sfxlcl3/azlist/default?&amp;param_sid_save=37b9a54fe8be2dda784dcba2b93037ab&amp;param_lang_save=eng&amp;param_letter_group_save=&amp;param_perform_save=searchTitle&amp;param_letter_group_script_save=&amp;param_chinese_checkbox_save=0&amp;param_services2filter_save=getFullTxt&amp;param_current_view_save=detail&amp;param_jumpToPage_save=1&amp;param_type_save=textSearch&amp;param_textSearchType_save=contains&amp;&amp;param_type_value=browseLetterGroup&amp;param_jumpToPage_value=&amp;param_pattern_value=&amp;param_letter_group_value=Others&amp;param_letter_group_script_value=Latin">Others</a>
+
+
+
+<!-- end of alphabet loop --> <input type="hidden"
+
+	name="param_lang_save" value="eng"> <input type="hidden"
+
+	name="param_letter_group_save" value=""> <input type="hidden"
+
+	name="param_perform_save" value="searchTitle"> <input type="hidden"
+
+	name="param_letter_group_script_save" value=""> <input type="hidden"
+
+	name="param_chinese_checkbox_save" value="0"> <input type="hidden"
+
+	name="param_services2filter_save" value="getFullTxt"> <input
+
+	type="hidden" name="param_current_view_save" value="detail"> <input
+
+	type="hidden" name="param_jumpToPage_save" value="1"> <input
+
+	type="hidden" name="param_type_save" value="textSearch"> <input
+
+	type="hidden" name="param_textSearchType_save" value="contains"> <input
+
+	type="hidden" name="param_type_value" value="textSearch"> <input
+
+	type="hidden" name="param_jumpToPage_value" value=""> <br>
+
+<label for="param_pattern_value" class="maincontenttext">Title: </label>
+
+<input type=text AUTOCOMPLETE="off"
+
+	onfocus="AutocompleteObj_param_pattern_value.actb_hasfocus = true; ajaxStart('param_pattern_value','\'param_chinese_checkbox_value\',\'param_textSearchType_value\''); return true;"
+
+	name="param_pattern_value" value="" id="param_pattern_value"
+
+	style="width: 240px;"
+
+	onblur="AutocompleteObj_param_pattern_value.actb_hasfocus = false;"
+
+	onkeyup="ajaxStart('param_pattern_value','\'param_chinese_checkbox_value\',\'param_textSearchType_value\''); return true;">
+
+
+
+
+
+<br>
+
+<input type="radio" name="param_textSearchType_value" id="startsWith"
+
+	value="startsWith"><label for="startsWith" class="maincontenttext">Starts
+
+with</label> <input type="radio" name="param_textSearchType_value"
+
+	id="contains" value="contains" checked><label for="contains"
+
+	class="maincontenttext">Contains</label>
+
+
+
+
+
+</td>
+
+</tr>
+
+
+
+<!-- chinese checkbox --> <!-- needed to be passed as one of ajax parameters-->
+
+<input type="hidden" name=param_chinese_checkbox_value
+
+	id=param_chinese_checkbox_value value="0"> <input id="EJournals_button"
+
+	value="Go" type="submit" /> <span class="maincontenttext">Search the E-Journals Database for
+
+specific <a href="/lnkr.php?lir_id=215"
+
+	target="_blank" class="searchlinks">journal titles</a>.</span>
+
+</form>
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- End E-Journals Search --> <!-- Electronic Resources Search -->
+
+
+
+<div class="TabbedPanelsContent">
+
+<div class="searchfield">
+
+<form action="dbresults_title.php" id="dbsearch_title_form"
+
+	name="dbsearch_title_form"><label for="reserve" class="maincontenttext">Title
+
+Search</label> <input name="irname" type="text" id="irname" size="40"
+
+	value="Enter Title of Resource" onfocus="clearMe(this)" /> <input
+
+	id="databases_button" type="submit" name="Press3" value="Go" /><br>
+
+
+
+</form>
+
+<span class="maincontenttext">Or use the full search on our <a
+
+	href="dbsearch.php" class="searchlinks">Databases and Other Electronic Resources</a> page.</span>
+
+
+
+</div>
+
+</div>
+
+
+
+<!-- End Electronic Resources Search --> <!-- UK Libraries Site Search -->
+
+
+
+<div class="TabbedPanelsContent">
+
+<div class="searchfield">
+
+
+
+<form id="querybox" class="formfix"
+
+	action="http://www.google.com/search" method="get"><input type="hidden"
+
+	name="as_sitesearch" value="libraries.uky.edu"> <input type="hidden"
+
+	name="proxystylesheet" value="uk"> <input type="hidden" name="as_dt"
+
+	value="i"> <input type="hidden" name="numgm" value="0"> <label
+
+	for="google_search" class="maincontenttext">Keyword Search: </label><input
+
+	type="text" size="25" name="as_q" id="q" class="smallnav"
+
+	maxlength="275" value="Search the Libraries' Site"
+
+	onfocus="clearMe(this)" /> <input id="SiteSearch" value="Go"
+
+	type="submit" /></form>
+
+<span class="maincontenttext">Or see our <a href="/SiteIndex" class="searchlinks">Site Index</a>.</span>
+
+</div>
+
+</div>
+
+
+
+<!-- End UK Libraries Site Search --> <!-- Research Guide Search -->
+
+
+
+
+
+<div class="TabbedPanelsContent">
+
+<div class="searchfield">
+
+
+
+<form id="searchBasic" accept-charset="UTF-8" method="GET"
+
+	action="guides.php"><span class="maincontenttext">Begin by typing your
+
+Research area in the box. </span> <input type="text" name="suggest1"
+
+	id="suggest1" title="Begin by typing your Research area in the box..." />
+
+<input title="Begin by typing your Research area in the box..."
+
+	id="ResearchGuides_button" type="submit" value="Go" /></form>
+
+<span class="maincontenttext">Or see our <a href="http://libguides.uky.edu/" class="searchlinks">complete list</a> of Research Guides by subject and alphabetically.</span>
+
+</div>
+
+</div>
+
+
+
+<!-- End Research Guide Search --> <!-- Guided Search --> <!--    
+
+  <div class="TabbedPanelsContent"> 
+
+    <div class="searchfield" align="center"> 
+
+     
+
+      			<form id="searchBasic" accept-charset="UTF-8" method="GET" action="guides.php">
+
+      				<span class="maincontenttext">Begin by typing your Research area in the box... </span>	 
+
+					<input type="text" name="suggest1" id="suggest1" title="Begin by typing your Research area in the box..." />
+
+					<input title="Begin by typing your Research area in the box..." type="submit" value="Go" />  					
+
+					
+
+      			</form> 
+
+	 
+
+    </div> 
+
+  </div> 
+
+  --> <!-- End Guided Search --></div>
+
+
+
+<div id="gsdiv" class="popup_gsdiv" style="display: none"><b
+
+	id="guided_search_step_one">Hello. What would you like to find today?</b>
+
+<ul>
+
+	<li><a href="guided_search.php?q=1" class="guided_search">Articles</a></li>
+
+	<li><a href="guided_search.php?q=2" class="guided_search">Books</a></li>
+
+	<li><a href="guided_search.php?q=3" class="guided_search">Databases</a></li>
+
+	<li><a href="guided_search.php?q=4" class="guided_search">Electronic
+
+	Journals</a></li>
+
+	<li><a href="guided_search.php?q=5" class="guided_search">Research
+
+	Guides</a></li>
+
+	<li><a href="guided_search.php?q=6" class="guided_search">Site Content
+
+	(UK Libraries Site Search)</a></li>
+
+
+
+</ul>
+
+
+
+<center><a href="javascript:Show_Stuff('gsdiv')">[Close]</a></center>
+
+</div>
+
+
+
+<div id="searchtools" class="tooltext"><!-- <div align="center"><a href="http://library.buffalo.edu/libraries/helpAZ/off-campus.html" target="_self" class="tooltext" title="Log In Help - Remote Access to Library Resources">Log In Help</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://library.buffalo.edu/libraries/forms/techproblem.html" target="_self" title="Report a technical problem" class="tooltext">Report a Problem</a></div>  -->
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<script type="text/javascript">
+
+<!--
+
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+
+
+
+//-->
+
+</script>
+
+
+
+
+
+<!-- End Search Box -->
+
+<!-- </div>  -->
+
+<!-- end of div leftit -->
+
+
+	</div>
+
+<!-- end of search_box_body  -->
+
+</div>
+
+
+
+<div id="general_links">
+
+		<a title="Staff Directory" href="/Staff"><img src="/images/icon_StaffDirectory.png" border="0">&nbsp;Faculty/Staff Directory</a>
+
+		<a title="hours" href="/Hours"><img src="/images/icon_Hours.png" border="0">&nbsp;Hours</a>
+
+</div>
+
+
+
+<div id="lib_content_right">
+
+
+
+
+
+	
+
+<!--Artbox -->
+
+
+
+<div id="artbox">
+
+<div id="artbox_innerwrapper">
+
+
+
+<div id="p7HGM_1" class="p7HGM04">
+
+<div id="p7HGMvpw_1" class="p7HGM_viewport_wrapper">
+
+<div id="p7HGMvp_1" class="p7HGM_viewport">
+
+<div id="p7HGMwp_1" class="p7HGM_panels_wrapper">
+
+
+
+	 
+
+		<div id="p7HGMpn_1_11" class="p7HGM_panel">
+
+		<div id="p7HGMpc_1_11" class="p7HGM_panel_content">
+
+	
+
+			<center><h2>Introducing Flat Cat!</h2></center>
+
+			<p><img src="/images/1SlideShow/FlatCat140.png" alt="carousel_11" width="140" height="140" class="fltlft" /><br />
+
+UK Libraries have unveiled their own version of Flat Stanley, called Flat Cat. <a href="http://libraries.uky.edu/newsitem.php?lnote_id=544">Find out more!</a></p>
+
+		</div>
+
+	</div>
+
+	 
+
+		<div id="p7HGMpn_1_9" class="p7HGM_panel">
+
+		<div id="p7HGMpc_1_9" class="p7HGM_panel_content">
+
+	
+
+			<center><h2>A Library Note: Research Guides</h2></center>
+
+			<p><img src="/images/1SlideShow/libnote.jpg" alt="carousel_9" width="140" height="140" class="fltlft" /><br />A Library Note: Research Guides. View the video <a href="http://www.youtube.com/user/ALibraryNote">here</a>.</p>
+
+		</div>
+
+	</div>
+
+	 
+
+		<div id="p7HGMpn_1_8" class="p7HGM_panel">
+
+		<div id="p7HGMpc_1_8" class="p7HGM_panel_content">
+
+	
+
+			<center><h2>Young Library Current Periodicals Have Moved</h2></center>
+
+			<p><img src="/images/1SlideShow/journals.gif" alt="carousel_8" width="140" height="140" class="fltlft" /><br>
+
+Looking for a current issue of a periodical in Young Library?  This collection is now located on the 3rd Floor, North Wing. </p>
+
+		</div>
+
+	</div>
+
+	 
+
+		<div id="p7HGMpn_1_7" class="p7HGM_panel">
+
+		<div id="p7HGMpc_1_7" class="p7HGM_panel_content">
+
+	
+
+			<center><h2>Special Collections Online Exhibits</h2></center>
+
+			<p><img src="/images/1SlideShow/scexhibit.jpg" alt="carousel_7" width="140" height="140" class="fltlft" />Special Collections will now be creating online exhibits using Omeka software; the first is <em>Curiosities &amp; Wonders</em>.    <br> <a href="http://libraries.uky.edu/newsitem.php?lnote_id=526">Read More</a>.</p>
+
+		</div>
+
+	</div>
+
+	 
+
+		<div id="p7HGMpn_1_6" class="p7HGM_panel">
+
+		<div id="p7HGMpc_1_6" class="p7HGM_panel_content">
+
+	
+
+			<center><h2>Black Thought and Culture</h2></center>
+
+			<p><img src="/images/1SlideShow/blackculture.gif" alt="carousel_6" width="140" height="140" class="fltlft" />UK Libraries' celebrates Black History Month! We're highlighting Black Thought And Culture, a digital collection of non-fiction works by prominent African Americans. <a href="http://libraries.uky.edu/record.php?lir_id=948">Read more</a>.</p>
+
+		</div>
+
+	</div>
+
+	 
+
+		<div id="p7HGMpn_1_4" class="p7HGM_panel">
+
+		<div id="p7HGMpc_1_4" class="p7HGM_panel_content">
+
+	
+
+			<center><h2>Harriette Simpson Arnow Exhibit</h2></center>
+
+			<p><img src="/images/harnow140.jpg" alt="carousel_4" width="140" height="140" class="fltlft" /><br />An exhibit featuring material from Arnow's papers is currently viewable in the King Building Great Hall.<br />
+
+<a href="http://libraries.uky.edu/newsitem.php?lnote_id=534">Find out more</a>....<br /></p>
+
+		</div>
+
+	</div>
+
+	 
+
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- Pagination -->
+
+
+
+<div id="p7HGMpg_1" class="p7HGMpaginator pagbottom">
+
+    <ul>
+
+    	 
+
+		
+
+      <li><a href="#" id="p7HGMpg1_11">1</a></li>
+
+      
+
+		
+
+      <li><a href="#" id="p7HGMpg1_9">2</a></li>
+
+      
+
+		
+
+      <li><a href="#" id="p7HGMpg1_8">3</a></li>
+
+      
+
+		
+
+      <li><a href="#" id="p7HGMpg1_7">4</a></li>
+
+      
+
+		
+
+      <li><a href="#" id="p7HGMpg1_6">5</a></li>
+
+      
+
+		
+
+      <li><a href="#" id="p7HGMpg1_4">6</a></li>
+
+      
+
+    </ul>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!--[if IE 5]><style>.p7HGMtrig, .p7HGM_viewport_wrapper, .p7HGMpaginator {width: 100%;}</style><![endif]-->
+
+<script type="text/javascript">P7_opHGM('p7HGM_1',-1,-1,1,250,1,0,1,5000,1,0,0,0,0,3,1,1,0,0);</script>
+
+<!--In the sequence '-1,-1,1,250,-1,0,...' the 0 turns the looping off. Since you have a paginator I didn't think the looping was necessary but if you want to turn it back on just turn the 0 into a 1 -->
+
+
+
+</div>
+
+
+
+</div>
+
+</div>
+
+
+
+<div id="libraryEvents"><!--Library events -->
+
+	       
+
+<div id="lib_events">
+
+
+
+
+
+<div id="rssFeed">
+
+<h3><a href="/news.php">News &amp; Events</a></h3>
+
+<p class="event_content last"><a href="/news.xml"><img class="event_photo fltlft" src="images/social_rssFeed.png" border="0" alt="See our rssFeed" />See our RSS Feed</a></p>
+
+<br class="clearfloat" />
+
+</div>
+
+
+
+
+
+
+
+<div>
+
+<!-- 
+
+		 --> 		
+
+		 
+
+			
+
+																			
+
+																
+
+					<img class="event_photo fltlft" src="images/event_photo0.png" alt="library_event_0" width="40" height="40" />
+
+					<p class="event_content"><a href="newsitem.php?lnote_id=544">Introducing Flat Cat!</a></p>
+
+								
+
+																							
+
+																
+
+					<img class="event_photo fltlft" src="images/event_photo1.png" alt="library_event_1" width="40" height="40" />
+
+					<p class="event_content"><a href="newsitem.php?lnote_id=536">Young Library Returning to 24/5 on January 22</a></p>
+
+								
+
+																							
+
+																
+
+					<img class="event_photo fltlft" src="images/event_photo2.png" alt="library_event_2" width="40" height="40" />
+
+					<p class="event_content"><a href="newsitem.php?lnote_id=540">Young Library: League of Nations Collection Has Moved!</a></p>
+
+								
+
+																							
+
+								
+
+									<img class="event_photo fltlft" src="images/event_photo3.png" alt="library_event_3" width="40" height="40" />
+
+					<p class="event_content last"><a href="newsitem.php?lnote_id=358">Position Available: Database Integrity Unit Coordinator, JOB #SM539607</a></p>					
+
+																							
+
+								
+
+																							
+
+								
+
+																							
+
+								
+
+																							
+
+								
+
+																							
+
+								
+
+																							
+
+								
+
+																							
+
+								
+
+										
+
+
+
+<!-- <img class="event_photo fltlft" src="images/social_rssFeed.png" border="0" alt="See our rssFeed" />
+
+<p class="event_content last"><a href="/news.xml">See our RSS Feed</a></p> -->
+
+
+
+
+
+<!-- 
+
+<img class="event_photo fltlft" src="images/event_photo01.png" alt="library_event_01" width="40" height="40" />
+
+<p class="event_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pharetra nunc non orci feugiat id pulvinar tortor laoreet. Phasellus vel leo at quam aliquam sagittis auctor eget erat.</p>
+
+
+
+ 
+
+<img class="event_photo fltlft" src="images/event_photo02.png" alt="library_event_02" width="40" height="40" />
+
+<p class="event_content">Vestibulum malesuada, massa ut euismod ornare, sapien lacus sollicitudin arcu, ac mollis urna leo at massa. Donec consequat nisi purus. Phasellus facilisis urna a nisl mattis sagittis.</p>
+
+
+
+<img class="event_photo fltlft" src="images/event_photo03.png" alt="library_event_03" width="40" height="40" />
+
+<p class="event_content last">Quisque nec ligula id nunc placerat ullamcorper quis ut arcu. Pellentesque vitae mi nec urna pulvinar fringilla at non lectus. Nam tempor tristique orci, sed vehicula ante varius non.</p>
+
+
+
+ -->
+
+
+
+		
+
+		
+
+</div>
+
+
+
+</div>
+
+
+
+<!-- End of Library events --></div>
+
+
+
+
+
+</div>
+
+<!-- End artbox -->
+    
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="lib_content_bottom">
+
+<!--Quicklinks -->
+	       
+<div id="quicklinks">
+<h3>Quick Links</h3>
+<ul>
+<li>
+					<div class="dbDropdown">
+
+			<form action="" method="post">
+
+			
+
+			<select id="selected-dbs" name="standard-dropdown" onchange="if (this.options[this.selectedIndex].value != 'null')	{ window.open(this.options[this.selectedIndex].value,'_top') }">
+
+			
+
+			<option value="index.php">Selected Databases</option>
+
+
+
+											
+
+				<option value="/lnkr.php?lir_id=4">Academic Search Premier</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=5">Access World News (New...</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=551">ARTstor</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=86">Business Source Complete</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=132">Courier-Journal (Louis...</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=159">Dissertations and Thes...</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=215">E-Journals Database</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=326">eBook Collection (from...</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=164">EBSCOhost</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=2234">EBSCOhost Mobile</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=2046">Explore UK: A Historic...</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=2928">FDsys: Federal Digital...</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=225">GPO Access (now FDsys,...</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=266">JSTOR</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=268">Kentuckiana Digital Li...</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=274">Kentucky Virtual Library</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=280">Lexington Herald-Leader</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=3">LexisNexis Academic</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=566">MedLine (OvidSP)</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=724">Merriam-Webster Dictio...</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=314">MLA International Bibl...</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=330">New York Times Histori...</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=341">NTIS Database (Nationa...</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=1074">Opposing Viewpoints</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=469">OvidSP</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=355">Oxford English Diction...</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=671">PsycINFO (EBSCOhost)</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=385">PsycINFO (OvidSP)</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=389">PubMed (University of ...</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=2266">Reference Universe</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=431">Statistical Insight</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=465">Wall Street Journal</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=467">Web of Science</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=470">Webster's Unabridged D...</option>
+
+											
+
+				<option value="/lnkr.php?lir_id=482">WorldCat</option>
+
+						</select>
+
+			<!-- <a title="Full alphabetical listing of all resources available" href="dbresults.php">Full A-Z Database List</a> -->
+
+			</form>
+
+			</div>
+
+		</li>
+</ul>
+
+<ul>		
+<li><a href="YLReserves">Course Reserves</a></li>
+<li><a href="http://libguides.uky.edu/cat.php?cid=35601">Course Guides</a></li>
+<li><a href="page.php?lweb_id=15&ltab_id=154">Consultation Request</a></li>
+</ul>
+ 
+<ul>
+<li><a href="http://libguides.uky.edu/content.php?pid=53054&sid=398977">Instruction Request</a></li>
+<li><a href="page.php?lweb_id=990">Room reservations</a></li>
+<li><a href="page.php?lweb_id=1016">UK Libraries Social Media</a></li>
+</ul>
+
+<!-- <ul>
+<li><a href="#">Quicklink number 8</a></li>
+<li><a href="#">Quicklink no. 9</a></li>
+<li><a href="#">Quicklink numbered 10</a></li>
+<li><a href="#">Quicklink no. 11</a></li>
+<li><a href="#">Quicklink innumerable 12</a></li>
+</ul>
+ -->
+<div id="social">
+<a href="http://twitter.com/uklibraries"><img class="fltlft" src="images/twitter.png" alt="See us on Twitter" /></a>
+<a href="http://www.facebook.com/pages/University-of-Kentucky-Libraries/14376935028"><img class="fltlft" src="images/FacebookButton.gif" alt="Visit us on Facebook" /></a>
+<a href="http://uknowledge.uky.edu/"><img class="fltlft" src="images/UKnowledge_logo.png" alt="Go to UKnowledge" /></a>
+<a href="http://libguides.uky.edu/fedgov"><img class="fltlft" src="images/USFGR_logo.png" alt="Go to U.S. Government Documents" /></a>
+</div>
+
+</div>
+<!-- End Quicklinks --><!--Repository -->
+
+<div id="repository">
+
+
+
+<div id="repository_image"><a href="http://eris.uky.edu/exploreuk/catalog/xt7nvx05xv47_221_5"><img src="images/Explore_UK_Bridge_on_Vermillion_Road.jpg" width="380" height="158"/></a></div>
+
+
+
+<div id="repository_text">
+
+<h3>Featured Image from our Digital Collections</h3>
+
+<p><i>Bridge on Vermillion Road constructed by WPA.</i></p>
+
+<p>Explore the guides, oral histories, photographs, manuscripts, and more at <a href="http://exploreuk.uky.edu">Explore UK</a>.
+
+</p>
+
+
+
+<div id="buttons">
+
+	<ul>
+
+		<li><a href="http://libguides.uky.edu/infolit101"><img src="/images/Research.png" alt="How to do Research" width="55px" height="55px"></a></li>
+
+		<li><a href="/MyAccount"><img src="/images/MyAccount.png" alt="My Account" width="55px" height="55px"></a></li>
+
+	</ul>
+
+	<div id="button_captions">
+
+	<ul>
+
+		<li><a href="http://libguides.uky.edu/infolit101">How to do <br />Research</a></li>
+
+		<li><a href="/MyAccount">My Account</a></li>
+
+	</ul>	
+
+	</div>
+
+</div>	
+
+
+
+</div>
+
+
+
+</div>
+
+<!-- End Repository -->
+</div>
+
+
+
+<br id="clearfloat" />
+
+
+
+<div id="lib_footer">
+
+	<p><a href="http://www.uky.edu">UK Home</a>&nbsp;|&nbsp;Copyright 2006-2011 University of Kentucky Libraries. For questions or comments about this page contact: <img src="images/icon_EMAIL.png" /> <a href="byname.php?staff_id=234">Library Web Administration</a>.&nbsp;|&nbsp;<a href="https://libraries.uky.edu/staff/">Staff Access</a></p>
+
+</div>
+
+</div><!-- end of inner_wrapper -->
+
+</div><!-- end of lib_content container -->
+
+
+
+</body>
+
+</html>

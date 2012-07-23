@@ -1,0 +1,618 @@
+
+<HTML>
+<HEAD>
+
+<!-- start of ip detection script//-->
+
+
+<!-- end  of ip detection script//-->
+
+
+<!--  
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+
+function startSearch(){searchString = document.searchForm.searchText.value;
+if(searchString != ""){searchEngine = document.searchForm.whichEngine.selectedIndex + 1;finalSearchString = "";
+if(searchEngine == 1){finalSearchString = "http://gate.lib.buffalo.edu/login?url=http://bison.buffalo.edu:8991/F/?func=findb&request="+ searchString + "&find_code=WRD&adjacent=N";}
+if(searchEngine == 2){finalSearchString = "http://gate.lib.buffalo.edu/login?url=http://bison.buffalo.edu:8991/F/?func=scan&scan_code=TIT&scan_start="+ searchString;}
+if(searchEngine == 3){finalSearchString = "http://gate.lib.buffalo.edu/login?url=http://bison.buffalo.edu:8991/F/?func=findb&find_code=WAU&request=" + searchString;}
+if(searchEngine == 4){finalSearchString = "http://gate.lib.buffalo.edu/login?url=http://bison.buffalo.edu:8991/F/?func=scan&scan_code=SUB&scan_start=" + searchString;}
+location.href = finalSearchString;}
+}
+
+function submitenter(myfield,e)
+{
+var keycode;
+if (window.event) keycode = window.event.keyCode;
+else if (e) keycode = e.which;
+else return true;
+if (keycode == 13)
+  {
+  startSearch();
+  return false;
+  }
+else
+  return true;
+}
+//--> 
+
+
+<!-- second search script//-->
+
+
+<!--
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+
+function startSearch2(){searchString2 = document.searchForm2.searchText2.value;
+if(searchString2 != ""){searchEngine2 = document.searchForm2.whichEngine2.selectedIndex + 1;finalSearchString2 = "";
+if(searchEngine2 == 1){finalSearchString2 = "http://gate.lib.buffalo.edu/login?url=http://p8991bison.buffalo.edu.gate.lib.buffalo.edu/F/?func=finda&find_code=WRD&request="+ searchString2 + "&filter_code_1=WLN&filter_request_1=&filter_code_2=WYR&filter_request_2=&filter_code_3=WYR&filter_request_3=&filter_code_5=WRT&filter_request_5=c&filter_code_6=WSL&request_op=AND&find_code=WRD&request=&request_op=AND&find_code=WRD&request=&adjacent=N&x=30&y=9";}
+if(searchEngine2 == 2){finalSearchString2 = "http://gate.lib.buffalo.edu/login?url=http://p8991bison.buffalo.edu.gate.lib.buffalo.edu/F/?func=finda&find_code=WTI&request="+ searchString2 + "&filter_code_1=WLN&filter_request_1=&filter_code_2=WYR&filter_request_2=&filter_code_3=WYR&filter_request_3=&filter_code_5=WRT&filter_request_5=c&filter_code_6=WSL&request_op=AND&find_code=WRD&request=&request_op=AND&find_code=WRD&request=&adjacent=N&x=26&y=3"}
+if(searchEngine2 == 3){finalSearchString2 = "http://gate.lib.buffalo.edu/login?url=http://p8991bison.buffalo.edu.gate.lib.buffalo.edu/F/?func=finda&find_code=WAU&request=" + searchString2 +"&filter_code_1=WLN&filter_request_1=&filter_code_2=WYR&filter_request_2=&filter_code_3=WYR&filter_request_3=&filter_code_5=WRT&filter_request_5=c&filter_code_6=WSL&request_op=AND&find_code=WRD&request=&request_op=AND&find_code=WRD&request=&adjacent=N&x=23&y=11";}
+if(searchEngine2 == 4){finalSearchString2 = "http://gate.lib.buffalo.edu/login?url=http://p8991bison.buffalo.edu.gate.lib.buffalo.edu/F/?func=finda&find_code=WSU&request=" + searchString2 + "&filter_code_1=WLN&filter_request_1=&filter_code_2=WYR&filter_request_2=&filter_code_3=WYR&filter_request_3=&filter_code_5=WRT&filter_request_5=c&filter_code_6=WSL&request_op=AND&find_code=WRD&request=&request_op=AND&find_code=WRD&request=&adjacent=N&x=0&y=0" ;}
+location.href = finalSearchString2;}
+}
+
+function submitenter(myfield,e)
+{
+var keycode;
+if (window.event) keycode = window.event.keyCode;
+else if (e) keycode = e.which;
+else return true;
+if (keycode == 13)
+  {
+  startSearch2();
+  return false;
+  }
+else
+  return true;
+}
+//--> 
+
+
+
+
+<!-- 3rd search script//-->
+
+
+<!--
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+
+function startSearch3(){searchString3 = document.searchForm3.searchText3.value;
+if(searchString3 != ""){searchEngine3 = document.searchForm3.whichEngine3.selectedIndex + 1;finalSearchString3 = "";
+if(searchEngine3 == 1){finalSearchString3 = "http://gate.lib.buffalo.edu/login?url=http://p8991bison.buffalo.edu.gate.lib.buffalo.edu/F/?func=finda&find_code=WRD&request="+ searchString3 + "&filter_code_1=WLN&filter_request_1=&filter_code_2=WYR&filter_request_2=&filter_code_3=WYR&filter_request_3=&filter_code_5=WRT&filter_request_5=j&filter_code_6=WSL&request_op=AND&find_code=WRD&request=&request_op=AND&find_code=WRD&request=&adjacent=N&x=26&y=9";}
+if(searchEngine3 == 2){finalSearchString3 = "http://gate.lib.buffalo.edu/login?url=http://p8991bison.buffalo.edu.gate.lib.buffalo.edu/F/?func=finda&find_code=WTI&request="+ searchString3+ "&filter_code_1=WLN&filter_request_1=&filter_code_2=WYR&filter_request_2=&filter_code_3=WYR&filter_request_3=&filter_code_5=WRT&filter_request_5=j&filter_code_6=WSL&request_op=AND&find_code=WRD&request=&request_op=AND&find_code=WRD&request=&adjacent=N&x=44&y=6"}
+if(searchEngine3 == 3){finalSearchString3 = "http://gate.lib.buffalo.edu/login?url=http://p8991bison.buffalo.edu.gate.lib.buffalo.edu/F/?func=finda&find_code=WAU&request=" + searchString3 + "&filter_code_1=WLN&filter_request_1=&filter_code_2=WYR&filter_request_2=&filter_code_3=WYR&filter_request_3=&filter_code_5=WRT&filter_request_5=j&filter_code_6=WSL&request_op=AND&find_code=WRD&request=&request_op=AND&find_code=WRD&request=&adjacent=N&x=17&y=10";}
+if(searchEngine3 == 4){finalSearchString3 = "http://gate.lib.buffalo.edu/login?url=http://p8991bison.buffalo.edu.gate.lib.buffalo.edu/F/?func=finda&find_code=WSU&request=" + searchString3 +"&filter_code_1=WLN&filter_request_1=&filter_code_2=WYR&filter_request_2=&filter_code_3=WYR&filter_request_3=&filter_code_5=WRT&filter_request_5=j&filter_code_6=WSL&request_op=AND&find_code=WRD&request=&request_op=AND&find_code=WRD&request=&adjacent=N&x=33&y=7" ;}
+location.href = finalSearchString3;}
+}
+
+function submitenter(myfield,e)
+{
+var keycode;
+if (window.event) keycode = window.event.keyCode;
+else if (e) keycode = e.which;
+else return true;
+if (keycode == 13)
+  {
+  startSearch3();
+  return false;
+  }
+else
+  return true;
+}
+//--> 
+
+
+<!-- 4th search script//-->
+
+
+<!--
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+
+function startSearch4(){searchString4 = document.searchForm4.searchText4.value;
+if(searchString4 != ""){searchEngine4 = document.searchForm4.whichEngine4.selectedIndex + 1;finalSearchString4 = "";
+if(searchEngine4 == 1){finalSearchString4 = "http://gate.lib.buffalo.edu/login?url=http://p8991bison.buffalo.edu.gate.lib.buffalo.edu/F/?func=finda&find_code=WRD&request="+ searchString4 + "&filter_code_1=WLN&filter_request_1=&filter_code_2=WYR&filter_request_2=&filter_code_3=WYR&filter_request_3=&filter_code_5=WRT&filter_request_5=g&filter_code_6=WSL&request_op=AND&find_code=WRD&request=&request_op=AND&find_code=WRD&request=&adjacent=N&x=40&y=5";}
+if(searchEngine4 == 2){finalSearchString4 = "http://gate.lib.buffalo.edu/login?url=http://p8991bison.buffalo.edu.gate.lib.buffalo.edu/F/?func=finda&find_code=WTI&request="+ searchString4 + "&filter_code_1=WLN&filter_request_1=&filter_code_2=WYR&filter_request_2=&filter_code_3=WYR&filter_request_3=&filter_code_5=WRT&filter_request_5=g&filter_code_6=WSL&request_op=AND&find_code=WRD&request=&request_op=AND&find_code=WRD&request=&adjacent=N&x=57&y=11"}
+if(searchEngine4 == 3){finalSearchString4 = "http://gate.lib.buffalo.edu/login?url=http://p8991bison.buffalo.edu.gate.lib.buffalo.edu/F/?func=finda&find_code=WAU&request=" + searchString4 + "&filter_code_1=WLN&filter_request_1=&filter_code_2=WYR&filter_request_2=&filter_code_3=WYR&filter_request_3=&filter_code_5=WRT&filter_request_5=g&filter_code_6=WSL&request_op=AND&find_code=WRD&request=&request_op=AND&find_code=WRD&request=&adjacent=N&x=35&y=8";}
+if(searchEngine4 == 4){finalSearchString4 = "http://gate.lib.buffalo.edu/login?url=http://p8991bison.buffalo.edu.gate.lib.buffalo.edu/F/?func=finda&find_code=WSU&request=" + searchString4 + "&filter_code_1=WLN&filter_request_1=&filter_code_2=WYR&filter_request_2=&filter_code_3=WYR&filter_request_3=&filter_code_5=WRT&filter_request_5=g&filter_code_6=WSL&request_op=AND&find_code=WRD&request=&request_op=AND&find_code=WRD&request=&adjacent=N&x=35&y=6";}
+location.href = finalSearchString4;}
+}
+
+function submitenter(myfield,e)
+{
+var keycode;
+if (window.event) keycode = window.event.keyCode;
+else if (e) keycode = e.which;
+else return true;
+if (keycode == 13)
+  {
+  startSearch4();
+  return false;
+  }
+else
+  return true;
+}
+//--> 
+
+
+<META CONTENT="text/html; charset=UTF-8">
+<TITLE>Music Library - University at Buffalo Libraries</TITLE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+#sectionsearch {
+
+height:264px; 
+width:830px; 
+margin:0px 0px 0px 0px; 
+padding:0px 0px 0px 0px; 
+background-image: url('img/header_home/1.jpg'); 
+background-repeat: no-repeat;}
+
+
+
+
+
+
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<!--[if lte IE 6]>
+<iframe id="iframe_shim" src="about:blank" style="position:absolute;display:none;" scrolling="no" frameborder="0"></iframe>
+<![endif]-->
+
+
+  
+
+
+    
+    
+<U><FONT COLOR=blue>[return to library home]</FONT></U>
+<U><FONT COLOR=blue>[return to buffalo.edu]</FONT></U>
+
+   
+      <!--[if lte IE 6]>
+<iframe id="iframe_shim" src="about:blank" style="position:absolute;display:none;" scrolling="no" frameborder="0"></iframe>
+<![endif]-->
+
+
+
+ 
+ 
+ 
+     
+         <UL>
+            <LI><U><FONT COLOR=blue>Find Library Material</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>My Accounts</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Get Help</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Libraries and Collections</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>About Us</FONT></U></LI>	
+            <LI><U><FONT COLOR=blue>Ask A Librarian</FONT></U></LI>
+         </UL>
+     
+
+
+
+
+
+<!--Find Library Materials -->                                                   
+
+Articles+</FONT></U>
+<U><FONT COLOR=blue>BISON Catalog</FONT></U>
+<U><FONT COLOR=blue>Electronic Journals</FONT></U>
+<U><FONT COLOR=blue>Course Reserves</FONT></U>
+<U><FONT COLOR=blue>Databases</FONT></U>
+<U><FONT COLOR=blue>Forms A-Z</FONT></U>
+<U><FONT COLOR=blue>Requesting Materials</FONT></U>
+<U><FONT COLOR=blue>Resources by Subject</FONT></U>
+
+
+
+<!--My Accounts -->                                                
+
+<U><FONT COLOR=blue>My Library Card</FONT></U>
+<U><FONT COLOR=blue>ILLiad Requests</FONT></U>
+
+
+<!--Get Help -->                                                
+
+<U><FONT COLOR=blue>Help A - Z</FONT></U>
+<U><FONT COLOR=blue>Research Tips</FONT></U>
+<U><FONT COLOR=blue>Instructional Services</FONT></U>
+<U><FONT COLOR=blue>Faculty Support</FONT></U>
+<U><FONT COLOR=blue>Student Support</FONT></U>
+<U><FONT COLOR=blue>Alumni &amp; Visitor Support</FONT></U>
+<U><FONT COLOR=blue>Endnote Software</FONT></U>
+
+
+
+<!--Libraries and Collections -->                                                
+
+<U><FONT COLOR=blue>Architecture &amp; Planning</FONT></U>
+<U><FONT COLOR=blue>Digital Collections</FONT></U>
+<U><FONT COLOR=blue>Health Sciences Library</FONT></U>
+<U><FONT COLOR=blue>Law Library</FONT></U>
+<U><FONT COLOR=blue>Libraries Annex</FONT></U>
+<U><FONT COLOR=blue>Lockwood Library</FONT></U>
+<U><FONT COLOR=blue>Multimedia Collections</FONT></U>
+<U><FONT COLOR=blue>Music Library</FONT></U>
+<U><FONT COLOR=blue>Silverman Library</FONT></U>
+<U><FONT COLOR=blue>Special Collections</FONT></U>
+
+
+
+
+<!--About Us -->                                                
+
+<U><FONT COLOR=blue>Contact Us</FONT></U>
+<U><FONT COLOR=blue>Hours / Floor Plans</FONT></U>
+<U><FONT COLOR=blue>Policies &amp; Services </FONT></U>
+<U><FONT COLOR=blue>Staff Directory</FONT></U>
+<U><FONT COLOR=blue>Library Administration </FONT></U>
+<U><FONT COLOR=blue>Events &amp; Workshops </FONT></U>
+<U><FONT COLOR=blue>Library Exhibits</FONT></U>
+<U><FONT COLOR=blue>Employment</FONT></U>
+<U><FONT COLOR=blue>Library Store</FONT></U>
+<U><FONT COLOR=blue>Support Our Libraries</FONT></U>
+
+
+<!--Ask a Librarian -->                                                
+
+<U><FONT COLOR=blue>[chat]Chat</FONT></U>
+<U><FONT COLOR=blue>[text]Text</FONT></U>
+<U><FONT COLOR=blue>[email]Email</FONT></U>
+<U><FONT COLOR=blue>[phone]Phone</FONT></U>
+<U><FONT COLOR=blue>[inperson]In Person</FONT></U>
+
+
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+tabdropdown.init("colortab", 3)
+   
+
+
+     
+    
+    
+
+  
+             <UL>
+               <LI>Catalog</LI>
+                <LI>Scores</LI>
+                <LI>Audio</LI>
+				<LI>Video</LI>
+				<LI>Finding Aids</LI>
+           </UL>
+		   
+        
+  
+          
+		  
+                        
+                          <FORM>
+                    <SELECT NAME="type">
+                          <OPTION VALUE="AllFields" SELECTED>All Fields</OPTION>
+                          <OPTION VALUE="Title">Title</OPTION>
+                          <OPTION VALUE="Author">Author</OPTION>
+                          <OPTION VALUE="Subject">Subject</OPTION>
+                        </SELECT>
+                       
+                      <INPUT NAME="lookfor" SIZE="16" TYPE="text">
+                      <INPUT VALUE="GO" NAME="submit" TYPE="submit">
+ 
+    <BR>
+	<P>Try our  new <U><FONT COLOR=blue><EM>Library Catalog</EM></FONT></U> interface.<BR>
+	</P>
+          </FORM>
+                        
+						
+						<!-- 2nd search //-->
+						
+                      
+                        
+                          <FORM>
+                            <INPUT VALUE="INIT" NAME="CONVTOKEN" TYPE="hidden">
+                            <SELECT NAME="whichEngine2">
+                              <OPTION SELECTED="selected">Keywords</OPTION>
+                              <OPTION>Title begins with</OPTION>
+                              <OPTION>Author Keywords</OPTION>
+                              <OPTION>Subject begins with</OPTION>
+                            </SELECT>
+                            
+                            <INPUT NAME="searchText2" MAXLENGTH="50" SIZE="13" TYPE="text">
+                            
+                            
+                            <INPUT VALUE="GO" TYPE="button">
+                            
+                          </FORM>
+						  
+						 
+                         
+						
+						<!-- 3nd search //-->
+						
+                      
+                        
+                          <FORM>
+                            <INPUT VALUE="INIT" NAME="CONVTOKEN" TYPE="hidden">
+                            <SELECT NAME="whichEngine3">
+                              <OPTION SELECTED="selected">Keywords</OPTION>
+                              <OPTION>Title begins with</OPTION>
+                              <OPTION>Author Keywords</OPTION>
+                              <OPTION>Subject begins with</OPTION>
+                            </SELECT>
+                            
+                            <INPUT NAME="searchText3" MAXLENGTH="50" SIZE="13" TYPE="text">
+                            
+                            
+                            <INPUT VALUE="GO" TYPE="button">
+                            
+                          </FORM>
+                        
+						
+						<!-- 4 th search //-->
+						
+                      
+                          <FORM>
+                            <INPUT VALUE="INIT" NAME="CONVTOKEN" TYPE="hidden">
+                            <SELECT NAME="whichEngine4">
+                              <OPTION SELECTED="selected">Keywords</OPTION>
+                              <OPTION>Title begins with</OPTION>
+                              <OPTION>Author Keywords</OPTION>
+                              <OPTION>Subject begins with</OPTION>
+                            </SELECT>
+                            
+                            <INPUT NAME="searchText4" MAXLENGTH="50" SIZE="13" TYPE="text">
+                            
+                            
+                            <INPUT VALUE="GO" TYPE="button">
+                            
+                          </FORM>
+                       
+					   
+					   
+					   
+					   <FORM>  <INPUT VALUE="" NAME="keyword" SIZE="25" TYPE="text"> <INPUT VALUE="Search" TYPE="submit">
+              </FORM>
+			  
+			  
+		  
+		 
+          
+  
+        <U><FONT COLOR=blue>Login Help</FONT></U>&nbsp;&nbsp;|&nbsp;&nbsp;<U><FONT COLOR=blue>My Library Card</FONT></U>&nbsp;&nbsp;|&nbsp;&nbsp;<U><FONT COLOR=blue>Full Library Catalog</FONT></U>&nbsp;&nbsp;|&nbsp;&nbsp;<U><FONT COLOR=blue>Search Tips</FONT></U> 
+      
+      
+      
+
+[divider]
+    
+    <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+    <TABLE>
+      <TR>
+        <TD><TABLE>
+          <TR>
+            <TD>
+
+
+<TABLE>
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD></TD>
+    <TD><U><FONT COLOR=blue>About the Library</FONT></U></TD>
+  </TR>
+  
+  
+     
+  
+  <TR>
+    <TD>[divider]</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD></TD>
+    <TD><U><FONT COLOR=blue>Collections</FONT></U></TD>
+  </TR>
+     
+
+
+<TR>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD></TD>
+    <TD><U><FONT COLOR=blue>Online Resources</FONT></U></TD>
+  </TR>
+     
+
+<TR>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD></TD>
+    <TD><U><FONT COLOR=blue>Services</FONT></U></TD>
+  </TR>
+       
+
+<TR>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD></TD>
+    <TD><U><FONT COLOR=blue>Music Librarianship</FONT></U></TD>
+  </TR>
+<TR>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD></TD>
+    <TD><U><FONT COLOR=blue>UB Music Links</FONT></U></TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+  </TR>
+<TR>
+    <TD>&nbsp;</TD>
+    <TD><U><FONT COLOR=blue></FONT></U></TD>
+  </TR>
+  <TR>
+    <TD><TABLE>
+
+      <TR>
+        <TD><TABLE>
+          
+            <TR>
+              <TD><EM><BR>
+                  <BR>
+                  Music Library</EM><BR>
+                112 Baird Hall <BR>
+                Buffalo, NY 14260-4750<BR>
+                <BR>
+                <EM>Ph:</EM> (716) 645-2923 <BR>
+                <EM>Fx:</EM> (716) 645-3906 <BR>
+                <U><FONT COLOR=blue>musique@buffalo.edu</FONT></U></TD>
+            </TR>
+          
+        </TABLE><P>&nbsp;</P></TD>
+
+      </TR>
+    </TABLE></TD>
+  </TR>
+</TABLE>
+</TD>
+            <TD><TABLE>
+              <TR>
+                <TD>&nbsp;</TD>
+              </TR>
+              <TR>
+                <TD> Welcome to the Music Library</TD>
+              </TR>
+              <TR>
+                <TD></TD>
+              </TR>
+              <TR>
+                <TD><BR>The Music Library's primary mission is to  support the instructional and research needs of the UB Music  Department. It also provides support to disciplines which intersect  with music--dance, anthropology, American studies, theatre, and  information and library studies--and serves the music information needs  of Western New York's arts community.
+                  <P>Like  the University itself, the Music Library's overarching mission is to  remain on the cutting edge of research, to help push back the  boundaries of knowledge by creatively serving those engaged in that  enterprise. The Music Library is committed to providing expert  reference service, detailed and relevant access to the library's  resources, and a collection which anticipates users' needs.</P></TD>
+              </TR>
+              <TR>
+                <TD>&nbsp;</TD>
+              </TR>
+            </TABLE>
+            </TD>
+          </TR>
+          <TR>
+            <TD>
+                     <TABLE>
+	  <TR>
+	    <TD>[Library News &amp; Alerts]</TD>
+	  </TR>
+	</TABLE>
+                      
+                        <TABLE>
+                          <TR>
+                            <TD>&nbsp;</TD>
+                            <TD>
+<TABLE>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>
+	</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>[news divider]</TD>
+  </TR>
+</TABLE>
+
+</TD>
+                          </TR>
+                          <TR>
+                            <TD></TD>
+                            <TD><U><FONT COLOR=blue>[RSS feed]</FONT></U> <U><FONT COLOR=blue>All Music Library News</FONT></U></TD>
+                          </TR>
+                        </TABLE>
+                      
+                   
+                  </TD>
+          </TR>
+        </TABLE>
+        </TD>
+      </TR>
+    </TABLE>
+    
+  [divider]
+  
+  
+     
+  
+    
+    
+    
+      <U><FONT COLOR=blue>Return to the homepage</FONT></U>
+
+
+
+
+<U><FONT COLOR=blue>Site Search</FONT></U>&nbsp;&nbsp;|&nbsp;&nbsp;<U><FONT COLOR=blue>Terms of Use</FONT></U>&nbsp;&nbsp;|&nbsp;&nbsp; <U><FONT COLOR=blue>UB Privacy Policy</FONT></U>&nbsp;&nbsp;|&nbsp;&nbsp;<U><FONT COLOR=blue>Accessibility</FONT></U>
+ 
+
+
+<UL>
+<LI><U><FONT COLOR=blue>rss</FONT></U></LI>
+<LI><U><FONT COLOR=blue>facebook</FONT></U></LI>
+<LI><U><FONT COLOR=blue>youtube</FONT></U></LI>
+<LI><U><FONT COLOR=blue>twitter</FONT></U></LI>
+</UL>
+    
+    <!-- end #footer -->
+  
+  
+  
+<!-- end #container -->
+
+
+<!--
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+//-->
+
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+
+try {
+var pageTracker = _gat._getTracker("UA-850718-6");
+pageTracker._trackPageview();
+} catch(err) {}</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+
+</HTML>

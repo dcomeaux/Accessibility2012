@@ -1,0 +1,1113 @@
+
+<HTML>
+
+<HEAD>
+
+<!--
+
+// How to find out if your user has cookies enabled
+
+// ***** Please leave this courtesy note in *****
+// *
+// * downloaded for free from http://www.summerholiday.org/freecode/
+// *
+// ***** Thank you *****
+
+rhrn = new Date();
+rhrnt1 = rhrn.getTime();
+rhrns1 = rhrn.getSeconds();
+rhrnm1 = rhrn.getMinutes();
+rhrnh1 = rhrn.getHours();
+
+// this is arbitrary  it just looks like a normal cookie
+cookievar1 = "AE87BC5C097ADD230B543BCD8" + rhrnh1 + rhrnm1 + rhrns1;
+SetCookie ('tracker_id', cookievar1, 56);
+
+if (GetCookie('tracker_id') == cookievar1)
+{
+	rhrn2 = new Date();
+	rhrnt2 = rhrn2.getTime();
+}
+else
+{
+	rhrnt2 = 0
+}
+
+if (rhrnt2 < (rhrnt1 + 300) && rhrnt2 > 0)
+{
+	cookStatus = "Yes";
+}
+else
+{
+	if (rhrnt2 == 0)
+	{
+		cookStatus = "No";
+	}
+	else
+	{
+		cookStatus = "No";
+	}
+}
+function GetCookie(cookieName)
+{
+	var theCookie=""+document.cookie;
+	var ind=theCookie.indexOf(cookieName);
+	if (ind==1 || cookieName=="") return null;
+	var ind1=theCookie.indexOf(';',ind);
+	if (ind1==1) ind1=theCookie.length;
+	return unescape(theCookie.substring(ind+cookieName.length+1,ind1));
+}
+function SetCookie(cookieName,cookieValue,nDays)
+{
+	var today = new Date();
+	var expire = new Date();
+	if (nDays==null || nDays==0) nDays=1;
+	expire.setTime(today.getTime() + 3600000*24*nDays);
+	document.cookie = cookieName + "=" +escape(cookieValue) + ";expires="+expire.toGMTString();
+}
+
+//-->
+  <TITLE>Troubleshooting Guide</TITLE>
+  <META CONTENT="text/html; charset=iso-8859-1">
+  <!-- **** layout stylesheet **** -->
+  
+  <!-- **** color scheme stylesheet **** -->
+  
+
+     <!-- **** layout stylesheet **** 
+  <link rel="stylesheet" type="text/css" href="http://www.lib.lsu.edu/style/libraries.css" />-->
+  <!-- **** color scheme stylesheet **** -->
+  
+  <!-- **** printer friendly stylesheet **** -->
+  
+ 
+  
+@media only screen and (max-device-width: 480px) {  	#mobilepop {
+		width:760px;
+		height:auto;
+		margin:0 10px;
+		padding:0;
+		/*display:none; */
+		overflow:hidden;
+	}
+	#mobilecont {
+		width:760px;
+		background:#FDD023;
+		color:#333333;
+		padding:10px;
+		font-size:12px;
+		font-family:Arial, Helvetica, sans-serif;
+		text-align:center;
+		border:1px solid #ffffff;
+		line-height:115% !important;
+	} }
+	
+	#mobilecont, #mobilepop {display: none;}
+	
+
+ 
+
+<TITLE>LSU Libraries</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">[INLINE]
+
+
+	
+    	<P><EM>On a mobile device?</EM></P>
+        <P>View the LSU Libraries Mobile Website at<BR> <U><FONT COLOR=blue>http://www.lib.lsu.edu/m/</FONT></U></P>
+        <!-- <p style="fontsize:2em;"><input type="button" name="closempop" value="Stay" onClick="javascript:mobilepop('close');" /> <input type="button" name="redirectmpop" value="Go to Mobile Site" onClick="javascript:mobilepop('redirect');" /> </p>-->
+    
+
+ 
+<HTML>
+<HEAD>
+<META CONTENT="text/html; charset=utf-8">
+<!--<base href="http://www.lib.lsu.edu"  />-->
+
+
+
+
+ 
+
+
+
+
+////////////THIS IS THE EXTERNAL LINKS NEW WINDOW JS//////////////////
+
+function exLinks() {
+<!-- Copyright 2005 Bontrager Connection, LLC
+// More info: "Automatic New Window for External Links" 
+//    at /library/
+// Also see http://BontragerConnection.com/
+//
+// List the domain names that shall not be put into new 
+//    windows when the link is clicked. If you use both 
+//    the www.example.com and example.com versions of 
+//    your domain name, list them both. The domains need 
+//    to be all one line between the quotation marks on 
+//    the line below, the names separated with a comma.
+//    Do not specify http:// URLs, just domain names.
+
+var Domains = "www.lib.lsu.edu,lib.lsu.edu,lsu.edu,www.lsu.edu,test.lib.lsu.edu,news.blogs.lib.lsu.edu,lsu.louislibraries.org,grok.lsu.edu,itsweb.lsu.edu";
+
+////////////////////////////////////////////
+// No other customizations are necessary. //
+////////////////////////////////////////////
+if(Domains.indexOf(" ") != 1) {
+   var splitarray = Domains.split(" ");
+   Domains = splitarray.join("");
+}
+Domains = Domains.toLowerCase();
+var DomainsArray = Domains.split(",");
+for(var i = 0; i < document.links.length; i++) {
+   if(document.links[i].hostname.length < 1) 
+   { continue; }
+   if(document.links[i].target.length > 0)
+   { continue; }
+   var h = document.links[i].hostname.toLowerCase();
+   var makeNewWindow = true;
+   for(var ii = 0; ii < DomainsArray.length; ii++) {
+      if(DomainsArray[ii] != h) 
+      { continue; }
+      makeNewWindow = false;
+      break;
+   }
+   if(makeNewWindow == true)
+   { document.links[i].title = 'This link will take you outside LSU.edu.'; }
+}
+//-->
+}
+
+
+function mobilepop(action) {
+	if (action == "close") document.getElementById('mobilepop').style.display = "none";
+	else if (action == "redirect") window.location.href = "http://www.lib.lsu.edu/m/";
+}
+
+function mobilepopOL() {	
+//	if (document.location == "http://www.lib.lsu.edu/index.html" || document.location == "http://www.lib.lsu.edu/") {
+//		if (screen.width 
+
+<!-- The following JavaScript code gets the current date from the viewer's machine. --> 
+
+<!-- tag to hide script from older browsers that don't support JavaScript
+function display_todays_date()
+{
+var today = new Date();
+var numerical_day=today.getDay();
+var numerical_month=today.getMonth();
+var date=today.getDate();
+var year=today.getFullYear();
+var weekday_array = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+var day_of_the_week = weekday_array[numerical_day];
+var month_array = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+var month_name = month_array[numerical_month];
+var date_string=day_of_the_week+', '+month_name+' '+date+', '+year;
+document.write(date_string);
+}
+//-->
+
+  
+	#mobilepop {
+		/*position:absolute;
+		top:10px;
+		left:10px;*/
+		width:760px;
+		height:auto;
+		margin:0 10px;
+		padding:0;
+		display:none;
+		overflow:hidden;
+	}
+	#mobilecont {
+		width:760px;
+		background:#FDD023;
+		color:#333333;
+		padding:10px;
+		font-size:12px;
+		font-family:Arial, Helvetica, sans-serif;
+		text-align:center;
+		border:1px solid #ffffff;
+		line-height:115% !important;
+	}
+
+<!-- End the current date script. --> 
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+	[INLINE]
+
+
+	
+		
+    	<P><EM>On a mobile device?</EM></P>
+        <P>View the LSU Libraries Mobile Website at<BR> <U><FONT COLOR=blue>http://www.lib.lsu.edu/m/</FONT></U></P>
+        <!-- <p style="fontsize:2em;"><input type="button" name="closempop" value="Stay" onClick="javascript:mobilepop('close');" /> <input type="button" name="redirectmpop" value="Go to Mobile Site" onClick="javascript:mobilepop('redirect');" /> </p>-->
+	    
+	
+
+
+	<!--Begin Utility Bar-->
+	<UL>
+	<LI><U><FONT COLOR=blue>
+		[Text Only]</FONT></U>
+		<U><FONT COLOR=blue>[Login to MyLSU]</FONT></U>
+	</LI> 
+	<LI> Baton Rouge, Louisiana | 
+	<!--Begin date display-->
+	display_todays_date();
+	<!--end date display-->
+	</LI> 
+
+ 	<LI>
+	<FORM>
+		 
+		<INPUT WIDTH="17" NAME="image" HEIGHT="14" TYPE="image">
+		<INPUT VALUE="Search lsu.edu" NAME="q" SIZE="20" TYPE="text">
+		<INPUT VALUE="lsu.edu" NAME="sitesearch" TYPE="hidden"> 
+		</FORM>
+	</LI>
+
+</UL>
+<!--End Utility Bar   -->
+		
+ 
+<U><FONT COLOR=blue></FONT></U>
+
+	<UL>
+ 	  <LI><U><FONT COLOR=blue>LSU Libraries</FONT></U><!-- Begin Home Item -->
+    
+       <!-- <div class="dropdown_2columns">--><!-- Begin 2 columns container -->
+    
+    <!--        <div class="col_2">
+                <h2>Welcome !</h2>
+            </div>
+    
+            <div class="col_2">
+                <p>Welcome to the LSU Libraries web site.  </p>             
+                <p>The LSU Libraries web site is a gateway to the information and research needs of the LSU community.  It can be used to locate books, link to ejournal articles, communicate with subject librarians and other library staff and faculty members.</p>             
+            </div>
+    
+            <div class="col_2">
+                <h2>Cross Browser Support</h2>
+            </div>
+            
+            <div class="col_1">
+                <img src="img/browsers.png" width="125" height="48" alt="" />
+            </div>
+            
+            <div class="col_1">
+                <p>This mega menu has been tested in all major browsers.</p>
+            </div>
+          
+        </div>--><!-- End 2 columns container -->
+    
+    </LI><!-- End Home Item -->
+    
+         <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////          ABOUT US                   ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+ 	   	 <LI><U><FONT COLOR=blue>About Us</FONT></U><!-- Begin 5 columns Item -->
+        <!-- Begin 5 columns container -->
+        
+             
+                <H2>Welcome to the LSU Libraries Website!</H2>
+                <P>The LSU Libraries web site is a gateway to the information and research needs of the LSU community. It can be used to locate books, link to ejournal articles, and to communicate with subject librarians and other library staff and faculty members.
+</P>
+            
+             
+            
+                <H3>Information</H3>
+     <!--           <p class="black_box">This is a dark grey box text. Fusce in metus at enim porta lacinia vitae a arcu. Sed sed lacus nulla mollis porta quis.</p>-->
+     
+            <UL> 
+            <LI><U><FONT COLOR=blue>About the Libraries</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Driving Directions</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Employment</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Hours</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Policies</FONT></U></LI>
+            
+            </UL>
+            
+   		        
+                <H3>Directory</H3>
+                <UL>
+                <LI><U><FONT COLOR=blue>All</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Faculty</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Subject Librarians</FONT></U></LI>
+              <!--  <li><a href="http://www.lib.lsu.edu/sp/subjects/staff.php?letter=By Department">By Departments</a></li>-->
+                </UL>
+                
+                
+             
+            
+               <H3>Frequently Dialed Numbers</H3>
+               
+              <P>- Circulation (fines, borrowing): 578-2058<BR> 
+              - Reference (help finding information): 578-5652<BR>
+              - Music Resources: 578-4674<BR>
+              - Special Collections: 578-6568 </P>
+            
+           &nbsp; 
+                   
+                   
+                   
+                   <U><FONT COLOR=blue>[INLINE]</FONT></U>
+                   
+                     <U><FONT COLOR=blue>[INLINE]</FONT></U>
+                  <U><FONT COLOR=blue> [INLINE]</FONT></U>
+                   <U><FONT COLOR=blue> [INLINE] </FONT></U>
+                  
+            
+                
+                
+         
+ 
+        
+        <!-- End 5 columns container -->
+     </LI><!-- End 5 columns Item -->
+     
+     <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////          RESEARCH TOOLS             ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+     
+     <LI><U><FONT COLOR=blue>Research Tools</FONT></U><!-- Begin 4 columns Item -->
+    
+        <!-- Begin 4 columns container -->
+        
+               
+            
+                <H3>Find Books</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Online Catalog</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>WorldCat Local</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Subject Guides</FONT></U></LI>
+<!--                    <li><a href="http://www.lib.lsu.edu/sp/subjects/index.php">Subject Guides</a></li> -->
+                    <LI><U><FONT COLOR=blue>Gov't Documents</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Reserves</FONT></U>
+                    <!-- <li><a href="#">more</a></li>-->
+                </UL>   
+                             
+                   
+                <H3>Find Articles</H3> 
+                <UL>
+                    <LI><U><FONT COLOR=blue>Indexes &amp; Databases</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Ejournals</FONT></U></LI>
+                 <!--   <li><a href="#">How to find Articles</a></li>-->
+                </UL>   
+                 
+                <H3>Other</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Gov't Documents</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Other Resources</FONT></U></LI>
+                </UL>   
+            
+               
+                <H3>Help</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Subject Librarians</FONT></U></LI>
+<!--                <li><a href="http://www.lib.lsu.edu/sp/subjects/staff.php?letter=Subject Librarians AZ">Subject Librarians</a></li> -->
+                    <LI><U><FONT COLOR=blue>Tutorials</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Technical Help</FONT></U></LI>
+                </UL>   
+            
+   
+        <!-- End 4 columns container -->
+    
+    </LI><!-- End 4 columns Item -->
+    
+  
+    <!-- Start services -->
+         <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////             SERVICES                ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+    
+        <LI><U><FONT COLOR=blue>Services</FONT></U><!-- Begin 4 columns Item -->
+    
+        <!-- Begin 4 columns container -->
+        
+    <!--        <div class="col_3">
+                <h2>Research</h2>
+            </div>
+    -->      
+         
+            
+            
+                    <H3>Instruction</H3>
+                <UL>
+                
+                    <LI><U><FONT COLOR=blue>Instruction Webpage</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>LIS 1001</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Tutorial Center (141 Middleton)</FONT></U>
+                    
+                    <LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Tutorials</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Request Instruction</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Reserve a Classroom</FONT></U></LI>
+               
+                </UL>   
+                 
+            
+       
+  
+    
+            
+            
+                <H3>Borrowing</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Interlibrary Loan</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Your Library Account</FONT></U></LI>
+              
+                    <LI><U><FONT COLOR=blue>Circulation Policies</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Reserves</FONT></U></LI>
+                   <!-- <li><a href="#">more</a></li>-->
+                </UL>   
+                
+                 <H3>Other</H3>
+                <UL>
+                <LI><U><FONT COLOR=blue>Disability Services</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Distance Education</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Study/ Presentation Rooms</FONT></U>
+                </UL>
+                 
+            
+    
+            
+            
+                <H3>Technology</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Help Desk</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Print Desk</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Find a Computer</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Technical Help</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Visualization Services Center (109 Middleton)</FONT></U>
+                 
+                </UL>  
+                 
+            
+    
+     <!--       <div class="col_1">
+            
+                <h3>Misc</h3>
+                <ul>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Logo</a></li>
+                    <li><a href="#">Flash</a></li>
+                    <li><a href="#">Illustration</a></li>
+                    <li><a href="#">More...</a></li>
+                </ul>   
+                 
+            </div>
+            -->
+        <!-- End 4 columns container -->
+    
+    </LI><!-- End 4 columns Item -->
+    
+    <!-- end services -->
+    
+         <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////             DEPARTMENTS             ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+
+	<LI><U><FONT COLOR=blue>Departments</FONT></U>
+    
+		
+        
+                
+                
+                    <UL>
+                        <LI><U><FONT COLOR=blue>Acquisitions</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Circulation</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Education Resources</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Gov't Documents</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Interlibrary Loan</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Music Resources</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Reference</FONT></U></LI>                     
+                        <LI><U><FONT COLOR=blue>Special Collections</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>More</FONT></U></LI>
+              
+                    </UL>   
+                     
+                
+                
+		
+        
+	</LI>
+
+
+     <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////              HELP                   ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+
+    <LI><U><FONT COLOR=blue>Help</FONT></U><!-- Begin 3 columns Item -->
+    
+        <!-- Begin 3 columns container -->
+            
+            
+                <H2>Help</H2>
+            
+            
+             
+    
+                <UL>
+                    <LI><U><FONT COLOR=blue>Technical Help</FONT></U></LI>
+                   
+                    <LI><U><FONT COLOR=blue>Tutorial Center</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Call Us</FONT></U> 225.578.8875</LI>
+                
+                </UL>   
+    
+            
+            
+            
+    
+                <UL>
+                    <LI><U><FONT COLOR=blue>Research Help</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Help Desk</FONT></U> 225.578.3375</LI>
+                    <LI><U><FONT COLOR=blue>Email Us</FONT></U></LI>
+               
+                </UL>   
+    
+            
+            
+            
+    
+                <UL>
+                    <LI><U><FONT COLOR=blue>FAQ</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>IM Us</FONT></U></LI>
+              
+                </UL>   
+    
+            
+            
+            
+                <H2>Search the Libraries Web Site</H2>
+                
+                     <FORM>
+                <INPUT WIDTH="17" NAME="image" HEIGHT="14" TYPE="image">
+                <INPUT NAME="q" TYPE="text">
+                <INPUT VALUE="www.lib.lsu.edu" NAME="sitesearch" TYPE="hidden">
+                </FORM>
+            
+            
+          <!--  <div class="col_3">
+                <img src="img/02.jpg" width="70" height="70" class="img_left imgshadow" alt="" />
+                <p><strong>Tutorial Lab</strong> Located in 141 Middleton Library, the lab offers tutoring in Math....(this should go under instruction)<a href="#">Read more...</a></p>
+    <br clear="all" />
+                <img src="img/01.jpg" width="70" height="70" class="img_left imgshadow" alt="" />
+                <p>Aliquam elementum felis quis felis consequat scelerisque. Fusce sed lectus at arcu mollis accumsan at nec nisi. Aliquam pretium mollis fringilla. Vestibulum tempor facilisis malesuada. <a href="#">Read more...</a></p>
+            </div>
+        -->
+        <!-- End 3 columns container -->
+        
+    </LI><!-- End 3 columns Item -->
+    
+         <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////           A TO Z                    ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+
+<LI><U><FONT COLOR=blue>A to Z</FONT></U></LI>
+</UL>
+  
+
+ 
+ 	 
+    
+ 
+
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+<!-- Begin
+var useragent = navigator.userAgent;
+var bName = (useragent.indexOf('Opera') > 1) ? 'Opera' : navigator.appName;
+var pos = useragent.indexOf('MSIE');
+if (pos > 1) {
+bVer = useragent.substring(pos + 5);
+var pos = bVer.indexOf(';');
+var bVer = bVer.substring(0,pos);
+}
+var pos = useragent.indexOf('Opera');
+if (pos > 1)	{
+bVer = useragent.substring(pos + 6);
+var pos = bVer.indexOf(' ');
+var bVer = bVer.substring(0, pos);
+}
+if (bName == "Netscape") {
+var bVer = useragent.substring(8);
+var pos = bVer.indexOf(' ');
+var bVer = bVer.substring(0, pos);
+}
+if (bName == "Netscape" && parseInt(navigator.appVersion) >= 5) {
+var pos = useragent.lastIndexOf('/');
+var bVer = useragent.substring(pos + 1);
+}
+
+document.write("<p style='marginleft:90px'><b>Your Configurations</b>");
+document.write("<br>Browser:");
+document.write("<b>", bName,"</b>");
+document.write("<br>Code Name: ");
+document.write("<b>", navigator.appCodeName,"</b>");
+document.write("<br>ip address:");
+document.write("<b> 70.171.109.115 </b>");
+document.write("<Br>Version: ");
+document.write("<b>", bVer,"</b>");
+document.write("<br>Platform: ");
+document.write("<b>", navigator.platform,"</b>");
+document.write("<br>JavaScript enabled: ");
+document.write("<b>Yes</b>");
+document.write("<br>Cookies enabled: ");
+document.write("<b>", cookStatus,"</b>");
+document.write("<br>Java enabled: ");
+if (navigator.javaEnabled()) document.write("<b>Yes</b>");
+else document.write("<b>No</b>")
+document.write("<br>Screen Resolution: ");
+document.write("<b>",screen.width," x ",screen.height,"</b></p>");
+ 
+// End -->
+
+      
+		 
+    <EM>You MUST have JavaScript enabled to use this page. See below for information on how to enable JavaScript.</EM> 
+     
+
+ <P>
+		 
+<H2>Recommended Configurations for using the LSU Libraries databases through the proxy server:</H2>
+   <UL>
+   <LI><U><FONT COLOR=blue>Shibboleth Error</FONT></U></LI>
+        <LI><U><FONT COLOR=blue>Ebsco Database Issues</FONT></U></LI>
+        <LI><U><FONT COLOR=blue>Using, Installing and Troubleshooting LibX</FONT></U></LI>
+        <LI><U><FONT COLOR=blue>Knovel/ Acrobat 9 problems</FONT></U></LI>
+<!--        <li><a href="#browsers">Browsers Version 4.0 or higher of Microsoft Internet 
+          Explorer or Netscape Communicator</a>        </li>-->
+        <LI> <U><FONT COLOR=blue>JavaScript <EM>must</EM> be enabled</FONT></U></LI>
+        <LI><U><FONT COLOR=blue>Cookies <EM>must</EM> be enabled</FONT></U></LI>
+        <LI> <U><FONT COLOR=blue>Java is recommended to be enabled</FONT></U></LI>
+				<!-- <li> <a href="#firewall">Firewall problems</a>
+				<li> <a href="#netzero">NetZero problems</a>	 -->
+				<LI> <U><FONT COLOR=blue>Mac User? "Data Decryption Error" message?</FONT></U></LI>
+                <LI> <U><FONT COLOR=blue>Mac Users: Trouble with Science Direct articles</FONT></U></LI>
+				<LI> <U><FONT COLOR=blue>PAWS problems</FONT></U></LI>
+				<!-- <li> <a href="#firewall">Windows XP problems</a> -->	
+<!--				<li> <a class="purple" href="http://www.lib.lsu.edu:2048">Port 2048 test link</a> <i>If you cannot view this page, you need to allow higher port numbers.</li>
+				<li> <a href="#google">Google Accelerator problems</a>-->
+				<LI> <U><FONT COLOR=blue>VPN Connection problems</FONT></U></LI>
+				<LI> <U><FONT COLOR=blue>netLibrary problems</FONT></U></LI>
+				<LI> <U><FONT COLOR=blue>Redirect Remover problems</FONT></U></LI>
+      </UL>
+
+
+      </FONT></U><EM>EBSCO DATABASES ISSUES</EM>
+	<P>We are currently troubleshooting issues with our Ebsco databases.<!-- If you are having trouble accessing Ebsco Databases or if you are receiving time out errors while using Ebsco databases, please try connecting though the <a href="http://appl003.lsu.edu/ocsweb/louishome.nsf/$Content/Electronic+Resources?OpenDocument">Louisiana Library Network.</a>--></P>
+ 			
+
+ 
+			
+      </FONT></U><EM>BROWSERS</EM>
+	<P>
+      LSU Libraries strongly recommends using a recent version of an Internet browser. Newer browsers not only have 
+        newer features, but have more secure features when it comes to Internet security.
+    </P>
+	
+	<P><U><FONT COLOR=blue>The Tigerware</FONT></U> web site information about downloading Internet browers.</P>
+	 			
+     </FONT></U><H2>JAVASCRIPT</H2>
+<P>
+      You <EM>must</EM> use a browser that supports JavaScript and have JavaScript 
+        enabled.
+</P>
+      <EM>Enable JavaScript for Netscape</EM>
+		
+<OL>
+      					<LI>From the browser's menu bar, select Edit.</LI>
+	   					<LI>Click Preferences.</LI>
+        				<LI>Click Advanced.</LI>
+      					<LI>Click the Enable JavaScript box to select JavaScript.
+          <EM>Note:</EM> If the box has a checkmark, JavaScript is already enabled. 
+          Complete step 5 to exit.</LI>
+     
+       
+        <LI> Click OK.  </LI>
+					 </OL>
+	
+				
+     <EM>Enable JavaScript for Microsoft Internet Explorer</EM>
+
+<OL><LI>From the browser's menu bar, select Tools.</LI>
+				<LI>  Click Internet Options.</LI>
+				<LI>  Click the Security tab.</LI>
+				<LI>  Click Custom and then click Settings.</LI>
+				<LI>  Scroll down to Active Scripting. </LI>
+				<LI>  Click Enable to select it.
+         <EM>(If the radio button is already selected, JavaScript is enabled. Complete the remaining steps to exit.)</EM></LI>
+					<LI>  Click OK.</LI>
+					<LI>  Click Yes.</LI>
+					<LI>   Click OK.</LI>
+      </OL>
+			
+	
+			
+      <EM>Enable JavaScript for Microsoft Internet Explorer 4.0</EM>
+
+<OL>
+       <LI>  From the browser's menu bar, select View.</LI>
+       		 <LI>  Click Internet Options.</LI>
+					 <LI>  Click the Security tab.</LI>
+					 <LI>  Click Custom and then click Settings.</LI>
+					 <LI>   Scroll down to Active Scripting.</LI>
+					 <LI>  Click Enable to select it.<EM>(If the radio button is already selected, JavaScript is 
+          enabled. Complete the remaining steps to exit.)</EM></LI>
+					<LI>  Click OK.</LI>
+					<LI>  Click Apply.</LI>
+					<LI>  Click OK. </LI>
+					</OL>
+	<BR><BR>
+
+      </FONT></U><EM>COOKIES</EM>
+	<BR><BR>
+   <P>   Many of the Research Databases use cookies. You will need to have them 
+        enabled to use the Research Databases.  Check your browser menu to make sure Cookies are enabled.  The option is uaually listsed under "Internet Options," "Preferences," or something similar, depending on the browser.</P>
+<!--   <p class="padded">
+        <b>To check your browser in Internet Explorer 4.x,</b> click View menu 
+          option at top of the browser. Select Internet Options, then select Advanced 
+          tab. Scroll down to Cookies section. Client must accept cookies for 
+          security, so check either &quot;Prompt before accepting cookies&quot; 
+          or &quot;Always accept cookies.&quot; Click OK.<br /><br />
+        <b>To check in Netscape Communicator 4.5,</b> click Edit menu option 
+          at top of browser. Select Preferences. Under Categories, click on the 
+          word Advanced (not the + or  next to it). In the right side of the 
+          panel select the &quot;Accept all cookies&quot; or &quot;Accept only 
+          cookies that get sent back to originating server.&quot; Click OK.<br /><br />
+        <b>To check in Microsoft Internet Explorer 5.0,</b> from the browser's 
+          menu bar, select Tools. Click Internet Options. Click the Security tab. 
+          Click Custom and then click Custom Level. Scroll down to Cookies. Click 
+          Enable to select &quot;Allow cookies that are stored on your computer&quot; 
+          Click Enable to select &quot;Allow percookies (not stored)&quot; Note: 
+          If the radio button is already selected, Cookies are enabled. Complete 
+          the remaining steps to exit. Click OK. Click Yes. Click OK.<br /><br />
+        <b>To check in Microsoft Internet Explorer 6.0,</b> from the browser's 
+          menu bar, select Tools. Click Internet Options. Click the Privacy tab. 
+          Click Advanced. Make sure the &quot;Override Automatic Cookie Handling&quot; 
+          is checked. Also, make sure that &quot;FirstParty Cookies&quot; and 
+          &quot;ThirdParty Cookies&quot; are checked for &quot;Accept.&quot; 
+          Lastly, make sure that &quot;Always allow session cookies&quot; is checked. 
+          Click OK. Click OK.-->
+      </P>
+
+
+      </FONT></U><EM>JAVA</EM>
+<P>
+     
+		  Some databases use Java, therefore you might be required to 
+        enable Java.  However, our proxy server does not require this. Below are instructions 
+        for enabling Java. </P>
+	 
+ <!-- <p>    <u>Enable Java for Netscape</u></p>
+     		
+<ol style="marginleft:90px">
+     		  <li>  From the browser's menu bar, select Edit.</li>
+		      <li>  Click Preferences.</li>
+		      <li> Click Advanced.</li>
+			   <li>  Click the Enable Java box.
+		       <b>Note:</b> If the box has a checkmark, Java is already enabled. Complete 
+        	  step 5 to exit.</li>
+			<li>  Click OK. You may have to reboot your PC.</li>
+		    </ol>
+		
+    <p>  <u>Enable Java for Microsoft Internet Explorer</u></p>
+  		  
+<ol style="marginleft:90px">
+    			<li>  From the browser's menu bar, select Tools.</li>
+				<li>  Click Internet Options.</li>
+				<li>  Click the Security Tab.</li>
+				<li>  Click the Custom Level button.</li>
+				<li>  Scroll down to java permissions.</li>
+				<li>  Select any option other than &quot;Disable Java&quot;.<br />
+          <b>Note:</b> If the &quot;Disable Java&quot; box is not checked, Java 
+          is already enabled, complete step 9 to exit.<br />
+  </li>
+				<li>  Click OK.</li>
+					<li>  Click Yes.</li>
+				<li>  Click OK.</li>
+    </ol>			-->
+	
+ 
+	<!--		 <a name="PAWS"></a><b>PAWS</b>
+			<p class="padded">
+Accessing our databases through PAWS causes a cookie error in some browsers.  If your PAWS desktop is open on the left side of your screen, please close it or open the Libraries' web site in a <a href="/index.html" target="self">new window.</a>
+</p>
+-->
+ 
+</FONT></U>
+<P><EM>KNOVEL AND ACROBAT 9.0 PROBLEMS</EM></P>
+<P><EM>February 2009</EM>: Knovel is incompatible with Acrobat Reader 9.0.  Knovel has been told this and there is no estimated time for a solution from them.  Until they fix the problem, use Knovel on a computer with a different version of Acrobat Reader.</P>
+<!--<p>&nbsp;</p>
+<p><a name="netzero"></a><b>NETZERO</b>
+</p>
+<p class="padded">
+The NetZero HiSpeed service works with proxy by hostname using port 80, but it does not work with proxy by port and may not work with proxy by hostname using ports other than 80. 
+</p>
+<p class="padded">
+In most instances, an icon has appeared in the system tray in the lowerright corner of the screen which contains an option to disable HiSpeed. Using this option enables service for most users. 
+</p>
+<p class="padded">
+There have been reports of users for whom this did not work. For those users, the following instructions have provided a workaround: 
+</p>
+<p class="padded">
+<ol style="marginleft:90px">
+<li>Launch Internet Explorer </li>
+<li>Go to Tools | Internet Options... </li>
+<li>Click on the Connections tab </li>
+<li>Scroll through the Dialup settings to locate NetZero, then click on NetZero and click Settings... </li>
+<li>
+Under Proxy Server, click Advanced... </li>
+<li>
+In Exceptions, scroll to the end of the list, then type a semicolon (;) followed by just the host name of the EZproxy server (ezproxy.lib.lsu.edu). All the other sample entries have an asterisk (*) in front, and although it won't hurt, that isn't required for this entry. Do not include the port number. </li>
+
+<li>Keep hitting OK until all the windows close and you are back in Internet Explorer. 
+At this point, access to EZproxy should be restored. </li>
+ </ol>
+</p>-->
+
+</FONT></U>
+<EM>OFF-CAMPUS MAC USERS</EM>
+
+<P>
+Mac users who cannot click past the security certificate: do not use the Internet Explorer (IE) browser:<BR>
+</P><P>
+Netscape 7.02 works with Mac OS 8.6 and higher and with the LSU databases that we have been able to test.  See the Netscape site at <U><FONT COLOR=blue>http://channels.netscape.com/ns/browsers/</FONT></U><BR>
+</P>
+<!--If you have OS10, use one of the following browsers: Safari, Firefox, Netscape, or Mozilla 
+<br />If you have OS9, download and install the iCab browser for free at from http://www.icab.de/dl.php<br />
+<br />
+<b>Note</b>: if you are using OS9, it is advisable to upgrade operating systems.  OSX will enable you to run OS9 applications in emulation mode. Alternatively, you can boot into OSX and work interoperatively for some tasks, like searching the databases.<br />
+<br />
+ 
+
+<b>Caveat</b>: one database, ARTstor, is known not to work with icab.--> 
+
+ </FONT></U>
+<EM>MAC / SAFARI USERS CANNOT ACCESS SCIENCEDIRECT ARTICLES</EM>
+
+<P>A problem with the current version of Adobe Acrobat Reader prevents Macs users with Safari from ScienceDirect PDF articles. ScienceDirect has reported this problem to Adobe and Safari.  Until it is fixed:
+<UL><LI>Hold the control button, click on the PDF link and select "download link to disk." Save the file to the hard drive and view it from there.<BR>OR</LI>
+<LI>Use Mozilla Firefox instead of Safari, which does not seem to have this problem.</LI>
+</UL>
+ </P>
+ 
+
+</FONT></U><EM>GOOGLE ACCELERATOR</EM> 
+
+<P>
+Google Accelerator may cause the Libraries indexes and databases to stop working for on campus users.  If this happens, turn Google Accelerator off while accessing the Libraries' databases.
+</P>
+
+</FONT></U><EM>VPN TO LSU CAMPUS</EM>
+<P>
+A VPN connection to the LSU campus may cause the Libraries indexes and databases to stop working. If this happens, turn the VPN connection to LSU campus off while accessing the Libraries' databases.
+</P>
+
+</FONT></U><EM>NETLIBRARY: Google Chrome Issues</EM>
+
+<P>NetLibrary does not currently support the browser Google Chrome. NetLibrary suggests using firefox or Internet Explorer.</P>
+
+<EM>NETLIBRARY: MAC OS X PDF plugins and configuration</EM>
+<P>
+The PDF files used by NetLibrary are compatible with most supported web browsers using the Schubert|it PDF Browser Plugin, a third-party plugin that supports in-browser viewing of PDF files.
+</P><P>
+Adobe Reader 7 also works to view this NetLibrary content in most browsers, but will usually display the content in a separate window (rather than in the browser window); its use is discouraged. Version 10.2.2 of Mac OS X is required to use Adobe Reader 7.
+</P><P>
+Adobe Reader 6 cannot support NetLibrary's PDF content due to limitations of that version of Reader and an incompatibility with Mac OS X.
+</P><P>
+For OS 9, it is reported that Adobe has plugins available that work, but this is untested by LSU Libraries.
+</P>
+
+
+<H2>SCHUBERT|IT PDF BROWSER PLUGIN</H2>
+
+<P>
+Mozilla, Firefox, Camino, Opera, Netscape, and Internet Explorer seem to work best with the Schubert|it PDF plugin. This is available at <U><FONT COLOR=blue>http://www.schubert-it.com/pluginpdf/</FONT></U>  and is simple to install.</P>
+<P>
+Install it by opening the .dmg file you download, and then copy PDF Browser Plugin.plugin to the Library/Internet Plug-Ins folder of the hard drive. Once installed with that method, it should just work with Mozilla, Firefox, Camino, Opera, and Netscape without additional configuration. The plugin does not seem to work with Safari; Internet Explorer needs additional configuration; see below. If problems are encountered in Firefox, see the configuration section for that browser, below.
+</P>
+
+<H2>SAFARI</H2>
+
+<P>
+Safari worked with Adobe Reader 7 until early spring of 2005.  Now the content will briefly flash on the screen and then it will disappear; other times you just see a blank page and no flash of the cover photo or text.
+</P> 
+ 
+<H2>Firefox configuration details</H2>
+<P>
+When first using NetLibrary on a Macintosh with Firefox, Firefos may not be configured properly to handle the content. If a working PDF plugin is not installed or properly configured, a dialog box with these options will appear:
+</P>
+<P>
+ O O O   Opening nlReader.dll<BR>
+You have chosen to open<BR>
+[] nlReader.dll<BR>
+  which is a: Windows DLL<BR>
+  from: http://www.netlibrary.com
+<BR><BR>
+What should Firefox do with this file?
+<BR><BR>
+O Open with (Choose...)<BR>
+O Save to Disk<BR>
+[] Do this automatically for files like this from now on.
+<BR><BR>
+                                  (Cancel)   (   OK   )
+ </P>
+
+<P>
+Make sure the Schubert|it plugin or a current verion or Adobe Acrobat Reader is installed. If so, click the Choose button and navigate either to the Library/Internet Plug-Ins folder and choose PDF Browser Plugin.plugin or navigate to the Applications folder in the hard drive, then navigate into the Adobe folder and select the Adobe application. Click OK. If you are using the Shubert|it plugin, it will open in the same browser window in Firefox, but if you are using Adobe Reader 7 the document will open in a separate window.
+</P>
+
+</FONT></U><EM>REDIRECT REMOVER</EM>
+<P>
+This add-on to Mozilla Firefox will cause the browser to bypass our proxy server, interfering with off-campus access.  Currently the only known solution for this problem is to uninstall the Redirect Remover add-on.  Other possible solutions may be found <U><FONT COLOR=blue>here</FONT></U>.
+</P>
+
+
+</FONT></U><EM>Shibboleth Error</EM>
+<P>This error is encountered when accessing our resources off campus.  To prevent the error, do not use the browsers Back button.  If you have encountered this error <EM>Close your browser and restart</EM>.  If this does not fix the error, delete the webauth.shib.lsu.edu cookie (you can clear all cookies from your browser window, but if you would like to keep you cookies for various sites, and only delete this one, follow these steps, which my vary depending on your browser:
+
+<OL>
+<LI>In Mozilla, go to tools, options</LI>
+<LI>Click "Privacy"</LI>
+<LI>Click "Remove individual cookies"</LI>
+<LI>On the next window, in the search box, type webauth and hit enter</LI>
+<LI>You should get a cookie with the webauth.shib.lsu.edu as its "site"</LI>
+<LI>Delete it.</LI>
+</OL>
+
+</P>
+
+
+
+				 
+      
+    	
+      
+ 
+ <U><FONT COLOR=blue>[LSU Logo]</FONT></U>
+<BR><U><FONT COLOR=blue>LSU Libraries</FONT></U>
+<BR>Baton Rouge, LA 70803
+<BR>Tel (225) 578-5652
+<BR>Fax (225) 578-9432 
+
+
+
+<!-- AddThis Button END -->
+<BR> 
+
+<UL>
+<LI><U><FONT COLOR=blue>LSU Libraries</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Contact Us</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Mobile Website</FONT></U></LI>
+<!--<li><a href="http://www.lsu.edu">Louisiana State University</a></li>-->
+<LI>
+<U><FONT COLOR=blue>[Library Blog]</FONT></U>
+<U><FONT COLOR=blue>[RSS Feed]</FONT></U>
+<U><FONT COLOR=blue>[Library Facebook Page]</FONT></U>
+<U><FONT COLOR=blue>[Library Twitter Page] </FONT></U>
+<!-- AddThis Button BEGIN -->
+
+//var addthis_config = {
+ //  ui_click: true
+//}
+
+<!--a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa4a8b0c2a79cf3130">
+<img style="verticalalign:middle;" src="http://s7.addthis.com/static/btn/v2/lgbookmarken.gif" width="125" height="16" alt="Bookmark and Share" style="border:0" />
+</a>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=xa4a8b0c2a79cf3130"></script> -->
+</LI>
+</UL>
+<BR>
+<CENTER>Copyright &copy; 1996 - 2012 LSU Libraries<BR> <!--<img src="/images/external.png" /><span class="small">Links away from LSU.edu</span> --></CENTER><BR>
+
+
+<!--<div class="right">
+<a href="http://www.lsu150.com/"><img src="/images/150year.jpg" /></a>
+
+
+</div> -->
+
+<BR>
+ 
+ 
+
+
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22589452-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+    	
+  
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>

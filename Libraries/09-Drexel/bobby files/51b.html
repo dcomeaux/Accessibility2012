@@ -1,0 +1,370 @@
+
+<HTML>
+  <HEAD>
+<META CONTENT="text/html; charset=utf-8">
+    <META CONTENT="text/html; charset=utf-8">
+
+            
+    <TITLE>Putting Material on Reserve | Drexel University Libraries</TITLE>
+    
+    
+    
+    
+    
+    
+
+    
+
+
+    
+	
+	
+    
+	
+
+
+
+
+
+
+
+<!--//--><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" }, "viewsSlideshowSingleFrame": { "#views_slideshow_singleframe_main_homepage_slideshow_completeblock_1": { "num_divs": 3, "id_prefix": "#views_slideshow_singleframe_main_", "div_prefix": "#views_slideshow_singleframe_div_", "vss_id": "homepage_slideshow_completeblock_1", "timeout": "5000", "sort": 1, "effect": "fade", "speed": "500", "start_paused": 0, "delay": "0", "fixed_height": "1", "random": "1", "pause": "1", "pause_on_click": "0", "pause_when_hidden": 0, "pause_when_hidden_type": "full", "amount_allowed_visible": "", "remember_slide": 0, "remember_slide_days": "1", "controls": "0", "items_per_slide": "1", "pager": "2", "pager_type": "Numbered", "pager_hover": "2", "pager_click_to_page": 0, "image_count": "0", "nowrap": "0", "sync": "1", "advanced": "", "ie": { "cleartype": "true", "cleartypenobg": "false" } } } });
+//-->
+
+	
+	
+		$(document).ready(function() {
+			
+			$('#sm-offline').addClass('hide');
+			$('#sm-advisory').addClass('hide');
+			$('#sm-online').addClass('hide');
+			
+			var containsAdvisory = $("#node-4182").text().indexOf('Current Status: Service-wide Advisory') >= 0; // true
+			var containsOffline = $("#node-4182").text().indexOf('Current Status: Offline') >= 0; // true
+			
+			if(containsAdvisory){
+				$('#sm-advisory').addClass('show');
+				$('#sm-advisory').removeClass('hide');
+			}
+			
+			if(containsOffline){
+				$('#sm-offline').addClass('show');
+				$('#sm-offline').removeClass('hide');
+			}
+			
+			if(!containsAdvisory && !containsOffline){
+				$('#sm-advisory').addClass('hide');
+				$('#sm-advisory').removeClass('show');
+				$('#sm-offline').addClass('hide');
+				$('#sm-offline').removeClass('show')
+				;
+				$('#sm-online').addClass('show');
+				$('#sm-online').removeClass('hide');
+			}
+			
+		});
+	
+
+    
+    <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/drexellib30theme/fixie.css" />    <![endif]-->
+  </HEAD>
+  <BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+
+
+	<U><FONT COLOR=blue>[Drexel Library]</FONT></U>
+	<U><FONT COLOR=blue>[Libraries Home Button]</FONT></U>
+	<U><FONT COLOR=blue>[Drexel Health Sciences]</FONT></U>
+	<U><FONT COLOR=blue>[Search]</FONT></U>
+	<U><FONT COLOR=blue>[Services]</FONT></U>
+	<U><FONT COLOR=blue>[Get Help]</FONT></U>
+	<U><FONT COLOR=blue>[About]</FONT></U>
+    <U><FONT COLOR=blue>[Drexel University]</FONT></U>
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+	<H1>    <U><FONT COLOR=blue>  Services </FONT></U></H1>
+  
+
+
+	
+<UL>
+<LI><U><FONT COLOR=blue>Renew a Book</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Interlibrary Loan<BR>
+    </FONT></U></LI>
+<LI><U><FONT COLOR=blue>Subject Librarians</FONT></U></LI>
+<LI><U><FONT COLOR=blue>The Suggestion Box</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Reserve a Group Study Room</FONT></U></LI>
+</UL>
+
+    
+    
+    
+    
+    
+    
+
+
+    
+
+	<H1>Quick Search</H1>
+    
+	  <FORM>
+           <INPUT VALUE="016083094869134140650:ibrgznq8u7a" NAME="cx" TYPE="hidden">
+    <INPUT VALUE="FORID:9" NAME="cof" TYPE="hidden">
+    <INPUT VALUE="UTF-8" NAME="ie" TYPE="hidden">  
+            <P>
+
+                    <INPUT NAME="q" MAXLENGTH="255" SIZE="19" TYPE="text"></P>
+                   	<P>	<INPUT VALUE="keyword" NAME="sortByThis" TYPE="hidden">
+                          <SELECT NAME="destination">
+                          <OPTION VALUE="books">Books &amp; More</OPTION>
+                          <OPTION VALUE="catalog" SELECTED="selected">Articles &amp; More</OPTION>
+                          <OPTION VALUE="website">Website</OPTION>
+                    </SELECT></P>
+                    
+                        <INPUT VALUE="/index.html" NAME="page" TYPE="hidden">
+                        <INPUT VALUE="" NAME="combined" TYPE="hidden">
+
+                    <INPUT VALUE="Search" TYPE="submit">
+               </FORM>
+               
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+Library Chat is loading...
+$(document).ready(libChatPrint());
+
+
+
+
+    
+	<H1>      My Library Accounts </H1>
+  
+
+
+	
+<UL>
+    <LI><U><FONT COLOR=blue>My Personal Library [beta]</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>My Library Record / Renew Books</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>ILLiad<BR>
+    </FONT></U></LI>
+    <LI><U><FONT COLOR=blue>E-Z Borrow</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Current Status of Online Services</FONT></U></LI>
+</UL>
+    
+    
+    
+    
+    
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+	<H4>Putting Material on Reserve</H4>
+
+
+
+                
+            
+
+
+
+  
+    <UL>
+<LI><U><FONT COLOR=blue>Overview/Guidelines</FONT></U>&nbsp;&nbsp;</LI>
+<LI><U><FONT COLOR=blue>Submitting Requests/Materials for Reserve</FONT></U>&nbsp;&nbsp;
+<UL>
+<LI><U><FONT COLOR=blue>Personal Copies</FONT></U>&nbsp;&nbsp;</LI>
+<LI><U><FONT COLOR=blue>Electronic Reserve</FONT></U> &nbsp;&nbsp;</LI>
+<LI><U><FONT COLOR=blue>Online Reserves DVD/Video Policy</FONT></U></LI>
+</UL>
+</LI>
+<LI><U><FONT COLOR=blue>Restrictions</FONT></U>&nbsp;&nbsp;</LI>
+<LI><U><FONT COLOR=blue>To Order a Title the Library does not Own</FONT></U>&nbsp;&nbsp;</LI>
+<LI><U><FONT COLOR=blue>Questions? Contact Us</FONT></U>&nbsp;&nbsp;</LI>
+</UL>
+<P>&nbsp;</P>
+<H2></FONT></U>Overview/Guidelines</H2>
+<P>The reserve system  supports instruction by providing access to materials needed by students for current courses. Please follow these guidelines:</P>
+<UL>
+<LI>Place only required materials for current courses on reserve (Health Sciences Libraries will also accept recommended materials as well as required readings for placement on reserve).</LI>
+<LI>Materials owned by the Libraries should not be kept on reserve when they are not needed, as this unnecessarily restricts circulation.</LI>
+</UL>
+<P>&nbsp;</P>
+<H2></FONT></U>Submitting Requests/Materials for Reserve</H2>
+<H3>Forms:</H3>
+<H4>For Hagerty and Hahnemann Libraries</H4>
+<UL>
+<LI><U><FONT COLOR=blue>Reserve Request and Item List</FONT></U> (for online submission)</LI>
+<LI><U><FONT COLOR=blue></FONT></U> <U><FONT COLOR=blue>Reserve Request Form, PDF format</FONT></U> (printable)</LI>
+<LI><U><FONT COLOR=blue></FONT></U> <U><FONT COLOR=blue>Reserve Request Form, Word format</FONT></U> (printable)</LI>
+</UL>
+<H4>For Queen Lane Library</H4>
+<UL>
+<LI><U><FONT COLOR=blue></FONT></U> <U><FONT COLOR=blue>Reserve Request Form</FONT></U> (printable)</LI>
+</UL>
+<H3>When placing materials on reserve, please provide complete information:</H3>
+<UL>
+<UL>
+<LI>use the Reserve Request Form.</LI>
+<LI>completely fill out the form.</LI>
+<LI>give full  citations for items not physically accompanying the form (e.g. library books to be retrieved from the shelves).</LI>
+</UL>
+</UL>
+<P>Submit your list of reserve items before the term starts.</P>
+<P>Please request library-owned items 4 weeks  before they are needed. If the item is in circulation when you request it, it may take this long to be returned. Please submit copies of personal materials at least 2 weeks  before the term starts. Materials submitted by this deadline will be available when classes begin; materials submitted later will be processed as quickly as possible.</P>
+<P>Supply copies if possible.</P>
+<P>It is helpful and expedites the process if instructors supply copies of articles/book chapters to be placed on reserve.&nbsp; In cases where this is not possible, the library will make copies of Drexel-owned material.&nbsp;&nbsp;(The latter may delay the completion of the reserve request, especially at the beginning of the term.)&nbsp;&nbsp;</P>
+<P>We cannot promise prompt processing in the first 2-3 weeks of the term.</P>
+<P>Many instructors wait until the term starts to submit their materials; a substantial backlog of work builds up quickly. You may wait as much as a week for your materials to be processed if you submit them during this period. Please do not tell your students that an item is available before you've given it to us!</P>
+<P>Also, please do not give students course bibliographies before the needed items have been retrieved from the shelves. At least 2-3 days are needed to process requests for materials to be put on reserve.</P>
+<H3>Information for Catalog</H3>
+<P>Reserve materials may be searched in the <U><FONT COLOR=blue>Course Reserves</FONT></U> module of the library catalog by the instructor's name and/or course number. It is best if materials are submitted under the name of the instructor who actually teaches the course, and not a teaching assistant's name.</P>
+<P>&nbsp;</P>
+<H2></FONT></U>Personal copies</H2>
+<P>Please put your name in each item. A barcode and small markings will be placed on the outside of the books and other materials. A book pocket and anti-theft tape will be placed inside the book. In spite of our best efforts at prevention, theft and mutilation sometimes occur. The Libraries cannot be responsible for loss or damage of personal copies.</P>
+<H3>Picking up &quot;personal copy&quot; items.</H3>
+<P>At the end of the term instructors will be notified via email to pick up personal copies. After two weeks the items will be placed in campus mail and sent to the campus office address. After this the Libraries are no longer responsible for your property.  (Of course, personal items may be picked up at any time during the term.)</P>
+<H3>Please Reuse Copies</H3>
+<P>For vertical file articles and personal copy books, please use the same copies you've supplied in the past if the item has a barcode on it.  This will speed up processing! For homework solutions, class notes, etc. (things in binders), please reuse the old binders if they have barcodes on them.  Please do this even if you update the notes or solutions, as long as the generic title of the item is the same (e.g. &quot;Homework Solutions for MEM 235&quot;). Of course, a new copy will be supplied if the old one is in bad shape.</P>
+<P>&nbsp;</P>
+<H2></FONT></U>Electronic Reserve</H2>
+<P>Please observe the following guidelines when submitting materials to be placed on electronic reserve:</P>
+<UL>
+<LI>Begin the process early; submit your materials at least three weeks  before they are needed. A maximum of 30 items may be submitted for electronic reserve for any single course. Follow these steps:
+<OL>
+<LI>Complete the <U><FONT COLOR=blue>Reserve Request Form </FONT></U> [HTML] or <U><FONT COLOR=blue></FONT></U> <U><FONT COLOR=blue>Reserve Request Form </FONT></U> and <U><FONT COLOR=blue></FONT></U> <U><FONT COLOR=blue>Item List Form </FONT></U> [PDF], or pick up paper copy at the Reserve Desk. A Reserve Request Form (HTML, PDF, or paper) must be submitted with all reserve requests.</LI>
+<LI>Include with the Request Form all paper copies of documents to be placed on reserve, and lists of URLs that are to be linked from the Electronic Reserve system. Materials may be submitted either in person at the appropriate Reserve or Circulation Desks or via e-mail attachments.</LI>
+</OL>
+</LI>
+<LI>Materials submitted may be made in any of the following formats:
+<UL>
+<LI>PDF. Documents may be submitted as e-mail attachments sent to the reserve staff (<U><FONT COLOR=blue>reserve@drexel.edu </FONT></U>).</LI>
+<LI>Paper.  Copies must be clean 8 1/2 X 11 inches, of high quality, single sided, and contain no holes or staples.</LI>
+<LI>ASCII or .txt files. Submit items in these formats via e-mail attachments.</LI>
+<LI>Web based materials. Include the URL with your reserve requests.</LI>
+</UL>
+</LI>
+</UL>
+<H2></FONT></U>Online Reserves DVD/Video Policy, June 2008</H2>
+<P>Drexel University Libraries are committed to compliance with copyright law and to the preservation of the rights of copyright owners, as well as the rights of users of copyrighted materials.       </P>
+<P>Faculty at Drexel  are using an increasing number of video and multimedia materials in their online and face-to-face courses.  In order to support and facilitate the use of these materials by faculty and students, Drexel University Libraries can provide digitized videos and DVDs through the online reserves service.  Faculty who are assigning video content in a course may request that the library make this content available on the University&rsquo;s rich media server, so that enrolled students -- either on campus or at a distance -- may view and review the required materials at any time during the term.   This content is only available to enrolled students and is password protected.   Students may access this content through the libraries&rsquo; course reserve system or, preferably, through the appropriate course management software.</P>
+<P>Only  materials owned by the library may be provided via the online reserves  service.  If the library does not own a  particular video or DVD, we will attempt to acquire the title, within the  limits of our budget and our collection development policies.  If the material is the faculty member&rsquo;s own  product and the faculty member holds the copyright, the library will accept a  gift copy for the collection.</P>
+<P>Since the digitizing process takes considerable time, we ask  that faculty make their requests as early as possible, using the <U><FONT COLOR=blue></FONT></U> <U><FONT COLOR=blue>Online Reserves Service form</FONT></U>.</P>
+<P>Drexel University Libraries provide this service in  accordance with <U><FONT COLOR=blue>U.S. Copyright Law</FONT></U>.  The libraries consider each request on a  case-by-case basis and look to the four factors of the <U><FONT COLOR=blue>Fair Use provisions </FONT></U> for guidance.   Some requests may not meet the definition of fair use; in those cases,  the library can assist faculty members as they seek to obtain the required  permissions and/or licenses.</P>
+<P>&nbsp;</P>
+<H2></FONT></U>Restrictions</H2>
+<H3>Number of Copies per Item</H3>
+<P>Please do not submit more than one copy per 12 students  in your class, up to a maximum of three copies total.  This will generally meet the needs of the students (even in large classes), and, for photocopied materials, meets <U><FONT COLOR=blue>&quot;fair use&quot; copyright guidelines</FONT></U>. Indicate exceptional circumstances in the &quot;comments&quot; section of the reserve form.</P>
+<H3>Number of Items per Course</H3>
+<P>Please submit no more than 40 print titles per course; no more than 30 electronic titles.</P>
+<P>Materials must be renewed.</P>
+<P>Materials placed on reserve for a semester will remain on reserve for one term  only, unless renewed. Materials on &quot;permanent&quot; reserve must be renewed once per year, although many of these may be retained on reserve at the discretion of the library staff overseeing the reserves collection. [Note: See <U><FONT COLOR=blue>Electronic Reserve Policy</FONT></U> for restrictions regarding electronic reserves.] </P>
+<P>Please renew materials before the term break  to avoid the gap in availability that may occur if items are removed from reserve and must be reprocessed.</P>
+<P>&nbsp;</P>
+<H2></FONT></U>To order a title the library does not own:</H2>
+<P>Plan ahead! Order titles as far  in advance as possible,  to ensure adequate time for ordering, delivery and processing.&nbsp; Please include as complete a bibliographic reference as possible.</P>
+<P>&nbsp;</P>
+<H2></FONT></U>Questions? Contact Us:</H2>
+<P>For additional information or questions regarding electronic reserves, call the Hagerty Reserve Room at 215.895.6786 or the Hahnemann Library Access Services Librarian at 215.762.7631, or e-mail <U><FONT COLOR=blue>reserve@drexel.edu </FONT></U>.</P>
+<H2>Copyright notice for Course Reserves</H2>
+<P><EM>Pursuant to the federal Copyright Act (Title 17 of the United  States Code), it is preemptively unlawful to reproduce, distribute, or  publicly display any copyrighted work (or any substantial portion  thereof) without the permission of the copyright owner. The statute,  however, recognizes a fair use defense that has the effect of excusing  an act of copyright infringement. It is the intention of the Library to  act within the parameters of the fair use defense in allowing limited  posting of copyrighted materials in Electronic Course Reserve areas such  as this one. It is the intention of the Library, moreover, that such  materials be made available solely for the purposes of private study,  scholarship, and research, and that any further reproduction of such  materials by students, by printing or downloading, be limited to such  purposes. Any further reproduction of copyrighted materials made from  this computer system may be in violation of copyright laws and is  prohibited.</EM></P>
+  
+  
+    
+          <UL><LI></LI>
+</UL>
+     
+
+            
+            
+				<P>Content Editor: <U><FONT COLOR=blue>Cindy Humphries</FONT></U><BR>
+				Last Updated: 01/05/2012</P>
+			
+
+
+
+
+
+
+
+
+
+
+
+<P><U><FONT COLOR=blue>[feedback]</FONT></U>  <U><FONT COLOR=blue>About Us</FONT></U> | <U><FONT COLOR=blue>Downloads</FONT></U> | <U><FONT COLOR=blue>Contact Us</FONT></U> | <U><FONT COLOR=blue>Site Index</FONT></U> | <U><FONT COLOR=blue>Site Map</FONT></U> | <U><FONT COLOR=blue>Legal Research Center</FONT></U> <U><FONT COLOR=blue>[Facebook]</FONT></U> <U><FONT COLOR=blue>[Twitter]</FONT></U></P>
+
+
+
+
+
+
+
+
+	<P>Copyright &#169; 2012 Drexel University Libraries, 33rd and Market Streets, Philadelphia, PA 19104.  All rights reserved  &nbsp;&nbsp;|  &nbsp;&nbsp;<U><FONT COLOR=blue>Privacy Policy</FONT></U></P>
+
+		<P>Powered by Drupal [Druplicon icon]</P>
+	
+	
+<P><U><FONT COLOR=blue>See mobile version</FONT></U></P>
+
+	
+
+         
+                      
+<!--//--><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA16932781"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".googleanalytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//-->
+
+    
+
+  </BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>

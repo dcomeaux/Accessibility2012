@@ -1,0 +1,367 @@
+
+
+<HTML>
+
+<HEAD>
+<META CONTENT="en-us">
+
+<TITLE>Collection Development - University Libraries - USC</TITLE>
+
+
+<!--
+  // Workaround to make Netscape 4.x load external Javascript.
+// -->
+
+
+
+                        <!--
+CSAg = window.navigator.userAgent; CSBVers = parseInt(CSAg.charAt(CSAg.indexOf("/")+1),10);
+CSIsW3CDOM = ((document.getElementById) && !(IsIE()&&CSBVers<6)) ? true : false;
+function IsIE() { return CSAg.indexOf("MSIE") > 0;}
+function CSIEStyl(s) { return document.all.tags("div")[s].style; }
+function CSNSStyl(s) { if (CSIsW3CDOM) return document.getElementById(s).style; else return CSFindElement(s,0);  }
+CSIImg=false;
+function CSInitImgID() {if (!CSIImg && document.images) { for (var i=0; i<document.images.length; i++) { if (!document.images[i].id) document.images[i].id=document.images[i].name; } CSIImg = true;}}
+function CSFindElement(n,ly) { if (CSBVers<4) return document[n];
+	if (CSIsW3CDOM) {CSInitImgID();return(document.getElementById(n));}
+	var curDoc = ly?ly.document:document; var elem = curDoc[n];
+	if (!elem) {for (var i=0;i<curDoc.layers.length;i++) {elem=CSFindElement(n,curDoc.layers[i]); if (elem) return elem; }}
+	return elem;
+}
+function CSGetImage(n) {if(document.images) {return ((!IsIE()&&CSBVers<5)?CSFindElement(n,0):document.images[n]);} else {return null;}}
+CSDInit=false;
+function CSIDOM() { if (CSDInit)return; CSDInit=true; if(document.getElementsByTagName) {var n = document.getElementsByTagName('DIV'); for (var i=0;i<n.length;i++) {CSICSS2Prop(n[i].id);}}}
+function CSICSS2Prop(id) { var n = document.getElementsByTagName('STYLE');for (var i=0;i<n.length;i++) { var cn = n[i].childNodes; for (var j=0;j<cn.length;j++) { CSSetCSS2Props(CSFetchStyle(cn[j].data, id),id); }}}
+function CSFetchStyle(sc, id) {
+	var s=sc; while(s.indexOf("#")!=1) { s=s.substring(s.indexOf("#")+1,sc.length); if (s.substring(0,s.indexOf("{")).toUpperCase().indexOf(id.toUpperCase())!=1) return(s.substring(s.indexOf("{")+1,s.indexOf("}")));}
+	return "";
+}
+function CSGetStyleAttrValue (si, id) {
+	var s=si.toUpperCase();
+	var myID=id.toUpperCase()+":";
+	var id1=s.indexOf(myID);
+	if (id1==1) return "";
+	s=s.substring(id1+myID.length+1,si.length);
+	var id2=s.indexOf(";");
+	return ((id2==1)?s:s.substring(0,id2));
+}
+function CSSetCSS2Props(si, id) {
+	var el=document.getElementById(id);
+	if (el==null) return;
+	var style=document.getElementById(id).style;
+	if (style) {
+		if (style.left=="") style.left=CSGetStyleAttrValue(si,"left");
+		if (style.top=="") style.top=CSGetStyleAttrValue(si,"top");
+		if (style.width=="") style.width=CSGetStyleAttrValue(si,"width");
+		if (style.height=="") style.height=CSGetStyleAttrValue(si,"height");
+		if (style.visibility=="") style.visibility=CSGetStyleAttrValue(si,"visibility");
+		if (style.zIndex=="") style.zIndex=CSGetStyleAttrValue(si,"zindex");
+	}
+}
+function CSURLPopupShow(formName, popupName, target) {
+	var form  = (!IsIE()&&CSBVers>=5)?document.forms[formName]:CSFindElement(formName);
+	var popup = form.elements[popupName];
+	window.open(popup.options[popup.selectedIndex].value, target);
+	popup.selectedIndex = 0;
+}
+
+// -->
+            
+
+
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</FONT></U>
+
+<TABLE>
+ <TR><TD><MAP NAME="Text only">
+<AREA HREF="http://assistive.usablenet.com/tt/http://www.sc.edu/library/techserv/collman.html" COORDS="8,4,90,36" ALT="Text only version">
+<AREA HREF="http://www.sc.edu" COORDS="3,40,96,76" ALT="Go to USC homepage">
+</MAP>
+<BR>
+[CLIENT-SIDE IMAGE MAP]<OL>
+<LI><U><FONT COLOR=BLUE>Text only version</FONT></U>
+<LI><U><FONT COLOR=BLUE>Go to USC homepage</FONT></U>
+</OL>
+<BR>
+</TD>
+    <TD><U><FONT COLOR=blue>[USC Logo]</FONT></U></TD>
+    <TD>
+    [University Libaries - Collection Development]</TD>
+  </TR>
+  <TR>
+    <TD><U><FONT COLOR=blue>[UNIVERSITY OF SOUTH CAROLINA]</FONT></U></TD>
+
+    <TD>
+        
+       
+      
+    </TD>
+  </TR>
+  <TR>
+    <TD>
+    
+     <TABLE>
+        <TR>
+          <TD>
+      
+            <TABLE>
+              <TR><TD>
+                </TD><TD>
+                </TD></TR>
+              
+							
+			  <TR><TD>
+                <BR>
+                <U><FONT COLOR=blue>
+                STAFF</FONT></U><BR>
+                [INLINE]</TD></TR>
+							
+			  
+              <TR><TD>
+                <BR>
+                <U><FONT COLOR=blue>
+                POLICIES</FONT></U><BR>
+                </TD></TR>
+              
+           				
+			<TR><TD>
+                <BR>
+                <U><FONT COLOR=blue>
+                COMMITTEES</FONT></U><BR>
+                [INLINE]</TD></TR>
+				
+				<TR><TD>
+                <BR>
+                <U><FONT COLOR=blue>
+                LIAISON INFORMATION</FONT></U><BR>
+                [INLINE]</TD></TR>
+				
+				<TR><TD>
+                <BR>
+                <U><FONT COLOR=blue>
+                SUGGEST A PURCHASE</FONT></U><BR>
+                [INLINE]</TD></TR>
+                           
+              
+				</TABLE>
+				
+                 <TABLE>
+         	 <TR>
+          	<TD>
+          	</TD>
+        	</TR>
+			</TABLE>
+    
+     	 
+  					        
+          </TD>
+        </TR>
+        <TR>
+          <TD>
+          </TD>
+        </TR>
+        <TR>
+          <TD>
+    
+                
+          </TD>
+        </TR>
+      </TABLE>
+   
+   
+    <TD>
+    <TABLE>
+       
+          
+          <TR>   
+          <TD>
+          <FORM>
+      
+          <SELECT NAME="cs_popup_name_0">
+
+
+
+
+
+
+                                               </SELECT> 
+                                                 </FORM>
+                                                             
+                                  </TD>
+
+                                </TR>
+        
+          
+  <TR><TD>
+  <TABLE>
+    <TR>
+      <TD>&nbsp;</TD>
+      <TD>
+      <P ALIGN="center">Collection Development<BR>
+	  Thomas Cooper Library, <U><FONT COLOR=blue>Level 2</FONT></U>, Room 202<BR>
+	  (803) 777-1953<BR>
+	  <U><FONT COLOR=blue>geer@sc.edu</FONT></U>
+	  </P>
+	  
+	  
+      <P>
+     The Collection Development Department coordinates the work of librarians and teaching faculty in building
+library collections which strongly support the research and teaching programs of the University.     
+	</P>
+	
+		
+	<HR WIDTH="500">
+	
+	<P>The University budget for 2009-2010 year includes money to cover inflation for library subscriptions. No cancelation of titles will be required for this fiscal year. If you have questions about subscriptions, please contact <U><FONT COLOR=blue>Gary Geer</FONT></U>. </P>
+	
+	<P ALIGN="center"><EM>Subject area subscription lists:</EM><BR><BR>
+		<TABLE>
+			<TR>
+				<TD><U><FONT COLOR=blue>African American Studies</FONT></U></TD>
+				<TD><U><FONT COLOR=blue>Geology</FONT></U></TD>		
+				<TD><U><FONT COLOR=blue>Physics</FONT></U></TD>			
+			</TR>
+			
+			<TR>
+				<TD><U><FONT COLOR=blue>
+				Anthropology</FONT></U></TD>
+				<TD><U><FONT COLOR=blue>History</FONT></U></TD>	
+				<TD><U><FONT COLOR=blue>Political Science</FONT></U></TD>				
+			</TR>
+			
+			<TR>
+				<TD><U><FONT COLOR=blue>
+				Art</FONT></U></TD>
+				<TD><U><FONT COLOR=blue>HRSM</FONT></U></TD>	
+				<TD><U><FONT COLOR=blue>Psychology</FONT></U></TD>			
+			</TR>
+			
+			<TR>
+				<TD><U><FONT COLOR=blue>
+				Biology</FONT></U></TD>
+				<TD><U><FONT COLOR=blue>Humanities General</FONT></U></TD>		
+				<TD><U><FONT COLOR=blue>Public Health</FONT></U></TD>			
+			</TR>
+			
+			<TR>
+				<TD><U><FONT COLOR=blue>
+				Business</FONT></U></TD>
+				<TD><U><FONT COLOR=blue>Journalism</FONT></U></TD>	
+				<TD><U><FONT COLOR=blue>Reference</FONT></U></TD>				
+			</TR>
+			
+			<TR>
+				<TD><U><FONT COLOR=blue>
+				Chemistry</FONT></U></TD>
+				<TD><U><FONT COLOR=blue>Languages, Literatures & Cultures</FONT></U>&nbsp;&nbsp;</TD>	
+				<TD><U><FONT COLOR=blue>Religious Studies</FONT></U></TD>						
+			</TR>
+			
+			<TR>
+				<TD><U><FONT COLOR=blue>
+				Criminal Justice</FONT></U></TD>
+				<TD><U><FONT COLOR=blue>Library Science</FONT></U></TD>	
+				<TD><U><FONT COLOR=blue>Science - General</FONT></U></TD>				
+			</TR>
+			
+			<TR>
+				<TD><U><FONT COLOR=blue>
+				Education</FONT></U></TD>
+				<TD><U><FONT COLOR=blue>Linguistics</FONT></U></TD>		
+				<TD><U><FONT COLOR=blue>Social Work</FONT></U></TD>						
+			</TR>
+			
+			<TR>
+				<TD><U><FONT COLOR=blue>
+				Engineering</FONT></U></TD>
+				<TD><U><FONT COLOR=blue>Marine Science</FONT></U></TD>		
+				<TD><U><FONT COLOR=blue>Sociology</FONT></U></TD>				
+			</TR>
+			
+			<TR>
+				<TD><U><FONT COLOR=blue>
+				English</FONT></U></TD>
+				<TD><U><FONT COLOR=blue>Math</FONT></U></TD>	
+				<TD><U><FONT COLOR=blue>Statistics</FONT></U></TD>				
+			</TR>
+			
+			<TR>
+				<TD><U><FONT COLOR=blue>
+				Environmental Science</FONT></U></TD>
+				<TD><U><FONT COLOR=blue>Music</FONT></U></TD>	
+				<TD><U><FONT COLOR=blue>Theatre and Dance</FONT></U></TD>			
+			</TR>
+				
+				
+			<TR>
+				<TD><U><FONT COLOR=blue>
+				Film Media Studies</FONT></U></TD>
+				<TD><U><FONT COLOR=blue>Nursing</FONT></U></TD>	
+				<TD><U><FONT COLOR=blue>Women's Studies</FONT></U></TD>
+			</TR>
+				
+			<TR>
+				<TD><U><FONT COLOR=blue>
+				General</FONT></U></TD>
+				<TD><U><FONT COLOR=blue>Pharmacy</FONT></U></TD>		
+				<TD>&nbsp;</TD>	
+				
+			</TR>
+						<TR>
+				<TD><U><FONT COLOR=blue>
+				Geography</FONT></U></TD>
+				<TD><U><FONT COLOR=blue>Philosophy</FONT></U></TD>	
+				<TD>&nbsp;</TD>	
+				
+			</TR>
+
+				
+		</TABLE>
+		<BR>
+		
+		<U><FONT COLOR=blue>Requested journals -- no current subscription</FONT></U>		
+	</P>                                  
+  
+
+
+      
+	  <P>&nbsp;</TD>
+    </TR>
+    </TABLE>
+    </TD></TR>    
+  </TABLE>
+ <TR>
+    <TD><U><FONT COLOR=blue>RETURN TO TOP</FONT></U></TD>
+    <TD>
+    
+          
+      
+    </TD>
+    <TD><U><FONT COLOR=blue>SITE INFORMATION</FONT></U></TD></TR>  <TR>
+    <TD>    
+    <TABLE>
+      <TR>
+        <TD><U><FONT COLOR=blue>
+        [USC Logo]</FONT></U>This page updated 
+        July 14, 2009<BR>
+      by the <U><FONT COLOR=blue>University Libraries Webmaster</FONT></U>,<BR>
+      <U><FONT COLOR=blue>Copyright &copy;</FONT></U> 2005, the University of South Carolina.<BR>
+      URL http://www.sc.edu/library/techserv/collman.html<BR>
+        </TD>
+        <TD> 
+        Collection Development<BR>
+        Thomas Cooper Library<BR>
+      The University of South Carolina<BR>
+      Columbia, South Carolina 29208<BR>
+      Phone: 803-777-1953<BR>
+      Fax: 803-777-4661</TD>
+      </TR>
+    </TABLE></TD>
+  </TR>
+</TABLE>
+
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+</HTML>

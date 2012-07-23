@@ -1,0 +1,294 @@
+
+<HTML><!-- InstanceBegin template="/Templates/pageaccueil.dwt" codeOutsideHTMLIsLocked="false" -->
+<HEAD>
+<META CONTENT="text/html; charset=iso-8859-1">
+<!-- Modele v2.5 (20111216) Rev: 960 -->
+<META CONTENT="IE=EmulateIE7">
+
+<!-- InstanceBeginEditable name="doctitle" -->
+<TITLE>Centre de conservation - Biblioth&egrave;ques - Universit&eacute;&nbsp;de Montr&eacute;al</TITLE>
+<!-- InstanceEndEditable -->
+
+
+<!-- Début des styles locaux -->
+
+
+
+
+
+
+
+<!-- Fin des styles locaux -->
+
+
+
+
+<META CONTENT="fr">
+<META NAME="Author" CONTENT="">
+<META NAME="Description" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+
+
+<META NAME="dc.creator" CONTENT="">
+<META NAME="dc.description" CONTENT="">
+<META NAME="dc.subject" CONTENT="">
+<META NAME="dc.language" CONTENT="fr-CA">
+
+
+
+
+
+
+
+
+
+<!--[if lte IE 6]>
+<style>
+div#ummenuvertical div#menu ul * { height: 1px; }
+</style>
+<![endif]-->
+<!-- InstanceBeginEditable name="Metadonnees" -->
+<!-- InstanceEndEditable -->
+
+<!-- Début des scripts locaux -->
+
+
+<!-- InstanceBeginEditable name="javascriptmodeleconservation" --><!-- InstanceEndEditable -->
+
+<!-- Insérez les scripts dans cette région, à partir de 
+     la page Web pour qu'ils n'affectent que la 
+	 page en cours -->
+<!-- InstanceBeginEditable name="javascript" -->
+
+jQuery(function(){
+	jQuery('#bloc-recherche .choix-de-recherche a').click(function(e){
+		e.preventDefault();
+		var br = jQuery('#bloc-recherche'),
+		currentForm = jQuery('form.active', br),
+		targetForm = jQuery(jQuery(this).attr('href'), br),
+		currentTextInput = jQuery('input.boite-texte-recherche', currentForm),
+		targetTextInput = jQuery('input.boite-texte-recherche', targetForm);
+		// Pas d'action à prendre si l'usager clique sur l'onglet courant
+		if (currentForm[0] === targetForm[0]) {
+			return
+		};
+		// Stylage de l'onglet courant
+		jQuery('a.active', br).removeClass('active');
+		jQuery(this).addClass('active');
+		// Permutation des formulaires
+		currentForm.removeClass('active');
+		targetForm.addClass('active');
+		targetTextInput.val(currentTextInput.val()).focus();
+		currentTextInput.val('');
+	});
+	// Helpers pour IE6/7/8
+	jQuery('#bloc-recherche input:text:visible')
+		.focus(function(){
+			jQuery(this).addClass('focus');
+		})
+		.blur(function(){
+			jQuery(this).removeClass('focus');
+		});
+});
+
+
+<!-- InstanceEndEditable -->
+<!-- Fin des scripts locaux -->
+<!-- Les styles générés par Dreamweaver/Contribute sont insérés ici. 
+     Utilisez cette région modifiable au besoin pour y mettre les styles propres à la page en cours. -->
+<!-- InstanceBeginEditable name="CSS" -->
+
+
+<!--
+.style1 {fontsize: 83%}
+-->
+
+<!-- InstanceEndEditable -->
+<!-- Fin des styles locaux -->
+
+
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+  <UL>
+    <LI><U><FONT COLOR=blue>Aller au contenu [1]</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Aller au menu du site [2]</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Aller aux liens rapides [3]</FONT></U></LI>
+  </UL><!-- #BeginLibraryItem "/Library/navigationUdeM.lbi" -->
+<!--  ************************** MENU DE NAVIGATION UDEM ************************** -->
+<!--  ************************** NE DOIT JAMAIS ETRE EDITE ************************ -->
+<U><FONT COLOR=blue>[Universit&eacute; de Montr&eacute;al]</FONT></U>
+  <HR>
+  <U><FONT COLOR=blue>R&eacute;pertoires</FONT></U> |  <U><FONT COLOR=blue>Facult&eacute;s</FONT></U> |  <U><FONT COLOR=blue>Biblioth&egrave;ques</FONT></U> |  <U><FONT COLOR=blue>Plan campus</FONT></U> |  <U><FONT COLOR=blue>Sites A-Z </FONT></U> |  <U><FONT COLOR=blue>Mon portail UdeM</FONT></U>
+  <BR>
+  <FORM>
+    Texte recherch&eacute; : 
+    
+    <INPUT VALUE="" NAME="q" MAXLENGTH="255" TYPE="text">
+    <INPUT TYPE="image">
+    <BR>
+    Rechercher dans : 
+    <INPUT VALUE="Atrium" NAME="sitesearch" TYPE="radio">
+    Atrium
+    <INPUT VALUE="umontreal.ca" NAME="sitesearch" CHECKED="checked" TYPE="radio">
+    UdeM
+    
+  </FORM>
+  <FORM>
+    <!-- On force IE à utiliser UTF8 lors de l'envoie des données --> 
+    <!--[if lt IE 9]><input name="iehack" type="hidden" value="&#9760;" /><![endif]-->
+    <INPUT VALUE="Basic" NAME="mode" TYPE="hidden">
+    <INPUT VALUE="default_tab" NAME="tab" TYPE="hidden">
+    <INPUT VALUE="1" NAME="indx" TYPE="hidden">
+    <INPUT VALUE="true" NAME="dum" TYPE="hidden">
+    <INPUT VALUE="rank" NAME="srt" TYPE="hidden">
+    <INPUT VALUE="UM" NAME="vid" TYPE="hidden">
+    <INPUT VALUE="" NAME="frbg" TYPE="hidden">
+    Texte recherch&eacute; : 
+    
+    <INPUT VALUE="" NAME="vl(freeText0)" MAXLENGTH="255" TYPE="text">
+    <INPUT TYPE="image">
+    <BR>
+    Rechercher dans :  
+    <INPUT VALUE="Atrium" NAME="sitesearch" TYPE="radio">
+    Atrium
+    <INPUT VALUE="umontreal.ca" NAME="sitesearch" CHECKED="checked" TYPE="radio">
+    UdeM
+    
+  </FORM>
+
+<!-- #EndLibraryItem --><HR>
+  
+    <P>Sauter les liens rapides</FONT></U></P>
+    
+      <U><FONT COLOR=blue>[Les biblioth&egrave;ques / UdeM]</FONT></U>
+    <!-- #BeginLibraryItem "/Library/bandeaucommun.lbi" -->
+<UL>
+  <LI><U><FONT COLOR=blue>Catalogue <EM>Atrium</EM></FONT></U>
+    <UL>
+      <LI><U><FONT COLOR=blue>Démarrer <EM>Atrium</EM></FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Guide <EM>Atrium</EM></FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Renouveler vos emprunts</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Votre dossier de lecteur</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Réserve de cours</FONT></U></LI>
+    </UL>
+  </LI>
+  <LI><U><FONT COLOR=blue>Ressources &eacute;lectroniques</FONT></U>
+    <UL>
+      <LI><U><FONT COLOR=blue>Maestro (bases de données)</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Périodiques électroniques</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Dictionnaires et encyclopédies</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Information statistique</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Données géospatiales</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Papyrus (Dépôt institutionnel numérique)</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Calypso (Collections d'objets numériques)</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Accès hors-campus (Proxy)</FONT></U></LI>
+    </UL>
+  </LI>
+  <LI><U><FONT COLOR=blue>Formation</FONT></U>
+    <UL>
+      <LI><U><FONT COLOR=blue>Activités offertes</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Guides</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Compétence informationnelle</FONT></U></LI>
+    </UL>
+  </LI>
+  <LI><U><FONT COLOR=blue>Obtenir un document</FONT></U>
+    <UL>
+      <LI><U><FONT COLOR=blue>Obtenir un article</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Obtenir une thèse / un mémoire</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Prêt réseau UdeM</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Prêt entre bibliothèques</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Catalogues <BR>
+        d'autres bibliothèques</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Modalités de prêt</FONT></U></LI>
+    </UL>
+  </LI>
+  <LI><U><FONT COLOR=blue>Horaires</FONT></U></LI>
+  <LI><U><FONT COLOR=blue>Nous joindre</FONT></U></LI>
+</UL>
+<!-- #EndLibraryItem -->
+  
+  
+    <TABLE>
+      <TR>
+        <TD>&nbsp;</TD>
+        <TD><U><FONT COLOR=blue>Centre de conservation</FONT></U></TD>
+      </TR>
+    </TABLE>
+  
+  
+  
+    
+      
+        <P>Sauter le menu du site</FONT></U></P>
+        <!-- #BeginLibraryItem "/Library/menu.lbi" -->
+<UL>
+  <LI>À propos du centre de conservation
+    <UL>
+      <LI><U><FONT COLOR=blue>Informations générales</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Nous joindre</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Horaire</FONT></U></LI>
+    </UL>
+  </LI>
+  <LI>Services
+    <UL>
+      <LI><U><FONT COLOR=blue>Consultation et prêt</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Référence</FONT></U></LI>
+    </UL>
+  </LI>
+  <LI><U><FONT COLOR=blue>Travailler en bibliothèque</FONT></U></LI>
+</UL>
+<!-- Lien vers la page d'accueil -->
+<U><FONT COLOR=blue>&middot; Retour &agrave; la page d'accueil &middot;</FONT></U>
+<!-- #EndLibraryItem --> 
+    
+    <!--  /ummenuvertical -->
+    <HR>
+    
+      
+        Fil d'ariane...
+        </FONT></U>
+        
+        
+        <H1>Centre de conservation</H1>
+        
+        
+          
+            
+              <H2>Bienvenue!</H2>
+                <P>Le  Centre de conservation a ouvert ses portes le 3 octobre 2011.</P>
+                 <P>Profitez  d&rsquo;un acc&egrave;s am&eacute;lior&eacute; aux collections et d&rsquo;un espace de travail pour la  consultation sur place des collections du Centre de conservation.</P>
+
+            
+              <H2>Nous rendre visite</H2>
+              <!-- InstanceBeginEditable name="coordonnees" -->
+              <P>Pavillon Lionel-Groulx | 3150, rue Jean-Brillant, local C-1017-16 via la porte C-1059</P>
+              <P>514 343-6111, poste 42144</P><!-- InstanceEndEditable --> 
+          
+          
+            <H2>Quoi de neuf</H2>
+            <UL>
+              <!-- InstanceBeginRepeat name="communiques" --><!-- InstanceBeginRepeatEntry -->
+              <LI><!-- InstanceBeginEditable name="communique" --><U><FONT COLOR=blue>Le regard de nos &eacute;tudiants sur le monde s'expose &agrave; la BLSH</FONT></U><!-- InstanceEndEditable --> </LI>
+              <!-- InstanceEndRepeatEntry --><!-- InstanceBeginRepeatEntry -->
+              <LI><!-- InstanceBeginEditable name="communique" --><U><FONT COLOR=blue>Horaires de P&acirc;ques et de la p&eacute;riode des examens</FONT></U><!-- InstanceEndEditable --> </LI>
+              <!-- InstanceEndRepeatEntry --><!-- InstanceBeginRepeatEntry -->
+              <LI><!-- InstanceBeginEditable name="communique" --><U><FONT COLOR=blue>Publication du rapport annuel 2010-2011</FONT></U><!-- InstanceEndEditable --> </LI>
+              <!-- InstanceEndRepeatEntry --><!-- InstanceEndRepeat -->
+            </UL>
+          
+          <P><U><FONT COLOR=blue>...plus</FONT></U></P>
+        
+         
+      <!--  /umcontenu --> 
+    
+    <!--  /umcontenant --> 
+  
+  <!--  /ummenuetcontenu -->
+  <HR>
+  <!-- #BeginLibraryItem "/Library/pieddepage.lbi" -->
+  <U><FONT COLOR=blue>Urgence</FONT></U> |  <U><FONT COLOR=blue>Vie priv&eacute;e</FONT></U> | <U><FONT COLOR=blue>Offres d'emploi</FONT></U> |  <U><FONT COLOR=blue>Mon courriel</FONT></U> |  <U><FONT COLOR=blue>StudiUM</FONT></U> |  <U><FONT COLOR=blue>iTunes U</FONT></U> | <U><FONT COLOR=blue>Nous &eacute;crire</FONT></U> &nbsp; <U><FONT COLOR=blue>[Fils des nouvelles UdeM]</FONT></U>
+  <!-- #EndLibraryItem -->
+<!-- InstanceBeginEditable name="javascriptpied" --><!-- InstanceEndEditable -->
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<!-- InstanceEnd --></HTML>

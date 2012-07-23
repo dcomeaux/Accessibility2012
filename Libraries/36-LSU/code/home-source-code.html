@@ -1,0 +1,2859 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+
+  <title>LSU Libraries</title>
+
+  <link rel="stylesheet" type="text/css" href="http://www.lib.lsu.edu/style/libraries.css" />
+
+  <link rel="stylesheet" type="text/css" href="http://test.lib.lsu.edu/style/colors.css" />
+
+  <link rel="stylesheet" type="text/css" href="http://www.lib.lsu.edu/MT_SlideShow/slides/slidestyles.css" />
+
+<!--  <base href="http://www.lib.lsu.edu" />-->
+
+
+
+<!-- Sends mobile users to the mobile redirect page
+
+<script type="text/javascript">
+
+if (screen.width<800)
+
+{
+
+window.location="http://www.lib.lsu.edu/mobile-redirect.html"
+
+}
+
+</script>
+
+End of mobile redirect -->
+
+
+
+<script type="text/javascript">
+
+function hoverinfo(id) {
+
+	document.getElementById(id).style.display = "block";
+
+	// Simple follow the mouse script
+
+	var divName = 'mydiv'; // div that is to follow the mouse
+
+						   // (must be position:absolute)
+
+	var offX = 15;          // X offset from mouse position
+
+	var offY = 15;          // Y offset from mouse position
+
+	function mouseX(evt) {if (!evt) evt = window.event; if (evt.pageX) return evt.pageX; else if (evt.clientX)return evt.clientX + (document.documentElement.scrollLeft ?  document.documentElement.scrollLeft : document.body.scrollLeft); else return 0;}
+
+	function mouseY(evt) {if (!evt) evt = window.event; if (evt.pageY) return evt.pageY; else if (evt.clientY)return evt.clientY + (document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop); else return 0;}
+
+	function follow(evt) {if (document.getElementById) {var obj = document.getElementById(id).style; obj.visibility = 'visible';
+
+	obj.left = (parseInt(mouseX(evt))+5) + 'px';
+
+	obj.top = (parseInt(mouseY(evt))+ -102) + 'px';}}
+
+	document.onmousemove = follow;
+
+}
+
+function hoverinfooff(id) {document.getElementById(id).style.display = "none";}
+
+
+
+function browseswitch() {
+
+	var obj = document.getElementById('srchfield1');
+
+	if(obj.options[obj.selectedIndex].value=='GENERAL^SUBJECT^GENERAL^^keywords anywhere') catalog('keyword');
+
+	else if(obj.options[obj.selectedIndex].value=='AU^AUTHOR^AUTHORS^Author Processing^author') catalog('keyword');
+
+	else if(obj.options[obj.selectedIndex].value=='TI^TITLE^TITLES^Title Processing^title') catalog('browse');
+
+	else if(obj.options[obj.selectedIndex].value=='SU^SUBJECT^SUBJECTS^^subject') catalog('keyword');
+
+	else if(obj.options[obj.selectedIndex].value=='PER^PERTITLE^TITLES^Title Processing^periodical title') catalog('browse');
+
+	else catalog('keyword');
+
+}
+
+function catalog(method) {document.getElementById(method).selected = true;}
+
+
+
+</script>
+
+<script type="text/javascript" charset="utf-8" src="/MT_SlideShow/mootools.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="/MT_SlideShow/Loop.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="/MT_SlideShow/SlideShow.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="/MT_SlideShow/demo.js"></script>
+
+<script src="/Scripts/SpryTabbedPanels.js" type="text/javascript"></script>
+
+
+
+ 
+
+ <!-- **** layout stylesheet **** 
+
+  <link rel="stylesheet" type="text/css" href="http://www.lib.lsu.edu/style/libraries.css" />-->
+
+  <!-- **** color scheme stylesheet **** -->
+
+  <link rel="stylesheet" type="text/css" href="http://www.lib.lsu.edu/style/colors.css" />
+
+  <!-- **** printer friendly stylesheet **** -->
+
+  <link rel="stylesheet" type="text/css" href="http://www.lib.lsu.edu/style/print.css" media="print" />
+
+ 
+
+  <style type="text/css">
+
+@media only screen and (max-device-width: 480px) {  	#mobilepop {
+
+		width:760px;
+
+		height:auto;
+
+		margin:0 10px;
+
+		padding:0;
+
+		/*display:none; */
+
+		overflow:hidden;
+
+	}
+
+	#mobilecont {
+
+		width:760px;
+
+		background:#FDD023;
+
+		color:#333333;
+
+		padding:10px;
+
+		font-size:12px;
+
+		font-family:Arial, Helvetica, sans-serif;
+
+		text-align:center;
+
+		border:1px solid #ffffff;
+
+		line-height:115% !important;
+
+	} }
+
+	
+
+	#mobilecont, #mobilepop {display: none;}
+
+	
+
+</style>
+
+ 
+
+
+
+<title>LSU Libraries</title>
+
+</head>
+
+
+
+<body><img src="/images/printlogo.jpg" id="printlogo" style="display:none;" />
+
+<div id="main">
+
+<div id="mobilepop">
+
+	<div id="mobilecont">
+
+    	<p style="font-size:3em;color:#000000;line-height:115% !important;"><strong>On a mobile device?</strong></p>
+
+        <p style="font-size:2em;">View the LSU Libraries Mobile Website at<br /> <a href="http://www.lib.lsu.edu/m/">http://www.lib.lsu.edu/m/</a></p>
+
+        <!-- <p style="font-size:2em;"><input type="button" name="closempop" value="Stay" onClick="javascript:mobilepop('close');" /> <input type="button" name="redirectmpop" value="Go to Mobile Site" onClick="javascript:mobilepop('redirect');" /> </p>-->
+
+    </div>
+
+</div>
+
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!--<base href="http://www.lib.lsu.edu"  />-->
+
+<link rel="stylesheet" href="http://www.lib.lsu.edu/style/libraries.css" type="text/css" media="screen" />
+
+
+
+<link rel="stylesheet" href="http://www.lib.lsu.edu/style/colors.css" type="text/css" media="screen" />
+
+<link rel="stylesheet" href="http://www.lib.lsu.edu/includes/menu/menu.css" type="text/css" media="screen" />
+
+ 
+
+
+
+<script type="text/javascript">
+
+
+
+
+
+////////////THIS IS THE EXTERNAL LINKS NEW WINDOW JS//////////////////
+
+
+
+function exLinks() {
+
+<!-- Copyright 2005 Bontrager Connection, LLC
+
+// More info: "Automatic New Window for External Links" 
+
+//    at /library/
+
+// Also see http://BontragerConnection.com/
+
+//
+
+// List the domain names that shall not be put into new 
+
+//    windows when the link is clicked. If you use both 
+
+//    the www.example.com and example.com versions of 
+
+//    your domain name, list them both. The domains need 
+
+//    to be all one line between the quotation marks on 
+
+//    the line below, the names separated with a comma.
+
+//    Do not specify http:// URLs, just domain names.
+
+
+
+var Domains = "www.lib.lsu.edu,lib.lsu.edu,lsu.edu,www.lsu.edu,test.lib.lsu.edu,news.blogs.lib.lsu.edu,lsu.louislibraries.org,grok.lsu.edu,itsweb.lsu.edu";
+
+
+
+////////////////////////////////////////////
+
+// No other customizations are necessary. //
+
+////////////////////////////////////////////
+
+if(Domains.indexOf(" ") != -1) {
+
+   var splitarray = Domains.split(" ");
+
+   Domains = splitarray.join("");
+
+}
+
+Domains = Domains.toLowerCase();
+
+var DomainsArray = Domains.split(",");
+
+for(var i = 0; i < document.links.length; i++) {
+
+   if(document.links[i].hostname.length < 1) 
+
+   { continue; }
+
+   if(document.links[i].target.length > 0)
+
+   { continue; }
+
+   var h = document.links[i].hostname.toLowerCase();
+
+   var makeNewWindow = true;
+
+   for(var ii = 0; ii < DomainsArray.length; ii++) {
+
+      if(DomainsArray[ii] != h) 
+
+      { continue; }
+
+      makeNewWindow = false;
+
+      break;
+
+   }
+
+   if(makeNewWindow == true)
+
+   { document.links[i].title = 'This link will take you outside LSU.edu.'; }
+
+}
+
+//-->
+
+}
+
+
+
+
+
+function mobilepop(action) {
+
+	if (action == "close") document.getElementById('mobilepop').style.display = "none";
+
+	else if (action == "redirect") window.location.href = "http://www.lib.lsu.edu/m/";
+
+}
+
+
+
+function mobilepopOL() {	
+
+//	if (document.location == "http://www.lib.lsu.edu/index.html" || document.location == "http://www.lib.lsu.edu/") {
+
+//		if (screen.width <= 480) {document.getElementById('mobilepop').style.display = "block";}
+
+//		else {document.getElementById('mobilepop').style.display = "none";}
+
+//	}
+
+}
+
+
+
+function onLoadFunc() {
+
+	exLinks();
+
+	//mobilepopOL();
+
+}
+
+window.onload = onLoadFunc;
+
+
+
+// This is the expand and collapse javascript
+
+
+
+</script>
+
+
+
+<!-- The following JavaScript code gets the current date from the viewer's machine. --> 
+
+<script type="text/javascript">
+
+<!-- tag to hide script from older browsers that don't support JavaScript
+
+function display_todays_date()
+
+{
+
+var today = new Date();
+
+var numerical_day=today.getDay();
+
+var numerical_month=today.getMonth();
+
+var date=today.getDate();
+
+var year=today.getFullYear();
+
+var weekday_array = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+
+var day_of_the_week = weekday_array[numerical_day];
+
+var month_array = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+
+var month_name = month_array[numerical_month];
+
+var date_string=day_of_the_week+', '+month_name+' '+date+', '+year;
+
+document.write(date_string);
+
+}
+
+//-->
+
+</script>
+
+  <style type="text/css">
+
+	#mobilepop {
+
+		/*position:absolute;
+
+		top:10px;
+
+		left:10px;*/
+
+		width:760px;
+
+		height:auto;
+
+		margin:0 10px;
+
+		padding:0;
+
+		display:none;
+
+		overflow:hidden;
+
+	}
+
+	#mobilecont {
+
+		width:760px;
+
+		background:#FDD023;
+
+		color:#333333;
+
+		padding:10px;
+
+		font-size:12px;
+
+		font-family:Arial, Helvetica, sans-serif;
+
+		text-align:center;
+
+		border:1px solid #ffffff;
+
+		line-height:115% !important;
+
+	}
+
+</style>
+
+<!-- End the current date script. --> 
+
+</head>
+
+<body>
+
+	<img src="/images/printlogo.jpg" id="printlogo" style="display:none;" />
+
+
+
+<div id="main">
+
+	<div id="mobilepop">
+
+		<div id="mobilecont">
+
+    	<p style="font-size:3em;color:#000000;line-height:115% !important;"><strong>On a mobile device?</strong></p>
+
+        <p style="font-size:2em;">View the LSU Libraries Mobile Website at<br /> <a href="http://www.lib.lsu.edu/m/">http://www.lib.lsu.edu/m/</a></p>
+
+        <!-- <p style="font-size:2em;"><input type="button" name="closempop" value="Stay" onClick="javascript:mobilepop('close');" /> <input type="button" name="redirectmpop" value="Go to Mobile Site" onClick="javascript:mobilepop('redirect');" /> </p>-->
+
+	    </div>
+
+	</div>
+
+
+
+<div id="links">
+
+	<!--Begin Utility Bar-->
+
+	<ul class="utility" style="margin:auto; white-space:nowrap">
+
+	<li class="utility" style="width:130px"><a href="http://text.lsu.edu/tt/http://www.lsu.edu">
+
+		<img src="http://www.lib.lsu.edu/images/spacer.gif" alt="Text Only" border="0"></a>
+
+		<a href="https://mylsu.apps.lsu.edu/group/mycampus/"><img src="http://www.lib.lsu.edu/images/MyLSU-login.gif" alt="Login to MyLSU"></a>
+
+	</li> 
+
+	<li class="utility" style="width:340px;"> Baton Rouge, Louisiana | 
+
+	<!--Begin date display-->
+
+	<script type="text/javascript">display_todays_date();</script>
+
+	<!--end date display-->
+
+	</li> 
+
+
+
+ 	<li class="utility"  style="width:200px; text-align:right; height:15px;" >
+
+	<form name="google1" method="GET" action="http://www.google.com/search">
+
+		<label for="searchbox"> 
+
+		<input name="image" type="image" border="0" id="image" src="/images/header_util_search.gif" alt="Go" width="17" height="14" style="border:0" />
+
+		<input name="q" id="searchbox" type="text" size="20" value="Search lsu.edu" alt="Search" onClick="select()"/></label>
+
+		<input type="hidden" name="sitesearch" value="lsu.edu" /> 
+
+		</form>
+
+	</li>
+
+
+
+</ul>
+
+<!--End Utility Bar   -->
+
+		</div>
+
+ 
+
+<a href="http://www.lsu.edu"><div id="logo"></div></a>
+
+
+
+	<ul id="menu">
+
+ 	  <li><a href="http://www.lib.lsu.edu/">LSU Libraries</a><!-- Begin Home Item -->
+
+    
+
+       <!-- <div class="dropdown_2columns">--><!-- Begin 2 columns container -->
+
+    
+
+    <!--        <div class="col_2">
+
+                <h2>Welcome !</h2>
+
+            </div>
+
+    
+
+            <div class="col_2">
+
+                <p>Welcome to the LSU Libraries web site.  </p>             
+
+                <p>The LSU Libraries web site is a gateway to the information and research needs of the LSU community.  It can be used to locate books, link to ejournal articles, communicate with subject librarians and other library staff and faculty members.</p>             
+
+            </div>
+
+    
+
+            <div class="col_2">
+
+                <h2>Cross Browser Support</h2>
+
+            </div>
+
+            
+
+            <div class="col_1">
+
+                <img src="img/browsers.png" width="125" height="48" alt="" />
+
+            </div>
+
+            
+
+            <div class="col_1">
+
+                <p>This mega menu has been tested in all major browsers.</p>
+
+            </div>
+
+          
+
+        </div>--><!-- End 2 columns container -->
+
+    
+
+    </li><!-- End Home Item -->
+
+    
+
+         <!--
+
+     ///////////////////////////////////////////////////
+
+     ///////////////////////////////////////////////////
+
+     ///////                                     ///////
+
+     ///////          ABOUT US                   ///////
+
+     ///////                                     ///////
+
+     ///////////////////////////////////////////////////
+
+     ///////////////////////////////////////////////////
+
+     -->
+
+ 	   	 <li><a href="#" class="drop">About Us</a><!-- Begin 5 columns Item -->
+
+        <div class="dropdown_4columns"><!-- Begin 5 columns container -->
+
+        
+
+             <div class="col_4">
+
+                <h2>Welcome to the LSU Libraries Website!</h2>
+
+                <p>The LSU Libraries web site is a gateway to the information and research needs of the LSU community. It can be used to locate books, link to ejournal articles, and to communicate with subject librarians and other library staff and faculty members.
+
+</p>
+
+            </div>
+
+             <div class="col_1">
+
+            
+
+                <h3>Information</h3>
+
+     <!--           <p class="black_box">This is a dark grey box text. Fusce in metus at enim porta lacinia vitae a arcu. Sed sed lacus nulla mollis porta quis.</p>-->
+
+     
+
+            <ul> 
+
+            <li><a href="http://www.lib.lsu.edu/lib/about">About the Libraries</a></li>
+
+            <li><a href="http://www.lib.lsu.edu/directions.html">Driving Directions</a></li>
+
+            <li><a href="http://www.lib.lsu.edu/lib/jobs/index.html">Employment</a></li>
+
+            <li><a href="http://www.lib.lsu.edu/admin/hours">Hours</a></li>
+
+            <li><a href="http://www.lib.lsu.edu/lib/policies.html">Policies</a></li>
+
+            
+
+            </ul>
+
+            </div>
+
+   		        <div class="col_1">
+
+                <h3>Directory</h3>
+
+                <ul>
+
+                <li><a href="http://www.lib.lsu.edu/admin/directory.php">All</a></li>
+
+                <li><a href="http://www.lib.lsu.edu/admin/faculty.php">Faculty</a></li>
+
+                <li><a href="http://www.lib.lsu.edu/collserv/colldev/liaison.php">Subject Librarians</a></li>
+
+              <!--  <li><a href="http://www.lib.lsu.edu/sp/subjects/staff.php?letter=By Department">By Departments</a></li>-->
+
+                </ul>
+
+                
+
+                
+
+            </div> 
+
+            <div class="col_2">
+
+               <h3>Frequently Dialed Numbers</h3>
+
+               
+
+              <p>- Circulation (fines, borrowing): 578-2058<br /> 
+
+              - Reference (help finding information): 578-5652<br />
+
+              - Music Resources: 578-4674<br />
+
+              - Special Collections: 578-6568 </p>
+
+            </div>
+
+           <div class="col_3">&nbsp; 
+
+                   </div>
+
+                   <div class="col_1">
+
+                   
+
+                   <a style="display:inline; border:none" href="http://news.blogs.lib.lsu.edu/" target="_blank" title="LSU Libraries Blog"><img style="vertical-align:middle; display:inline; border:none" src="http://www.lib.lsu.edu/images/wordpress_icon.png" /></a>
+
+                   
+
+                     <a style="display:inline; border:none" href="http://news.blogs.lib.lsu.edu/feed" target="_blank" title="LSU Libraries Blog RSS Feed"><img style="vertical-align:middle; border:none" src="http://www.lib.lsu.edu/images/rss_icon.png" /></a>
+
+                  <a style="display:inline; border:none" href="http://www.facebook.com/pages/Baton-Rouge-LA/LSU-Libraries/22954284331" target="_blank" title="LSU Libraries on Facebook"> <img style="vertical-align:middle; border:none" src="http://www.lib.lsu.edu/images/fb_icon.png" /></a>
+
+                   <a style="display:inline; border:none" href="http://twitter.com/lsulibraries" target="_blank" title="LSU Libraries on Twitter"> <img style="vertical-align:middle; border:none"  src="http://www.lib.lsu.edu/images/twitter_icon.png" /> </a>
+
+                  
+
+            
+
+                
+
+                </div>
+
+         
+
+ 
+
+        
+
+        </div><!-- End 5 columns container -->
+
+     </li><!-- End 5 columns Item -->
+
+     
+
+     <!--
+
+     ///////////////////////////////////////////////////
+
+     ///////////////////////////////////////////////////
+
+     ///////                                     ///////
+
+     ///////          RESEARCH TOOLS             ///////
+
+     ///////                                     ///////
+
+     ///////////////////////////////////////////////////
+
+     ///////////////////////////////////////////////////
+
+     -->
+
+     
+
+     <li><a href="#" class="drop">Research Tools</a><!-- Begin 4 columns Item -->
+
+    
+
+        <div class="dropdown_3columns"><!-- Begin 4 columns container -->
+
+        
+
+               <div class="col_1">
+
+            
+
+                <h3>Find Books</h3>
+
+                <ul>
+
+                    <li><a href="https://lsu.louislibraries.org:5203/uhtbin/cgisirsi/0/0/0/38/X/POWER_SEARCH">Online Catalog</a></li>
+
+                    <li><a href="http://lsulibraries.worldcat.org/">WorldCat Local</a></li>
+
+                    <li><a href="http://www.lib.lsu.edu/weblio.html">Subject Guides</a></li>
+
+<!--                    <li><a href="http://www.lib.lsu.edu/sp/subjects/index.php">Subject Guides</a></li> -->
+
+                    <li><a href="http://www.lib.lsu.edu/govdocs/">Gov't Documents</a></li>
+
+                    <li><a href="https://lsu.louislibraries.org:5203/uhtbin/cgisirsi/0/0/0/36/73/X/BLASTOFF">Reserves</a>
+
+                    <!-- <li><a href="#">more</a></li>-->
+
+                </ul>   
+
+                             </div>
+
+                   <div class="col_1">
+
+                <h3>Find Articles</h3> 
+
+                <ul>
+
+                    <li><a href="http://www.lib.lsu.edu/databases">Indexes &amp; Databases</a></li>
+
+                    <li><a href="http://www.lib.lsu.edu/epubs/ejournals.html">Ejournals</a></li>
+
+                 <!--   <li><a href="#">How to find Articles</a></li>-->
+
+                </ul>   
+
+                 
+
+                <h3>Other</h3>
+
+                <ul>
+
+                    <li><a href="http://www.lib.lsu.edu/govdocs/">Gov't Documents</a></li>
+
+                    <li><a href="http://www.lib.lsu.edu/ref/readyref.html">Other Resources</a></li>
+
+                </ul>   
+
+            </div>
+
+               <div class="col_1">
+
+                <h3>Help</h3>
+
+                <ul>
+
+                    <li><a href="http://www.lib.lsu.edu/virtual">Ask a Librarian</a></li>
+
+                    <li><a href="http://www.lib.lsu.edu/collserv/colldev/liaison.php">Subject Librarians</a></li>
+
+<!--                <li><a href="http://www.lib.lsu.edu/sp/subjects/staff.php?letter=Subject Librarians A-Z">Subject Librarians</a></li> -->
+
+                    <li><a href="http://www.lib.lsu.edu/instruction/tutorials.html">Tutorials</a></li>
+
+                    <li><a href="http://www.lib.lsu.edu/gateway/configuration.html">Technical Help</a></li>
+
+                </ul>   
+
+            </div>
+
+   
+
+        </div><!-- End 4 columns container -->
+
+    
+
+    </li><!-- End 4 columns Item -->
+
+    
+
+  
+
+    <!-- Start services -->
+
+         <!--
+
+     ///////////////////////////////////////////////////
+
+     ///////////////////////////////////////////////////
+
+     ///////                                     ///////
+
+     ///////             SERVICES                ///////
+
+     ///////                                     ///////
+
+     ///////////////////////////////////////////////////
+
+     ///////////////////////////////////////////////////
+
+     -->
+
+    
+
+        <li><a href="#" class="drop">Services</a><!-- Begin 4 columns Item -->
+
+    
+
+        <div class="dropdown_3columns"><!-- Begin 4 columns container -->
+
+        
+
+    <!--        <div class="col_3">
+
+                <h2>Research</h2>
+
+            </div>
+
+    -->      
+
+         
+
+            <div class="col_1">
+
+            
+
+                    <h3>Instruction</h3>
+
+                <ul>
+
+                
+
+                    <li><a href="http://www.lib.lsu.edu/instruction/">Instruction Webpage</a></li>
+
+                    <li><a href="http://www.lib.lsu.edu/instruction/lis1001/lis1001.html">LIS 1001</a></li>
+
+                    <li><a href="http://cas.lsu.edu/contact" target="_blank">Tutorial Center (141 Middleton)</a>
+
+                    
+
+                    <li><a href="http://www.lib.lsu.edu/virtual/">Ask a Librarian</a></li>
+
+                    <li><a href="http://www.lib.lsu.edu/instruction/tutorials.html">Tutorials</a></li>
+
+                    <li><a href="http://www.lib.lsu.edu/classroom/instructions.html">Request Instruction</a></li>
+
+                    <li><a href="http://www.lib.lsu.edu/classroom/">Reserve a Classroom</a></li>
+
+               
+
+                </ul>   
+
+                 
+
+            </div>
+
+       
+
+  
+
+    
+
+            <div class="col_1">
+
+            
+
+                <h3>Borrowing</h3>
+
+                <ul>
+
+                    <li><a href="http://www.lib.lsu.edu/ILL.html">Interlibrary Loan</a></li>
+
+                    <li><a href="https://lsu.louislibraries.org:5203/uhtbin/cgisirsi/0/0/0/1/38/X/BLASTOFF">Your Library Account</a></li>
+
+              
+
+                    <li><a href="http://www.lib.lsu.edu/circ">Circulation Policies</a></li>
+
+                    <li><a href="https://lsu.louislibraries.org:5203/uhtbin/cgisirsi/0/0/0/36/73/X/BLASTOFF">Reserves</a></li>
+
+                   <!-- <li><a href="#">more</a></li>-->
+
+                </ul>   
+
+                
+
+                 <h3>Other</h3>
+
+                <ul>
+
+                <li><a href="http://www.lib.lsu.edu/ref/adaptive.html">Disability Services</a></li>
+
+                <li><a href="http://www.lib.lsu.edu/instruction/distance/">Distance Education</a></li>
+
+                <li><a href="http://www.lib.lsu.edu/circ/studyrooms.html">Study/ Presentation Rooms</a>
+
+                </ul>
+
+                 
+
+            </div>
+
+    
+
+            <div class="col_1">
+
+            
+
+                <h3>Technology</h3>
+
+                <ul>
+
+                    <li><a href="http://www.lsu.edu/helpdesk">Help Desk</a></li>
+
+                    <li><a href="http://www.lib.lsu.edu/admin/directory.php?q=print&field=fname&searching=yes&Submit=Search">Print Desk</a></li>
+
+                    <li><a href="http://pac-labstats.lsu.edu:8080/public/labmap_list.jsp#">Find a Computer</a></li>
+
+                    <li><a href="http://www.lib.lsu.edu/gateway/configuration.html">Technical Help</a></li>
+
+                    <li><a href="http://vizlab.lsu.edu/">Visualization Services Center (109 Middleton)</a>
+
+                 
+
+                </ul>  
+
+                 
+
+            </div>
+
+    
+
+     <!--       <div class="col_1">
+
+            
+
+                <h3>Misc</h3>
+
+                <ul>
+
+                    <li><a href="#">Design</a></li>
+
+                    <li><a href="#">Logo</a></li>
+
+                    <li><a href="#">Flash</a></li>
+
+                    <li><a href="#">Illustration</a></li>
+
+                    <li><a href="#">More...</a></li>
+
+                </ul>   
+
+                 
+
+            </div>
+
+            -->
+
+        </div><!-- End 4 columns container -->
+
+    
+
+    </li><!-- End 4 columns Item -->
+
+    
+
+    <!-- end services -->
+
+    
+
+         <!--
+
+     ///////////////////////////////////////////////////
+
+     ///////////////////////////////////////////////////
+
+     ///////                                     ///////
+
+     ///////             DEPARTMENTS             ///////
+
+     ///////                                     ///////
+
+     ///////////////////////////////////////////////////
+
+     ///////////////////////////////////////////////////
+
+     -->
+
+
+
+	<li class="drop"><a href="#" class="drop">Departments</a>
+
+    
+
+		<div class="dropdown_1column align_right">
+
+        
+
+                <div class="col_1">
+
+                
+
+                    <ul class="simple">
+
+                        <li><a href="http://www.lib.lsu.edu/collserv/colldev/">Acquisitions</a></li>
+
+                        <li><a href="http://www.lib.lsu.edu/circ">Circulation</a></li>
+
+                        <li><a href="http://www.lib.lsu.edu/edu/er/">Education Resources</a></li>
+
+                        <li><a href="http://www.lib.lsu.edu/govdocs/">Gov't Documents</a></li>
+
+                        <li><a href="http://www.lib.lsu.edu/ILL.html">Interlibrary Loan</a></li>
+
+                        <li><a href="http://www.lib.lsu.edu/music/">Music Resources</a></li>
+
+                        <li><a href="http://www.lib.lsu.edu/ref">Reference</a></li>                     
+
+                        <li><a href="http://www.lib.lsu.edu/special">Special Collections</a></li>
+
+                        <li><a href="http://www.lib.lsu.edu/comprehensive.html">More</a></li>
+
+              
+
+                    </ul>   
+
+                     
+
+                </div>
+
+                
+
+		</div>
+
+        
+
+	</li>
+
+
+
+
+
+     <!--
+
+     ///////////////////////////////////////////////////
+
+     ///////////////////////////////////////////////////
+
+     ///////                                     ///////
+
+     ///////              HELP                   ///////
+
+     ///////                                     ///////
+
+     ///////////////////////////////////////////////////
+
+     ///////////////////////////////////////////////////
+
+     -->
+
+
+
+    <li class="menu_right"><a href="#" class="drop">Help</a><!-- Begin 3 columns Item -->
+
+    
+
+        <div class="dropdown_3columns align_right"><!-- Begin 3 columns container -->
+
+            
+
+            <div class="col_3">
+
+                <h2>Help</h2>
+
+            </div>
+
+            
+
+            <div class="col_1"> 
+
+    
+
+                <ul class="greybox">
+
+                    <li><a href="http://www.lib.lsu.edu/gateway/configuration.html">Technical Help</a></li>
+
+                   
+
+                    <li><a href="http://cas.lsu.edu/contact">Tutorial Center</a></li>
+
+                    <li><a href="http://www.lib.lsu.edu/virtual/">Call Us</a> 225.578.8875</li>
+
+                
+
+                </ul>   
+
+    
+
+            </div>
+
+            
+
+            <div class="col_1">
+
+    
+
+                <ul class="greybox">
+
+                    <li><a href="http://www.lib.lsu.edu/collserv/colldev/liaison.php">Research Help</a></li>
+
+                    <li><a href="http://www.lsu.edu/helpdesk">Help Desk</a> 225.578.3375</li>
+
+                    <li><a href="http://www.lib.lsu.edu/lib/dear.html">Email Us</a></li>
+
+               
+
+                </ul>   
+
+    
+
+            </div>
+
+            
+
+            <div class="col_1">
+
+    
+
+                <ul class="greybox">
+
+                    <li><a href="http://faq.blogs.lib.lsu.edu/#">FAQ</a></li>
+
+                    <li><a href="http://www.lib.lsu.edu/virtual/">Ask a Librarian</a></li>
+
+                    <li><a href="http://www.lib.lsu.edu/virtual/onlinereference.html">IM Us</a></li>
+
+              
+
+                </ul>   
+
+    
+
+            </div>
+
+            
+
+            <div class="col_3">
+
+                <h2>Search the Libraries Web Site</h2>
+
+                
+
+                     <form action="http://www.google.com/search" method="get" style="text-align:center;display:block;margin-bottom:10px;">
+
+                <input name="image" type="image" border="0" id="image" src="http://www.lib.lsu.edu/images/header_util_search.gif" alt="Go" width="17" height="14" style="border:0 !important;" />
+
+                <input style="width:175px;margin:0px;" name="q" id="searchbox2" type="text" alt="search" onfocus="select();" />
+
+                <input type="hidden" name="sitesearch" value="www.lib.lsu.edu" />
+
+                </form>
+
+            </div>
+
+            
+
+          <!--  <div class="col_3">
+
+                <img src="img/02.jpg" width="70" height="70" class="img_left imgshadow" alt="" />
+
+                <p><strong>Tutorial Lab</strong> Located in 141 Middleton Library, the lab offers tutoring in Math....(this should go under instruction)<a href="#">Read more...</a></p>
+
+    <br clear="all" />
+
+                <img src="img/01.jpg" width="70" height="70" class="img_left imgshadow" alt="" />
+
+                <p>Aliquam elementum felis quis felis consequat scelerisque. Fusce sed lectus at arcu mollis accumsan at nec nisi. Aliquam pretium mollis fringilla. Vestibulum tempor facilisis malesuada. <a href="#">Read more...</a></p>
+
+            </div>
+
+        -->
+
+        </div><!-- End 3 columns container -->
+
+        
+
+    </li><!-- End 3 columns Item -->
+
+    
+
+         <!--
+
+     ///////////////////////////////////////////////////
+
+     ///////////////////////////////////////////////////
+
+     ///////                                     ///////
+
+     ///////           A TO Z                    ///////
+
+     ///////                                     ///////
+
+     ///////////////////////////////////////////////////
+
+     ///////////////////////////////////////////////////
+
+     -->
+
+
+
+<li class="menu_right"><a href="http://www.lib.lsu.edu/contents.html" class="">A to Z</a></li>
+
+</ul>
+
+  
+
+
+
+ 
+
+
+
+
+
+<div id="content"> 
+
+<div id="homepagecontent">
+
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<!-- /////////////////////////////////////////////////////////// SLIDE SHOW //////////////////////////////////////////////////// -->
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+<div id="slideshow">
+
+<div id="slides">
+
+   <!-- Transition Options: crossFade, pushUp, pushDown, blindLeft, blindRight, blindRightFade-->
+
+
+
+  <div class="transition:blindRightFade duration:1000 slide" style="visibility:hidden;">
+
+   <div id="myld">
+
+<img src="/MT_slideshow/slides/images/MYLD2012.jpg" />
+
+</div></div> 
+
+
+
+   <div class="transition:blindRightFade duration:1000 slide" style="visibility:hidden;">
+
+   <div>
+
+<a href="/lib/friends/bazaar.html">
+
+<img src="/MT_slideshow/slides/images/bookbazaar.jpg" /></a>
+
+</div>
+
+</div> 
+
+
+
+   <div class="transition:blindRightFade duration:1000 slide" style="visibility:hidden;">
+
+   <div>
+
+<img src="/MT_slideshow/slides/images/antitheft.jpg" />
+
+</div>
+
+</div> 
+
+
+
+
+
+   <div class="transition:blindRightFade duration:1000 slide" style="visibility:hidden;">
+
+   <div>
+
+<a href="/govdocs/"><img src="/MT_slideshow/slides/images/irs.jpg" /></a>
+
+</div></div> 
+
+    
+
+
+
+   
+
+ 
+
+         
+
+   <div class="transition:blindRightFade duration:1000 slide" style="visibility:hidden;">
+
+   <div>
+
+<a href="/databases/descriptions/learningexpress.html" target="_blank"><img src="/MT_slideshow/slides/images/learningexpress.jpg" /></a>
+
+</div>
+
+
+
+</div> 
+
+
+
+   <div class="transition:blindRightFade duration:1000 slide" style="visibility:hidden;">
+
+   <div id="mobileslide">
+
+	<div id="ms_buttons"></div>
+
+    <div id="ms_screen">
+
+        <div id="qrcode">
+
+        	<img src="/MT_SlideShow/slides/images/qrcode_mobile.png" id="qrcodeimg" />
+
+            <p style="margin:0 0 4px 0;padding:0;">Scan the QR Code with your mobile device to connect!</p>
+
+        </div>
+
+        <p id="ms_head">On the go?</p>
+
+        <p id="ms_cont">Visit the LSU Libraries Mobile Website on your mobile device at <br /><span style="font-size:12px;"><a href="/m">http://www.lib.lsu.edu/m/</a></span></p>
+
+	</div>
+
+</div>
+
+</div> 
+
+	
+
+   <div class="transition:blindRightFade duration:1000 slide" style="visibility:hidden;">
+
+   <script type="text/javascript">
+
+function LOUISinfo(id) {
+
+
+
+document.getElementById(id).style.display = "block";
+
+document.getElementById('animation').style.background = "url('/MT_SlideShow/slides/images/"+id+"') no-repeat #333333";
+
+// Simple follow the mouse script
+
+
+
+var divName = 'mydiv'; // div that is to follow the mouse
+
+                       // (must be position:absolute)
+
+var offX = 15;          // X offset from mouse position
+
+var offY = 15;          // Y offset from mouse position
+
+
+
+function mouseX(evt) {if (!evt) evt = window.event; if (evt.pageX) return evt.pageX; else if (evt.clientX)return evt.clientX + (document.documentElement.scrollLeft ?  document.documentElement.scrollLeft : document.body.scrollLeft); else return 0;}
+
+function mouseY(evt) {if (!evt) evt = window.event; if (evt.pageY) return evt.pageY; else if (evt.clientY)return evt.clientY + (document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop); else return 0;}
+
+
+
+function follow(evt) {if (document.getElementById) {var obj = document.getElementById(id).style; obj.visibility = 'visible';
+
+obj.left = (parseInt(mouseX(evt))+5) + 'px';
+
+obj.top = (parseInt(mouseY(evt))+ -102) + 'px';}}
+
+document.onmousemove = follow;
+
+
+
+}
+
+
+
+function LOUISinfooff(id) {
+
+
+
+document.getElementById(id).style.display = "none";
+
+document.getElementById('animation').style.background = "url('/MT_SlideShow/slides/images/LOUISlsu.png') #333333";
+
+
+
+}
+
+</script>
+
+
+
+<div id="LOUISslide">
+
+<h1>LOUIS Helps LSU Libraries Provide<br />the Big Picture in Your Research</h1>
+
+
+
+<div id="animation"></div>
+
+<div id="slidemenu">
+
+    <p onmouseover="javascript:LOUISinfo('LOUISlouis');" onmouseout="javascript:LOUISinfooff('LOUISlouis');" style="cursor:crosshair;">LOUIS Resources</p>
+
+    <p onmouseover="javascript:LOUISinfo('LOUISlsu');" onmouseout="javascript:LOUISinfooff('LOUISlsu');" style="cursor:crosshair;">LSU <br />Resources</p>
+
+    <p onmouseover="javascript:LOUISinfo('LOUISoa');" onmouseout="javascript:LOUISinfooff('LOUISoa');" style="cursor:crosshair;">Open Access Resources</p>
+
+    <p onclick="javascript:window.location='http://www.lib.lsu.edu/admin/LOUIS_crisis.html';" style="cursor:pointer;">More Information</p>
+
+    <p><br /><span style="display:inline-block;margin-bottom:2px;width:4px;height:4px;background:#00CC33;"></span><span style="font-size:9px;color:#bbbbbb;"> = 100 Titles</span></p>
+
+</div>
+
+
+
+</div>
+
+</div>
+
+	
+
+   <div class="transition:blindRightFade duration:1000 slide" style="visibility:hidden;">
+
+   <script type="text/javascript">
+
+var id;
+
+function slidezoom(id) {
+
+	var others = new Array();
+
+	if(id == 'otero') {others[1] = 'hall'; others[2] = 'lowe'; others[3] = 'pasquier'; others[4] = 'phillips'; others[5] = 'ryan'; others[6] = 'sullivan'; }
+
+	else if (id == 'hall') {others[1] = 'lowe'; others[2] = 'pasquier'; others[3] = 'phillips'; others[4] = 'ryan'; others[5] = 'sullivan'; others[6] = 'otero'; }
+
+	else if (id == 'lowe') {others[1] = 'pasquier'; others[2] = 'phillips'; others[3] = 'ryan'; others[4] = 'sullivan'; others[5] = 'otero'; others[6] = 'hall'; }
+
+	else if (id == 'pasquier') {others[1] = 'phillips'; others[2] = 'ryan'; others[3] = 'sullivan'; others[4] = 'otero'; others[5] = 'hall'; others[6] = 'lowe'; }
+
+	else if (id == 'phillips') {others[1] = 'ryan'; others[2] = 'sullivan'; others[3] = 'otero'; others[4] = 'hall'; others[5] = 'lowe'; others[6] = 'pasquier'; }
+
+	else if (id == 'ryan') {others[1] = 'sullivan'; others[2] = 'otero'; others[3] = 'hall'; others[4] = 'lowe'; others[5] = 'pasquier'; others[6] = 'phillips'; }
+
+	else if (id == 'sullivan') {others[1] = 'otero'; others[2] = 'hall'; others[3] = 'lowe'; others[4] = 'pasquier'; others[5] = 'phillips'; others[6] = 'ryan'; }
+
+	
+
+	document.getElementById('slidetitle').style.display = 'none';
+
+	
+
+	document.getElementById(id+'pop').style.width = '275px';
+
+	document.getElementById(id+'pop').style.height = '211px';
+
+	document.getElementById(id+'pop').style.top = '0px';
+
+	document.getElementById(id+'pop').style.left = '0px';
+
+	document.getElementById(id+'pop').style.background = '#ffffff';
+
+	document.getElementById(id+'pop').style.border = '3px solid #E9B200';
+
+	document.getElementById(id+'pop').className = 'curve';
+
+	document.getElementById(id).style.cssFloat = 'left';
+
+	document.getElementById(id).style.margin = '28px 10px';
+
+	document.getElementById(id).style.width = '109px';
+
+	document.getElementById(id).style.height = '152px';
+
+	document.getElementById(id).style.cursor = 'default';
+
+	
+
+	var one = document.getElementById(others[1]+'pop'); 
+
+		one.classname = '';
+
+		one.style.top = '0px';
+
+		one.style.left = '305px'; 
+
+		one.style.width = '50px'; document.getElementById(others[1]).style.width = '50px';
+
+		one.style.height = '56px'; document.getElementById(others[1]).style.height = '56px';
+
+		one.style.background = 'none';
+
+		one.style.border = 'none';
+
+		one.style.zIndex = '1';
+
+		document.getElementById(others[1]).style.margin = '0px';
+
+	var two = document.getElementById(others[2]+'pop'); 
+
+		two.classname = '';
+
+		two.style.top = '17px';
+
+		two.style.left = '300px';
+
+		two.style.width = '60px'; document.getElementById(others[2]).style.width = '60px';
+
+		two.style.height = '84px'; document.getElementById(others[2]).style.height = '84px';
+
+		two.style.background = 'none';
+
+		two.style.border = 'none';
+
+		two.style.zIndex = '2';
+
+		document.getElementById(others[2]).style.margin = '0px';
+
+	var three = document.getElementById(others[3]+'pop'); 
+
+		three.classname = '';
+
+		three.style.top = '34px';
+
+		three.style.left = '295px';
+
+		three.style.width = '70px'; document.getElementById(others[3]).style.width = '70px';
+
+		three.style.height = '98px'; document.getElementById(others[3]).style.height = '98px';
+
+		three.style.background = 'none';
+
+		three.style.border = 'none';
+
+		three.style.zIndex = '3';
+
+		document.getElementById(others[3]).style.margin = '0px';
+
+	var four = document.getElementById(others[4]+'pop'); 
+
+		four.classname = '';
+
+		four.style.top = '51px';
+
+		four.style.left = '290px';
+
+		four.style.width = '80px'; document.getElementById(others[4]).style.width = '80px';
+
+		four.style.height = '112px'; document.getElementById(others[4]).style.height = '112px';
+
+		four.style.background = 'none';
+
+		four.style.border = 'none';
+
+		four.style.zIndex = '4';
+
+		document.getElementById(others[4]).style.margin = '0px';
+
+	var five = document.getElementById(others[5]+'pop'); 
+
+		five.classname = '';
+
+		five.style.top = '68px';
+
+		five.style.left = '285px';
+
+		five.style.width = '90px'; document.getElementById(others[5]).style.width = '90px';
+
+		five.style.height = '126px'; document.getElementById(others[5]).style.height = '126px';
+
+		five.style.background = 'none';
+
+		five.style.border = 'none';
+
+		five.style.zIndex = '5';
+
+		document.getElementById(others[5]).style.margin = '0px';
+
+	var six = document.getElementById(others[6]+'pop'); 
+
+		six.classname = '';
+
+		six.style.top = '85px';
+
+		six.style.left = '280px';
+
+		six.style.width = '100px'; document.getElementById(others[6]).style.width = '100px';
+
+		six.style.height = '139px'; document.getElementById(others[6]).style.height = '139px';
+
+		six.style.background = 'none';
+
+		six.style.border = 'none';
+
+		six.style.zIndex = '6';
+
+		document.getElementById(others[6]).style.margin = '0px';
+
+}
+
+</script>
+
+<div id="thisslide">
+
+	<h1 id="slidetitle">LSU Faculty Publications</h1>
+
+    <div id="oteropop" class="hoverslide">
+
+        <img src="/mt_slideshow/slides/images/otero.png" alt="Afro-Cuban Diasporas in the Atlantic World" class="sm" id="otero" title="Solimar Otero" onclick="javascript:slidezoom('otero');" />
+
+      <br /><p class="title">Afro-Cuban Diasporas in the Atlantic World</p>
+
+		<p class="author">Solimar Otero, LSU Department of English</p>
+
+		<p class="publisher">University of Rochester Press, 2010</p>
+
+        <p class="cataloglink"><a href="http://lsulibraries.worldcat.org/oclc/299710317">Find in WorldCat Local</a></p>
+
+    </div>
+
+    <div id="hallpop" class="hoverslide">
+
+        <img src="/mt_slideshow/slides/images/hall.png" alt="Wanted: The Outlaw in American Visual Culture" class="sm" id="hall" title="Rachel Hall" onclick="javascript:slidezoom('hall');" />
+
+      <br /><p class="title">Wanted: The Outlaw in American Visual Culture</p>
+
+		<p class="author">Rachel Hall, LSU Department of Communication Studies</p>
+
+		<p class="publisher">University of Virginia Press</p>
+
+        <p class="cataloglink"><a href="http://lsulibraries.worldcat.org/title/wanted-the-outlaw-in-american-visual-culture/oclc/318534276">Find in WorldCat Local</a></p>
+
+    </div>
+
+    <div id="lowepop" class="hoverslide">
+
+        <img src="/mt_slideshow/slides/images/lowe.png" alt="Approaches to Teaching Hurston's Their Eyes Were Watching God and Other Works" class="sm" id="lowe" title="John Lowe" onclick="javascript:slidezoom('lowe');" />
+
+      <p class="title">Approaches to Teaching Hurston's Their Eyes Were Watching God and Other Works</p>
+
+		<p class="author">John Lowe, LSU Department of English</p>
+
+		<p class="publisher">Modern Language Association</p>
+
+        <p class="cataloglink"><a href="http://lsulibraries.worldcat.org/title/approaches-to-teaching-hurstons-their-eyes-were-watching-god-and-other-works/oclc/366469097">Find in WorldCat Local</a></p>
+
+    </div>
+
+    <div id="pasquierpop" class="hoverslide">
+
+        <img src="/mt_slideshow/slides/images/pasquier.png" alt="Fathers on the Frontier: French Missionaries and the Roman Catholic Priesthood in the United States, 1789-1870" class="sm" id="pasquier" title="Michael Pasquier" onclick="javascript:slidezoom('pasquier');" />
+
+    <p class="title">Fathers on the Frontier: French Missionaries and the Roman Catholic Priesthood in the United States, 1789-1870</p>
+
+		<p class="author">Michael Pasquier, LSU School of Philosophy and Religious Studies</p>
+
+		<p class="publisher">Oxford Univ. Press, 2010</p>
+
+        <p class="cataloglink"><a href="http://lsulibraries.worldcat.org/title/fathers-on-the-frontier-french-missionaries-and-the-roman-catholic-priesthood-in-the-united-states-1789-1870/oclc/317118138">Find in WorldCat Local</a></p>
+
+    </div>
+
+    <div id="phillipspop" class="hoverslide">
+
+        <img src="/mt_slideshow/slides/images/phillips.png" alt="Historic Baton Rouge: An Illustrated History" class="sm" id="phillips" title="Faye Phillips" onclick="javascript:slidezoom('phillips');" />
+
+      <br /><p class="title">Historic Baton Rouge: An Illustrated History</p>
+
+		<p class="author">Faye Phillips, LSU Libraries (with Sylvia Frank Rodrigue)</p>
+
+		<p class="publisher">Historical Publishing Network, 2006</p>
+
+        <p class="cataloglink"><a href="http://lsulibraries.worldcat.org/title/historic-baton-rouge-an-illustrated-history/oclc/82219750">Find in WorldCat Local</a></p>
+
+    </div>
+
+    <div id="ryanpop" class="hoverslide">
+
+        <img src="/mt_slideshow/slides/images/ryan.png" alt="Robert Indiana: Figures of Speech" class="sm" id="ryan" title="Susan Ryan" onclick="javascript:slidezoom('ryan');" />
+
+    <br /><br /><p class="title">Robert Indiana: Figures of Speech</p>
+
+		<p class="author">Susan Ryan, LSU School of Art</p>
+
+		<p class="publisher">Yale University Press</p>
+
+        <p class="cataloglink"><a href="http://lsulibraries.worldcat.org/title/robert-indiana-figures-of-speech/oclc/41649683">Find in WorldCat Local</a></p>
+
+    </div>
+
+    <div id="sullivanpop" class="hoverslide">
+
+        <img src="/mt_slideshow/slides/images/sullivan.png" alt="The Louisiana Legislative Black Caucus: Race and Representation in the Pelican State" class="sm" id="sullivan" title="Jas M. Sullivan" onclick="javascript:slidezoom('sullivan');" />
+
+    <br />
+
+        <p class="title">The Louisiana Legislative Black Caucus: Race and Representation in the Pelican State</p>
+
+		<p class="author">Dr. Jas M. Sullivan, LSU AAAS & Political Science (w/ J. Winburn)</p>
+
+		<p class="publisher">Louisiana State University Press, 2011</p>
+
+        <p class="cataloglink"><a href="http://lsulibraries.worldcat.org/title/louisiana-legislative-black-caucus-race-and-representation-in-the-pelican-state/oclc/712983627">Find in WorldCat Local</a></p>
+
+    </div>
+
+</div></div>
+
+
+
+   <div class="transition:blindRightFade duration:1000 slide" style="visibility:hidden;">
+
+   <script type="text/javascript">
+
+function twitbookhover (id) {
+
+	document.getElementById('twitbookslide').style.background = "url('/MT_SlideShow/slides/images/" + id + ".jpg') no-repeat";
+
+}
+
+</script>
+
+<img src="/MT_SlideShow/slides/images/twitbook-thigh.jpg" class="preLoadimage" />
+
+<img src="/MT_SlideShow/slides/images/tbfhigh.jpg" class="preLoadimage" />
+
+<div id="twitbookslide">
+
+
+
+<div id="twithigh" title="Follow on Twitter" onclick="javascript:window.open('http://twitter.com/lsulibraries','Twitter');" onmouseover="javascript:twitbookhover('twitbook-thigh');" onmouseout="javascript:twitbookhover('twitbook');"></div>
+
+<div id="facehigh" title="Become a Fan on Facebook" onclick="javascript:window.open('http://www.facebook.com/LSULibraries','Facebook');" onmouseover="javascript:twitbookhover('tbfhigh');" onmouseout="javascript:twitbookhover('twitbook');"></div>
+
+
+
+</div>
+
+</div>
+
+ 
+
+   <div class="transition:blindRightFade duration:1000 slide" style="visibility:hidden;">
+
+   <a href="/ref/oilspill/">
+
+<div id="oilslide">
+
+<p class="title">Gulf of Mexico Oil Spill</p>
+
+<p class="subtitle">Information and Subject Guide</p>
+
+</div>
+
+</a>
+
+</div>
+
+
+
+   <div class="transition:blindRightFade duration:1000 slide" style="visibility:hidden;">
+
+   <div id="oralslide">
+
+<a href="http://oralhistory.blogs.lib.lsu.edu/">
+
+<img src="MT_slideshow/slides/images/oh_web_mid.jpg" />
+
+</a>
+
+</div>
+
+</div>
+
+   
+
+   <div class="transition:blindRightFade duration:1000 slide" style="visibility:hidden;">
+
+   <div id="dlnpslide">
+
+<a href="http://hill.blogs.lib.lsu.edu/2010/10/05/historical-louisiana-newspapers-available-online/"><img src="/MT_SlideShow/slides/images/DLNP_Mid.jpg" /></a>
+
+</div>
+
+</div>
+
+	 
+
+	 
+
+	</div>
+
+    <div id="SS_menu">
+
+        <img src="/MT_SlideShow/play.png" style="cursor:pointer" id="play" />
+
+        <img src="/MT_SlideShow/pause.png" style="cursor:pointer" id="pause" />
+
+        <img src="/MT_SlideShow/prev.png" style="cursor:pointer" id="showPrevious" />
+
+        <img src="/MT_SlideShow/next.png" style="cursor:pointer" id="showNext" />
+
+        <button id="reverse" style="display:none;">reverse</button>
+
+        <button id="show" style="display:none;" disabled="disabled">show slide 5 with options</button>
+
+        <button id="showIndex" style="display:none;" disabled="disabled">show slide 1</button> 
+
+        <button id="toElement" style="display:none;">Log Element</button>
+
+    </div>
+
+    <span id="onShow"></span><span id="onShowComplete"></span><span id="onPlay"></span><span id="onPause"></span><span id="onReverse"></span>
+
+</div>
+
+<div id="LOUISlouis" class="LOUISpop">
+
+    <p class="LOUISper">61%</p>
+
+    <p class="LOUISdesc">LOUIS provides 61% of LSU Libraries' full-text access to electronic titles. LOUIS' 72 databases also provide indexing to help patrons find the information they need.</p> 
+
+    <p class="LOUISapprox">Percentages are approximate.</p>
+
+</div>
+
+<div id="LOUISlsu" class="LOUISpop">
+
+    <p class="LOUISper">32%</p>
+
+    <p class="LOUISdesc"><br />LSU Libraries pays for only 32% of its full-text electronic titles without the aid of LOUIS.</p>
+
+    <p class="LOUISapprox">Percentages are approximate.</p>
+
+</div>
+
+<div id="LOUISoa" class="LOUISpop">
+
+    <p class="LOUISper">7%</p>
+
+    <p class="LOUISdesc">Open access publications can provide some relief for losses. However, Only 7% of LSU Libraries' full-text electronic titles are available as free open access resources.</p>
+
+    <p class="LOUISapprox">Percentages are approximate.</p>
+
+</div>
+
+
+
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<!-- ///////////////////////////////////////////////////////////// TAB BOX ///////////////////////////////////////////////////// -->
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+ 
+
+<div id="catalogbox">
+
+    <div id="TabbedPanels1" class="TabbedPanels">
+
+        <ul class="TabbedPanelsTabGroup">
+
+            <li class="TabbedPanelsTab" tabindex="0">Catalog</li>
+
+            <li class="TabbedPanelsTab" tabindex="0">Databases</li>
+
+            <li class="TabbedPanelsTab" tabindex="0">Reserves</li>
+
+            <li class="TabbedPanelsTab" tabindex="0">Ejournals</li>
+
+        </ul>
+
+    
+
+        <div class="TabbedPanelsContentGroup">
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CATALOG TAB ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <div class="TabbedPanelsContent">
+
+            <h2 style="padding:10px;margin:0px;">LSU Libraries Only</h2>
+
+                       
+
+        	<form style="margin:0px;padding:3px 8px 3px 8px;" name="searchform" method="post" 
+
+            action="https://lsu.louislibraries.org:5203/uhtbin/cgisirsi/X/0/0/123/">
+
+            <p>
+
+             <select name="srchfield1" id="srchfield1" onchange="javascript:browseswitch();">
+
+             
+
+
+
+                   <option value="GENERAL^SUBJECT^GENERAL^^keywords anywhere">  keywords anywhere</option>
+
+                   <option value="AU^AUTHOR^AUTHORS^Author Processing^author"> author</option>
+
+                   <option value="TI^TITLE^TITLES^Title Processing^title"> title</option>
+
+                   <option value="SU^SUBJECT^SUBJECTS^^subject"> subject</option>
+
+                   <option value="PER^PERTITLE^TITLES^Title Processing^periodical title"> periodical title</option>
+
+             </select>
+
+             
+
+             <input type="text" name="searchdata1" style="width:248px;margin:0;padding:0;" maxlength="255" /> 
+
+                           
+
+              <select name="query_type">
+
+              <option value="search" name="query_type" id="keyword" >Keyword</option>
+
+              <option value="browse" name="query_type" id="browse" >Browse</option>
+
+              <option value="exact" name="query_type" id="exact" >Exact</option>
+
+              </select>  <Br />  
+
+ 
+
+             
+
+             <br /><select name="library"> 
+
+                    <option value="ALL" />All Libraries</option>
+
+                    <option value="MUSIC">Carter Music Resources Center, 202 Middleton</option>
+
+					<option value="CIC">Cartographic Information Center, 313 Howe-Russell</option>
+
+					<option value="NONLIBRARY">Collections at LSU but not in LSU Libraries - Check Location</option>
+
+					<option value="EDUCATION">Education Resource Center, 227 Middleton</option>
+
+					<option value="DOCS_MICRO">Government Documents/Microforms, 53 Middleton</option>
+
+					<option value="MIDL-MAIN">Middleton Library (Main Collection)</option>
+
+					<option value="SPEC_COLL">Special Collections, Hill Memorial Library</option>
+
+					<option value="VETMED">Veterinary Medicine Library, 1117 Vet. Med. Bldg.</option>
+
+                 </select> &nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Search" />
+
+                            <br />
+
+                        </p>
+
+                        <p>
+
+                     
+
+                           
+
+                          <a href="https://lsu.louislibraries.org:5203/uhtbin/cgisirsi/0/0/0/38/X/POWER_SEARCH">Advanced Search</a> 
+
+                              
+
+                           
+
+                        </p>
+
+                    </form>  
+
+                
+
+                <hr style="border-bottom-color:#999999; border-bottom-style:dotted;" />   <br />
+
+                
+
+                    <form action="http://lsulibraries.worldcat.org/search" id="wcsrch" name="search" method="get" style="margin:0;">
+
+           <strong>&nbsp; LSU Libraries and Beyond</strong> 
+
+                
+
+                       <input type="hidden" name="qt" value="affiliate_wcl_all" />
+
+                       <input type="text" name="q" id="q" size="25" maxlength="80" class="search" title="World Cat Search" />
+
+                       <input type="image" name="wcsbtn2w" id="wcsbtn2w" src="http://library.buffalo.edu/libraries/img/search_button_worldcat.gif" alt="Search WorldCat" title="Search WorldCat" style="margin-bottom:8px; border:none;" align="middle" />	 
+
+                    </form>
+
+            </div>
+
+            
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ARTICLES TAB ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            
+
+            <div class="TabbedPanelsContent" style="display:none;">
+
+                 
+
+                 <strong>&nbsp; By Title:</strong>
+
+
+
+<a href="/sp/subjects/databases.php?letter=A">A</a>
+
+
+
+<a href="/sp/subjects/databases.php?letter=B">B</a>
+
+
+
+<a href="/sp/subjects/databases.php?letter=C">C</a>
+
+
+
+<a href="/sp/subjects/databases.php?letter=D">D</a>
+
+
+
+<a href="/sp/subjects/databases.php?letter=E">E</a>
+
+
+
+<a href="/sp/subjects/databases.php?letter=F">F</a>
+
+
+
+<a href="/sp/subjects/databases.php?letter=G">G</a>
+
+
+
+<a href="/sp/subjects/databases.php?letter=H">H</a>
+
+
+
+<a href="/sp/subjects/databases.php?letter=I">I</a>
+
+
+
+<a href="/sp/subjects/databases.php?letter=J">J</a>
+
+
+
+<a href="/sp/subjects/databases.php?letter=K">K</a>
+
+
+
+<a href="/sp/subjects/databases.php?letter=L">L</a>
+
+
+
+<a href="/sp/subjects/databases.php?letter=M">M</a>
+
+
+
+<a href="/sp/subjects/databases.php?letter=N">N</a>
+
+
+
+<a href="/sp/subjects/databases.php?letter=O">O</a>
+
+
+
+<a href="/sp/subjects/databases.php?letter=P">P</a>
+
+
+
+Q
+
+
+
+<a href="/sp/subjects/databases.php?letter=R">R</a>
+
+
+
+<a href="/sp/subjects/databases.php?letter=S">S</a>
+
+
+
+<a href="/sp/subjects/databases.php?letter=T">T</a>
+
+
+
+<a href="/sp/subjects/databases.php?letter=U">U</a>
+
+
+
+<a href="/sp/subjects/databases.php?letter=V">V</a>
+
+
+
+<a href="/sp/subjects/databases.php?letter=W">W</a> 
+
+
+
+X
+
+
+
+Y
+
+
+
+<a href="/sp/subjects/databases.php?letter=Z">Z</a> 
+
+
+
+<a href="/sp/subjects/databases.php?letter=All">All</a> 
+
+
+
+<!--<a href="/sp/subjects/databases.php?letter=Trials">Trials</a>-->
+
+<br />
+
+
+
+<hr />
+
+                 
+
+               
+
+                
+
+                   <Br />
+
+                    <table><Tr><Td>
+
+                    <strong>Databases by Subject:</strong>
+
+                    <div style="height: 125px; overflow: -moz-scrollbars-vertical;
+
+overflow-x: hidden; overflow-y: scroll; border:1px solid #ccc; width:200px; float:left; padding:4px">
+
+                    <a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=36&amp;subject=Accounting"> Accounting</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=95&amp;subject=Human%20Ecology"><br />
+
+</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=7&amp;subject=African%20%26%20African%20American%20Studies">African &amp; African American Studies</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=36&amp;subject=Accounting"><br />
+
+</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=37&amp;subject=Agribusiness">Agribusiness</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=26&amp;subject=Agriculture"><br />
+
+Agriculture</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=7&amp;subject=African%20%26%20African%20American%20Studies"><br />
+
+</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=91&amp;subject=Anthroplogy">Anthropology</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=26&amp;subject=Agriculture"><br />
+
+</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=22&amp;subject=Architecture">Architecture</a>  <br />
+
+<a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=10&amp;subject=Art">Art</a> <a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=116&amp;subject=Patents%20and%20Trademarks"><br />
+
+</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=110&amp;subject=Biochemistry">Biochemistry</a><br />
+
+<a href="/sp/subjects/databases.php?letter=bysub&subject_id=79&subject=Business">Business</a>
+
+<a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=111&amp;subject=Chemistry"><br />
+
+Chemistry</a>
+
+<a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=26&amp;subject=Agriculture"><br />
+
+</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=27&amp;subject=Coast%20%26%20Environmental%20Studies">Coastal &amp; Environmental Sciences</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=93&amp;subject=Communication%20Sciences%20and%20Disorders"><br />
+
+Communication Sciences and Disorders</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=111&amp;subject=Chemistry"><br />
+
+</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=108&amp;subject=Computer%20Science">Computer Science</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=37&amp;subject=Agribusiness"><br />
+
+</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=38&amp;subject=Economics">Economics</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=91&amp;subject=Anthroplogy"><br />
+
+</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=92&amp;subject=Education">Education</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=108&amp;subject=Computer%20Science"><br />
+
+</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=109&amp;subject=Engineering">Engineering</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=102&amp;subject=Women%20and%20Gender%20Studies"><br />
+
+</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=103&amp;subject=Family%2C%20Child%2C%20and%20Consumer%20Science">Family, Child, and Consumer Science</a> <a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=87&amp;subject=Finance"><br />
+
+Finance</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=27&amp;subject=Coast%20%26%20Environmental%20Studies"><br />
+
+</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=28&amp;subject=Genetics">Genetics</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=93&amp;subject=Communication%20Sciences%20and%20Disorders"><br />
+
+</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=94&amp;subject=Geography">Geography</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=116&amp;subject=Patents%20and%20Trademarks"><br />
+
+</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=82&amp;subject=Geology%20%26%20Geophysics">Geology &amp; Geophysics</a><br />
+
+  <a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=106&amp;subject=History">History</a>  <a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=113&amp;subject=Physics%20and%20Astronomy"><br />
+
+  </a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=95&amp;subject=Human%20Ecology">Human Ecology</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=82&amp;subject=Geology%20%26%20Geophysics"><br />
+
+  </a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=88&amp;subject=Human%20Nutrition%20and%20Food%20Science">Human Nutrition &amp; Food</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=28&amp;subject=Genetics"><br />
+
+  </a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=29&amp;subject=Kinesiology">Kinesiology</a><br />
+
+  <a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=115&amp;subject=Languages">Languages</a> <a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=96&amp;subject=Library%20Science"><br />
+
+Library Science</a><br />
+
+  <a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=23&amp;subject=Literature">Literature</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=97&amp;subject=Mass%20Communication"><br />
+
+Mass Communication</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=89&amp;subject=Textiles%20Apparal%20and%20Merchandising"><br />
+
+  </a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=114&amp;subject=Mathematics">Mathematics</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=29&amp;subject=Kinesiology"><br />
+
+  </a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=30&amp;subject=Medicine">Medicine<br />
+
+  </a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=31&amp;subject=Microbiology">Microbiology</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=23&amp;subject=Literature"><br />
+
+  </a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=8&amp;subject=Music">Music</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=87&amp;subject=Finance"><br />
+
+  </a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=116&amp;subject=Patents%20and%20Trademarks">Patents &amp; Trademarks</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=8&amp;subject=Music"><br />
+
+  </a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=24&amp;subject=Philosophy">Philosophy</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=114&amp;subject=Mathematics"><br />
+
+  </a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=113&amp;subject=Physics%20and%20Astronomy">Physics &amp; Astronomy</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=31&amp;subject=Microbiology"><br />
+
+  </a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=32&amp;subject=Plant%20Biology">Plant Biology</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=97&amp;subject=Mass%20Communication"><br />
+
+  </a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=98&amp;subject=Political%20Science">Political Science (including Government)</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=105&amp;subject=Psychology"><br />
+
+Psychology</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=2&amp;subject=Religious%20Studies"><br />
+
+Religion</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=99&amp;subject=Social%20Work"><br />
+
+Social Work</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=99&amp;subject=Social%20Work"><br />
+
+</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=100&amp;subject=Sociology">Sociology</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=101&amp;subject=Speech%20%20Communication"><br />
+
+Speech Communication</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=89&amp;subject=Textiles%20Apparal%20and%20Merchandising"><br />
+
+Textiles, Apparel, and Merchandising</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=2&amp;subject=Religious%20Studies"><br />
+
+  </a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=12&amp;subject=Theater">Theater</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=25&amp;subject=Visual%2F%20Digital"><br />
+
+Visual/Digital</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=33&amp;subject=Wildlife%20%26%20Fisheries"><br />
+
+Wildlife &amp; Fisheries</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=101&amp;subject=Speech%20%20Communication"><br />
+
+</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=102&amp;subject=Women%20and%20Gender%20Studies">Women's &amp; Gender Studies</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=33&amp;subject=Wildlife%20%26%20Fisheries"><br />
+
+</a><a href="http://www.lib.lsu.edu/sp/subjects/databases.php?letter=bysub&amp;subject_id=34&amp;subject=Zoology">Zoology</a>
+
+                    </div>
+
+                    
+
+                    </Td><td>
+
+                    <strong>Frequently Used Databases:</strong>
+
+                        <div style="height: 125px; overflow: -moz-scrollbars-vertical;
+
+overflow-x: hidden;
+
+overflow-y: scroll; border:1px solid #ccc; width:200px; float:left; padding:4px">
+
+                         
+
+                            <a href="/sp/subjects/databases.php?letter=long_record&bib_id=526" target="_self">Academic Search Complete</a><br />
+
+                            <a href="/databases/descriptions/buscomplete.html" target="_self">Business Source Complete</a><br />
+
+                            <a href="/databases/descriptions/cambridge.html" target="_self">Cambridge Scientific Abstracts (CSA)</a><br />
+
+                            <a href="/sp/subjects/databases.php?letter=long_record&bib_id=148">CQ Researcher Plus Archive</a><br />
+
+                            <a href="/databases/descriptions/ebooks.html" target="_self">eBook Collection (formerly netLibrary)</a><br />
+
+                            <a href="/databases/descriptions/jstor.html" target="_self">JSTOR</a><br />
+
+                            <a href="/databases/descriptions/LexisNexisAcademic.html" target="_self">LexisNexis Academic</a><br />
+
+                            <a href="/databases/descriptions/projectmuse.html" target="_self">Project Muse</a><br />
+
+                            <a href="/databases/descriptions/webofknowledge.html" target="_self">Web of Science</a><br />
+
+                            <a href="/databases/descriptions/worldcat.html" target="_self">WorldCat</a>
+
+                             
+
+                    </div>
+
+                    </td></Tr></table>
+
+                    
+
+            </div>
+
+            
+
+            
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ RESERVES TAB ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            
+
+            
+
+            <div class="TabbedPanelsContent" style="display:none;"> 
+
+                
+
+                <form style="display:block;padding:35px 0px 0px 0px;" method="post" name="searchform" action="https://lsu.louislibraries.org:5203/uhtbin/cgisirsi/X/0/0/79">
+
+                    <input type="hidden" name="desk" value="ANY" />
+
+                    <p style="text-align:center;"><strong> Search:</strong> <input type="text" name="searchdata1" id="searchdata1" maxlength="60" size="25"></p>
+
+                    <p style="text-align:center;">
+
+                        <input type="submit" class="searchbutton" value="Instructor" name="RSV_INSTRUCTOR" style="margin:2px;" />
+
+                        <input type="submit" class="searchbutton" value="Course Number" name="RSV_COURSE_ID" style="margin:2px;" />
+
+                        <input type="submit" class="searchbutton" value="Course Name" name="RSV_COURSE_NAME" style="margin:2px;" />
+
+                    </p>
+
+                </form>
+
+                
+
+            </div>
+
+            
+
+            
+
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ejournals tab ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <div class="TabbedPanelsContent" style="display:none;">
+
+            <form name="frmAdvSearch" action="http://atoz.ebsco.com/titles.asp" method="get" style="margin:auto">
+
+<br /><br />
+
+  <p style="text-align:center;">    Search by Title: 
+
+	<input type="text" name="KW" size="30"  value="">
+
+	<input type="hidden" name="id" value="491">
+
+	<input type="hidden" name="SF" ID="Titles" value="Titles">
+
+	<input type="hidden" name="ST" ID="Contains" value="Contains">
+
+	<input type=hidden name="WW" ID="WholeWords" value="0">
+
+	<input type="SUBMIT" name="cmdSearchSubmit" value="Go!">
+
+</p>
+
+</FORM> 
+
+	 <p style="text-align:center;">
+
+	 <a href="http://atoz.ebsco.com/Search.asp?id=491">Advanced Search</a></li>  | 	 <a href="http://atoz.ebsco.com/Subjects.asp?id=491">Ejournals by Subject</a>
+
+     </p>
+
+	
+
+            </div>
+
+            
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ END OF TAB CONTENT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<!-- //////////////////////////////////////////////////////// WIDGET BOXES ///////////////////////////////////////////////////// -->
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+<br clear="all" />
+
+
+
+<div id="lowcontainer">
+
+
+
+    
+
+    
+
+    <div id="widgetcolmid" style="float:left;padding:0;margin:0;">
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CATALOG and ACCOUNT INFORMATION WIDGET ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+        <div id="catalogwidget" class="whitebox"> 
+
+            <div class="title">Catalog &amp; Account Information</div>
+
+            <div style="padding:5px">    
+
+              <!--  <p style="padding:5px"><a href="https://lsu.louislibraries.org:5203/uhtbin/cgisirsi/0/0/0/38/X/POWER_SEARCH">Advanced Search</a></p>-->
+
+                <p style="padding:5px">
+
+                    <a href="https://lsu.louislibraries.org:5203/uhtbin/cgisirsi/0/0/0/1/38/X/BLASTOFF" id="link2">
+
+                        <span onmouseover="javascript:hoverinfo('item2');" onmouseout="javascript:hoverinfooff('item2');">My Account</span>
+
+                    </a>
+
+                </p> 
+
+                <div id="item2">
+
+                    <h3>My Account</h3>
+
+                    <ul>
+
+                        <li>Renew / Review Materials</li>
+
+                        <li>Pay Bills Online</li>
+
+                        <li>Report a Lost Book</li>
+
+                        <li>Email my PIN</li>
+
+                        <li>Change my PIN</li>
+
+                    </ul>
+
+                </div>
+
+                <p style="padding:5px">
+
+                    <a href="https://lsu.louislibraries.org:5203/uhtbin/cgisirsi/0/0/0/1/38/X/BLASTOFF" id="link">
+
+                        <span onmouseover="javascript:hoverinfo('item');" onmouseout="javascript:hoverinfooff('item');">PIN Information</span>
+
+                    </a>
+
+                </p> 
+
+                <div id="item">
+
+                    <h3>PIN INFO</h3>
+
+                    <ul>
+
+                        <li>Email my PIN</li>
+
+                        <li>Change my PIN</li>
+
+                    </ul>
+
+                    <p>A Library PIN provides access to library accounts.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SEARCH THE SITE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+        <div id="searchwidget" class="whitebox" style="clear:left;"> 
+
+            <div class="title">Search the Libraries' Website</div>
+
+            <div style="margin:15px 0 5px 0;">    
+
+                <form action="http://www.google.com/search" method="get" style="text-align:center;display:block;margin-bottom:10px;">
+
+                <input name="image" type="image" border="0" id="image" src="/images/header_util_search.gif" alt="Go" width="17" height="14" style="border:0 !important;" />
+
+                <input style="width:175px;margin:0px;" name="q" id="searchbox2" type="text" alt="search" onfocus="select();" />
+
+                <input type="hidden" name="sitesearch" value="www.lib.lsu.edu" />
+
+                </form>
+
+                <br />
+
+            </div>
+
+        </div>
+
+	</div>
+
+    <div id="widgetcolright" style="float:left;padding:0;margin:0;">
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ HELP ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+        <div id="helpwidget" class="whitebox">
+
+            <div class="title">Help</div>
+
+            <p style="padding:3px 3px 3px 9px"><a href="/virtual/faq.html">Frequently Asked Questions</a> </p>
+
+            <p style="padding:3px 3px 3px 9px"><a href="/gateway/configuration.html">Technical Help</a></p>
+
+            <p style="padding:3px 3px 3px 9px"><a href="/virtual/">Ask a Librarian</a></p>
+
+            <p style="padding:3px 3px 3px 9px">Call Circulation: (225) 578-2058</p>
+
+            <p style="padding:3px 3px 3px 9px">Call Reference: (225) 578-8875</p>
+
+            <p style="padding:3px 3px 3px 9px"><a href="http://www.lib.lsu.edu/instruction/tutorials.html">Tutorials</a></p>
+
+            <p style="padding:3px 3px 3px 9px"><a href="http://pac-labstats.lsu.edu:8080/public/labmap_list.jsp#">Find Computers</a></p>
+
+        </div>
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ GIVE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+      <!--  <span style="float:right;padding:10px;clear:both;">
+
+            <a href="/admin/dev/index.html">
+
+                <img src="/images/gift.jpg" />Give to the libraries
+
+            </a>
+
+        </span>-->
+
+	</div> 
+
+    
+
+    
+
+    
+
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ NEWS WIDGET ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+       
+
+       <div id="widgetcolleft" style="float:left;padding:0;margin:0;">
+
+       <div id="newswidget">
+
+            <div class="title">LSU Libraries Blog</div>
+
+            <div style="padding:5px">
+
+              
+
+                <div class="rsslink"><a href="http://news.blogs.lib.lsu.edu/2012/03/01/jo-ann-henson-participates-in-the-entrepreneurship-bootcamp-for-veterans/" target="_blank">Jo Ann Henson Participates in the Entrepreneurship Bootcamp for Veterans</a></div><div class="rsslink"><a href="http://news.blogs.lib.lsu.edu/2012/02/29/lsu-libraries-hours-for-spring-2012-midterm-week/" target="_blank">LSU Libraries&#8217; Hours for Spring 2012 Midterm Week</a></div><div class="rsslink"><a href="http://news.blogs.lib.lsu.edu/2012/02/22/postcard-display-in-education-resources/" target="_blank">Postcard Display in Education Resources</a></div><div class="rsslink"><a href="http://news.blogs.lib.lsu.edu/2012/02/22/caminita-co-presents-paper-about-jerry-hausmans-econometric-ideas/" target="_blank">Caminita Co-Presents Paper about Jerry Hausman&#8217;s Econometric Ideas</a></div>
+
+             <span style="display:block;padding:10px 0px 5px 0px; float:right">
+
+                    <a href="http://news.blogs.lib.lsu.edu/feed"><img src="/images/delicious/rss_icon.jpg" border="0" alt="Link to LSU Libraries RSS Feed" style="vertical-align:text-top;" /></a>
+
+                    <a href="http://news.blogs.lib.lsu.edu/feed/"><strong>RSS Feed</strong></a>
+
+                </span> 
+
+                <span style="display:block;padding:10px 0px 5px 25px; float:left">
+
+                     <a href="http://news.blogs.lib.lsu.edu/">... all entries</a>
+
+                </span> 
+
+                
+
+                </div>
+
+        </div>
+
+    </div>
+
+<br clear="all" />
+
+</div>
+
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<!-- /////////////////////////////////////////////////////// END OF CONTENT //////////////////////////////////////////////////// -->
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<br clear="all" />
+
+</div>
+
+<div id="footer">
+
+<div class="right">
+
+ 
+
+ <a href="http://www.lsu.edu"><img border=0 alt="LSU Logo" src="/images/logo.jpg" height="50px"></a>
+
+<br /><a href="/">LSU Libraries</a>
+
+<br>Baton Rouge, LA 70803
+
+<br>Tel (225) 578-5652
+
+<br />Fax (225) 578-9432 
+
+
+
+</div>
+
+<div class="left">
+
+<!-- AddThis Button END -->
+
+<br /> 
+
+
+
+<ul>
+
+<li><a href="/">LSU Libraries</a></li>
+
+<li><A HREF="/lib/dear.html">Contact Us</a></li>
+
+<li><a href="/m">Mobile Website</a></li>
+
+<!--<li><a href="http://www.lsu.edu">Louisiana State University</a></li>-->
+
+<li style="border:none">
+
+<a href="http://news.blogs.lib.lsu.edu/" target="_blank" title="LSU Libraries Blog"><img src="/images/wordpress_icon.png" alt="Library Blog" style="vertical-align:middle;" /></a>
+
+<a href="http://news.blogs.lib.lsu.edu/feed" target="_blank" title="LSU Libraries Blog RSS Feed"><img src="/images/rss_icon.png" alt="RSS Feed" style="vertical-align:middle;" /></a>
+
+<a href="http://www.facebook.com/pages/Baton-Rouge-LA/LSU-Libraries/22954284331" target="_blank" title="LSU Libraries on Facebook"><img src="/images/fb_icon.png" alt="Library Facebook Page" style="vertical-align:middle;" /></a>
+
+<a href="http://twitter.com/lsulibraries" target="_blank" title="LSU Libraries on Twitter"><img  src="/images/twitter_icon.png" alt="Library Twitter Page" style="vertical-align:middle;" /> </a>
+
+<!-- AddThis Button BEGIN -->
+
+<script type="text/javascript">
+
+//var addthis_config = {
+
+ //  ui_click: true
+
+//}
+
+</script>
+
+<!--a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4a8b0c2a79cf3130">
+
+<img style="vertical-align:middle;" src="http://s7.addthis.com/static/btn/v2/lg-bookmark-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0" />
+
+</a>
+
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=xa-4a8b0c2a79cf3130"></script> -->
+
+</li>
+
+</ul>
+
+<br />
+
+<center>Copyright &copy; 1996 - 2012 LSU Libraries<br /> <!--<img src="/images/external.png" /><span class="small">Links away from LSU.edu</span> --></center><br />
+
+
+
+</div>
+
+<!--<div class="right">
+
+<a href="http://www.lsu150.com/"><img src="/images/150year.jpg" /></a>
+
+
+
+
+
+</div> -->
+
+
+
+<br clear="all">
+
+ 
+
+ 
+
+
+
+<script type="text/javascript">
+
+
+
+  var _gaq = _gaq || [];
+
+  _gaq.push(['_setAccount', 'UA-22589452-1']);
+
+  _gaq.push(['_trackPageview']);
+
+
+
+  (function() {
+
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+
+  })();
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+</div>
+
+</div>
+
+
+
+<script type="text/javascript">
+
+<!--
+
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+
+//-->
+
+</script>
+
+</body>
+
+</html>
+

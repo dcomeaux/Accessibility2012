@@ -1,0 +1,778 @@
+
+  
+
+<HTML>
+
+<!-- START NEW.INC HEADER -->
+
+<HEAD>
+
+
+   <META CONTENT="text/html; charset=UTF-8">
+
+
+
+<!-- all browsers will load this stylesheet -->
+
+
+
+
+
+<META NAME="description" CONTENT=" University of North Carolina at Chapel Hill Libraries, Collections, and Hours ">
+<META NAME="keywords" CONTENT=" Libraries, Collections, Map, Maps, Map of the Library, Hours, University of North Carolina at Chapel Hill ">
+<TITLE>Libraries, Collections, and Hours</TITLE>
+
+
+
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17932020-1']);
+  _gaq.push(['_setDomainName', '.lib.unc.edu']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+
+</HEAD>
+<!-- added marginleft for blackboard. dhk 8/28/05 -->
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<U><FONT COLOR=blue>On a mobile device? Visit http://www.lib.unc.edu/m/</FONT></U> 
+
+<UL><LI><U><FONT COLOR=blue>unc home</FONT></U></LI><LI><U><FONT COLOR=blue>libraries, collections &amp; hours</FONT></U></LI><LI><U><FONT COLOR=blue>E-Research Tools</FONT></U></LI><LI><U><FONT COLOR=blue>E-Journal Finder</FONT></U></LI><LI><U><FONT COLOR=blue>Catalog</FONT></U></LI><LI><U><FONT COLOR=blue>MyLibrary</FONT></U></LI><LI><U><FONT COLOR=blue>contact us</FONT></U></LI></UL>	<U><FONT COLOR=blue><BR>
+[CLIENT-SIDE IMAGE MAP: University Libraries banner]<BR>
+</FONT></U>
+<MAP NAME="libbanner">
+	    
+<AREA HREF="http://www.lib.unc.edu/" COORDS="74,0,760,53" SHAPE="rect" ALT="University Libraries banner">
+	         
+</MAP>
+
+
+
+
+
+			
+		<U><FONT COLOR=blue>
+		[Click here to skip header navigation.]</FONT></U>
+	
+	</FONT></U>
+<!-- END NEW.INC HEADER -->
+
+
+
+
+
+
+
+
+
+  $(function() {
+    if (! GBrowserIsCompatible()) {
+      return;
+    }
+
+    var map = new GMap(document.getElementById('map'));
+    map.addControl(new GLargeMapControl());
+    map.addControl(new GMapTypeControl());
+    map.centerAndZoom(new GPoint(-79.05023574829102, 35.91049904437273), 1);
+    map.setMapType(G_HYBRID_MAP);
+
+   // Create blue marker icon
+        var blueIcon = new GIcon(G_DEFAULT_ICON);
+        blueIcon.image = "/reference/gis/images/bluemarker.png";
+		
+		// Set up GMarkerOptions object
+		markerOptions = { icon:blueIcon };
+
+		
+    $('.lib-map-loc').each(function() {
+		  var self   = $(this);
+      var point  = eval('new GPoint(' + self.attr('point') + ')');
+      var marker = new GMarker(point, markerOptions);
+      var popup  = function() {
+        marker.openInfoWindowHtml(
+          '' + self.html() + '');
+      };
+
+      map.addOverlay(marker);
+      GEvent.addListener(marker, 'click', popup);
+      self.next('.show-on-map').click(popup);
+
+    });
+
+  });
+
+	
+ 
+
+</HEAD>
+
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+
+
+
+
+
+<H1>Libraries &amp; Collections</H1>
+
+<!-- <p>&nbsp;<a style="color:red;" href="/instruct/hoursexceptions.html">Seasonal exceptions to regular hours</a></p>-->
+
+
+
+<TABLE><TR><TD>
+
+
+
+<P><U><FONT COLOR=blue><EM>Aging</EM></FONT></U><BR>
+  (919) 966-9444 &nbsp;|&nbsp;<U><FONT COLOR=blue>Hours</FONT></U>
+<BR>
+
+    <U><FONT COLOR=blue><EM>Aging</EM></FONT></U><BR>Institute on Aging Information Center<BR>
+		720 Martin Luther King Jr Blvd.<BR>
+		Chapel Hill, NC
+  
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+
+
+<P><U><FONT COLOR=blue><EM>Art</EM></FONT></U><BR> (919) 962-2397 &nbsp;|&nbsp;
+  <U><FONT COLOR=blue>Hours</FONT></U>
+	<BR>
+
+    <U><FONT COLOR=blue>Sloane Art Library</FONT></U><BR>Hanes Art Center  
+  <U><FONT COLOR=blue>Show on the map</FONT></U>	
+	</P>
+
+<P><U><FONT COLOR=blue><EM>Carolina Digital Library and Archives (CDLA)</EM></FONT></U><BR>
+  (919) 962-9590
+   <BR>
+
+<U><FONT COLOR=blue>The Louis Round Wilson Library</FONT></U><BR>
+Houses the following:<BR>
+<U><FONT COLOR=blue>Carolina Digital Library and Archives (CDLA)</FONT></U>, <BR>
+<U><FONT COLOR=blue>Digital Collections</FONT></U>,
+<U><FONT COLOR=blue>General Manuscripts</FONT></U>,
+<U><FONT COLOR=blue>Music</FONT></U>,<BR>
+<U><FONT COLOR=blue>North Carolina Collection</FONT></U>,
+<U><FONT COLOR=blue>NCC Gallery</FONT></U>,       
+<U><FONT COLOR=blue>Photographic Archives</FONT></U>,<BR>
+<U><FONT COLOR=blue>Rare Book Collection</FONT></U>,
+<U><FONT COLOR=blue>Southern Historical Coll.,</FONT></U><BR> 
+<U><FONT COLOR=blue>Southern Folklife Coll.,</FONT></U> 
+and <U><FONT COLOR=blue>University Archives &amp; Records Service</FONT></U>
+
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+  
+<P><U><FONT COLOR=blue><EM>Carolina Pop. Center</EM></FONT></U><BR>
+ (919) 962-3081 &nbsp;|&nbsp;<U><FONT COLOR=blue>Hours </FONT></U>
+<BR>
+
+<U><FONT COLOR=blue>Carolina Population Center Library</FONT></U><BR>University Square, East Tower
+
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+  
+  
+<P><U><FONT COLOR=blue><EM>Carolina Women's Center</EM></FONT></U><BR>
+  (919) 962-8305 &nbsp;|&nbsp;<U><FONT COLOR=blue>Hours
+  </FONT></U>
+	<BR>
+
+<U><FONT COLOR=blue>Carolina Women's Center Library</FONT></U><BR>
+215 W. Cameron Ave.
+
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+	</P>
+  
+
+
+
+<P><U><FONT COLOR=blue><EM>Data Services</EM></FONT></U><BR>
+(919) 962-1151 &nbsp;|&nbsp;<U><FONT COLOR=blue>Hours</FONT></U>
+<BR>
+ 
+<U><FONT COLOR=blue>Walter Royal Davis Library</FONT></U><BR>
+Houses the following:<BR>
+<U><FONT COLOR=blue>Data Services</FONT></U>, <U><FONT COLOR=blue>GIS</FONT></U>, <U><FONT COLOR=blue>Government Information</FONT></U>,<BR>
+<U><FONT COLOR=blue>Maps Collection</FONT></U>, and <U><FONT COLOR=blue>Microforms Collection</FONT></U>
+
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+
+
+<P>
+  <U><FONT COLOR=blue><EM>Davis (Main)</EM></FONT></U><BR>
+  (919) 962-1053 &nbsp;|&nbsp;<U><FONT COLOR=blue>Hours</FONT></U>
+  <BR>
+
+<U><FONT COLOR=blue>Walter Royal Davis Library</FONT></U><BR>
+Houses the following:<BR>
+<U><FONT COLOR=blue>Data Services</FONT></U>, <U><FONT COLOR=blue>GIS</FONT></U>, <U><FONT COLOR=blue>Government Information</FONT></U>,<BR>
+<U><FONT COLOR=blue>Maps Collection</FONT></U>, and <U><FONT COLOR=blue>Microforms Collection</FONT></U>
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+
+
+  
+
+<P><U><FONT COLOR=blue><EM>Digital Collections</EM></FONT></U>
+<BR>
+
+<U><FONT COLOR=blue>The Louis Round Wilson Library</FONT></U><BR>
+Houses the following:<BR>
+<U><FONT COLOR=blue>Carolina Digital Library and Archives (CDLA)</FONT></U>, <BR>
+<U><FONT COLOR=blue>Digital Collections</FONT></U>,
+<U><FONT COLOR=blue>General Manuscripts</FONT></U>,
+<U><FONT COLOR=blue>Music</FONT></U>,<BR>
+<U><FONT COLOR=blue>North Carolina Collection</FONT></U>,
+<U><FONT COLOR=blue>NCC Gallery</FONT></U>,       
+<U><FONT COLOR=blue>Photographic Archives</FONT></U>,<BR>
+<U><FONT COLOR=blue>Rare Book Collection</FONT></U>,
+<U><FONT COLOR=blue>Southern Historical Coll.,</FONT></U><BR> 
+<U><FONT COLOR=blue>Southern Folklife Coll.,</FONT></U> 
+and <U><FONT COLOR=blue>University Archives &amp; Records Service</FONT></U>
+
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+
+	
+<P><U><FONT COLOR=blue><EM>General Manuscripts</EM></FONT></U><BR>
+(919) 962-1345 &nbsp;|&nbsp;<U><FONT COLOR=blue>Hours</FONT></U>
+<BR>
+
+<U><FONT COLOR=blue>The Louis Round Wilson Library</FONT></U><BR>
+Houses the following:<BR>
+<U><FONT COLOR=blue>Carolina Digital Library and Archives (CDLA)</FONT></U>,<BR>
+<U><FONT COLOR=blue>Digital Collections</FONT></U>, 
+<U><FONT COLOR=blue>General Manuscripts</FONT></U>,
+<U><FONT COLOR=blue>Music</FONT></U>,<BR>
+<U><FONT COLOR=blue>North Carolina Collection</FONT></U>,
+<U><FONT COLOR=blue>NCC Gallery</FONT></U>,
+<U><FONT COLOR=blue>Photographic Archives</FONT></U>,<BR>
+<U><FONT COLOR=blue>Rare Book Collection</FONT></U>,
+<U><FONT COLOR=blue>Southern Historical Coll.,</FONT></U><BR> 
+<U><FONT COLOR=blue>Southern Folklife Coll.,</FONT></U> 
+and <U><FONT COLOR=blue>University Archives &amp; Records Service</FONT></U>
+
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+
+
+<P><U><FONT COLOR=blue><EM>GIS</EM></FONT></U><BR>
+(919) 962-1151 &nbsp;|&nbsp;<U><FONT COLOR=blue>Hours</FONT></U>
+<BR>
+
+<U><FONT COLOR=blue>Walter Royal Davis Library</FONT></U><BR>
+Houses the following:<BR>
+<U><FONT COLOR=blue>Data Services</FONT></U>, <U><FONT COLOR=blue>GIS</FONT></U>, <U><FONT COLOR=blue>Government Information</FONT></U>,<BR>
+<U><FONT COLOR=blue>Maps Collection</FONT></U>, and <U><FONT COLOR=blue>Microforms Collection</FONT></U>
+
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+
+
+
+<P><U><FONT COLOR=blue><EM>Government Information</EM></FONT></U><BR>
+(919) 962-1151 &nbsp;|&nbsp;<U><FONT COLOR=blue>Hours</FONT></U>
+<BR>
+
+<U><FONT COLOR=blue>Walter Royal Davis Library</FONT></U><BR>
+Houses the following:<BR>
+<U><FONT COLOR=blue>Data Services</FONT></U>, <U><FONT COLOR=blue>GIS</FONT></U>, <U><FONT COLOR=blue>Government Information</FONT></U>,<BR>
+<U><FONT COLOR=blue>Maps Collection</FONT></U>, and <U><FONT COLOR=blue>Microforms Collection</FONT></U>
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+
+
+<P><U><FONT COLOR=blue><EM>GrantSource</EM></FONT></U><BR>
+(919) 962-3463 &nbsp;|&nbsp;<U><FONT COLOR=blue>Hours</FONT></U>
+<BR>
+
+<U><FONT COLOR=blue>GrantSource Library</FONT></U><BR>Bynum Hall
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+
+<P><U><FONT COLOR=blue><EM>Health Sciences</EM></FONT></U><BR>
+(919) 962-0800 &nbsp;|&nbsp;<U><FONT COLOR=blue>Hours</FONT></U>
+<BR>
+
+<U><FONT COLOR=blue>Health Sciences Library</FONT></U>
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+
+
+<P><U><FONT COLOR=blue><EM>Highway Safety</EM></FONT></U><BR>
+(919) 962-2203<BR>
+
+<U><FONT COLOR=blue>Highway Safety Research Center Library</FONT></U><BR>730 Martin Luther King Jr. Blvd.<BR>
+Bolin Creek Center, Suites 200 &amp; 300<BR>
+Chapel Hill, NC 27514
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+
+<P><U><FONT COLOR=blue><EM>HR Training &amp; Development</EM></FONT></U><BR>
+(919) 962-2550 &nbsp;|&nbsp;<U><FONT COLOR=blue>Hours</FONT></U>
+<BR>
+
+<U><FONT COLOR=blue>HR Training &amp; Development Library</FONT></U><BR>Administrative Office Building<BR>
+104 Airport Dr., Suite 1500<BR>Chapel Hill, NC
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+
+
+<P><U><FONT COLOR=blue><EM>Info. &amp; Lib. Science</EM></FONT></U><BR>
+(919) 962-8361 &nbsp;|&nbsp;<U><FONT COLOR=blue>Hours</FONT></U>
+<BR>
+
+<U><FONT COLOR=blue>Information and Library Science Library</FONT></U><BR>
+and<BR><U><FONT COLOR=blue>Odum Institute Data Library</FONT></U><BR>Manning Hall
+
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+  </P>
+
+<P><U><FONT COLOR=blue><EM>Journalism</EM></FONT></U><BR>
+(919) 843-8299 &nbsp;|&nbsp;<U><FONT COLOR=blue>Hours</FONT></U>
+<BR>
+
+<U><FONT COLOR=blue>Park Journalism Library</FONT></U><BR>Carroll Hall
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+
+<P><U><FONT COLOR=blue><EM>K-12 Int'l Resource</EM></FONT></U><BR>
+(919) 843-6860
+<BR>
+
+<U><FONT COLOR=blue>K-12 International Resource Library</FONT></U><BR>FedEx Global Education Center, Room 2009
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+
+<P><EM>Kenan-Flagler Business School</EM><BR>
+Campus Delivery Location<BR>
+McColl Building, Room 4502
+<BR>
+
+Kenan-Flagler<BR>Campus Delivery Location<BR>McColl Building, Room 4502
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+
+
+
+
+</TD>
+
+<TD>
+
+<P><U><FONT COLOR=blue><EM>Law</EM></FONT></U><BR>
+(919) 962-1321 &nbsp;|&nbsp;<U><FONT COLOR=blue>Hours</FONT></U>
+<BR>
+
+<U><FONT COLOR=blue>Kathrine R. Everett Law Library</FONT></U><BR>Van Hecke-Wettach Building
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+
+
+<P><U><FONT COLOR=blue><EM>Maps Collection</EM></FONT></U><BR>
+(919) 962-1151 &nbsp;|&nbsp;<U><FONT COLOR=blue>Hours</FONT></U>
+<BR>
+
+<U><FONT COLOR=blue>Walter Royal Davis Library</FONT></U><BR>
+Houses the following:<BR>
+<U><FONT COLOR=blue>Data Services</FONT></U>, <U><FONT COLOR=blue>GIS</FONT></U>, <U><FONT COLOR=blue>Government Information</FONT></U>,<BR>
+<U><FONT COLOR=blue>Maps Collection</FONT></U>, and <U><FONT COLOR=blue>Microforms Collection</FONT></U>
+
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+
+
+
+
+<P><U><FONT COLOR=blue><EM>Marine Sciences</EM></FONT></U><BR>
+(252) 726-6841
+<BR>
+
+<U><FONT COLOR=blue>Institute of Marine Sciences Library</FONT></U><BR>3431 Arendell St.<BR>Morehead City, NC
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+
+
+<P><U><FONT COLOR=blue><EM>Media Resources Center</EM></FONT></U><BR>
+(919)-962-2559 &nbsp;|&nbsp;<U><FONT COLOR=blue>Hours</FONT></U>
+<BR>
+
+<U><FONT COLOR=blue>R.B. House Undergraduate Library</FONT></U><BR>Houses the <U><FONT COLOR=blue>Media Resources Center</FONT></U> 
+
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+
+
+<P><U><FONT COLOR=blue><EM>Microforms Collection</EM></FONT></U><BR>
+(919) 962-2094 &nbsp;|&nbsp;<U><FONT COLOR=blue>Hours</FONT></U>
+<BR>
+
+<U><FONT COLOR=blue>Walter Royal Davis Library</FONT></U><BR>
+Houses the following:<BR>
+<U><FONT COLOR=blue>Data Services</FONT></U>, <U><FONT COLOR=blue>GIS</FONT></U>, <U><FONT COLOR=blue>Government Information</FONT></U>,<BR>
+<U><FONT COLOR=blue>Maps Collection</FONT></U>, and <U><FONT COLOR=blue>Microforms Collection</FONT></U>
+
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+
+
+<P><U><FONT COLOR=blue><EM>Music</EM></FONT></U><BR>
+(919) 966-1113 &nbsp;|&nbsp;<U><FONT COLOR=blue>Hours</FONT></U>
+<BR>
+
+<U><FONT COLOR=blue>The Louis Round Wilson Library</FONT></U><BR>
+Houses the following:<BR>
+<U><FONT COLOR=blue>Carolina Digital Library and Archives (CDLA)</FONT></U>,<BR>
+<U><FONT COLOR=blue>Digital Collections</FONT></U>,
+<U><FONT COLOR=blue>General Manuscripts</FONT></U>,
+<U><FONT COLOR=blue>Music</FONT></U>,<BR>
+<U><FONT COLOR=blue>North Carolina Collection</FONT></U>,
+<U><FONT COLOR=blue>NCC Gallery</FONT></U>,       
+<U><FONT COLOR=blue>Photographic Archives</FONT></U>,<BR>
+<U><FONT COLOR=blue>Rare Book Collection</FONT></U>,
+<U><FONT COLOR=blue>Southern Historical Coll.,</FONT></U><BR> 
+<U><FONT COLOR=blue>Southern Folklife Coll.,</FONT></U> 
+and <U><FONT COLOR=blue>University Archives &amp; Records Service</FONT></U>
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+
+<P><U><FONT COLOR=blue><EM>North Carolina Botanical Garden</EM></FONT></U><BR>
+(919) 962-0522 &nbsp;|&nbsp;<U><FONT COLOR=blue>Hours</FONT></U>
+<BR>
+
+<U><FONT COLOR=blue>North Carolina Botanical Garden Library</FONT></U><BR>
+100 Old Mason Farm Road<BR>
+Chapel Hill, NC 27517
+
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+
+
+<P><U><FONT COLOR=blue><EM>North Carolina Collection</EM></FONT></U><BR>
+(919) 962-1172 &nbsp;|&nbsp;<U><FONT COLOR=blue>Hours</FONT></U>
+<BR>
+
+<U><FONT COLOR=blue>The Louis Round Wilson Library</FONT></U><BR>
+Houses the following:<BR>
+<U><FONT COLOR=blue>Carolina Digital Library and Archives (CDLA)</FONT></U>,<BR>
+<U><FONT COLOR=blue>Digital Collections</FONT></U>,
+<U><FONT COLOR=blue>General Manuscripts</FONT></U>,
+<U><FONT COLOR=blue>Music</FONT></U>,<BR>
+<U><FONT COLOR=blue>North Carolina Collection</FONT></U>,
+<U><FONT COLOR=blue>NCC Gallery</FONT></U>,       
+<U><FONT COLOR=blue>Photographic Archives</FONT></U>,<BR>
+<U><FONT COLOR=blue>Rare Book Collection</FONT></U>,
+<U><FONT COLOR=blue>Southern Historical Coll.,</FONT></U><BR> 
+<U><FONT COLOR=blue>Southern Folklife Coll.,</FONT></U> 
+and <U><FONT COLOR=blue>University Archives &amp; Records Service</FONT></U>
+
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+
+<P><U><FONT COLOR=blue><EM>NCC Gallery</EM></FONT></U><BR>
+(919) 962-1172 &nbsp;|&nbsp;<U><FONT COLOR=blue>Hours</FONT></U>
+<BR>
+
+<U><FONT COLOR=blue>The Louis Round Wilson Library</FONT></U><BR>
+Houses the following:<BR>
+<U><FONT COLOR=blue>Carolina Digital Library and Archives (CDLA)</FONT></U>,<BR>
+<U><FONT COLOR=blue>Digital Collections</FONT></U>,
+<U><FONT COLOR=blue>General Manuscripts</FONT></U>,
+<U><FONT COLOR=blue>Music</FONT></U>,<BR>
+<U><FONT COLOR=blue>North Carolina Collection</FONT></U>,
+<U><FONT COLOR=blue>NCC Gallery</FONT></U>,       
+<U><FONT COLOR=blue>Photographic Archives</FONT></U>,<BR>
+<U><FONT COLOR=blue>Rare Book Collection</FONT></U>,
+<U><FONT COLOR=blue>Southern Historical Coll.,</FONT></U><BR> 
+<U><FONT COLOR=blue>Southern Folklife Coll.,</FONT></U> 
+and <U><FONT COLOR=blue>University Archives &amp; Records Service</FONT></U>
+
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+
+<P><U><FONT COLOR=blue><EM>Odum Institute</EM></FONT></U><BR>
+(919) 962-3061
+<BR>
+
+<U><FONT COLOR=blue>Information and Library Science Library</FONT></U><BR>
+and<BR><U><FONT COLOR=blue>Odum Institute Data Library</FONT></U><BR>Manning Hall
+
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+  </P>
+
+	
+<P><U><FONT COLOR=blue><EM>Photographic Archives</EM></FONT></U><BR>
+(919) 962-1172 &nbsp;|&nbsp;<U><FONT COLOR=blue>Hours</FONT></U>
+<BR>
+
+<U><FONT COLOR=blue>The Louis Round Wilson Library</FONT></U><BR>
+Houses the following:<BR>
+<U><FONT COLOR=blue>Carolina Digital Library and Archives (CDLA)</FONT></U>,<BR>
+<U><FONT COLOR=blue>Digital Collections</FONT></U>,
+<U><FONT COLOR=blue>General Manuscripts</FONT></U>,
+<U><FONT COLOR=blue>Music</FONT></U>,<BR>
+<U><FONT COLOR=blue>North Carolina Collection</FONT></U>,
+<U><FONT COLOR=blue>NCC Gallery</FONT></U>,       
+<U><FONT COLOR=blue>Photographic Archives</FONT></U>,<BR>
+<U><FONT COLOR=blue>Rare Book Collection</FONT></U>,
+<U><FONT COLOR=blue>Southern Historical Coll.,</FONT></U><BR> 
+<U><FONT COLOR=blue>Southern Folklife Coll.,</FONT></U> 
+and <U><FONT COLOR=blue>University Archives &amp; Records Service</FONT></U>
+
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+
+<P><U><FONT COLOR=blue><EM>Rare Book Collection</EM></FONT></U><BR>
+(919) 962-1143 &nbsp;|&nbsp;<U><FONT COLOR=blue>Hours</FONT></U>
+<BR>
+
+<U><FONT COLOR=blue>The Louis Round Wilson Library</FONT></U><BR>
+Houses the following:<BR>
+<U><FONT COLOR=blue>Carolina Digital Library and Archives (CDLA)</FONT></U>, <BR>
+<U><FONT COLOR=blue>Digital Collections</FONT></U>,
+<U><FONT COLOR=blue>General Manuscripts</FONT></U>,
+<U><FONT COLOR=blue>Music</FONT></U>,<BR>
+<U><FONT COLOR=blue>North Carolina Collection</FONT></U>,
+<U><FONT COLOR=blue>NCC Gallery</FONT></U>,       
+<U><FONT COLOR=blue>Photographic Archives</FONT></U>,<BR>
+<U><FONT COLOR=blue>Rare Book Collection</FONT></U>,
+<U><FONT COLOR=blue>Southern Historical Coll.,</FONT></U><BR> 
+<U><FONT COLOR=blue>Southern Folklife Coll.,</FONT></U> 
+and <U><FONT COLOR=blue>University Archives &amp; Records Service</FONT></U>
+
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+
+<P><U><FONT COLOR=blue><EM>School of Govt.</EM></FONT></U><BR>
+(919) 966-4172 &nbsp;|&nbsp;<U><FONT COLOR=blue>Hours</FONT></U>
+<BR>
+
+<U><FONT COLOR=blue>Joseph Palmer Knapp Library</FONT></U><BR>(Institute of Government Library)<BR>Knapp-Sanders Building
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+
+<P><U><FONT COLOR=blue><EM>Science</EM></FONT></U><BR>
+ (919) 962-1188 &nbsp;|&nbsp;<U><FONT COLOR=blue>Hours</FONT></U> 
+ <BR>
+
+<U><FONT COLOR=blue>Kenan Science Library</FONT></U><BR>
+Venable<BR>
+(new building may not be on map image)
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+  </P>  
+  
+  <P><U><FONT COLOR=blue><EM>Science Annex</EM></FONT></U><BR>
+ (919) 962-2264 &nbsp;|&nbsp;<U><FONT COLOR=blue>Hours</FONT></U> 
+ <BR>
+
+<U><FONT COLOR=blue>Kenan Science Library Annex</FONT></U><BR>
+Wilson Library, South Rd. Entrance
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+  </P>  
+
+
+
+
+<P><U><FONT COLOR=blue><EM>Southern Historical Coll.</EM></FONT></U><BR>
+(919) 962-1345 &nbsp;|&nbsp;<U><FONT COLOR=blue>Hours</FONT></U>
+<BR>
+
+<U><FONT COLOR=blue>The Louis Round Wilson Library</FONT></U><BR>
+Houses the following:<BR>
+<U><FONT COLOR=blue>Carolina Digital Library and Archives (CDLA)</FONT></U>,
+<U><FONT COLOR=blue>Digital Collections</FONT></U>,
+<U><FONT COLOR=blue>General Manuscripts</FONT></U>,
+<U><FONT COLOR=blue>Music</FONT></U>,<BR>
+<U><FONT COLOR=blue>North Carolina Collection</FONT></U>,
+<U><FONT COLOR=blue>NCC Gallery</FONT></U>,       
+<U><FONT COLOR=blue>Photographic Archives</FONT></U>,<BR>
+<U><FONT COLOR=blue>Rare Book Collection</FONT></U>,
+<U><FONT COLOR=blue>Southern Historical Coll.,</FONT></U><BR> 
+<U><FONT COLOR=blue>Southern Folklife Coll.,</FONT></U> 
+and <U><FONT COLOR=blue>University Archives &amp; Records Service</FONT></U>
+
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+
+<P><U><FONT COLOR=blue><EM>Southern Folklife Coll.</EM></FONT></U><BR>
+(919) 962-1345 &nbsp;|&nbsp;<U><FONT COLOR=blue>Hours</FONT></U>
+<BR>
+
+<U><FONT COLOR=blue>The Louis Round Wilson Library</FONT></U><BR>
+Houses the following:<BR>
+<U><FONT COLOR=blue>Carolina Digital Library and Archives (CDLA)</FONT></U>,<BR>
+<U><FONT COLOR=blue>Digital Collections</FONT></U>,
+<U><FONT COLOR=blue>General Manuscripts</FONT></U>,
+<U><FONT COLOR=blue>Music</FONT></U>,<BR>
+<U><FONT COLOR=blue>North Carolina Collection</FONT></U>,
+<U><FONT COLOR=blue>NCC Gallery</FONT></U>,       
+<U><FONT COLOR=blue>Photographic Archives</FONT></U>,<BR>
+<U><FONT COLOR=blue>Rare Book Collection</FONT></U>,
+<U><FONT COLOR=blue>Southern Historical Coll.,</FONT></U><BR> 
+<U><FONT COLOR=blue>Southern Folklife Coll.,</FONT></U> 
+and <U><FONT COLOR=blue>University Archives &amp; Records Service</FONT></U>
+
+<U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+
+<P><U><FONT COLOR=blue><EM>Stone Center Library</EM></FONT></U><BR>
+(919) 843-5804 &nbsp;|&nbsp;<U><FONT COLOR=blue>Hours</FONT></U>
+<BR>
+
+<U><FONT COLOR=blue>Sonja Haynes Stone Center for Black Culture and History Library</FONT></U><BR>Stone Center, room 310<BR>
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+
+
+<P><U><FONT COLOR=blue><EM>Undergraduate</EM></FONT></U><BR>
+(919) 962-1355 &nbsp;|&nbsp;<U><FONT COLOR=blue>Hours</FONT></U>
+<BR>
+
+<U><FONT COLOR=blue>R.B. House Undergraduate Library</FONT></U><BR>Houses the <U><FONT COLOR=blue>Media Resources Center</FONT></U>
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+
+
+<P><U><FONT COLOR=blue><EM>University Archives &amp; Records Service</EM></FONT></U><BR>
+(919) 962-1345 &nbsp;|&nbsp;<U><FONT COLOR=blue>Hours</FONT></U>
+<BR>
+
+<U><FONT COLOR=blue>The Louis Round Wilson Library</FONT></U><BR>
+Houses the following:<BR>
+<U><FONT COLOR=blue>Carolina Digital Library and Archives (CDLA)</FONT></U>, <BR>
+<U><FONT COLOR=blue>Digital Collections</FONT></U>,
+<U><FONT COLOR=blue>General Manuscripts</FONT></U>,
+<U><FONT COLOR=blue>Music</FONT></U>,<BR>
+<U><FONT COLOR=blue>North Carolina Collection</FONT></U>,
+<U><FONT COLOR=blue>NCC Gallery</FONT></U>,       
+<U><FONT COLOR=blue>Photographic Archives</FONT></U>,<BR>
+<U><FONT COLOR=blue>Rare Book Collection</FONT></U>,
+<U><FONT COLOR=blue>Southern Historical Coll.,</FONT></U><BR> 
+<U><FONT COLOR=blue>Southern Folklife Coll.,</FONT></U> 
+and <U><FONT COLOR=blue>University Archives &amp; Records Service</FONT></U>
+
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+
+<P><U><FONT COLOR=blue><EM>Wilson</EM></FONT></U><BR>
+(919) 962-3765 &nbsp;|&nbsp;<U><FONT COLOR=blue>Hours</FONT></U>
+<BR>
+
+<U><FONT COLOR=blue>The Louis Round Wilson Library</FONT></U><BR>
+Houses the following:<BR>
+<U><FONT COLOR=blue>Carolina Digital Library and Archives (CDLA)</FONT></U>, <BR>
+<U><FONT COLOR=blue>Digital Collections</FONT></U>,
+<U><FONT COLOR=blue>General Manuscripts</FONT></U>,
+<U><FONT COLOR=blue>Music</FONT></U>,<BR>
+<U><FONT COLOR=blue>North Carolina Collection</FONT></U>,
+<U><FONT COLOR=blue>NCC Gallery</FONT></U>,       
+<U><FONT COLOR=blue>Photographic Archives</FONT></U>,<BR>
+<U><FONT COLOR=blue>Rare Book Collection</FONT></U>,
+<U><FONT COLOR=blue>Southern Historical Coll.,</FONT></U><BR> 
+<U><FONT COLOR=blue>Southern Folklife Coll.,</FONT></U> 
+and <U><FONT COLOR=blue>University Archives &amp; Records Service</FONT></U>
+
+  <U><FONT COLOR=blue>Show on the map</FONT></U>
+</P>
+
+</TD>
+
+
+
+<TD>
+
+
+
+
+<P><EM>Request a Title for Purchase</EM><BR>
+  <U><FONT COLOR=blue>University Library</FONT></U> | 
+<U><FONT COLOR=blue>Health Sciences Library</FONT></U> | 
+<U><FONT COLOR=blue>Law Library faculty</FONT></U> &nbsp;|&nbsp; <U><FONT COLOR=blue>Law Library non-faculty</FONT></U></P>
+
+<P><U><FONT COLOR=blue>Donating
+    Materials to the University Library</FONT></U></P>
+<P><U><FONT COLOR=blue>Make a Gift - Be A Friend of the Library</FONT></U></P>
+
+
+
+
+
+
+<H3>Map of the Libraries</H3>
+
+
+<EM>JavaScript must be enabled in order for you to use Google Maps.</EM> 
+
+      However, it seems JavaScript is either disabled or not supported by your browser. 
+
+      To view Google Maps, enable JavaScript by changing your browser options, and then 
+
+      try again, or visit our <U><FONT COLOR=blue>alternate map</FONT></U>.
+
+    
+
+
+
+  
+<!--<iframe width="200" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=university+of+north+carolina+at+&amp;f=&amp;sll=35.91464,79.05659&amp;sspn=0.115948,0.233459&amp;ie=UTF8&amp;hl=en&amp;cd=1&amp;t=h&amp;s=AARTsJrWiKA0HD2tuu5zoC7PBAr7mudPHw&amp;ll=35.914635,79.056931&amp;spn=0.111222,0.137329&amp;z=11&amp;iwloc=addr&amp;output=embed"></iframe>-->
+<BR><U><FONT COLOR=blue>View Alternate Map</FONT></U>
+
+</TD></TR></TABLE>
+
+
+
+
+
+
+
+<!--end content -->
+
+<!-- START NEW.INC FOOTER -->
+	
+
+&nbsp;
+
+
+		
+
+<!-- START NEW.INC FOOTER -->
+<U><FONT COLOR=blue>[Connect with us!]</FONT></U>	
+
+
+		
+<U><FONT COLOR=blue>Home</FONT></U>
+ | <U><FONT COLOR=blue>Hours</FONT></U>
+ | <U><FONT COLOR=blue>Search This Site</FONT></U>
+ | <U><FONT COLOR=blue>UNC Home</FONT></U>
+ | <U><FONT COLOR=blue>Privacy Policy</FONT></U>
+		
+
+	
+
+			<BR>
+
+Website comments or questions: <U><FONT COLOR=blue>Library Web Team</FONT></U>
+<BR>Suggestions on Library Services? <U><FONT COLOR=blue>Give us your feedback</FONT></U>.
+		<BR>
+    		URL: http://www.lib.unc.edu/libraries_collections.html <BR>
+	
+This page was last updated Wednesday, January 11, 2012.
+	
+
+
+
+
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>
+<!-- END NEW.INC FOOTER -->

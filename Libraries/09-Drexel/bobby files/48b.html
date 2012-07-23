@@ -1,0 +1,303 @@
+
+<HTML>
+  <HEAD>
+<META CONTENT="text/html; charset=utf-8">
+    <META CONTENT="text/html; charset=utf-8">
+
+            
+    <TITLE>How Can We Help You? | Drexel University Libraries</TITLE>
+    
+    
+    
+    
+    
+    
+
+    
+
+
+    
+	
+	
+    
+	
+
+
+
+
+
+
+
+<!--//--><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" }, "viewsSlideshowSingleFrame": { "#views_slideshow_singleframe_main_homepage_slideshow_completeblock_1": { "num_divs": 3, "id_prefix": "#views_slideshow_singleframe_main_", "div_prefix": "#views_slideshow_singleframe_div_", "vss_id": "homepage_slideshow_completeblock_1", "timeout": "5000", "sort": 1, "effect": "fade", "speed": "500", "start_paused": 0, "delay": "0", "fixed_height": "1", "random": "1", "pause": "1", "pause_on_click": "0", "pause_when_hidden": 0, "pause_when_hidden_type": "full", "amount_allowed_visible": "", "remember_slide": 0, "remember_slide_days": "1", "controls": "0", "items_per_slide": "1", "pager": "2", "pager_type": "Numbered", "pager_hover": "2", "pager_click_to_page": 0, "image_count": "0", "nowrap": "0", "sync": "1", "advanced": "", "ie": { "cleartype": "true", "cleartypenobg": "false" } } } });
+//-->
+
+	
+	
+		$(document).ready(function() {
+			
+			$('#sm-offline').addClass('hide');
+			$('#sm-advisory').addClass('hide');
+			$('#sm-online').addClass('hide');
+			
+			var containsAdvisory = $("#node-4182").text().indexOf('Current Status: Service-wide Advisory') >= 0; // true
+			var containsOffline = $("#node-4182").text().indexOf('Current Status: Offline') >= 0; // true
+			
+			if(containsAdvisory){
+				$('#sm-advisory').addClass('show');
+				$('#sm-advisory').removeClass('hide');
+			}
+			
+			if(containsOffline){
+				$('#sm-offline').addClass('show');
+				$('#sm-offline').removeClass('hide');
+			}
+			
+			if(!containsAdvisory && !containsOffline){
+				$('#sm-advisory').addClass('hide');
+				$('#sm-advisory').removeClass('show');
+				$('#sm-offline').addClass('hide');
+				$('#sm-offline').removeClass('show')
+				;
+				$('#sm-online').addClass('show');
+				$('#sm-online').removeClass('hide');
+			}
+			
+		});
+	
+
+    
+    <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/drexellib30theme/fixie.css" />    <![endif]-->
+  </HEAD>
+  <BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+
+
+	<U><FONT COLOR=blue>[Drexel Library]</FONT></U>
+	<U><FONT COLOR=blue>[Libraries Home Button]</FONT></U>
+	<U><FONT COLOR=blue>[Drexel Health Sciences]</FONT></U>
+	<U><FONT COLOR=blue>[Search]</FONT></U>
+	<U><FONT COLOR=blue>[Services]</FONT></U>
+	<U><FONT COLOR=blue>[Get Help]</FONT></U>
+	<U><FONT COLOR=blue>[About]</FONT></U>
+    <U><FONT COLOR=blue>[Drexel University]</FONT></U>
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+	<H1>    <U><FONT COLOR=blue>  Services </FONT></U></H1>
+  
+
+
+	
+<UL>
+<LI><U><FONT COLOR=blue>Renew a Book</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Interlibrary Loan<BR>
+    </FONT></U></LI>
+<LI><U><FONT COLOR=blue>Subject Librarians</FONT></U></LI>
+<LI><U><FONT COLOR=blue>The Suggestion Box</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Reserve a Group Study Room</FONT></U></LI>
+</UL>
+
+    
+    
+    
+    
+    
+    
+
+
+    
+
+	<H1>Quick Search</H1>
+    
+	  <FORM>
+           <INPUT VALUE="016083094869134140650:ibrgznq8u7a" NAME="cx" TYPE="hidden">
+    <INPUT VALUE="FORID:9" NAME="cof" TYPE="hidden">
+    <INPUT VALUE="UTF-8" NAME="ie" TYPE="hidden">  
+            <P>
+
+                    <INPUT NAME="q" MAXLENGTH="255" SIZE="19" TYPE="text"></P>
+                   	<P>	<INPUT VALUE="keyword" NAME="sortByThis" TYPE="hidden">
+                          <SELECT NAME="destination">
+                          <OPTION VALUE="books">Books &amp; More</OPTION>
+                          <OPTION VALUE="catalog" SELECTED="selected">Articles &amp; More</OPTION>
+                          <OPTION VALUE="website">Website</OPTION>
+                    </SELECT></P>
+                    
+                        <INPUT VALUE="/index.html" NAME="page" TYPE="hidden">
+                        <INPUT VALUE="" NAME="combined" TYPE="hidden">
+
+                    <INPUT VALUE="Search" TYPE="submit">
+               </FORM>
+               
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+Library Chat is loading...
+$(document).ready(libChatPrint());
+
+
+
+
+    
+	<H1>      My Library Accounts </H1>
+  
+
+
+	
+<UL>
+    <LI><U><FONT COLOR=blue>My Personal Library [beta]</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>My Library Record / Renew Books</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>ILLiad<BR>
+    </FONT></U></LI>
+    <LI><U><FONT COLOR=blue>E-Z Borrow</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Current Status of Online Services</FONT></U></LI>
+</UL>
+    
+    
+    
+    
+    
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+	<H4>How Can We Help You?</H4>
+
+
+
+                
+            
+
+
+
+  
+    <H3>See also an&nbsp;<U><FONT COLOR=blue>exhaustive list of services we offer.</FONT></U></H3>
+<P>&nbsp;</P>
+<H2>New Student? We can help you:</H2>
+<UL>
+<LI><U><FONT COLOR=blue>Find books, articles, course reserves and just about anything else you need</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Learn basic research skills to improve your coursework</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Get to the items you need to do your work</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Check out our Group Work Survival Guide</FONT></U></LI>
+</UL>
+<P>&nbsp;</P>
+<H2>Already familiar with the basic tools of research? We can:&nbsp;</H2>
+<UL>
+<LI><U><FONT COLOR=blue>Show you how to use databases and other advanced search tools</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Help you improve your research</FONT></U></LI>
+</UL>
+<P>&nbsp;</P>
+<H3><U><FONT COLOR=blue>And of course Subject Librarians are available to help you,</FONT></U> and <U><FONT COLOR=blue>are only a chat away.</FONT></U></H3>
+<P>&nbsp;</P>
+<H2>We also have specialized services for:</H2>
+<UL>
+<LI><U><FONT COLOR=blue>Alumni/ae</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Retired and Emeritus Faculty</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Distance Learners</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Drexel@BCC Students</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Drexel University Graduate Center at Sacramento</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Faculty</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Graduate Students: Thesis and Dissertation Binding</FONT></U></LI>
+<LI><U><FONT COLOR=blue>New Students</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Patrons with Disabilities</FONT></U></LI>
+</UL>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+  
+  
+    
+          <UL><LI></LI>
+</UL>
+     
+
+            
+            
+				<P>Content Editor: <U><FONT COLOR=blue>Shawn Woodson</FONT></U><BR>
+				Last Updated: 01/06/2012</P>
+			
+
+
+
+
+
+
+
+
+
+
+
+<P><U><FONT COLOR=blue>[feedback]</FONT></U>  <U><FONT COLOR=blue>About Us</FONT></U> | <U><FONT COLOR=blue>Downloads</FONT></U> | <U><FONT COLOR=blue>Contact Us</FONT></U> | <U><FONT COLOR=blue>Site Index</FONT></U> | <U><FONT COLOR=blue>Site Map</FONT></U> | <U><FONT COLOR=blue>Legal Research Center</FONT></U> <U><FONT COLOR=blue>[Facebook]</FONT></U> <U><FONT COLOR=blue>[Twitter]</FONT></U></P>
+
+
+
+
+
+
+
+
+	<P>Copyright &#169; 2012 Drexel University Libraries, 33rd and Market Streets, Philadelphia, PA 19104.  All rights reserved  &nbsp;&nbsp;|  &nbsp;&nbsp;<U><FONT COLOR=blue>Privacy Policy</FONT></U></P>
+
+		<P>Powered by Drupal [Druplicon icon]</P>
+	
+	
+<P><U><FONT COLOR=blue>See mobile version</FONT></U></P>
+
+	
+
+         
+                      
+<!--//--><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA16932781"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".googleanalytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//-->
+
+    
+
+  </BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>

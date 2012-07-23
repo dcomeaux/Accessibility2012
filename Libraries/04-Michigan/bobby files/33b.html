@@ -1,0 +1,867 @@
+
+<HTML>
+  <HEAD>
+<META CONTENT="text/html; charset=utf-8">
+    <!-- <base href=""> -->
+    <TITLE>Current News | MLibrary</TITLE>
+                    <META CONTENT="text/html; charset=utf-8">
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--//--><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" }, "lightbox2": { "rtl": 0, "file_path": "/(\\w\\w/)files", "default_image": "/sites/www.lib.umich.edu/modules/lightbox2/images/brokenimage.jpg", "border_size": 20, "font_color": "666", "box_color": "fff", "top_position": "", "overlay_opacity": 0.9, "overlay_color": "333", "disable_close_click": 1, "resize_sequence": 0, "resize_speed": 200, "fade_in_speed": 200, "slide_down_speed": 200, "use_alt_layout": 0, "disable_resize": 0, "disable_zoom": 0, "force_show_nav": 0, "loop_items": 0, "node_link_text": "View Image Details", "node_link_target": 0, "image_count": "Image !current of !total", "video_count": "Video !current of !total", "page_count": "Page !current of !total", "lite_press_x_close": "press \x3ca href=\"#\" onclick=\"hideLightbox(); return FALSE;\"\x3e\x3ckbd\x3ex\x3c/kbd\x3e\x3c/a\x3e to close", "download_link_text": "", "enable_login": false, "enable_contact": false, "keys_close": "c x 27", "keys_previous": "p 37", "keys_next": "n 39", "keys_zoom": "z", "keys_play_pause": "32", "display_image_size": "", "image_node_sizes": "()", "trigger_lightbox_classes": "", "trigger_lightbox_group_classes": "", "trigger_slideshow_classes": "", "trigger_lightframe_classes": "", "trigger_lightframe_group_classes": "", "custom_class_handler": 0, "custom_trigger_classes": "", "disable_for_gallery_lists": true, "disable_for_acidfree_gallery_lists": true, "enable_acidfree_videos": true, "slideshow_interval": 5000, "slideshow_automatic_start": 0, "slideshow_automatic_exit": 1, "show_play_pause": 1, "pause_on_next_click": 0, "pause_on_previous_click": true, "loop_slides": 0, "iframe_width": 600, "iframe_height": 400, "iframe_border": 1, "enable_video": 0 }, "mlibrary_loading_gif": "sites/www.lib.umich.edu/modules/mlibrary/images/loading.gif", "arg": [ "news" ], "mlibrary_browse": { "ui_select_item_url": "/mlibrary_browse_ui_select_item.html" }, "viewsSlideshowSingleFrame": { "#views_slideshow_singleframe_main_about_library_newsattachment_1": { "num_divs": 10, "id_prefix": "#views_slideshow_singleframe_main_", "div_prefix": "#views_slideshow_singleframe_div_", "vss_id": "about_library_newsattachment_1", "timeout": "10000", "sort": 1, "effect": "scrollUp", "speed": "2012", "start_paused": 0, "delay": "0", "fixed_height": "1", "random": "0", "pause": "1", "pause_on_click": "0", "pause_when_hidden": 0, "pause_when_hidden_type": "full", "amount_allowed_visible": "", "remember_slide": 0, "remember_slide_days": "1", "controls": "1", "items_per_slide": "1", "pager": "0", "pager_type": "Numbered", "pager_hover": "2", "pager_click_to_page": 0, "image_count": "1", "nowrap": "0", "sync": "1", "advanced": "", "ie": { "cleartype": "true", "cleartypenobg": "false" } } }, "mlibrary_search": { "tabs": [ "mlibrary", "articles", "catalog" ], "options": "\'mlibrary\',\'articles\',\'catalog\'" } });
+//-->
+
+    <!--[if lt IE 7]>
+      <link type="text/css" rel="stylesheet" media="all" href="/sites/www.lib.umich.edu/themes/mlibrary/fixie.css" />    <![endif]-->
+  </HEAD>
+  <BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+    
+      
+      
+        <!-- sidebar -->
+        
+          
+          <U><FONT COLOR=blue>[MLibrary Logo]</FONT></U>          
+          
+            <U><FONT COLOR=blue>[University of Michigan]</FONT></U>          
+                    &nbsp;
+        <!-- sidebar -->
+
+        
+          
+          
+          
+						
+								
+							&nbsp;<!-- /alerts -->
+								
+							
+								
+									<UL><LI><U><FONT COLOR=blue>About</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Services</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Libraries &amp; Departments</FONT></U></LI>
+</UL> | 
+									<UL><LI><U><FONT COLOR=blue>MGet It</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Search Tools</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Catalog (Mirlyn)</FONT></U></LI>
+</UL>								<!-- /navcontent -->
+							<!-- /nav -->
+								
+							
+
+
+  
+  
+  
+  
+  <U><FONT COLOR=blue>Login for Favorites</FONT></U>
+
+
+
+							
+						<!-- /alertsnavcontainer -->
+						
+					<!-- /header -->
+          
+          
+                          
+
+  <H2>Search</H2>
+
+  <U><FONT COLOR=blue>[Search]</FONT></U><INPUT VALUE="MLibrary" TYPE="button"><INPUT VALUE="ArticlesPlus" TYPE="button"><INPUT VALUE="Catalog" TYPE="button"><FORM>
+<INPUT VALUE="" NAME="op" TYPE="hidden">
+
+ Search MLibrary: 
+ <INPUT VALUE="" NAME="query" MAXLENGTH="128" SIZE="23" TYPE="text">
+
+<INPUT VALUE="" NAME="op" TYPE="submit">
+
+ <INPUT VALUE="searchtools" NAME="left[searchtools]" CHECKED="checked" TYPE="checkbox"> Databases
+
+
+ <INPUT VALUE="mirlyn" NAME="left[mirlyn]" CHECKED="checked" TYPE="checkbox"> Catalog (Mirlyn)
+
+
+ <INPUT VALUE="ejournals" NAME="left[ejournals]" CHECKED="checked" TYPE="checkbox"> Online Journals
+
+
+ <INPUT VALUE="libguides" NAME="right[libguides]" CHECKED="checked" TYPE="checkbox"> Research Guides
+
+
+ <INPUT VALUE="website" NAME="right[website]" CHECKED="checked" TYPE="checkbox"> Library Webpages
+
+
+ <INPUT VALUE="digitalcollections" NAME="right[digitalcollections]" CHECKED="checked" TYPE="checkbox"> Collections
+
+<INPUT VALUE="" NAME="op" TYPE="submit">
+<INPUT VALUE="mlibrary" NAME="search_tab" TYPE="hidden">
+
+ <INPUT VALUE="scholarly" NAME="articles[scholarly]" TYPE="checkbox"> Limit to peer-reviewed journals
+
+
+ <INPUT VALUE="newspapers" NAME="articles[newspapers]" TYPE="checkbox"> Exclude newspaper articles
+
+
+ <INPUT VALUE="fulltext" NAME="articles[fulltext]" TYPE="checkbox"> Limit to articles with full text online
+
+
+ <INPUT VALUE="local" NAME="articles[local]" TYPE="checkbox"> Add results beyond MLibrary
+
+<U><FONT COLOR=blue>Advanced Articles<EM>Plus</EM> Search</FONT></U>Catalog Search Options
+ <INPUT VALUE="all" NAME="catalog" CHECKED="checked" TYPE="radio"> Keywords
+
+
+ <INPUT VALUE="title" NAME="catalog" TYPE="radio"> Title
+
+
+ <INPUT VALUE="author" NAME="catalog" TYPE="radio"> Author
+
+
+ <INPUT VALUE="subject" NAME="catalog" TYPE="radio"> Subject
+
+
+ <INPUT VALUE="hlb" NAME="catalog" TYPE="radio"> Academic Discipline
+
+
+ <INPUT VALUE="callnumber" NAME="catalog" TYPE="radio"> Call Number
+
+
+ <INPUT VALUE="isn" NAME="catalog" TYPE="radio"> ISSN/ISBN/etc
+
+<INPUT VALUE="form-0c23a0f413524b9acd77a8c17dbde616" NAME="form_build_id" TYPE="hidden">
+<INPUT VALUE="mlibrary_search_form_setup" NAME="form_id" TYPE="hidden">
+
+</FORM>
+
+
+
+
+  <H2>Browse</H2>
+
+  <U><FONT COLOR=blue>[Browse]</FONT></U><FORM>
+
+ <SELECT NAME="selects"><OPTION VALUE="0"></OPTION><OPTION VALUE="1"></OPTION></SELECT>
+
+<INPUT VALUE="" NAME="op" TYPE="submit">
+<INPUT VALUE="" NAME="op" TYPE="submit">
+<INPUT VALUE="form-6975ba6b43efbaceccde87d6b6a201e3" NAME="form_build_id" TYPE="hidden">
+<INPUT VALUE="mlibrary_browse_ui_form" NAME="form_id" TYPE="hidden">
+
+</FORM>
+
+
+
+
+  <H2>Get Help</H2>
+
+  [Get Help]<U><FONT COLOR=blue>Ask a Librarian</FONT></U><U><FONT COLOR=blue>Using the Library</FONT></U><UL><LI> <U><FONT COLOR=blue>- Chat</FONT></U></LI><LI> <U><FONT COLOR=blue>- Email</FONT></U></LI><LI> <U><FONT COLOR=blue>- Phone</FONT></U></LI><LI> <U><FONT COLOR=blue>- In Person</FONT></U></LI><LI> <U><FONT COLOR=blue>Subject Specialists</FONT></U></LI></UL><UL><LI> <U><FONT COLOR=blue>Research Guides</FONT></U></LI><LI> <U><FONT COLOR=blue>Instruction &amp; Workshops</FONT></U></LI><LI> <U><FONT COLOR=blue>Searchpath</FONT></U></LI><LI> <U><FONT COLOR=blue>Off-Campus Access</FONT></U></LI><LI> <U><FONT COLOR=blue>Video Tutorials</FONT></U></LI></UL>
+
+                      <!-- /searchoptions -->
+
+          
+            
+            <!-- breadcrumbs -->
+                        <U><FONT COLOR=blue>Home</FONT></U> &gt; News<!-- /breadcrumbs -->
+                        
+            <!-- admintabs -->
+                        
+            <!-- content area -->
+                                    <!-- mission & help  not sure when these show up... -->
+                        <!-- /mission, /help -->
+            
+            
+    
+  
+    
+  
+		
+				
+    
+					<U><FONT COLOR=blue>Visit the MLibrary Blog: The Shhh! Stops Here &raquo;</FONT></U>
+			
+				<H4>Recent Announcements March 2012</H4>
+
+    
+  
+  
+      
+      
+    <UL>
+          <LI>  
+  
+                <U><FONT COLOR=blue>MLibrary Undergraduate Student Research...</FONT></U>
+  
+</LI>
+          <LI>  
+  
+                <U><FONT COLOR=blue>New Feature in Search Tools and...</FONT></U>
+  
+</LI>
+          <LI>  
+  
+                <U><FONT COLOR=blue>Did You Know?</FONT></U>
+  
+</LI>
+      </UL>
+    
+  
+  
+  
+  
+  
+  
+ 			<!-- mlibrary_news_announcements_container -->
+			
+				   
+
+  <H2>University of Michigan Library</H2>
+  <H4>In the News</H4>
+    
+  
+  
+      
+      
+
+  
+    <U><FONT COLOR=blue>Previous</FONT></U><U><FONT COLOR=blue>Pause</FONT></U><U><FONT COLOR=blue>Next</FONT></U>
+        1 of 1  
+
+
+  
+  
+                <U><FONT COLOR=blue>Guild Motion Asks for Quick Ruling on...</FONT></U>
+  
+  
+  
+                March 8th, 2012
+  
+  
+  
+                &nbsp;|&nbsp;Publishers Weekly
+  
+  
+  
+                Although the Google Book Settlement has been rejected by the court,  one reason the parties were even able to reach an agreement was by  avoiding the question of whether Google&rsquo;s scanning of copyrighted books  was a violation of fair use. The issue came up late last year when the...
+  
+  
+  
+                
+  
+
+
+
+
+  
+  
+                <U><FONT COLOR=blue>Harvard Library to Deposit Additional Volumes...</FONT></U>
+  
+  
+  
+                March 8th, 2012
+  
+  
+  
+                &nbsp;|&nbsp;Harvard University Library News
+  
+  
+  
+                <P>March 6, 2012&mdash;The Harvard Library will deposit approximately 200,000 public domain volumes in <U><FONT COLOR=blue>HathiTrust</FONT></U>, a shared digital repository for published materials. This follows Harvard's...</P>
+  
+  
+  
+                
+  
+
+
+
+
+  
+  
+                <U><FONT COLOR=blue>GSU president to hold discussion on the future...</FONT></U>
+  
+  
+  
+                February 22nd, 2012
+  
+  
+  
+                &nbsp;|&nbsp;Georgia State University
+  
+  
+  
+                
+
+GSU president to hold discussion on the future of academic libraries
+
+<P><EM>Contact:</EM> <BR>
+<U><FONT COLOR=blue>Leah Seupersad</FONT></U>,&nbsp;404-413-1354<BR>
+University Relations&nbsp;&nbsp;</P>
+<P>ATLANTA&mdash;...</P>
+  
+  
+  
+                
+  
+
+
+
+
+  
+  
+                <U><FONT COLOR=blue>New training resources addres civility and bias...</FONT></U>
+  
+  
+  
+                February 13th, 2012
+  
+  
+  
+                &nbsp;|&nbsp;American Libraries Magazine
+  
+  
+  
+                <P>CHICAGO - Two new training resources addressing civility and bias in the workplace are now available from the ALA Office for Diversity.&nbsp;</P>
+<P>Developed by the ALA Office for Diversity and the ...</P>
+  
+  
+  
+                
+  
+
+
+
+
+  
+  
+                <U><FONT COLOR=blue>We Need Copyright 2.0</FONT></U>
+  
+  
+  
+                February 1st, 2012
+  
+  
+  
+                &nbsp;|&nbsp;American Libraries Magazine
+  
+  
+  
+                <P>[...]</P>
+<P>There is little incentive for rights holders to negotiate with us in a  future in which ownership, fair use, and first-sale doctrines have been  replaced with rentals and licensing. In that future, rights holders get  to make all the rules, which will benefit them instead of the...</P>
+  
+  
+  
+                
+  
+
+
+
+
+  
+  
+                <U><FONT COLOR=blue>HathiTrust Libraries Map a Shared Path:</FONT></U>
+  
+  
+  
+                January 16th, 2012
+  
+  
+  
+                &nbsp;|&nbsp;Project Muse
+  
+  
+  
+                <P>[...]</P>
+<P>What became HathiTrust started in late 2006 as a proposal from the  University of Michigan to its sister libraries in the Committee on  Institutional Cooperation (CIC), to operate a shared digital repository  to archive the large files that would be generated as the CIC libraries...</P>
+  
+  
+  
+                
+  
+
+
+
+
+  
+  
+                <U><FONT COLOR=blue>University of Michigan eyes e-books as a way to...</FONT></U>
+  
+  
+  
+                January 9th, 2012
+  
+  
+  
+                &nbsp;|&nbsp;Ann Arbor.com
+  
+  
+  
+                <P>The <EM>University of Michigan </EM>is considering widely <U><FONT COLOR=blue>embracing electronic textbooks</FONT></U> in the coming years.</P>
+<P>But how cost effective will a move toward the 21st...</P>
+  
+  
+  
+                
+  
+
+
+
+
+  
+  
+                <U><FONT COLOR=blue>Information Literacy in the Wild</FONT></U>
+  
+  
+  
+                December 24th, 2011
+  
+  
+  
+                &nbsp;|&nbsp;School Library Monthly
+  
+  
+  
+                <P>On behalf of the University of Michigan&rsquo;s <U><FONT COLOR=blue>SI 641 / EDCURINS 575 : Information Literacy for Teaching and Learning</FONT></U> class, I invite you to download a copy of our 170+ page book, Information...</P>
+  
+  
+  
+                
+  
+
+
+
+
+  
+  
+                <U><FONT COLOR=blue>National Federation of the Blind Seeks to Join...</FONT></U>
+  
+  
+  
+                December 16th, 2011
+  
+  
+  
+                &nbsp;|&nbsp;The Chronicle of Higher Education
+  
+  
+  
+                <P>The National Federation of the Blind <U><FONT COLOR=blue>has asked</FONT></U> a federal court to add it to the <U><FONT COLOR=blue>defendants</FONT></U> named...</P>
+  
+  
+  
+                
+  
+
+
+
+
+  
+  
+                <U><FONT COLOR=blue>HathiTrust Defendants Respond to Authors Guild...</FONT></U>
+  
+  
+  
+                December 7th, 2011
+  
+  
+  
+                &nbsp;|&nbsp;Chronicle of Higher Education
+  
+  
+  
+                <P>The HathiTrust digital repository and the five universities <U><FONT COLOR=blue>sued</FONT></U> by the Authors Guild and others over mass book digitization and alleged copyright infringement have...</P>
+  
+  
+  
+                
+  
+
+
+
+
+
+    
+  
+  
+  
+  
+  
+  
+ 			<!-- mlibrary_in_the_news_container -->
+        
+    
+		<H4>News by Category March 2012</H4>
+
+    
+  
+  
+      
+      <UL><LI><U><FONT COLOR=blue>News (10)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Resources (4)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Announcement (3)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>People (2)</FONT></U></LI>
+</UL>    
+  
+  
+  
+  
+  
+  
+ 		<!-- mlibrary_news_categories_count_container -->
+		
+		
+		<H4>News by Month </H4>
+
+    
+  
+  
+      
+      <UL><LI><U><FONT COLOR=blue>March 2012 (1)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>February 2012 (6)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>January 2012 (5)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>December 2011 (6)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>November 2011 (3)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>October 2011 (4)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>September 2011 (7)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>August 2011 (12)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>July 2011 (4)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>June 2011 (4)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>May 2011 (6)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>April 2011 (7)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>March 2011 (11)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>February 2011 (8)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>January 2011 (8)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>December 2010 (5)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>November 2010 (9)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>October 2010 (9)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>September 2010 (5)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>August 2010 (4)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>July 2010 (2)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>June 2010 (4)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>May 2010 (6)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>April 2010 (5)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>March 2010 (2)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>February 2010 (3)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>January 2010 (5)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>December 2009 (1)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>November 2009 (3)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>October 2009 (6)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>September 2009 (2)</FONT></U></LI>
+<LI><U><FONT COLOR=blue>December 1969 (1)</FONT></U></LI>
+</UL>    
+  
+  
+  
+  
+  
+  
+ 		<!-- mlibrary_news_archives_count_container -->
+		
+  <!-- mlibrary_news_filter_widget_wrapper -->
+    
+      
+        <H3>Current News</H3>
+  
+    
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue></FONT></U>		
+		<H2><U><FONT COLOR=blue>Researchers and provosts make the case for open access</FONT></U></H2>March 5, 2012<EM>News</EM><P>The many real and prospective constraints on broad and affordable  access to published scholarship recently spurred a grassroots effort to  push back against the business practices of the world&rsquo;s largest  scientific journal publisher, and prompted a strong statement by a group  of chief academic officers.</P>    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+  
+  
+    
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue></FONT></U>		
+		<H2><U><FONT COLOR=blue>John Wilkin featured as tech innovator in the Chronicle of Higher Ed</FONT></U></H2>February 27, 2012<EM>News</EM><P>A Chronicle of Higher Education article, &quot;<U><FONT COLOR=blue>12 Tech Innovators Who Are Transforming Campuses</FONT></U>,&quot; features U-M Associate University Librarian and Executive Director of <U><FONT COLOR=blue>HathiTrust</FONT></U> John Wilkin. The article highlights the potentially transformative impact that digital tools can have on teaching and research.</P>    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+  
+  
+      
+  
+      
+  
+      
+  
+    
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue>[From left, Arthur Verhoogt; Ulrike (Leyla) Lau-Lamb; and Adam Hyatt]</FONT></U>		
+		<H2><U><FONT COLOR=blue>VIDEO: New display case highlights Papyrology Collection</FONT></U></H2>February 16, 2012<EM>News</EM><P>A new case has been installed in the Hatcher Graduate Library&rsquo;s Audubon Room for the dedicated display of material from the Library&rsquo;s collection of ancient papyri.</P>    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+  
+  
+    
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue></FONT></U>		
+		<H2><U><FONT COLOR=blue>Elsevier journals boycott draws support of U-M faculty</FONT></U></H2>February 1, 2012<EM>News</EM><P>A boycott launched on January 21st has (as of February 2nd) obtained a commitment by 11 members of the U-M community and 3044 people in total to refuse to publish, referee, or do editorial work for Elsevier journals &ldquo;unless they radically change how they operate.&rdquo; </P>    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+  
+  
+    
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue>[Students watch the EBM in action]</FONT></U>		
+		<H2><U><FONT COLOR=blue>A novel use for the Espresso Book Machine</FONT></U></H2>January 24, 2012<EM>News</EM><P>Most of the time, the U-M Library&rsquo;s <U><FONT COLOR=blue>Espresso Book Machine (EBM)</FONT></U>&mdash;which can print, bind, and trim a high-quality paperback book with a four-color cover in about seven minutes&mdash;is used to reprint digitized public domain books from our own collection or from other open access sources.</P>    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+  
+  
+    
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue>[Step Afrika!]</FONT></U>		
+		<H2><U><FONT COLOR=blue>Step Afrika plays to a full house</FONT></U></H2>January 20, 2012<EM>News</EM><P>Thursday night&rsquo;s <U><FONT COLOR=blue>performance</FONT></U> by the group Step Afrika played to a full house at the Lydia Mendelssohn Theater.</P>    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+  
+  
+      
+  
+    
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue></FONT></U>		
+		<H2><U><FONT COLOR=blue>MPublishing and OHP release six open access books in critical theory</FONT></U></H2>December 21, 2011<EM>News</EM><P>Open Humanities Press (OHP) and MPublishing are pleased to announce the publication of six open access books on critical theory, continental philosophy and cultural studies. Each title will be freely available as full-text HTML, as well as in paperback editions, and are being released on a rolling publication schedule beginning 15 December.</P>
+<P>
+In a unique collaboration, the books are being jointly released by OHP, an international publishing collective run by scholars, and MPublishing, the library-based publishing enterprise at the University of Michigan.</P>    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+  
+  
+    
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue></FONT></U>		
+		<H2><U><FONT COLOR=blue>U-M responds to Authors Guild lawsuit</FONT></U></H2>December 9, 2011<EM>News</EM><P>On December 2, lawyers representing the University of Michigan and other defendants responded to the Authors Guild lawsuit that seeks to curtail the University&rsquo;s digitization efforts and impound the in-copyright digital volumes held by the defendants in the HathiTrust Digital Library, which is administered by the University and comprises more than sixty institutional participants and almost ten million volumes.</P>    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+  
+  
+      
+  
+    
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue></FONT></U>		
+		<H2><U><FONT COLOR=blue>Stephen S. Clark Library opens</FONT></U></H2>December 6, 2011<EM>News</EM><P>Construction on the second floor of the Hatcher Graduate Library South is complete, and the new Stephen S. Clark Library for Maps, Government Information, and Data Services is open for business.The celebratory ribbon cutting was held on December 2nd.</P>    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+  
+  
+      
+  
+      
+  
+    
+
+
+
+  
+  	
+		
+		<TABLE><TR><TD>
+		
+		<U><FONT COLOR=blue>[Emily Schiller (left) accepting her award from Laurie Alexander]</FONT></U>		
+		<H2><U><FONT COLOR=blue>MLibrary celebrates first annual undergraduate research awards</FONT></U></H2>November 18, 2011<EM>News</EM><P>On Friday, November 4, U-M undergraduates, librarians, and faculty gathered in Bert&rsquo;s Study Lounge in Shapiro Library to celebrate the winners of the first annual MLibrary Undergraduate Research Award, and to announce the opening of this year&rsquo;s competition.</P>    
+    <UL><LI><U><FONT COLOR=blue>Read more</FONT></U></LI>
+</UL>    
+    </TD></TR><TR><TD>&nbsp;</TD></TR></TABLE><!-- contentinner -->
+  <!-- content -->
+
+  
+  
+      
+  
+      
+    
+  
+  
+  
+  
+  
+  
+                                     <!-- /content area -->
+            
+          <!-- /nodecontainer -->
+          
+        <!-- /main -->
+        
+       <!-- /container -->
+      
+      <!-- footercontainer -->
+      
+        <!-- footer -->
+        
+          
+            
+
+  <H2>Quick Links</H2>
+
+  
+  
+    <UL><LI><U><FONT COLOR=blue>My Library Account</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Online Journal List</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Library Hours</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Webmail</FONT></U></LI>
+<LI><U><FONT COLOR=blue>CTools</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Wolverine Access</FONT></U></LI>
+<LI><U><FONT COLOR=blue>MLibrary Mobile</FONT></U></LI>
+<LI><U><FONT COLOR=blue></FONT></U></LI>
+</UL>
+  
+
+          
+          <!-- /footer -->
+          
+            
+
+  <H2>MTagger</H2>
+
+  
+
+jQuery.mtagger.base += '/mtagger';
+
+
+  
+    <U><FONT COLOR=blue>[MTagger]tag this page</FONT></U>
+    <U><FONT COLOR=blue>mtagger</FONT></U>
+  
+  
+   
+
+
+  $('#tagCloud').addCloud({ separator: ' ',url:'http://www.lib.umich.edu/news'});
+
+
+
+
+  <H2>CONTACT</H2>
+
+  <P>We welcome your 
+<U><FONT COLOR=blue>feedback</FONT></U> on our web site.</P><P>University Library<BR>818 Hatcher Graduate Library South<BR>913 S. University Avenue<BR>Ann Arbor, MI 48109-1190</P>
+
+
+
+  <H2>Copyright</H2>
+
+  Access this page at: http://www.lib.umich.edu/news<U><FONT COLOR=blue> [Creative Commons License] [Creative Commons]</FONT></U><P>Except where otherwise noted, this work is subject to a Creative Commons Attribution 3.0 license. <U><FONT COLOR=blue>Details and exceptions</FONT></U>.</P><P>&copy;2012, Regents of the University of Michigan</P>
+
+          
+        
+       <!-- /footercontainer -->
+        
+    <!-- /wrapper -->
+    
+<!--//--><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA13416208"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = "/files/googleanalytics/ga.js?2";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//-->
+
+  </BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>

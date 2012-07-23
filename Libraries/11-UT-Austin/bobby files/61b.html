@@ -1,0 +1,883 @@
+
+<HTML>
+
+<HEAD>
+<META CONTENT="text/html; charset=utf-8">
+  <TITLE>Library Widgets | University of Texas at Austin Libraries</TITLE>
+  <META CONTENT="text/html; charset=utf-8">
+
+<META NAME="dc.date" CONTENT="2011-03-14T00:00:00Z">
+<META NAME="dc.publisher" CONTENT="University of Texas Libraries">
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--//--><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "dhtmlMenu": { "slide": "slide", "siblings": "siblings", "children": "children", "clone": "clone", "doubleclick": "doubleclick", "relativity": 0 }, "fivestar": { "titleUser": "Your rating: ", "titleAverage": "Average: ", "feedbackSavingVote": "Saving your vote...", "feedbackVoteSaved": "Your vote has been saved.", "feedbackDeletingVote": "Deleting your vote...", "feedbackVoteDeleted": "Your vote has been deleted." }, "og": { "group_context": { "nid": "530", "title": "Library Widgets", "type": "group" } } });
+//-->
+
+
+   
+  
+
+<!--[if gte IE 7]>
+<link rel="stylesheet" href="/sites/all/themes/utlibraries/style_ie7.css" type="text/css" />
+<link rel="stylesheet" type="text/css" media="all" href="/sites/all/themes/utlibraries/jquerypluginscombinedie.css" />
+<![endif]-->
+
+
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="/sites/all/themes/utlibraries/style_ie6.css" type="text/css" />
+<link rel="stylesheet" type="text/css" media="all" href="/sites/all/themes/utlibraries/jquerypluginscombinedie.css" />
+<![endif]-->
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<!--<div id="wrapper">-->
+<!--UT Tower-->
+
+<U><FONT COLOR=blue>[University of Texas at Austin]</FONT></U>
+<U><FONT COLOR=blue>Skip to Content</FONT></U>
+<!--<a href="#skip" id="skip">Skip to Content</a>&nbsp;&nbsp;--><U><FONT COLOR=blue>Libraries Home</FONT></U> | <U><FONT COLOR=blue>Mobile</FONT></U> | <U><FONT COLOR=blue>My Account</FONT></U> | <U><FONT COLOR=blue>Renew 
+Items</FONT></U>  | <U><FONT COLOR=blue>Sitemap</FONT></U> | <U><FONT COLOR=blue>Help</FONT></U> | 
+
+<U><FONT COLOR=blue>[support us]</FONT></U>
+
+
+
+<U><FONT COLOR=blue>
+[University of Texas Libraries]</FONT></U>
+
+[Celebrating the Life]
+
+
+<FORM>
+        <P>
+        SEARCH: choose an area to search 
+        <SELECT NAME="engine" SIZE="1">
+          <OPTION VALUE="UTLOL" SELECTED="selected">Library Web Site</OPTION>
+          <OPTION VALUE="iiikw">Library Catalog</OPTION>
+          <OPTION VALUE="HDI">How Do I...?</OPTION>
+          <OPTION VALUE="google">Web</OPTION>
+        </SELECT>
+        <INPUT NAME="query" TYPE="text">
+        <INPUT VALUE="GO" TYPE="submit"></P>
+
+      </FORM>
+
+
+
+
+
+<!--Main Nav-->
+
+
+<!--<div id="siteswitch"><a href="sitescripts/switcher.php?set=home_alt">&nbsp;</a></div>
+-->
+
+
+<UL>
+
+          <LI>
+
+            <H2><U><FONT COLOR=blue>About the Libraries</FONT></U></H2>
+
+            <UL>
+
+              <LI><U><FONT COLOR=blue>Libraries, Centers, and Museums</FONT></U></LI>
+
+              <LI><U><FONT COLOR=blue>Hours</FONT></U></LI>
+
+              <LI><U><FONT COLOR=blue>Library Map</FONT></U></LI>
+
+              <LI><U><FONT COLOR=blue>Jobs</FONT></U></LI>
+
+              <LI><U><FONT COLOR=blue>Library and Staff Directory</FONT></U></LI>
+
+              <LI><U><FONT COLOR=blue>About the Collections</FONT></U></LI>
+
+              <LI><U><FONT COLOR=blue>Computing Facilities</FONT></U></LI>
+
+              <LI><U><FONT COLOR=blue>Information for Users with Disabilities</FONT></U></LI>
+
+              <LI><U><FONT COLOR=blue>Library Administration</FONT></U></LI>
+		<LI><U><FONT COLOR=blue>Support Your Libraries</FONT></U></LI>
+
+            </UL>
+
+          </LI>
+
+          <LI>
+
+            <H2><U><FONT COLOR=blue>Research Tools</FONT></U></H2>
+
+            <UL>
+
+              <LI><U><FONT COLOR=blue>Library Catalog</FONT></U></LI>
+
+              <LI><U><FONT COLOR=blue>Find Articles using Databases</FONT></U></LI>
+
+	      <LI><U><FONT COLOR=blue>Find Articles using CrossSearch</FONT></U></LI>
+
+              <LI><U><FONT COLOR=blue>Find a Journal</FONT></U></LI>
+
+              <LI><U><FONT COLOR=blue>Find a Book</FONT></U>  </LI>
+
+              <LI><U><FONT COLOR=blue>Find a Map</FONT></U></LI>
+
+              <LI><U><FONT COLOR=blue>News and Newspapers</FONT></U></LI>
+
+              <LI><U><FONT COLOR=blue>Government Information</FONT></U></LI>
+
+              <LI><U><FONT COLOR=blue>Research by Subject</FONT></U></LI>
+
+              <LI><U><FONT COLOR=blue>Reference Sites</FONT></U></LI>
+              <LI><U><FONT COLOR=blue>Library Widgets</FONT></U></LI>
+
+            </UL>
+
+          </LI>
+
+          <LI>
+
+            <H2><U><FONT COLOR=blue>Library Services</FONT></U></H2>
+
+            <UL>
+
+              <LI><U><FONT COLOR=blue>Borrowing</FONT></U></LI>
+
+              <LI><U><FONT COLOR=blue>Ask a Librarian </FONT></U></LI>
+
+              <LI><U><FONT COLOR=blue>Reserves</FONT></U></LI>
+
+              <LI><U><FONT COLOR=blue>InterLibrary Services</FONT></U></LI>
+
+              <LI><U><FONT COLOR=blue>Copying/Printing</FONT></U> </LI>
+
+              <LI><U><FONT COLOR=blue>Study Spaces</FONT></U> </LI>
+
+              <LI><U><FONT COLOR=blue>Instruction</FONT></U></LI>
+
+	      	  <LI><U><FONT COLOR=blue>Media Services</FONT></U></LI>
+
+	      <LI><U><FONT COLOR=blue>Suggest a Purchase</FONT></U></LI>
+
+	      <LI><U><FONT COLOR=blue>UT Digital Repository</FONT></U></LI> 
+
+	      <LI><U><FONT COLOR=blue>Digital Services</FONT></U></LI>
+
+            </UL>
+
+          </LI>
+
+          <LI>
+
+            <H2><U><FONT COLOR=blue>Resources for You</FONT></U></H2>
+
+            <UL>
+
+              <LI><U><FONT COLOR=blue>Undergraduates</FONT></U></LI>
+
+              <LI><U><FONT COLOR=blue>Graduate students</FONT></U></LI>
+
+              <LI><U><FONT COLOR=blue>Faculty</FONT></U></LI>
+
+              <LI><U><FONT COLOR=blue>Staff</FONT></U></LI>
+
+              <LI><U><FONT COLOR=blue>Distance Learners</FONT></U></LI>
+              
+              <LI><U><FONT COLOR=blue>Alumni</FONT></U></LI>
+
+              <LI><U><FONT COLOR=blue>Visitors</FONT></U></LI>
+
+            </UL>
+
+          </LI>
+	<LI>
+            <H2><U><FONT COLOR=blue>Ask a Librarian</FONT></U></H2>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Email</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Chat</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Call/Visit</FONT></U></LI>
+                </UL> 
+        </LI>
+
+
+    </UL>
+
+
+
+<!--<div id="last"></div>-->
+
+<!--end nav bar-->
+
+
+
+<!-- follow the crumbs -->
+
+	 <U><FONT COLOR=blue>Home</FONT></U> > <U><FONT COLOR=blue>Research Tools</FONT></U>  &gt; Library Widgets	
+        	<UL>
+            <LI>
+				<!-- ADDTHIS BUTTON BEGIN -->
+			
+			addthis_pub             = 'utlol'; 
+			addthis_logo            = 'http://www.lib.utexas.edu/graphics/icon-share.jpg';
+			addthis_logo_background = 'cccccc';
+			addthis_logo_color      = '666699';
+			addthis_brand           = 'UT Libraries';
+			addthis_options         = 'favorites, email, digg, delicious, myspace, facebook, google, diigo, more';
+			
+			<U><FONT COLOR=blue>Share &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</FONT></U>
+			
+			<!-- ADDTHIS BUTTON END -->
+			</LI>
+        	<LI><U><FONT COLOR=blue>Comment &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</FONT></U></LI>	
+			<LI><U><FONT COLOR=blue>Print &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</FONT></U></LI>
+          </UL>
+       
+ 	
+
+
+
+
+
+        <!-- Above Title Content: topcontentbox -->
+        
+
+	<!--<div id="contentwrapper">-->
+	  <!--<div id="content">-->
+	
+	
+        
+    <H2></H2>
+    <P><U><FONT COLOR=blue>Library Widgets</FONT></U></P><P><U><FONT COLOR=blue>Search Widgets</FONT></U></P><P><U><FONT COLOR=blue>Information Organizing Widgets</FONT></U></P><P><U><FONT COLOR=blue>Collaboration Widgets</FONT></U></P><P><U><FONT COLOR=blue>Video Demonstration</FONT></U></P><P><U><FONT COLOR=blue>Recommend a Widget</FONT></U></P>
+ 
+            
+    
+     		 
+    
+       
+      
+      <!-- Top Content: topcontent -->
+      
+
+      
+        
+	
+        <H1>Library Widgets</H1>	
+	
+        
+                        
+
+
+
+  
+  
+    
+
+  
+        
+
+    
+  
+  
+      
+        
+    
+
+
+  <!--<h2><a href="/tools/index.html" title="Library Widgets">Library Widgets</a></h2>-->
+
+  
+  
+    
+
+  
+    
+      
+      
+  
+  
+  
+  
+     <P>This section of the University of Texas Libraries Web site lists a variety of widgets that you may find useful while conducting research.</P>
+<P>What is a widget? Widgets bring the Libraries Web services to you. They include <U><FONT COLOR=blue>Web applications</FONT></U>,  simple <U><FONT COLOR=blue>add-ons</FONT></U> for your Web browser, and other shortcuts that make researching a little easier. If you would like to learn more about widgets, <U><FONT COLOR=blue>watch our video demonstration</FONT></U> or <U><FONT COLOR=blue>read this Newsweek article on the topic</FONT></U>.</P>
+<P>How do I get started? Each of the widgets we've listed on our site includes a description and installation instructions. Click on a widget below to learn more.</P>   
+
+  
+  
+
+        
+  
+  
+    
+      
+  
+      <H2>Search Widgets</H2>
+  
+  
+  
+    
+    
+  
+  
+      
+        
+      
+  
+                <U><FONT COLOR=blue>CD/DVD Search Plugin for Firefox and IE</FONT></U>
+  
+  
+  
+                What is it? An add-on to your Web browser that allows you to search the CDs and DVDs available in the University of Texas Libraries.
+  
+  
+  
+                
+  
+  
+  
+      
+  
+                <U><FONT COLOR=blue>Facebook App for the University of Texas Libraries</FONT></U>
+  
+  
+  
+                What is it? An application you add to  your Facebook account that allows you to search the University of Texas  Libraries resources from within Facebook.
+  
+  
+  
+                
+  
+  
+  
+      
+  
+                <U><FONT COLOR=blue>Google Gadget for the University of Texas Libraries</FONT></U>
+  
+  
+  
+                What is it? An application you can add to your personalized Google homepage, a Google Wave, Blackboard, or any other Web page. Links you directly to IM a Librarian service, the catalog, databases and more.
+  
+  
+  
+                
+  
+  
+  
+      
+  
+                <U><FONT COLOR=blue>Google Toolbar Button for the University of Texas Libraries</FONT></U>
+  
+  
+  
+                What is it? A button you can add to  your browser's Google Toolbar that provides an easy way to search the  University of Texas Libraries Catalog.
+  
+  
+  
+                
+  
+  
+  
+      
+  
+                <U><FONT COLOR=blue>Law Library Search Plug-in</FONT></U>
+  
+  
+  
+                What is it? A Web browser add-on that allows you to search the University of Texas Law Library's catalog, TALLONS.
+  
+  
+  
+                
+  
+  
+  
+      
+  
+                <U><FONT COLOR=blue>Library Catalog Search Plugin for Firefox and IE</FONT></U>
+  
+  
+  
+                What is it? An add-on to your Web browser that allows you to search the University of Texas Libraries catalog.
+  
+  
+  
+                
+  
+  
+  
+      
+  
+                <U><FONT COLOR=blue>LibX Add-on for the University of Texas Libraries</FONT></U>
+  
+  
+  
+                What is it? A Web browser add-on that gives you direct access to the University of Texas Libraries resources.
+  
+  
+  
+                
+  
+  
+  
+      
+  
+                <U><FONT COLOR=blue>Netvibes Widget for the University of Texas Libraries</FONT></U>
+  
+  
+  
+                What is it? An application you can add to your personalized Netvibes homepage. Links you directly to IM a Librarian service, the catalog, databases and more.
+  
+  
+  
+                
+  
+  
+  
+      
+  
+                <U><FONT COLOR=blue>OpenURL Referrer</FONT></U>
+  
+  
+  
+                What is it? A Web browser add-on that converts bibliographic citations to URL's.
+  
+  
+  
+                
+  
+  
+  
+      
+  
+                <U><FONT COLOR=blue>University of Texas Digital Repository Search Plug-in</FONT></U>
+  
+  
+  
+                What is it? An add-on to your Web browser that allows you to search the University of Texas Digital Repository.
+  
+  
+  
+                
+  
+  
+  
+      
+  
+                <U><FONT COLOR=blue>WorldCat for iPhone</FONT></U>
+  
+  
+  
+                What is it? An iPhone version of WorldCat.
+  
+  
+  
+                
+  
+  
+    
+  
+  
+  
+  
+  
+  
+   
+
+  
+  
+
+  
+      <H2>Information Organizing Widgets</H2>
+  
+  
+  
+    
+    
+  
+  
+      
+        
+      
+  
+                <U><FONT COLOR=blue>CiteMe Facebook App</FONT></U>
+  
+  
+  
+                What is it? A Facebook app that creates formatted citations in APA, Chicago, Harvard, MLA, or Turabian style for books and other items found in WorldCat.
+  
+  
+  
+                
+  
+  
+  
+      
+  
+                <U><FONT COLOR=blue>Del.icio.us Web Browser Add-ons</FONT></U>
+  
+  
+  
+                What is it? Web browser add-ons that make it easier to bookmark and organize web sites with http://del.icio.us.
+  
+  
+  
+                
+  
+  
+  
+      
+  
+                <U><FONT COLOR=blue>Flickr Uploadr</FONT></U>
+  
+  
+  
+                What is it? A tool that enables you to easily upload many images to your Flickr account.
+  
+  
+  
+                
+  
+  
+  
+      
+  
+                <U><FONT COLOR=blue>NoodleBib</FONT></U>
+  
+  
+  
+                What is it? An awesome tool that helps  you create MLA- or APA-formatted bibliographies online.  Save as a Word  document to turn in with your paper.
+  
+  
+  
+                
+  
+  
+  
+      
+  
+                <U><FONT COLOR=blue>Readability</FONT></U>
+  
+  
+  
+                What is it? A simple tool that removes the clutter around what you're reading on the Web.
+  
+  
+  
+                
+  
+  
+  
+      
+  
+                <U><FONT COLOR=blue>TextMarker</FONT></U>
+  
+  
+  
+                What is it? A Firefox browser add-on that highlights text online within your browser window.  Then copy and paste as you wish.
+  
+  
+  
+                
+  
+  
+  
+      
+  
+                <U><FONT COLOR=blue>Zoho Notebook</FONT></U>
+  
+  
+  
+                What is it? A tool that helps you aggregate content from multiple sources or applications.
+  
+  
+  
+                
+  
+  
+  
+      
+  
+                <U><FONT COLOR=blue>Zotero</FONT></U>
+  
+  
+  
+                What is it? A Firefox browser add-on that helps you collect, manage, and cite your research sources.
+  
+  
+  
+                
+  
+  
+    
+  
+  
+  
+  
+  
+  
+   
+
+  
+  
+
+  
+      <H2>Collaboration Widgets</H2>
+  
+  
+  
+    
+    
+  
+  
+      
+        
+      
+  
+                <U><FONT COLOR=blue>ClipMarks</FONT></U>
+  
+  
+  
+                What is it? A free browser add-on that  lets you clip text, images and videos from inside Web pages then save,  blog, email and print to share your "clips" with others.
+  
+  
+  
+                
+  
+  
+  
+      
+  
+                <U><FONT COLOR=blue>Google Docs</FONT></U>
+  
+  
+  
+                What is it? A web site that enables you to create documents, spreadsheets and presentations online.
+  
+  
+  
+                
+  
+  
+  
+      
+  
+                <U><FONT COLOR=blue>Google Sidewiki</FONT></U>
+  
+  
+  
+                What is it? A free browser add-on that lets you contribute helpful information to any web page.
+  
+  
+  
+                
+  
+  
+  
+      
+  
+                <U><FONT COLOR=blue>PBWorks</FONT></U>
+  
+  
+  
+                What is it? A free wiki tool that is useful for everyone (even computer beginners).
+  
+  
+  
+                
+  
+  
+    
+  
+  
+  
+  
+  
+  
+   
+
+  
+  
+
+    
+    
+      
+  
+      <H2>Widget Spotlight</H2>
+  
+  
+  
+     <P><U><FONT COLOR=blue>Readability Bookmarklet</FONT></U></P>
+<P>A simple tool that makes reading on the Web more enjoyable by removing the clutter around what you're reading.</P>   
+
+  
+  
+
+  
+      <H2>Recommend a Widget</H2>
+  
+  
+  
+    
+
+
+  <!--<h2><a href="/tools/recommend.html" title=""></a></h2>-->
+
+  
+  
+    
+
+  
+    <P>Do you know of a great widget that we haven't listed on our site? If so, complete the form below and give us the scoop.</P>
+<FORM>
+
+ Type of widget: *
+ <SELECT NAME="submitted[type_of_widget]"><OPTION VALUE="" SELECTED="selected">- Select -</OPTION><OPTION VALUE="sw">Search Widget</OPTION><OPTION VALUE="iw">Information Organizing Widget</OPTION><OPTION VALUE="cs">Collaboration Widget</OPTION></SELECT>
+
+
+ Web address: *
+ <INPUT VALUE="http://" NAME="submitted[web_address]" MAXLENGTH="128" SIZE="34" TYPE="text">
+
+
+ Tell us about the widget: *
+ <TEXTAREA ROWS="5" NAME="submitted[tell_us_about_the_widget]" COLS="31"></TEXTAREA>
+
+
+ Email address: *
+ <INPUT NAME="submitted[email_address]" SIZE="34" TYPE="email">
+
+
+ Name: *
+ <INPUT VALUE="" NAME="submitted[name]" MAXLENGTH="128" SIZE="34" TYPE="text">
+
+<INPUT VALUE="" NAME="details[sid]" TYPE="hidden">
+<INPUT VALUE="1" NAME="details[page_num]" TYPE="hidden">
+<INPUT VALUE="1" NAME="details[page_count]" TYPE="hidden">
+<INPUT VALUE="0" NAME="details[finished]" TYPE="hidden">
+<INPUT VALUE="form-dd02049452a796fae44645d3101440d8" NAME="form_build_id" TYPE="hidden">
+<INPUT VALUE="webform_client_form_2666" NAME="form_id" TYPE="hidden">
+<INPUT VALUE="Submit" NAME="op" TYPE="submit">
+CAPTCHAThis question is for testing whether you are a human visitor and to prevent automated spam submissions.<INPUT VALUE="2829449" NAME="captcha_sid" TYPE="hidden">
+<INPUT VALUE="a6c88657ff146da16965a0f77ba498cf" NAME="captcha_token" TYPE="hidden">
+
+ Math question: *
+ 2 + 3 =  <INPUT VALUE="" NAME="captcha_response" MAXLENGTH="2" SIZE="4" TYPE="text">
+ Solve this simple math problem and enter the result. E.g. for 1+3, enter 4.
+
+
+
+</FORM>
+  
+  
+  
+    
+
+  
+  
+
+    
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+   
+
+          
+         
+
+      
+
+      <!--<div class="clearboth"></div>-->
+      
+    <!-- / end main -->
+    
+
+<!-- </div>end content-->
+<!--end contentbox-->
+<!--</div>end wrapper--> 
+
+
+<U><FONT COLOR=blue>[UTDirect]<BR>requires EID</FONT></U>
+<P>
+<U><FONT COLOR=blue>Accessibility</FONT></U> | 
+<U><FONT COLOR=blue>PDF Reader</FONT></U>/<U><FONT COLOR=blue>Flash Player</FONT></U>   | <U><FONT COLOR=blue>Privacy/Confidentiality</FONT></U> | <U><FONT COLOR=blue>Material Usage Statement</FONT></U><BR>
+<U><FONT COLOR=blue>Web Site Feedback</FONT></U> | <U><FONT COLOR=blue>Comments</FONT></U> | <U><FONT COLOR=blue>About This Site</FONT></U>  | <U><FONT COLOR=blue>Emergency Preparedness, Safety and Security</FONT></U><BR>
+<!--Page viewed:  | Page last modified:--> 
+   CMS <U><FONT COLOR=blue>Login</FONT></U>  </P>
+
+<U><FONT COLOR=blue>[Google +]</FONT></U>
+<U><FONT COLOR=blue>[Twitter]</FONT></U> 
+<U><FONT COLOR=blue>[Facebook]</FONT></U> 
+<U><FONT COLOR=blue>[Flickr]</FONT></U> 
+<U><FONT COLOR=blue>[YouTube]</FONT></U>
+<U><FONT COLOR=blue>[Friendfeed]</FONT></U> 
+
+
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+
+try {
+  var pageTracker = _gat._getTracker("UA-3780897-3");
+  
+  // begin additional code to avoid cookie conflicts
+  pageTracker._setDomainName(".utexas.edu");
+  pageTracker._setAllowHash(false);
+  // end additional code to avoid cookie conflicts
+
+
+  pageTracker._trackPageview();
+} catch(err) {}
+
+
+
+<!-- call Web Central tracking script -->
+
+var utJsHost = (("https:" == document.location.protocol) ? "https://www." : "http://www.");
+document.write(unescape("%3Cscript src='" + utJsHost + "utexas.edu/common/js/ga_subdomain.js' type='text/javascript'%3E%3C/script%3E"));
+
+
+<!-- include all subdomains -->
+
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3780897-21']);
+  _gaq.push(['_setDomainName', 'lib.utexas.edu']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+
+
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>

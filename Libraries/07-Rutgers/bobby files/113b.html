@@ -1,0 +1,686 @@
+
+<HTML>
+<HEAD>
+<TITLE>
+Rutgers University Libraries: RefWorks FAQ
+</TITLE>
+
+
+@import url(/rul/includes/04rul-style2.css); 
+
+
+
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11510931-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+	
+
+
+<!-- <link type="text/css"         href="/rul/scripts/jqueryui1.7.2.custom/css/themename/jqueryui1.7.1.custom.css" rel="Stylesheet" />	 -->
+
+
+
+
+     /***********************************************
+     * Step Carousel Viewer script- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+     * Visit http://www.dynamicDrive.com for hundreds of DHTML scripts
+     * This notice must stay intact for legal use
+     ***********************************************/
+     
+     
+     .stepcarousel{
+     position: relative; /*leave this value alone*/
+     border: 1px solid #7D7979;
+     overflow: scroll; /*leave this value alone*/
+     width: 318px; /*Width of Carousel Viewer itself*/
+     height: 260px; /*Height should enough to fit largest content's height*/
+     }
+
+     .stepcarousel .belt{
+     position: absolute; /*leave this value alone*/
+     left: 0;
+     top: 0;
+     }
+
+     .stepcarousel .panel{
+     float: left; /*leave this value alone*/
+     overflow: hidden; /*clip content that go outside dimensions of holding panel DIV*/
+     margin: 6px; /*margin around each panel*/
+     width: 308px; /*Width of each panel holding each content. If removed, widths should be individually defined on each content DIV then. */
+     }
+     
+     
+     stepcarousel.setup({
+     	galleryid: 'mygallery', //id of carousel DIV
+     	beltclass: 'belt', //class of inner "belt" DIV containing all the panel DIVs
+     	panelclass: 'panel', //class of panel DIVs each holding content
+     	autostep: {enable:false, moveby:1, pause:3000},
+     	panelbehavior: {speed:500, wraparound:true, persist:true},
+     	defaultbuttons: {enable: true, moveby: 1, leftnav: ['/rul/scripts/stepcarousel/left.gif', -25, 118], rightnav: ['/rul/scripts/stepcarousel/right.gif', 0, 118]},
+     	statusvars: ['statusA', 'statusB', 'statusC'], //register 3 variables that contain current panel (start), current panel (last), and total panels
+     	contenttype: ['inline'] //content setting ['inline'] or ['ajax', 'path_to_external_file']
+     })
+     
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</FONT></U>
+
+<!-- red nav table: start -->
+<TABLE>
+<TR><!-- row 1 -->
+  <TD><U><FONT COLOR=blue>[Rutgers University Libraries]</FONT></U></TD>
+  <TD>
+<!-- note space: start -->
+
+<!-- note space: end -->
+</TD>
+  <TD>&nbsp;</TD>
+</TR>
+<!--  Alert message for important system downtimes  -->
+<!--  change message and rename/replace alert.shtml -->
+<!--  see /rul/alert_instructions.txt                   -->
+<TR><!-- row 2 -->
+<TD>
+    <TABLE>
+    <TR>
+<TD>&nbsp;&nbsp;<U><FONT COLOR=blue>LOGIN HERE</FONT></U>&nbsp;&nbsp;&nbsp;&nbsp;<U><FONT COLOR=blue>[About the Libraries' New Remote Access Login]</FONT></U></TD><TD>&nbsp;&nbsp;</TD>
+
+<!--
+  if (show_AAL_L  == true){
+  document.write("<td onmouseover='this.bgColor=\"#C00000\";' onmouseout='this.bgColor=\"#000000\";' onclick='this.bgColor=\"#000000\";'>&nbsp;&nbsp;&nbsp;<a href='/rul/ask_a_lib/ask_a_lib.shtml' class='navbar'>ASK&nbsp;A&nbsp;LIBRARIAN&nbsp;<span  style='backgroundcolor:white;fontsize:12px;color:black;'>LIVE!</span></a>&nbsp;&nbsp;&nbsp;</td>")
+  }
+  else {
+  document.write("<td onmouseover='this.bgColor=\"#C00000\";' onmouseout='this.bgColor=\"#000000\";' onclick='this.bgColor=\"#000000\";'>&nbsp;&nbsp;&nbsp;<a href='/rul/ask_a_lib/ask_a_lib.shtml' class='navbar'>ASK&nbsp;A&nbsp;LIBRARIAN</a>&nbsp;&nbsp;&nbsp;</td>");
+  }
+//-->
+
+<!--
+<noscript>
+    <td onmouseover="this.bgColor = '#C00000';" onmouseout="this.bgColor = '#000000';" onclick="this.bgColor = '#000000';">&nbsp;&nbsp;&nbsp;<a href="/rul/ask_a_lib/ask_a_lib.shtml" class="navbar">ASK&nbsp;A&nbsp;LIBRARIAN</a>&nbsp;&nbsp;&nbsp;</td>
+</noscript>
+-->
+    <TD>&nbsp;&nbsp;<U><FONT COLOR=blue>HOURS&nbsp;&amp;&nbsp;DIRECTIONS</FONT></U>&nbsp;&nbsp;</TD>
+    <TD>&nbsp;&nbsp;<U><FONT COLOR=blue>SEARCH&nbsp;SITE</FONT></U>&nbsp;&nbsp;</TD>
+    <TD>&nbsp;&nbsp;<U><FONT COLOR=blue>SITE&nbsp;INDEX</FONT></U>&nbsp;&nbsp;</TD>
+    <TD>&nbsp;&nbsp;<U><FONT COLOR=blue>FACULTY&nbsp;SERVICES</FONT></U>&nbsp;&nbsp;</TD>
+    <TD>&nbsp;&nbsp;<U><FONT COLOR=blue>MY ACCOUNT</FONT></U>&nbsp;&nbsp;</TD>
+    </TR>
+    </TABLE>
+<!-- scua pages have a bar as well -->
+</TD>
+</TR>
+</TABLE>
+<!-- red nav table: end -->
+
+<!-- proxy and google side bars need to be updated too -->
+
+<TABLE>
+<TR>
+<!-- left column: start -->
+<TD>
+ <TABLE>
+  <TR><TD><U><FONT COLOR=blue>LIBRARIES HOME</FONT></U></TD><TD></TD></TR>
+  <TR><TD><!-- horizontal rule --></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>SEARCH LIBRARY CATALOGS</FONT></U></TD><TD></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>FIND ARTICLES</FONT></U></TD><TD></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>FIND ARTICLES WITH SEARCHLIGHT</FONT></U></TD><TD></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>FIND RESERVES</FONT></U></TD><TD></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>RESEARCH RESOURCES</FONT></U></TD><TD></TD></TR>
+  <TR><TD><!-- horizontal rule --></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>RUCORE/INSTITUTIONAL REPOSITORY</FONT></U></TD><TD></TD></TR>
+  <TR><TD><!-- horizontal rule --></TD></TR>
+  <TR><TD><!-- horizontal rule --></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>CONNECT FROM OFF-CAMPUS</FONT></U></TD><TD></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>HOW DO I...?</FONT></U>  </TD><TD></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>REFWORKS</FONT></U>  </TD><TD></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>LEARNING TOOLS</FONT></U>  </TD><TD></TD></TR>
+  <TR><TD><!-- horizontal rule --></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>BORROWING</FONT></U></TD><TD></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>DELIVERY AND INTERLIBRARY LOAN</FONT></U></TD><TD></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>REFERENCE</FONT></U></TD><TD></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>FACULTY SERVICES</FONT></U></TD><TD></TD></TR>
+  <TR><TD><!-- horizontal rule --></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>ABOUT THE LIBRARIES</FONT></U></TD><TD></TD></TR>
+  <TR><TD><!-- spacer --></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>GIVING TO THE RUTGERS<BR>UNIVERSITY LIBRARIES</FONT></U></TD><TD></TD></TR>
+  <TR><TD><!-- spacer --></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>NEWS AND EVENTS</FONT></U></TD><TD></TD></TR>
+  <TR><TD><!-- spacer --></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>ALUMNI LIBRARY</FONT></U></TD><TD></TD></TR>
+</TABLE>
+<BR><BR>
+<BR><BR>
+<TABLE>
+   <TR>
+      <TD>
+      <U><FONT COLOR=blue>RETURN TO RUTGERS<BR>HOME PAGE</FONT></U><BR><BR>
+      <U><FONT COLOR=blue>SEARCH RUTGERS</FONT></U><BR>
+      
+      <BR>
+      <BR>
+      <U><FONT COLOR=blue>[VALE - Virtual Academic Library Environment]</FONT></U>
+   <BR>
+   </TD>
+<TD></TD>
+</TR></TABLE>
+</TD>
+<!-- left column: end -->
+<TD>
+
+
+<!-- content: start -->
+
+<!-- attribution: start -->
+<!-- attribution: end -->
+
+<!-- backpath: start -->
+<!-- backpath: end -->
+
+<TABLE>
+<TR>
+<TD>RefWorks&nbsp;FAQ</TD>
+<TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+<TD>[RefWorks]</TD></TR>
+<TR>
+<TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>[Connect!]</FONT></U></TD>
+<TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+<TD>Rutgers off-campus users must <U><FONT COLOR=blue>log-in</FONT></U> for access<BR> to Rutgers restricted resources linked from RefWorks.</TD>
+</TABLE>
+<!-- <table border="0" cellpadding="3" cellspacing="0">
+<tr>
+<td valign="top" align="right" width="25%"><span class="alert1">Rutgers Restricted</span><br /><strong>Access</strong></td>
+<td width="2%">&nbsp;</td>
+<td valign="middle" width="73%"> -->
+<P>
+
+<BR>
+
+</P>
+<!-- 
+</td></tr>
+</table>
+-->
+
+ 
+
+
+
+<UL>
+  <LI><U><FONT COLOR=blue>What is RefWorks?</FONT></U></LI>
+  <LI><U><FONT COLOR=blue>How do I get an account on RefWorks?</FONT></U></LI>
+  <LI><U><FONT COLOR=blue>How do I connect to RefWorks?</FONT></U></LI>
+  <LI><U><FONT COLOR=blue>How do I access the full text of citations in my RefWorks account?</FONT></U></LI>
+  <LI><U><FONT COLOR=blue>Where can I find a tutorial?</FONT></U></LI>
+  <LI><U><FONT COLOR=blue>Where can I find more online help?</FONT></U></LI>
+  <LI><U><FONT COLOR=blue>Who will provide training on campus?</FONT></U></LI>
+  <LI><U><FONT COLOR=blue>What online databases work with RefWorks?</FONT></U></LI>
+  <LI><U><FONT COLOR=blue>Will the Library Catalog work with RefWorks?</FONT></U></LI>
+  <LI><U><FONT COLOR=blue>How do I import my records from EndNote and ProCite?</FONT></U></LI>
+  <LI><U><FONT COLOR=blue>What stylesheets are available?</FONT></U></LI>
+  <LI><U><FONT COLOR=blue>What is Write-N-Cite?</FONT></U></LI>
+  <LI><U><FONT COLOR=blue>What happens to my RefWorks account if I leave Rutgers?</FONT></U></LI>
+</UL>
+
+ 
+
+</FONT></U>
+<H1>What is RefWorks?</H1>
+
+
+<P>
+RefWorks is a Web-based bibliography and database manager that enables you to: 
+</P>
+
+<UL>
+<LI>Organize your research</LI>
+<LI>Import references from many electronic databases</LI>
+<LI>Include citations while you write your paper</LI>
+<LI>Build a bibliography according to different stylesheets (APA, MLA, etc.)</LI>
+<LI>Create a bibliography in different document formats (Word, RTF, HTML, etc.)</LI>
+</UL>
+
+
+ 
+
+</FONT></U>
+<H1>How do I get an account on RefWorks?</H1>
+
+
+<P>
+If you are currently affiliated with Rutgers University as student, 
+faculty, or staff, you are eligible to use RefWorks.  
+Start at the 
+<U><FONT COLOR=blue>Rutgers Refworks Account Creation</FONT></U> 
+page and enter your NetID and password.  
+If you do not have a NetID, you can get one at 
+<U><FONT COLOR=blue>http://rucs.rutgers.edu/accounts</FONT></U>. 
+If you don't remember your NetID, you may look it up using 
+<U><FONT COLOR=blue>NetID Query</FONT></U>. 
+</P>
+
+<P>
+Instructions on how to create a RefWorks account can be seen on this video:<BR>
+<U><FONT COLOR=blue>RefWorks: Logging in as a Rutgers User</FONT></U>&nbsp;.
+</P>
+
+
+
+ 
+
+</FONT></U>
+<H1>How do I connect to RefWorks?</H1>
+
+
+
+<H2>On-campus</H2>
+
+
+<P>
+Click on the <U><FONT COLOR=blue>[Connect!]</FONT></U> 
+ button at the top of this page.
+</P>
+
+
+<H2>Off-campus</H2> 
+
+
+
+<P>
+Click on the
+<EM>LOGIN HERE</EM>
+link on the upper left.
+</P>
+
+[INLINE]
+
+<P>
+Then enter your NetID and Password into the Login box.
+</P>
+
+[INLINE]
+
+<P>
+Once you identify yourself as an authorized Rutgers' user, you will be
+returned to this page; then click on the 
+<U><FONT COLOR=blue>[Connect!]</FONT></U> 
+ button above.
+</P>
+
+<P>
+If you are asked to provide a Group Code, please return to the Libraries website to LOGIN HERE and then click on the CONNECT button. 
+</P>
+
+
+
+
+ 
+
+</FONT></U>
+<H1>How do I access the full text of citations in my RefWorks account?</H1>
+
+
+<H2>On-campus</H2>
+
+<P>
+When using your RefWorks account on campus, full text resources that are available from Rutgers University Libraries-subscribed databases or electronic journals will be automatically accessible via Article Linker. If your citation does not include the Article Linker button, please check the <U><FONT COLOR=blue>Library Catalog</FONT></U>. It is possible that the Libraries may own the material in print or other formats.
+</P>
+
+<H2>Off-campus</H2>
+<P>
+As long as you are logged into the library with your NetID and you connect to RefWorks from this page, you will be able to access full text resources linked from RefWorks that are available from the Libraries-subscribed databases or electronic journals.  If your citation does not include the Article Linker button, please check the <U><FONT COLOR=blue>Library Catalog</FONT></U>. It is possible that the Libraries may own the material in print or other formats.
+</P>
+
+
+ 
+
+ 
+
+</FONT></U>
+<H1>Where can I find a tutorial?</H1>
+
+
+<P>
+You can find the <U><FONT COLOR=blue>RefWorks Tutorial</FONT></U> 
+in two formats: as a series of Flash presentations 
+[requires the free <U><FONT COLOR=blue>Adobe Flash Player</FONT></U>] 
+and as PDF  files [requires the free 
+<U><FONT COLOR=blue>Adobe Acrobat Reader</FONT></U>].
+</P>
+
+<P>
+In addition, the Rutgers Libraries have created the following tutorials on RefWorks.
+</P>
+
+
+<EM>Handouts </EM> 
+<UL>
+<LI><U><FONT COLOR=blue>Logging in as a Rutgers User</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Importing Library Catalog Citations</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Importing PubMed Citations</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Importing Google Scholar Citations</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Importing SciFinder References</FONT></U></LI>
+</UL>
+
+
+<!-- start of carousel-->
+
+         
+
+              
+                <TABLE><TR><TD>
+              <U><FONT COLOR=blue></FONT></U>
+                </TD></TR>
+                <TR><TD>
+                     
+                     <U><FONT COLOR=blue>RefWorks: Logging in as a Rutgers User</FONT></U>
+                     <BR>
+                     Learn how to create a RefWorks account. There is also a printable 
+                     <U><FONT COLOR=blue>handout</FONT></U>.
+                    
+                </TD></TR></TABLE>
+              
+
+              
+                <TABLE><TR><TD>
+              <U><FONT COLOR=blue></FONT></U>
+                </TD></TR>
+                <TR><TD>
+                     
+                     <U><FONT COLOR=blue>RefWorks: Importing Library Catalog Citations</FONT></U>
+                     <BR>
+                     Learn how to import citations from the Library Catalog into RefWorks.  There is also a printable 
+                     <U><FONT COLOR=blue>handout</FONT></U>.
+                    
+                </TD></TR></TABLE>
+              
+
+              
+                <TABLE><TR><TD>
+              <U><FONT COLOR=blue></FONT></U>
+                </TD></TR>
+                <TR><TD>
+                     
+                     <U><FONT COLOR=blue>RefWorks: Importing PubMed Citations</FONT></U>
+                     <BR>
+                     Learn how to import citations from PubMed into RefWorks.  There is also a printable 
+                     <U><FONT COLOR=blue>handout</FONT></U>.
+                    
+                </TD></TR></TABLE>
+              
+
+              
+                <TABLE><TR><TD>
+              <U><FONT COLOR=blue></FONT></U>
+                </TD></TR>
+                <TR><TD>
+                     
+                     <U><FONT COLOR=blue>RefWorks: Importing Google Scholar Citations</FONT></U>
+                     <BR>
+                     Learn how to import citations from Google Scholar into RefWorks.  There is also a printable 
+                     <U><FONT COLOR=blue>handout</FONT></U>.
+                    
+                </TD></TR></TABLE>
+              
+
+         
+    
+    <P>
+    [INLINE]
+    </P>
+
+<!-- end of carousel-->
+
+
+ 
+
+</FONT></U>
+<H1>Where can I find more online help?</H1>
+
+
+<P>
+<U><FONT COLOR=blue>Quick Start Guides</FONT></U> 
+in several languages as well as a lengthy 
+<U><FONT COLOR=blue>FAQ</FONT></U> (frequently asked questions) are available in PDF format. 
+You can also contact the RefWorks Corporation for help by email:  
+<U><FONT COLOR=blue>support@refworks.com</FONT></U>
+</P>
+
+
+ 
+
+</FONT></U>
+<H1>Who will provide training on campus?</H1>
+
+
+<P>
+New Brunswick faculty and staff should contact the <U><FONT COLOR=blue>Center for Teaching Advancement and Assessment Research</FONT></U>,
+which offers <U><FONT COLOR=blue>Workshops
+and Seminars</FONT></U> throughout the year.  
+Graduate assistants and teaching assistants should contact the <U><FONT COLOR=blue>Teaching Assistant Project</FONT></U>. 
+Other New Brunswick students should contact the <U><FONT COLOR=blue>Learning Centers</FONT></U>.
+</P>
+
+<P>
+Camden faculty and staff should contact <U><FONT COLOR=blue>Instructional Design &amp; Technology</FONT></U>.
+</P>
+
+<P>
+Business faculty, staff, and students in Newark and New Brunswick should contact <U><FONT COLOR=blue>Rutgers Business School Computing Services</FONT></U>.
+</P>
+
+
+ 
+
+</FONT></U>
+<H1>What online databases work with RefWorks?</H1>
+
+
+<P>
+Many of our databases have the Direct Export feature available for saving
+citations and abstracts to a bibliographic manager.  For step-by-step
+instructions for specfic database publishers such as CSA, EBSCOhost, or Ovid,
+please consult <U><FONT COLOR=blue>Exporting
+from a Data Service</FONT></U>.
+</P>
+
+<P>
+<EM>Note:</EM> If your Internet browser is set to block pop-ups, then
+this preference will have to be disabled in order for Direct Export to RefWorks to work properly.
+</P>
+
+<P>
+Citations and abstracts from most databases (including those with the Direct
+Export feature) can also be added to your RefWorks account using "Import
+Filters."  Please refer to the <U><FONT COLOR=blue>Import
+Filter List</FONT></U> of publishers and their databases.  Basic instructions are
+available for <U><FONT COLOR=blue>Importing
+References</FONT></U> from most databases.
+</P>
+
+
+<P>
+Instructions on how to import citations from PubMed or Google Scholar can be seen on these two videos: 
+<BR>
+<U><FONT COLOR=blue>RefWorks: Importing PubMed Citations</FONT></U>&nbsp; and 
+<BR>
+<U><FONT COLOR=blue>RefWorks: Importing Google Scholar Citations</FONT></U>&nbsp;.
+</P>
+
+
+
+ 
+
+</FONT></U>
+<H1>Will the Library Catalog work with RefWorks?</H1>
+
+
+<P>
+The Library Catalog records can be marked and then exported directly into your RefWorks account. 
+Instructions are available in the 
+<U><FONT COLOR=blue>Marked Items</FONT></U> 
+section of the the Library Catalog guide.
+</P> 
+
+<P>
+You can also view the video titled 
+<U><FONT COLOR=blue>RefWorks: Importing Library Catalog Citations</FONT></U>&nbsp;
+or consult the handout on 
+<U><FONT COLOR=blue>RefWorks: Importing Library Catalog Citations</FONT></U> [PDF].
+</P>
+
+
+
+ 
+
+</FONT></U>
+<H1>How do I import my records from EndNote and ProCite?</H1>
+
+
+<P>
+To import your records from EndNote and Procite, please refer to the instructions found at 
+<U><FONT COLOR=blue>Converting from Other Bibliographic Management Programs</FONT></U>.
+</P>
+ 
+
+ 
+
+</FONT></U>
+<H1>What stylesheets are available?</H1>
+
+
+<P>
+RefWorks supports hundreds of "output styles" or stylesheets for formatting bibliographies 
+including APA, MLA, Chicago, and Turabian. A complete list of styles is available on the 
+<U><FONT COLOR=blue>Output Style List</FONT></U>.
+</P>
+ 
+
+ 
+
+</FONT></U>
+<H1>What is Write-N-Cite?</H1>
+
+<P>
+Write-N-Cite is a Microsoft Word add-on utility that allows users to run an
+abbreviated version of RefWorks and cite references while typing a document.
+To use Write-N-Cite with RefWorks you must 
+<U><FONT COLOR=blue>download</FONT></U> and
+install a small utility program to your computer.
+</P>
+
+<P>
+To configure Write-N-Cite for use from off-campus, follow these set-up
+instructions for your computer:
+</P>
+
+
+<H2>Windows Users:</H2>
+
+<OL START="1">
+<LI> From the Start Menu select Programs &gt; RefWorks &gt; WNC Proxy Configuration
+Utility</LI>
+</OL>
+
+<OL START="2">
+<LI> Enter the Proxy Server URL:<BR>
+https://login.proxy.libraries.rutgers.edu/login?url=https://www.refworks.com/Refworks/?WNC=true
+</LI>
+</OL>
+
+<OL START="3">
+<LI> Click OK</LI>
+</OL>
+
+
+<H2>Mac Users:</H2>
+
+<OL START="1">
+<LI> Activate Write-N-Cite.</LI>
+</OL>
+
+<OL START="2">
+<LI> Select Preferences from the Write-N-Cite menu.</LI>
+</OL>
+
+<OL START="3">
+<LI> Select the Proxy option and enter the Proxy Server URL:<BR>
+https://login.proxy.libraries.rutgers.edu/login?url=https://www.refworks.com/Refworks/?WNC=true
+</LI>
+</OL>
+
+
+<P>
+Further assistance in 
+<U><FONT COLOR=blue>using Write-N-Cite</FONT></U> 
+is available from RefWorks.
+</P>
+
+<P>
+If you need help configuring Write-N-Cite with Snow Leopard on a Mac, please contact Prof. 
+Jeffrey Longhofer of the School of Social Work 
+<U><FONT COLOR=blue>jeff.longhofer@gmail.com</FONT></U>.
+</P>
+
+ 
+
+</FONT></U>
+<H1>What happens to my RefWorks account if I leave Rutgers?</H1>
+
+
+<P>
+You can convert your RefWorks account to an <U><FONT COLOR=blue>individual subscription</FONT></U>.  <U><FONT COLOR=blue>RefWorks Technical Support</FONT></U> (support@refworks.com) can provide you with instructions on how to move your database. You can also export your reference data in several formats by consulting the directions for <U><FONT COLOR=blue>
+Exporting a Database</FONT></U>.
+</P> 
+
+<BR><BR>
+
+<!-- content area: end -->
+
+<!-- footer -->
+<!-- <span style="align: right; marginbottom: 0px">
+<a href="#top_of_doc"><img src="/rul/images/top.gif" border="0" width="40" height="37" align="right" alt="Back to Top of Page" /></a>
+</span> -->
+</TD></TR>
+<TR>
+<TD></TD>
+<TD>
+
+
+Last updated <!-- October 13, 2006; October 31, 2006; November 15, 2006;
+December 21, 2006; January 4, 2007; March 7, 2007;  May 4, 2007July 30, 2007-->
+<!-- January 16, 2008 November 4, 2009; December 15, 2009; acct url JUly 29, 2011 -->
+January 18, 2012
+
+
+</TD>
+</TR>
+<TR>
+<TD>&nbsp;</TD>
+<TD>
+
+
+URL: http://www.libraries.rutgers.edu/rul/refworks/refworks.shtml<BR>
+
+
+
+
+    <U><FONT COLOR=blue>Website Feedback</FONT></U>&nbsp;&nbsp;|&nbsp;&nbsp;<U><FONT COLOR=blue>Privacy Policy</FONT></U>
+    <BR>
+    <U><FONT COLOR=blue>Copyright &#169;  2012</FONT></U>, Rutgers, The State University of New Jersey &nbsp;&nbsp;(<U><FONT COLOR=blue><EM>Further Copyright Information</EM></FONT></U>)
+
+
+</TD>
+</TR>
+</TABLE>
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>

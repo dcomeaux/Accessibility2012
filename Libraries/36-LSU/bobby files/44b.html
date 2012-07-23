@@ -1,0 +1,887 @@
+
+<HTML>
+<HEAD>
+<META CONTENT="text/html; charset=utf-8">
+<!--<base href="http://www.lib.lsu.edu"  />-->
+
+
+
+
+ 
+
+
+
+
+////////////THIS IS THE EXTERNAL LINKS NEW WINDOW JS//////////////////
+
+function exLinks() {
+<!-- Copyright 2005 Bontrager Connection, LLC
+// More info: "Automatic New Window for External Links" 
+//    at /library/
+// Also see http://BontragerConnection.com/
+//
+// List the domain names that shall not be put into new 
+//    windows when the link is clicked. If you use both 
+//    the www.example.com and example.com versions of 
+//    your domain name, list them both. The domains need 
+//    to be all one line between the quotation marks on 
+//    the line below, the names separated with a comma.
+//    Do not specify http:// URLs, just domain names.
+
+var Domains = "www.lib.lsu.edu,lib.lsu.edu,lsu.edu,www.lsu.edu,test.lib.lsu.edu,news.blogs.lib.lsu.edu,lsu.louislibraries.org,grok.lsu.edu,itsweb.lsu.edu";
+
+////////////////////////////////////////////
+// No other customizations are necessary. //
+////////////////////////////////////////////
+if(Domains.indexOf(" ") != 1) {
+   var splitarray = Domains.split(" ");
+   Domains = splitarray.join("");
+}
+Domains = Domains.toLowerCase();
+var DomainsArray = Domains.split(",");
+for(var i = 0; i < document.links.length; i++) {
+   if(document.links[i].hostname.length < 1) 
+   { continue; }
+   if(document.links[i].target.length > 0)
+   { continue; }
+   var h = document.links[i].hostname.toLowerCase();
+   var makeNewWindow = true;
+   for(var ii = 0; ii < DomainsArray.length; ii++) {
+      if(DomainsArray[ii] != h) 
+      { continue; }
+      makeNewWindow = false;
+      break;
+   }
+   if(makeNewWindow == true)
+   { document.links[i].title = 'This link will take you outside LSU.edu.'; }
+}
+//-->
+}
+
+
+function mobilepop(action) {
+	if (action == "close") document.getElementById('mobilepop').style.display = "none";
+	else if (action == "redirect") window.location.href = "http://www.lib.lsu.edu/m/";
+}
+
+function mobilepopOL() {	
+//	if (document.location == "http://www.lib.lsu.edu/index.html" || document.location == "http://www.lib.lsu.edu/") {
+//		if (screen.width 
+
+<!-- The following JavaScript code gets the current date from the viewer's machine. --> 
+
+<!-- tag to hide script from older browsers that don't support JavaScript
+function display_todays_date()
+{
+var today = new Date();
+var numerical_day=today.getDay();
+var numerical_month=today.getMonth();
+var date=today.getDate();
+var year=today.getFullYear();
+var weekday_array = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+var day_of_the_week = weekday_array[numerical_day];
+var month_array = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+var month_name = month_array[numerical_month];
+var date_string=day_of_the_week+', '+month_name+' '+date+', '+year;
+document.write(date_string);
+}
+//-->
+
+  
+	#mobilepop {
+		/*position:absolute;
+		top:10px;
+		left:10px;*/
+		width:760px;
+		height:auto;
+		margin:0 10px;
+		padding:0;
+		display:none;
+		overflow:hidden;
+	}
+	#mobilecont {
+		width:760px;
+		background:#FDD023;
+		color:#333333;
+		padding:10px;
+		font-size:12px;
+		font-family:Arial, Helvetica, sans-serif;
+		text-align:center;
+		border:1px solid #ffffff;
+		line-height:115% !important;
+	}
+
+<!-- End the current date script. --> 
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+	[INLINE]
+
+
+	
+		
+    	<P><EM>On a mobile device?</EM></P>
+        <P>View the LSU Libraries Mobile Website at<BR> <U><FONT COLOR=blue>http://www.lib.lsu.edu/m/</FONT></U></P>
+        <!-- <p style="fontsize:2em;"><input type="button" name="closempop" value="Stay" onClick="javascript:mobilepop('close');" /> <input type="button" name="redirectmpop" value="Go to Mobile Site" onClick="javascript:mobilepop('redirect');" /> </p>-->
+	    
+	
+
+
+	<!--Begin Utility Bar-->
+	<UL>
+	<LI><U><FONT COLOR=blue>
+		[Text Only]</FONT></U>
+		<U><FONT COLOR=blue>[Login to MyLSU]</FONT></U>
+	</LI> 
+	<LI> Baton Rouge, Louisiana | 
+	<!--Begin date display-->
+	display_todays_date();
+	<!--end date display-->
+	</LI> 
+
+ 	<LI>
+	<FORM>
+		 
+		<INPUT WIDTH="17" NAME="image" HEIGHT="14" TYPE="image">
+		<INPUT VALUE="Search lsu.edu" NAME="q" SIZE="20" TYPE="text">
+		<INPUT VALUE="lsu.edu" NAME="sitesearch" TYPE="hidden"> 
+		</FORM>
+	</LI>
+
+</UL>
+<!--End Utility Bar   -->
+		
+ 
+<U><FONT COLOR=blue></FONT></U>
+
+	<UL>
+ 	  <LI><U><FONT COLOR=blue>LSU Libraries</FONT></U><!-- Begin Home Item -->
+    
+       <!-- <div class="dropdown_2columns">--><!-- Begin 2 columns container -->
+    
+    <!--        <div class="col_2">
+                <h2>Welcome !</h2>
+            </div>
+    
+            <div class="col_2">
+                <p>Welcome to the LSU Libraries web site.  </p>             
+                <p>The LSU Libraries web site is a gateway to the information and research needs of the LSU community.  It can be used to locate books, link to ejournal articles, communicate with subject librarians and other library staff and faculty members.</p>             
+            </div>
+    
+            <div class="col_2">
+                <h2>Cross Browser Support</h2>
+            </div>
+            
+            <div class="col_1">
+                <img src="img/browsers.png" width="125" height="48" alt="" />
+            </div>
+            
+            <div class="col_1">
+                <p>This mega menu has been tested in all major browsers.</p>
+            </div>
+          
+        </div>--><!-- End 2 columns container -->
+    
+    </LI><!-- End Home Item -->
+    
+         <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////          ABOUT US                   ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+ 	   	 <LI><U><FONT COLOR=blue>About Us</FONT></U><!-- Begin 5 columns Item -->
+        <!-- Begin 5 columns container -->
+        
+             
+                <H2>Welcome to the LSU Libraries Website!</H2>
+                <P>The LSU Libraries web site is a gateway to the information and research needs of the LSU community. It can be used to locate books, link to ejournal articles, and to communicate with subject librarians and other library staff and faculty members.
+</P>
+            
+             
+            
+                <H3>Information</H3>
+     <!--           <p class="black_box">This is a dark grey box text. Fusce in metus at enim porta lacinia vitae a arcu. Sed sed lacus nulla mollis porta quis.</p>-->
+     
+            <UL> 
+            <LI><U><FONT COLOR=blue>About the Libraries</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Driving Directions</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Employment</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Hours</FONT></U></LI>
+            <LI><U><FONT COLOR=blue>Policies</FONT></U></LI>
+            
+            </UL>
+            
+   		        
+                <H3>Directory</H3>
+                <UL>
+                <LI><U><FONT COLOR=blue>All</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Faculty</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Subject Librarians</FONT></U></LI>
+              <!--  <li><a href="http://www.lib.lsu.edu/sp/subjects/staff.php?letter=By Department">By Departments</a></li>-->
+                </UL>
+                
+                
+             
+            
+               <H3>Frequently Dialed Numbers</H3>
+               
+              <P>- Circulation (fines, borrowing): 578-2058<BR> 
+              - Reference (help finding information): 578-5652<BR>
+              - Music Resources: 578-4674<BR>
+              - Special Collections: 578-6568 </P>
+            
+           &nbsp; 
+                   
+                   
+                   
+                   <U><FONT COLOR=blue>[INLINE]</FONT></U>
+                   
+                     <U><FONT COLOR=blue>[INLINE]</FONT></U>
+                  <U><FONT COLOR=blue> [INLINE]</FONT></U>
+                   <U><FONT COLOR=blue> [INLINE] </FONT></U>
+                  
+            
+                
+                
+         
+ 
+        
+        <!-- End 5 columns container -->
+     </LI><!-- End 5 columns Item -->
+     
+     <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////          RESEARCH TOOLS             ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+     
+     <LI><U><FONT COLOR=blue>Research Tools</FONT></U><!-- Begin 4 columns Item -->
+    
+        <!-- Begin 4 columns container -->
+        
+               
+            
+                <H3>Find Books</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Online Catalog</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>WorldCat Local</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Subject Guides</FONT></U></LI>
+<!--                    <li><a href="http://www.lib.lsu.edu/sp/subjects/index.php">Subject Guides</a></li> -->
+                    <LI><U><FONT COLOR=blue>Gov't Documents</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Reserves</FONT></U>
+                    <!-- <li><a href="#">more</a></li>-->
+                </UL>   
+                             
+                   
+                <H3>Find Articles</H3> 
+                <UL>
+                    <LI><U><FONT COLOR=blue>Indexes &amp; Databases</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Ejournals</FONT></U></LI>
+                 <!--   <li><a href="#">How to find Articles</a></li>-->
+                </UL>   
+                 
+                <H3>Other</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Gov't Documents</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Other Resources</FONT></U></LI>
+                </UL>   
+            
+               
+                <H3>Help</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Subject Librarians</FONT></U></LI>
+<!--                <li><a href="http://www.lib.lsu.edu/sp/subjects/staff.php?letter=Subject Librarians AZ">Subject Librarians</a></li> -->
+                    <LI><U><FONT COLOR=blue>Tutorials</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Technical Help</FONT></U></LI>
+                </UL>   
+            
+   
+        <!-- End 4 columns container -->
+    
+    </LI><!-- End 4 columns Item -->
+    
+  
+    <!-- Start services -->
+         <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////             SERVICES                ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+    
+        <LI><U><FONT COLOR=blue>Services</FONT></U><!-- Begin 4 columns Item -->
+    
+        <!-- Begin 4 columns container -->
+        
+    <!--        <div class="col_3">
+                <h2>Research</h2>
+            </div>
+    -->      
+         
+            
+            
+                    <H3>Instruction</H3>
+                <UL>
+                
+                    <LI><U><FONT COLOR=blue>Instruction Webpage</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>LIS 1001</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Tutorial Center (141 Middleton)</FONT></U>
+                    
+                    <LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Tutorials</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Request Instruction</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Reserve a Classroom</FONT></U></LI>
+               
+                </UL>   
+                 
+            
+       
+  
+    
+            
+            
+                <H3>Borrowing</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Interlibrary Loan</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Your Library Account</FONT></U></LI>
+              
+                    <LI><U><FONT COLOR=blue>Circulation Policies</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Reserves</FONT></U></LI>
+                   <!-- <li><a href="#">more</a></li>-->
+                </UL>   
+                
+                 <H3>Other</H3>
+                <UL>
+                <LI><U><FONT COLOR=blue>Disability Services</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Distance Education</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Study/ Presentation Rooms</FONT></U>
+                </UL>
+                 
+            
+    
+            
+            
+                <H3>Technology</H3>
+                <UL>
+                    <LI><U><FONT COLOR=blue>Help Desk</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Print Desk</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Find a Computer</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Technical Help</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Visualization Services Center (109 Middleton)</FONT></U>
+                 
+                </UL>  
+                 
+            
+    
+     <!--       <div class="col_1">
+            
+                <h3>Misc</h3>
+                <ul>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Logo</a></li>
+                    <li><a href="#">Flash</a></li>
+                    <li><a href="#">Illustration</a></li>
+                    <li><a href="#">More...</a></li>
+                </ul>   
+                 
+            </div>
+            -->
+        <!-- End 4 columns container -->
+    
+    </LI><!-- End 4 columns Item -->
+    
+    <!-- end services -->
+    
+         <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////             DEPARTMENTS             ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+
+	<LI><U><FONT COLOR=blue>Departments</FONT></U>
+    
+		
+        
+                
+                
+                    <UL>
+                        <LI><U><FONT COLOR=blue>Acquisitions</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Circulation</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Education Resources</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Gov't Documents</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Interlibrary Loan</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Music Resources</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Reference</FONT></U></LI>                     
+                        <LI><U><FONT COLOR=blue>Special Collections</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>More</FONT></U></LI>
+              
+                    </UL>   
+                     
+                
+                
+		
+        
+	</LI>
+
+
+     <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////              HELP                   ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+
+    <LI><U><FONT COLOR=blue>Help</FONT></U><!-- Begin 3 columns Item -->
+    
+        <!-- Begin 3 columns container -->
+            
+            
+                <H2>Help</H2>
+            
+            
+             
+    
+                <UL>
+                    <LI><U><FONT COLOR=blue>Technical Help</FONT></U></LI>
+                   
+                    <LI><U><FONT COLOR=blue>Tutorial Center</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Call Us</FONT></U> 225.578.8875</LI>
+                
+                </UL>   
+    
+            
+            
+            
+    
+                <UL>
+                    <LI><U><FONT COLOR=blue>Research Help</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Help Desk</FONT></U> 225.578.3375</LI>
+                    <LI><U><FONT COLOR=blue>Email Us</FONT></U></LI>
+               
+                </UL>   
+    
+            
+            
+            
+    
+                <UL>
+                    <LI><U><FONT COLOR=blue>FAQ</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>IM Us</FONT></U></LI>
+              
+                </UL>   
+    
+            
+            
+            
+                <H2>Search the Libraries Web Site</H2>
+                
+                     <FORM>
+                <INPUT WIDTH="17" NAME="image" HEIGHT="14" TYPE="image">
+                <INPUT NAME="q" TYPE="text">
+                <INPUT VALUE="www.lib.lsu.edu" NAME="sitesearch" TYPE="hidden">
+                </FORM>
+            
+            
+          <!--  <div class="col_3">
+                <img src="img/02.jpg" width="70" height="70" class="img_left imgshadow" alt="" />
+                <p><strong>Tutorial Lab</strong> Located in 141 Middleton Library, the lab offers tutoring in Math....(this should go under instruction)<a href="#">Read more...</a></p>
+    <br clear="all" />
+                <img src="img/01.jpg" width="70" height="70" class="img_left imgshadow" alt="" />
+                <p>Aliquam elementum felis quis felis consequat scelerisque. Fusce sed lectus at arcu mollis accumsan at nec nisi. Aliquam pretium mollis fringilla. Vestibulum tempor facilisis malesuada. <a href="#">Read more...</a></p>
+            </div>
+        -->
+        <!-- End 3 columns container -->
+        
+    </LI><!-- End 3 columns Item -->
+    
+         <!--
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     ///////                                     ///////
+     ///////           A TO Z                    ///////
+     ///////                                     ///////
+     ///////////////////////////////////////////////////
+     ///////////////////////////////////////////////////
+     -->
+
+<LI><U><FONT COLOR=blue>A to Z</FONT></U></LI>
+</UL>
+  
+
+ 
+ <!--<link rel="stylesheet" type="text/css" href="/sp/assets/css/default.css" />
+-->
+  <H1>Database List: E</H1> 
+
+  
+    
+    
+
+    <U><FONT COLOR=blue>A</FONT></U><U><FONT COLOR=blue>B</FONT></U><U><FONT COLOR=blue>C</FONT></U><U><FONT COLOR=blue>D</FONT></U>E<U><FONT COLOR=blue>F</FONT></U><U><FONT COLOR=blue>G</FONT></U><U><FONT COLOR=blue>H</FONT></U><U><FONT COLOR=blue>I</FONT></U><U><FONT COLOR=blue>J</FONT></U><U><FONT COLOR=blue>K</FONT></U><U><FONT COLOR=blue>L</FONT></U><U><FONT COLOR=blue>M</FONT></U><U><FONT COLOR=blue>N</FONT></U><U><FONT COLOR=blue>O</FONT></U><U><FONT COLOR=blue>P</FONT></U><U><FONT COLOR=blue>R</FONT></U><U><FONT COLOR=blue>S</FONT></U><U><FONT COLOR=blue>T</FONT></U><U><FONT COLOR=blue>U</FONT></U><U><FONT COLOR=blue>V</FONT></U><U><FONT COLOR=blue>W</FONT></U><U><FONT COLOR=blue>Z</FONT></U><U><FONT COLOR=blue>All</FONT></U>    
+   
+    
+      
+        
+    <TABLE><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>e-Duke Scholarly Collection</FONT></U> 
+				
+				Duke University Press publishes and distributes more than thirty  periodicals that span a stimulating range of disciplines within the  humanities and sciences--from East Asian cultural studies to French  history, from lesbian and gay studies to mathematics and the history of  economic thought, from feminism, culture and media studies to medieval  and early modern studies.  The e-Duke Scholarly Collection includes  online access to twenty-nine Duke humanities and social science  journals.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information]  [Some full text available] [Open Access]</TD><TD><U><FONT COLOR=blue>E-Resources Management Handbook</FONT></U> 
+				
+				The ERMH is an open access publication on e-resource  management (ISBN: <U><FONT COLOR=blue>0-9552448-0-3</FONT></U>; 13-digit version: <U><FONT COLOR=blue>978-0-9552448-0-3</FONT></U>).  It forms a valuable and comprehensive guide for the entire information  industry, and will continue to grow as new chapters are commissioned to  address hot topics as they arise. <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Early American Fiction Complete</FONT></U> 
+				
+				Early American Fiction 1789&ndash;1875 offers the full text of more than 700  first editions of American novels and short stories by such authors as  Louisa May Alcott, Herman Melville, Harriet Beecher Stowe and Mark  Twain, as well as a host of minor writers of the period.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Early American Imprints Series 1: Evans 1639 - 1800</FONT></U> 
+				
+				Early American Imprints, Series I. Evans (1639-1800)  has been hailed as one of the most important collections ever produced  on microform. Based on the renowned American Bibliography by Charles  Evans and enhanced by Roger Bristol's Supplement to Evans' American  Bibliography, the collection was first published by Readex in  cooperation with the American Antiquarian Society (AAS). <BR> <BR> For  decades, the collection has served as a foundation set for research  involving early American history, literature, philosophy, religion, and  more. Series I. Evans is the definitive resource for information about  every aspect of life in 17th- and 18th-century America, from agriculture  and auctions through foreign affairs, diplomacy, literature, music,  religion, the Revolutionary War, temperance, witchcraft, and just about  any other topic imaginable.  <BR> <BR> Continuing their long-term  relationship, Readex and the AAS are now undertaking a massive project  to digitize the entire Evans collection. Evans Digital Edition will  include every item previously produced on microform plus more than1,200  additional works located, catalogued and digitized since completion of  the earlier effort. <BR> <BR> By searching ASCII text associated with  images, researchers enjoy unprecedented power to locate relevant  material. Bibliographic records created by the AAS are integrated into  the database as well, providing additional access points. Upon  completion, Evans Digital will consist of more than 36,000 works and  2,400,000 images. <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Early American Imprints Series 2: Shaw-Shoemaker 1801 - 1819</FONT></U> 
+				
+				Early American Imprints, Series II: Shaw-Shoemaker, 1801-1819 provides a  comprehensive set of American books, pamphlets and broadsides published  in the early part of the 19th century. It is based on the noted  -American Bibliography, 1801-1819- by Ralph R. Shaw and Richard H.  Shoemaker. With more than four million pages from over 36,000 items -  including 1,000 catalogued new items unavailable in previous microform  editions-this digital edition from Readex is an essential complement to  Early American Imprints, Series I: Evans, 1639-1800, the definitive  resource for researching 17th- and 18th-century America.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Early English Books Online</FONT></U> 
+				
+				Early English Books Online (EEBO) contains digital facsimile page images  of virtually every work printed in England, Ireland, Scotland, Wales  and British North America and works in English printed elsewhere from  1473-1700 - from the first book printed in English by William Caxton,  through the age of Spenser and Shakespeare and the tumult of the English  Civil War. <BR><BR>  From the first book published in English through  the age of Spenser and Shakespeare, this collection now contains about  100,000 of over 125,000 titles listed in Pollard &amp; Redgrave's  Short-Title Catalogue (1475-1640) and Wing's Short-Title Catalogue  (1641-1700) and their revised editions, as well as the Thomason Tracts  (1640-1661) collection and the Early English Books Tract Supplement.  Libraries possessing this collection find they are able to fulfill the  most exhaustive research requirements of graduate scholars - from their  desktop! - in many subject areas, including: English literature,  history, philosophy, linguistics, theology, music, fine arts, education,  mathematics, and science.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>eBook Collection (EBSCOhost)</FONT></U> 
+				
+				Formerly netLibrary, eBook Collection (EBSCOhost), a collection of almost  40,000 reference,  scholarly, and professional e-books (full text  electronic books) from  university and commercial presses, covering a  variety of disciplines. <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>EBSCO Discovery Service </FONT></U> 
+				
+				EBSCO Discovery Service provides a user-friendly method of searching LSU Libraries' Online Catalog along with the full-text of much of the Libraries' electronic holdings. <BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>EBSCO Electronic Journals Service</FONT></U> 
+				
+				EBSCOhost Electronic Journals Service (EJS) is a gateway to thousands of  e-journals containing millions of articles from hundreds of different  publishers, all at one web site.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>EbscoHost Databases</FONT></U> 
+				
+				Provides access to all the databases the Libraries has access to through the EbscoHost interface.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>EBSCOhost ECONOMIA Y NEGOCIOS</FONT></U> 
+				
+				EBSCOhost ECONOMIA Y NEGOCIOS is the result of a collaborative effort  between EBSCO Publishing and ESAN (Escuela de Administraci&oacute;n de Negocios  para Graduados). ESAN is the oldest graduate school of business in the  Spanish-speaking world. This continuously updated bibliographic database  is an indispensable tool for research conducted in the areas of  business and economics. Search functionality is enhanced through the  incorporation of author keywords supplied in both Spanish and English.  In addition, more than 60,000 records, dating back to the early 1980s,  provide coverage for more than 200 Spanish and Portuguese-language  periodicals published in Argentina, Brazil, Chile, Colombia, Spain, the  United States, and elsewhere.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Ecology Abstracts</FONT></U> 
+				
+				Ecology Abstracts focuses on how organisms of all  kinds - microbes, plants, and animals -  interact with their  environments and with other organisms. Included are relevant papers on   evolutionary biology, economics, and systems analysis as they relate to  ecosystems or the  environment, and is updated monthly. Major areas of  coverage include: algae/lichens, animals, annelids, aquatic ecosystems,  arachnids, arid zones, birds, brackish water,  bryophytes/pteridophytes,  coastal ecosystems, conifers, conservation, control, crustaceans,   ecosystem studies, fungi, grasses, grasslands, high altitude  environments, human ecology, insects, legumes, mammals, management,  microorganisms, molluscs, nematodes,  paleo-ecology, plants, pollution  studies, reptiles, river basins, soil, taiga/tundra, terrestrial   ecosystems, vertebrates, wetlands, and woodlands. <U><FONT COLOR=blue>Journals indexed by this database</FONT></U>. <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Econlit</FONT></U> 
+				
+				Contains citations since 1969, with selected abstracts since 1987, of  world  economic literature from 400 major journals, essays, proceedings,  books,  reviews, dissertations and working papers. It is produced by  the American  Economic Association.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Economics and Sociology Abstracts via CabDirect</FONT></U> 
+				
+				Including the CAB Abstracts and CAB Health, this is the leading database  for literature related to agriculture and applied life sciences,  including strong international coverage.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Educational Administration Abstracts</FONT></U> 
+				
+				Educational Administration Abstracts includes  bibliographic records covering areas related to educational  administration, including educational leadership, educational  management, educational research, and other areas of key relevance to  the discipline. The index contains more than 66,000 records, which are  carefully selected from the most important sources within the  discipline.  <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information]  [Open Access]</TD><TD><U><FONT COLOR=blue>Effects of Offshore Oil &amp; Gas Development</FONT></U> 
+				
+				This bibliography is a quarterly compilation of current publications  (citations with abstracts) from a wide variety of electronic and print  information sources relating to offshore oil and gas development.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>eHRAF World Cultures</FONT></U> 
+				
+				HRAF is an acronym for Human Relations Area Files. HRAF is a consortium  of educational,  research and cultural organizations, and government  agencies; its mission is to encourage and facilitate the study of human  culture, society, and behavior. This mission is accomplished  mainly  through the compilation, indexing, and distribution of a collection of  ethnographic and other texts that are indexed by culture and subject.  (eHRAF stands for the electronic collections of the HRAF).<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information]  [Some full text available] [Open Access]</TD><TD><U><FONT COLOR=blue>Electronic Thesis and Dissertation Library</FONT></U><BR><EM>Note: </EM><EM>Access to electronic theses and dissertations is usually unrestricted. Some titles may be limited to the LSU campus or have other access restrictions.</EM> 
+				
+				Online versions of various theses and dissertations from LSU graduate students.<BR><BR>Adobe Acrobat Reader is required to access them.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Encyclopedia of Chemical Technology (Kirk-Othmer)</FONT></U> 
+				
+				Written by prominent scholars from industry, academia, and research  institutions, the Kirk-Othmer Encyclopedia of Chemical Technology  presents a wide scope of articles on chemical substances&mdash;including their  properties, manufacturing, and uses. It also focuses on industrial  processes and unit operations in chemical engineering, as well as  covering fundamentals and scientific subjects related to the field.  Additionally, environmental and health issues concerning chemical  technology are also addressed.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Encyclopedia of Communities of Practice in Information and Knowledge Management</FONT></U> 
+				
+				The Encyclopedia of Communities of Practice in  Information and Knowledge Management is the leading reference source for  dynamic and innovative research in the field of communities of practice  (CoPs) in information and knowledge management. With knowledge  management work on the increase, this single volume encyclopedia  provides a comprehensive, critical and descriptive examination of all  facets of CoPs in information and knowledge management in societies and  organizations. Hundreds of international researchers provide in-depth  coverage of conceptual and practical issues as well as topics regarding  learning, leadership, ethics, social, intellectual, rewards, and  language challenges. <BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Encyclopedia of Data Warehousing and Mining</FONT></U> 
+				
+				The Encyclopedia of Data Warehousing and Mining  provides a comprehensive, critical and descriptive examination of  concepts, issues, trends, and challenges in this rapidly expanding field  of data warehousing and mining (DWM). This encyclopedia consists of  more than 350 contributors from 32 countries, 1,800 terms and  definitions, and more than 4,400 references. This authoritative  publication offers in-depth coverage of evolutions, theories,  methodologies, functionalities, and applications of DWM in such  interdisciplinary industries as healthcare informatics, artificial  intelligence, financial modeling, and applied statistics, making it a  single source of knowledge and latest discoveries in the field of DWM. <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Encyclopedia of Database Technologies and Applications</FONT></U> 
+				
+				The Encyclopedia of Database Technologies and  Applications is a wide-ranging collection of diverse coverage of topics  related to database concepts, technologies, and applications. This  encyclopedia provides an overview of the state-of-the-art of classical  subjects and has contributions from over 175 international researchers  from 33 countries, more than 970 terms and definitions and over 2,400  references. It also delivers clear and concise explanations of emerging  issues and technologies such as multimedia database systems, data  warehousing and mining, geospatial and temporal databases, and data  reverse engineering. The Encyclopedia of Database Technologies and  Applications is a priceless single reference source for any library on  the topic of database technologies and applications.<BR>
+<BR>
+This  important new publication offers researchers, scholars, students and  professionals access to the latest knowledge related to database science and technology. <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Encyclopedia of Developing Regional Communities with Information and Communication Technology</FONT></U> 
+				
+				The Encyclopedia of Developing Regional Communities  with Information and Communication Technology is an important and timely  reference source on all topics related to the emerging field of  information and communication technology (ICT) and its role in  developing regional communities. This single-volume provides a thorough  examination of concepts, technologies, policies, training, and  applications of ICT in support of economic and regional developments  around the globe. With 171 leading international contributors from 40  countries, over 940 terms and definitions, and more than 2,200  references, this publication is the single indispensable source of  knowledge related to ICT and its strong positive impacts on the economic  development of regional communities around the world. <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Encyclopedia of Distance Learning</FONT></U> 
+				
+				The Encyclopedia of Distance Learning offers the most  comprehensive coverage of the issues, concepts, trends, and technologies  of distance learning. Over 400 international contributors from over 35  countries have provided extensive coverage of topics such as workforce  training, accessing education, digital divide, and the evolution of  distance and online education into a multibillion dollar enterprise.  This encyclopedia is edited by leading international experts with  multiple years of professional and academic experience in the field.  With more than 2,000 terms and definitions and over 6,000 additional  references, this encyclopedia is considered the foremost reference  source for the latest understanding, discoveries, and research in the  field of distance learning.  The Encyclopedia of Distance Learning is an  excellent source of comprehensive knowledge and literature on the topic  of distance learning programs.  <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Encyclopedia of Geography</FONT></U> 
+				
+				<P>This encyclopedia:</P><UL><LI>Gives a concise historical sketch of geography&rsquo;s long,  rich, and fascinating history, including human geography, physical  geography, and GIS</LI><LI>Provides succinct summaries of trends such as globalization,  environmental destruction, new geospatial technologies, and cyberspace</LI><LI>Decomposes geography into the six broad subject areas: physical  geography; human geography; nature and society; methods, models, and  GIS; history of geography; and geographer biographies, geographic  organizations, and important social movements</LI><LI>Provides hundreds of color illustrations and images that lend depth and realism to the text</LI><LI>Includes a special map section</LI></UL><BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Encyclopedia of Human Computer Interaction</FONT></U> 
+				
+				The Encyclopedia of Human Computer Interaction is the  most thorough and definitive source providing coverage of everything  related to the field of human computer interaction (HCI). This  encyclopedia covers a wide range of HCI related topics such as concepts,  design, usability, evaluation, innovations, and applications of HCI in  organizations around the globe. Over 120 contributors and advisors from  around the world have conferred their expertise to this publication, and  with over 830 key terms and definitions as well as more than 2,600  references, this encyclopedia is the single source of authoritative and  contemporary research in field of human computer interaction.<BR>
+<BR>
+The Encyclopedia of Human Computer Interaction also includes coverage of  real life experiences and cases of HCI and the lessons learned helping  readers to learn extensively about this important field of study.  <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Encyclopedia of Knowledge Management</FONT></U> 
+				
+				The Encyclopedia of Knowledge Management is the most  comprehensive source of coverage related to the past, present, and  emerging directions of knowledge management. The Encyclopedia of  Knowledge Management provides a broad basis for understanding the  issues, technologies, theories, applications, opportunities, and  challenges being faced by researchers and organizations today in their  quest for knowledge management. Over 170 contributors from 23 countries  have conferred their expertise to this publication, and with 940  definitions and more than 3,600 references, this encyclopedia is the  single source for reliable and modern-day research in the field of  knowledge management. <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Encyclopedia of Language and Linguistics 2nd Edition</FONT></U> 
+				
+				The Encyclopedia of Language &amp; Linguistics covers the full range of  topics in contemporary linguistics, with coverage across all aspects of  language, whether spoken, written or signed. Encyclopedia of Language  &amp; Linguistics gives full attention to formal and functional  approaches to the fundamental linguistic disciplines of phonetics,  phonology, morphology, syntax, semantics, pragmatics and discourse as  they relate to the description, analysis and use of individual languages  and to typological, historical, comparative and variationist approaches  to language and to languages.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Encyclopedia of Library and Information Sciences</FONT></U> 
+				
+				This third edition of the Encyclopedia of Library and  Information Sciences is not limited to librarianship or information  science. It is designed to cover a spectrum of related information  disciplines, including: 
+<UL>
+    <LI>Archival Science</LI>
+    <LI>Bibliography</LI>
+    <LI>Document and Genre Theory</LI>
+    <LI>Informatics</LI>
+    <LI>Information Systems</LI>
+    <LI>Knowledge Management</LI>
+    <LI>Library and Information Science</LI>
+    <LI>Museum Studies</LI>
+    <LI>Records Management</LI>
+    <LI>Social Studies of Information</LI>
+</UL>
+  <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Encyclopedia of Portal Technologies and Applications</FONT></U> 
+				
+				The Encyclopedia of Portal Technologies and Applications offers complete  coverage of the nature, characteristics, advantages, limitations,  design, and evolution of Web portals. Other topics include semantic  portals, philosophical portal issues, and personal portals. This  authoritative encyclopedia encompasses the economics of setting up and  using personal portals, knowledge management, strategic planning, user  acceptance, security and the law. <BR><BR> State-of-the-art portal  technology and applications are also described in the Encyclopedia of  Portal Technologies and Applications. This comprehensive reference  source contains more than 200 articles from academics, experts, and  practitioners from around the world. It covers technical characteristics  of portals and portal applications in a wide range of areas from  business to science and will appeal to a wide range of readers.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Encyclopedia of Social Work</FONT></U> 
+				
+				Co-published by the National Association of Social Workers and Oxford  University Press, the 20th edition of the Encyclopedia of Social Work is  widely considered the cornerstone of reference in its field. This new  edition includes coverage of areas that have come to the fore since the  1995 publication of the 19th edition, including demographic changes from  immigration, technology, the implications of managed care, faith-based  assistance, evidence-based practice, gerontology, and trauma and  disaster.  <BR><BR> The Encyclopedia contains four hundred subject entries and two hundred  brief biographies of key figures in the history of social work. Clearly  arranged in A-Z format, each article is fully cross-referenced and  includes a select bibliography to guide interested readers to primary  sources and the most important scholarly works on a given subject. The  work also includes a comprehensive index and topical outline.  Comprehensive in coverage and international in scope, the Encyclopedia  is a valuable resource to social work practitioners, scholars, and  students alike.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Encyclopedia of Spectroscopy and Spectrometry</FONT></U> 
+				
+				The Encyclopedia of Spectroscopy and Spectrometry provides authoritative  and comprehensive coverage of the whole topic of spectroscopy, from  theory to applications. Short articles, each covering one aspect of  spectroscopy, provide the professional spectroscopist working in  academia or industry with the essential facts and background on areas of  spectroscopy peripheral to their own. A list of further reading at the  end of each article directs the reader to the level of detail required  for professional purposes. Articles are arranged alphabetically, each  having been named to facilitate logical access by the reader. Each  article is flagged as to which area of spectroscopy it covers (&quot;Mass  Spectroscopy,&quot; &quot;Magnetic Resonance,&quot; etc.) and whether it covers theory,  methods and instrumentation, or applications. Users can refer to an  alphabetical article listing, or to a listing arranged according to  subject area to locate articles. Further reading lists at the end of  each article allow easy access to the primary literature. Extensive  cross-referencing, a complete subject index, numerous figures, and color  plates are included in each volume.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Encyclopedia of Virtual Communities and Technologies</FONT></U> 
+				
+				The Encyclopedia of Virtual Communities and  Technologies provides the most inclusive coverage of the concepts and  realities in the field of virtual communities and technologies. The  hundreds of entries included in this encyclopedia have been authored by  142 leading international researchers, presenting an in-depth analysis  of conceptual, technical, and the impacts of virtual environments in our  global village. In addition, over 100 entries provide coverage of  different types of virtual communities, their social status and impact,  and individual and group behavior in these communities. This  encyclopedia also offers coverage of upcoming and emerging technologies  for virtual communities human-computer interfaces, new networking,  mobile computing, web services, and synchronous and asynchronous  environments. <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Encyclopedia or World Dress and Fashion</FONT></U> 
+				
+				Informed by prestigious academic and library advisors, and anchored by  the ten-volume Encyclopedia of World Dress and Fashion (July 2010), the  Berg Fashion Library is the first online resource to provide access to  interdisciplinary and integrated text, image, and journal content on  world dress and fashion. The Berg Fashion Library offers users  cross-searchable access to an expanding range of essential resources in  this discipline of growing importance and relevance including a  specially-created taxonomy, an e-book collection, and extensive color  image bank. It will be of use to anyone working in, researching, or  studying fashion, anthropology, art history, history, museum studies,  and cultural studies.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information]  [Open Access]</TD><TD><U><FONT COLOR=blue>Energy Citations Databases</FONT></U> 
+				
+				This database contains bibliographic records for energy and  energy-related scientific and technical information from the Department  of Energy (DOE) and its predecessor agencies, the Energy Research &amp;  Development Administration (ERDA) and the Atomic Energy Commission  (AEC).<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Engineering Information Village 2</FONT></U> 
+				
+				Contains databases and links to information on the  following areas of engineering: acoustical engineering, aeronautical  engineering, aerospace engineering, agriculture, automotive engineering,  biotech engineering, business  and financial, careers and education,  chemical engineering, chemical industry, civil engineering and  architecture, computer engineering, construction, drugs and medicine,  electrical engineering, electronics, energy management, geology and  mining, industrial and manufacturing engineering, international  engineering, manufacturing, materials,  mechanical engineering, metals  and mining, nuclear and power engineering, office equipment and  computers, optics and electro-optical engineering, petroleum  engineering, telecommunications, transportation, and utilities and power. <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information]  [Open Access]</TD><TD><U><FONT COLOR=blue>English Short Title Catalogue</FONT></U> 
+				
+				The English Short Title Catalogue (ESTC) describes English  or English-language letterpress materials published before 1801. ESTC   contains records for items of all types published in Great Britain or  its colonies or in English from 1473 to 1800. <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Environmental Issues and Policy Index</FONT></U> 
+				
+				The Environmental Issues &amp; Policy Index database offers deep  coverage in applicable areas of agriculture, ecosystem ecology, energy,  natural resources, marine &amp; freshwater science, geography, pollution  &amp; waste management, environmental technology, environmental law,  public policy, social impacts, urban planning, and more. <BR><BR>   Environmental Issues &amp; Policy Index offers cover-to-cover indexing  and detailed abstracts for well over 1,000 international journals, with  ongoing coverage for over 500 titles, providing a global perspective on  important issues. The database features an in-depth thesaurus, and  extensive subject area coverage ranging as far back as 1950.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>ERIC Abstracts (Education Resources Information Center)</FONT></U> 
+				
+				ERIC, sponsored by the US Department of Education,  consists of two files: Resources in Education, covering the document  literature, (research reports, curriculum and teaching guides,  conference papers, and books), and Current Index to Journals in  Education, covering published journal literature from over 775  periodicals. <BR>
+<BR>
+Covers educational research and resources,  including career, adult, vocational, technical, and teacher education;  education of the handicapped, disadvantaged, and the gifted; early  childhood education, junior colleges and  higher education; reading and  communications skills; languages and linguistics; education management;  counseling and personnel services; library and information science;  information resources. 
+<BR>
+<BR>
+<U><FONT COLOR=blue>Free Web Access</FONT></U>  			 		 <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Essay and General Literature Index Retrospective</FONT></U> 
+				
+				Covering 1900 - 1984, this database indexes more than  249,000 essays included in this collection, it indexes single and  multi-author collections, plus selected annuals and serials. It includes  publications from the United States, Canada and Great Britain, covering eight decades of 20th Century literature. <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>ETDEWEB</FONT></U> 
+				
+				ETDEWEB includes information on the environmental  impact of energy production and use, including climate change; energy  R&amp;D; energy policy; nuclear, coal, hydrocarbon and renewable energy  technologies and more. <BR>
+<BR>
+Includes over 953,500 bibliographic records with more than 4.4 million downloadable full text. <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Eureka</FONT></U> 
+				
+				<EM>RLG</EM> has merged into Worldcat.<BR><BR>  Access to RLIN databases:  The Bibliographic File serves as a comprehensive catalog of books,  serials, manuscripts, maps, music scores, sound recordings, films,  photographs, posters, and computer files from the collections of major  research and academic libraries, archives, museums and other  collections. The English Short Title Catalogue (ESTC) describes English  or English-language letterpress materials published before 1801. ESTC   contains records for items of all types published in Great Britain or  its colonies or in English from 1473 to 1800.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>European Views of the Americas: 1493 to 1750</FONT></U> 
+				
+				A bibliographic database of more than 32,000 entries, providing a  comprehensive guide to printed records about the Americas written in  Europe before 1750, this database is the result of a cooperation between  EBSCO Publishing and the John Carter Brown Library.  The database is  created from &quot;European Americana: A Chronological Guide to Works Printed  In Europe Relating to The Americas, 1493-1750,&quot; and is available to LSU  free from EBSCO.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource]  [Some full text available]</TD><TD><U><FONT COLOR=blue>Evans Digital Edition, Early American Imprints Series 1: 1639 - 1800</FONT></U> 
+				
+				Early American Imprints, Series I. Evans (1639-1800)  has been hailed as one of the most important collections ever produced  on microform. Based on the renowned American Bibliography by Charles  Evans and enhanced by Roger Bristol's Supplement to Evans' American  Bibliography, the collection was first published by Readex in  cooperation with the American Antiquarian Society (AAS). <BR>
+<BR>
+For  decades, the collection has served as a foundation set for research  involving early American history, literature, philosophy, religion, and  more. Series I. Evans is the definitive resource for information about  every aspect of life in 17th- and 18th-century America, from agriculture  and auctions through foreign affairs, diplomacy, literature, music,  religion, the Revolutionary War, temperance, witchcraft, and just about  any other topic imaginable.
+<BR><BR>
+Continuing their long-term  relationship, Readex and the AAS are now undertaking a massive project  to digitize the entire Evans collection. Evans Digital Edition will  include every item previously produced on microform plus more than1,200  additional works located, catalogued and digitized since completion of  the earlier effort. <BR>
+<BR>
+By searching ASCII text associated with  images, researchers enjoy unprecedented power to locate relevant  material. Bibliographic records created by the AAS are integrated into  the database as well, providing additional access points. Upon  completion, Evans Digital will consist of more than 36,000 works and  2,400,000 images. <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information] [Restricted Resource] </TD><TD><U><FONT COLOR=blue>Experian Business Credit Profiles</FONT></U> 
+				
+				Contains the payment history, bankruptcy, tax and legal history, UCC  filings, and banking relationships, as well as key facts such as  Standard Industrial Classification (SIC) codes, sales ranges, and more  for over 8,000,000 companies. Full audited financials financials are  available for all publicly held companies. <BR><BR>  Records contain at  least two of the following elements: identifying information (SIC code  and telephone number), bank data, supplemental data, key facts data,  S&amp;P data, legal data, government data, or trade data. Use Format 6  to determine which sections are present in each record. The file also  provides comprehensive public record coverage including bankruptcies,  federal and state tax liens, judgements, and UCCs.<BR> <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U><TR><TD>[more information]  [Open Access]</TD><TD><U><FONT COLOR=blue>Export.gov</FONT></U> 
+				
+				Export.gov brings together resources from across the  U.S. Government to assist American businesses in planning their  international sales strategies and succeed in today&rsquo;s global  marketplace.  <BR>
+<BR>
+<EM>What can Market Access and Compliance (MAC) do to help my business?</EM>  <BR>
+<BR>
+After you contact our Trade Compliance Center or the country  desk in one of our regional offices, MAC will evaluate whether the  problem is a market access issue or a compliance problem with an  existing trade agreement. MAC will establish a team of experts on the  country, the industry, the trade agreement, and other needed areas. The  team will review all possible options to resolve the problem and then  work through each tactic towards a solution.  <BR>
+<BR>
+<EM>What is the difference between market access and compliance?</EM>  <BR>
+<BR>
+Market Access &ndash; U.S. exporters sometimes encounter trade  barriers. For instance, a country may only allow products to enter the  most inconvenient port or a country may treat imported goods differently  than domestic goods. MAC receives calls from businesses, associations  and international U.S. commercial offices, and we then map out a plan to  solve the problem.  <BR>
+<BR>
+Compliance &ndash; The United States is a party in over 250 trade  agreements. But trade agreements are only paper unless foreign  governments comply with their obligations. MAC addresses compliance  problems quickly and aggressively. Once a problem is identified, we  organize a team to outline and implement a solution.  <BR>
+<BR>
+<EM>What are some common trade problems MAC can help U.S. businesses overcome?</EM>  <BR>
+<BR>
+MAC provides help with the following common trade problems through the Trade Compliance Center:</P>
+<UL>
+    <LI>Tariff and customs barriers</LI>
+    <LI>Service barriers</LI>
+    <LI>Standards, testing, labeling, or certification barriers</LI>
+    <LI>Rules of origin</LI>
+    <LI>Government procurement contract barriers</LI>
+    <LI>Intellectual property protection problems</LI>
+    <LI>Excessive government requirements</LI>
+    <LI>Excessive testing or licensing fees</LI>
+    <LI>Bribery</LI>
+    <LI>Investment</LI>
+</UL>  <BR><U><FONT COLOR=blue>(Link to Record)</FONT></U></TABLE>        
+    
+    
+	
+
+	
+    
+        
+        
+            Key to Icons
+        
+         
+
+<P>
+[Information]  Information<BR>
+
+
+ [Restricted Resource]  Campus Faculty, Staff &amp; Students only<BR>
+
+ 
+<U><FONT COLOR=blue>[Some full text available] Some full text</FONT></U><BR>
+
+
+<U><FONT COLOR=blue>[Open Access Resource] Open Access (freely available to anyone)</FONT></U><BR>
+
+
+<U><FONT COLOR=blue>[Trial] Free Trials</FONT></U><BR>
+
+
+
+<!--<img src="http://www.lib.lsu.edu/sp/assets/images/icons/camera.gif" border="0" alt="Resource includes images"> Images<br />
+
+<img src="http://www.lib.lsu.edu/sp/assets/images/icons/television.gif" border="0" alt="Resource includes video"> Video files<br />
+
+<img src="http://www.lib.lsu.edu/sp/assets/images/icons/sound.gif" border="0" alt="Resource includes audio"> Audio files<br />
+-->
+</P>
+ 
+    
+    
+    
+        <!-- start pluslet -->
+    <!-- this is the newest databases pluslet maybe add back in after we go to the wide format... -->
+     
+        
+            Newest Databases
+        
+         <UL>
+<LI><U><FONT COLOR=blue>NewsBank</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Rock and Roll, Counter Culture, Peace and Protest</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Victorian Popular Culture</FONT></U></LI>
+<LI><U><FONT COLOR=blue>The First World War: Personal Experience</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Mass Observation Online</FONT></U></LI>
+</UL>
+ 
+     
+    <!-- end pluslet -->
+    
+      
+        
+            Information User Restrictions
+        
+          
+        
+<P>        Use of the LSU Libraries' electronic resources is subject to U.S. Copyright Law. Excessive downloading, printing, and/or electronic dissemination of resource content by the user is prohibited. Restrictions on other uses may apply. Electronic information subsidized by the LSU Libraries is for use in LSU classes and research. Databases are restricted to academic use only. Fair use guidelines are specifically applicable to use of information in a University setting. These are included in the <U><FONT COLOR=blue>Libraries Copyright Policy</FONT></U>.
+</P>
+<P>See the <U><FONT COLOR=blue>Database Access Policy</FONT></U> for information regarding authorized users.</P>
+        
+        
+    
+    
+    
+
+    <BR>
+	
+
+
+
+<BR>
+ 
+ <U><FONT COLOR=blue>[LSU Logo]</FONT></U>
+<BR><U><FONT COLOR=blue>LSU Libraries</FONT></U>
+<BR>Baton Rouge, LA 70803
+<BR>Tel (225) 578-5652
+<BR>Fax (225) 578-9432 
+
+
+
+<!-- AddThis Button END -->
+<BR> 
+
+<UL>
+<LI><U><FONT COLOR=blue>LSU Libraries</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Contact Us</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Mobile Website</FONT></U></LI>
+<!--<li><a href="http://www.lsu.edu">Louisiana State University</a></li>-->
+<LI>
+<U><FONT COLOR=blue>[Library Blog]</FONT></U>
+<U><FONT COLOR=blue>[RSS Feed]</FONT></U>
+<U><FONT COLOR=blue>[Library Facebook Page]</FONT></U>
+<U><FONT COLOR=blue>[Library Twitter Page] </FONT></U>
+<!-- AddThis Button BEGIN -->
+
+//var addthis_config = {
+ //  ui_click: true
+//}
+
+<!--a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa4a8b0c2a79cf3130">
+<img style="verticalalign:middle;" src="http://s7.addthis.com/static/btn/v2/lgbookmarken.gif" width="125" height="16" alt="Bookmark and Share" style="border:0" />
+</a>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=xa4a8b0c2a79cf3130"></script> -->
+</LI>
+</UL>
+<BR>
+<CENTER>Copyright &copy; 1996 - <!--#config timefmt="%Y" --><!--#echo var="DATE_LOCAL" --> LSU Libraries<BR> <!--<img src="/images/external.png" /><span class="small">Links away from LSU.edu</span> --></CENTER><BR>
+
+
+<!--<div class="right">
+<a href="http://www.lsu150.com/"><img src="/images/150year.jpg" /></a>
+
+
+</div> -->
+
+<BR>
+ 
+ 
+
+
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22589452-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+    $(document).ready(function(){
+
+
+        var stripeholder = ".zebra";
+        // add rowstriping
+        stripeR();
+
+
+        $("[id*=show]").live("change", function() {
+
+            var showtype_id = $(this).attr("id").split("-");
+            //alert("u clicked: " + showtype_id[1]);
+            unStripeR();
+            $(".type-" + showtype_id[1]).toggle();
+            stripeR();
+
+        });
+
+        // show db details
+        $("img[id*=bib-]").live("click", function() {
+            var bib_id = $(this).attr("id").split("-");
+            $(this).parent().parent().find(".list_bonus").toggle()
+        });
+
+        function stripeR(container) {
+            $(".zebra").not(":hidden").filter(":even").addClass("evenrow");
+            $(".zebra").not(":hidden").filter(":odd").addClass("oddrow");
+        }
+
+        function unStripeR () {
+            $(".zebra").removeClass("evenrow");
+            $(".zebra").removeClass("oddrow");
+        }
+
+
+    });

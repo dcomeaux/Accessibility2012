@@ -1,0 +1,758 @@
+
+<!--
+SFX (tm) Searchable AZ template Version 3
+Copyright Ex Libris, USA
+-->
+
+<HTML>
+<HEAD>
+    <TITLE>Find e-Journal</TITLE>
+    <META CONTENT="text/html; charset=UTF-8">
+    
+    
+	
+	
+		var azBase = "?&amp;param_sid_save=814154295143c54c000159b631759892&amp;param_lang_save=eng&amp;param_letter_group_save=&amp;param_perform_save=searchTitle&amp;param_letter_group_script_save=&amp;param_chinese_checkbox_save=0&amp;param_services2filter_save=getFullTxt&amp;param_current_view_save=table&amp;param_jumpToPage_save=1&amp;param_type_save=textSearch&amp;param_textSearchType_save=contains&amp;&amp;display_single_object=";
+		var imageBase = "/sfxlcl3/img";
+		$(document).ready(function() {
+			$('form[name=az_user_form]').bind('keypress',
+				function(e){
+        			if (e.keyCode=='13'){
+                		document.forms.az_user_form.submit()
+        			}
+				});
+		});
+	
+		
+    
+    
+    
+    
+        
+	
+    
+	
+	
+	<!-- Language Select Box Styles -->	
+	
+	    select.replace { 	  
+	      display: block;
+	      margin: 0 0 10px;
+	      width: 150px;
+	    }
+	    select.replaced {   
+	      width: 1px;
+	      position: absolute;
+	      left: -999em;
+	    }
+	    ul.selectReplacement {
+	      margin: 0 0 10px;
+	      padding: 0;
+	      height: 30px;
+	      width: 150px;
+	      position: relative;
+	      z-index: 1000;
+	    }
+	    ul.selectReplacement li {
+	      text-align: left;
+	      color: #444;
+	      cursor: pointer;
+	      display: none;
+	      font-size: 11px;
+	      line-height: 1.7em;
+	      list-style: none;
+	      margin: 0;
+	      padding: 1px 12px;
+	    }
+	    
+	    ul.selectOpen li.firstOption{
+			background-image: url(/sfxlcl3/img/azlist_ver3/select_top_focus.gif);    
+	        display: block;    
+	    	border: 0;
+	    }
+	
+	    ul.selectOpen li {
+	      background: white;
+	      display: block;
+	      border-right: 2px solid #808080;
+	      border-left: 2px solid #808080;
+	      border-bottom: 1px solid #808080;
+	    }
+	
+	    ul.selectReplacement1 li.firstOption{
+	        display: none;    
+	    	border: 0;
+	    }
+	
+	    ul.selectReplacement li.selected {
+	      color: #444;
+	      display: block;
+	      background: url(/sfxlcl3/img/azlist_ver3/select_top.gif) top left no-repeat;
+	    }
+	    
+	    ul.selectOpen li.selected {
+		  font-weight: bold;
+	      border-right: 2px solid #808080;
+	      border-left: 2px solid #808080;
+	      border-bottom: 1px solid #808080;	  
+	      display: block;
+	      
+	    }
+	    
+	
+<!-- End Of Language Select Box Styles -->	
+
+	
+.navigationTabActive{
+	background-image: url(/sfxlcl3/img/azlist_ver3/navigation_on.gif);
+	text-align: center;
+}
+.navigationTab{
+	background-image: url(/sfxlcl3/img/azlist_ver3/navigation_off.gif);
+	text-align: center;
+	color: #727472;
+}
+
+.navigationLinkActive{
+	color: #727472;
+	font-size: 17px;
+	font-family: Verdana;	
+	font-weight: bold;
+}
+.navigationLink{
+	color: #727472;
+	font-size: 17px;
+	font-family: Verdana;
+	font-weight: normal;
+}
+
+
+.GoButton{
+	background-image: url(/sfxlcl3/img/azlist_ver3/go_button_middle.gif);
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.HalfCell{
+	background-image: url(/sfxlcl3/img/azlist_ver3/half.gif);
+}
+
+
+	
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+	
+	<TABLE>
+		<TR>
+		<TD> <U><FONT COLOR=blue>	
+	[To University of Kentucky Libraries Home Page] </FONT></U>
+		</TD>
+		</TR>
+	</TABLE>
+	
+	
+	<TABLE>
+	<TR>
+	<TD>
+		
+			Find e-Journal
+		
+	</TD>
+	<TD>
+        
+   			<FORM>
+			<BR>
+			
+			<INPUT VALUE="" NAME="xss" TYPE="hidden">
+			
+			<SELECT NAME="lang">
+			
+				<OPTION VALUE="chi-simplified">Chinese Simplified</OPTION>
+			
+				<OPTION VALUE="chi-traditional">Chinese Traditional</OPTION>
+			
+				<OPTION VALUE="dut">Dutch</OPTION>
+			
+				<OPTION VALUE="eng" SELECTED>English</OPTION>
+			
+				<OPTION VALUE="fre">Français</OPTION>
+			
+				<OPTION VALUE="ger">Deutsch</OPTION>
+			
+				<OPTION VALUE="jpn">Japanese</OPTION>
+			
+				<OPTION VALUE="kor">한국어</OPTION>
+			
+				<OPTION VALUE="spa">Español</OPTION>
+			
+			</SELECT>
+			
+				try{
+					isIE6 = isIExplorer6();
+					dropdownAction();
+				} catch(err){}
+			
+			<INPUT VALUE="Apply" TYPE="submit">
+			</FORM>
+			
+        
+        
+        set_sfx_menu_language("English")
+       	
+	</TD>
+	</TR>
+<TR><TD>
+
+<BR>
+
+If you can't find a particular title, please check with a library service desk or  <U><FONT COLOR=blue>
+
+Ask A Librarian</FONT></U> for help.
+
+<BR><U><FONT COLOR=blue>Terms and conditions for the use of electronic resources</FONT></U>
+
+
+</TD></TR>
+	</TABLE>	
+
+
+    <!-- New info button -->
+    
+        
+    
+        <!-- end new info -->
+
+	
+		<BR>
+	
+
+<!-- This is AJAX Powered template -->
+
+
+
+<!-- main gray table -->
+<FORM>
+<TABLE>
+    <TR>
+        <TD>
+            <TABLE>
+<!-- az folders -->
+
+        <TR>
+          <TD>
+				
+<TABLE>
+    <TR>
+
+	
+
+		
+		    <TD></TD>
+		
+		
+		<TD>
+			
+				Title
+			
+		</TD>
+	
+		<TD></TD>
+
+    
+	
+
+	
+
+		
+    		<TD></TD>
+		
+		
+		<TD>
+			<U><FONT COLOR=blue>
+				
+					Category
+				
+			</FONT></U>	
+		</TD>
+	
+		
+			<TD></TD>
+		
+	
+	
+
+	
+
+		
+    		<TD></TD>
+		
+		
+		<TD>
+			<U><FONT COLOR=blue>
+				
+					Locate
+				
+			</FONT></U>	
+		</TD>
+	
+		
+			<TD></TD>
+		
+	
+	
+
+	
+
+		
+    		<TD></TD>
+		
+		
+		<TD>
+			<U><FONT COLOR=blue>
+				
+					CitationLinker
+				
+			</FONT></U>	
+		</TD>
+	
+		
+			<TD></TD>
+		
+	
+	
+
+
+	<TD>
+		
+	</TD>
+	
+    </TR>
+</TABLE>
+
+
+          </TD>
+        </TR>
+        <TR>
+                <TD></TD>
+         </TR>
+
+<!-- end az folders -->
+
+<!-- user form declaration -->
+                <TR>
+                    <TD>
+							
+<INPUT VALUE="814154295143c54c000159b631759892" NAME="param_sid_save" TYPE="hidden">
+<INPUT VALUE="eng" NAME="param_lang_save" TYPE="hidden">
+<INPUT VALUE="" NAME="param_letter_group_save" TYPE="hidden">
+<INPUT VALUE="searchTitle" NAME="param_perform_save" TYPE="hidden">
+<INPUT VALUE="" NAME="param_letter_group_script_save" TYPE="hidden">
+<INPUT VALUE="0" NAME="param_chinese_checkbox_save" TYPE="hidden">
+<INPUT VALUE="getFullTxt" NAME="param_services2filter_save" TYPE="hidden">
+<INPUT VALUE="table" NAME="param_current_view_save" TYPE="hidden">
+<INPUT VALUE="1" NAME="param_jumpToPage_save" TYPE="hidden">
+<INPUT VALUE="textSearch" NAME="param_type_save" TYPE="hidden">
+<INPUT VALUE="contains" NAME="param_textSearchType_save" TYPE="hidden">
+
+                            <INPUT VALUE="textSearch" NAME="param_type_value" TYPE="hidden">
+                            <INPUT VALUE="" NAME="param_jumpToPage_value" TYPE="hidden">
+                            
+                            <TABLE>
+                                <TR>
+                                    <TD>&nbsp;</TD>
+                                    <TD>
+                                        <TABLE>
+                                            <TR>
+<!-- alphabet loop -->
+                                                
+                                                    <TD>
+                                                        
+                                                            </TD></TR></TABLE><TABLE><TR><TD>
+                                                        
+                                                        
+	                                                        <U><FONT COLOR=blue>0-9</FONT></U>
+                                                        
+                                                    </TD>
+                                                
+                                                    <TD>
+                                                        
+                                                        
+	                                                        <U><FONT COLOR=blue>A</FONT></U>
+                                                        
+                                                    </TD>
+                                                
+                                                    <TD>
+                                                        
+                                                        
+	                                                        <U><FONT COLOR=blue>B</FONT></U>
+                                                        
+                                                    </TD>
+                                                
+                                                    <TD>
+                                                        
+                                                        
+	                                                        <U><FONT COLOR=blue>C</FONT></U>
+                                                        
+                                                    </TD>
+                                                
+                                                    <TD>
+                                                        
+                                                        
+	                                                        <U><FONT COLOR=blue>D</FONT></U>
+                                                        
+                                                    </TD>
+                                                
+                                                    <TD>
+                                                        
+                                                        
+	                                                        <U><FONT COLOR=blue>E</FONT></U>
+                                                        
+                                                    </TD>
+                                                
+                                                    <TD>
+                                                        
+                                                        
+	                                                        <U><FONT COLOR=blue>F</FONT></U>
+                                                        
+                                                    </TD>
+                                                
+                                                    <TD>
+                                                        
+                                                        
+	                                                        <U><FONT COLOR=blue>G</FONT></U>
+                                                        
+                                                    </TD>
+                                                
+                                                    <TD>
+                                                        
+                                                        
+	                                                        <U><FONT COLOR=blue>H</FONT></U>
+                                                        
+                                                    </TD>
+                                                
+                                                    <TD>
+                                                        
+                                                        
+	                                                        <U><FONT COLOR=blue>I</FONT></U>
+                                                        
+                                                    </TD>
+                                                
+                                                    <TD>
+                                                        
+                                                        
+	                                                        <U><FONT COLOR=blue>J</FONT></U>
+                                                        
+                                                    </TD>
+                                                
+                                                    <TD>
+                                                        
+                                                        
+	                                                        <U><FONT COLOR=blue>K</FONT></U>
+                                                        
+                                                    </TD>
+                                                
+                                                    <TD>
+                                                        
+                                                        
+	                                                        <U><FONT COLOR=blue>L</FONT></U>
+                                                        
+                                                    </TD>
+                                                
+                                                    <TD>
+                                                        
+                                                        
+	                                                        <U><FONT COLOR=blue>M</FONT></U>
+                                                        
+                                                    </TD>
+                                                
+                                                    <TD>
+                                                        
+                                                        
+	                                                        <U><FONT COLOR=blue>N</FONT></U>
+                                                        
+                                                    </TD>
+                                                
+                                                    <TD>
+                                                        
+                                                        
+	                                                        <U><FONT COLOR=blue>O</FONT></U>
+                                                        
+                                                    </TD>
+                                                
+                                                    <TD>
+                                                        
+                                                        
+	                                                        <U><FONT COLOR=blue>P</FONT></U>
+                                                        
+                                                    </TD>
+                                                
+                                                    <TD>
+                                                        
+                                                        
+	                                                        <U><FONT COLOR=blue>Q</FONT></U>
+                                                        
+                                                    </TD>
+                                                
+                                                    <TD>
+                                                        
+                                                        
+	                                                        <U><FONT COLOR=blue>R</FONT></U>
+                                                        
+                                                    </TD>
+                                                
+                                                    <TD>
+                                                        
+                                                        
+	                                                        <U><FONT COLOR=blue>S</FONT></U>
+                                                        
+                                                    </TD>
+                                                
+                                                    <TD>
+                                                        
+                                                        
+	                                                        <U><FONT COLOR=blue>T</FONT></U>
+                                                        
+                                                    </TD>
+                                                
+                                                    <TD>
+                                                        
+                                                        
+	                                                        <U><FONT COLOR=blue>U</FONT></U>
+                                                        
+                                                    </TD>
+                                                
+                                                    <TD>
+                                                        
+                                                        
+	                                                        <U><FONT COLOR=blue>V</FONT></U>
+                                                        
+                                                    </TD>
+                                                
+                                                    <TD>
+                                                        
+                                                        
+	                                                        <U><FONT COLOR=blue>W</FONT></U>
+                                                        
+                                                    </TD>
+                                                
+                                                    <TD>
+                                                        
+                                                        
+	                                                        <U><FONT COLOR=blue>X</FONT></U>
+                                                        
+                                                    </TD>
+                                                
+                                                    <TD>
+                                                        
+                                                        
+	                                                        <U><FONT COLOR=blue>Y</FONT></U>
+                                                        
+                                                    </TD>
+                                                
+                                                    <TD>
+                                                        
+                                                        
+	                                                        <U><FONT COLOR=blue>Z</FONT></U>
+                                                        
+                                                    </TD>
+                                                
+                                                    <TD>
+                                                        
+                                                        
+	                                                        <U><FONT COLOR=blue>Others</FONT></U>
+                                                        
+                                                    </TD>
+                                                
+<!-- end of alphabet loop -->
+                                            </TR>
+                                        </TABLE>
+                                    </TD>
+                                </TR>
+									
+                                <TR>
+                                    <TD>
+										Title:
+										
+									</TD>
+                                    <TD>
+
+                                   
+<!-- search text field -->				
+									
+										
+
+
+
+
+ 
+var ajax = [];function pjx(args,fname,method) { this.target=args[1]; this.args=args[0]; method=(method)?method:'GET'; if(method=='post'){method='POST';} this.method = method; this.r=ghr(); this.url = this.getURL(fname);}function formDump(){ var all = []; var fL = document.forms.length; for(var f = 0;f"; for( var i=0; i ' + decodeURI(ajax[i].url) + ' '; } document.getElementById('pjxdebugrequest').innerHTML = tmp + "";}function find_param_pattern_value() { var args = find_param_pattern_value.arguments; for( var i=0; i
+
+
+
+
+
+	var AutocompleteObj_param_pattern_value = actb(document.getElementById('param_pattern_value'),new Array(), 'sfxlcl3', '\'param_chinese_checkbox_value\',\'param_textSearchType_value\'');
+	AutocompleteObj_param_pattern_value.actb_lim 		= '10';
+	AutocompleteObj_param_pattern_value.actb_bgColor 	= '#FAFBFC';
+	AutocompleteObj_param_pattern_value.actb_textColor = '#000000';
+	AutocompleteObj_param_pattern_value.actb_hColor 	= '#CDEDFC';
+	AutocompleteObj_param_pattern_value.actb_fFamily 	= 'Verdana';
+	AutocompleteObj_param_pattern_value.actb_fSize 	= '11px';
+	AutocompleteObj_param_pattern_value.actb_list_extra_width 	= 0;
+	AutocompleteObj_param_pattern_value.actb_more_results_available_msg 	= "More results are available...";
+	AutocompleteObj_param_pattern_value.actb_delimiter = new Array();
+
+
+
+			                        
+                                        
+<!-- end of search text field -->
+								</TD>
+								<TD>
+<!-- search types -->
+                                        <INPUT VALUE="startsWith" NAME="param_textSearchType_value" TYPE="radio">Starts with
+                                        <INPUT VALUE="contains" NAME="param_textSearchType_value" CHECKED TYPE="radio">Contains
+				                        
+																				
+									</TD>
+									</TR>
+
+<!-- chinese checkbox -->
+
+
+<!-- needed to be passed as one of ajax parameters-->
+	<INPUT VALUE="0" NAME="param_chinese_checkbox_value" TYPE="hidden">
+
+<!-- end chinese checkbox -->
+                            </TABLE>
+                    </TD>
+                </TR>
+                <TR><TD></TD></TR>
+            </TABLE>
+        </TD>
+        <TD><!--  A copy from head.tmpl, made for backward compatibility with old customized templated -->
+	
+		var azBase = "?&amp;param_sid_save=814154295143c54c000159b631759892&amp;param_lang_save=eng&amp;param_letter_group_save=&amp;param_perform_save=searchTitle&amp;param_letter_group_script_save=&amp;param_chinese_checkbox_save=0&amp;param_services2filter_save=getFullTxt&amp;param_current_view_save=table&amp;param_jumpToPage_save=1&amp;param_type_save=textSearch&amp;param_textSearchType_save=contains&amp;&amp;display_single_object=";
+		var imageBase = "/sfxlcl3/img";	
+	         
+	
+	
+.navigationTabActive{
+	background-image: url(/sfxlcl3/img/azlist_ver3/navigation_on.gif);
+	text-align: center;
+}
+.navigationTab{
+	background-image: url(/sfxlcl3/img/azlist_ver3/navigation_off.gif);
+	text-align: center;
+	color: #727472;
+}
+
+.navigationLinkActive{
+	color: #727472;
+	font-size: 17px;
+	font-family: Verdana;	
+	font-weight: bold;
+}
+.navigationLink{
+	color: #727472;
+	font-size: 17px;
+	font-family: Verdana;
+	font-weight: normal;
+}
+
+
+.GoButton{
+	background-image: url(/sfxlcl3/img/azlist_ver3/go_button_middle.gif);
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.HalfCell{
+	background-image: url(/sfxlcl3/img/azlist_ver3/half.gif);
+}
+
+
+<!-- end of backward compatibility copy  -->
+
+<TABLE>
+ <TR>
+	
+
+    <TD></TD>
+    <TD></TD>
+    <TD></TD>
+ </TR>
+
+<TR>
+	
+
+    <TD>&nbsp;</TD>
+    <TD> 
+      
+    </TD>  
+ <TD>&nbsp;</TD>
+</TR>
+
+  <TR>
+    <TD></TD>
+    <TD></TD>
+    <TD></TD>
+ </TR>
+
+  <TR>
+    <!-- go (submit) button -->
+
+    <TD>
+
+document.write(go_button("Go"));
+
+	<INPUT TYPE="image">
+     </TD>
+    <!-- end go (submit) button -->
+  </TR>
+ 
+ <TR>
+  <TD>&nbsp;</TD>
+  <TD></TD>   
+  <TD>&nbsp;</TD>
+ </TR>
+
+</TABLE>
+</TD>
+    </TR>
+</TABLE>
+            </FORM>
+<!-- end main gray table -->
+
+
+
+
+
+<!-- if result is present -->
+
+<!-- end if result is present -->
+
+<!-- ex libris copyright -->
+		<P>Powered by SFX</P>
+		<!-- end ex libris copyright -->
+		
+Check this option to search in Pinyin.<BR>Leave it unchecked for Latin search.<BR>Use spaces to separate between words.
+Check this option to limit search to Chinese.
+
+
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+
+var pageTracker = _gat._getTracker("UA-4968268-3");
+pageTracker._initData();
+pageTracker._trackPageview();
+		
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>

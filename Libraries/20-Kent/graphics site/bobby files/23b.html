@@ -1,0 +1,974 @@
+
+
+<HTML>
+
+<HEAD>
+<TITLE>Events Calendar - Libraries and Media Services</TITLE>
+<META CONTENT="text/html; charset=iso-8859-1">
+<META NAME="DC.title" CONTENT="Events Calendar - Libraries and Media Services">
+<META NAME="DC.subject" CONTENT="">
+<META NAME="DC.subject" CONTENT="">
+<META NAME="DC.description" CONTENT="">
+<META NAME="DC.publisher" CONTENT="Kent State University Libraries and Media Services">
+<META NAME="DC.date.created" CONTENT="">
+<META NAME="DC.date.modified" CONTENT="">
+<!-- printLinks=0 -->
+		
+		
+		
+		
+		
+		
+		
+<!--
+
+function displayProxyHomeOff(tab) {
+	eval('document.proxyImageHome'+tab+'.src="http://www.library.kent.edu/graphics/proxy_alert_tiny.jpg"');
+
+}
+
+function displayProxyOff(section) {
+	eval('document.proxyImage'+section+'.src="http://www.library.kent.edu/graphics/proxyOff.gif"');
+}
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+
+
+	function HideContent(d) {
+	if(d.length < 1) { return; }
+	document.getElementById(d).style.display = "none";
+	}
+	function ShowContent(d) {
+	if(d.length < 1) { return; }
+	document.getElementById(d).style.display = "block";
+	}
+	function ReverseContentDisplay(d) {
+		if(d.length < 1) { return; }
+			
+		document.getElementById(d).style.display = "block";
+		
+		if (d != "searchKentLINK") { 
+			document.getElementById("searchKentLINK").style.display = "none";
+		}
+		if (d != "searchDatabases") { 
+			document.getElementById("searchDatabases").style.display = "none";
+		}
+		if (d != "searchVideos") { 
+			document.getElementById("searchVideos").style.display = "none";
+		}
+		if (d != "searchSite") { 
+			document.getElementById("searchSite").style.display = "none";
+		}
+		
+		if (d == "searchKentLINK") {
+			document.getElementById("searchTabs").style.background = 'url(../graphics/bg_search_tabs_kentlink.jpg)';
+			document.formSearchTermsKentLINK.searchTermsKentLINK.focus();
+		}
+		if (d == "searchDatabases") {
+			document.getElementById("searchTabs").style.background = 'url(../graphics/bg_search_tabs_databases.jpg)';
+			document.formSearchTermsKeyword.find_request_1.focus();
+		}
+		if (d == "searchVideos") {
+			document.getElementById("searchTabs").style.background = 'url(../graphics/bg_search_tabs_videos.jpg)';
+			document.formSearchTermsVideos.searchTermsVideos.focus();
+		}
+		if (d == "searchSite") {
+			document.getElementById("searchTabs").style.background = 'url(../graphics/bg_search_tabs_site.jpg)';
+			document.formSearchTermsWebSite.searchTermsWebSite.focus();
+		}
+	
+	
+	}
+	
+	function storeSearchKentLINK() {
+		
+		if (document.formSearchTermsKentLINK.searchTermsKentLINK.value != "") {
+		
+			var thisSearchTerm = document.formSearchTermsKentLINK.searchTermsKentLINK.value;
+	
+			document.formSearchTermsKentLINK.searchTermsKentLINK.value = thisSearchTerm;
+			document.formSearchTermsKeyword.find_request_1.value = thisSearchTerm;
+			document.formSearchTermsVideos.searchTermsVideos.value = thisSearchTerm;
+			document.formSearchTermsWebSite.searchTermsWebSite.value = thisSearchTerm;
+
+		}			
+
+	}	
+	function storeSearchArticles() {
+		
+		if (document.formSearchTermsKeyword.find_request_1.value != "") {
+		
+			var thisSearchTerm = document.formSearchTermsKeyword.find_request_1.value;
+	
+			document.formSearchTermsKentLINK.searchTermsKentLINK.value = thisSearchTerm;
+			document.formSearchTermsKeyword.find_request_1.value = thisSearchTerm;
+			document.formSearchTermsVideos.searchTermsVideos.value = thisSearchTerm;
+			document.formSearchTermsWebSite.searchTermsWebSite.value = thisSearchTerm;
+
+		}			
+
+	}	
+	function storeSearchVideos() {
+		
+		if (document.formSearchTermsVideos.searchTermsVideos.value != "") {
+		
+			var thisSearchTerm = document.formSearchTermsVideos.searchTermsVideos.value;
+	
+			document.formSearchTermsKentLINK.searchTermsKentLINK.value = thisSearchTerm;
+			document.formSearchTermsKeyword.find_request_1.value = thisSearchTerm;
+			document.formSearchTermsVideos.searchTermsVideos.value = thisSearchTerm;
+			document.formSearchTermsWebSite.searchTermsWebSite.value = thisSearchTerm;
+
+		}			
+
+	}	
+	function storeSearchWebSite() {
+		
+		if (document.formSearchTermsWebSite.searchTermsWebSite.value != "") {
+		
+			var thisSearchTerm = document.formSearchTermsWebSite.searchTermsWebSite.value;
+	
+			document.formSearchTermsKentLINK.searchTermsKentLINK.value = thisSearchTerm;
+			document.formSearchTermsKeyword.find_request_1.value = thisSearchTerm;
+			document.formSearchTermsVideos.searchTermsVideos.value = thisSearchTerm;
+			document.formSearchTermsWebSite.searchTermsWebSite.value = thisSearchTerm;
+
+		}			
+
+	}
+
+	if (document.graphics) 
+	{
+	   img1 = new Image();
+	   img2 = new Image();
+	   img3 = new Image();
+	   img4 = new Image();
+	   img1.src = "../graphics/ask_a_librarian_over.jpg";
+	   img2.src = "../graphics/bg_search_tabs_databases.jpg"
+	   img3.src = "../graphics/bg_search_tabs_videos.jpg"
+	   img4.src = "../graphics/bg_search_tabs_site.jpg"
+	}
+
+//-->
+
+<!-- overLIB (c) Erik Bosrup -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!--
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+
+//-->
+
+
+
+
+
+<!--
+
+table#schedulerEventCalendarTable, #schedulerEventCalendarTable  {
+	bordercollapse: collapse;
+	borderright: 1px solid #000000;
+	borderleft: 1px solid #000000;
+	margin: 0 !important;
+	padding: 0 !important;
+	width: 100%;
+}
+#schedulerEventCalendarTable th {
+	padding: 4px 8px !important;
+	textalign: left;
+	borderright: 1px solid black;
+	borderleft: 1px solid black;
+	borderbottom: 1px solid black;
+}
+#schedulerEventCalendarTable td {
+	verticalalign: top;
+	textalign: left;
+}
+#schedulerEventCalendarTable td.rightAlign {
+	textalign: right;
+}
+#schedulerEventCalendarTable th.rightBorder {
+	borderright: 1px solid #999999;
+}
+#schedulerEventCalendarTable td.rightBorder {
+	borderright: 1px solid #CCCCCC;
+}
+#theMonthNav {
+	width: 40% !important;
+	display: block;
+	float: left;
+}
+#schedulerEventCalendarTable th.monthName {
+	textalign: center !important;
+	background: #E8E8E8;
+	padding: 4px 0 !important;
+	bordertop: 1px solid #000000;
+}
+th.dayName {
+	textalign: center !important;
+	background: #D2D2D2;
+	fontsize: 10px;
+}
+.leftArrow {
+	float: left;
+	textalign: right;
+}
+.rightArrow {
+	float: right;
+	textalign: left;
+}
+a.calNavArrow {
+	textdecoration: none !important;
+	width: 30%;
+	display: block;
+	fontsize: 16px;
+}
+.day {
+	borderleft: 1px solid black !important;
+	borderright: 1px solid black !important;
+	borderbottom: 1px solid black !important;
+	width: 14% !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.otherMonth {
+	background: #EFF3FA;
+}
+.dateBanner {
+	background: #DDE4F4;
+	margin: 0 !important;
+	padding: 3px 5px !important;
+	fontsize: 12px;
+	borderbottom: 1px solid silver;
+}
+.dateNum {
+	margin: 0 0 0 4px !important;
+	padding: 2px 0 4px 0 !important; 
+	background: none !important;
+	border: 0 !important;
+}
+.hoursCell {
+	fontsize: 10px !important;
+	margin: 0 !important;
+	padding: 0;
+	minheight: 50px;
+	height: auto !important;
+	height: 50px;
+	textalign: left !important;
+}
+.otherMonth {
+	background: white !important;
+}
+.dailyEvent span, .dailyEvent a {
+	marginleft: 0px !important;
+}
+#main table td p {
+	marginbottom: 0px !important;
+	paddingtop: 10px !important;
+	paddingleft: 10px !important;
+}
+#main table td p.dailyEvent {
+	borderbottom: 1px solid silver;
+	margin: 0px !important;
+	padding: 10px 6px 0px !important;
+}
+.rowOdd {
+	backgroundcolor: #EFF2FA;
+}
+.eventType {
+	fontsize: 10px;
+	color: #727272;
+	display: block;
+	textdecoration: none !important;
+}
+a.eventLink:hover, a.eventLink:active {
+	textdecoration: none !important;
+}
+a.eventLink:hover .eventType, a.eventLink:active .eventType {
+	color: #000000;
+	textdecoration: none !important;
+}
+.sessionTime {
+	fontsize: 11px;
+	color: #727272;
+	textdecoration: none !important;
+}
+a.eventLink:hover .sessionTime, a.eventLink:active .sessionTime {
+	color: black !important;
+	textdecoration: none !important;
+}
+.eventTitle {
+	fontsize: 12px;
+	textdecoration: none !important;
+	display: block;
+	color: #000000 !important;
+}
+a.eventLink:hover .eventTitle, a.eventLink:active .eventTitle {
+	textdecoration: none !important;
+	color: black !important;
+}
+
+a:hover .alreadyRegistered, a:active .alreadyRegistered {
+	textdecoration: none;
+	color: red !important;
+}
+.alreadyRegistered {
+	color: red !important;
+}
+
+a:hover .blocked, a:active .blocked {
+	textdecoration: none;
+	color: #CC0000 !important;
+}
+.blocked {
+	color: #CC0000 !important;
+}
+
+a:hover .eventFull, a:active .eventFull {
+	textdecoration: none;
+	color: gray !important;
+}
+.eventFull {
+	color: gray !important;
+}
+.dontDisplay {
+	display: none !important;
+}
+.ttEventType {
+	fontsize: 10px;
+	marginbottom: 3px;
+}
+.ttEventTitle {
+	fontweight: bold;
+	display: block;
+	borderbottom: 1px solid gray;
+	marginbottom: 4px;
+}
+
+.bd {
+	background: #FFF0C1 !important;
+	border: 3px solid #666666 !important;
+	padding: 5px 10px 10px !important;
+	textalign: left !important;
+}
+
+.signUp {
+	fontsize: 10px;
+}
+a:link .signUp, a:visited .signUp {
+}
+a:hover .signUp, a:active .signUp {
+}
+p#limitTypePicker {
+	fontsize: 12px !important;
+}
+p#limitTypePicker a:link, p#limitTypePicker a:visited {
+	color: #0033cc !important;
+}
+p#limitTypePicker a:hover, p#limitTypePicker a:active {
+	color: #7596e5 !important;
+}
+p#limitTypePicker #thisLimitPick {
+	color: black !important;
+}
+.Sun {
+	borderleft: none !important;
+}
+
+
+
+
+#limitEventTypesForm {
+	float: left;
+}
+#limitToMeSpan {
+	paddingright: 10px;
+	float: right;
+}
+#limitToMe {
+	marginleft: 30px;
+}
+#limitToMeLabel {
+	fontsize: small !important;
+	verticalalign: texttop;
+}
+td.rangesEmpty {
+	borderleft: 1px solid white !important;
+}
+.rangesEmptyPulldown {
+	paddingbottom: 4px; 
+}
+.displayRangesEmpty {
+	border: none;
+}
+.displayRanges {
+	backgroundcolor: #E1E6EC;
+	textalign: center !important;
+	fontsize: small;
+	bordertopwidth: 1px;
+	borderrightwidth: 1px;
+	borderleftwidth: 1px;
+	bordertopstyle: solid;
+	borderrightstyle: solid;
+	borderleftstyle: solid;
+	bordertopcolor: #A0AEC2;
+	borderrightcolor: #A0AEC2;
+	borderleftcolor: #A0AEC2;
+	verticalalign: middle !important;
+}
+.selected {
+	backgroundcolor: #C4CDD9;
+}
+.selected a {
+	color: #000000 !important;
+	textdecoration: none !important;
+}
+#rangesLimitTo {
+	display: none;	
+}
+#rangesPullDown {
+	height: 40px;
+}
+#rangesPullDown select {
+	display: none;
+}
+
+#header .nav ul {
+	top: 12px !important;
+}
+#header .nav .pipe {
+	margin: 0px !important;
+}
+-->
+
+
+
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</FONT></U>
+
+
+
+
+	[INLINE]
+	
+		<U><FONT COLOR=blue><P>Kent State University</P></FONT></U>
+				<U><FONT COLOR=blue>[Text Only]Text Only</FONT></U>
+		<U><FONT COLOR=blue>[Print with Links]Print w/ Links</FONT></U>
+		
+			<U><FONT COLOR=blue>A</FONT></U>
+			<U><FONT COLOR=blue>A</FONT></U>
+			<U><FONT COLOR=blue>A</FONT></U>
+		
+				<U><FONT COLOR=blue><P>University Libraries</P></FONT></U>
+		
+			<UL>
+								<LI><U><FONT COLOR=blue>Home</FONT></U></LI>
+				<LI>|</LI>
+				<LI><U><FONT COLOR=blue>Research</FONT></U></LI>
+				<LI>|</LI>
+				<LI><U><FONT COLOR=blue>Services</FONT></U></LI>
+				<LI>|</LI>
+				<LI><U><FONT COLOR=blue>About Us</FONT></U></LI>
+				<LI>|</LI>
+				<LI><U><FONT COLOR=blue>Help</FONT></U></LI>
+				<LI>|</LI>
+				<LI><U><FONT COLOR=blue>Contact Us</FONT></U></LI>
+				<LI>|</LI>
+				<LI><U><FONT COLOR=blue>Search</FONT></U></LI>
+				<LI>|</LI>
+				<LI><U><FONT COLOR=blue>Site Index</FONT></U></LI>
+				<LI>|</LI>
+				<LI><U><FONT COLOR=blue>My Library Account</FONT></U></LI>
+				<!--<li class="last"><a href="https://www.library.kent.edu/personal" title="Personal">Personal</a></li>-->
+							</UL>
+		
+	
+	
+		
+			<FORM>
+				<SELECT NAME="jumpMenu">
+					<OPTION VALUE="#" SELECTED>Quick jump to... </OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10000">UL Home Page </OPTION>
+					<OPTION VALUE="https://kentlink.kent.edu/patroninfo">My Library Account</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10006">Contact Us</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/5019">Hours</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10004">Locations &amp; Directions</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10847">Student Jobs</OPTION>
+					<OPTION VALUE="#">-----------------------</OPTION>
+					<OPTION VALUE="#">Research:</OPTION>
+					<OPTION VALUE="http://kentlink.kent.edu/">&nbsp;&nbsp;KentLINK</OPTION>
+					<OPTION VALUE="http://www.ohiolink.edu/">&nbsp;&nbsp;OhioLINK</OPTION>
+					<OPTION VALUE="http://reserves.library.kent.edu/">&nbsp;&nbsp;Electronic Reserves (ERes)</OPTION>
+					<!--<option value="http://www.library.kent.edu/ill_8campus.php">&nbsp;&nbsp;ILLiad</option>-->
+					<OPTION VALUE="https://kent.illiad.oclc.org/illiad/logon.html">&nbsp;&nbsp;ILLiad</OPTION>
+					<OPTION VALUE="http://qk8mu7jr6k.search.serialssolutions.com/">&nbsp;&nbsp;Journal Finder</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10679">&nbsp;&nbsp;Multimedia</OPTION>
+					<OPTION VALUE="http://kentlink.kent.edu/search/r">&nbsp;&nbsp;Reserves</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10300">&nbsp;&nbsp;Special Collections</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10300">&nbsp;&nbsp;&nbsp;&nbsp;&amp; Archives</OPTION>
+					<OPTION VALUE="#">-----------------------</OPTION>
+					<OPTION VALUE="#">Services/Depts</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10337">&nbsp;&nbsp;Administration</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10506">&nbsp;&nbsp;Architecture Library</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10398">&nbsp;&nbsp;Audiovisual Services</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10175">&nbsp;&nbsp;Campus Copy Connection</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10569">&nbsp;&nbsp;Chemistry/Physics Library</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10266">&nbsp;&nbsp;Circulation</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10143">&nbsp;&nbsp;Collection Development</OPTION>
+					<!--<option value="http://www.library.kent.edu/page/10547">&nbsp;&nbsp;Design Solutions</option>-->
+					<OPTION VALUE="http://www.library.kent.edu/page/10547">&nbsp;&nbsp;Communications Office</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10846">&nbsp;&nbsp;Engraving Services</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10507">&nbsp;&nbsp;Fashion Library</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10056">&nbsp;&nbsp;Interlibrary Loan</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10473">&nbsp;&nbsp;Map Library</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10752">&nbsp;&nbsp;Mathematics &amp; Computer</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10752">&nbsp;&nbsp;&nbsp;&nbsp; Sciences Library</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10678">&nbsp;&nbsp;Media Services</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10030">&nbsp;&nbsp;Performing Arts Library</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10254">&nbsp;&nbsp;Periodical Services</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10175">&nbsp;&nbsp;Public Copy Services</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10723">&nbsp;&nbsp;Reference &amp;</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10723">&nbsp;&nbsp;&nbsp;&nbsp; Instructional Services</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10286">&nbsp;&nbsp;Regional Campus Libraries</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10241">&nbsp;&nbsp;Reserve Services</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10016">&nbsp;&nbsp;Student Multimedia Studio</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10300">&nbsp;&nbsp;Special Collections</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10300">&nbsp;&nbsp;&nbsp;&nbsp;&amp; Archives</OPTION>
+				</SELECT>
+			</FORM>
+		
+		
+						<!--<a href="cleancrumbs.php">Home</a>-->			
+		
+		[INLINE]
+		
+			<U><FONT COLOR=blue><P>Ask A Librarian</P></FONT></U>
+		
+	
+	
+
+
+
+
+
+<TABLE>
+	<TR>			
+		<TD>
+</FONT></U>
+
+	
+	
+		<H1>Events Calendar</H1>
+		<BR>
+		<TABLE>
+		
+					<FORM>
+			<TR>
+				<TD>
+					Limit to:
+				</TD>
+				<TD><U><FONT COLOR=blue>Daily</FONT></U></TD>
+				<TD><U><FONT COLOR=blue>Weekly</FONT></U></TD>
+				<TD><U><FONT COLOR=blue>Monthly</FONT></U></TD>
+			</TR>
+			<TR>
+			
+				<TD>
+					
+						<INPUT VALUE="1330275600" NAME="firstDate" TYPE="hidden">
+						<INPUT VALUE="3" NAME="thisMonthId" TYPE="hidden">
+						<INPUT VALUE="2012" NAME="thisYearId" TYPE="hidden">
+						<INPUT VALUE="" NAME="eventView" TYPE="hidden">
+						<INPUT VALUE="" NAME="eventTypeDisplayLimit" TYPE="hidden">
+						<SELECT NAME="eventTypeDisplayLimit">
+							<OPTION VALUE="0" SELECTED>All</OPTION>
+							<OPTION VALUE="2">60+ Minute Seminar</OPTION>
+<OPTION VALUE="6">Group Study Rooms</OPTION>
+<OPTION VALUE="3">In-Person Tour</OPTION>
+<OPTION VALUE="10">Media:scape pods</OPTION>
+<OPTION VALUE="8">Meet with Dean Bracken</OPTION>
+<OPTION VALUE="1">PeRC</OPTION>
+<OPTION VALUE="4">Reference By Appointment</OPTION>
+<OPTION VALUE="7">Statistical Consultation</OPTION>
+<OPTION VALUE="5">Writing Commons Appointment</OPTION>
+						</SELECT>
+					
+				</TD>
+			</TR>
+			</FORM>
+					
+		
+			<TR>
+				<TH><U><FONT COLOR=blue> &lt; </FONT></U> 
+				
+				<U><FONT COLOR=blue>February 26 - March 3, 2012</FONT></U> 
+				
+				<U><FONT COLOR=blue> &gt; </FONT></U></TH>
+			</TR>
+			<TR>
+				<TH>Sunday</TH>
+				<TH>Monday</TH>
+				<TH>Tuesday</TH>
+				<TH>Wednesday</TH>
+				<TH>Thursday</TH>
+				<TH>Friday</TH>
+				<TH>Saturday</TH>
+			</TR>
+			
+			
+					
+			<TR>
+  <TD>
+    26</FONT></U>
+    <P>
+	<U><FONT COLOR=blue>
+	All day<BR>
+	Exhibit: Babar the Elephant's 80th Birthday
+<BR>
+</FONT></U>
+</P>
+<P>
+	<U><FONT COLOR=blue>
+	All day<BR>
+	Exhibit: Black History at Kent State
+<BR>
+</FONT></U>
+</P>
+<P>
+	<U><FONT COLOR=blue>
+	8:00am - 5:00pm<BR>
+	Exhibit: Civil War Collections
+<BR>
+</FONT></U>
+</P>
+
+  </TD>
+  <TD>
+    27</FONT></U>
+    <P>
+	<U><FONT COLOR=blue>
+	All day<BR>
+	Exhibit: Babar the Elephant's 80th Birthday
+<BR>
+</FONT></U>
+</P>
+<P>
+	<U><FONT COLOR=blue>
+	All day<BR>
+	Exhibit: Black History at Kent State
+<BR>
+</FONT></U>
+</P>
+<P>
+	<U><FONT COLOR=blue>
+	8:00am - 5:00pm<BR>
+	Exhibit: Civil War Collections
+<BR>
+</FONT></U>
+</P>
+
+  </TD>
+  <TD>
+    28</FONT></U>
+    <P>
+	<U><FONT COLOR=blue>
+	All day<BR>
+	Exhibit: Babar the Elephant's 80th Birthday
+<BR>
+</FONT></U>
+</P>
+<P>
+	<U><FONT COLOR=blue>
+	All day<BR>
+	Exhibit: Black History at Kent State
+<BR>
+</FONT></U>
+</P>
+<P>
+	<U><FONT COLOR=blue>
+	8:00am - 5:00pm<BR>
+	Exhibit: Civil War Collections
+<BR>
+</FONT></U>
+</P>
+<P>
+	<U><FONT COLOR=blue>
+	1:00pm - 2:00pm<BR>
+	Student Success Workshop, 'Give Feedback Like a Pro!'
+<BR>
+</FONT></U>
+</P>
+
+  </TD>
+  <TD>
+    29</FONT></U>
+    <P>
+	<U><FONT COLOR=blue>
+	All day<BR>
+	Exhibit: Babar the Elephant's 80th Birthday
+<BR>
+</FONT></U>
+</P>
+<P>
+	<U><FONT COLOR=blue>
+	All day<BR>
+	Exhibit: Black History at Kent State
+<BR>
+</FONT></U>
+</P>
+<P>
+	<U><FONT COLOR=blue>
+	8:00am - 5:00pm<BR>
+	Exhibit: Civil War Collections
+<BR>
+</FONT></U>
+</P>
+<P>
+	<U><FONT COLOR=blue>
+	10:00am - 12:00p<BR>
+	GIS Summit
+<BR>
+</FONT></U>
+</P>
+
+  </TD>
+  <TD>
+    1</FONT></U>
+    <P>
+	<U><FONT COLOR=blue>
+	All day<BR>
+	Exhibit: Babar the Elephant's 80th Birthday
+<BR>
+</FONT></U>
+</P>
+<P>
+	<U><FONT COLOR=blue>
+	8:00am - 5:00pm<BR>
+	Exhibit: Civil War Collections
+<BR>
+</FONT></U>
+</P>
+
+  </TD>
+  <TD>
+    2</FONT></U>
+    <P>
+	<U><FONT COLOR=blue>
+	All day<BR>
+	Exhibit: Babar the Elephant's 80th Birthday
+<BR>
+</FONT></U>
+</P>
+<P>
+	<U><FONT COLOR=blue>
+	8:00am - 5:00pm<BR>
+	Exhibit: Civil War Collections
+<BR>
+</FONT></U>
+</P>
+<P>
+	<U><FONT COLOR=blue>
+	10:00am - 12:00p<BR>
+	GIS Summit
+<BR>
+</FONT></U>
+</P>
+<P>
+	<U><FONT COLOR=blue>
+	12:00p - 1:00pm<BR>
+	Open Mic Lunch
+<BR>
+</FONT></U>
+</P>
+
+  </TD>
+  <TD>
+    3</FONT></U>
+    <P>
+	<U><FONT COLOR=blue>
+	All day<BR>
+	Exhibit: Babar the Elephant's 80th Birthday
+<BR>
+</FONT></U>
+</P>
+<P>
+	<U><FONT COLOR=blue>
+	8:00am - 5:00pm<BR>
+	Exhibit: Civil War Collections
+<BR>
+</FONT></U>
+</P>
+
+  </TD>
+</TR>
+
+			
+		
+			<TR>
+				<TH><U><FONT COLOR=blue> &lt; </FONT></U> 
+				
+				<U><FONT COLOR=blue>February 26 - March 3, 2012</FONT></U> 
+				
+				<U><FONT COLOR=blue> &gt; </FONT></U></TH>
+			</TR>
+			
+			
+		</TABLE>
+	
+
+
+
+
+
+	YAHOO.namespace("example.container");
+
+YAHOO.example.container.tt1 = new YAHOO.widget.Tooltip("tt1", { context:"link1", width:"350px" });
+YAHOO.example.container.tt2 = new YAHOO.widget.Tooltip("tt2", { context:"link2", width:"350px" });
+YAHOO.example.container.tt3 = new YAHOO.widget.Tooltip("tt3", { context:"link3", width:"350px" });
+YAHOO.example.container.tt4 = new YAHOO.widget.Tooltip("tt4", { context:"link4", width:"350px" });
+YAHOO.example.container.tt5 = new YAHOO.widget.Tooltip("tt5", { context:"link5", width:"350px" });
+YAHOO.example.container.tt6 = new YAHOO.widget.Tooltip("tt6", { context:"link6", width:"350px" });
+YAHOO.example.container.tt7 = new YAHOO.widget.Tooltip("tt7", { context:"link7", width:"350px" });
+YAHOO.example.container.tt8 = new YAHOO.widget.Tooltip("tt8", { context:"link8", width:"350px" });
+YAHOO.example.container.tt9 = new YAHOO.widget.Tooltip("tt9", { context:"link9", width:"350px" });
+YAHOO.example.container.tt10 = new YAHOO.widget.Tooltip("tt10", { context:"link10", width:"350px" });
+YAHOO.example.container.tt11 = new YAHOO.widget.Tooltip("tt11", { context:"link11", width:"350px" });
+YAHOO.example.container.tt12 = new YAHOO.widget.Tooltip("tt12", { context:"link12", width:"350px" });
+YAHOO.example.container.tt13 = new YAHOO.widget.Tooltip("tt13", { context:"link13", width:"350px" });
+YAHOO.example.container.tt14 = new YAHOO.widget.Tooltip("tt14", { context:"link14", width:"350px" });
+YAHOO.example.container.tt15 = new YAHOO.widget.Tooltip("tt15", { context:"link15", width:"350px" });
+YAHOO.example.container.tt16 = new YAHOO.widget.Tooltip("tt16", { context:"link16", width:"350px" });
+YAHOO.example.container.tt17 = new YAHOO.widget.Tooltip("tt17", { context:"link17", width:"350px" });
+YAHOO.example.container.tt18 = new YAHOO.widget.Tooltip("tt18", { context:"link18", width:"350px" });
+YAHOO.example.container.tt19 = new YAHOO.widget.Tooltip("tt19", { context:"link19", width:"350px" });
+YAHOO.example.container.tt20 = new YAHOO.widget.Tooltip("tt20", { context:"link20", width:"350px" });
+YAHOO.example.container.tt21 = new YAHOO.widget.Tooltip("tt21", { context:"link21", width:"350px" });
+YAHOO.example.container.tt22 = new YAHOO.widget.Tooltip("tt22", { context:"link22", width:"350px" });
+
+
+		</TD>			
+	</TR>
+</TABLE>
+
+	
+		<UL>
+			<LI><U><FONT COLOR=blue>Home</FONT></U></LI>
+
+			<LI><U><FONT COLOR=blue>Research</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>Services</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>About Us</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>Help</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>Contact Us</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>Search</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>Site Index</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>My Library Account</FONT></U></LI>
+			<!--<li class="last"><a href="https://www.library.kent.edu/personal" title="Personal">Personal</a></li>-->
+		</UL>
+    
+	
+		<H1>Icon Legend/Key:</H1>
+		<UL>
+			<LI><U><FONT COLOR=blue>[Off-Site Icon] Off-Site Link</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>[PDF File] PDF File</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>[Required Form Field] Required Form Field</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>[Add this Event to Your Calendar] Add this Event to Your Calendar</FONT></U></LI>
+			<!--
+			<li><a href="http://www.library.kent.edu/page/10853#siteSearchPage"><img src="http://www.library.kent.edu/graphics/icon_page_gray.gif" alt="Search Our Site: Page" width="15" height="13" border="0"> Search Our Site: Page Result</a></li>
+			<li><a href="http://www.library.kent.edu/page/10853#siteSearchResource"><img src="http://www.library.kent.edu/graphics/icon_resource_gray.gif" alt="Search Our Site: Resource" width="14" height="13" border="0"> Search Our Site: Resource Result</a></li>
+			-->
+		</UL>
+	
+		
+		<P>Page last updated: </P>
+		<P><U><FONT COLOR=blue>Privacy Statement</FONT></U></P>
+		<P>&copy;2003-2012 University Libraries</P>
+		<P><U><FONT COLOR=blue>Mobile Site</FONT></U></P>
+    
+	
+		<P>University Libraries</P>
+		<P>Main Library</P>
+		<P>1125 Risman Drive</P>
+		<P>Kent, OH 44242-0001</P>
+	
+	
+		<P><U><FONT COLOR=blue>Email this page...</FONT></U></P>
+		<!--<p class="emailFriend"></p>-->
+		<P>Questions or comments about this page?</P>
+		<P>
+		<U><FONT COLOR=blue>Contact Library - Assistance/Information</FONT></U></P>
+		  
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>

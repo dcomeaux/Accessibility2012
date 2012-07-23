@@ -1,0 +1,1715 @@
+ <HTML> <!-- Content Copyright Kent State University -->
+<!-- Page generated 20120303 19:38:36 by CommonSpot Build 5.1.1.160 (20100708 15:05:28) -->
+<!-- JavaScript & DHTML Code Copyright 19982009 PaperThin, Inc.  All rights reserved --> <HEAD> <META CONTENT="text/html; charset=UTF-8"> <META NAME="Generator" CONTENT="CommonSpot Content Server Build 5.1.1.160"> 
+
+	.mw { color:#000000;font-family:Verdana,Arial,Helvetica;font-weight:bold;font-size:xx-small;text-decoration:none; }
+	a.mw:link	{color:#000000;font-family:Verdana,Arial,Helvetica;font-weight:bold;font-size:xx-small;text-decoration:none;}
+	a.mw:visited	{color:#000000;font-family:Verdana,Arial,Helvetica;font-weight:bold;font-size:xx-small;text-decoration:none;}
+	a.mw:hover	{color:#0000FF;font-family:Verdana,Arial,Helvetica;font-weight:bold;font-size:xx-small;text-decoration:none;}
+ 
+<!--
+	var gMenuControlID = 0;
+	var menus_included = 0;
+	var jsDlgLoader = '/CAS/English/writingcommons/loader.cfm';
+	var jsSiteID = 1;
+	var jsSubSiteID = 3656;
+	var js_gvPageID = 2254474;
+	var jsPageID = 2254474;
+	var jsPageSetID = 0;
+	var jsPageType = 0;
+	var jsControlsWithRenderHandlers = ",8,9,10,20,23,23,23,23,23,23,23,23,23,23,23,36,36,36,36,36,39,39,39,39,39,1401,1401,1409,1409,1409,1428,1428,1457,1457,1457,1457,1460,1460,1460,1470,1474,1474,1526,1526,1526,1526,2097,2108,3397,3397,8173,8195,8195,8230,8482,8482,8482,8482,8482,9039,9299,9299,9299,9299,9299,9299,28049,36870,260469,334861,334861,484398,484398,484398,484398,664201,670580,670580,670580,670580,707473,707473,1253977,1254964,1255112,1392287,1392851,1559180,1996266,2015069,2015069,2101984,2101984,2114002,2114002,2114002,2133074,2186294,2203427,2203427,2203427,2203427,2309060,2326127,2473087,2490075,2490075,2525160,2526356,2526356,2526356,2526356,2526356,2526356,2575111,2599294,2599294,2599294,2599294,2599294,2599294,2599294,2599294,2618989,2654607,2662772,2784325,2784325,2784325,2784325,2799345,2799345,2836386,2902013,2935125,2935125,2935125,2935125,2935125,2943245,2943245,2943265,2965994,2967471,2993991,3025207,";
+	var jsDefaultRenderHandlerProps = ",20_2,20_1,39_2,39_1,1401_1,1409_1,1428_1,1474_1,2097_1,2108_1,3397_1,8173_1,8195_1,8230_1,8482_1,9039_1,9299_1,36870_1,260469_1,334861_1,670580_1,707473_1,1254964_1,1255112_1,1392287_1,1392851_1,1559180_1,2114002_1,2133074_1,2186294_1,2203427_1,2473087_1,2490075_1,2575111_1,2618989_1,2654607_1,2662772_1,2784325_1,2799345_1,2836386_1,2902013_1,2965994_1,";
+	var jsAuthorizedControls = ",1,2,3,4,6,7,8,9,10,11,16,18,20,21,22,23,25,26,27,28,29,30,31,34,36,39,40,41,42,43,44,45,46,47,50,51,52,53,54,1356,1373,1401,1409,1428,1433,1439,1448,1457,1460,1470,1474,1477,1501,1516,1526,2097,2108,2909,3397,8173,8195,8230,8482,9039,9198,9299,12667,12669,15663,16678,17103,22517,28049,31170,32055,32177,34217,34249,34273,35119,35607,36870,42648,50940,50949,258497,260469,334861,334871,382628,484398,523520,664139,664201,664327,667704,667774,670580,707473,744838,745018,745020,745236,751375,751404,751489,784747,791358,843272,865565,954102,954156,1232339,1232622,1232629,1232631,1232633,1232637,1232640,1232655,1232673,1232675,1232888,1232890,1232893,1232896,1232912,1253977,1254964,1255112,1262728,1385697,1390874,1392287,1392851,1427296,1559180,1645880,1653387,1653388,1764557,1764588,1892369,1931660,1932283,1934059,1934336,1944510,1944515,1944615,1950674,1967050,1976529,1996266,2011950,2012004,2015069,2050259,2061664,2061673,2065698,2079887,2101984,2111781,2114002,2114239,2124012,2129474,2129484,2131846,2133074,2133127,2154868,2161190,2162469,2162486,2186294,2186516,2188461,2203427,2224992,2251044,2255868,2293546,2295166,2309060,2313954,2315325,2320174,2326127,2349982,2352496,2473087,2477863,2490075,2505209,2507838,2507851,2520340,2524463,2525160,2526356,2528798,2538006,2575111,2578753,2599294,2618989,2654607,2662772,2663690,2702011,2708091,2724374,2724420,2750942,2779898,2779918,2779936,2779967,2784325,2784502,2784798,2784933,2784943,2787882,2787948,2799345,2799353,2807175,2817839,2819538,2824780,2824834,2836386,2851180,2865736,2866241,2889241,2889364,2902013,2903097,2935125,2943245,2943265,2965994,2967471,2972335,2984151,2993991,3025207,";
+	var jsCustomRenderHandlerPairs = "";
+	var jsStandardRenderHandlers = "";
+	var jsSiteSecurityCreateControls = 0;
+	var jsShowRejectForApprover = 1;
+
+	document.CS_StaticURL = "http://cmsprod.uis.kent.edu/";
+	document.CS_DynamicURL = "http://cmsprod.uis.kent.edu/";
+// -->
+
+ 
+			
+			
+			
+		
+	
+			
+		
+
+
+
+<!-- these styles are used for the entire site -->
+
+ 
+
+
+<!-- these stylesheets are to fix the templates in IE6/7 using HTML conditional statements -->
+<!--[if IE 6]><link rel="stylesheet" type="text/css" href="/style/ie/IE6.css" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="/style/ie/IE7.css" /><![endif]-->
+
+<!-- The stylesheet below is used for internal/level and success story pages -->
+
+
+
+<META NAME="google-site-verification" CONTENT="FVw1W1OPIe7mlesI8YCQhzU7ptUjlDaXS11Cp0zB2UY">
+
+ <META NAME="Description" CONTENT="Writing Commons">
+    				  <TITLE>Writing Commons</TITLE>
+                      <META NAME="modified-date" CONTENT="2012-01-04">
+                      </HEAD><BODY BGCOLOR="#FFFFFF" TEXT="#000000"></FONT></U>
+<!--
+		// alwaysincludeie.js  Copyright 19982005 PaperThin, Inc. All rights reserved.
+
+bName = navigator.appName;
+bVer = parseInt(navigator.appVersion);
+
+var bCanRollover=0
+if (bName == "Netscape")
+{
+	if(bVer >= 3)
+		bCanRollover=1;
+}
+else if (bName == "Microsoft Internet Explorer")
+{
+	if(bVer >= 4)
+		bCanRollover=1;
+}
+
+function ImageSet(imgID,newTarget)
+{
+	if (bCanRollover)
+		document[imgID].src=newTarget;
+}
+function clearStatus()
+{
+	window.status = "";
+}
+function setStatbar(statbar)
+{
+	var strStatbar=unescape(statbar);
+	window.status=strStatbar;
+}
+function onLoadComplete()
+{
+	if( menus_included == 1 )
+		document.onmouseover = document_mouseover;	// defined in menu_ie.js
+}
+function HandleLink(parentID,link,displaylink) 
+{
+	// links are in one of the following formats:
+	// 		cpe_60_0,CP___PAGEID=100
+	// 		CPNEWWIN:WindowName^params@CP___
+	// 			CPNEWWIN:child^top=110:left=130:ww=140:hh=150:tb=1:loc=1:dir=0:stat=1:mb=1:sb=1:rs=1@CP___PAGEID=3811,AdvSearch2,1
+	// displaylink is the server relative URL or fully qualified URL
+	windowname = "";
+	windowparams = "";
+
+	// "CPNEWWIN:" & NewWindowName & "^" & params & "@" & linkStruct.LinkURL; 
+	pos = link.indexOf("CPNEWWIN:");
+	if (pos != 1)
+	{
+		pos1 = link.indexOf ("^");
+		windowname = link.substring (pos+9, pos1);
+		pos2 = link.indexOf ("@");
+		windowparams = link.substring (pos1 + 1, pos2);
+		link = link.substring (pos2 + 1, link.length);
+	}
+	
+	if( displaylink && displaylink != "" )
+	{		
+		if (windowname == "")
+			window.location = displaylink;
+		else
+		{
+			windowparams = FormatWindowParams(windowparams);
+			window.open (displaylink, windowname, windowparams);
+		}
+	}
+	else
+	{
+		targetLink = link;
+
+		if (link.indexOf ("CP___") != 1)
+		{
+
+			httpPos = 1;
+			commaPos = link.indexOf(",");
+			if (commaPos != 1)
+			{
+				targetUrl = link.substr(commaPos + 1);
+				if (targetUrl.indexOf("://") != 1 || targetUrl.indexOf("/") == 0)
+				{
+						httpPos = commaPos + 1;
+				}		
+			}
+				
+			if (httpPos != 1)
+			{
+				targetLink = link.substr(httpPos);
+
+				commaPos = targetLink.indexOf(",");
+				if (commaPos != 1)
+					targetLink = targetLink.substr(0, commaPos);
+			}
+			else
+				targetLink = jsDlgLoader + "?csModule=utilities/handlelink&thelink=" + link;
+			
+			if (windowname == "")
+				window.location = targetLink;
+			else
+			{
+				windowparams = FormatWindowParams(windowparams);
+				window.open (targetLink, windowname, windowparams);
+			}
+		}
+		else
+		{
+			//commaPos = link.indexOf(",");
+			//if (commaPos != 1)
+			//	link = link.substr(0, commaPos);
+
+			if (windowname == "")
+				window.location = link;
+			else
+			{
+				windowparams = FormatWindowParams(windowparams);
+				window.open (link, windowname, windowparams);
+			}
+		}
+	}
+
+}
+function doWindowOpen(href,name,params)
+{
+	if (params != '')
+	window.open (href, name, params);
+	else
+		window.open (href, name);	
+}
+
+// 	CPNEWWIN:child^top=110:left=130:ww=140:hh=150:tb=1:loc=1:dir=0:stat=1:mb=1:sb=1:rs=1@CP___PAGEID=3811,AdvSearch2,1
+function FormatWindowParams(windowparams)
+{
+	if( windowparams.indexOf(":loc=") != 1 || windowparams.indexOf(":ww=") != 1 || windowparams.indexOf(":hh=") != 1 || 
+	    windowparams.indexOf(":left=") != 1 || windowparams.indexOf(":top=") != 1 )
+	{
+		windowparams = substringReplace(windowparams,':left=',',left=');
+		windowparams = substringReplace(windowparams,'left=','left=');
+		windowparams = substringReplace(windowparams,':ww=',',width=');
+		windowparams = substringReplace(windowparams,'ww=','width=');		
+		windowparams = substringReplace(windowparams,':hh=',',height=');
+		windowparams = substringReplace(windowparams,'hh=','height=');
+		windowparams = substringReplace(windowparams,':loc=',',location=');
+		windowparams = substringReplace(windowparams,'loc=','location=');
+		windowparams = substringReplace(windowparams,':dir=',',directories=');
+		windowparams = substringReplace(windowparams,'dir=','directories=');
+		windowparams = substringReplace(windowparams,':tb=',',toolbar=');
+		windowparams = substringReplace(windowparams,'tb=','toolbar=');
+		windowparams = substringReplace(windowparams,':stat=',',status=');
+		windowparams = substringReplace(windowparams,':mb=',',menubar=');
+		windowparams = substringReplace(windowparams,':sb=',',scrollbars=');
+		windowparams = substringReplace(windowparams,':rs=',',resizable=');
+	}
+	return windowparams;
+}
+
+// -->
+		
+
+<U><FONT COLOR=blue>Skip Navigation</FONT></U>
+</FONT></U>
+ <!-- end skipmenu -->
+
+    
+		  
+</FONT></U></FONT></U>  
+
+Phone directory
+		<UL>		
+			<LI><U><FONT COLOR=blue>Search for faculty or staff member</FONT></U></LI>
+
+			<LI><U><FONT COLOR=blue>Search for emeriti or retiree</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>Find all departments</FONT></U></LI>
+		</UL>
+
+        *To search for student contact information, login to FlashLine and choose the "Directory" icon in the FlashLine masthead (blue bar).  
+
+  
+	
+    
+		  
+</FONT></U></FONT></U>  <FORM>Ask Kent State
+                <INPUT VALUE="2" NAME="did" TYPE="hidden">
+ 
+                <INPUT VALUE="4" NAME="cid" TYPE="hidden"> 
+    <INPUT NAME="quser" SIZE="40"> 
+    <INPUT VALUE="Ask" NAME="submit" TYPE="submit"> 
+                </FORM>
+
+    
+    Ask questions like, 
+    <U><FONT COLOR=blue>How do I transfer to Kent State?</FONT></U> 
+    <U><FONT COLOR=blue>What are admissions requirements?</FONT></U> 
+    <U><FONT COLOR=blue>Where do I go to apply?</FONT></U>
+
+ 
+
+  
+	
+   	
+		  
+</FONT></U></FONT></U>  Kent State maps
+		<P>Search by campus:</P>
+		<UL>
+			<LI><U><FONT COLOR=blue>Kent</FONT></U></LI>
+
+			<LI><U><FONT COLOR=blue>Ashtabula</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>East Liverpool</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>Geauga</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>Salem</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>Stark</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>Trumbull</FONT></U></LI>
+
+			<LI><U><FONT COLOR=blue>Tuscarawas</FONT></U></LI>
+		</UL>  
+
+  
+	
+	
+	
+
+
+	jQuery('#cs_PageModeMenuBtnsContainer').prepend('My Content Dashboard');
+		   
+	
+
+	
+   		
+            
+                  
+</FONT></U></FONT></U>  <U><FONT COLOR=blue>Kent State University - Excellence in Action</FONT></U><U><FONT COLOR=blue>Excellence in Action</FONT></U>
+
+  
+
+  
+                <UL>
+                    
+                        <LI><U><FONT COLOR=blue>Give to kent</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>FlashLine Login</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Phone Directories</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Ask Kent State</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Maps</FONT></U></LI>
+                       
+                    	<LI><U><FONT COLOR=blue>Text Only</FONT></U></LI>
+                    
+                    
+                        <LI><U><FONT COLOR=blue>Give to kent</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>FlashLine Login</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Phone Directories</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Ask Kent State</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Maps</FONT></U></LI>
+                        <LI><U><FONT COLOR=blue>Text Only</FONT></U></LI>
+                    
+                </UL><!-- end utilities -->
+
+                
+                  <U><FONT COLOR=blue>A-Z Index</FONT></U> 
+
+                
+                                 
+
+				  
+	
+	         
+        jQuery(document).ready(function()
+        { 
+            var data =  new Array();
+data[0] = "About KSU";
+data[1] = "Academic Computing Support";
+data[2] = "Academic Personnel";
+data[3] = "Academic Policies";
+data[4] = "Academic Programs";
+data[5] = "Academic Quality Improvement";
+data[6] = "Academic Resources";
+data[7] = "Academic Success Center";
+data[8] = "Account Internships";
+data[9] = "Accounting Technology";
+data[10] = "Accounts Payable";
+data[11] = "Additional Programs";
+data[12] = "Admissions";
+data[13] = "Admissions Office";
+data[14] = "Aeronautics";
+data[15] = "Aerospace Studies/Air Force Reserve Officer Training Corp";
+data[16] = "African American Affairs, Institute for";
+data[17] = "Airport";
+data[18] = "Alerts";
+data[19] = "Alumni and Friends";
+data[20] = "Alumni Relations";
+data[21] = "Applied Conflict Management, Center for";
+data[22] = "Applied Engineering";
+data[23] = "Applied Linguistics, Institute for";
+data[24] = "Applied Psychology Center";
+data[25] = "aqip";
+data[26] = "Architecture and Environmental Design, College of";
+data[27] = "Arts and Culture";
+data[28] = "Athletics";
+data[29] = "Awards and Honors";
+data[30] = "Banquet Sales";
+data[31] = "Benefits";
+data[32] = "Benefits Office";
+data[33] = "Bibliography and Editing, Institute for";
+data[34] = "Biomedical Sciences";
+data[35] = "Board of Trustees";
+data[36] = "Buildings";
+data[37] = "Bursar\'s Office";
+data[38] = "Business";
+data[39] = "Business Administrator Services";
+data[40] = "Business Management Technology";
+data[41] = "Campus Life";
+data[42] = "Career Services Center";
+data[43] = "Center for Adult and Veteran Services";
+data[44] = "Center for Applied Conflict Management";
+data[45] = "Center for Corporate and Professional Development";
+data[46] = "Center for International and Comparative Programs";
+data[47] = "Center for Public Administration and Public Policy";
+data[48] = "Center for Student Involvement";
+data[49] = "Centers and Institutes";
+data[50] = "Child Development Center";
+data[51] = "College and Graduate School of Education, Health and Human Services";
+data[52] = "College of Architecture and Environmental Design";
+data[53] = "College of Arts and Sciences";
+data[54] = "College of Business Administration";
+data[55] = "College of Communication and Information";
+data[56] = "College of Continuing Studies";
+data[57] = "College of Nursing";
+data[58] = "College of Podiatric Medicine";
+data[59] = "College of Public Health";
+data[60] = "College of Technology";
+data[61] = "College of the Arts";
+data[62] = "Colleges, Schools, and Departments";
+data[63] = "Columbiana County Campus";
+data[64] = "Commencement";
+data[65] = "Commencement and Graduation";
+data[66] = "Commission on Inclusion";
+data[67] = "Communication Research Center";
+data[68] = "Communication, Journalism and Media";
+data[69] = "Communications and Special Events";
+data[70] = "Commuter & Off-Campus Student Organization";
+data[71] = "Computational Mathematics, Institute for";
+data[72] = "Computer Technology";
+data[73] = "Computers, Math and Technology";
+data[74] = "Conrad Studies, Center for";
+data[75] = "Contact Info and Biographies";
+data[76] = "Controller\'s Office";
+data[77] = "Corporate Services";
+data[78] = "Councils and Committees";
+data[79] = "Counseling and Human Development Center";
+data[80] = "Courses";
+data[81] = "Current Students";
+data[82] = "Curriculum Services";
+data[83] = "Data Pages";
+data[84] = "Dean of Students and Student Ombuds";
+data[85] = "Department of Accounting";
+data[86] = "Department of Anthropology";
+data[87] = "Department of Biological Sciences";
+data[88] = "Department of Chemical Physics";
+data[89] = "Department of Chemistry";
+data[90] = "Department of Computer Science";
+data[91] = "Department of Economics";
+data[92] = "Department of English";
+data[93] = "Department of Enterprise Support & Application Services";
+data[94] = "Department of Finance";
+data[95] = "Department of Geography";
+data[96] = "Department of Geology";
+data[97] = "Department of History";
+data[98] = "Department of Infrastructure & Operations";
+data[99] = "Department of Justice Studies";
+data[100] = "Department of Management and Information Systems";
+data[101] = "Department of Marketing and Entrepreneurship";
+data[102] = "Department of Mathematical Sciences";
+data[103] = "Department of Modern and Classical Language Studies";
+data[104] = "Department of Pan-African Studies";
+data[105] = "Department of Philosophy";
+data[106] = "Department of Physics";
+data[107] = "Department of Political Science";
+data[108] = "Department of Psychology";
+data[109] = "Department of Sociology";
+data[110] = "Department of Undergraduate Studies";
+data[111] = "Design Visual Arts";
+data[112] = "Destination Kent State";
+data[113] = "Dining Services";
+data[114] = "Disaster Recovery, Infrastructure and Security";
+data[115] = "Division of Diversity, Equity and Inclusion";
+data[116] = "Division of Enrollment Management and Student Affairs";
+data[117] = "Division of Finance and Administration";
+data[118] = "Division of Human Resources";
+data[119] = "Division of Information Services";
+data[120] = "Division of Institutional Advancement";
+data[121] = "Division of Research";
+data[122] = "Division of University Relations";
+data[123] = "Early Childhood Education Technology";
+data[124] = "Ecology and Natural Resources Sustainability";
+data[125] = "Education Abroad";
+data[126] = "Education and Teaching";
+data[127] = "Educational Policies Council";
+data[128] = "Educational Technology & Distance Learning";
+data[129] = "Educational Technology and End User Services";
+data[130] = "Employee Assistance Program";
+data[131] = "Employee Relations";
+data[132] = "Employment";
+data[133] = "Engineering Technology";
+data[134] = "Entrepreneurial Academy, The";
+data[135] = "Entrepreneurship and Business Innovation, Center for";
+data[136] = "Equal Opportunity and Affirmative Action";
+data[137] = "Ethnic Heritage Center";
+data[138] = "Event Detail Page";
+data[139] = "Events";
+data[140] = "External Employers and Professionals";
+data[141] = "Facilities Planning and Operations";
+data[142] = "Faculty Affairs";
+data[143] = "Faculty and Staff";
+data[144] = "Faculty and Staff Services";
+data[145] = "Faculty Professional Development Center";
+data[146] = "Faculty Professional Development Study Committee";
+data[147] = "Faculty Senate";
+data[148] = "Family Child Learning Center";
+data[149] = "Financial Accounting";
+data[150] = "Financial Affairs";
+data[151] = "Financial Engineering";
+data[152] = "Fire Prevention Services";
+data[153] = "First Year Student";
+data[154] = "Flash Communications";
+data[155] = "FLASHcard office";
+data[156] = "Food and Dining";
+data[157] = "Forms and Documents";
+data[158] = "Foundation";
+data[159] = "Future Students";
+data[160] = "Gallery Pages";
+data[161] = "Gerald H. Read Center for International and Intercultural Education";
+data[162] = "Giving";
+data[163] = "Global Management Center";
+data[164] = "Governance";
+data[165] = "Government Relations";
+data[166] = "Graduate Admissions";
+data[167] = "Graduate Student Senate";
+data[168] = "Graduate Studies";
+data[169] = "Grants Accounting";
+data[170] = "Hattie Larlham Research Institute";
+data[171] = "Health and Wellness";
+data[172] = "Health Promotion through Education, Center for";
+data[173] = "Healthcare";
+data[174] = "Help pages";
+data[175] = "Honors College";
+data[176] = "Hospitality and Tourism";
+data[177] = "Housing";
+data[178] = "Human Development Center";
+data[179] = "Human Resources Shared Services";
+data[180] = "Human Services and Social Sciences";
+data[181] = "Ice Arena";
+data[182] = "Information Architecture and Knowledge Management";
+data[183] = "Information Systems, Center for";
+data[184] = "Information Technology for Administrative Professionals";
+data[185] = "Informational Page";
+data[186] = "Innovation in Transition and Employment, Center for";
+data[187] = "Intercollegiate Athletics";
+data[188] = "Interdisciplinary Programs";
+data[189] = "Interest Areas";
+data[190] = "Internal Audit";
+data[191] = "International Admissions";
+data[192] = "International Student and Scholar Services";
+data[193] = "International Students";
+data[194] = "International Studies";
+data[195] = "Jewish Studies";
+data[196] = "Jewish Studies Program";
+data[197] = "Justice Volunteer Center";
+data[198] = "Kent Academic Support and Advising Association";
+data[199] = "Kent Campus";
+data[200] = "Kent Nanostructured Materials Center";
+data[201] = "Kent Regional Business Alliance";
+data[202] = "Kent State University at Ashtabula";
+data[203] = "Kent State University at East Liverpool";
+data[204] = "Kent State University at Geauga";
+data[205] = "Kent State University at Salem";
+data[206] = "Kent State University at Stark";
+data[207] = "Kent State University at Trumbull";
+data[208] = "Kent State University at Tuscarawas";
+data[209] = "Kent State University Museum";
+data[210] = "Kent Student Center";
+data[211] = "Labor Relations";
+data[212] = "Landing Pages & Home Pages";
+data[213] = "Language, Literature and Culture";
+data[214] = "Law, Public Safety and Government";
+data[215] = "Library";
+data[216] = "Library and Information Literacy Education, Institute for";
+data[217] = "Liquid Crystal Institute";
+data[218] = "Literature and Psychoanalysis, Center for";
+data[219] = "Lyman L. Lemnitzer Center for NATO and European Union Studies";
+data[220] = "Mail Services";
+data[221] = "Materials Informatics, Center for";
+data[222] = "May 4, 1970";
+data[223] = "Media Law Center for Ethics and Access";
+data[224] = "Meeting Materials";
+data[225] = "Military Science";
+data[226] = "Military Science/Army Reserve Officer Training Corps";
+data[227] = "Multiple Audiences";
+data[228] = "Multiple Locations";
+data[229] = "News";
+data[230] = "News and Announcements";
+data[231] = "Nuclear Research, Center for";
+data[232] = "Nursing Research, Center for";
+data[233] = "Occupational Health and Safety";
+data[234] = "Off Campus";
+data[235] = "Office Continuing and Distance Education";
+data[236] = "Office of Academic Affairs";
+data[237] = "Office of Advising and Academic Services";
+data[238] = "Office of Diversity and Academic Initiatives";
+data[239] = "Office of Experiential Education and Civic Engagement";
+data[240] = "Office of Global Education";
+data[241] = "Office of Student Conduct";
+data[242] = "Office of Student Success";
+data[243] = "Office of the General Counsel";
+data[244] = "Office of the President";
+data[245] = "Office of the Provost";
+data[246] = "Office of the University Architect";
+data[247] = "Offices and Divisions";
+data[248] = "Ohio Employee Ownership Center";
+data[249] = "Ohio Literacy Resource Center";
+data[250] = "Ohio Small Business Development Center at Kent State Stark";
+data[251] = "Ohio Small Business Development Center at the Kent Regional Business Alliance";
+data[252] = "Online Learning";
+data[253] = "Online Tools";
+data[254] = "Pan African Culture, Center of";
+data[255] = "Paralegal Studies";
+data[256] = "Parents and Families";
+data[257] = "Parking and Transportation";
+data[258] = "Parking Services";
+data[259] = "Partnership";
+data[260] = "Payroll";
+data[261] = "People";
+data[262] = "Performing Arts";
+data[263] = "Planning and Academic Resource Management";
+data[264] = "Police Services";
+data[265] = "Policies and Regulations";
+data[266] = "Procurement";
+data[267] = "Psychology Clinic";
+data[268] = "Public Administration and Public Policy, Center for";
+data[269] = "Public Safety";
+data[270] = "Reading & Writing Development Center";
+data[271] = "Records";
+data[272] = "Recreation";
+data[273] = "Recreational Services";
+data[274] = "Regional Campus Administration";
+data[275] = "Regional College";
+data[276] = "Regional Corporate and Community Services Office";
+data[277] = "Research";
+data[278] = "Research and Evaluation Bureau";
+data[279] = "Research and Sponsored Programs";
+data[280] = "Research and Workplace Literacy, Center for";
+data[281] = "Research Center for Educational Technology";
+data[282] = "Research in Justice Issues";
+data[283] = "Research, Planning and Institutional Effectiveness";
+data[284] = "Residence Services";
+data[285] = "rotc";
+data[286] = "Safety";
+data[287] = "Scholastic Journalism, Center for";
+data[288] = "School of Art";
+data[289] = "School of Biomedical Sciences";
+data[290] = "School of Communication Studies";
+data[291] = "School of Digital Sciences";
+data[292] = "School of Family and Consumer Studies";
+data[293] = "School of Fashion Design and Merchandising";
+data[294] = "School of Foundations, Leadership and Administration";
+data[295] = "School of Health Sciences";
+data[296] = "School of Journalism and Mass Communication";
+data[297] = "School of Library and Information Science";
+data[298] = "School of Lifespan Development and Educational Sciences";
+data[299] = "School of Music";
+data[300] = "School of Teaching, Learning and Curriculum Studies";
+data[301] = "School of Theatre and Dance";
+data[302] = "School of Visual Communication Design";
+data[303] = "Science and Environment";
+data[304] = "Senior Citizen Programs";
+data[305] = "Shannon Rodgers and Jerry Silverman School of Fashion Design and Merchandising";
+data[306] = "Small Business Administration Resource Center, Trumbull Campus";
+data[307] = "Sports and Recreation";
+data[308] = "Strategic Plan";
+data[309] = "Student Accessibility Services";
+data[310] = "Student Financial Aid";
+data[311] = "Student Multicultural Center";
+data[312] = "Student Organizations";
+data[313] = "Student Resources";
+data[314] = "Student Services";
+data[315] = "Success Stories";
+data[316] = "Summer Classes";
+data[317] = "Support Kent State";
+data[318] = "Sustainability";
+data[319] = "Talent Acquistion";
+data[320] = "Tech Spot";
+data[321] = "Tech Support";
+data[322] = "Technology";
+data[323] = "Technology Transfer and Economic Development";
+data[324] = "Training";
+data[325] = "Training and Development";
+data[326] = "Transfer Admissions";
+data[327] = "Transportation Services";
+data[328] = "Travel Information";
+data[329] = "Treasury, Tax and Risk Management Services";
+data[330] = "Trustees Professor";
+data[331] = "Tuition and Financial Assistance";
+data[332] = "Undergraduate Admissions";
+data[333] = "University Administration";
+data[334] = "University Bookstore";
+data[335] = "University Budget";
+data[336] = "University Communications and Marketing";
+data[337] = "University Conference Bureau";
+data[338] = "University Council on Teacher Education";
+data[339] = "University Council on Technology";
+data[340] = "University Diversity Advisory Council";
+data[341] = "University Facilities Management";
+data[342] = "University Health Services";
+data[343] = "University Libraries";
+data[344] = "University Policies";
+data[345] = "University Press";
+data[346] = "University Priorities and Budget Advisory Committee";
+data[347] = "University Research Council";
+data[348] = "University Scheduling";
+data[349] = "University Scholarship Advisory Council";
+data[350] = "University Staff Advisory Council";
+data[351] = "University Teaching Council";
+data[352] = "Veterinary Technology";
+data[353] = "Video and Animations";
+data[354] = "Visiting Kent State";
+data[355] = "Wick Poetry Center";
+data[356] = "WKSU-FM";
+data[357] = "Women\'s Center";
+data[358] = "Writing Commons";
+data[359] = "maps";
+data[360] = "directions";
+data[361] = "campus tours";
+data[362] = "virtual tour";
+data[363] = "dining locations";
+data[364] = "meal plans";
+data[365] = "dining calculator";
+data[366] = "Eastway Café";
+data[367] = "Eastway Market";
+data[368] = "Jazzman\'s Café";
+data[369] = "Prentice Café";
+data[370] = "Steward Café";
+data[371] = "The Cookie Jar";
+data[372] = "Rosie\'s Diner";
+data[373] = "Pete\'s Arena";
+data[374] = "Rathsekllar";
+data[375] = "Kent Market";
+data[376] = "Sunset Strips";
+data[377] = "Einstein Bros";
+data[378] = "Jump Asian Express";
+data[379] = "Quizno\'s Subs";
+data[380] = "A&W Restaurant";
+data[381] = "Ambrois";
+data[382] = "Kent Market II";
+data[383] = "Basket Shoppe";
+data[384] = "Summit Street Cafe";
+data[385] = "Snack Stop";
+data[386] = "Med center";
+data[387] = "wellness programs";
+data[388] = "uhs";
+data[389] = "university health center";
+data[390] = "counseling services";
+data[391] = "bookstore";
+data[392] = "student recreation and wellness center";
+data[393] = "bursar office";
+data[394] = "registrar";
+data[395] = "dining";
+data[396] = "parking";
+data[397] = "FlashCard";
+data[398] = "adult student center";
+data[399] = "career services center";
+data[400] = "bus services";
+data[401] = "computer labs";
+data[402] = "ombuds";
+data[403] = "credit union";
+data[404] = "accessibility services";
+data[405] = "health services";
+data[406] = "multicultural center";
+data[407] = "regional campuses";
+data[408] = "education health and human services";
+data[409] = "arts and sciences";
+data[410] = "Graduation";
+data[411] = "Arts";
+data[412] = "Arts and Sciences";
+data[413] = "Business Administration";
+data[414] = "Communication and Information";
+data[415] = "Education Health and Human Services";
+data[416] = "Technology";
+data[417] = "Regional Campuses";
+data[418] = "research opportunities";
+data[419] = "undergraduate research";
+data[420] = "research requirements";
+data[421] = "IRB";
+data[422] = "graduate research";
+data[423] = "internal review board";
+data[424] = "executive offices";
+data[425] = "executive officers";
+data[426] = "divisions";
+data[427] = "vice presidents";
+data[428] = "provost";
+data[429] = "president";
+data[430] = "arts and sciences";
+data[431] = "arts";
+data[432] = "traveline";
+data[433] = "per diems";
+data[434] = "mileage";
+data[435] = "policies";
+data[436] = "policy register";
+data[437] = "Video";
+data[438] = "Audio";
+data[439] = "Images";
+data[440] = "Emergency Alerts";
+data[441] = "flashalerts";
+data[442] = "flash alerts";
+data[443] = "advisories";
+data[444] = "emergency";
+data[445] = "emergency handbook";
+data[446] = "Multimedia and Educational Design";
+data[447] = " Classroom Enhancements";
+data[448] = "Course Management";
+data[449] = "Vista";
+data[450] = "Blackboard";
+data[451] = "Project Management";
+data[452] = "Training";
+data[453] = "E-services";
+data[454] = "Application Services";
+data[455] = "Giving";
+data[456] = "endowment";
+data[457] = "foundation";
+data[458] = "annual fund";
+data[459] = "campaign";
+data[460] = "gift planning";
+data[461] = "planned gifts";
+data[462] = "donations";
+data[463] = "donor";
+data[464] = "Press releases";
+data[465] = "business administration";
+data[466] = "arts and sciences";
+data[467] = "Distance Learning";
+data[468] = "DL";
+data[469] = "web classes";
+data[470] = "Financial Aid";
+data[471] = "work study";
+data[472] = "scholarships";
+data[473] = "grants";
+data[474] = "costs";
+data[475] = "fees";
+data[476] = "campus jobs";
+data[477] = "Student government";
+data[478] = "student clubs";
+data[479] = "student organizations";
+data[480] = "on-campus housing";
+data[481] = "living learning communities";
+data[482] = "student events";
+data[483] = "rec center";
+data[484] = "student rec";
+data[485] = "Intramural sports";
+data[486] = "ice arena";
+data[487] = "rec center";
+data[488] = "student clubs";
+data[489] = "student organizations,";
+data[490] = "drop class";
+data[491] = "freshmen forgiveness";
+data[492] = "freshman forgiveness";
+data[493] = "digest of rules and regulations";
+data[494] = "policy register";
+data[495] = "copyright";
+data[496] = "plagiarism";
+data[497] = "Parking Pass";
+data[498] = "Permits";
+data[499] = "Parta";
+data[500] = "Bus Service";
+data[501] = "parking lots";
+data[502] = "parking tickets";
+data[503] = "parking ticket";
+data[504] = "transfer credits";
+data[505] = "FYE";
+data[506] = "First Year Experience";
+data[507] = "orientation";
+data[508] = "audiovisual services";
+data[509] = "mail services";
+data[510] = "women\'s resource center";
+data[511] = "university health services";
+data[512] = "university communications and marketing";
+data[513] = "student recreation and wellness center";
+data[514] = "counseling services";
+data[515] = "disability services";
+data[516] = "Arts and Sciences";
+data[517] = "Business Administration";
+data[518] = "Communication and Information";
+data[519] = "Technology";
+data[520] = "rules";
+data[521] = "regulations";
+data[522] = "policies";
+data[523] = "university policies";
+data[524] = "policy register";
+data[525] = "Network Services & Telecommunications";
+data[526] = "Server Support";
+data[527] = "Client Infrastructure";
+data[528] = "Architecture and Environmental Design";
+data[529] = "Arts";
+data[530] = "Communicaton and Information";
+data[531] = "Technology";
+data[532] = "Arts and Sciences";
+data[533] = "Communication and Information";
+data[534] = "residence hall";
+data[535] = "off-campus living";
+data[536] = "dorm";
+data[537] = " residence hall";
+data[538] = "Lake Hall";
+data[539] = "Olson Hall";
+data[540] = "Stopher Hall";
+data[541] = "Johnson Hall";
+data[542] = "Centennial Court";
+data[543] = "Allerton Family Housing";
+data[544] = "Van Campen Housing";
+data[545] = "Engleman Hall";
+data[546] = "Dunbar Hall";
+data[547] = "Prentice Hall";
+data[548] = "Verder Hall";
+data[549] = "Eastway";
+data[550] = "Clark Hall";
+data[551] = "Fletcher Hall";
+data[552] = "Allyn Hall";
+data[553] = "Manchester Hall";
+data[554] = "Twin Towers";
+data[555] = "Tri-Towers";
+data[556] = "New Front";
+data[557] = "Quad";
+data[558] = "Leebrick Hall";
+data[559] = "Wright Hall";
+data[560] = "Koonce Hall";
+data[561] = "Korb Hall";
+data[562] = "Beall Hall";
+data[563] = "Mcdowell Hall";
+data[564] = "Charts";
+data[565] = " Graphs";
+data[566] = " Facts";
+data[567] = "Figures";
+data[568] = "Population";
+data[569] = "Demographics";
+data[570] = "education health and human services";
+data[571] = "arts and sciences";
+data[572] = "university teams";
+data[573] = "sports teams";
+data[574] = "freshman admissions";
+data[575] = "freshmen";
+data[576] = "admissions";
+data[577] = "admissions requirements";
+data[578] = "transfer admissions";
+data[579] = "transfer credits";
+data[580] = "Museum";
+data[581] = "Kent/Blossom";
+data[582] = "Porthouse Theatre";
+data[583] = "performing arts";
+data[584] = "visual and design arts";
+data[585] = "Hugh A. Glauser School of Music";
+data[586] = "School of Theatre and Dance";
+data[587] = "Downtown Gallery";
+data[588] = "School of Fashion";
+data[589] = "School of Art";
+data[590] = "graduate requirements";
+data[591] = "education health and human services";
+data[592] = "business administration";
+data[593] = "History";
+data[594] = "facts";
+data[595] = "student body profile";
+data[596] = "enrollment";
+data[597] = "flash facts";
+data[598] = "schedule of classes";
+data[599] = "academic calendar";
+data[600] = "apply";
+data[601] = "applying";
+data[602] = "application";
+data[603] = "admissions requirements";
+data[604] = "faculty awards";
+data[605] = "achievements";
+data[606] = "employee awards";
+data[607] = "20 year club";
+data[608] = "DTA";
+data[609] = "OTA";
+data[610] = "DSA";
+data[611] = "Academic Calendar";
+data[612] = "exam schedules";
+data[613] = "success center";
+data[614] = "midterm schedule";
+data[615] = "finals schedule";
+data[616] = "tutoring";
+data[617] = "supplemental instruction";
+data[618] = "advising";
+data[619] = "library";
+data[620] = "libraries";
+data[621] = "drop dates";
+data[622] = "public safety";
+data[623] = "police";
+data[624] = "international requirements";
+data[625] = "Online Surveys";
+data[626] = "Online Application Forms";
+data[627] = "Flashline";
+data[628] = "email";
+data[629] = "Arts";
+data[630] = "arts and sciences";
+data[631] = "Education Health and Human services";
+data[632] = "technology";
+data[633] = "faculty";
+data[634] = "staff";
+data[635] = "students";
+data[636] = "Education health and human services";
+data[637] = "Arts and sciences";
+data[638] = "vision insurance";
+data[639] = "vacation";
+data[640] = "medical insurance";
+data[641] = "medical mutual";
+data[642] = "aetna";
+data[643] = "HR forms";
+data[644] = "Jobs";
+data[645] = "Want ads";
+data[646] = "Help wanted";
+data[647] = "helpdesk";
+data[648] = "help desk";
+data[649] = "desktop support";
+data[650] = "computer support";
+data[651] = "computer help";
+data[652] = "FlashLine help";
+data[653] = "passwords";
+data[654] = "login";
+data[655] = "Study Abroad";
+data[656] = "Florence";
+data[657] = "Geneva";
+data[658] = "international students";
+data[659] = "Uganda";
+data[660] = "Cuba";
+data[661] = "Ireland";
+data[662] = "international internships";
+data[663] = "Gerald H. Read Center";
+data[664] = "Regional campuses";
+data[665] = "Nursing";
+data[666] = "Education health and human services";
+data[667] = "Arts and science";
+data[668] = "workshops";
+data[669] = "professional development";
+data[670] = "FPDC";
+data[671] = "faculty professional development center";
+data[672] = "May 4th shootings";
+data[673] = "May 4th";
+data[674] = "sex offender";
+data[675] = "dropping classes";
+data[676] = "drop classes";
+data[677] = "international study";
+data[678] = "international affairs";
+data[679] = "helpdesk";
+data[680] = "tech support";
+data[681] = "global studies";
+data[682] = "podiatry";
+data[683] = "podiatric medicine";
+data[684] = "podiatric surgery";
+
+            jQuery("#search_field")
+                .autocomplete({ source: data })
+                .keyup(function(e)
+                {
+                    if (e.keyCode === 13)
+                    {
+                        jQuery(this).closest('form').trigger('submit');
+                    }
+                })
+                .val('Search KENT.EDU')
+                .css({'color' : '#999', 'font-style' : 'italic'})
+                .focusin(function()
+                {
+                    jQuery(this).val('').css({'color' : '#666', 'font-style' : 'normal'});
+                });
+        }); 
+     
+
+	<FORM>
+		
+        	<INPUT VALUE="" NAME="q" SIZE="31" TYPE="text">
+            <INPUT VALUE="kent_all_frontend" NAME="client" TYPE="hidden">
+            <INPUT VALUE="xml_no_dtd" NAME="output" TYPE="hidden">
+            <INPUT VALUE="kent_all_frontend" NAME="proxystylesheet" TYPE="hidden">
+            <INPUT VALUE="date:D:L:d1" NAME="sort" TYPE="hidden">
+            <INPUT VALUE="UTF-8" NAME="oe" TYPE="hidden">
+            <INPUT VALUE="UTF-8" NAME="ie" TYPE="hidden">
+            <INPUT VALUE="1" NAME="ud" TYPE="hidden">
+            <INPUT VALUE="1" NAME="exclude_apps" TYPE="hidden">
+            <INPUT VALUE="kent_all" NAME="site" TYPE="hidden">
+			<INPUT VALUE="" NAME="sa" TYPE="submit">
+		
+	</FORM>
+ 
+
+                <!-- End of google search-->
+
+            
+	        
+                
+						 
+<UL>
+
+			<LI><U><FONT COLOR=blue>About</FONT></U>
+
+	
+	
+				<UL>
+		
+					<LI><U><FONT COLOR=blue>Administration</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Alumni</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Centers & Institutes</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Corporate Services</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Employment</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Facts & Figures</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Giving Opportunities</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>History</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Offices & Services</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Social Media</FONT></U></LI>
+	
+				</UL>
+			</LI>
+			<LI></LI>
+			
+			<LI><U><FONT COLOR=blue>Academics</FONT></U>
+
+	
+	
+				<UL>
+		
+					<LI><U><FONT COLOR=blue>Academic Resources</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Colleges and Schools</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Commencement</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Distance Learning</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Graduate Study</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Honors College</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>International Study</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Libraries</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Majors and Degrees</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Online Learning</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Provost</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>ROTC Programs</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Summer Classes</FONT></U></LI>
+	
+				</UL>
+			</LI>
+			<LI></LI>
+			
+			<LI><U><FONT COLOR=blue>Admissions & Financial Aid</FONT></U>
+
+	
+	
+				<UL>
+		
+					<LI><U><FONT COLOR=blue>Explore Campus</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Apply Now</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Tuition, Scholarships & Financial Aid</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Undergraduate Admissions</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Graduate Admissions</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>International Admissions</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Post-Secondary Enrollment Option Programs (PSEOP)</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Contact</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Newly Admitted Students</FONT></U></LI>
+	
+				</UL>
+			</LI>
+			<LI></LI>
+			
+			<LI><U><FONT COLOR=blue>Student Life</FONT></U>
+
+	
+	
+				<UL>
+		
+					<LI><U><FONT COLOR=blue>Activities & Organizations</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Arts & Culture</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Campus Safety</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Commuter & Off-Campus Students</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Dining</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Health Services</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Housing</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Student Resources</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Transportation</FONT></U></LI>
+	
+				</UL>
+			</LI>
+			<LI></LI>
+			
+			<LI><U><FONT COLOR=blue>Athletics</FONT></U>
+
+	
+	
+				<UL>
+		
+					<LI><U><FONT COLOR=blue>Ice Arena</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Intramural Sports</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Intercollegiate Sports</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Recreational Services</FONT></U></LI>
+	
+				</UL>
+			</LI>
+			<LI></LI>
+			
+			<LI><U><FONT COLOR=blue>News & Events</FONT></U>
+
+	
+	
+				<UL>
+		
+					<LI><U><FONT COLOR=blue>Calendar of Events</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Centennial Information</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Featured Videos</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>For the Media</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>General Announcements</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>May 4 Online Newsroom</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Profiles of Excellence in Action</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Success Stories</FONT></U></LI>
+	
+				</UL>
+			</LI>
+			<LI></LI>
+			
+			<LI><U><FONT COLOR=blue>Research</FONT></U>
+
+	
+	
+			</LI>
+			<LI></LI>
+				
+			<LI><U><FONT COLOR=blue>Campuses</FONT></U>
+
+	
+	
+				<UL>
+		
+					<LI><U><FONT COLOR=blue>Ashtabula</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>East Liverpool</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Geauga</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Kent</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Salem</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Stark</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Trumbull</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Tuscarawas</FONT></U></LI>
+	
+					<LI><U><FONT COLOR=blue>Maps & Directions</FONT></U></LI>
+	
+		</UL>
+	</LI>
+
+</UL>
+
+
+                <!-- end main_nav -->
+	    
+            <!-- end header -->
+			
+			
+
+
+	<H2>
+
+  
+</FONT></U></FONT></U> Writing Commons 
+
+  
+           
+    </H2>
+    
+			  
+</FONT></U></FONT></U> 
+			
+				
+					
+  
+</FONT></U></FONT></U> 
+                    
+                    $(function() {     
+                        $('.2270284').before('').cycle({
+                            fx:     'fade',
+                            speed:   'slow',	
+                            timeout: "6000",
+                            pager:  '#nav',
+                            pause:	1,
+                            pauseOnPagerHover: 1
+                        });
+                    });
+                    
+                    
+            
+            
+        
+                
+                    
+                         
+                         
+                            [Writing3]
+                             
+                         	
+                     
+                         
+                         
+                            [Writing2]
+                             
+                         	
+                     
+                         
+                         
+                            [writing1]
+                             
+                         	
+                     
+                         
+                         
+                            [Writing4]
+                             
+                         	
+                     
+                 
+             
+        
+             
+        
+    
+    .home ._cs_outline .galleryContainerOuter {
+    float:right;
+    }
+    
+    
+
+  
+				
+				
+					
+  
+</FONT></U></FONT></U> <H2 ALIGN="center">Spring 2012 Hours</H2>
+
+<H3 ALIGN="center"><BR>
+</H3>
+
+<H3 ALIGN="center">(January 17 - April 27, 2012)<BR>
+</H3>
+
+<P ALIGN="center">Monday - 10:00 a.m. - 10:00 p.m.<BR>
+Tuesday - 10:00 a.m. - 10:00 p.m.<BR>
+Wednesday - 10:00 a.m. - 10:00 p.m.<BR>
+Thursday - 10:00 a.m.- 8:30 p.m.<BR>
+Friday - 10:00 a.m. - 5:00 p.m.<BR>
+Saturday - Closed<BR>
+Sunday - 3:15 p.m. - 10:00 p.m.<BR>
+</P>
+
+<H3 ALIGN="center">330-672-1787<BR>
+writing@kent.edu<BR>
+Library 4th Floor</H3> 
+
+  
+				
+			
+		
+	&nbsp;
+ 
+  
+	<!-- end mast -->
+    
+	
+       
+ 
+		<UL>
+
+			
+                        
+                        <LI>
+                            <U><FONT COLOR=blue>About Us</FONT></U>
+                            
+                            
+                        </LI>
+                    
+                        
+                        <LI>
+                            <U><FONT COLOR=blue>Schedule an Appointment</FONT></U>
+                            
+                            
+                        </LI>
+                    
+                        
+                        <LI>
+                            <U><FONT COLOR=blue>Students</FONT></U>
+                            
+                            
+                        </LI>
+                    
+                        
+                        <LI>
+                            <U><FONT COLOR=blue>Faculty</FONT></U>
+                            
+                            
+                        </LI>
+                    
+                        
+                        <LI>
+                            <U><FONT COLOR=blue>Resources</FONT></U>
+                            
+                            
+                        </LI>
+                    
+                        
+                        <LI>
+                            <U><FONT COLOR=blue>Events</FONT></U>
+                            
+                            
+                        </LI>
+                    
+                        
+                        <LI>
+                            <U><FONT COLOR=blue>News</FONT></U>
+                            
+                            
+                        </LI>
+                    
+                        
+                        <LI>
+                            <U><FONT COLOR=blue>Contact Us</FONT></U>
+                            
+                            
+                        </LI>
+                    
+                        
+                        <LI>
+                            <U><FONT COLOR=blue>Become a Tutor</FONT></U>
+                            
+                            
+                        </LI>
+                    
+		</UL>
+	
+  
+</FONT></U></FONT></U>  </FONT></U></FONT></U>  </FONT></U></FONT></U> <!-- Beginning of meebo me widget code. Want to talk with visitors on your page? Go to http://www.meebome.com/ and get your widget! -->
+<EMBED> 
+</FONT></U></FONT></U> <BR> 
+</FONT></U></FONT></U> 
+			
+				
+					
+  
+</FONT></U></FONT></U> 
+	<U><FONT COLOR=blue>Scheduler</FONT></U>
+	
+
+  
+				
+				
+					
+  
+</FONT></U></FONT></U> 
+	<U><FONT COLOR=blue>Clock In</FONT></U>
+	
+
+  
+				
+                &nbsp;
+		
+	&nbsp;
+ 
+  
+	<!-- end lc -->
+	
+    </FONT></U>
+		
+			
+           <H1>
+		   Writing Commons 
+            </H1>
+			 
+    	
+            
+            Writing Commons
+            	
+    
+  
+  
+</FONT></U></FONT></U> 
+			
+				
+					
+  
+</FONT></U></FONT></U> <P><EM>Mission Statement:&nbsp;</EM></P>
+
+<UL>
+<LI>As the university writing center, the Writing Commons supports KSU students at all levels and in every academic discipline with any projects that include writing.</LI>
+
+<LI>We assist writers at every stage of the composing and revising process: from&nbsp;getting started, to developing and organizing ideas, to editing prose and documenting sources, and more.</LI>
+
+<LI>We help writers at&nbsp;every level of proficiency&nbsp;to&nbsp;experience the satisfaction of developing effective written communication.&nbsp;</LI>
+</UL>
+
+<P><EM>All student writers can benefit from the feedback and support the Writing Commons provides.&nbsp; Visit us to see how we can help <EM><EM>you</EM></EM>!</EM></P> 
+
+  
+				
+				
+					
+  
+</FONT></U></FONT></U> <P><EM>"Maybe in a perfect world, all writers would have their own ready auditor — a teacher, a classmate, a roommate, an editor — who would not only listen but draw them out, ask them questions they would not think to ask themselves.&nbsp; A writing center is an institutional response to this need."</EM></P>
+
+<P ALIGN="right">Stephen M. North</P>
+
+<P ALIGN="right">“The Idea of a Writing Center." <EM>College English</EM> 46.5 (1984): 433-46.</P> 
+
+  
+				
+			
+		
+	&nbsp;
+ </FONT></U></FONT></U> 
+    
+    
+    
+      <H4> 
+
+</H4>
+     
+      <UL>
+     
+			<LI>
+                <U><FONT COLOR=blue>
+                Writing Commons Staff Featured at Regional Writing Center Conference, Fall 2011 
+                
+                Several members of the Writing Commons staff were featured presenters at the Northeast Ohio Weiting Centers Association's 5th Annual Conference, At Kent State University at Stark.<BR>
+                
+           		
+                </FONT></U>
+            </LI>
+			
+		
+			<LI>
+                <U><FONT COLOR=blue>
+                Writing Commons Hosts Faculty Writing Group, Fall 2011 
+                
+                The Writing Commons is proud to host an ongoing faculty workshop series for fall 2011, "The Writing Lunch Bunch."<BR>
+                
+           		
+                </FONT></U>
+            </LI>
+			
+		
+			<LI>
+                <U><FONT COLOR=blue>
+                Writing Commons Hosts Leonard Rosen Lecture, October 2011 
+                
+                The Writing Commons will host guest lecturer Leonard Rosen October 4, 2:15-3:15 p.m. 4th floor Library.<BR>
+                
+           		
+                </FONT></U>
+            </LI>
+			
+		
+			<LI>
+                <U><FONT COLOR=blue>
+                Writing Commons Presents Workshops in Scientific Writing, September 2011 
+                
+                Writing Commons Senior Tutors Jessica Kreiger, Jonathan Tietz, and Allison Machnicki will present their Scientific Writing Workshop series in two parts. Everyone is welcome. The workshops will help students with all aspects of the research and writing process for papers in the sciences.<BR>
+                
+           		
+                </FONT></U>
+            </LI>
+			
+		
+      </UL>
+      
+   
+  
+
+		<!-- end left_rc -->
+	<!-- end rc -->
+	
+	
+
+		
+			
+				  
+</FONT></U></FONT></U> 
+		
+		
+        <H4>Connect with 
+        Writing Commons   
+        </H4>
+        
+				<U><FONT COLOR=blue>[Facebook]</FONT></U>
+			
+				<U><FONT COLOR=blue>[Ning]</FONT></U>
+			<!-- end connect --> 
+
+  
+				
+			
+			<!-- start bottom_utilities -->
+            
+			  
+</FONT></U></FONT></U> 
+  	<UL>
+        
+                <LI><U><FONT COLOR=blue>Home</FONT></U></LI>
+          
+            
+                <LI>|</LI>      
+            
+                <LI><U><FONT COLOR=blue>Emergency Information</FONT></U></LI>
+          
+            
+                <LI>|</LI>      
+            
+                <LI><U><FONT COLOR=blue>Jobs</FONT></U></LI>
+          
+            
+                <LI>|</LI>      
+            
+                <LI><U><FONT COLOR=blue>For the Media</FONT></U></LI>
+          
+            
+     	
+        <LI>|</LI> <LI>
+        	
+            	<U><FONT COLOR=blue>Mobile Site</FONT></U></LI>
+            
+  	</UL>
+
+</FONT></U></FONT></U> <P>As one of Ohio&rsquo;s top universities, Kent State offers the resources and facilities of a large university with the friendly, casual atmosphere of a liberal arts college. Enroll today to start pursuing your future at one of the best colleges in Ohio. We&rsquo;ve been educating successful graduates for over 100 years; join us today.<BR>
+</P> 
+</FONT></U></FONT></U>   
+<P>
+Copyright 2012 
+&nbsp;&nbsp;&nbsp;Kent State University&nbsp;&nbsp;&nbsp;Kent, Ohio 44242&nbsp;&nbsp;&nbsp;&nbsp;Phone: 330-672-3000
+</P>
+ 
+
+  
+			
+			<!-- end bottom_utilities -->
+			
+			
+            <!-- end footer_links -->
+		<!-- end footer -->
+	<!-- end wrapper -->
+<!-- end outerWrap -->
+
+<!-- ANALYTICS CODE -->
+
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+
+	try {
+	var pageTracker = _gat._getTracker("UA-10691197-1");
+	pageTracker._setDomainName('.kent.edu');
+	pageTracker._setAllowLinker(true);
+	pageTracker._setAllowHash(false);
+	pageTracker._trackPageview(); 
+	} catch(err) {}
+
+
+		<!--
+			var jsPageContributeMode = 'read';
+			var jsPageSessionContributeMode = 'read';
+			var jsPageAuthorMode = 0;
+			var jsPageEditMode = 0;
+			// build commonspot.csPage, used by entrance.js and onDocumentLoaded
+			if(!commonspot)
+				var commonspot = {};
+			commonspot.csPage = {};
+			commonspot.csPage.url = location.pathname + ((location.pathname.match(/.cfm/i)) ? '' : 'index.cfm'); // use index.cfm if no filename
+			commonspot.csPage.id = 2254474;
+			commonspot.csPage.title = 'Writing Commons';
+			commonspot.csPage.subsiteRoot = '/CAS/English/writingcommons/';
+			commonspot.csPage.siteRoot = '/';
+			commonspot.csPage.mode = jsPageSessionContributeMode;
+			commonspot.csPage.authorok = 0;
+			commonspot.csPage.showContainerUI = 0;
+			commonspot.csPage.requestedVersionTimestamp = '';
+			commonspot.csPage.userRights = {};
+			commonspot.csPage.userRights.isLoggedIn = 0;
+			commonspot.csPage.userRights.read = 1;
+			commonspot.csPage.userRights.author = 0;
+			commonspot.csPage.userRights.edit = 0;
+			commonspot.csPage.userRights.approve = 0;
+			commonspot.csPage.userRights.history = 0;
+			commonspot.csPage.userRights.design = 0;
+			commonspot.csPage.userRights.admin = 0;
+			commonspot.csPage.userRights.subsiteAdmin = 0;
+			commonspot.csPage.userRights.siteAdmin = 0;
+			commonspot.csPage.userRights.userAdmin = 0;
+			var doLviewRedirect;
+			if(parent && parent.commonspot && parent.commonspot.lview && (!doLviewRedirect))
+			{
+				onPageArrival = function()
+				{
+					parent.commonspot.lview.currentPage.onPageArrival(commonspot.csPage.mode, commonspot.csPage.url, commonspot.csPage.id, commonspot.csPage.title, commonspot.csPage.subsiteRoot, commonspot.csPage.siteRoot);
+				};
+				onPageUnload = function()
+				{
+					parent.commonspot.lview.currentPage.onPageUnload(location.pathname + '?' + document.location.search);
+				};
+				parent.Spry.Utils.addEventListener(window, 'load', onPageArrival, false);
+				parent.Spry.Utils.addEventListener(window, 'unload', onPageUnload, false);
+			}
+		
+		// -->
+		</BODY BGCOLOR="#FFFFFF" TEXT="#000000"></HTML>

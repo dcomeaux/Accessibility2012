@@ -1,0 +1,1193 @@
+
+
+<HTML>
+
+<HEAD>
+<TITLE>Faculty/Staff Directory - By Name</TITLE>
+<!--<meta httpequiv="ContentType" content="text/html; charset=iso88591">-->
+<META CONTENT="text/html; charset=utf-8">
+<META NAME="DC.title" CONTENT="Faculty/Staff Directory - By Name">
+<META NAME="DC.subject" CONTENT="">
+<META NAME="DC.subject" CONTENT="directories, faculty, librarian, library, staff">
+<META NAME="DC.description" CONTENT="A directory list of all University Libraries faculty and staff sorted by name.">
+<META NAME="DC.publisher" CONTENT="Kent State University - University Libraries">
+<META NAME="DC.date.created" CONTENT="2004-06-03">
+<META NAME="DC.date.modified" CONTENT="2010-03-30">
+<!-- printLinks=0 -->
+		
+		
+		
+		
+				
+		
+
+
+<!--
+
+function displayProxyHomeOff(tab) {
+	eval('document.proxyImageHome'+tab+'.src="http://www.library.kent.edu/graphics/vpn_alert_tiny.jpg"');
+}
+
+function displayProxyOff(section) {
+	eval('document.proxyImage'+section+'.src="http://www.library.kent.edu/graphics/vpnOff.jpg"');
+}
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+
+
+	function HideContent(d) {
+	if(d.length < 1) { return; }
+	document.getElementById(d).style.display = "none";
+	}
+	function ShowContent(d) {
+	if(d.length < 1) { return; }
+	document.getElementById(d).style.display = "block";
+	}
+	function ReverseContentDisplay(d) {
+		if(d.length < 1) { return; }
+			
+		document.getElementById(d).style.display = "block";
+		
+		if (d != "searchKentLINK") { 
+			document.getElementById("searchKentLINK").style.display = "none";
+		}
+		if (d != "searchDatabases") { 
+			document.getElementById("searchDatabases").style.display = "none";
+		}
+		if (d != "searchGoogleScholar") { 
+			document.getElementById("searchGoogleScholar").style.display = "none";
+		}
+		if (d != "searchVideos") { 
+			document.getElementById("searchVideos").style.display = "none";
+		}
+		if (d != "searchSite") { 
+			document.getElementById("searchSite").style.display = "none";
+		}
+		
+		if (d == "searchKentLINK") {
+			document.getElementById("searchTabs").style.background = 'url(../graphics/bg_search_tabs_kentlink.jpg)';
+			document.formSearchTermsKentLINK.searchTermsKentLINK.focus();
+		}
+		if (d == "searchDatabases") {
+			document.getElementById("searchTabs").style.background = 'url(../graphics/bg_search_tabs_databases.jpg)';
+			document.formSearchTermsKeyword.find_request_1.focus();
+		}
+		<!--if (d == "searchDatabases") {-->
+		<!--	document.getElementById("searchTabs").style.background = 'url(../graphics/bg_search_tabs_databases.jpg)';-->
+		<!--	document.aspnetForm.ctl00$ctl00$BaseFindField$FindField$ctl00$guidedFields$fieldRepeater$ctl01$SearchTerm.focus();-->
+		<!--}-->
+		if (d == "searchGoogleScholar") {
+			document.getElementById("searchTabs").style.background = 'url(../graphics/bg_search_tabs_googlescholar.jpg)';
+			document.formSearchTermsGoogleScholar.find_request_1.focus();
+		}
+		if (d == "searchVideos") {
+			document.getElementById("searchTabs").style.background = 'url(../graphics/bg_search_tabs_videos.jpg)';
+			document.formSearchTermsVideos.searchTermsVideos.focus();
+		}
+		if (d == "searchSite") {
+			document.getElementById("searchTabs").style.background = 'url(../graphics/bg_search_tabs_site.jpg)';
+			document.formSearchTermsWebSite.searchTermsWebSite.focus();
+		}
+	
+	
+	}
+	
+	function storeSearchKentLINK() {
+		
+		if (document.formSearchTermsKentLINK.searchTermsKentLINK.value != "") {
+		
+			var thisSearchTerm = document.formSearchTermsKentLINK.searchTermsKentLINK.value;
+	
+			document.formSearchTermsKentLINK.searchTermsKentLINK.value = thisSearchTerm;
+			document.formSearchTermsKeyword.find_request_1.value = thisSearchTerm;
+			<!--document.aspnetForm.ctl00$ctl00$BaseFindField$FindField$ctl00$guidedFields$fieldRepeater$ctl01$SearchTerm.value = thisSearchTerm;-->
+			document.formSearchTermsGoogleScholar.q.value = thisSearchTerm;
+			document.formSearchTermsVideos.searchTermsVideos.value = thisSearchTerm;
+			document.formSearchTermsWebSite.searchTermsWebSite.value = thisSearchTerm;
+
+		}			
+
+	}	
+	function storeSearchArticles() {
+		
+		if (document.formSearchTermsKeyword.find_request_1.value != "") {
+		<!--if (document.aspnetForm.ctl00$ctl00$BaseFindField$FindField$ctl00$guidedFields$fieldRepeater$ctl01$SearchTerm.value != "") {-->
+		
+			var thisSearchTerm = document.formSearchTermsKeyword.find_request_1.value;
+			<!--var thisSearchTerm = document.aspnetForm.ctl00$ctl00$BaseFindField$FindField$ctl00$guidedFields$fieldRepeater$ctl01$SearchTerm.value;-->
+	
+			document.formSearchTermsKentLINK.searchTermsKentLINK.value = thisSearchTerm;
+			document.formSearchTermsKeyword.find_request_1.value = thisSearchTerm;
+			<!--document.aspnetForm.ctl00$ctl00$BaseFindField$FindField$ctl00$guidedFields$fieldRepeater$ctl01$SearchTerm.value = thisSearchTerm;-->
+			document.formSearchTermsGoogleScholar.q.value = thisSearchTerm;
+			document.formSearchTermsVideos.searchTermsVideos.value = thisSearchTerm;
+			document.formSearchTermsWebSite.searchTermsWebSite.value = thisSearchTerm;
+
+		}			
+
+	}	
+	function storeSearchGoogleScholar() {
+		
+		if (document.formSearchTermsGoogleScholar.q.value != "") {
+		
+			var thisSearchTerm = document.formSearchTermsGoogleScholar.q.value;
+	
+			document.formSearchTermsKentLINK.searchTermsKentLINK.value = thisSearchTerm;
+			document.formSearchTermsKeyword.find_request_1.value = thisSearchTerm;
+			<!--document.aspnetForm.ctl00$ctl00$BaseFindField$FindField$ctl00$guidedFields$fieldRepeater$ctl01$SearchTerm.value = thisSearchTerm;-->
+			document.formSearchTermsGoogleScholar.q.value = thisSearchTerm;
+			document.formSearchTermsVideos.searchTermsVideos.value = thisSearchTerm;
+			document.formSearchTermsWebSite.searchTermsWebSite.value = thisSearchTerm;
+
+		}			
+
+	}	
+	function storeSearchVideos() {
+		
+		if (document.formSearchTermsVideos.searchTermsVideos.value != "") {
+		
+			var thisSearchTerm = document.formSearchTermsVideos.searchTermsVideos.value;
+	
+			document.formSearchTermsKentLINK.searchTermsKentLINK.value = thisSearchTerm;
+			document.formSearchTermsKeyword.find_request_1.value = thisSearchTerm;
+			<!--document.aspnetForm.ctl00$ctl00$BaseFindField$FindField$ctl00$guidedFields$fieldRepeater$ctl01$SearchTerm.value = thisSearchTerm;-->
+			document.formSearchTermsGoogleScholar.q.value = thisSearchTerm;
+			document.formSearchTermsVideos.searchTermsVideos.value = thisSearchTerm;
+			document.formSearchTermsWebSite.searchTermsWebSite.value = thisSearchTerm;
+
+		}			
+
+	}	
+	function storeSearchWebSite() {
+		
+		if (document.formSearchTermsWebSite.searchTermsWebSite.value != "") {
+		
+			var thisSearchTerm = document.formSearchTermsWebSite.searchTermsWebSite.value;
+	
+			document.formSearchTermsKentLINK.searchTermsKentLINK.value = thisSearchTerm;
+			document.formSearchTermsKeyword.find_request_1.value = thisSearchTerm;
+			<!--document.aspnetForm.ctl00$ctl00$BaseFindField$FindField$ctl00$guidedFields$fieldRepeater$ctl01$SearchTerm.value = thisSearchTerm;-->
+			document.formSearchTermsGoogleScholar.q.value = thisSearchTerm;
+			document.formSearchTermsVideos.searchTermsVideos.value = thisSearchTerm;
+			document.formSearchTermsWebSite.searchTermsWebSite.value = thisSearchTerm;
+
+		}			
+
+	}
+
+	if (document.graphics) 
+	{
+	   img1 = new Image();
+	   img2 = new Image();
+	   img3 = new Image();
+	   img4 = new Image();
+	   img1.src = "../graphics/ask_a_librarian_over.jpg";
+	   img2.src = "../graphics/bg_search_tabs_databases.jpg"
+	   img3.src = "../graphics/bg_search_tabs_googlescholar.jpg"
+	   img3.src = "../graphics/bg_search_tabs_videos.jpg"
+	   img4.src = "../graphics/bg_search_tabs_site.jpg"
+	}
+
+
+	
+	
+	
+	
+	function getInternetExplorerVersion()
+	// Returns the version of Internet Explorer or a -1
+	// (indicating the use of another browser).
+	{
+	  var rv = -1; // Return value assumes failure.
+	  if (navigator.appName == 'Microsoft Internet Explorer')
+	  {
+		var ua = navigator.userAgent;
+		var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+		if (re.exec(ua) != null)
+		  rv = parseFloat( RegExp.$1 );
+	  }
+	  return rv;
+	}
+	function checkVersion()
+	{
+	  var msg = "";
+	  var ver = getInternetExplorerVersion();
+	
+	  if ( ver > -1 )
+	  {
+		if (( ver 
+
+<!-- overLIB (c) Erik Bosrup -->
+
+
+
+
+
+
+
+    
+
+
+
+
+	$(function(){
+
+		$('#carousel').infiniteCarousel({
+			displayProgressBar: 0,
+			displayThumbnailBackground: 0,
+			textholderHeight: .123
+		});
+		
+
+	});
+
+
+
+
+
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</FONT></U>
+
+	[INLINE]
+	
+		<U><FONT COLOR=blue><P>Kent State University</P></FONT></U>
+				<U><FONT COLOR=blue>[Text Only]Text Only</FONT></U>
+		<U><FONT COLOR=blue>[Print with Links]Print w/ Links</FONT></U>
+		
+			<U><FONT COLOR=blue>A</FONT></U>
+			<U><FONT COLOR=blue>A</FONT></U>
+			<U><FONT COLOR=blue>A</FONT></U>
+		
+				<U><FONT COLOR=blue><P>University Libraries</P></FONT></U>
+		
+			<UL>
+								<LI><U><FONT COLOR=blue>Home</FONT></U></LI>
+				<LI>|</LI>
+				<LI><U><FONT COLOR=blue>Research</FONT></U></LI>
+				<LI>|</LI>
+				<LI><U><FONT COLOR=blue>Services</FONT></U></LI>
+				<LI>|</LI>
+				<LI><U><FONT COLOR=blue>About Us</FONT></U></LI>
+				<LI>|</LI>
+				<LI><U><FONT COLOR=blue>Help</FONT></U></LI>
+				<LI>|</LI>
+				<LI><U><FONT COLOR=blue>Contact Us</FONT></U></LI>
+				<LI>|</LI>
+				<LI><U><FONT COLOR=blue>Search</FONT></U></LI>
+				<LI>|</LI>
+				<LI><U><FONT COLOR=blue>Site Index</FONT></U></LI>
+				<LI>|</LI>
+				<LI><U><FONT COLOR=blue>My Library Account</FONT></U></LI>
+				<!--<li class="last"><a href="https://www.library.kent.edu/personal" title="Personal">Personal</a></li>-->
+							</UL>
+		
+	
+	
+		
+			<FORM>
+				<SELECT NAME="jumpMenu">
+					<OPTION VALUE="#" SELECTED>Quick jump to... </OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10000">UL Home Page </OPTION>
+					<OPTION VALUE="https://kentlink.kent.edu/patroninfo">My Library Account</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10006">Contact Us</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/5019">Hours</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10004">Locations &amp; Directions</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10847">Student Jobs</OPTION>
+					<OPTION VALUE="#">-----------------------</OPTION>
+					<OPTION VALUE="#">Research:</OPTION>
+					<OPTION VALUE="http://kentlink.kent.edu/">&nbsp;&nbsp;KentLINK</OPTION>
+					<OPTION VALUE="http://www.ohiolink.edu/">&nbsp;&nbsp;OhioLINK</OPTION>
+					<OPTION VALUE="http://reserves.library.kent.edu/">&nbsp;&nbsp;Electronic Reserves (ERes)</OPTION>
+					<!--<option value="http://www.library.kent.edu/ill_8campus.php">&nbsp;&nbsp;ILLiad</option>-->
+					<OPTION VALUE="https://kent.illiad.oclc.org/illiad/logon.html">&nbsp;&nbsp;ILLiad</OPTION>
+					<OPTION VALUE="http://qk8mu7jr6k.search.serialssolutions.com/">&nbsp;&nbsp;Journal Finder</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10679">&nbsp;&nbsp;Multimedia</OPTION>
+					<OPTION VALUE="http://kentlink.kent.edu/search/r">&nbsp;&nbsp;Reserves</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10300">&nbsp;&nbsp;Special Collections</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10300">&nbsp;&nbsp;&nbsp;&nbsp;&amp; Archives</OPTION>
+					<OPTION VALUE="#">-----------------------</OPTION>
+					<OPTION VALUE="#">Services/Depts</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10337">&nbsp;&nbsp;Administration</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10506">&nbsp;&nbsp;Architecture Library</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10398">&nbsp;&nbsp;Audiovisual Services</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10175">&nbsp;&nbsp;Campus Copy Connection</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10569">&nbsp;&nbsp;Chemistry/Physics Library</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10266">&nbsp;&nbsp;Circulation</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10143">&nbsp;&nbsp;Collection Development</OPTION>
+					<!--<option value="http://www.library.kent.edu/page/10547">&nbsp;&nbsp;Design Solutions</option>-->
+					<OPTION VALUE="http://www.library.kent.edu/page/10547">&nbsp;&nbsp;Communications Office</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10846">&nbsp;&nbsp;Engraving Services</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10507">&nbsp;&nbsp;Fashion Library</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10056">&nbsp;&nbsp;Interlibrary Loan</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10473">&nbsp;&nbsp;Map Library</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10752">&nbsp;&nbsp;Mathematics &amp; Computer</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10752">&nbsp;&nbsp;&nbsp;&nbsp; Sciences Library</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10678">&nbsp;&nbsp;Media Services</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10030">&nbsp;&nbsp;Performing Arts Library</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10254">&nbsp;&nbsp;Periodical Services</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10175">&nbsp;&nbsp;Public Copy Services</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10723">&nbsp;&nbsp;Reference &amp;</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10723">&nbsp;&nbsp;&nbsp;&nbsp; Instructional Services</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10286">&nbsp;&nbsp;Regional Campus Libraries</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10241">&nbsp;&nbsp;Reserve Services</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10016">&nbsp;&nbsp;Student Multimedia Studio</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10300">&nbsp;&nbsp;Special Collections</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10300">&nbsp;&nbsp;&nbsp;&nbsp;&amp; Archives</OPTION>
+				</SELECT>
+			</FORM>
+		
+		
+						<!--<a href="cleancrumbs.php">Home</a>-->			
+		
+		[INLINE]
+		
+			<U><FONT COLOR=blue><P>Ask A Librarian</P></FONT></U>
+		
+	
+		
+	
+		$(document).ready(function() {
+			
+			//$("#arrowLeft").hide();
+			//$("#arrowRight").hide();
+			
+			//$("#carousel > ul > li").hover(function(){
+			/*
+			$("#carousel > div").hover(function(){
+				$("#arrowLeft").toggle();
+				$("#arrowRight").toggle();
+				$(".buttonPause").toggle();
+				$(".buttonPlay").toggle();
+			});
+			*/
+			
+			/*
+			$(".navHider").hide();
+			
+			$("#carousel > ul > li").hover(function(){
+				$(".navHider").toggle();
+			});
+			*/
+			
+			/*
+	
+			$(document).ready(function() {
+				$('.carouselThumbs').click(function(){
+					
+					var transitionSpeed = 1500;
+					var displayTime = 6000;
+					var clearInt=setInterval(function(){anim('next');},displayTime+transitionSpeed);
+					$('#leftCol').css("border","1px solid lime");
+					
+				})
+			})
+			
+			*/
+			
+			
+			
+		})
+		
+	
+	<TABLE>
+	<TR>
+							
+					
+		<TD>
+									
+					<H1>
+  Related Links
+</H1>
+<P>
+  <U><FONT COLOR=blue>Faculty/Staff Directory - &#160;By department</FONT></U>
+</P>
+<P>
+  <U><FONT COLOR=blue>Hours</FONT></U>
+</P>		</TD>
+							<TD>
+				<H1>
+  Faculty/Staff Directory - By Name
+</H1>			
+			
+			<TABLE>
+	
+			
+			
+<TR>
+<TH>Name&nbsp;</TH>
+<TH>Title&nbsp;</TH>
+<TH>Department&nbsp;</TH>
+</TR>
+
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Wendy Adkins</P></FONT></U></TD>
+  <TD><P>Library Associate</P></TD>
+  <TD><P>East Liverpool Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Diana Awad Scrocco</P></FONT></U></TD>
+  <TD><P></P>&nbsp;</TD>
+  <TD><P>Writing Commons</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Ron Bammerlin</P></FONT></U></TD>
+  <TD><P>Sr. Fiscal Manager</P></TD>
+  <TD><P>Business Services</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Ron Bammerlin</P></FONT></U></TD>
+  <TD><P>Sr. Fiscal Manager</P></TD>
+  <TD><P>Administration</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Tollie Banker</P></FONT></U></TD>
+  <TD><P></P>&nbsp;</TD>
+  <TD><P>Tuscarawas Campus Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Jessica Bartell</P></FONT></U></TD>
+  <TD><P>Associate Business Analyst</P></TD>
+  <TD><P>Business Services</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Jessica Bartell</P></FONT></U></TD>
+  <TD><P>Associate Business Analyst</P></TD>
+  <TD><P>Administration</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Teresa Bates</P></FONT></U></TD>
+  <TD><P>Clerical Specialist</P></TD>
+  <TD><P>Ashtabula Campus Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Mary Birtalan</P></FONT></U></TD>
+  <TD><P>Library Associate</P></TD>
+  <TD><P>Stark Campus Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Michael Bobak</P></FONT></U></TD>
+  <TD><P></P>&nbsp;</TD>
+  <TD><P>Rootstown Depository</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Philip Botta</P></FONT></U></TD>
+  <TD><P></P>&nbsp;</TD>
+  <TD><P>Classroom Services</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>James Bracken</P></FONT></U></TD>
+  <TD><P>Dean and Professor</P></TD>
+  <TD><P>Administration</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Kenneth Burhanna</P></FONT></U></TD>
+  <TD><P>Head, Instructional Services Librarian</P></TD>
+  <TD><P>Reference &amp; Instructional Services</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>David Burkhart</P></FONT></U></TD>
+  <TD><P>student asst</P></TD>
+  <TD><P>Classroom Services</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Dianne Centa</P></FONT></U></TD>
+  <TD><P>Senior Library Associate</P></TD>
+  <TD><P>Gifts</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Dianne Centa</P></FONT></U></TD>
+  <TD><P>Senior Library Associate</P></TD>
+  <TD><P>Serials</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Joe Clark</P></FONT></U></TD>
+  <TD><P>Head, Performing Arts Library</P></TD>
+  <TD><P>Performing Arts Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Anita Clary</P></FONT></U></TD>
+  <TD><P>Senior Secretary</P></TD>
+  <TD><P>Reference &amp; Instructional Services</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Marsha Cole</P></FONT></U></TD>
+  <TD><P>Senior Library Associate</P></TD>
+  <TD><P>Architecture Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Deborah Coltrin</P></FONT></U></TD>
+  <TD><P>Senior Library Assistant</P></TD>
+  <TD><P>Tuscarawas Campus Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Roger Davis</P></FONT></U></TD>
+  <TD><P>Serials Librarian</P></TD>
+  <TD><P>Stark Campus Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Kevin Deemer</P></FONT></U></TD>
+  <TD><P>Library Director, Regional Campus</P></TD>
+  <TD><P>Ashtabula Campus Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Brooke Didonato</P></FONT></U></TD>
+  <TD><P></P>&nbsp;</TD>
+  <TD><P>Classroom Services</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Kay Downey</P></FONT></U></TD>
+  <TD><P>Collection Management Librarian</P></TD>
+  <TD><P>Collection Development</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Vanessa Earp</P></FONT></U></TD>
+  <TD><P>Education Librarian</P></TD>
+  <TD><P>Reference &amp; Instructional Services</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Dave Elswick</P></FONT></U></TD>
+  <TD><P>OhioLINK Contact</P></TD>
+  <TD><P>Circulation</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Penny Englehart</P></FONT></U></TD>
+  <TD><P>Audio Visual Supervisor</P></TD>
+  <TD><P>Classroom Services</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Penny Englehart</P></FONT></U></TD>
+  <TD><P>Audio Visual Supervisor</P></TD>
+  <TD><P>Map Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Penny Englehart</P></FONT></U></TD>
+  <TD><P>Audio Visual Supervisor</P></TD>
+  <TD><P>Acquisitions</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Amanda Evans</P></FONT></U></TD>
+  <TD><P>Senior Library Associate</P></TD>
+  <TD><P>Performing Arts Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Amanda Evans</P></FONT></U></TD>
+  <TD><P>Senior Library Associate</P></TD>
+  <TD><P>Cataloging</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Amanda Faehnel</P></FONT></U></TD>
+  <TD><P>Public Services Librarian</P></TD>
+  <TD><P>Special Collections &amp; Archives</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Paul Fehrmann</P></FONT></U></TD>
+  <TD><P>Reference, Instruction, and Collection Development Librarian</P></TD>
+  <TD><P>Reference &amp; Instructional Services</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>David Gaj</P></FONT></U></TD>
+  <TD><P>Senior Applications Developer</P></TD>
+  <TD><P>UL Systems</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Tom Gates</P></FONT></U></TD>
+  <TD><P>Head, Architecture and Fashion Libraries</P></TD>
+  <TD><P>Architecture Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Tom Gates</P></FONT></U></TD>
+  <TD><P>Head, Architecture and Fashion Libraries</P></TD>
+  <TD><P>Fashion Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Julie Gedeon</P></FONT></U></TD>
+  <TD><P>Coordinator of Assessment</P></TD>
+  <TD><P>Reference &amp; Instructional Services</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Sue Giles</P></FONT></U></TD>
+  <TD><P>Bindery Supervisor</P></TD>
+  <TD><P>Bindery</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Cara Gilgenbach</P></FONT></U></TD>
+  <TD><P>Head, Special Collections and Archives</P></TD>
+  <TD><P>Special Collections &amp; Archives</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>James Godfrey</P></FONT></U></TD>
+  <TD><P>Senior IT User Support Analyst</P></TD>
+  <TD><P>UL Systems</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Rochelle Gray</P></FONT></U></TD>
+  <TD><P>Senior Library Associate</P></TD>
+  <TD><P>Chemistry/Physics Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Rochelle Gray</P></FONT></U></TD>
+  <TD><P>Senior Library Associate</P></TD>
+  <TD><P>Serials</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Rose Guerrieri</P></FONT></U></TD>
+  <TD><P>Library Director R C</P></TD>
+  <TD><P>Trumbull Campus Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Sharon Hackett</P></FONT></U></TD>
+  <TD><P>Serials/ ERM Librarian</P></TD>
+  <TD><P>Collection Development</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Jean Hawley</P></FONT></U></TD>
+  <TD><P>Senior Library Assistant</P></TD>
+  <TD><P>Stark Campus Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Marge Hayden</P></FONT></U></TD>
+  <TD><P>Library Associate</P></TD>
+  <TD><P>Interlibrary Loan</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Felicia Hazen</P></FONT></U></TD>
+  <TD><P>Library Associate</P></TD>
+  <TD><P>Serials</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Mary Hricko</P></FONT></U></TD>
+  <TD><P>Library Director, Regional Campus</P></TD>
+  <TD><P>Geauga Campus Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>S. Hussain</P></FONT></U></TD>
+  <TD><P>Sr. Electronic Technician</P></TD>
+  <TD><P>Classroom Services</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Christine Isenberg</P></FONT></U></TD>
+  <TD><P>Director of Advancement</P></TD>
+  <TD><P>Administration</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Rob Kairis</P></FONT></U></TD>
+  <TD><P>Library Director, Regional Campus</P></TD>
+  <TD><P>Stark Campus Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Hilary Kennedy</P></FONT></U></TD>
+  <TD><P>Media Specialist</P></TD>
+  <TD><P>Communications Office</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Maureen Kilcullen</P></FONT></U></TD>
+  <TD><P>Reference Librarian</P></TD>
+  <TD><P>Stark Campus Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Ian Klinger</P></FONT></U></TD>
+  <TD><P></P>&nbsp;</TD>
+  <TD><P>Classroom Services</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Tom Klingler</P></FONT></U></TD>
+  <TD><P>Assistant Dean, Technical Services</P></TD>
+  <TD><P>Administration</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Michael Kreyche</P></FONT></U></TD>
+  <TD><P>Systems Librarian</P></TD>
+  <TD><P>UL Systems</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Cindy Kristof</P></FONT></U></TD>
+  <TD><P>Head, Access Services</P></TD>
+  <TD><P>Access Services</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Lilith Kunkel</P></FONT></U></TD>
+  <TD><P>Library Director, Regional Campus</P></TD>
+  <TD><P>Salem Campus Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Susan Lacy</P></FONT></U></TD>
+  <TD><P>Accounting Specialist</P></TD>
+  <TD><P>Business Services</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Joy Leavy</P></FONT></U></TD>
+  <TD><P>Senior Library Associate</P></TD>
+  <TD><P>Reference &amp; Instructional Services</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Clare Leibfarth</P></FONT></U></TD>
+  <TD><P>Reference and Instruction Librarian</P></TD>
+  <TD><P>Reference &amp; Instructional Services</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Pam Lemmons</P></FONT></U></TD>
+  <TD><P>Secretary/Student Employment Coordinator</P></TD>
+  <TD><P>Administration</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Pam Lemmons</P></FONT></U></TD>
+  <TD><P>Secretary/Student Employment Coordinator</P></TD>
+  <TD><P>Reference &amp; Instructional Services</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Erica Lilly</P></FONT></U></TD>
+  <TD><P>Head, Chemistry/Physics Library</P></TD>
+  <TD><P>Chemistry/Physics Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Peter H. Lisius</P></FONT></U></TD>
+  <TD><P>Music and Media Cataloging Librarian</P></TD>
+  <TD><P>Cataloging</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Peter H. Lisius</P></FONT></U></TD>
+  <TD><P>Music and Media Cataloging Librarian</P></TD>
+  <TD><P>Performing Arts Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Mary Lovin</P></FONT></U></TD>
+  <TD><P>Administrative Assistant</P></TD>
+  <TD><P>Administration</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Sarah Markowitz</P></FONT></U></TD>
+  <TD><P></P>&nbsp;</TD>
+  <TD><P>Mail Room</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Sarah Markowitz</P></FONT></U></TD>
+  <TD><P></P>&nbsp;</TD>
+  <TD><P>Acquisitions</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Shelley Marshall</P></FONT></U></TD>
+  <TD><P>Lead IT User Support Analyst</P></TD>
+  <TD><P>Geauga Campus Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Anita Martin</P></FONT></U></TD>
+  <TD><P>Library Associate</P></TD>
+  <TD><P>Serials</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Andy Martineau</P></FONT></U></TD>
+  <TD><P>Lead IT User Support Analyst</P></TD>
+  <TD><P>UL Systems</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Margaret Maurer</P></FONT></U></TD>
+  <TD><P>Head, Catalog &amp; Metadata</P></TD>
+  <TD><P>Cataloging</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Diane May</P></FONT></U></TD>
+  <TD><P>Senior Library Associate</P></TD>
+  <TD><P>Interlibrary Loan</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Sevim McCutcheon</P></FONT></U></TD>
+  <TD><P>Catalog Librarian</P></TD>
+  <TD><P>Cataloging</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Rhenee McGraw-Harris</P></FONT></U></TD>
+  <TD><P>Library Associate</P></TD>
+  <TD><P>Acquisitions</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Marsha McMullen</P></FONT></U></TD>
+  <TD><P>Acquisitions</P></TD>
+  <TD><P>Acquisitions</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Marsha McMullen</P></FONT></U></TD>
+  <TD><P>Acquisitions</P></TD>
+  <TD><P>Mail Room</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Kate Siebert-Medicus</P></FONT></U></TD>
+  <TD><P>Special Collections Cataloger</P></TD>
+  <TD><P>Special Collections &amp; Archives</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Anita Miller</P></FONT></U></TD>
+  <TD><P>Accounts Payable Specialist</P></TD>
+  <TD><P>Business Services</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Anita Miller</P></FONT></U></TD>
+  <TD><P>Accounts Payable Specialist</P></TD>
+  <TD><P>Acquisitions</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Anita Miller</P></FONT></U></TD>
+  <TD><P>Accounts Payable Specialist</P></TD>
+  <TD><P>Serials</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Gary Mote</P></FONT></U></TD>
+  <TD><P>Head, Multimedia Services</P></TD>
+  <TD><P>Student Multimedia Studio</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Stuart Moye</P></FONT></U></TD>
+  <TD><P>Library Associate</P></TD>
+  <TD><P>Mail Room</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Stuart Moye</P></FONT></U></TD>
+  <TD><P>Library Associate</P></TD>
+  <TD><P>Circulation</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>John Nader Sr</P></FONT></U></TD>
+  <TD><P></P>&nbsp;</TD>
+  <TD><P>Classroom Services</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Robert Opper</P></FONT></U></TD>
+  <TD><P>Circulation Manager</P></TD>
+  <TD><P>Circulation</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Patricia Orlando</P></FONT></U></TD>
+  <TD><P>Receiving/Searching</P></TD>
+  <TD><P>Acquisitions</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Deborah Osborne</P></FONT></U></TD>
+  <TD><P>Bindery Services</P></TD>
+  <TD><P>Bindery</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Harry L. Packard</P></FONT></U></TD>
+  <TD><P></P>&nbsp;</TD>
+  <TD><P>Trumbull Campus Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Roman Panchyshyn</P></FONT></U></TD>
+  <TD><P>Catalog Librarian</P></TD>
+  <TD><P>Cataloging</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Amey Park</P></FONT></U></TD>
+  <TD><P>Database Maintenance Librarian</P></TD>
+  <TD><P>Cataloging</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Stephen Paschen</P></FONT></U></TD>
+  <TD><P>University Archivist</P></TD>
+  <TD><P>Special Collections &amp; Archives</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Christin Perkins</P></FONT></U></TD>
+  <TD><P>Library Assistant</P></TD>
+  <TD><P>Trumbull Campus Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Mark Pike</P></FONT></U></TD>
+  <TD><P>Assistant Dean, Administration</P></TD>
+  <TD><P>Administration</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Barbara Potts</P></FONT></U></TD>
+  <TD><P></P>&nbsp;</TD>
+  <TD><P>Stark Campus Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Elizabeth Priebe</P></FONT></U></TD>
+  <TD><P></P>&nbsp;</TD>
+  <TD><P>Classroom Services</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Jason Prufer</P></FONT></U></TD>
+  <TD><P>Library Associate</P></TD>
+  <TD><P>Circulation</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Carolyn Radcliff</P></FONT></U></TD>
+  <TD><P>Reference and Instruction Librarian</P></TD>
+  <TD><P>Reference &amp; Instructional Services</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Jeff Remley</P></FONT></U></TD>
+  <TD><P>Applications Developer</P></TD>
+  <TD><P>UL Systems</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Cassandra Ribita</P></FONT></U></TD>
+  <TD><P>Audio Visual Assistant</P></TD>
+  <TD><P>Classroom Services</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Cassandra Ribita</P></FONT></U></TD>
+  <TD><P>Audio Visual Assistant</P></TD>
+  <TD><P>Circulation</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Jennifer Rice</P></FONT></U></TD>
+  <TD><P>Serials &amp; Electronic Resources</P></TD>
+  <TD><P>Serials</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Maegan Richards</P></FONT></U></TD>
+  <TD><P></P>&nbsp;</TD>
+  <TD><P>Salem Campus Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Elizabeth Richardson</P></FONT></U></TD>
+  <TD><P>Manager, Interlibrary Loan</P></TD>
+  <TD><P>Access Services</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Elizabeth Richardson</P></FONT></U></TD>
+  <TD><P>Manager, Interlibrary Loan</P></TD>
+  <TD><P>Periodical Services</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Elizabeth Richardson</P></FONT></U></TD>
+  <TD><P>Manager, Interlibrary Loan</P></TD>
+  <TD><P>Serials</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Elizabeth Richardson</P></FONT></U></TD>
+  <TD><P>Manager, Interlibrary Loan</P></TD>
+  <TD><P>Circulation</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Kara Robinson</P></FONT></U></TD>
+  <TD><P>Reference and Instruction Librarian</P></TD>
+  <TD><P>Reference &amp; Instructional Services</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Karen Ronga</P></FONT></U></TD>
+  <TD><P>Library Associate</P></TD>
+  <TD><P>Reserves</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Cindy Rottenborn</P></FONT></U></TD>
+  <TD><P>Library Associate</P></TD>
+  <TD><P>Salem Campus Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Amy Royer</P></FONT></U></TD>
+  <TD><P>Library Assistant</P></TD>
+  <TD><P>Trumbull Campus Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Judy Scalf</P></FONT></U></TD>
+  <TD><P>Manager, Library Depository</P></TD>
+  <TD><P>Rootstown Depository</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Edith Scarletto</P></FONT></U></TD>
+  <TD><P>Head, Map Library; Liaison Librarian for Geography and Geology</P></TD>
+  <TD><P>Map Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Barbara Schloman</P></FONT></U></TD>
+  <TD><P>Associate Dean, Public Services</P></TD>
+  <TD><P>Administration</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Jamie Seeholzer</P></FONT></U></TD>
+  <TD><P>Assistant Professor</P></TD>
+  <TD><P>Reference &amp; Instructional Services</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Edith Serkownek</P></FONT></U></TD>
+  <TD><P>Fashion/Special Collections Librarian</P></TD>
+  <TD><P>Fashion Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Edith Serkownek</P></FONT></U></TD>
+  <TD><P>Fashion/Special Collections Librarian</P></TD>
+  <TD><P>Special Collections &amp; Archives</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Kelly Shook</P></FONT></U></TD>
+  <TD><P>Senior Applications Support Analyst</P></TD>
+  <TD><P>UL Systems</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Jeanne Smith</P></FONT></U></TD>
+  <TD><P></P>&nbsp;</TD>
+  <TD><P>Writing Commons</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Diane Sperko</P></FONT></U></TD>
+  <TD><P>Communications and Marketing  Director</P></TD>
+  <TD><P>Communications Office</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Melissa Spohn</P></FONT></U></TD>
+  <TD><P>Head, Acquisitions and Serials</P></TD>
+  <TD><P>Acquisitions</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Adam Steele</P></FONT></U></TD>
+  <TD><P>Library Associate</P></TD>
+  <TD><P>Circulation</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Bethany Tackett</P></FONT></U></TD>
+  <TD><P>Library Associate</P></TD>
+  <TD><P>Ashtabula Campus Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Joshua Talbott</P></FONT></U></TD>
+  <TD><P>AudioVisual Assistant - *Temp</P></TD>
+  <TD><P>Classroom Services</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Amy Thomas</P></FONT></U></TD>
+  <TD><P>Library Director</P></TD>
+  <TD><P>Ashtabula Campus Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Elizabeth Traina</P></FONT></U></TD>
+  <TD><P>Graphic Designer</P></TD>
+  <TD><P>Special Collections &amp; Archives</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Christina Ughrin</P></FONT></U></TD>
+  <TD><P>Statistical Consulting and Business Outreach Manager</P></TD>
+  <TD><P>Reference &amp; Instructional Services</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Tammy Eschedor-Voelker</P></FONT></U></TD>
+  <TD><P>Reference and Instruction Librarian</P></TD>
+  <TD><P>Reference &amp; Instructional Services</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Megan Walker</P></FONT></U></TD>
+  <TD><P>Library Associate</P></TD>
+  <TD><P>Circulation</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Thomas Warren</P></FONT></U></TD>
+  <TD><P>Reference Center Manager</P></TD>
+  <TD><P>Reference &amp; Instructional Services</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Susan Weaver</P></FONT></U></TD>
+  <TD><P>Director of Library Services</P></TD>
+  <TD><P>East Liverpool Library</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Rick Wiggins</P></FONT></U></TD>
+  <TD><P>Lead Applications Developer</P></TD>
+  <TD><P>UL Systems</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Paula Wright</P></FONT></U></TD>
+  <TD><P>Serials Manager</P></TD>
+  <TD><P>Serials</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Weiping Zhang</P></FONT></U></TD>
+  <TD><P>Government Documents Librarian</P></TD>
+  <TD><P>Government Information Services</P></TD>
+</TR>
+<TR>
+  <TD></FONT></U><U><FONT COLOR=blue><P>Weiping Zhang</P></FONT></U></TD>
+  <TD><P>Government Documents Librarian</P></TD>
+  <TD><P>Map Library</P></TD>
+</TR>
+</TABLE>
+
+
+			</TD>
+						
+							</TR>
+	</TABLE>
+
+			
+	
+		<UL>
+			<LI><U><FONT COLOR=blue>Home</FONT></U></LI>
+
+			<LI><U><FONT COLOR=blue>Research</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>Services</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>About Us</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>Help</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>Contact Us</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>Search</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>Site Index</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>My Library Account</FONT></U></LI>
+			<!--<li class="last"><a href="https://www.library.kent.edu/personal" title="Personal">Personal</a></li>-->
+		</UL>
+    
+	
+		<H1>Icon Legend/Key:</H1>
+		<UL>
+			<LI><U><FONT COLOR=blue>[Off-Site Icon] Off-Site Link</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>[PDF File] PDF File</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>[Required Form Field] Required Form Field</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>[Add this Event to Your Calendar] Add this Event to Your Calendar</FONT></U></LI>
+			<!--
+			<li><a href="http://www.library.kent.edu/page/10853#siteSearchPage"><img src="http://www.library.kent.edu/graphics/icon_page_gray.gif" alt="Search Our Site: Page" width="15" height="13" border="0"> Search Our Site: Page Result</a></li>
+			<li><a href="http://www.library.kent.edu/page/10853#siteSearchResource"><img src="http://www.library.kent.edu/graphics/icon_resource_gray.gif" alt="Search Our Site: Resource" width="14" height="13" border="0"> Search Our Site: Resource Result</a></li>
+			-->
+		</UL>
+	
+	<P>This page may be found at:  http://www.library.kent.edu/directory</P>
+	
+		<P>Page last updated: 2010-03-30</P>
+		<P><U><FONT COLOR=blue>Privacy Statement</FONT></U></P>
+		<P>&copy;2003-2012 University Libraries</P>
+		<P><U><FONT COLOR=blue>Mobile Site</FONT></U></P>
+    
+	
+		<P>University Libraries</P>
+		<P>Main Library</P>
+		<P>1125 Risman Drive</P>
+		<P>Kent, OH 44242-0001</P>
+	
+	
+		<P><U><FONT COLOR=blue>Email this page...</FONT></U></P>
+		<!--<p class="emailFriend"></p>-->
+		<P>Questions or comments about this page?</P>
+		<P>
+		<U><FONT COLOR=blue>Contact Richard Wiggins</FONT></U></P>
+		  
+
+	
+	
+
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>

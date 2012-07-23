@@ -1,0 +1,366 @@
+
+<HTML><!-- InstanceBegin template="/Templates/main.dwt.php" codeOutsideHTMLIsLocked="false" -->
+<HEAD>
+		<META CONTENT="text/html; charset=utf-8">
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<TITLE>WSU Libraries</TITLE>
+	<!-- InstanceEndEditable -->
+	<META CONTENT="en-us">
+	<META NAME="keywords" CONTENT="Wayne State University, WSU, Library System, Libraries">
+	<META NAME="description" CONTENT="The online resources and services of the Wayne State University Libraries">
+	<META NAME="author" CONTENT="libwebmaster@wayne.edu">
+	<META NAME="Copyright" CONTENT="Copyright (c) 2012 Wayne State University">
+    
+	
+    
+	
+	
+	#main { background: #fff url('/inc/img/pix/pix2.jpg') 25px 50px repeat-y; }
+
+	<!--[if lte IE 7]><link rel="stylesheet" href="/inc/css/ie/all.css" type="text/css" media="all" /><![endif]-->
+	<!--[if lte IE 6]><link rel="stylesheet" href="/inc/css/ie/6.css" type="text/css" media="all" />
+    <script type="text/javascript" language="javascript" src="/inc/js/unitpngfix.js"></script><![endif]-->
+	<!--[if lte IE 5]><link rel="stylesheet" href="/inc/css/ie/5win.css" type="text/css" media="all" /><![endif]-->
+    
+    
+    
+    
+	document.write("#functionmenu { display: none; }");
+    
+	<!-- InstanceBeginEditable name="head" -->
+    
+	
+    
+	
+	  var tl;
+	  function onLoad() {
+	   var eventSource = new Timeline.DefaultEventSource(0);
+
+		 var bandInfos = [
+		   Timeline.createBandInfo({
+			   width:          "100%", 
+			   intervalUnit:   Timeline.DateTime.MONTH, 
+			   intervalPixels: 50,
+               eventSource:    eventSource,
+			   date:           "Dec 01 2009 00:00:00 GMT-0500"
+
+		   })
+		 ];
+		 tl = Timeline.create(document.getElementById("my-timeline"), bandInfos);
+		 tl.loadJSON("timeline.json.js?"+ (new Date().getTime()), function(json, url) {
+                eventSource.loadJSON(json, url);
+            });
+	   }
+	  
+	   var resizeTimerID = null;
+	   function onResize() {
+		   if (resizeTimerID == null) {
+			   resizeTimerID = window.setTimeout(function() {
+				   resizeTimerID = null;
+				   tl.layout();
+			   }, 500);
+		   }
+	   }
+
+	  $(document).ready(function() {
+		 onLoad();
+		 onResize();
+	  });
+
+    
+    	#my-timeline { margin: 0px 10px; } 
+	<!-- InstanceEndEditable -->
+	 
+    
+        
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+	
+    
+    
+    	<!-- NOTE: LOGGING INTO PIPELINE, BLACKBOARD OR WEBMAIL ALSO LOGS USER INTO EZPROXY -->
+
+  
+      <U><FONT COLOR=blue>Pipeline</FONT></U>
+      | <U><FONT COLOR=blue>Blackboard</FONT></U>
+      | <U><FONT COLOR=blue>Webmail</FONT></U>
+  
+  
+  <U><FONT COLOR=blue>My Library Account</FONT></U>
+    
+
+
+
+
+	
+	<P><U><FONT COLOR=blue>Wayne State University</FONT></U></P>
+    
+    
+    <UL>
+    <LI><U><FONT COLOR=blue>Library System</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Neef Law Library</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Shiffman Medical Library</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>More</FONT></U></LI>
+    </UL>
+    
+ <!-- #header --> 		
+		
+        
+            
+            
+            <H1><U><FONT COLOR=blue>Library System</FONT></U></H1>
+      
+                        <UL>
+              <LI><U><FONT COLOR=blue>Resources</FONT></U>
+              <UL>
+              	<LI><U><FONT COLOR=blue>All Resources</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Catalog</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Article Databases</FONT></U></LI>
+                 <LI><U><FONT COLOR=blue>Digital Collections</FONT></U></LI>
+                 <!-- test to increase visibility of Dig Commons Apr22 JM -->
+                 <LI><U><FONT COLOR=blue>Digital Commons</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>E-Books</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>E-Journals</FONT></U></LI>
+				
+              	<LI><U><FONT COLOR=blue>Guides</FONT></U></LI>
+                			<LI><U><FONT COLOR=blue>Reference Tools</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Special Collections</FONT></U></LI>
+								              </UL></LI>
+              <LI><U><FONT COLOR=blue>Services</FONT></U>
+              <UL>
+              	<LI><U><FONT COLOR=blue>All Services</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Ask-A-Librarian</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Borrowing</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Classroom Support</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Computing</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Events Support</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Faculty/Grad Research Support</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Interlibrary Loan</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Instruction</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Reserves</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Room Reservations</FONT></U></LI>
+  </UL></LI>
+              <LI><U><FONT COLOR=blue>Library Info</FONT></U>
+              <UL>
+              	<LI><U><FONT COLOR=blue>All Information</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>About</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Contact Info/ Staff Directory</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Hours</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Maps and Directions</FONT></U></LI>
+       			<LI><U><FONT COLOR=blue>News</FONT></U>				</LI>				<LI><U><FONT COLOR=blue>Policies</FONT></U></LI>
+				              </UL></LI>
+              <LI><U><FONT COLOR=blue>Quicklinks</FONT></U>
+                <UL>
+                  <LI><U><FONT COLOR=blue>Alerting Services</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Assignment Planner</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Bibliographic Software</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Citation Linker</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Faculty Video Media Request</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>First Year Students</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Library Liaisons</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Office for Teaching and Learning</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Renew Books</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Request Equipment</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Retired Faculty</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>re:Search</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Student Technology Studio</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Suggest a Title</FONT></U></LI>
+                </UL>
+              </LI>
+            </UL>
+            <!-- #nav -->
+                 
+
+            
+<H1>WSU Libraries</H1> <!-- FOR PRINT -->
+			<!-- InstanceBeginEditable name="content" -->
+            
+            <H2>Journal Review</H2>
+            <UL>
+  <LI><U><FONT COLOR=blue>Journal Review</FONT></U></LI>
+  <LI><U><FONT COLOR=blue>About</FONT></U></LI>
+  <LI><U><FONT COLOR=blue>Letter from the Dean</FONT></U></LI>
+  <LI><U><FONT COLOR=blue>Goals and objectives</FONT></U></LI>
+  <LI><U><FONT COLOR=blue>Team members</FONT></U></LI>
+  <LI><U><FONT COLOR=blue>Journal Price Inflation</FONT></U></LI>
+  <LI><U><FONT COLOR=blue>Why bundles</FONT></U></LI>
+  <LI><U><FONT COLOR=blue>Industry Reports</FONT></U></LI>
+  <LI><U><FONT COLOR=blue>FAQ</FONT></U></LI>
+</UL>
+            <P>Thank you to everyone who participated in the Library System’s Journal Review. Contact your <U><FONT COLOR=blue>Liaison Librarian</FONT></U> with any questions or for more information about the Journal Review.</P>
+            <P>The <U><FONT COLOR=blue>A – Z list of all 6,000+ titles</FONT></U>.</P>
+            <P>Specific subject lists:<BR>
+              <U><FONT COLOR=blue>Anthropology</FONT></U><BR>
+              <U><FONT COLOR=blue>Art</FONT></U><BR>
+              <U><FONT COLOR=blue>Biology</FONT></U><BR>
+              <U><FONT COLOR=blue>Business</FONT></U><BR>
+              <U><FONT COLOR=blue>Chemistry</FONT></U><BR>
+              <U><FONT COLOR=blue>Communication Sciences &amp; Disorders</FONT></U><BR>
+              <U><FONT COLOR=blue>Communication, Journalism, Mass Media</FONT></U><BR>
+              <U><FONT COLOR=blue>Criminal Justice</FONT></U><BR>
+              <U><FONT COLOR=blue>Dance</FONT></U><BR>
+              <U><FONT COLOR=blue>Economics</FONT></U><BR>
+              <U><FONT COLOR=blue>Education</FONT></U><BR>
+              <U><FONT COLOR=blue>Engineering</FONT></U><BR>
+              <U><FONT COLOR=blue>English</FONT></U><BR>
+              <U><FONT COLOR=blue>Film Studies</FONT></U><BR>
+              <U><FONT COLOR=blue>General Humanities</FONT></U><BR>
+              <U><FONT COLOR=blue>General Science</FONT></U><BR>
+              <U><FONT COLOR=blue>Geology</FONT></U><BR>
+              <U><FONT COLOR=blue>Gerontology</FONT></U><BR>
+              <U><FONT COLOR=blue>Greek, Latin, Classics</FONT></U><BR>
+              <U><FONT COLOR=blue>History</FONT></U><BR>
+              <U><FONT COLOR=blue>Interdisciplinary</FONT></U><BR>
+              <U><FONT COLOR=blue>Law</FONT></U><BR>
+              <U><FONT COLOR=blue>Library Science</FONT></U><BR>
+              <U><FONT COLOR=blue>Linguistics</FONT></U><BR>
+              <U><FONT COLOR=blue>Mathematics</FONT></U><BR>
+              <U><FONT COLOR=blue>Medicine &amp; Allied Health</FONT></U><BR>
+              <U><FONT COLOR=blue>Modern Language &amp; Literature</FONT></U><BR>
+              <U><FONT COLOR=blue>Music</FONT></U><BR>
+              <U><FONT COLOR=blue>Nursing</FONT></U><BR>
+              <U><FONT COLOR=blue>Nutrition</FONT></U><BR>
+              <U><FONT COLOR=blue>Philosophy</FONT></U><BR>
+              <U><FONT COLOR=blue>Physics</FONT></U><BR>
+              <U><FONT COLOR=blue>Political Science</FONT></U><BR>
+              <U><FONT COLOR=blue>Psychology</FONT></U><BR>
+              <U><FONT COLOR=blue>Religion</FONT></U><BR>
+              <U><FONT COLOR=blue>Social Work</FONT></U><BR>
+              <U><FONT COLOR=blue>Sociology</FONT></U><BR>
+              <U><FONT COLOR=blue>Theater</FONT></U><BR>
+              <U><FONT COLOR=blue>Urban Studies</FONT></U><BR>
+            <U><FONT COLOR=blue>Women's Studies</FONT></U></P>
+            <!-- InstanceEndEditable -->
+<P><EM>WSU Libraries</EM><BR>
+
+						   3100 David Adamany Undergraduate Library<BR>
+
+						   5155 Gullen Mall<BR>
+
+						   Detroit, MI USA 48202<BR>
+
+						   (313) 577-4023 / 5525 - fax</P> <!-- FOR PRINT -->
+            <!-- #content -->
+		<!-- #main -->
+		
+		
+
+
+	
+    <P>
+    Follow us on:&nbsp;
+        <U><FONT COLOR=blue>
+        	[Follow waynestatelib on Twitter]</FONT></U>
+        <U><FONT COLOR=blue>
+        	[Follow waynestatelib on foursquare]</FONT></U>
+        <U><FONT COLOR=blue>[Follow wsuinst on YouTube]</FONT></U>
+  
+
+    </P>
+	<P>&copy;2009 - 2012 Wayne State University Board of Governors</P>
+	<UL>
+	<LI><U><FONT COLOR=blue>Suggestions</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Privacy</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Acceptable Use</FONT></U></LI>
+	</UL>
+    <FORM>
+    <INPUT VALUE="utf-8" NAME="ie" TYPE="hidden">
+    <INPUT VALUE="utf-8" NAME="oe" TYPE="hidden">
+    <INPUT VALUE="" NAME="q" TYPE="text"><BR>
+    <P><INPUT VALUE="www.lib.wayne.edu" NAME="domains" TYPE="hidden"><INPUT VALUE="" NAME="sitesearch" TYPE="radio"><INPUT VALUE="www.lib.wayne.edu" NAME="sitesearch" CHECKED="checked" TYPE="radio"></P>
+    <P><INPUT VALUE="Search this site" NAME="btnG" TYPE="submit"> <U><FONT COLOR=blue>Sitemap</FONT></U></P>
+    </FORM>
+    <UL>
+    <LI><U><FONT COLOR=blue>View Mobile Site</FONT></U></LI>
+    </UL>	
+    
+	
+	
+	<UL>
+	<LI>Libraries</LI>
+	<LI><U><FONT COLOR=blue>University Libraries</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Shiffman Medical Library</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Arthur Neef Law Library</FONT></U></LI>
+	</UL>
+	<UL>
+	<LI>Associated Programs</LI>
+	<LI><U><FONT COLOR=blue>DALNET</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>School of Library and<BR>Information Science</FONT></U></LI>
+	</UL>
+	
+	<UL>
+	<LI>Library Information</LI>
+	<LI><U><FONT COLOR=blue>About</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Contact Info/ Staff Directory</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Hours</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Maps and Directions</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>News</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Policies</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Neef Staff Responsibilities</FONT></U></LI>
+	</UL>
+	
+	
+	
+	<UL>
+	<LI>Resources</LI>
+	<LI><U><FONT COLOR=blue>Catalog</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Article Databases</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Digital Collections</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>DigitalCommons@WSU</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>E-Books</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>E-Journals</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Guides</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Reference Tools</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Special Collections</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Citation Management Options</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Shiffman Mobile</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Shiffman Timesavers</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Neef CILP</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Neef Government Documents</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Neef Law Collections</FONT></U></LI>
+	</UL>
+	
+	<UL>
+	<LI>Sites &amp; Projects</LI>
+	<LI><U><FONT COLOR=blue>Chapbooks</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Hezy Shoshani Elephant Research</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>First Year Experience</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Jacob Lawrence Traveling Exhibition</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Journal Review</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>NCA Accreditation</FONT></U></LI>
+	</UL>
+
+	
+	
+	<UL>
+	<LI>Services</LI>
+	<LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Borrowing</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Computing</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Faculty/Graduate Research Support</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>ILL (Interlibrary Loan)</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Instruction</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Media</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Reserves</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Room Reservations</FONT></U></LI>
+	</UL>
+    
+    <UL>
+	<LI>Shiffman Health Information Outreach</LI>
+	<LI><U><FONT COLOR=blue>African-American Health Disparities</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Community Health Information Services</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Detroit Community AIDS Library</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Michigan Go Local</FONT></U></LI>
+    </UL>
+	
+
+
+<!-- #footer -->
+
+	<!-- #container --> 
+    &nbsp;     
+	<!-- #wrapper -->
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<!-- InstanceEnd --></HTML>

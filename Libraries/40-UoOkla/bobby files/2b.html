@@ -1,0 +1,953 @@
+
+<!-- Copyright (c) 2000  2009, SirsiDynix  Defines the head  body of each page. -->
+
+<!-- environment: WEBSEARCH, station's ENVN policy number: 21 -->
+<!-- Server version: 3.4.0.0 -->
+
+<HTML>
+<HEAD>
+<META NAME="viewport" CONTENT="width=device-width; initial-scale=1.0; maximum-scale=1.5; user-scalable=1;">
+
+  <META CONTENT="text/html; charset=utf-8">
+
+<!-- sirsidata sessionstate is 3 -->
+    <TITLE>Advanced Search</TITLE>
+
+
+<!-- Set the expiration date to the past so the page will always be reloaded -->
+
+  <!-- Not the login page -->
+
+
+
+
+
+
+
+
+
+  
+
+
+
+<!--
+browser_type = navigator.appVersion;
+if (navigator.appName.indexOf('Safari') != 1)
+{
+document.write('<link rel="stylesheet" href="/Css/custom_safari.css" type="text/css" />');
+}
+// -->
+
+
+
+</HEAD>
+<!-- Start the body of the document.  WARNING:  No comments are allowed inside of the body element's definition.  assign CSS Class of 'body_style' to tag   If this is a download search results state (14, 62), then load the results in a new browser window to facilitate printing.   If this is an Archive image view state (911), then open a new window to display the image in new window.   To help prevent premature selection of a toolbar button (i.e., before the new toolbar is loaded), clear it when the page is unloaded. -->
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+
+
+Your browser does not support JavaScript and this application utilizes JavaScript to build content and provide links to additional information. You should either enable JavaScript in your browser settings or use a browser that supports JavaScript in order to take full advantage of this application.
+
+
+
+<!-- Start Global Header -->
+    <U><FONT COLOR=blue>OU Home</FONT></U>
+    |
+    <U><FONT COLOR=blue>OU Libraries' Home</FONT></U>
+
+        <U><FONT COLOR=blue>Apply</FONT></U>
+	|
+        <U><FONT COLOR=blue>Campus Links</FONT></U>
+    
+    
+        <!-- End Global Header -->
+                <!-- START HEADER -->
+
+<!-- START MAIN HEADER -->
+    <U><FONT COLOR=blue>[OU Banner Logo]</FONT></U>
+    [MainHeaderGraphic1]
+    [MainHeaderGraphic2]
+    [MainHeaderGraphic3]
+<!-- END MAIN HEADER -->
+
+<!-- TOP MENU -->
+
+
+    <!-- START BOTTOM RED HEADER -->
+    <U><FONT COLOR=blue>[Ask Us]</FONT></U>
+    
+
+<!-- END BOTTOM RED HEADER -->
+                <!-- End Header -->
+<!--  Copyright (c) 2000  2010, SirsiDynix  Symphony Search Page; State #3 -->
+<!--  Copyright (c) 1996  2010, SirsiDynix Form for starting a new session in a new window. -->
+
+<!-- By setting the "document.new_session.action" property to the URL for logging into a new session at the particular  page you want, a new window will be opened and a new WebCat session will be started automatically. Remember that many WebCat states are dependent on previous states, so only certain "cgi types" can be opened.
+
+Also, by setting the "document.new_session.new_gateway_db.value" property to a gateway database name, the new session will use that gateway instead of the user's default gateway. Note that the use of Javascript is required to submit this form. -->
+
+<FORM>
+	
+		<INPUT VALUE="WEBSEARCH" NAME="user_id" TYPE="hidden">
+		<INPUT VALUE="" NAME="password" TYPE="hidden">
+	
+	<INPUT VALUE="" NAME="new_gateway_db" TYPE="hidden">
+</FORM>
+
+
+<!-- STARTTARDISSESSIONINFO /uhtbin/cgisirsi/?ps=zJLnxW2YKo/BIZZELL/319370063 ENDTARDISSESSIONINFO -->
+<!-- other info = /uhtbin/cgisirsi/?ps=u4279MdrKd/BIZZELL -->
+
+
+
+<!--  Copyright (c) 1996  2010, SirsiDynix  Gateway Root Bar. -->
+
+  <H2>Navigation Menu</H2>
+  <UL>
+    <!-- display text with CSS instead -->
+          <LI><U><FONT COLOR=blue>
+       Catalog Home</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>
+       Reserve Desk</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>
+       New Title Lists</FONT></U></LI>
+
+
+
+
+
+  </UL>
+
+
+<!--  Copyright (c) 2000  2010, SirsiDynix  Buttons for Catalog Access page, state #3. -->
+
+
+  <H2>Contextual Navigation Menu</H2>
+  <UL>
+    <LI>
+      <!-- Go back button --><U><FONT COLOR=blue>Go Back</FONT></U>
+    </LI>
+    <!--
+    <li class="menu_link">
+      <a href="/uhtbin/cgisirsi/?ps=UhYinuj1KW/BIZZELL/319370063/2/6" title="Go Back" alt="Go Back">GO BACK</a>
+    </li>
+     -->
+
+<!-- Help button -->
+		  <!-- use context HTML help -->
+<LI>
+  
+    //
+  
+</LI>
+
+  <!-- gateway's custom buttons -->
+
+    <LI><U><FONT COLOR=blue>Permalink</FONT></U></LI>
+
+
+    <LI><U><FONT COLOR=blue>Logout</FONT></U></LI>
+    <LI></FONT></U></LI>
+  </UL>
+
+
+
+  
+    
+      
+<!-- Some complication is added here because of the "more searches" button having to be inside of the "icon search" form.  So, if this is an "icon search, start the form here. -->
+
+  <!-- Print element's description if present, else print the heading -->
+      <H3>Advanced Search</H3>
+  <!-- Catalog Access destinations may either be of type Search, Browse, or Term Search -->
+<!-- Copyright (c) 1996  2010, SirsiDynix  Catalog Access  Search form (for state #3). -->
+                       <!-- Labelled fields -->
+<!--  Copyright (c) 2000  2010, SirsiDynix  "Advancedtype" search form (for state #3). This page file must be included within a FORM. -->
+<FORM>
+ <!-- Loop through all selectors from the gateway -->
+ <UL>
+  <!-- If a search string exists, then print a hidden search selector. Otherwise, print an input field for entering the search selector. -->
+     <!-- not a predefined search -->
+   <LI>
+<!--  Copyright (c) 2000  2010, SirsiDynix  Generates one field select list for the "Advancedtype" search form (for state #3). This page file must be included within a FORM. The Variable ENTRYNUM must be set to the ENTRYNUMCD value of this field, and DEFAULT_FIELD to the default label of this field. -->
+
+<!-- If previously submitted a search, then SRCH_LABEL#, SRCH_KIND#, etc. will contain the type of search for the '#' field, where '#' is the ENTRYNUM variable.  If these session info nodes exist, then use them; otherwise, use the defaults from the server's response list. -->
+
+
+ <SELECT NAME="srchfield1">
+      <OPTION VALUE="GENERAL^SUBJECT^GENERAL^^search everything" SELECTED="selected">search everything</OPTION>
+      <OPTION VALUE="AU^AUTHOR^AUTHORS^Author Processing^author">author</OPTION>
+      <OPTION VALUE="TI^TITLE^SERIES^Title Processing^title">title</OPTION>
+      <OPTION VALUE="SU^SUBJECT^SUBJECTS^^subject">subject</OPTION>
+      <OPTION VALUE="SER^SERIES^SERIES^Title Processing^series">series</OPTION>
+      <OPTION VALUE="PER^PERTITLE^SERIES^Title Processing^periodical title">periodical title</OPTION>
+      <OPTION VALUE="020^^^^ISBN">ISBN</OPTION>
+      <OPTION VALUE="022^^^^ISSN">ISSN</OPTION>
+ </SELECT>
+
+  <!-- If there was a previous search before this one, then use that search's terms and operators.  Match type of field using the entry num. -->
+  <INPUT VALUE="" NAME="searchdata1" MAXLENGTH="255" SIZE="25" TYPE="text">
+
+
+       <!-- Setting the default operator:  If this page is from a goback, then use the previouslyselected operator defined in SRCH_OPER.  Otherwise, use the one defined in the gateway's M5. -->
+
+         <SELECT NAME="searchoper1">
+	   <OPTION VALUE="AND" SELECTED="selected">And</OPTION>
+           <OPTION VALUE="OR">Or</OPTION>
+           <OPTION VALUE="XOR">XOR</OPTION>
+	   <OPTION VALUE="NOT">Not</OPTION>
+         </SELECT>
+
+     </LI>
+  <!-- If a search string exists, then print a hidden search selector. Otherwise, print an input field for entering the search selector. -->
+     <!-- not a predefined search -->
+   <LI>
+<!--  Copyright (c) 2000  2010, SirsiDynix  Generates one field select list for the "Advancedtype" search form (for state #3). This page file must be included within a FORM. The Variable ENTRYNUM must be set to the ENTRYNUMCD value of this field, and DEFAULT_FIELD to the default label of this field. -->
+
+<!-- If previously submitted a search, then SRCH_LABEL#, SRCH_KIND#, etc. will contain the type of search for the '#' field, where '#' is the ENTRYNUM variable.  If these session info nodes exist, then use them; otherwise, use the defaults from the server's response list. -->
+
+
+ <SELECT NAME="srchfield2">
+      <OPTION VALUE="GENERAL^SUBJECT^GENERAL^^search everything">search everything</OPTION>
+      <OPTION VALUE="AU^AUTHOR^AUTHORS^Author Processing^author" SELECTED="selected">author</OPTION>
+      <OPTION VALUE="TI^TITLE^SERIES^Title Processing^title">title</OPTION>
+      <OPTION VALUE="SU^SUBJECT^SUBJECTS^^subject">subject</OPTION>
+      <OPTION VALUE="SER^SERIES^SERIES^Title Processing^series">series</OPTION>
+      <OPTION VALUE="PER^PERTITLE^SERIES^Title Processing^periodical title">periodical title</OPTION>
+      <OPTION VALUE="020^^^^ISBN">ISBN</OPTION>
+      <OPTION VALUE="022^^^^ISSN">ISSN</OPTION>
+ </SELECT>
+
+  <!-- If there was a previous search before this one, then use that search's terms and operators.  Match type of field using the entry num. -->
+  <INPUT VALUE="" NAME="searchdata2" MAXLENGTH="255" SIZE="25" TYPE="text">
+
+
+       <!-- Setting the default operator:  If this page is from a goback, then use the previouslyselected operator defined in SRCH_OPER.  Otherwise, use the one defined in the gateway's M5. -->
+
+         <SELECT NAME="searchoper2">
+	   <OPTION VALUE="AND" SELECTED="selected">And</OPTION>
+           <OPTION VALUE="OR">Or</OPTION>
+           <OPTION VALUE="XOR">XOR</OPTION>
+	   <OPTION VALUE="NOT">Not</OPTION>
+         </SELECT>
+
+     </LI>
+  <!-- If a search string exists, then print a hidden search selector. Otherwise, print an input field for entering the search selector. -->
+     <!-- not a predefined search -->
+   <LI>
+<!--  Copyright (c) 2000  2010, SirsiDynix  Generates one field select list for the "Advancedtype" search form (for state #3). This page file must be included within a FORM. The Variable ENTRYNUM must be set to the ENTRYNUMCD value of this field, and DEFAULT_FIELD to the default label of this field. -->
+
+<!-- If previously submitted a search, then SRCH_LABEL#, SRCH_KIND#, etc. will contain the type of search for the '#' field, where '#' is the ENTRYNUM variable.  If these session info nodes exist, then use them; otherwise, use the defaults from the server's response list. -->
+
+
+ <SELECT NAME="srchfield3">
+      <OPTION VALUE="GENERAL^SUBJECT^GENERAL^^search everything">search everything</OPTION>
+      <OPTION VALUE="AU^AUTHOR^AUTHORS^Author Processing^author">author</OPTION>
+      <OPTION VALUE="TI^TITLE^SERIES^Title Processing^title" SELECTED="selected">title</OPTION>
+      <OPTION VALUE="SU^SUBJECT^SUBJECTS^^subject">subject</OPTION>
+      <OPTION VALUE="SER^SERIES^SERIES^Title Processing^series">series</OPTION>
+      <OPTION VALUE="PER^PERTITLE^SERIES^Title Processing^periodical title">periodical title</OPTION>
+      <OPTION VALUE="020^^^^ISBN">ISBN</OPTION>
+      <OPTION VALUE="022^^^^ISSN">ISSN</OPTION>
+ </SELECT>
+
+  <!-- If there was a previous search before this one, then use that search's terms and operators.  Match type of field using the entry num. -->
+  <INPUT VALUE="" NAME="searchdata3" MAXLENGTH="255" SIZE="25" TYPE="text">
+
+
+       <!-- Setting the default operator:  If this page is from a goback, then use the previouslyselected operator defined in SRCH_OPER.  Otherwise, use the one defined in the gateway's M5. -->
+
+         <SELECT NAME="searchoper3">
+	   <OPTION VALUE="AND" SELECTED="selected">And</OPTION>
+           <OPTION VALUE="OR">Or</OPTION>
+           <OPTION VALUE="XOR">XOR</OPTION>
+	   <OPTION VALUE="NOT">Not</OPTION>
+         </SELECT>
+
+     </LI>
+  <!-- If a search string exists, then print a hidden search selector. Otherwise, print an input field for entering the search selector. -->
+     <!-- not a predefined search -->
+   <LI>
+<!--  Copyright (c) 2000  2010, SirsiDynix  Generates one field select list for the "Advancedtype" search form (for state #3). This page file must be included within a FORM. The Variable ENTRYNUM must be set to the ENTRYNUMCD value of this field, and DEFAULT_FIELD to the default label of this field. -->
+
+<!-- If previously submitted a search, then SRCH_LABEL#, SRCH_KIND#, etc. will contain the type of search for the '#' field, where '#' is the ENTRYNUM variable.  If these session info nodes exist, then use them; otherwise, use the defaults from the server's response list. -->
+
+
+ <SELECT NAME="srchfield4">
+      <OPTION VALUE="GENERAL^SUBJECT^GENERAL^^search everything">search everything</OPTION>
+      <OPTION VALUE="AU^AUTHOR^AUTHORS^Author Processing^author">author</OPTION>
+      <OPTION VALUE="TI^TITLE^SERIES^Title Processing^title">title</OPTION>
+      <OPTION VALUE="SU^SUBJECT^SUBJECTS^^subject" SELECTED="selected">subject</OPTION>
+      <OPTION VALUE="SER^SERIES^SERIES^Title Processing^series">series</OPTION>
+      <OPTION VALUE="PER^PERTITLE^SERIES^Title Processing^periodical title">periodical title</OPTION>
+      <OPTION VALUE="020^^^^ISBN">ISBN</OPTION>
+      <OPTION VALUE="022^^^^ISSN">ISSN</OPTION>
+ </SELECT>
+
+  <!-- If there was a previous search before this one, then use that search's terms and operators.  Match type of field using the entry num. -->
+  <INPUT VALUE="" NAME="searchdata4" MAXLENGTH="255" SIZE="25" TYPE="text">
+
+
+       <!-- Setting the default operator:  If this page is from a goback, then use the previouslyselected operator defined in SRCH_OPER.  Otherwise, use the one defined in the gateway's M5. -->
+
+         <SELECT NAME="searchoper4">
+	   <OPTION VALUE="AND" SELECTED="selected">And</OPTION>
+           <OPTION VALUE="OR">Or</OPTION>
+           <OPTION VALUE="XOR">XOR</OPTION>
+	   <OPTION VALUE="NOT">Not</OPTION>
+         </SELECT>
+
+     </LI>
+  <!-- If a search string exists, then print a hidden search selector. Otherwise, print an input field for entering the search selector. -->
+     <!-- not a predefined search -->
+   <LI>
+<!--  Copyright (c) 2000  2010, SirsiDynix  Generates one field select list for the "Advancedtype" search form (for state #3). This page file must be included within a FORM. The Variable ENTRYNUM must be set to the ENTRYNUMCD value of this field, and DEFAULT_FIELD to the default label of this field. -->
+
+<!-- If previously submitted a search, then SRCH_LABEL#, SRCH_KIND#, etc. will contain the type of search for the '#' field, where '#' is the ENTRYNUM variable.  If these session info nodes exist, then use them; otherwise, use the defaults from the server's response list. -->
+
+
+ <SELECT NAME="srchfield5">
+      <OPTION VALUE="GENERAL^SUBJECT^GENERAL^^search everything">search everything</OPTION>
+      <OPTION VALUE="AU^AUTHOR^AUTHORS^Author Processing^author">author</OPTION>
+      <OPTION VALUE="TI^TITLE^SERIES^Title Processing^title">title</OPTION>
+      <OPTION VALUE="SU^SUBJECT^SUBJECTS^^subject">subject</OPTION>
+      <OPTION VALUE="SER^SERIES^SERIES^Title Processing^series" SELECTED="selected">series</OPTION>
+      <OPTION VALUE="PER^PERTITLE^SERIES^Title Processing^periodical title">periodical title</OPTION>
+      <OPTION VALUE="020^^^^ISBN">ISBN</OPTION>
+      <OPTION VALUE="022^^^^ISSN">ISSN</OPTION>
+ </SELECT>
+
+  <!-- If there was a previous search before this one, then use that search's terms and operators.  Match type of field using the entry num. -->
+  <INPUT VALUE="" NAME="searchdata5" MAXLENGTH="255" SIZE="25" TYPE="text">
+
+
+       <!-- Setting the default operator:  If this page is from a goback, then use the previouslyselected operator defined in SRCH_OPER.  Otherwise, use the one defined in the gateway's M5. -->
+
+         <SELECT NAME="searchoper5">
+	   <OPTION VALUE="AND" SELECTED="selected">And</OPTION>
+           <OPTION VALUE="OR">Or</OPTION>
+           <OPTION VALUE="XOR">XOR</OPTION>
+	   <OPTION VALUE="NOT">Not</OPTION>
+         </SELECT>
+
+     </LI>
+  <!-- If a search string exists, then print a hidden search selector. Otherwise, print an input field for entering the search selector. -->
+     <!-- not a predefined search -->
+   <LI>
+<!--  Copyright (c) 2000  2010, SirsiDynix  Generates one field select list for the "Advancedtype" search form (for state #3). This page file must be included within a FORM. The Variable ENTRYNUM must be set to the ENTRYNUMCD value of this field, and DEFAULT_FIELD to the default label of this field. -->
+
+<!-- If previously submitted a search, then SRCH_LABEL#, SRCH_KIND#, etc. will contain the type of search for the '#' field, where '#' is the ENTRYNUM variable.  If these session info nodes exist, then use them; otherwise, use the defaults from the server's response list. -->
+
+
+ <SELECT NAME="srchfield6">
+      <OPTION VALUE="GENERAL^SUBJECT^GENERAL^^search everything">search everything</OPTION>
+      <OPTION VALUE="AU^AUTHOR^AUTHORS^Author Processing^author">author</OPTION>
+      <OPTION VALUE="TI^TITLE^SERIES^Title Processing^title">title</OPTION>
+      <OPTION VALUE="SU^SUBJECT^SUBJECTS^^subject">subject</OPTION>
+      <OPTION VALUE="SER^SERIES^SERIES^Title Processing^series">series</OPTION>
+      <OPTION VALUE="PER^PERTITLE^SERIES^Title Processing^periodical title" SELECTED="selected">periodical title</OPTION>
+      <OPTION VALUE="020^^^^ISBN">ISBN</OPTION>
+      <OPTION VALUE="022^^^^ISSN">ISSN</OPTION>
+ </SELECT>
+
+  <!-- If there was a previous search before this one, then use that search's terms and operators.  Match type of field using the entry num. -->
+  <INPUT VALUE="" NAME="searchdata6" MAXLENGTH="255" SIZE="25" TYPE="text">
+
+
+       <!-- Setting the default operator:  If this page is from a goback, then use the previouslyselected operator defined in SRCH_OPER.  Otherwise, use the one defined in the gateway's M5. -->
+
+         <SELECT NAME="searchoper6">
+	   <OPTION VALUE="AND" SELECTED="selected">And</OPTION>
+           <OPTION VALUE="OR">Or</OPTION>
+           <OPTION VALUE="XOR">XOR</OPTION>
+	   <OPTION VALUE="NOT">Not</OPTION>
+         </SELECT>
+
+     </LI>
+  <!-- If a search string exists, then print a hidden search selector. Otherwise, print an input field for entering the search selector. -->
+     <!-- not a predefined search -->
+   <LI>
+<!--  Copyright (c) 2000  2010, SirsiDynix  Generates one field select list for the "Advancedtype" search form (for state #3). This page file must be included within a FORM. The Variable ENTRYNUM must be set to the ENTRYNUMCD value of this field, and DEFAULT_FIELD to the default label of this field. -->
+
+<!-- If previously submitted a search, then SRCH_LABEL#, SRCH_KIND#, etc. will contain the type of search for the '#' field, where '#' is the ENTRYNUM variable.  If these session info nodes exist, then use them; otherwise, use the defaults from the server's response list. -->
+
+
+ <SELECT NAME="srchfield7">
+      <OPTION VALUE="GENERAL^SUBJECT^GENERAL^^search everything">search everything</OPTION>
+      <OPTION VALUE="AU^AUTHOR^AUTHORS^Author Processing^author">author</OPTION>
+      <OPTION VALUE="TI^TITLE^SERIES^Title Processing^title">title</OPTION>
+      <OPTION VALUE="SU^SUBJECT^SUBJECTS^^subject">subject</OPTION>
+      <OPTION VALUE="SER^SERIES^SERIES^Title Processing^series">series</OPTION>
+      <OPTION VALUE="PER^PERTITLE^SERIES^Title Processing^periodical title">periodical title</OPTION>
+      <OPTION VALUE="020^^^^ISBN" SELECTED="selected">ISBN</OPTION>
+      <OPTION VALUE="022^^^^ISSN">ISSN</OPTION>
+ </SELECT>
+
+  <!-- If there was a previous search before this one, then use that search's terms and operators.  Match type of field using the entry num. -->
+  <INPUT VALUE="" NAME="searchdata7" MAXLENGTH="255" SIZE="25" TYPE="text">
+
+
+       <!-- Setting the default operator:  If this page is from a goback, then use the previouslyselected operator defined in SRCH_OPER.  Otherwise, use the one defined in the gateway's M5. -->
+
+         <SELECT NAME="searchoper7">
+	   <OPTION VALUE="AND" SELECTED="selected">And</OPTION>
+           <OPTION VALUE="OR">Or</OPTION>
+           <OPTION VALUE="XOR">XOR</OPTION>
+	   <OPTION VALUE="NOT">Not</OPTION>
+         </SELECT>
+
+     </LI>
+  <!-- If a search string exists, then print a hidden search selector. Otherwise, print an input field for entering the search selector. -->
+     <!-- not a predefined search -->
+   <LI>
+<!--  Copyright (c) 2000  2010, SirsiDynix  Generates one field select list for the "Advancedtype" search form (for state #3). This page file must be included within a FORM. The Variable ENTRYNUM must be set to the ENTRYNUMCD value of this field, and DEFAULT_FIELD to the default label of this field. -->
+
+<!-- If previously submitted a search, then SRCH_LABEL#, SRCH_KIND#, etc. will contain the type of search for the '#' field, where '#' is the ENTRYNUM variable.  If these session info nodes exist, then use them; otherwise, use the defaults from the server's response list. -->
+
+
+ <SELECT NAME="srchfield8">
+      <OPTION VALUE="GENERAL^SUBJECT^GENERAL^^search everything">search everything</OPTION>
+      <OPTION VALUE="AU^AUTHOR^AUTHORS^Author Processing^author">author</OPTION>
+      <OPTION VALUE="TI^TITLE^SERIES^Title Processing^title">title</OPTION>
+      <OPTION VALUE="SU^SUBJECT^SUBJECTS^^subject">subject</OPTION>
+      <OPTION VALUE="SER^SERIES^SERIES^Title Processing^series">series</OPTION>
+      <OPTION VALUE="PER^PERTITLE^SERIES^Title Processing^periodical title">periodical title</OPTION>
+      <OPTION VALUE="020^^^^ISBN">ISBN</OPTION>
+      <OPTION VALUE="022^^^^ISSN" SELECTED="selected">ISSN</OPTION>
+ </SELECT>
+
+  <!-- If there was a previous search before this one, then use that search's terms and operators.  Match type of field using the entry num. -->
+  <INPUT VALUE="" NAME="searchdata8" MAXLENGTH="255" SIZE="25" TYPE="text">
+
+
+
+     </LI>
+ </UL>
+ <UL>
+  <LI>
+
+    <INPUT VALUE="Search" TYPE="submit">
+    <U><FONT COLOR=blue>
+    [Reset Query]</FONT></U>
+
+  </LI>
+ </UL>
+
+<!--  Copyright (c) 2000  2010, SirsiDynix  Search options (for state #3); eLibrary  This page file must be included within the search form. -->
+
+
+  <UL>
+
+      <LI>
+      library:
+       <SELECT NAME="library">
+<OPTION VALUE="ALL" SELECTED>ALL</OPTION>
+<OPTION VALUE="ARCHITECT">Architecture Library</OPTION>
+<OPTION VALUE="BIZZELL">Bizzell Library</OPTION>
+<OPTION VALUE="CHEM-MATH">Chem-Math Library</OPTION>
+<OPTION VALUE="ENGINEER">Engineering Library</OPTION>
+<OPTION VALUE="FINE_ARTS">Fine Arts Library</OPTION>
+<OPTION VALUE="GEOLOGY">Geology Library</OPTION>
+<OPTION VALUE="GOVDOCS">Government Documents</OPTION>
+<OPTION VALUE="HSCI_CTR">Health Sciences Center Library</OPTION>
+<OPTION VALUE="HISTSCI">History of Science Collections</OPTION>
+<OPTION VALUE="INTERNET">Internet</OPTION>
+<OPTION VALUE="LAW">Law Library</OPTION>
+<OPTION VALUE="OKBIOSTATN">Oklahoma Biological Station</OPTION>
+<OPTION VALUE="PHYSICS">Physics-Astronomy Library</OPTION>
+<OPTION VALUE="STORAGE">Storage</OPTION>
+<OPTION VALUE="WESTRNHIST">Western History Collection</OPTION>
+</SELECT>
+      </LI>
+       <LI>
+        language:
+          <SELECT NAME="language">
+<OPTION VALUE="ANY" SELECTED>ANY</OPTION>
+<OPTION VALUE="ARABIC">Arabic</OPTION>
+<OPTION VALUE="BULGARIAN">Bulgarian</OPTION>
+<OPTION VALUE="CHINESE">Chinese</OPTION>
+<OPTION VALUE="CZECH">Czech</OPTION>
+<OPTION VALUE="DANISH">Danish</OPTION>
+<OPTION VALUE="DUTCH">Dutch</OPTION>
+<OPTION VALUE="ENGLISH">English</OPTION>
+<OPTION VALUE="ESPERANTO">Esperanto</OPTION>
+<OPTION VALUE="PERSIAN">Farsi</OPTION>
+<OPTION VALUE="FINNISH">Finnish</OPTION>
+<OPTION VALUE="FRENCH">French</OPTION>
+<OPTION VALUE="GERMAN">German</OPTION>
+<OPTION VALUE="GREEK">Greek</OPTION>
+<OPTION VALUE="HEBREW">Hebrew</OPTION>
+<OPTION VALUE="HUNGARIAN">Hungarian</OPTION>
+<OPTION VALUE="ITALIAN">Italian</OPTION>
+<OPTION VALUE="JAPANESE">Japanese</OPTION>
+<OPTION VALUE="KOREAN">Korean</OPTION>
+<OPTION VALUE="LATIN">Latin</OPTION>
+<OPTION VALUE="NORWEGIAN">Norwegian</OPTION>
+<OPTION VALUE="POLISH">Polish</OPTION>
+<OPTION VALUE="PORTUGESE">Portugese</OPTION>
+<OPTION VALUE="ROMANIAN">Romanian</OPTION>
+<OPTION VALUE="RUSSIAN">Russian</OPTION>
+<OPTION VALUE="SLAVIC">Slavic</OPTION>
+<OPTION VALUE="SPANISH">Spanish</OPTION>
+<OPTION VALUE="SWEDISH">Swedish</OPTION>
+<OPTION VALUE="UKRANIAN">Ukranian</OPTION>
+<OPTION VALUE="VIETNAMESE">Vietnamese</OPTION>
+</SELECT>
+      </LI>
+
+      <LI>
+       format:
+          <SELECT NAME="format">
+<OPTION VALUE="ANY" SELECTED>ANY</OPTION>
+<OPTION VALUE="DUBLINCORE">Dublin Core Format</OPTION>
+<OPTION VALUE="EQUIP">Equipment</OPTION>
+<OPTION VALUE="MEMO">Library bulletins/messages</OPTION>
+<OPTION VALUE="MRDF">MRDF</OPTION>
+<OPTION VALUE="MANUSCRPT">Manuscript</OPTION>
+<OPTION VALUE="MAP">Map</OPTION>
+<OPTION VALUE="MARC">Monograph</OPTION>
+<OPTION VALUE="MUSIC">Music</OPTION>
+<OPTION VALUE="ROOM">ROOM</OPTION>
+<OPTION VALUE="SELECT">SELECT</OPTION>
+<OPTION VALUE="SERIAL">Serial</OPTION>
+<OPTION VALUE="TECHRPT">TECHRPT</OPTION>
+<OPTION VALUE="UNIMARC">UNIMARC</OPTION>
+<OPTION VALUE="SUNIMARC">UNIMARC serial</OPTION>
+<OPTION VALUE="VM">VM</OPTION>
+</SELECT>
+
+        </LI>
+        <LI>
+       circ. type:
+
+          <SELECT NAME="item_type">
+<OPTION VALUE="ANY" SELECTED>ANY</OPTION>
+<OPTION VALUE="AV-SHORT">2H/3D AV loan</OPTION>
+<OPTION VALUE="AV-BOOK">30/60/120 day AV loan</OPTION>
+<OPTION VALUE="AV-30D">30D AV for all users</OPTION>
+<OPTION VALUE="AV-7D">7D AV for all users</OPTION>
+<OPTION VALUE="BLUEPRINTS">Architecture Library blueprints</OPTION>
+<OPTION VALUE="BOHRARCHV">Bohr Archives</OPTION>
+<OPTION VALUE="BOOK">Book</OPTION>
+<OPTION VALUE="CD-ROM">CD-ROMS</OPTION>
+<OPTION VALUE="CURRNT_PER">Current periodical</OPTION>
+<OPTION VALUE="DILBECKACV">Dilbeck Archives</OPTION>
+<OPTION VALUE="EGOVDOC">Electronic Gov't Documents</OPTION>
+<OPTION VALUE="ESERIAL">Electronic Serial</OPTION>
+<OPTION VALUE="EBOOK">Electronic book</OPTION>
+<OPTION VALUE="ELECTRONIC">Electronic resource</OPTION>
+<OPTION VALUE="AV-EQUIP">Equipment</OPTION>
+<OPTION VALUE="HARLOWCOLL">Harlow Collection</OPTION>
+<OPTION VALUE="COMPCOLL">History of Science Computer Collection</OPTION>
+<OPTION VALUE="GENCOLL">History of Science General Collection</OPTION>
+<OPTION VALUE="GOODMANCOL">History of Science Goodman Collection</OPTION>
+<OPTION VALUE="HOLLCOLL">History of Science Holl Colletion</OPTION>
+<OPTION VALUE="NASACOLL">History of Science NASA Collection</OPTION>
+<OPTION VALUE="ROLLERCOLL">History of Science Roller Collection</OPTION>
+<OPTION VALUE="ILL-BOOK">Inter-library loan book</OPTION>
+<OPTION VALUE="KLOPSTEGCO">Klopsteg Collections</OPTION>
+<OPTION VALUE="LNDMRKSSCI">Landmarks of Science Collection</OPTION>
+<OPTION VALUE="LAPTOP">Laptop</OPTION>
+<OPTION VALUE="LGPORTRAIT">Large Portrait Collection</OPTION>
+<OPTION VALUE="LAW_3D">Law books, 3D, with book fine structure</OPTION>
+<OPTION VALUE="MAGAZINE">Magazine</OPTION>
+<OPTION VALUE="MAP">Maps</OPTION>
+<OPTION VALUE="MICROFORM">Microform</OPTION>
+<OPTION VALUE="MISC">Miscellaneous</OPTION>
+<OPTION VALUE="NEW-BOOK">New books</OPTION>
+<OPTION VALUE="NEWSPAPER">Newspaper</OPTION>
+<OPTION VALUE="NCIR_ITEM">Non-circulating item</OPTION>
+<OPTION VALUE="PERIODICAL">Periodicals</OPTION>
+<OPTION VALUE="PHOTOCOPY">Photocopy</OPTION>
+<OPTION VALUE="PHOTOGRAPH">Photographs</OPTION>
+<OPTION VALUE="REF-BOOK">Reference book</OPTION>
+<OPTION VALUE="SMPORTRAIT">Small Portrait Collection</OPTION>
+<OPTION VALUE="SMITHARCHV">Smith Archives</OPTION>
+<OPTION VALUE="STAR_CHART">Star Charts</OPTION>
+<OPTION VALUE="STUDYRM">Study Room</OPTION>
+<OPTION VALUE="UNKNOWN">Unknown</OPTION>
+<OPTION VALUE="AV-3D">Video, DVD, some other AV loans</OPTION>
+<OPTION VALUE="WERNERARCV">Werner Archives</OPTION>
+<OPTION VALUE="AV-REF">in house 2H AV loan</OPTION>
+</SELECT>
+
+        </LI>
+
+<LI>
+       location:
+
+          <SELECT NAME="location">
+<OPTION VALUE="ANY" SELECTED>ANY</OPTION>
+<OPTION VALUE="SYMP_SERIE">ACS Symposium Series</OPTION>
+<OPTION VALUE="ABST-INDEX">Abstracts and indexes</OPTION>
+<OPTION VALUE="ACQUIS_DPT">Acquisitions</OPTION>
+<OPTION VALUE="ARCHANNEX">Architecture Off-Site Storage</OPTION>
+<OPTION VALUE="AOUTREACH">Architecture Outreach</OPTION>
+<OPTION VALUE="RESERVEARC">Architecture Reserves</OPTION>
+<OPTION VALUE="BLUEPRINT">Architecture library</OPTION>
+<OPTION VALUE="ARCHIVE">Archive Area</OPTION>
+<OPTION VALUE="LOST-ASSUM">Assumed lost</OPTION>
+<OPTION VALUE="ATLAS">Atlas Area</OPTION>
+<OPTION VALUE="AV_AREA">Audio-Visual area</OPTION>
+<OPTION VALUE="AVAIL_SOON">Available soon</OPTION>
+<OPTION VALUE="BASS_COLL">Bass Collection</OPTION>
+<OPTION VALUE="BASS_CURR">Bass Collection Current Periodicals</OPTION>
+<OPTION VALUE="ON-ORDER">Being acquired by the library</OPTION>
+<OPTION VALUE="INPROCESS">Being cataloged</OPTION>
+<OPTION VALUE="REPAIR">Being fixed/mended</OPTION>
+<OPTION VALUE="RESHELVING">Being returned to standard shelving location</OPTION>
+<OPTION VALUE="INSHIPPING">Being shipped to destination</OPTION>
+<OPTION VALUE="INTRANSIT">Being transferred between libraries</OPTION>
+<OPTION VALUE="BELL_COLL">Bell Collection</OPTION>
+<OPTION VALUE="BIB_AREA">Bibliography</OPTION>
+<OPTION VALUE="BILLING">Billing</OPTION>
+<OPTION VALUE="BIZZ_ARCHV">Bizzell Archive Area</OPTION>
+<OPTION VALUE="BIZZ_BIBLE">Bizzell Bible</OPTION>
+<OPTION VALUE="MICRO_CURR">Bizzell Microforms Current Periodical</OPTION>
+<OPTION VALUE="REF_CURR">Bizzell Reference Current Periodical</OPTION>
+<OPTION VALUE="CIRCDESKAV">Book&CD items shelved behind circ desk</OPTION>
+<OPTION VALUE="BOORSTIN">Boorstin Collection</OPTION>
+<OPTION VALUE="BRILLHART">Brillhart Collection</OPTION>
+<OPTION VALUE="CARLALBERT">Carl Albert Center</OPTION>
+<OPTION VALUE="CATALG_DPT">Cataloging Dept.</OPTION>
+<OPTION VALUE="CAT_DPT_GD">Cataloging Dept/GD</OPTION>
+<OPTION VALUE="PROCESSING">Checked out to Mending</OPTION>
+<OPTION VALUE="RESERVECHE">Chem-Math Reserves</OPTION>
+<OPTION VALUE="CHLD_COLL">Childrens Literature</OPTION>
+<OPTION VALUE="CIRC_DESK">Circulation Desk</OPTION>
+<OPTION VALUE="LOST-CLAIM">Claims lost</OPTION>
+<OPTION VALUE="CLSD_REF">Closed Reference </OPTION>
+<OPTION VALUE="CLSD_STKS">Closed Stacks</OPTION>
+<OPTION VALUE="COLL_DEV">Collection Dev</OPTION>
+<OPTION VALUE="CUR_AWARE">Current Awareness</OPTION>
+<OPTION VALUE="CURR_PER">Current Periodicals</OPTION>
+<OPTION VALUE="RESERVECPR">Current Periodicals Reserves</OPTION>
+<OPTION VALUE="DALE_COLL">Dale Collection</OPTION>
+<OPTION VALUE="ADMINOFF">Dean's Office Non-Circ</OPTION>
+<OPTION VALUE="DECK5EAST">Deck 5 East Open Storage</OPTION>
+<OPTION VALUE="BIOGRAPHY">Deck 6 Biography</OPTION>
+<OPTION VALUE="DECK6WEST">Deck 6 West Open Storage</OPTION>
+<OPTION VALUE="DECK6">Deck 6 storage</OPTION>
+<OPTION VALUE="DISPLAY">Display Case</OPTION>
+<OPTION VALUE="RESERVEENG">Engineering Reserves</OPTION>
+<OPTION VALUE="FAC_LIB">Faculty Library for Law</OPTION>
+<OPTION VALUE="FARLEY_CO">Farley Collection</OPTION>
+<OPTION VALUE="FAY_COLL">Fay Collection</OPTION>
+<OPTION VALUE="RESERVEFIN">Fine Arts Reserves</OPTION>
+<OPTION VALUE="RESERVEGEO">Geology Reserves</OPTION>
+<OPTION VALUE="RESERVEGOV">Gov Docs Reserves</OPTION>
+<OPTION VALUE="GV_DC_STKS">Government Doc stacks</OPTION>
+<OPTION VALUE="GRASS_COLL">Grass Collection</OPTION>
+<OPTION VALUE="LANDMRKS">HISTSCI  Landmarks of Science</OPTION>
+<OPTION VALUE="HSTSCI_CUR">HISTSCI Collections Current Periodical</OPTION>
+<OPTION VALUE="COMPAREA">HISTSCI Computer Area</OPTION>
+<OPTION VALUE="HOLLAREA">HISTSCI Holl Area</OPTION>
+<OPTION VALUE="NASAAREA">HISTSCI NASA Area</OPTION>
+<OPTION VALUE="DILBECKARC">HISTSCI collections Dilbeck Archives</OPTION>
+<OPTION VALUE="HARLOWAREA">HISTSCI collections Harlow Area</OPTION>
+<OPTION VALUE="KLOPSTEG">HISTSCI collections Klopsteg Area</OPTION>
+<OPTION VALUE="HLTHSCICTR">Health Science Center Library</OPTION>
+<OPTION VALUE="HST_OF_SCI">History of Science</OPTION>
+<OPTION VALUE="VAULT">History of Science Collections Vault</OPTION>
+<OPTION VALUE="CONFROOM">History of Science Conference Room</OPTION>
+<OPTION VALUE="TITLEPAGE">History of Science Titlepage</OPTION>
+<OPTION VALUE="CAT_CORR">In Cataloging for correction</OPTION>
+<OPTION VALUE="INDEX_AREA">Index</OPTION>
+<OPTION VALUE="INDX_TABLE">Index Tables</OPTION>
+<OPTION VALUE="ILL_DEPT">Interlibrary Loan</OPTION>
+<OPTION VALUE="INTERNET">Internet Access</OPTION>
+<OPTION VALUE="TEST_CLOC">Items marked for deletion by NOTIS</OPTION>
+<OPTION VALUE="LANDSCAPE">Landscape</OPTION>
+<OPTION VALUE="LATEST_REF">Latest vol ref</OPTION>
+<OPTION VALUE="LAW_CSC">Law Career Services Collection</OPTION>
+<OPTION VALUE="LAWFAC_OFF">Law Faculty Offices</OPTION>
+<OPTION VALUE="LAWRESERVE">Law Reserves</OPTION>
+<OPTION VALUE="LAWCLINIC">Legal Clinic offices</OPTION>
+<OPTION VALUE="LAW_LRW">Legal Research & Writing Coll.</OPTION>
+<OPTION VALUE="LAN">Library Area Network</OPTION>
+<OPTION VALUE="LIB_DIV">Library Division</OPTION>
+<OPTION VALUE="LIB_STAFF">Library Staff Office</OPTION>
+<OPTION VALUE="LTD-ACCESS">Limited Access</OPTION>
+<OPTION VALUE="LOST">Lost</OPTION>
+<OPTION VALUE="LOST-PAID">Lost and paid for</OPTION>
+<OPTION VALUE="PHYS-SCI">Lower two floors of old Chem-Math library</OPTION>
+<OPTION VALUE="RESERVMAIN">Main Reserves (Bizzell)</OPTION>
+<OPTION VALUE="MANUSCRPT">Manuscript Division</OPTION>
+<OPTION VALUE="MAPS_COLL">Maps Collection</OPTION>
+<OPTION VALUE="MAP_GOVDC">Maps Collection/GD</OPTION>
+<OPTION VALUE="BINDERY">Material at the bindery</OPTION>
+<OPTION VALUE="CATALOGING">Material being cataloged</OPTION>
+<OPTION VALUE="CHECKEDOUT">Material has been checked/charged out</OPTION>
+<OPTION VALUE="MATH_PEDAG">Mathematics Pedagogy</OPTION>
+<OPTION VALUE="MEDIA">Media area in history of science stacks</OPTION>
+<OPTION VALUE="MTHD_ENZY">Methods/Enzymology</OPTION>
+<OPTION VALUE="COMPUT_CTR">Microcomputer CTR</OPTION>
+<OPTION VALUE="MICROFORM">Microforms Area</OPTION>
+<OPTION VALUE="MORRIS_COL">Morris Collection</OPTION>
+<OPTION VALUE="NET_CDROM">Networked CD-ROM</OPTION>
+<OPTION VALUE="NEW-BOOK">New Books</OPTION>
+<OPTION VALUE="NICHOLS">Nichols Collection</OPTION>
+<OPTION VALUE="LIBANNEX">Off-Site Storage</OPTION>
+<OPTION VALUE="OKLA_COLL">Oklahoma Collection</OPTION>
+<OPTION VALUE="OK_DC_STKS">Oklahoma Documents Stacks (gov docs)</OPTION>
+<OPTION VALUE="OK_DOC_REF">Oklahoma documents reference</OPTION>
+<OPTION VALUE="HOLDS">On hold for someone</OPTION>
+<OPTION VALUE="ILL">On loan to another library</OPTION>
+<OPTION VALUE="ORAL_HIST">Oral History Division</OPTION>
+<OPTION VALUE="ORD_CANCEL">Order Cancelled</OPTION>
+<OPTION VALUE="AOUTREF">Outreach Reference</OPTION>
+<OPTION VALUE="FOLIO">Oversize Architecture</OPTION>
+<OPTION VALUE="OVERSIZE">Oversize Area</OPTION>
+<OPTION VALUE="PAMPHLET">Pamphlet File</OPTION>
+<OPTION VALUE="PERIODICAL">Periodical Area</OPTION>
+<OPTION VALUE="PHOTO_ARCV">Photographic Archive</OPTION>
+<OPTION VALUE="RESERVEPHY">Physics Reserves</OPTION>
+<OPTION VALUE="REPF">REPF Information Commons Lab</OPTION>
+<OPTION VALUE="RARE_BOOKS">Rare Books</OPTION>
+<OPTION VALUE="READ_RM">Reading Room</OPTION>
+<OPTION VALUE="REF_COLL">Reference Collection</OPTION>
+<OPTION VALUE="GV_DOC_REF">Reference Collection/GD</OPTION>
+<OPTION VALUE="REF_DPT">Reference Dept</OPTION>
+<OPTION VALUE="REF-DESK">Reference Desk</OPTION>
+<OPTION VALUE="REFERENCE">Reference Material</OPTION>
+<OPTION VALUE="REPORT_SHF">Report Shelf</OPTION>
+<OPTION VALUE="RES_CDROM">Reserve CD-ROM</OPTION>
+<OPTION VALUE="RESTRICTED">Restricted materials</OPTION>
+<OPTION VALUE="SCHWLD_CO">Schonwald Collection</OPTION>
+<OPTION VALUE="MISSING">Search in progress for item</OPTION>
+<OPTION VALUE="STACKHSC">Semipermanent transfer to Health Sciences Center</OPTION>
+<OPTION VALUE="STACKTULSA">Semipermanent transfer to Schusterman Library</OPTION>
+<OPTION VALUE="SERIAL_DPT">Serials Department</OPTION>
+<OPTION VALUE="STACKS">Stacks</OPTION>
+<OPTION VALUE="STANDARDS">Standards</OPTION>
+<OPTION VALUE="STAR-CHART">Star Charts</OPTION>
+<OPTION VALUE="STORAGE">Storage</OPTION>
+<OPTION VALUE="FINESTORAG">Storage section in Fine Arts library</OPTION>
+<OPTION VALUE="SUPERCEDED">Superceded Collection</OPTION>
+<OPTION VALUE="SYSTM_OFFC">Systems Office</OPTION>
+<OPTION VALUE="TECH_DEPT">Technical Service</OPTION>
+<OPTION VALUE="RESERVTULS">Temporary reserves at Tulsa</OPTION>
+<OPTION VALUE="TEXTBOOK">Textbook Collection (Bizzell)</OPTION>
+<OPTION VALUE="NATIVE_PPL">The Strickland Collection of Native Peoples Law</OPTION>
+<OPTION VALUE="UNBD_PER">Unbound Periodicals</OPTION>
+<OPTION VALUE="UNV_ARCHIV">Univ of OK Archive</OPTION>
+<OPTION VALUE="UNKNOWN">Unknown</OPTION>
+<OPTION VALUE="VERT_COLL">Vert Collection</OPTION>
+<OPTION VALUE="RESERVEWES">Western History Reserves</OPTION>
+<OPTION VALUE="DISCARD">Withdrawn from the collection</OPTION>
+<OPTION VALUE="WITT_COLL">Witt Special Collection</OPTION>
+<OPTION VALUE="YEARBOOKS">Yearbook shelf, Main floor, NUC area</OPTION>
+</SELECT>
+
+</LI>
+
+<LI>
+       item category1:
+          <SELECT NAME="item_1cat">
+<OPTION VALUE="ANY" SELECTED>ANY</OPTION>
+<OPTION VALUE="BIOGRAPHY">Biography</OPTION>
+<OPTION VALUE="BOOK">Book/Monograph</OPTION>
+<OPTION VALUE="BRAILLE">Braille items</OPTION>
+<OPTION VALUE="CD_ROM">CD-ROM</OPTION>
+<OPTION VALUE="CASSETTE">Cassette</OPTION>
+<OPTION VALUE="COMP_DISC">Compact Disc</OPTION>
+<OPTION VALUE="COMPU_DISC">Computer Disk</OPTION>
+<OPTION VALUE="COMPU-FILE">Computer Software</OPTION>
+<OPTION VALUE="DVD">Digital Video Disc</OPTION>
+<OPTION VALUE="EBOOK">Electronic Book</OPTION>
+<OPTION VALUE="DISS_E">Electronic Dissertation</OPTION>
+<OPTION VALUE="ESERIAL">Electronic Journal/Serial</OPTION>
+<OPTION VALUE="THESIS_E">Electronic Thesis</OPTION>
+<OPTION VALUE="EQUIPMENT">Equipment</OPTION>
+<OPTION VALUE="FILMSTRIP">Filmstrip</OPTION>
+<OPTION VALUE="FLASH">Flash Drive</OPTION>
+<OPTION VALUE="FLSH_CARD">Flash-cards</OPTION>
+<OPTION VALUE="GLOBE">Globe</OPTION>
+<OPTION VALUE="GOV_DOC">Government Document</OPTION>
+<OPTION VALUE="TITLEPAGE">History of Science Title Page Image</OPTION>
+<OPTION VALUE="INTERNET">Internet Resource</OPTION>
+<OPTION VALUE="LOOSE_LEAF">Loose-leaf updates</OPTION>
+<OPTION VALUE="MANUSCRIPT">Manuscripts</OPTION>
+<OPTION VALUE="MAP">Map</OPTION>
+<OPTION VALUE="MICROCARD">Microcard</OPTION>
+<OPTION VALUE="MICROFICHE">Microfiche</OPTION>
+<OPTION VALUE="MICROFILM">Microfilm</OPTION>
+<OPTION VALUE="MIC_THESIS">Microfilm thesis</OPTION>
+<OPTION VALUE="MICROFORM">Microforms</OPTION>
+<OPTION VALUE="MP">Movies, motion pictures</OPTION>
+<OPTION VALUE="KIT">Multi-piece kit</OPTION>
+<OPTION VALUE="MUSIC">Music</OPTION>
+<OPTION VALUE="NEWSPAPER">Newspaper</OPTION>
+<OPTION VALUE="PERIODICAL">Periodical</OPTION>
+<OPTION VALUE="PHONO_DISK">Phono Disk</OPTION>
+<OPTION VALUE="PHOTOGRAPH">Photographs</OPTION>
+<OPTION VALUE="DISSERTATI">Print Dissertation</OPTION>
+<OPTION VALUE="THESIS">Print Thesis</OPTION>
+<OPTION VALUE="REALIA">Realia</OPTION>
+<OPTION VALUE="RSV_FOLDER">Reserve file folder</OPTION>
+<OPTION VALUE="SLIDE">Slides</OPTION>
+<OPTION VALUE="SOUND_REC">Sound recording</OPTION>
+<OPTION VALUE="KEY">Study Room Key</OPTION>
+<OPTION VALUE="TECH_DRAW">Technical drawing</OPTION>
+<OPTION VALUE="TEXTBOOK">Textbook</OPTION>
+<OPTION VALUE="TRANSPRNCY">Transparency</OPTION>
+<OPTION VALUE="VIDEO_CAS">Videocassettes</OPTION>
+<OPTION VALUE="CHART">Wall charts, flip charts, calendars</OPTION>
+<OPTION VALUE="WEB_PAGE">Web page</OPTION>
+<OPTION VALUE="INDEX">index</OPTION>
+<OPTION VALUE="PLAY">play or colleciton of plays</OPTION>
+</SELECT>
+</LI>
+
+
+     <!-- power search -->
+<LI>
+           match on:
+
+           <SELECT NAME="match_on">
+            <OPTION VALUE="KEYWORD" SELECTED="selected">Keywords</OPTION>
+    	<OPTION VALUE="PARTIAL">Left to right</OPTION>
+    	<OPTION VALUE="EXACT">Exact content</OPTION>
+           </SELECT>
+</LI>
+
+
+<LI>
+       pub. year:
+
+	
+       <INPUT VALUE="" NAME="pubyear" MAXLENGTH="20" SIZE="20" TYPE="text">
+</LI>
+
+<LI>
+       sort by:
+	
+       <SELECT NAME="sort_by">
+          <OPTION VALUE="NONE"> None</OPTION>
+          <OPTION VALUE="AU"> Author</OPTION>
+          <OPTION VALUE="SU"> Subject</OPTION>
+          <OPTION VALUE="TI"> Title</OPTION>
+          <OPTION VALUE="relevance"> Relevance</OPTION>
+          <OPTION VALUE="PBYR"> Old to New</OPTION>
+          <OPTION VALUE="-PBYR" SELECTED="selected"> New to Old</OPTION>
+        </SELECT>
+</LI>
+
+<LI>
+      <INPUT VALUE="ANY" NAME="item_2cat" TYPE="hidden">
+      <INPUT VALUE="NO" NAME="shadow" TYPE="hidden">
+  </LI>
+</UL>
+
+
+</FORM>
+
+<!-- This form is used only to send the "Reset Query" request using the Javascript button above. -->
+<FORM>
+  <INPUT VALUE="" NAME="reset_dummy_field" TYPE="hidden">
+</FORM>
+
+
+
+
+        <!-- checking to see if we need the cell -->
+         <!-- show this table when presenting a labelled catalog search b/c we don't want to show the list of available searches on the search/home page-->
+            <!-- if an icon search -->
+          <!-- if any special search resource is on -->
+      
+    
+	  
+        <!-- if an icon search -->
+      <!-- if any special search resource is on -->
+  
+  
+     <!-- show this table when presenting a labelled catalog search b/c we don't want to show the list of available searches on the search/home page-->
+      
+        
+ <!-- in relational alias  Currently in a "related group" of gateway elements, so provide the "additional forms" links -->
+     <H3>Catalog Searches</H3>
+   <UL>
+   <!-- provide links to other gateway searches -->
+    <!-- check to see if gatweay description exists -->
+     <LI><U><FONT COLOR=blue>Browse</FONT></U></LI>
+   <!-- provide links to other gateway searches -->
+    <!-- check to see if gatweay description exists -->
+     <LI><U><FONT COLOR=blue>Call Number</FONT></U></LI>
+ </UL>
+        
+      
+	  
+<!--
+-->
+  
+
+
+
+<!--  Copyright (c) 2000  2010, SirsiDynix  Buttons for Catalog Access page, state #3. -->
+
+
+  <H2>Contextual Navigation Menu</H2>
+  <UL>
+    <LI>
+      <!-- Go back button --><U><FONT COLOR=blue>Go Back</FONT></U>
+    </LI>
+    <!--
+    <li class="menu_link">
+      <a href="/uhtbin/cgisirsi/?ps=Ksrysbz1Wa/BIZZELL/319370063/2/6" title="Go Back" alt="Go Back">GO BACK</a>
+    </li>
+     -->
+
+<!-- Help button -->
+		  <!-- use context HTML help -->
+<LI>
+  
+    //
+  
+</LI>
+
+  <!-- gateway's custom buttons -->
+
+    <LI><U><FONT COLOR=blue>Permalink</FONT></U></LI>
+
+
+    <LI><U><FONT COLOR=blue>Logout</FONT></U></LI>
+    <LI></FONT></U></LI>
+  </UL>
+
+  <!-- display date change options if allowed -->
+  
+    
+<!--  Copyright (c) 1996  2010, SirsiDynix  Gateway Element Bottomofpage (for all gateway groups and destinations). -->
+<!-- Print paragraph file GATEWWWPGCD if GATESUSEPARCD says to print at bottom  of page (i.e., its value is 2).-->
+<!-- Print footer file GATEWWWFOOTERCD if GATEWWWUSEFTCD is 1. -->
+    
+    
+        <FORM><INPUT VALUE="" NAME="url" TYPE="hidden"></FORM>
+    
+  
+	
+
+
+<!-- Footer -->
+
+
+
+
+    <U><FONT COLOR=blue>CONTACT US  |</FONT></U>
+    <U><FONT COLOR=blue>EMPLOYMENT  |</FONT></U>
+    <U><FONT COLOR=blue>ABOUT THIS SITE  |</FONT></U>
+    <U><FONT COLOR=blue>OTHER LIBRARIES</FONT></U>
+    
+
+<P>Copyright &#169; 2000-2011, SirsiDynix</P><BR>
+<P>The University of Oklahoma Libraries | 401 West Brooks Street | Norman, OK 73019 (405) 325-4142</P>
+<U><FONT COLOR=blue>Disclaimer | </FONT></U>
+<U><FONT COLOR=blue>Copyright © 2009 The University of Oklahoma Libraries, All Rights Reserved</FONT></U>
+
+<U><FONT COLOR=blue>The University of Oklahoma is an Equal Opportunity Employer</FONT></U>
+
+
+
+
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>

@@ -1,0 +1,685 @@
+<HTML><!-- InstanceBegin template="/Templates/subpage_asp.dwt" codeOutsideHTMLIsLocked="false" -->
+<HEAD>
+<META CONTENT="text/html; charset=UTF-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<TITLE>E-Book Collections - The University of Iowa Libraries</TITLE>
+<META NAME="Description" CONTENT="Electronic book collections at the University of Iowa Libraries">
+<META NAME="Keywords" CONTENT="ebooks, e-books, electronic books, online books, on-line books">
+
+<!-- InstanceEndEditable -->
+<META NAME="description" CONTENT="The University of Iowa Libraries">
+
+
+
+
+
+
+	jQuery(document).ready(function($) {
+$('.sf-menu').superfish({autoArrows: true, speed: 'fast', dropShadows: 'true'});
+});	
+
+<!--
+function clearDefault(el) {
+if (el.defaultValue==el.value) el.value = ""
+}
+// -->
+
+
+
+
+<!--<meta name="viewport" id="viewport" content="width=devicewidth, userscalable=no, initialscale=1.0, maximumscale=1.0" />-->
+<META NAME="viewport" CONTENT="width=device-width,initial-scale=1.0">
+
+
+
+
+<!--added to track external links on home page 11/11-->
+
+  function recordOutboundLink(link, category, action) {
+    _gat._getTrackerByName()._trackEvent(category, action);
+    setTimeout('document.location = "' + link.href + '"', 100);
+  }
+
+
+
+
+
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-783364-11']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+
+
+
+<!-- InstanceBeginEditable name="head" -->
+
+<!--
+
+h3 { marginbottom: 0; paddingbottom: 0; }
+.style1 { fontsize: small; fontweight: normal; paddingtop: 0; margintop: 0; }
+-->
+
+
+<!-- InstanceEndEditable -->
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<U><FONT COLOR=blue>Skip navigation</FONT></U> 
+
+  [print page header]
+
+
+
+  <P>For more mobile web services, visit <U><FONT COLOR=blue>www.lib.uiowa.edu/m</FONT></U></P>
+
+
+<H1>The University of Iowa Libraries</H1>
+
+  
+
+  <UL>
+    <LI><U><FONT COLOR=blue>The University of Iowa Libraries</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Site Map</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Contact Us</FONT></U>
+      <UL>
+        <LI><U><FONT COLOR=blue>Staff Directory</FONT></U></LI>
+        <LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+        <LI><U><FONT COLOR=blue>Living-Learning Communities Personal Librarians</FONT></U></LI>
+        <LI><U><FONT COLOR=blue>Cultural Center Liaisons</FONT></U></LI>
+        <LI><U><FONT COLOR=blue>Subject Specialists</FONT></U></LI>
+        <LI><U><FONT COLOR=blue>Make a Gift</FONT></U></LI>
+      </UL>
+    </LI>
+  </UL>
+
+
+
+<!-- #topmenu -->
+
+  
+    
+       <BR>
+[CLIENT-SIDE IMAGE MAP: The University of Iowa Libraries]<BR>
+
+<MAP NAME="Map">
+  <AREA HREF="/" COORDS="35,24,226,54" SHAPE="rect" ALT="The University of Iowa Libraries">
+  <AREA HREF="http://www.uiowa.edu/" COORDS="-1,1,-2,50,34,51,35,22,228,22,224,0" SHAPE="poly" ALT="The University of Iowa">
+</MAP>
+
+    
+    
+        <FORM>
+        <INPUT VALUE="t" NAME="tb" TYPE="hidden">
+        <INPUT VALUE="Basic" NAME="mode" TYPE="hidden">
+        <INPUT VALUE="default_tab" NAME="tab" TYPE="hidden">
+        <INPUT VALUE="1" NAME="indx" TYPE="hidden">
+        <INPUT VALUE="true" NAME="dum" TYPE="hidden">
+        <INPUT VALUE="rank" NAME="srt" TYPE="hidden">
+        <INPUT VALUE="uiowa" NAME="vid" TYPE="hidden">
+        <INPUT VALUE="" NAME="frbg" TYPE="hidden">
+        <INPUT VALUE="Smart Search" NAME="vl(freeText0)" TYPE="text">
+      <!--  <input type="submit" value="Go" id="go" class="searchsubmit" title="Smart Search" alt="Smart Search" onclick="javascript: pageTracker._trackPageview('/find/redirects/ss.html');" />-->
+        
+        <INPUT VALUE="Go" TYPE="submit">
+        
+        
+      </FORM>
+    
+  
+  <!-- #branding -->
+
+<!-- #header -->
+
+  
+  
+    <UL>
+      <LI><U><FONT COLOR=blue>Find Resources</FONT></U>
+        <UL>
+          <LI><U><FONT COLOR=blue>Smart Search</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>InfoHawk Catalog</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Databases</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>E-journals</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>E-books</FONT></U> </LI>
+          <LI><U><FONT COLOR=blue>Resources by Subject (LibGuides)</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Resources by Type</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Find Books &amp; Journals</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Find Articles</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Find Videos</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Iowa Digital Library </FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Research Collections<BR>
+            Special Collections &amp; University Archives, Iowa Women's Archives </FONT></U></LI>
+        </UL>
+      </LI>
+      <LI><U><FONT COLOR=blue>Services</FONT></U>
+        <UL>
+          <LI><U><FONT COLOR=blue>Course Reserves</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Interlibrary Loan &amp; Document Delivery</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Reference &amp; Library Instruction</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Government Information</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Circulation</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Distance Education</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Cultural Center Liaisons</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Scholarly Communication</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Iowa Research Online</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>More services...</FONT></U></LI>
+        </UL>
+      </LI>
+      <LI><U><FONT COLOR=blue>My Personal Library</FONT></U>
+        <UL>
+          <LI><U><FONT COLOR=blue>Check My Account</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Renew My Books</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>My Interlibrary Loan</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Recommend Library Purchase</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>RefWorks</FONT></U></LI>
+        </UL>
+      </LI>
+      <LI><U><FONT COLOR=blue>About the Libraries</FONT></U>
+        <UL>
+          <LI><U><FONT COLOR=blue>Locations</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Departments</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Employment</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>News &amp; Events</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Staff Directory</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Policies</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Collection Management</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Publications, Plans &amp; Reports </FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Friends of the Library</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>History of the Library</FONT></U></LI>
+        </UL>
+      </LI>
+      <LI><U><FONT COLOR=blue>Help</FONT></U>
+        <UL>
+          <LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Research Guides &amp; Tutorials</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Directions &amp; Maps</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>FAQ</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Assistance for Users with Disabilities </FONT></U> </LI>
+          <LI><U><FONT COLOR=blue>A-Z Search</FONT></U> </LI>
+        </UL>
+      </LI>
+      <LI><U><FONT COLOR=blue>Campus Libraries</FONT></U>
+        <UL>
+       
+          <LI><U><FONT COLOR=blue>Directions &amp; Maps<BR>
+            Contact information, addresses, parking information</FONT></U> </LI>
+          <LI><U><FONT COLOR=blue>Art Library</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Business Library <BR>
+            Marvin A. Pomerantz Business Library</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Engineering Library<BR>
+            Lichtenberger Engineering Library</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Health Sciences Library <BR>
+            Hardin Library for the Health Sciences</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Law Library</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Main Library</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Music Library<BR>
+            Rita Benton Music Library</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Sciences Library</FONT></U></LI>
+        </UL>
+      </LI>
+      
+         <LI><U><FONT COLOR=blue>Hours</FONT></U> </LI>
+    </UL>
+  
+  <UL>
+    <LI><U><FONT COLOR=blue>RSS Feeds</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Twitter</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Facebook</FONT></U></LI>
+  </UL>
+
+
+  <!-- #navcontent -->
+
+<!-- #nav -->
+</FONT></U>
+
+   <!-- InstanceBeginEditable name="RLI_Navigation" -->
+  
+<!-- InstanceEndEditable --> </FONT></U>
+    <H2><!-- InstanceBeginEditable name="SubHeading" -->E-Book Collections<!-- InstanceEndEditable --></H2>
+    <!-- InstanceBeginEditable name="Body" -->
+
+
+      
+
+     <H3><U><FONT COLOR=blue>ABC-CLIO eBooks</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P></P>
+      
+
+     <H3><U><FONT COLOR=blue>AccessMedicine</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>AccessMedicine.com is an online resource that provides complete references and services for physicians, students, and health professionals who need immediate access to authoritative and current medical data. It is updated daily. The service's central resource is a repository of medical knowledge from internal medicine, cardiology, genetics, pharmacy, diagnosis and management, basic sciences, patient care, and more. All databases in the repository contain the latest editions core medical titles from the AccessLange collection.</P>
+      
+
+     <H3><U><FONT COLOR=blue>AccessPharmacy</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>AccessPharmacy is an online curricular resource designed to meet the changing demands of pharmacy education. A flexible resource, AccessPharmacy allows students to select a core curriculum topic, browse by organ system, review textbooks, or search across leading pharmacy online references.</P>
+      
+
+     <H3><U><FONT COLOR=blue>ACLS Humanities E-Book</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>A collection of over 1,700 books of high quality in the humanities, accessible through institutional and individual subscription. These are works of major importance, from 250 publishers, that remain vital to both scholars and advanced students, and are frequently cited in the literature.</P>
+      
+
+     <H3><U><FONT COLOR=blue>ACP Medicine</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>ACP Medicine (was: Scientific American Medicine) is a comprehensive online textbook.</P>
+      
+
+     <H3><U><FONT COLOR=blue>ACS Symposium Series</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>The ACS Symposium Series contains high-quality, peer-reviewed books developed from the ACS technical divisions' symposia. Each chapter is carefully authored by an expert in the field, and the collection of chapters edited by an internationally recognized leader in the field. The series covers a broad range of topics including agricultural and food chemistry, cellulose and renewable materials, chemical education, organic chemistry, polymer chemistry, materials, and many others.</P>
+      
+
+     <H3><U><FONT COLOR=blue>American Drama 1714-1915</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>Containing more than 1,500 dramatic works from the early eighteenth century up to the beginning of the twentieth, American Drama 1714 -1915 reflects American dramatic writing in all its richness and diversity: plays in verse, farces, melodramas, minstrel shows, realist plays, frontier plays, temperance dialogues and a range of other genres are represented. Major dramatists include David Belasco, Rachel Crothers, Augustin Daly, Clyde Fitch, Edward Harrigan, James Herne, William Dean Howells and Joaquin Miller. Part of Literature Online (LION).</P>
+      
+
+     <H3><U><FONT COLOR=blue>APA Books</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>Each APA Book E-Collection is searchable on the APA PsycNET® platform and includes a full copyright year of material, with 2007 through 2010 copyright years currently available. In addition, APA Books E-Collections let your institution acquire recent releases with the first electronic release of current copyright year content.</P>
+      
+
+     <H3><U><FONT COLOR=blue>Biblical Archaeology Society Online Archive</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>Only accessible on campus. Contains the content of selected journals and books published by the Biblical Archaeology Society. Includes each issue of the magazines Biblical archaeology review, Bible review, and Archaeology odyssey, and the content of five books.</P>
+      
+
+     <H3><U><FONT COLOR=blue>Biochemistry</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>5th ed. (2002) - NCBI Bookshelf 
+[Jeremy M Berg, John L Tymoczko, and Lubert Stryer]</P>
+      
+
+     <H3><U><FONT COLOR=blue>Black Drama - 1850 to present</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>Currently contains approximately 1200 plays by 201 playwrights, together with detailed, fielded information on related productions, theaters, production companies, and more. The database also includes selected playbills, production photographs and other ephemera related to the plays.   Many works are rare, hard-to-find, or out of print. Nearly a quarter of the collection will consist of previously unpublished plays by such writers as Langston Hughes, Ed Bullins, Willis Richardson, Femi Euba, Amiri Baraka, Randolph Edmonds, Zora Neale Hurston.</P>
+      
+
+     <H3><U><FONT COLOR=blue>Black Thought and Culture :  African Americans from Colonial Times to the Present</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>Black Thought and Culture is a single source for the published works of numerous historically important black leaders. Along with well-known works, the collection features approximately 5,000 pages of unique, fugitive, and never-before-published materials. When complete, Black Thought and Culture will provide approximately 100,000 pages of monographs, essays, articles, speeches, and interviews written by leaders within the black community from the earliest times to 1975. Black teachers, artists, politicians, religious leaders, athletes, war veterans, entertainers, and other leaders form the mainstay of this corpus. The collection is intended for research in black studies, political science, American history, music, literature, and art.</P>
+      
+
+     <H3><U><FONT COLOR=blue>Books24x7</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>Electronic books, chiefly in the field of computer science (Business and Culture, Certification and Compliance, Databases, Desktop and Office Applications, Enterprise Computing, Graphic Design and Multimedia, Hardware,  IBM Technologies, Networks and Protocols, Operating Systems, Programming Languages, Security, Software Engineering, Telecommunications, Web Programming and Development) and Business (Business Skills, Corporate Case Studies and Interviews, Employee Training and Development, Finance and Accounting, Human Resources, International Business, Management and Leadership, Marketing and Sales, Project Management,  Quality and Manufacturing Management, Team Skills, Technology in Business). LOGIN FROM THE LIBRARY CATALOG using a Hawk ID to access content.</P>
+      
+
+     <H3><U><FONT COLOR=blue>Brill E-Books Online</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>Brill E-Books Online provides access to thousands of publications from 2007 to the present in subjects encompassing Asian Studies, Biblical Studies, Ancient Near East and Early Christianity, Classical Studies, European History and Culture, Language and Linguistics, Middle East and Islamic Studies, Religious Studies, Theology and Philosophy, and Social Sciences.</P>
+      
+
+     <H3><U><FONT COLOR=blue>Clinical Anesthesiology</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>4th ed. (2006) - AccessMedicine 
+[G. Edward Morgan, Jr., Maged S. Mikhail, Michael J. Murray]</P>
+      
+
+     <H3><U><FONT COLOR=blue>CogNet Library</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>A major electronic resource for cognitive and brain sciences which provides searchable full-text of major reference works, books, and journals from MIT Press and other publishers and resource providers.  Also includes conference materials, CogSci Dictionary, Almanac of cognitive science programs, and much more.</P>
+      
+
+     <H3><U><FONT COLOR=blue>Early English Prose Fiction</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>A collection of more than 200 works from the period 1500 - 1700, exploring the rich diversity of prose fiction in English in the period preceding the emergence of the realist novel as its dominant form. EEPF offers the full text of works by key writers such as John Bunyan, Sir Philip Sidney, Thomas Nashe and Aphra Behn, and has been produced in association with the Salzburg Centre for Research on the Early English Novel (SCREEN).  Access via Literature Online (LION).</P>
+      
+
+     <H3><U><FONT COLOR=blue>eBooks on EBSCOhost</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>Formerly NetLibrary ebooks.</P>
+      
+
+     <H3><U><FONT COLOR=blue>Ebrary</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>Academic Complete is a highly interactive eBook database from ebrary that covers all academic subject areas. The collection currently includes more than 30,000 titles from more than 220 of the world's leading academic, STM, and professional publishers.</P>
+      
+
+     <H3><U><FONT COLOR=blue>EEBO-TCP: Early English Books Online -- Text Creation Partnership</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>Searchable text-based version of the page images available in <U><FONT COLOR=blue>EEBO: Early English Books Online</FONT></U>, an online corpus of the titles published between 1475 and 1700 listed in Pollard and Redgrave, Wing, and the Thomason Tracts catalogs.  The marked-up text provides full keyword searching, allowing scholars to pinpoint even minute references to their subjects as they appeared in a wide variety of early modern works. The search interface also allows scholars to uncover repeated word patterns across texts that ten years ago were only available in archives or on microfilm.  Links from this text version to the page images are planned.</P>
+      
+
+     <H3><U><FONT COLOR=blue>EEBO: Early English Books Online</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>From the first book published in English through the age of Spenser and Shakespeare this collection contains over 100,000 titles listed in Pollard and Redgrave's Short-Title Catalogue (1475-1640) and Wing's Short-Title Catalogue (1641-1700) and Thomason Tracts and their revised edition.</P>
+      
+
+     <H3><U><FONT COLOR=blue>Elsevier ScienceDirect E-Books</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>Elsevier purchase includes over 450 books published  beginning in 2008.</P>
+      
+
+     <H3><U><FONT COLOR=blue>Google Book Search</FONT></U>
+
+</H3>
+         <P>Search the full text of books to find ones that interest you and learn where to buy or borrow them.</P>
+      
+
+     <H3><U><FONT COLOR=blue>Gutenberg-e</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>A collection of books from the American Historical Association and Columbia University Press.  (Adobe Acrobat reader is required to view PDF files; QuickTime or RealOne players are required to play audio and video files.)</P>
+      
+
+     <H3><U><FONT COLOR=blue>Handbook of Paleoanthropology</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>Winfried Henke, Ian Tattersall (eds.) ; in collaboration with Thorolf Hardt.</P>
+      
+
+     <H3><U><FONT COLOR=blue>Harrison's Online (AccessMedicine)</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>Featuring the complete contents of the world's leading textbook of medicine Harrison's Principles of Internal Medicine</P>
+      
+
+     <H3><U><FONT COLOR=blue>Hathi Trust</FONT></U>
+
+</H3>
+         <P>HathiTrust makes the digitized collections of some of the nation's great research libraries available for all. HathiTrust was initially conceived as a collaboration of the thirteen universities of the Committee on Institutional Cooperation, the University of California system, and the University of Virginia to establish a repository for those universities to archive and share their digitized collections. HathiTrust will quickly expand to include additional partners and to provide those partners with an easy means to archive their digital content.</P>
+      
+
+     <H3><U><FONT COLOR=blue>Making of America</FONT></U>
+
+</H3>
+         <P>University of Michigan.  A digital library of primary sources  in American social history primarily from the antebellum period through reconstruction. This site provides access to 9,500 books  and over 100,000 journal articles with 19th century imprints.</P>
+      
+
+     <H3><U><FONT COLOR=blue>MD Consult</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>MD Consult provides access to more than 50 renowned medical texts, articles from more than 70 clinical journals, practice guidelines, drug information, 2,500 patient education handouts, CME, and daily medical updates customized for a given specialty.</P>
+      
+
+     <H3><U><FONT COLOR=blue>Medieval Sourcesonline</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>Contains several full text books, which include hundreds of original medieval history documents compiled for the teaching and study of history.</P>
+      
+
+     <H3><U><FONT COLOR=blue>Mental Measurements Yearbook with Tests in Print</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>Mental Measurements Yearbook, produced by the Buros Institute, contains full text information about and reviews of all English-language standardized tests covering educational skills, personality, vocational aptitude, psychology, and related areas as included in the printed "Mental Measurements Yearbooks."
+Tests in Print, produced by the Buros Institute, is a listing of commercially available tests that are currently in print in the English language.  TIP compliments and supplements the Mental Measurements Yearbook.</P>
+      
+
+     <H3><U><FONT COLOR=blue>netLibrary</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>See "eBooks on EBSCOhost."</P>
+      
+
+     <H3><U><FONT COLOR=blue>OECD iLibrary (formerly SourceOECD)</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>OECD iLibrary contains all the publications and datasets released by OECD (Organisation for Economic Cooperation and Development), International Energy Agency (IEA), Nuclear Energy Agency (NEA), OECD Development Centre, PISA (Programme for International Student Assessment), and International Transport Forum (ITF) since 1998 - currently, 1 000 journal issues, 2 900 working papers, 2 500 multi-lingual summaries, 6 200 e-book titles, 14 000 tables and graphs, 21 000 chapters and articles, and 390 complete databases with more than 4 billion data points.</P>
+      
+
+     <H3><U><FONT COLOR=blue>Oxford Reference Online : Religion and Philosophy</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>Topical division contains the searchable version of the latest edition of published Oxford encyclopedias and dictionaries on the Bible, Buddhism, Islam, Philosophy, etc.</P>
+      
+
+     <H3><U><FONT COLOR=blue>Oxford Scholarship Online</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>Cross-searchable library containing the full text and abstracts of classic and newly published Oxford books in the areas of Economics and Finance, Philosophy, Political Science, and Religion.</P>
+      
+
+     <H3><U><FONT COLOR=blue>Past Masters</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>Full-text humanities database, including works of such philosophers as Locke, Berkeley, Hume, Hobbes, Mill, Bentham, Machiavelli, Rousseau, Descartes, Leibniz, Spinoza, Aristotle, Thomas Aquinas, Wittgenstein, Peirce, Kierkegaard, A. Smith; mostly in English.</P>
+      
+
+     <H3><U><FONT COLOR=blue>Project Gutenberg Online Book Catalog</FONT></U>
+
+</H3>
+         <P>Project Gutenberg is the first and largest single collection of free electronic books, or eBooks.</P>
+      
+
+     <H3><U><FONT COLOR=blue>Rittenhouse Digital Library</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>R2 is a web-based application that aggregates health sciences book content from leading publishers in a single platform. This service is available exclusively through hospital, academic, and institutional libraries.</P>
+      
+
+     <H3><U><FONT COLOR=blue>Sage eReference</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>A database of reference books published by SAGE covering the social sciences and education, including such areas as African American Studies, Aging & Gerontology, Anthropology, Communication and Media Studies, Criminology and Criminal Justice, Economics, Education, Gender & Sexuality Studies, History, Politics, Psychology, Social Issues, Social Work & Social Policy, and Sociology.</P>
+      
+
+     <H3><U><FONT COLOR=blue>Siku Quanshu (Wenyuange Edition) Intranet Version</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>Access (via IP) to Electronic version of the Wenyuange edition of Siku Quanshu is available on most of the computers in the UI Main Library. UI Faculty who want to gain access (via IP) to it in their campus offices need to download and install a client program on their office computers from <U><FONT COLOR=blue>http://us.subscriptionv3.skqs.com/skqs/download</FONT></U> (download and installation instructions are provided on the website). The Siku Quanshu features a collection of 3,460 Chinese classical works in 36,000 volumes or 4,700,000 pages, which includes works on philosophy, history, literature and art, political systems, social studies, economics, astronomy and geography, mathematics, medical studies, technology, etc.</P>
+      
+
+     <H3><U><FONT COLOR=blue>SourceOECD (now OECD iLibrary)</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>SourceOECD provides comparative statistics from the 30 member states (industrialized nations) of the Organization for Economic Cooperation and Development, as well as development statistics from other countries. Includes an interactive data browser as well as PDF downloadable files. Click on Statistics link at the top of the page to get started. See OECD iLibrary.</P>
+      
+
+     <H3><U><FONT COLOR=blue>Springer E-Book Collection</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>SpringerLink offers an integrated full-text database for thousands of e-books, protocols, eReferences, and book series published by Springer since 2005.</P>
+      
+
+     <H3><U><FONT COLOR=blue>STAT!Ref</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>Electronic medical library.</P>
+      
+
+     <H3><U><FONT COLOR=blue>Typee: A Fluid-Text Edition</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>One of America's most startling fluid texts, Herman Melville's Typee exists in multiple critically diverse versions, in both manuscript and print. Based on the recently discovered working draft of Typee, this electronic edition offers digital images, a transcription of each manuscript page, corresponding print texts, and a dynamic reading text, which allows readers to inspect the revision sequences and narratives of more than 1000 revision sites.</P>
+      
+
+     <H3><U><FONT COLOR=blue>University of Iowa Press: Iowa Short Fiction Award & John Simmons Short Fiction Award</FONT></U>
+
+</H3>
+         <P>The Iowa Short Fiction Award has been presented annually since 1969. In 1988 the University of Iowa Press instituted the John Simmons Short Fiction Award - named after the first director of the Press - to complement the ongoing award series. Both national competitions are juried through the Iowa Writers' Workshop. Serious critical consideration is guaranteed by such final judges as Alison Lurie, Raymond Carver, Marilynne Robinson, James Salter, Kevin Brockmeier, and Ethan Canin.</P>
+      
+
+     <H3><U><FONT COLOR=blue>University of Iowa Press: Singular Lives</FONT></U>
+
+</H3>
+         <P>Edited by a distinguished scholar of autobiography, this series includes life stories of so-called ordinary Americans who, though not necessarily known to the general public, freshly recreated representative pasts and reimagined singular identities. This series is no longer accepting submissions.</P>
+      
+
+     <H3><U><FONT COLOR=blue>Wiley E-Books</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>Wiley/Blackwell purchase includes over 2000 books for years 2007-2009</P>
+      
+
+     <H3><U><FONT COLOR=blue>World Bank e-Library</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>Contains over 3,400 World Bank titles, searchable by keywords, title, and author.</P>
+      
+
+     <H3><U><FONT COLOR=blue>Wright American fiction, 1851-1875</FONT></U>
+
+   [Restricted Resource - UI Access Only] 
+
+</H3>
+         <P>A product of the Committee on Institutional Cooperation (CIC), this is a collection of 19th century American fiction, as listed in Lyle Wright's bibliography American Fiction, 1851-1875. There are over 2,800 texts  by almost 1,500 authors.</P>
+      
+
+     
+  <P>What you should know about using electronic information resources: <U><FONT COLOR=blue>plagiarism, copyright, fair use, and terms of licenses </FONT></U> </P>
+<!-- InstanceEndEditable --> 
+  <!--end main div-->
+  
+    
+
+  <UL>
+    <LI><U><FONT COLOR=blue>Home</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Contact Us</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Assistance for Users with Disabilities</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>UI Libraries Mobile</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>[UI Libraries Mobile]</FONT></U></LI>
+  </UL>
+
+
+  <UL>
+    <LI><U><FONT COLOR=blue>The University of Iowa Libraries</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>100 Main Library (LIB)</FONT></U></LI>
+    <LI>Iowa City, IA 52242-1420</LI>
+    <LI><U><FONT COLOR=blue>(319)335-5299</FONT></U></LI>
+    <LI>&copy; <U><FONT COLOR=blue>The University of Iowa</FONT></U> 2012</LI>
+    <LI><U><FONT COLOR=blue>[Creative Commons License]</FONT></U></LI>
+  </UL>
+
+
+  <P><U><FONT COLOR=blue>[Follow us on Facebook]</FONT></U>&nbsp;<U><FONT COLOR=blue>[RSS Feed]</FONT></U>&nbsp;<U><FONT COLOR=blue>[Follow us on Twitter] </FONT></U></P>
+  <P>
+    <!-- AddThis Button BEGIN -->
+    var addthis_disable_flash = true;
+    addthis_pub  = 'uilibraries';
+    <U><FONT COLOR=blue>[Click to share, email or bookmark this site]</FONT></U>
+    
+    <!-- AddThis Button END -->
+  </P>
+
+
+ 
+    <UL>
+    
+    <LI><U><FONT COLOR=blue>Site Map</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Go to our mobile site</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Contact Us</FONT></U></LI>
+      <LI>&copy; <U><FONT COLOR=blue>The University of Iowa Libraries</FONT></U> 2011</LI>
+    </UL>
+  
+This site is based on the Arras WordPress Theme
+
+  
+
+<!-- #wrapper -->
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<!-- InstanceEnd --></HTML>

@@ -1,0 +1,577 @@
+
+<HTML><!-- InstanceBegin template="/Templates/main.dwt.php" codeOutsideHTMLIsLocked="false" -->
+<HEAD>
+		<META CONTENT="text/html; charset=utf-8">
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<TITLE>WSU Libraries : Maps</TITLE>
+	<!-- InstanceEndEditable -->
+	<META CONTENT="en-us">
+	<META NAME="keywords" CONTENT="Wayne State University, WSU, Library System, Libraries">
+	<META NAME="description" CONTENT="The online resources and services of the Wayne State University Libraries">
+	<META NAME="author" CONTENT="libwebmaster@wayne.edu">
+	<META NAME="Copyright" CONTENT="Copyright (c) 2012 Wayne State University">
+    
+	
+    
+	
+	
+	#main { background: #fff url('/inc/img/pix/pix4.jpg') 25px 50px repeat-y; }
+
+	<!--[if lte IE 7]><link rel="stylesheet" href="/inc/css/ie/all.css" type="text/css" media="all" /><![endif]-->
+	<!--[if lte IE 6]><link rel="stylesheet" href="/inc/css/ie/6.css" type="text/css" media="all" />
+    <script type="text/javascript" language="javascript" src="/inc/js/unitpngfix.js"></script><![endif]-->
+	<!--[if lte IE 5]><link rel="stylesheet" href="/inc/css/ie/5win.css" type="text/css" media="all" /><![endif]-->
+    
+    
+    
+    
+	document.write("#functionmenu { display: none; }");
+    
+	<!-- InstanceBeginEditable name="head" -->
+    
+    
+	
+	  $(document).ready(function(){
+		  //Create Map
+		  var mylatlng = new google.maps.LatLng(42.354917, -83.064000);
+		  var myOptions = {
+			zoom: 14,
+			center: mylatlng,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+			/*mapTypeControlOptions: { mapTypeIds: tarray }*/
+		  };
+		  var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+		  //Creat info bubble windows, add opening/closing functionality
+		  var infoWindow = new google.maps.InfoWindow();
+		  //Called when clicking anywhere on the map and closes the info window.
+		  closeInfoWindow = function() {
+  			infoWindow.close();
+		  };
+		  google.maps.event.addListener(map, 'click', closeInfoWindow);
+		  openInfoWindow = function(marker, content) {
+			infoWindow.setContent(content);
+			infoWindow.open(map, marker);
+		  };
+
+		  //Add markers, content for info bubble, and triggers for each building
+		  			var lawmarker = new google.maps.Marker({
+			  position: new google.maps.LatLng(42.360226, -83.070714), 
+			  map: map, 
+			  title:"Law Library"
+			});
+			
+			var lawcontentString = ''+
+			  'Law Library'+
+			  ''+
+			  '474 Ferry Mall, Detroit, MI 48202 '+
+			  '(313) 577-3925'+
+			  'Driving Directions'+
+			  			  ' |  More Info' 		
+			  ''+
+			  '';
+  		
+			google.maps.event.addListener(lawmarker, 'click', function() {
+				openInfoWindow(lawmarker, lawcontentString);
+			});
+			try {
+				google.maps.event.addDomListener(document.getElementById("lawmkr"), 'click', function() {
+					openInfoWindow(lawmarker, lawcontentString);
+				});
+			}
+			catch (err) {}
+
+						var macmarker = new google.maps.Marker({
+			  position: new google.maps.LatLng(42.626743, -82.957355), 
+			  map: map, 
+			  title:"Macomb Center"
+			});
+			
+			var maccontentString = ''+
+			  'Macomb Center'+
+			  ''+
+			  '16480 Hall Rd, Clinton Township, MI 48038 '+
+			  '(586) 286-0359'+
+			  'Driving Directions'+
+			  			  ' |  More Info' 		
+			  ''+
+			  '';
+  		
+			google.maps.event.addListener(macmarker, 'click', function() {
+				openInfoWindow(macmarker, maccontentString);
+			});
+			try {
+				google.maps.event.addDomListener(document.getElementById("macmkr"), 'click', function() {
+					openInfoWindow(macmarker, maccontentString);
+				});
+			}
+			catch (err) {}
+
+						var oakmarker = new google.maps.Marker({
+			  position: new google.maps.LatLng(42.496450, -83.382657), 
+			  map: map, 
+			  title:"Oakland Center"
+			});
+			
+			var oakcontentString = ''+
+			  'Oakland Center'+
+			  ''+
+			  '33737 Twelve Mile Rd, Farmington Hills, MI 48331 '+
+			  '(248) 553-6632'+
+			  'Driving Directions'+
+			  			  ' |  More Info' 		
+			  ''+
+			  '';
+  		
+			google.maps.event.addListener(oakmarker, 'click', function() {
+				openInfoWindow(oakmarker, oakcontentString);
+			});
+			try {
+				google.maps.event.addDomListener(document.getElementById("oakmkr"), 'click', function() {
+					openInfoWindow(oakmarker, oakcontentString);
+				});
+			}
+			catch (err) {}
+
+						var pkmarker = new google.maps.Marker({
+			  position: new google.maps.LatLng(42.358064, -83.069108), 
+			  map: map, 
+			  title:"P/K Library"
+			});
+			
+			var pkcontentString = ''+
+			  'P/K Library'+
+			  ''+
+			  '5265 Cass Ave, Detroit, MI 48202 '+
+			  '(313) 577-4042'+
+			  'Driving Directions'+
+			  			  ' |  More Info' 		
+			  ''+
+			  '';
+  		
+			google.maps.event.addListener(pkmarker, 'click', function() {
+				openInfoWindow(pkmarker, pkcontentString);
+			});
+			try {
+				google.maps.event.addDomListener(document.getElementById("pkmkr"), 'click', function() {
+					openInfoWindow(pkmarker, pkcontentString);
+				});
+			}
+			catch (err) {}
+
+						var selmarker = new google.maps.Marker({
+			  position: new google.maps.LatLng(42.356007, -83.068748), 
+			  map: map, 
+			  title:"Science &amp; Engineering Library"
+			});
+			
+			var selcontentString = ''+
+			  'Science &amp; Engineering Library'+
+			  ''+
+			  '5048 Gullen Mall, Detroit, MI 48202 '+
+			  '(313) 577-4066'+
+			  'Driving Directions'+
+			  			  ' |  More Info' 		
+			  ''+
+			  '';
+  		
+			google.maps.event.addListener(selmarker, 'click', function() {
+				openInfoWindow(selmarker, selcontentString);
+			});
+			try {
+				google.maps.event.addDomListener(document.getElementById("selmkr"), 'click', function() {
+					openInfoWindow(selmarker, selcontentString);
+				});
+			}
+			catch (err) {}
+
+						var medappmarker = new google.maps.Marker({
+			  position: new google.maps.LatLng(42.348766, -83.055267), 
+			  map: map, 
+			  title:"Shiffman @ Applebaum LRC"
+			});
+			
+			var medappcontentString = ''+
+			  'Shiffman @ Applebaum LRC'+
+			  ''+
+			  '259 Mack Ave, Detroit, MI 48201 '+
+			  '(313) 577-1279'+
+			  'Driving Directions'+
+			  			  ' |  More Info' 		
+			  ''+
+			  '';
+  		
+			google.maps.event.addListener(medappmarker, 'click', function() {
+				openInfoWindow(medappmarker, medappcontentString);
+			});
+			try {
+				google.maps.event.addDomListener(document.getElementById("medappmkr"), 'click', function() {
+					openInfoWindow(medappmarker, medappcontentString);
+				});
+			}
+			catch (err) {}
+
+						var medmarker = new google.maps.Marker({
+			  position: new google.maps.LatLng(42.354823, -83.055546), 
+			  map: map, 
+			  title:"Shiffman Medical Library"
+			});
+			
+			var medcontentString = ''+
+			  'Shiffman Medical Library'+
+			  ''+
+			  '320 E. Canfield St., Detroit, MI 48201 '+
+			  '(313) 577-1089'+
+			  'Driving Directions'+
+			  			  ' |  More Info' 		
+			  ''+
+			  '';
+  		
+			google.maps.event.addListener(medmarker, 'click', function() {
+				openInfoWindow(medmarker, medcontentString);
+			});
+			try {
+				google.maps.event.addDomListener(document.getElementById("medmkr"), 'click', function() {
+					openInfoWindow(medmarker, medcontentString);
+				});
+			}
+			catch (err) {}
+
+						var uglmarker = new google.maps.Marker({
+			  position: new google.maps.LatLng(42.356917, -83.070009), 
+			  map: map, 
+			  title:"Undergraduate Library"
+			});
+			
+			var uglcontentString = ''+
+			  'Undergraduate Library'+
+			  ''+
+			  '5150 Anthony Wayne, Detroit, MI 48202 '+
+			  '(313) 577-5121'+
+			  'Driving Directions'+
+			  			  ' |  More Info' 		
+			  ''+
+			  '';
+  		
+			google.maps.event.addListener(uglmarker, 'click', function() {
+				openInfoWindow(uglmarker, uglcontentString);
+			});
+			try {
+				google.maps.event.addDomListener(document.getElementById("uglmkr"), 'click', function() {
+					openInfoWindow(uglmarker, uglcontentString);
+				});
+			}
+			catch (err) {}
+
+				   });
+
+    
+    
+    
+	
+	  #content ul#tomaps {
+		  margin: 0px 0px 0px 10px;
+		  padding: 0px 0px 0px 0px;
+		  border-top: 1px #ccc solid;
+		  width: 210px; }
+	  #content ul#tomaps li {
+		  padding: 3px;
+		  list-style-type: none;
+		  list-style-position: outside;
+		  border-bottom: 1px #ccc solid;
+		  border-left: 1px #ccc solid;
+		  border-right: 1px #ccc solid;
+		  font-size:.8em;
+		  position: relative; }
+	  .mapbigtxt {
+		  font-size:1.5em; }
+	  #content ul#tomaps li img {
+		  position: absolute;
+		  top: 3px;
+		  left: 185px; }
+	  #content ul#tomaps li img:hover {
+		  cursor: pointer; }
+	  li#tomaps1 a:hover, li#tomaps2 a:hover, li#tomaps3 a:hover, li#tomaps4 a:hover, li#tomaps5 a:hover, li#tomaps6 a:hover {
+		  text-decoration:underline; }
+	  li#tomaps1:hover, li#tomaps2:hover, li#tomaps3:hover, li#tomaps4:hover, li#tomaps5:hover, li#tomaps6:hover {
+		  background-color:#e7e7e7; }
+	  .break {
+		  clear: both; }
+    
+    
+	
+	<!-- InstanceEndEditable -->
+	 
+    
+        
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+	
+    
+    
+    	<!-- NOTE: LOGGING INTO PIPELINE, BLACKBOARD OR WEBMAIL ALSO LOGS USER INTO EZPROXY -->
+
+  
+      <U><FONT COLOR=blue>Pipeline</FONT></U>
+      | <U><FONT COLOR=blue>Blackboard</FONT></U>
+      | <U><FONT COLOR=blue>Webmail</FONT></U>
+  
+  
+  <U><FONT COLOR=blue>My Library Account</FONT></U>
+    
+
+
+
+
+	
+	<P><U><FONT COLOR=blue>Wayne State University</FONT></U></P>
+    
+    
+    <UL>
+    <LI><U><FONT COLOR=blue>Library System</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Neef Law Library</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Shiffman Medical Library</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>More</FONT></U></LI>
+    </UL>
+    
+ <!-- #header --> 		
+		
+        
+            
+            
+            <H1><U><FONT COLOR=blue>Library System</FONT></U></H1>
+      
+                        <UL>
+              <LI><U><FONT COLOR=blue>Resources</FONT></U>
+              <UL>
+              	<LI><U><FONT COLOR=blue>All Resources</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Catalog</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Article Databases</FONT></U></LI>
+                 <LI><U><FONT COLOR=blue>Digital Collections</FONT></U></LI>
+                 <!-- test to increase visibility of Dig Commons Apr22 JM -->
+                 <LI><U><FONT COLOR=blue>Digital Commons</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>E-Books</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>E-Journals</FONT></U></LI>
+				
+              	<LI><U><FONT COLOR=blue>Guides</FONT></U></LI>
+                			<LI><U><FONT COLOR=blue>Reference Tools</FONT></U></LI>
+				<LI><U><FONT COLOR=blue>Special Collections</FONT></U></LI>
+								              </UL></LI>
+              <LI><U><FONT COLOR=blue>Services</FONT></U>
+              <UL>
+              	<LI><U><FONT COLOR=blue>All Services</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Ask-A-Librarian</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Borrowing</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Classroom Support</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Computing</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Events Support</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Faculty/Grad Research Support</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Interlibrary Loan</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Instruction</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Reserves</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Room Reservations</FONT></U></LI>
+  </UL></LI>
+              <LI><U><FONT COLOR=blue>Library Info</FONT></U>
+              <UL>
+              	<LI><U><FONT COLOR=blue>All Information</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>About</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Contact Info/ Staff Directory</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Hours</FONT></U></LI>
+              	<LI><U><FONT COLOR=blue>Maps and Directions</FONT></U></LI>
+       			<LI><U><FONT COLOR=blue>News</FONT></U>				</LI>				<LI><U><FONT COLOR=blue>Policies</FONT></U></LI>
+				              </UL></LI>
+              <LI><U><FONT COLOR=blue>Quicklinks</FONT></U>
+                <UL>
+                  <LI><U><FONT COLOR=blue>Alerting Services</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Assignment Planner</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Bibliographic Software</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Citation Linker</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Faculty Video Media Request</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>First Year Students</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Library Liaisons</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Office for Teaching and Learning</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Renew Books</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Request Equipment</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Retired Faculty</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>re:Search</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Student Technology Studio</FONT></U></LI>
+                  <LI><U><FONT COLOR=blue>Suggest a Title</FONT></U></LI>
+                </UL>
+              </LI>
+            </UL>
+            <!-- #nav -->
+                 
+
+            
+<H1>WSU Libraries</H1> <!-- FOR PRINT -->
+			<!-- InstanceBeginEditable name="content" -->
+<H2>WSU Library System Maps &amp; Directions</H2>
+
+
+    <UL>
+      <LI>[INLINE]
+          <U><FONT COLOR=blue>LAW<BR>Arthur Neef Law Library</FONT></U></LI>
+      <LI>[INLINE]
+          <U><FONT COLOR=blue>MAC<BR>Macomb Center Library</FONT></U></LI>
+      <LI>[INLINE]
+          <U><FONT COLOR=blue>OAK<BR>Oakland Center Library</FONT></U></LI>
+      <LI>[INLINE]
+          <U><FONT COLOR=blue>PK<BR>Purdy/Kresge Library</FONT></U></LI>
+      <LI>[INLINE]
+          <U><FONT COLOR=blue>SEL<BR>Science and<BR>Engineering Library</FONT></U></LI>
+      <LI>[INLINE]
+          <U><FONT COLOR=blue>SHF<BR>Shiffman Medical Library</FONT></U></LI>
+      <LI>[INLINE]
+          <U><FONT COLOR=blue>UGL<BR>Undergraduate Library</FONT></U>
+      </LI>
+    </UL>
+
+
+
+
+<P>Wayne State University has five major Libraries on campus and one extension center. Choose a library  for maps and/or directions.</P>
+<P>All campus libraries except the Shiffman Medical Library are located at Main Campus on Gullen Mall. Gullen Mall runs north-south, and sits between Anthony Wayne Drive on the west and Cass Avenue on the east, Palmer Avenue on the North and Warren Avenue on the south. Main Campus is just south of the Ford Freeway (I-94) and just east of the Lodge (M-10).</P>
+
+
+
+
+
+
+<P><EM>Other Maps:</EM> <U><FONT COLOR=blue>Interactive Campus Map</FONT></U> | <U><FONT COLOR=blue>UGL Floor Maps</FONT></U> | <U><FONT COLOR=blue>Emergency Exit / Safety Feature Maps</FONT></U> | <U><FONT COLOR=blue>Law Library Floor/Collection Maps</FONT></U> | <U><FONT COLOR=blue>Find an Item Mapping</FONT></U></P>
+
+
+
+			<!-- InstanceEndEditable -->
+<P><EM>WSU Libraries</EM><BR>
+
+						   3100 David Adamany Undergraduate Library<BR>
+
+						   5155 Gullen Mall<BR>
+
+						   Detroit, MI USA 48202<BR>
+
+						   (313) 577-4023 / 5525 - fax</P> <!-- FOR PRINT -->
+            <!-- #content -->
+		<!-- #main -->
+		
+		
+
+
+	
+    <P>
+    Follow us on:&nbsp;
+        <U><FONT COLOR=blue>
+        	[Follow waynestatelib on Twitter]</FONT></U>
+        <U><FONT COLOR=blue>
+        	[Follow waynestatelib on foursquare]</FONT></U>
+        <U><FONT COLOR=blue>[Follow wsuinst on YouTube]</FONT></U>
+  
+
+    </P>
+	<P>&copy;2009 - 2012 Wayne State University Board of Governors</P>
+	<UL>
+	<LI><U><FONT COLOR=blue>Suggestions</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Privacy</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Acceptable Use</FONT></U></LI>
+	</UL>
+    <FORM>
+    <INPUT VALUE="utf-8" NAME="ie" TYPE="hidden">
+    <INPUT VALUE="utf-8" NAME="oe" TYPE="hidden">
+    <INPUT VALUE="" NAME="q" TYPE="text"><BR>
+    <P><INPUT VALUE="www.lib.wayne.edu" NAME="domains" TYPE="hidden"><INPUT VALUE="" NAME="sitesearch" TYPE="radio"><INPUT VALUE="www.lib.wayne.edu" NAME="sitesearch" CHECKED="checked" TYPE="radio"></P>
+    <P><INPUT VALUE="Search this site" NAME="btnG" TYPE="submit"> <U><FONT COLOR=blue>Sitemap</FONT></U></P>
+    </FORM>
+    <UL>
+    <LI><U><FONT COLOR=blue>View Mobile Site</FONT></U></LI>
+    </UL>	
+    
+	
+	
+	<UL>
+	<LI>Libraries</LI>
+	<LI><U><FONT COLOR=blue>University Libraries</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Shiffman Medical Library</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Arthur Neef Law Library</FONT></U></LI>
+	</UL>
+	<UL>
+	<LI>Associated Programs</LI>
+	<LI><U><FONT COLOR=blue>DALNET</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>School of Library and<BR>Information Science</FONT></U></LI>
+	</UL>
+	
+	<UL>
+	<LI>Library Information</LI>
+	<LI><U><FONT COLOR=blue>About</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Contact Info/ Staff Directory</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Hours</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Maps and Directions</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>News</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Policies</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Neef Staff Responsibilities</FONT></U></LI>
+	</UL>
+	
+	
+	
+	<UL>
+	<LI>Resources</LI>
+	<LI><U><FONT COLOR=blue>Catalog</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Article Databases</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Digital Collections</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>DigitalCommons@WSU</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>E-Books</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>E-Journals</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Guides</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Reference Tools</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Special Collections</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Citation Management Options</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Shiffman Mobile</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Shiffman Timesavers</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Neef CILP</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Neef Government Documents</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Neef Law Collections</FONT></U></LI>
+	</UL>
+	
+	<UL>
+	<LI>Sites &amp; Projects</LI>
+	<LI><U><FONT COLOR=blue>Chapbooks</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Hezy Shoshani Elephant Research</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>First Year Experience</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Jacob Lawrence Traveling Exhibition</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Journal Review</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>NCA Accreditation</FONT></U></LI>
+	</UL>
+
+	
+	
+	<UL>
+	<LI>Services</LI>
+	<LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Borrowing</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Computing</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Faculty/Graduate Research Support</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>ILL (Interlibrary Loan)</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Instruction</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Media</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Reserves</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Room Reservations</FONT></U></LI>
+	</UL>
+    
+    <UL>
+	<LI>Shiffman Health Information Outreach</LI>
+	<LI><U><FONT COLOR=blue>African-American Health Disparities</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Community Health Information Services</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Detroit Community AIDS Library</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Michigan Go Local</FONT></U></LI>
+    </UL>
+	
+
+
+<!-- #footer -->
+
+	<!-- #container --> 
+    &nbsp;     
+	<!-- #wrapper -->
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<!-- InstanceEnd --></HTML>

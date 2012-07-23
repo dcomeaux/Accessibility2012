@@ -1,0 +1,165 @@
+
+<HTML>
+	<HEAD>
+				
+		
+		
+		
+		
+		<TITLE>LibAnswers</TITLE>
+		
+		
+			#container { background: url('http://laimages.s3.amazonaws.com/bg_page_white.gif') repeat-x;  background-color:#FFFFFF;}
+			.homepop { width:968px; }
+			
+			.outerbox {background-color:#eaeaea; padding:7px; margin-bottom:17px;}
+			.headerbox { padding:4px 4px 5px 5px; margin-bottom:5px; background: transparent url(http://laimages.s3.amazonaws.com/boxhead-blueshade.gif) 0 0 repeat-x; }
+			.innerbox {background-color:#FFFFFF; padding:8px; margin:0px; }
+			.headerbox h2 {color:#666666; font: bold 12px Verdana, Arial, Helvetica, sans-serif; display:block }
+		
+					
+			div.roundbox { border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px;  }
+			
+				
+		
+		
+		
+		
+		<!--[if lte IE 8]>
+		<script type="text/javascript" src="/js17/jquery.corner.min.js"></script>
+		<script language="javascript" type="text/javascript">
+			var boxshape = 'r';
+			//if needed, boxes are rounded on load
+			function init() {
+				if (boxshape == "r") {
+					jQuery('div.roundbox').corner('5px');
+				}
+			}
+			
+			jQuery(document).ready(function () {
+				init();
+			});
+		</script>
+		<![endif]-->
+		
+		
+		var gIID = 308;
+		var gNEXT = 1;
+		var chathit = 0;
+		var toffset = '1';
+		var lang = 'en';
+		var showpop = 0;	
+					
+		
+		//switch the popular/recent box to popular	
+		function popAns(iid, pop, rec, feat) {
+			jQuery.get(
+				'process_item.php?m=popans&iid='+iid,
+				function(data) {
+					jQuery("#recentpopular").html(data);
+					jQuery("#recentans").html(''+rec+'');
+					jQuery("#popularans").html(pop);
+
+					if (feat != 0) { jQuery("#featuredans").html(''+feat+''); }
+				}
+			);
+			return false;
+		}
+		
+		
+		//switch the popular/recent box to recent	
+		function recAns(iid, pop, rec, feat) {
+			jQuery.get(
+				'process_item.php?m=recentans&iid='+iid,
+				function(data) {
+					jQuery("#recentpopular").html(data);
+					jQuery("#recentans").html(rec);
+					jQuery("#popularans").html(''+pop+'');
+
+					if (feat != 0) { jQuery("#featuredans").html(''+feat+''); }
+				}
+			);
+			return false;
+		}
+		
+		
+		//switch the popular/recent box to featured		
+		function featAns(iid, pop, rec, feat) {
+			jQuery.get(
+				'process_item.php?m=featans&iid='+iid,
+				function(data) {
+					jQuery("#recentpopular").html(data);
+					jQuery("#featuredans").html(feat);
+					jQuery("#recentans").html(''+rec+'');
+					jQuery("#popularans").html(''+pop+'');
+				}
+			);
+			return false;
+		}
+		
+		
+		//action for the topic dropdown
+		function jumpToCat(cat) {
+			window.location.href="browse.php?tid="+cat;
+			return false;
+		}
+		
+		
+		jQuery.noConflict();
+		jQuery(document).ready(function () {
+			enableAutocomplete();
+			
+			if (showpop == 1) {
+				newFeatured();
+			}
+			
+		});
+		
+		
+		
+			</HEAD>
+	
+	<BODY BGCOLOR="#FFFFFF" TEXT="#000000">		
+		
+			
+				<U><FONT COLOR=blue><BR>
+[CLIENT-SIDE IMAGE MAP: University of Kentucky - LibAnswers banner]<BR>
+</FONT></U><BR>
+					<U><FONT COLOR=blue>Admin Sign In</FONT></U>&nbsp;&nbsp;<U><FONT COLOR=blue>UK Libraries</FONT></U>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<U><FONT COLOR=blue>LibAnswers</FONT></U>
+<H1>LibAnswers
+</H1>
+
+<FORM><INPUT VALUE="308" NAME="iid" TYPE="hidden">Ask a Question: 
+		&nbsp;<INPUT VALUE="Type your question, e.g. &quot;How do I renew a book?&quot;" NAME="question"> Ask Us</FORM> 
+	<U><FONT COLOR=blue>[RSS Feed icon] RSS</FONT></U>
+	
+	
+	117 Answered Questions
+	<U><FONT COLOR=blue>Browse All</FONT></U> <FORM>Change Topic <SELECT NAME="tid"><OPTION VALUE="-1">View All Topics</OPTION><OPTION VALUE="10160">Access</OPTION><OPTION VALUE="13090">Audio Visual</OPTION><OPTION VALUE="13254">Buildings</OPTION><OPTION VALUE="13559">Campus Services</OPTION><OPTION VALUE="10177">Circulation</OPTION><OPTION VALUE="12940">Collections</OPTION><OPTION VALUE="12939">Computers</OPTION><OPTION VALUE="8428">Contact Information</OPTION><OPTION VALUE="13304">Course Guides</OPTION><OPTION VALUE="13292">Current Events</OPTION><OPTION VALUE="13061">Databases</OPTION><OPTION VALUE="12727">Disability Services</OPTION><OPTION VALUE="10185">DSR</OPTION><OPTION VALUE="13080">Employment</OPTION><OPTION VALUE="13165">FAFSA</OPTION><OPTION VALUE="10229">Genealogy</OPTION><OPTION VALUE="12109">Government Documents</OPTION><OPTION VALUE="8427">Hours</OPTION><OPTION VALUE="9875">Hub</OPTION><OPTION VALUE="13079">Interlibrary Loan</OPTION><OPTION VALUE="13760">IT</OPTION><OPTION VALUE="10156">Journals</OPTION><OPTION VALUE="12706">Kentucky History</OPTION><OPTION VALUE="8431">Locations</OPTION><OPTION VALUE="10157">Newspapers</OPTION><OPTION VALUE="13281">Policies</OPTION><OPTION VALUE="13056">Printing</OPTION><OPTION VALUE="10182">Reference</OPTION><OPTION VALUE="10181">Research</OPTION><OPTION VALUE="13739">Social Media</OPTION><OPTION VALUE="13289">Sociology</OPTION><OPTION VALUE="12376">UK History</OPTION><OPTION VALUE="13377">University Services</OPTION><OPTION VALUE="12393">Videos</OPTION><OPTION VALUE="12705">W.T. Young Library</OPTION><OPTION VALUE="10162">WAVE TV</OPTION></SELECT>Go</FORM><H2>Topics (<U><FONT COLOR=blue>View All Topics</FONT></U>)</H2><U><FONT COLOR=blue>Access</FONT></U> &nbsp;&ndash;&nbsp; <U><FONT COLOR=blue>Audio Visual</FONT></U> &nbsp;&ndash;&nbsp; <U><FONT COLOR=blue>Buildings</FONT></U> &nbsp;&ndash;&nbsp; <U><FONT COLOR=blue>Campus Services</FONT></U> &nbsp;&ndash;&nbsp; <U><FONT COLOR=blue>Circulation</FONT></U> &nbsp;&ndash;&nbsp; <U><FONT COLOR=blue>Collections</FONT></U> &nbsp;&ndash;&nbsp; <U><FONT COLOR=blue>Computers</FONT></U> &nbsp;&ndash;&nbsp; <U><FONT COLOR=blue>Contact Information</FONT></U> &nbsp;&ndash;&nbsp; <U><FONT COLOR=blue>Course Guides</FONT></U> &nbsp;&ndash;&nbsp; <U><FONT COLOR=blue>Current Events</FONT></U> &nbsp;&ndash;&nbsp; <U><FONT COLOR=blue>Databases</FONT></U> &nbsp;&ndash;&nbsp; <U><FONT COLOR=blue>Disability Services</FONT></U> &nbsp;&ndash;&nbsp; <U><FONT COLOR=blue>Employment</FONT></U> &nbsp;&ndash;&nbsp; <U><FONT COLOR=blue>FAFSA</FONT></U> &nbsp;&ndash;&nbsp; <U><FONT COLOR=blue>Government Documents</FONT></U> &nbsp;&ndash;&nbsp; <U><FONT COLOR=blue>Hours</FONT></U> &nbsp;&ndash;&nbsp; <U><FONT COLOR=blue>Hub</FONT></U> &nbsp;&ndash;&nbsp; <U><FONT COLOR=blue>Interlibrary Loan</FONT></U> &nbsp;&ndash;&nbsp; <U><FONT COLOR=blue>IT</FONT></U> &nbsp;&ndash;&nbsp; <U><FONT COLOR=blue>Journals</FONT></U> &nbsp;&ndash;&nbsp; <U><FONT COLOR=blue>Kentucky History</FONT></U> &nbsp;&ndash;&nbsp; <U><FONT COLOR=blue>Locations</FONT></U> &nbsp;&ndash;&nbsp; <U><FONT COLOR=blue>Newspapers</FONT></U> &nbsp;&ndash;&nbsp; <U><FONT COLOR=blue>Policies</FONT></U> &nbsp;&ndash;&nbsp; <U><FONT COLOR=blue>Printing</FONT></U> &nbsp;&ndash;&nbsp; <U><FONT COLOR=blue>Reference</FONT></U> &nbsp;&ndash;&nbsp; <U><FONT COLOR=blue>Research</FONT></U> &nbsp;&ndash;&nbsp; <U><FONT COLOR=blue>Social Media</FONT></U> &nbsp;&ndash;&nbsp; <U><FONT COLOR=blue>Sociology</FONT></U> &nbsp;&ndash;&nbsp; <U><FONT COLOR=blue>UK History</FONT></U> &nbsp;&ndash;&nbsp; <U><FONT COLOR=blue>University Services</FONT></U> &nbsp;&ndash;&nbsp; <U><FONT COLOR=blue>Videos</FONT></U> &nbsp;&ndash;&nbsp; <U><FONT COLOR=blue>W.T. Young Library</FONT></U> &nbsp;<H2>Research Help at UK Libraries</H2><P><U><FONT COLOR=blue>Email&nbsp;</FONT></U>&nbsp;&nbsp;&nbsp;<U><FONT COLOR=blue>Chat&nbsp;</FONT></U>&nbsp;&nbsp;&nbsp;&nbsp;<U><FONT COLOR=blue>Phone&nbsp;</FONT></U>&nbsp;&nbsp;&nbsp;&nbsp;<U><FONT COLOR=blue>In-Person&nbsp;</FONT></U>&nbsp;&nbsp;&nbsp;&nbsp;<U><FONT COLOR=blue>Consultation&nbsp;</FONT></U></P>
+<P><U><FONT COLOR=blue>Subject Specialists </FONT></U>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<U><FONT COLOR=blue>Book Purchase Request </FONT></U></P>
+<P><EM></EM>&nbsp;<EM>&nbsp;&nbsp;&nbsp; [INLINE] </EM><EM>Medical Center patrons should use </EM><U><FONT COLOR=blue><EM>MCL Ask-a-Librarian</EM></FONT></U><EM>.</EM></P>
+<P><EM></EM>&nbsp;</P>
+<P><EM>Please note:</EM></P>
+<UL>
+<LI>Send any requests for information via the LibAnswers question box above or&nbsp;to <U><FONT COLOR=blue>refdesk@uky.edu</FONT></U> .</LI>
+<LI>Send problems concerning e-journal, e-book, and database access to <U><FONT COLOR=blue>lib-er@lsv.uky.edu</FONT></U>.</LI>
+<LI>Response is usually within the same day (allowing for holidays and weekends).</LI>
+<LI>You can also send email questions to <U><FONT COLOR=blue>campus libraries</FONT></U>, <U><FONT COLOR=blue>subject specialists</FONT></U>, <U><FONT COLOR=blue>Ask a Medical Librarian</FONT></U>, and the Agricultural Information Center's <U><FONT COLOR=blue>Ask Us service</FONT></U>.</LI>
+</UL><H2>Other Ways to Ask Questions</H2><UL><LI>[a small icon]Via SMS: TXT your questionto (859) 904-2733</LI><LI>[a small icon]Call us: 859-257-0500, ext. 2170</LI><LI>[a small icon]Email us: refdesk@uky.edu</LI></UL><BR><H2>Live Chat</H2><CENTER></CENTER><H2>Featured Answers&nbsp;&nbsp;|&nbsp;&nbsp;<U><FONT COLOR=blue>Most Popular Answers</FONT></U>&nbsp;&nbsp;|&nbsp;&nbsp;<U><FONT COLOR=blue>Most Recent Answers</FONT></U></H2>featAns('308', 'Most Popular Answers', 'Most Recent Answers', 'Featured Answers');
+<BR>
+
+<!-- start footer.php -->
+
+	Powered by <U><FONT COLOR=blue>Springshare</FONT></U>; All rights reserved. 
+    <U><FONT COLOR=blue>Report a tech support issue.</FONT></U>
+	
+		<U><FONT COLOR=blue>View the mobile version of this page</FONT></U>.
+		
+			
+
+
+		
+
+		
+	</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>

@@ -1,0 +1,536 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+      
+  <head>
+    <title>About - Syracuse University Library</title>
+    
+
+ 
+
+<link href="../css/main.css" rel="stylesheet" type="text/css" />
+<link href="../css/search.css" rel="stylesheet" type="text/css" />
+<link href="../css/left_nav1.css" rel="stylesheet" type="text/css" />
+<link href="../css/SCRC_homepage.css" rel="stylesheet" type="text/css" />
+<link href="../css/email.css" rel="stylesheet" type="text/css" />
+<link href="../css/session.css" rel="stylesheet" type="text/css" />
+<link href="../css/SpryTabbedPanels_new.css" rel="stylesheet" type="text/css" />
+  
+
+
+    
+  <script language="JavaScript1.2" type="text/javascript"> var level = "2"; </script>
+  <script language="JavaScript1.2" src="../lib/jquery-1.6.min.js" type="text/javascript" ></script>
+  <script language="JavaScript1.2" src="../lib/search_tabs.js" type="text/javascript" ></script>
+  <script language="JavaScript1.2" src="../lib/functions.js" type="text/javascript" ></script>
+  <script language="JavaScript1.2" src="../lib/pngfix.js" type="text/javascript" ></script>
+  <script language="JavaScript1.2" src="../lib/menu.js" type="text/javascript" ></script>
+
+  </head>
+  <body onload="SecondSearchTabRadio(document.second_search_form.switcher[0]); SecondSearchTabBackground('tab_all');">
+    <div id="skip_nav"><a href="#leftnav">Skip to Navigation</a><a href="#content">Skip to Content</a></div>
+    <div id="body_container">
+            <div id="left_container">
+        <div id="left_menu_head"><a href="../index.php"><img alt="Syracuse University Library" border="0" height="143" src="../img/second/second_title.png" width="238" /></a></div>
+        <div id="LEFT_NAV"><a name="leftnav" ></a>
+          <br />
+          <!-- added by Ying -->
+          
+          <!-- end -->
+          
+          
+        </div>
+        <div id="left_menu_foot"><img alt="horizontal rule" height="10" src="../img/horiz_rule_orange_10px.png" width="238" /></div>
+      </div>
+      <div id="top_container">              
+        <div id="second_search_div">
+          <div id="second_search">
+
+  <form name="second_search_form" id="second_search_form" method="get" action="/search/second.php" target="_blank">
+
+    <div class="hide">
+
+      Search:
+
+      <input type="radio" name="switcher" value="discover"  class="hide"/>Discover
+
+      <input type="radio" name="switcher" value="databases" class="hide"/>Databases
+
+      <input type="radio" name="switcher" value="ejournals" class="hide"/>E-Journals
+
+      <input type="radio" name="switcher" value="articles"  class="hide"/>Articles
+
+      <input type="radio" name="switcher" value="surface"  class="hide"/>SUrface
+
+      <input type="radio" name="switcher" value="website"   class="hide"/>Website
+
+    </div>
+
+    <div id="second_search_tabs">
+
+      <div onClick="SecondSearchTabRadio(document.second_search_form.switcher[0]); SecondSearchTabBackground('tab_discover');"  id="tab_discover"  class="second_search_tab">Discover</div>
+
+      <div onClick="SecondSearchTabRadio(document.second_search_form.switcher[1]); SecondSearchTabBackground('tab_databases');" id="tab_databases" class="second_search_tab">Databases</div>
+
+      <div onClick="SecondSearchTabRadio(document.second_search_form.switcher[2]); SecondSearchTabBackground('tab_ejournals');" id="tab_ejournals" class="second_search_tab">E-Journals</div>
+
+      <div onClick="SecondSearchTabRadio(document.second_search_form.switcher[3]); SecondSearchTabBackground('tab_articles');"  id="tab_articles"  class="second_search_tab">Articles</div>
+
+      <div onClick="SecondSearchTabRadio(document.second_search_form.switcher[4]); SecondSearchTabBackground('tab_surface');"  id="tab_surface"  class="second_search_tab">SUrface</div>
+
+      <div onClick="SecondSearchTabRadio(document.second_search_form.switcher[5]); SecondSearchTabBackground('tab_website');"  id="tab_website"  class="second_search_tab">Website</div>
+
+    </div>
+
+    <div id="second_search_box">
+
+    <input id="input_all" type="text" class="search_form_input_text_small" style="width:375px;" name="search" size="50" />
+
+      <input type="image" src="/img/search/search_button_small.png" value="Search" alt="Search" class="search_form_image_submit" />
+
+    </div>
+
+  </form>
+
+</div>        </div>
+        <div id="second_top_nav">
+          <!-- 
+
+<a class="top_nav_link" href="/hours/">Hours</a> |
+
+<a class="top_nav_link" href="http://mybrary.syr.edu">MYbrary</a> | 
+
+-->
+
+<a class="top_nav_link" onclick="recordClick(this.href, window.location);" href="/research/askus/">Ask Us!</a> | 
+
+<a class="top_nav_link" onclick="recordClick(this.href, window.location);" href="http://sumail.syr.edu/">SUmail</a> | 
+
+<a class="top_nav_link" onclick="recordClick(this.href, window.location);" href="https://myslice.syr.edu/">MySlice</a> | 
+
+<a class="top_nav_link" onclick="recordClick(this.href, window.location);" href="http://blackboard.syr.edu/">Blackboard</a> | 
+
+<a class="top_nav_link" onclick="recordClick(this.href, window.location);" href="http://www.syr.edu/">SU Home</a> | 
+
+<a class="top_nav_link" onclick="recordClick(this.href, window.location);" href="http://www.syracuseuniversitypress.syr.edu/">SU Press</a> | 
+
+<a class="top_nav_link" onclick="recordClick(this.href, window.location);" href="http://google.com/">Google</a> | 
+
+<a class="top_nav_link" onclick="recordClick(this.href, window.location);" href="/search/">Site Search</a> | 
+
+<a class="top_nav_link" onclick="recordClick(this.href, window.location);" href="/sitemap/">Site Map</a> | 
+
+<a class="top_nav_link" onclick="recordClick(this.href, window.location);" href="/about/general-info/contact.php">Contact</a> | 
+
+<a class="top_nav_link" onclick="recordClick(this.href, window.location);" href="/services/your-accounts/">Your Accounts</a> | 
+
+<a class="top_nav_link" onclick="recordClick(this.href, window.location);" href="http://mybrary.syr.edu">MYbrary</a> |
+
+<a class="top_nav_link" onclick="recordClick(this.href, window.location); enableMobile();" href="http://m.library.syr.edu/">Mobile</a>
+
+
+        </div>
+        <div id="second_nav_div">
+
+  <ul id="navmenu">
+
+    <li class="bottom_menu_li"><a href="/" class="bottom_menu_a">HOME</a>		
+
+    <li class="bottom_menu_li"><a href="/find/" class="bottom_menu_a">FIND</a>
+
+      <ul class="dropdown_ul">
+
+        <li><a class="dropdown_a" href="http://libezproxy.syr.edu/login?url=http://metalib4.exlibrisgroup.com:8337/V/?func=quick-1&mode=simple">Articles</a></li>
+
+        <li><a class="dropdown_a" href="/help/search/discover/index.php">Books</a></li>
+
+        <li><a class="dropdown_a" href="/find/reserves/index.php">Course Reserves</a></li>
+
+        <li><a class="dropdown_a" href="/find/type/browse_databases.php">Databases</a></li>
+
+        <li><a class="dropdown_a" href="http://researchguides.library.syr.edu/reference">Dictionaries, encyclopedias...</a></li>
+
+        <li><a class="dropdown_a" href="http://libsfx.syr.edu:9003/syracuse/az">E-Journals</a></li>
+
+        <li><a class="dropdown_a" href="https://illiad.syr.edu/">Interlibrary Loan</a></li>
+
+        <li><a class="dropdown_a" href="/find/subject/index.php">Resources by Subject</a></li>
+
+        <li><a class="dropdown_a" href="/find/type/index.php">Resources by Type</a></li>
+
+        <li><a class="dropdown_a" href="/find/scrc/">Special Collections</a></li>
+
+      </ul>
+
+    </li>
+
+    <li class="bottom_menu_li"><a href="/research/" class="bottom_menu_a">RESEARCH ASSISTANCE</a>
+
+      <ul class="dropdown_ul">
+
+        <li><a class="dropdown_a" href="/research/getting_started.php">Getting Started</a></li>
+
+        <li><a class="dropdown_a" href="/research/get_help.php">Get Help with Collections</a></li>
+
+        <li><a class="dropdown_a" href="/research/advanced.php">Advanced Research Toolkit</a></li>
+
+      </ul>
+
+    </li>
+
+    <li class="bottom_menu_li"><a href="/services/" class="bottom_menu_a">SERVICES</a>
+
+      <ul class="dropdown_ul">
+
+        <li><a class="dropdown_a" href="/services/getting_help/index.php">Getting Help</a></li>
+
+        <li><a class="dropdown_a" href="https://illiad.syr.edu/">Interlibrary Loan</a></li>
+
+        <li><a class="dropdown_a" href="/services/space/index.php">Spaces &amp; Places</a></li>
+
+        <li><a class="dropdown_a" href="/services/work_off_campus/index.php">Working Off Campus</a></li>
+
+        <li><a class="dropdown_a" href="/services/your-accounts/index.php">Your Accounts</a></li>
+
+        <li><a class="dropdown_a" href="/services/technology/index.php">Technology</a></li>
+
+      </ul>
+
+    </li>
+
+    <li class="bottom_menu_li"><a href="/about/" class="bottom_menu_a bottom_menu_a_selected">ABOUT</a>
+
+      <ul class="dropdown_ul">
+
+        <li><a class="dropdown_a" href="/about/general-info/index.php">General Information</a></li>
+
+        <li><a class="dropdown_a" href="/about/visit/index.php">Visiting</a></li>
+
+        <li><a class="dropdown_a" href="/about/make_gift/index.php">Support the Library</a></li>
+
+        <li><a class="dropdown_a" href="/about/make_gift/Library_Associates/index.php">Library Associates</a></li>
+
+        <li><a class="dropdown_a" href="/about/events/index.php">News &amp; Events</a></li>
+
+        <li><a class="dropdown_a" href="/about/admin/index.php">Administration</a></li>
+
+        <li><a class="dropdown_a" href="/about/departments/index.php">Departments</a></li>
+
+        <li><a class="dropdown_a" href="/about/departments/su_press/index.php">SU Press</a></li>
+
+        <li><a class="dropdown_a" href="/about/people/index.php">Staff Directory</a></li>
+
+        <li><a class="dropdown_a" href="/about/publications/index.php">Publications</a></li>
+
+      </ul>
+
+    </li>
+
+    <li class="bottom_menu_li"><a href="/hours/?session=12" class="bottom_menu_a">HOURS</a>
+
+    <li class="bottom_menu_li"><a href="/research/askus/index.php" class="bottom_menu_a">HELP</a>
+
+    
+
+    </li>
+
+  </ul>
+
+</div>
+      </div>
+      <div id="content_container">  
+        <div id="top_gutter_links">
+          <div id="utility_link_div">
+            <!-- ADDTHIS BUTTON BEGIN -->
+<script type="text/javascript">
+  addthis_pub             = 'sulibrary'; 
+  addthis_brand           = 'SU Library';
+  addthis_options         = 'favorites, email, digg, delicious, myspace, facebook, google, live, more';
+</script>
+<a class="utility_link" href="http://www.addthis.com/bookmark.php" onclick="return addthis_sendto()" onmouseout="addthis_close()">Bookmark</a> | 
+<script src="http://s7.addthis.com/js/152/addthis_widget.js" type="text/javascript" ></script>
+<!-- ADDTHIS BUTTON END -->
+<!-- <a class="utility_link" href="?email">E-Mail</a> | -->
+<a class="utility_link" href="?print">Printer Friendly</a>
+          </div>
+          <div id="breadcrumb_div">
+            <a class="utility_link" href="../index.php" style="padding-right:3px;">Home</a><span style="font-size:100%;">&gt;</span>
+            About
+          </div>
+        </div>
+        <div id="title_container"><a name="content" ></a>
+          <h1>About</h1>
+        </div>
+        <!-- added by Ying -->
+        
+        <!-- end -->
+        <div id="body_second_content">
+          <table border="0" style="height: 495px;" width="672">
+<tbody>
+<tr>
+<td align="left" style="border: 0px solid; text-align: left; width: 150px;" valign="top">
+<h3 style="text-align: left; background-color: #eeeeee;"><a href="general-info/index.php">General Information</a></h3>
+<ul>
+<li>
+<p><a href="general-info/welcome/index.php" style="color: black;">Dean's Welcome</a></p>
+</li>
+<li style="color: black;">
+<p><a href="general-info/contact.php" style="color: black;">Contact Us</a></p>
+</li>
+<li style="color: black;">
+<p><a href="general-info/history/index.php" style="color: black;">History</a></p>
+</li>
+<li style="color: black;">
+<p><a href="departments/learning_commons/index.php" style="color: black;">Learning Commons</a></p>
+</li>
+<li style="color: black;">
+<p><a href="general-info/libraries_locations.php" style="color: black;">Libraries / Locations</a></p>
+</li>
+<li style="color: black;">
+<p><a href="make_gift/Library_Associates/index.php" style="color: black;">Library Associates</a></p>
+</li>
+<li style="color: black;"><a href="general-info/facts.php" style="color: black;">Library Facts and Figures</a></li>
+<li style="color: black;">
+<p><a href="general-info/policies/index.php" style="color: black;">Library Policies</a></p>
+</li>
+<li>
+<p><a href="tour/spaces/cafe.php" style="color: black;">Pages -- the Library Cafe&#769;</a></p>
+</li>
+<li style="color: black;">
+<p><a href="people/index.php" style="color: black;">Staff Directory</a></p>
+</li>
+<li>
+<p><a href="general-info/welcome/vision.php" style="color: black;">Vision</a></p>
+</li>
+</ul>
+</td>
+<td align="left" style="border: 0px solid; text-align: left; width: 150px;" valign="top">
+<h3 style="text-align: left; background-color: #eeeeee;"><a href="visit/index.php">Visiting the Library</a></h3>
+<ul>
+<li>
+<p><a href="visit/liblocation/index.php" style="color: black;">Directions/Maps</a></p>
+</li>
+<li>
+<p><a href="http://library.syr.edu/hours/" style="color: black;">Hours/Locations</a></p>
+</li>
+<li>
+<p><a href="visit/parking.php" style="color: black;">Parking</a></p>
+</li>
+<li><a href="tour/index.php" style="color: black;">Virtual Tour</a></li>
+<li>
+<p><a href="visit/guide/index.php" style="color: black;">Visitors Guide</a></p>
+</li>
+</ul>
+</td>
+<td align="left" style="border: 0px solid; text-align: left; width: 150px;" valign="top">
+<h3 style="text-align: left; background-color: #eeeeee;"><a href="make_gift/index.php">Support the Library</a></h3>
+<ul>
+<li>
+<p><a href="make_gift/index.php" style="color: black;">Giving to SU Library</a></p>
+</li>
+<li>
+<p><a href="make_gift/Library_Associates/index.php" style="color: black;">Library Associates</a></p>
+</li>
+</ul>
+</td>
+<td align="left" style="border: 0px solid; text-align: left; width: 150px;" valign="top">
+<h3 style="text-align: left; background-color: #eeeeee;"><a href="events/index.php">News and Events</a></h3>
+<ul>
+<li>
+<p><a href="http://suevents.syr.edu/main.php?calendar=library" style="color: black;">Events Calendar</a></p>
+</li>
+<li>
+<p><a href="http://library.syr.edu/blog/news/" style="color: black;">Library News</a></p>
+</li>
+</ul>
+</td>
+</tr>
+<tr style="text-align: left;">
+<td align="left" style="border: 0px solid; text-align: left; width: 150px;" valign="top">
+<h3 style="text-align: left; background-color: #eeeeee;"><a href="departments/index.php">Departments</a></h3>
+<ul>
+<li>
+<p><a href="departments/Access_Services/index.php" style="color: black;">Access &amp; Resource Sharing</a></p>
+</li>
+<li>
+<p><a href="departments/Acquisitions/index.php" style="color: black;">Acquisitions and Cataloging</a></p>
+</li>
+<li>
+<p><a href="departments/Admin_Services/index.php" style="color: black;">Administrative Services</a></p>
+</li>
+<li>
+<p><a href="departments/LITS/index.php" style="color: black;">Information &amp; Technology Services</a></p>
+</li>
+<li>
+<p><a href="departments/Communications/index.php" style="color: black;">Communications and External Relations</a></p>
+</li>
+<li>
+<p><span style="color: black;"><a href="departments/learning_commons/index.php" style="color: black;">Learning Commons</a></span></p>
+</li>
+<li>
+<p><a href="departments/preservation/index.php" style="color: black;">Preservation</a></p>
+</li>
+<li>
+<p><a href="departments/rcsc/index.php" style="color: black;">Research, Collections &amp; Scholarly Communication</a></p>
+</li>
+<li>
+<p><a href="../find/scrc/index.php" style="color: black;" title="Special Colletions Research Center">Special Collections</a></p>
+</li>
+<li>
+<p><a href="departments/sci_tech/index.php" style="color: black;">Science &amp; Technology Library</a></p>
+</li>
+</ul>
+</td>
+<td align="left" style="border: 0px solid; text-align: left; width: 150px;" valign="top">
+<h3 style="text-align: left; background-color: #eeeeee;"><a href="admin/index.php">Administration</a></h3>
+<ul>
+<li>
+<p><a href="admin/administration.php" style="color: black;">Administrative Staff</a></p>
+</li>
+<li>
+<p><a href="admin/employment.php" style="color: black;">Employment</a></p>
+</li>
+<li>
+<p><a href="PDF/orgchartbirdtopfunction.pdf" style="color: black;">Organization Chart</a></p>
+</li>
+<li>
+<p><a href="http://libweb.syr.edu" style="color: black;" title="Staff Site">Staff Site</a></p>
+</li>
+</ul>
+</td>
+<td align="left" colspan="2" style="border: 0px solid; text-align: left; width: 150px;" valign="top">
+<h3 style="text-align: left; background-color: #eeeeee;"><a href="publications/index.php">Library Publications</a></h3>
+<ul>
+<li>
+<p><a href="publications/connections/index.php" style="color: black;">Library Connection</a> Newsletter</p>
+</li>
+<li>
+<p><a href="PDF/WelcomeBook_WEB.pdf" style="color: black;" title="Your Guide to Library Services">Welcome to the Library</a>: Your Guide to Library Services</p>
+</li>
+<li>
+<p><a href="../find/scrc/about/courant/courant-archive.php" style="color: black;" title="Special Colletions Research Center Newsletter">The Courant</a>: The Special Collections Research Center newsletter</p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<br />
+<br /><div style="clear:both;" ></div>
+          
+          <div class="clearfix" ></div>
+        </div>
+        <div class="clearfix" ></div>
+      </div>
+      <div><img alt="horizontal rule" class="horiz" height="10" src="../img/horiz_rule_orange_10px.png" width="980" /></div>
+      <div id="footer_container">
+        <div id="footer_content">
+          <div class="footer_row">
+
+  <a class="footer_link" href="/about/">About</a> | 
+
+  <a class="footer_link" href="/hours/">Hours</a> | 
+
+  <a class="footer_link" href="/find/">Find Resources</a> | 
+
+  <a class="footer_link" href="/services/">Library Services</a> | 
+
+  <a class="footer_link" href="/research/">Research Assistance</a> | 
+
+  <a class="footer_link" href="/about/visit/">Visiting</a> | 
+
+  <a class="footer_link" href="/research/askus/">Help</a>
+
+</div>
+
+<div class="footer_row">
+
+  <a class="footer_link" href="/faculty/">Faculty Resources</a> | 
+
+  <a class="footer_link" href="/graduate/">Graduate Resources</a> | 
+
+  <a class="footer_link" href="/undergraduate/">Undergraduate Resources</a> |
+
+  <a class="footer_link" href="/services/your-accounts/">Your Accounts</a>
+
+</div>
+
+<div class="footer_row">
+
+<a class="footer_link" href="/services/getting_help/disability/electronic/index.php">Accessibility</a> | 
+
+   <a class="footer_link" href="http://copyright.syr.edu">Copyright</a> | 
+
+  <a class="footer_link" href="/PDF/privacypolicy.pdf">Privacy Policy</a> | 
+
+  <a class="footer_link" href="http://mybrary.syr.edu">MYbrary</a> |
+
+  <a class="footer_link" href="http://sumail.syr.edu/">SUmail</a> | 
+
+  <a class="footer_link" href="https://myslice.syr.edu">MySlice</a> | 
+
+  <a class="footer_link" href="http://blackboard.syr.edu/">Blackboard</a> | 
+
+  <a class="footer_link" href="http://www.syr.edu/">SU Home</a>
+
+</div>
+
+        </div>
+        <a href="general-info/contact.php"><img alt="Syracuse University Library, 222 Waverly Avenue, Syracuse, NY 13244-5040; Phone: 315.443.2093, Fax: 315.443.2060" border="0" src="../img/footer_seal.png" /></a>
+      </div>
+    </div>
+    <div id="copyright_container"><a href="https://www.facebook.com/pages/Syracuse-University-Library/156263494445926" target="_blank"><img alt="SU Library on Facebook" height="20" src="/img/facebook.png" width="20" title="Follow us on Facebook"/></a><a href="http://twitter.com/#!/SyracuseULib" target="_blank" ><img alt="SU Library on Twitter" height="20" src="/img/twitter.png" width="20" title="Follow us on Twitter"/></a><a href="http://researchguides.library.syr.edu/government" target="_blank"><img alt="FDLP" height="20" src="/img/fdlp_icon.png" width="20" title="Federal Depository Library Program (FDLP) at SU"/></a>Copyright &copy; 2012 Syracuse University Library. All Rights Reserved.</div>
+    <script language="JavaScript1.2" type="text/javascript">
+
+  /*==========================================================================
+
+  == Main Menu Drop Down, jQuery Style
+
+  ==========================================================================*/
+
+  //listen for mouseover events on the .bottom_menu_li class (main menu headings).
+
+  $('.bottom_menu_li').mouseover(function() {
+
+      //move all drop downs off the page...
+
+      $('.bottom_menu_li ul').css('left', '-999em');
+
+      //then bring the triggered element's <ul> into view.
+
+      $('ul', this).css('left', 'auto');
+
+  });
+
+  //listen for when the mouse leaves the drop down
+
+  $('.bottom_menu_li .dropdown_ul').mouseout(function() {
+
+      //move all drop downs off the page.
+
+      $('.bottom_menu_li .dropdown_ul').css('left', '-999em');
+
+  });    
+
+</script>
+
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-3508972-6");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+  </body>
+</html>

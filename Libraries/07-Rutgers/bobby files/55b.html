@@ -1,0 +1,770 @@
+
+<HTML>
+ <HEAD>
+  <TITLE>
+    Rutgers University Libraries: Form: Reserve Request: Media Center
+  </TITLE>
+
+
+@import url(/rul/includes/04rul-style2.css); 
+
+
+
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11510931-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+	
+
+
+<!-- Date in Java Script .. Cameron Gregory  http://www.bloke.com/
+// http://www.bloke.com/javascript/Date/
+// change and modify this if you like, but leave these
+// 4 comment lines in tact and unchanged.
+
+function longMonthArray() {
+        this[0] = "January";    this[1] = "Februrary";  this[2] = "March";
+        this[3] = "April";      this[4] = "May";        this[5] = "June";
+        this[6] = "July";       this[7] = "August";     this[8] = "September";
+        this[9] = "October";    this[10] = "November";  this[11] = "December";
+        return (this);
+}
+
+function shortMonthArray() {
+        this[0] = "Jan";        this[1] = "Feb";        this[2] = "Mar";
+        this[3] = "Apr";        this[4] = "May";        this[5] = "Jun";
+        this[6] = "Jul";        this[7] = "Aug";        this[8] = "Sep";
+        this[9] = "Oct";        this[10] = "Nov";       this[11] = "Dec";
+        return (this);
+}
+
+function longDayArray() {
+        this[0] = "Sunday";     this[1] = "Monday";     this[2] = "Tuesday";
+        this[3] = "Wednesday";  this[4] = "Thursday";   this[5] = "Friday";
+        this[6] = "Saturday";
+        return (this);
+}
+
+function shortDayArray() {
+        this[0] = "Sun"; this[1] = "Mon"; this[2] = "Tue"; this[3] = "Wed";
+        this[4] = "Thu"; this[5] = "Fri"; this[6] = "Sat";
+        return (this);
+}
+
+function getShortYear(year)
+{
+        return year;
+}
+
+function getLongYear(year)
+{
+  if (year > 1900) return year
+  return year+1900;
+}
+
+function writeDateLong()
+{
+   shortDays = new shortDayArray();
+   longDays = new longDayArray();
+   shortMonths = new shortMonthArray();
+   longMonths = new longMonthArray();
+   d = new Date();
+   day = d.getDate();
+   month = d.getMonth();
+   year = d.getYear();
+   str = longDays[d.getDay()] + " " + longMonths[month] + " " + day + ", "+getLongYear(year);
+   document.reserve_media.date.value=str
+}
+// end-->
+
+ </HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</FONT></U>
+
+<!-- red nav table: start -->
+<TABLE>
+<TR><!-- row 1 -->
+  <TD><U><FONT COLOR=blue>[Rutgers University Libraries]</FONT></U></TD>
+  <TD>
+<!-- note space: start -->
+
+<!-- note space: end -->
+</TD>
+  <TD>&nbsp;</TD>
+</TR>
+
+<TR><!-- row 2 -->
+<TD>
+    <TABLE>
+    <TR>
+<TD>&nbsp;&nbsp;<U><FONT COLOR=blue>LOGIN HERE</FONT></U>&nbsp;&nbsp;&nbsp;&nbsp;<U><FONT COLOR=blue>[About the Libraries' New Remote Access Login]</FONT></U></TD><TD>&nbsp;&nbsp;</TD>
+
+<!--
+  if (show_AAL_L  == true){
+  document.write("<td onmouseover='this.bgColor=\"#C00000\";' onmouseout='this.bgColor=\"#000000\";' onclick='this.bgColor=\"#000000\";'>&nbsp;&nbsp;&nbsp;<a href='/rul/ask_a_lib/ask_a_lib.shtml' class='navbar'>ASK&nbsp;A&nbsp;LIBRARIAN&nbsp;<span  style='backgroundcolor:white;fontsize:12px;color:black;'>LIVE!</span></a>&nbsp;&nbsp;&nbsp;</td>")
+  }
+  else {
+  document.write("<td onmouseover='this.bgColor=\"#C00000\";' onmouseout='this.bgColor=\"#000000\";' onclick='this.bgColor=\"#000000\";'>&nbsp;&nbsp;&nbsp;<a href='/rul/ask_a_lib/ask_a_lib.shtml' class='navbar'>ASK&nbsp;A&nbsp;LIBRARIAN</a>&nbsp;&nbsp;&nbsp;</td>");
+  }
+//-->
+
+<!--
+<noscript>
+    <td onmouseover="this.bgColor = '#C00000';" onmouseout="this.bgColor = '#000000';" onclick="this.bgColor = '#000000';">&nbsp;&nbsp;&nbsp;<a href="/rul/ask_a_lib/ask_a_lib.shtml" class="navbar">ASK&nbsp;A&nbsp;LIBRARIAN</a>&nbsp;&nbsp;&nbsp;</td>
+</noscript>
+-->
+    <TD>&nbsp;&nbsp;<U><FONT COLOR=blue>HOURS&nbsp;&amp;&nbsp;DIRECTIONS</FONT></U>&nbsp;&nbsp;</TD>
+    <TD>&nbsp;&nbsp;<U><FONT COLOR=blue>SEARCH&nbsp;SITE</FONT></U>&nbsp;&nbsp;</TD>
+    <TD>&nbsp;&nbsp;<U><FONT COLOR=blue>SITE&nbsp;INDEX</FONT></U>&nbsp;&nbsp;</TD>
+    <TD>&nbsp;&nbsp;<U><FONT COLOR=blue>FACULTY&nbsp;SERVICES</FONT></U>&nbsp;&nbsp;</TD>
+    <TD>&nbsp;&nbsp;<U><FONT COLOR=blue>MY ACCOUNT</FONT></U>&nbsp;&nbsp;</TD>
+    </TR>
+    </TABLE>
+<!-- scua pages have a bar as well -->
+</TD>
+</TR>
+</TABLE>
+<!-- red nav table: end -->
+
+<!-- proxy and google side bars need to be updated too -->
+
+<TABLE>
+<TR>
+<!-- left column: start -->
+<TD>
+ <TABLE>
+  <TR><TD><U><FONT COLOR=blue>LIBRARIES HOME</FONT></U></TD><TD></TD></TR>
+  <TR><TD><!-- horizontal rule --></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>SEARCH LIBRARY CATALOGS</FONT></U></TD><TD></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>FIND ARTICLES</FONT></U></TD><TD></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>FIND ARTICLES WITH SEARCHLIGHT</FONT></U></TD><TD></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>FIND RESERVES</FONT></U></TD><TD></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>RESEARCH RESOURCES</FONT></U></TD><TD></TD></TR>
+  <TR><TD><!-- horizontal rule --></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>RUCORE/INSTITUTIONAL REPOSITORY</FONT></U></TD><TD></TD></TR>
+  <TR><TD><!-- horizontal rule --></TD></TR>
+  <TR><TD><!-- horizontal rule --></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>CONNECT FROM OFF-CAMPUS</FONT></U></TD><TD></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>HOW DO I...?</FONT></U>  </TD><TD></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>REFWORKS</FONT></U>  </TD><TD></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>LEARNING TOOLS</FONT></U>  </TD><TD></TD></TR>
+  <TR><TD><!-- horizontal rule --></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>BORROWING</FONT></U></TD><TD></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>DELIVERY AND INTERLIBRARY LOAN</FONT></U></TD><TD></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>REFERENCE</FONT></U></TD><TD></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>FACULTY SERVICES</FONT></U></TD><TD></TD></TR>
+  <TR><TD><!-- horizontal rule --></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>ABOUT THE LIBRARIES</FONT></U></TD><TD></TD></TR>
+  <TR><TD><!-- spacer --></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>GIVING TO THE RUTGERS<BR>UNIVERSITY LIBRARIES</FONT></U></TD><TD></TD></TR>
+  <TR><TD><!-- spacer --></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>NEWS AND EVENTS</FONT></U></TD><TD></TD></TR>
+  <TR><TD><!-- spacer --></TD></TR>
+  <TR><TD><U><FONT COLOR=blue>ALUMNI LIBRARY</FONT></U></TD><TD></TD></TR>
+</TABLE>
+<BR><BR>
+<BR><BR>
+<TABLE>
+   <TR>
+      <TD>
+      <U><FONT COLOR=blue>RETURN TO RUTGERS<BR>HOME PAGE</FONT></U><BR><BR>
+      <U><FONT COLOR=blue>SEARCH RUTGERS</FONT></U><BR>
+      
+      <BR>
+      <BR>
+      <U><FONT COLOR=blue>[VALE - Virtual Academic Library Environment]</FONT></U>
+   <BR>
+   </TD>
+<TD></TD>
+</TR></TABLE>
+</TD>
+<!-- left column: end -->
+<TD>
+
+
+<!-- content: start -->
+
+<!-- attribution: start -->
+<!-- attribution: end -->
+
+<!-- backpath: start -->
+<U><FONT COLOR=blue>Course Reserves:</FONT></U>  
+<U><FONT COLOR=blue>Reserve Services, A Guide for Faculty:</FONT></U> 
+Reserve Request Form:
+<BR>
+<!-- backpath: end -->
+
+
+Media Center
+<BR>
+
+
+
+<P>
+Use this form to request up to 20 items to be placed 
+on reserve at the Media Center on Douglass Campus. 
+Also use this form to place videos on reserve at the smaller viewing facilities (20 students maximum)  in Alexander Library and Kilmer Library. 
+If you're submitting more than 20 items for the same course, please fill out an additional form. To place materials on reserve for Music Department classes, please use 
+the Music Library Reserves <U><FONT COLOR=blue>form</FONT></U>.
+</P>
+
+<P>
+Bring personal copies of DVDs or videotapes  to the Media Center Desk;
+identify them by instructor's name, course name, and course number. 
+Include the following information: (1) the viewing location (Douglass Media Center, Alexander, Kilmer) you prefer  [Douglass has the largest and most up to date facility],
+(2) course name and number, and (3) the semester your course will be taught.
+</P>
+
+<P>
+Please prioritize your requests by week of the semester, it will help us manage 
+workflow and ensure materials are available when students need them. 
+You can note the dates desired in the text box for the reserve items.
+</P>
+
+
+<P>
+If you have any questions or special requests contact 
+<U><FONT COLOR=blue>Jan Reinhart</FONT></U> at 
+848/932-5032, or stop by the Media Center. 
+</P>
+
+ 
+
+<FORM>
+
+<INPUT VALUE="submitted" NAME="submitted" TYPE="hidden">
+
+<INPUT NAME="first_name" SIZE="40" TYPE="text">
+
+
+
+<P>
+Fields marked with a '*' are required.  The form will not be processed without this information.
+</P>
+
+<TABLE>
+
+<TR><TD><EM>Reserve Location:</EM></TD><TD>			
+        <SELECT NAME="reserve_loc">
+        <OPTION VALUE="Media_Center">Media Center (DGLSS)</OPTION>
+        <OPTION VALUE="Kilmer">Kilmer (LIV) 20 students max.</OPTION>
+        <OPTION VALUE="Alexander">Alexander (CAC) 20 students max.</OPTION>
+        </SELECT>
+</TD></TR>
+
+
+<TR><TD><EM>Date:</EM></TD><TD><INPUT NAME="date" MAXLENGTH="28" SIZE="28" TYPE="text"></TD></TR>
+<TR><TD><EM>Instructor's Name:</EM></TD><TD> <INPUT VALUE="" NAME="name" MAXLENGTH="40" SIZE="40" TYPE="text">*</TD><TR>
+<TR><TD><EM>Primary Instructor's Library Barcode:</EM></TD><TD> <INPUT VALUE="29030" NAME="barcode" MAXLENGTH="40" SIZE="14" TYPE="text"> (14 digits beginning with '29030')<BR></TD><TR>
+<TR><TD><EM>Email Address:</EM></TD><TD> <INPUT VALUE="" NAME="email" MAXLENGTH="40" SIZE="40" TYPE="text">*</TD></TR>
+<TR><TD><EM>Campus Address:</EM></TD><TD> <INPUT VALUE="" NAME="campus_address" MAXLENGTH="80" SIZE="80" TYPE="text"></TD></TR>
+<TR><TD><EM>Phone Number:</EM></TD><TD> <INPUT VALUE="" NAME="phone" MAXLENGTH="40" SIZE="15" TYPE="text"></TD></TR>
+</TABLE>
+
+
+<BR>
+ 
+
+
+<TABLE>
+<TR><TD><EM>Course Title:</EM></TD><TD><INPUT VALUE="" NAME="course_title" MAXLENGTH="40" SIZE="40" TYPE="text"></TD></TR>
+<TR><TD><EM>Course Number:</EM></TD><TD>
+<INPUT VALUE="" NAME="course_num_1" MAXLENGTH="1" SIZE="1" TYPE="text">
+<INPUT VALUE="" NAME="course_num_2" MAXLENGTH="1" SIZE="1" TYPE="text">
+&nbsp;:&nbsp;
+<INPUT VALUE="" NAME="course_num_3" MAXLENGTH="1" SIZE="1" TYPE="text">
+<INPUT VALUE="" NAME="course_num_4" MAXLENGTH="1" SIZE="1" TYPE="text">
+<INPUT VALUE="" NAME="course_num_5" MAXLENGTH="1" SIZE="1" TYPE="text">
+&nbsp;:&nbsp;
+<INPUT VALUE="" NAME="course_num_6" MAXLENGTH="1" SIZE="1" TYPE="text">
+<INPUT VALUE="" NAME="course_num_7" MAXLENGTH="1" SIZE="1" TYPE="text">
+<INPUT VALUE="" NAME="course_num_8" MAXLENGTH="1" SIZE="1" TYPE="text">
+&nbsp;:&nbsp;
+<INPUT VALUE="" NAME="course_num_9" MAXLENGTH="1" SIZE="1" TYPE="text">
+<INPUT VALUE="" NAME="course_num_10" MAXLENGTH="1" SIZE="1" TYPE="text"><BR>&nbsp;(use the TAB key to advance from box to box)
+</TD></TR>
+<TR><TD>
+<EM>Number of Students:</EM> </TD><TD><INPUT VALUE="" NAME="enrollment" MAXLENGTH="40" SIZE="3" TYPE="text"></TD></TR>
+<TR><TD>
+<EM>These are additions to an existing reserve list:</EM> </TD><TD><INPUT VALUE="yes_addition" NAME="addition" TYPE="checkbox"> (select if 'yes', this is an addition)</TD></TR>
+</TABLE>
+
+<BR>
+ 
+
+<P>
+<EM>Semester Needed:</EM>
+</P>
+
+
+<TABLE>
+<TR><TD><EM>Fall:</EM> <INPUT VALUE="fall" NAME="sem" TYPE="radio">&nbsp;&nbsp;
+<EM>Spring:</EM> <INPUT VALUE="spring" NAME="sem" TYPE="radio">&nbsp;&nbsp;
+<EM>Summer:</EM> <INPUT VALUE="summer" NAME="sem" TYPE="radio">&nbsp;&nbsp;<EM>Fall & Spring:</EM> <INPUT VALUE="fall_spring" NAME="sem" TYPE="radio">
+</TD></TR>
+</TABLE>
+
+
+<P>
+<EM>Special Instructions:</EM>
+</P>
+
+<P>
+<TEXTAREA ROWS="3" NAME="spec_instruct" COLS="60"></TEXTAREA>
+</P>
+
+<P>
+Please allow the Media Center staff to make all
+ requests for transfer of materials from other Rutgers Libraries.
+</P>
+
+<P>
+Photocopies must be provided for the processing of electronic reserves.
+</P>
+
+<P>
+Please prioritize your requests by week of the semester, it will help us manage 
+workflow and ensure materials are available when students need them. 
+Be aware that Media Center videos only go on reserve for periods of two weeks at a time. 
+You can note the dates desired in the text box for the reserve items.
+</P>
+
+
+<BR>
+ 
+
+<!-- ======================= -->
+<TABLE>
+<TR><TD><EM>Reserve Item #1:</EM></TD></TR>
+<TR><TD>
+
+Author, Title, Publisher, Edition, Call Number and Location<BR>
+(can be copied and pasted from the Library Catalog)
+
+</TD></TR>
+<TR><TD><TEXTAREA ROWS="5" NAME="title_1" COLS="60"></TEXTAREA></TD></TR>
+<TR><TD><EM>Date needed start:&nbsp;</EM>          <INPUT NAME="date_needed_1" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD>
+<TD>Reminder: Rutgers Library video may be reserved up to two weeks maximum.</TD>
+</TR>
+<TR><TD><EM>&nbsp;&nbsp;Date needed end:&nbsp;</EM> <INPUT NAME="date_needed_1" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>Personal copy:</EM>                    <INPUT VALUE="personal" NAME="copy1" TYPE="radio">&nbsp;&nbsp; 
+        <EM>Media copy:</EM>                       <INPUT VALUE="media" NAME="copy1" TYPE="radio"></TD></TR>
+</TABLE>
+
+<BR>
+ 
+
+<!-- ======================= -->
+<TABLE>
+<TR><TD><EM>Reserve Item #2:</EM></TD></TR>
+<TR><TD>
+
+Author, Title, Publisher, Edition, Call Number and Location<BR>
+(can be copied and pasted from the Library Catalog)
+
+</TD></TR>
+<TR><TD><TEXTAREA ROWS="5" NAME="title_2" COLS="60"></TEXTAREA></TD></TR>
+<TR><TD><EM>Date needed start:&nbsp;</EM>          <INPUT NAME="date_needed_2" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>&nbsp;&nbsp;Date needed end:&nbsp;</EM> <INPUT NAME="date_needed_2" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>Personal copy:</EM>                    <INPUT VALUE="personal" NAME="copy2" TYPE="radio">&nbsp;&nbsp; 
+        <EM>Media copy:</EM>                       <INPUT VALUE="media" NAME="copy2" TYPE="radio"></TD></TR>
+</TABLE>
+
+<BR>
+ 
+
+<!-- ======================= -->
+<TABLE>
+<TR><TD><EM>Reserve Item #3:</EM></TD></TR>
+<TR><TD>
+
+Author, Title, Publisher, Edition, Call Number and Location<BR>
+(can be copied and pasted from the Library Catalog)
+
+</TD></TR>
+<TR><TD><TEXTAREA ROWS="5" NAME="title_3" COLS="60"></TEXTAREA></TD></TR>
+<TR><TD><EM>Date needed start:&nbsp;</EM>          <INPUT NAME="date_needed_3" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>&nbsp;&nbsp;Date needed end:&nbsp;</EM> <INPUT NAME="date_needed_3" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>Personal copy:</EM>                    <INPUT VALUE="personal" NAME="copy3" TYPE="radio">&nbsp;&nbsp; 
+        <EM>Media copy:</EM>                       <INPUT VALUE="media" NAME="copy3" TYPE="radio"></TD></TR>
+</TABLE>
+
+<BR>
+ 
+
+<!-- ======================= -->
+<TABLE>
+<TR><TD><EM>Reserve Item #4:</EM></TD></TR>
+<TR><TD>
+
+Author, Title, Publisher, Edition, Call Number and Location<BR>
+(can be copied and pasted from the Library Catalog)
+
+</TD></TR>
+<TR><TD><TEXTAREA ROWS="5" NAME="title_4" COLS="60"></TEXTAREA></TD></TR>
+<TR><TD><EM>Date needed start:&nbsp;</EM>          <INPUT NAME="date_needed_4" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>&nbsp;&nbsp;Date needed end:&nbsp;</EM> <INPUT NAME="date_needed_4" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>Personal copy:</EM>                    <INPUT VALUE="personal" NAME="copy4" TYPE="radio">&nbsp;&nbsp; 
+        <EM>Media copy:</EM>                       <INPUT VALUE="media" NAME="copy4" TYPE="radio"></TD></TR>
+</TABLE>
+
+<BR>
+ 
+
+<!-- ======================= -->
+<TABLE>
+<TR><TD><EM>Reserve Item #5:</EM></TD></TR>
+<TR><TD>
+
+Author, Title, Publisher, Edition, Call Number and Location<BR>
+(can be copied and pasted from the Library Catalog)
+
+</TD></TR>
+<TR><TD><TEXTAREA ROWS="5" NAME="title_5" COLS="60"></TEXTAREA></TD></TR>
+<TR><TD><EM>Date needed start:&nbsp;</EM>          <INPUT NAME="date_needed_5" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>&nbsp;&nbsp;Date needed end:&nbsp;</EM> <INPUT NAME="date_needed_5" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>Personal copy:</EM>                    <INPUT VALUE="personal" NAME="copy5" TYPE="radio">&nbsp;&nbsp; 
+        <EM>Media copy:</EM>                       <INPUT VALUE="media" NAME="copy5" TYPE="radio"></TD></TR>
+</TABLE>
+
+<BR>
+ 
+
+<!-- ======================= -->
+<TABLE>
+<TR><TD><EM>Reserve Item #6:</EM></TD></TR>
+<TR><TD>
+
+Author, Title, Publisher, Edition, Call Number and Location<BR>
+(can be copied and pasted from the Library Catalog)
+
+</TD></TR>
+<TR><TD><TEXTAREA ROWS="5" NAME="title_6" COLS="60"></TEXTAREA></TD></TR>
+<TR><TD><EM>Date needed start:&nbsp;</EM>          <INPUT NAME="date_needed_6" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>&nbsp;&nbsp;Date needed end:&nbsp;</EM> <INPUT NAME="date_needed_6" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>Personal copy:</EM>                    <INPUT VALUE="personal" NAME="copy6" TYPE="radio">&nbsp;&nbsp; 
+        <EM>Media copy:</EM>                       <INPUT VALUE="media" NAME="copy6" TYPE="radio"></TD></TR>
+</TABLE>
+
+<BR>
+ 
+
+<!-- ======================= -->
+<TABLE>
+<TR><TD><EM>Reserve Item #7:</EM></TD></TR>
+<TR><TD>
+
+Author, Title, Publisher, Edition, Call Number and Location<BR>
+(can be copied and pasted from the Library Catalog)
+
+</TD></TR>
+<TR><TD><TEXTAREA ROWS="5" NAME="title_7" COLS="60"></TEXTAREA></TD></TR>
+<TR><TD><EM>Date needed start:&nbsp;</EM>          <INPUT NAME="date_needed_7" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>&nbsp;&nbsp;Date needed end:&nbsp;</EM> <INPUT NAME="date_needed_7" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>Personal copy:</EM>                    <INPUT VALUE="personal" NAME="copy7" TYPE="radio">&nbsp;&nbsp; 
+        <EM>Media copy:</EM>                       <INPUT VALUE="media" NAME="copy7" TYPE="radio"></TD></TR>
+</TABLE>
+
+<BR>
+ 
+
+<!-- ======================= -->
+<TABLE>
+<TR><TD><EM>Reserve Item #8:</EM></TD></TR>
+<TR><TD>
+
+Author, Title, Publisher, Edition, Call Number and Location<BR>
+(can be copied and pasted from the Library Catalog)
+
+</TD></TR>
+<TR><TD><TEXTAREA ROWS="5" NAME="title_8" COLS="60"></TEXTAREA></TD></TR>
+<TR><TD><EM>Date needed start:&nbsp;</EM>          <INPUT NAME="date_needed_8" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>&nbsp;&nbsp;Date needed end:&nbsp;</EM> <INPUT NAME="date_needed_8" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>Personal copy:</EM>                    <INPUT VALUE="personal" NAME="copy8" TYPE="radio">&nbsp;&nbsp; 
+        <EM>Media copy:</EM>                       <INPUT VALUE="media" NAME="copy8" TYPE="radio"></TD></TR>
+</TABLE>
+
+<BR>
+ 
+
+<!-- ======================= -->
+<TABLE>
+<TR><TD><EM>Reserve Item #9:</EM></TD></TR>
+<TR><TD>
+
+Author, Title, Publisher, Edition, Call Number and Location<BR>
+(can be copied and pasted from the Library Catalog)
+
+</TD></TR>
+<TR><TD><TEXTAREA ROWS="5" NAME="title_9" COLS="60"></TEXTAREA></TD></TR>
+<TR><TD><EM>Date needed start:&nbsp;</EM>          <INPUT NAME="date_needed_9" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>&nbsp;&nbsp;Date needed end:&nbsp;</EM> <INPUT NAME="date_needed_9" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>Personal copy:</EM>                    <INPUT VALUE="personal" NAME="copy9" TYPE="radio">&nbsp;&nbsp; 
+        <EM>Media copy:</EM>                       <INPUT VALUE="media" NAME="copy9" TYPE="radio"></TD></TR>
+</TABLE>
+
+<BR>
+ 
+
+<!-- ======================= -->
+<TABLE>
+<TR><TD><EM>Reserve Item #10:</EM></TD></TR>
+<TR><TD>
+
+Author, Title, Publisher, Edition, Call Number and Location<BR>
+(can be copied and pasted from the Library Catalog)
+
+</TD></TR>
+<TR><TD><TEXTAREA ROWS="5" NAME="title_10" COLS="60"></TEXTAREA></TD></TR>
+<TR><TD><EM>Date needed start:&nbsp;</EM>          <INPUT NAME="date_needed_10" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>&nbsp;&nbsp;Date needed end:&nbsp;</EM> <INPUT NAME="date_needed_10" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>Personal copy:</EM>                    <INPUT VALUE="personal" NAME="copy10" TYPE="radio">&nbsp;&nbsp; 
+        <EM>Media copy:</EM>                       <INPUT VALUE="media" NAME="copy10" TYPE="radio"></TD></TR>
+</TABLE>
+
+<BR>
+ 
+
+<!-- ======================= -->
+<TABLE>
+<TR><TD><EM>Reserve Item #11:</EM></TD></TR>
+<TR><TD>
+
+Author, Title, Publisher, Edition, Call Number and Location<BR>
+(can be copied and pasted from the Library Catalog)
+
+</TD></TR>
+<TR><TD><TEXTAREA ROWS="5" NAME="title_11" COLS="60"></TEXTAREA></TD></TR>
+<TR><TD><EM>Date needed start:&nbsp;</EM>          <INPUT NAME="date_needed_11" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>&nbsp;&nbsp;Date needed end:&nbsp;</EM> <INPUT NAME="date_needed_11" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>Personal copy:</EM>                    <INPUT VALUE="personal" NAME="copy11" TYPE="radio">&nbsp;&nbsp; 
+        <EM>Media copy:</EM>                       <INPUT VALUE="media" NAME="copy11" TYPE="radio"></TD></TR>
+</TABLE>
+
+<BR>
+ 
+
+<!-- ======================= -->
+<TABLE>
+<TR><TD><EM>Reserve Item #12:</EM></TD></TR>
+<TR><TD>
+
+Author, Title, Publisher, Edition, Call Number and Location<BR>
+(can be copied and pasted from the Library Catalog)
+
+</TD></TR>
+<TR><TD><TEXTAREA ROWS="5" NAME="title_12" COLS="60"></TEXTAREA></TD></TR>
+<TR><TD><EM>Date needed start:&nbsp;</EM>          <INPUT NAME="date_needed_12" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>&nbsp;&nbsp;Date needed end:&nbsp;</EM> <INPUT NAME="date_needed_12" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>Personal copy:</EM>                    <INPUT VALUE="personal" NAME="copy12" TYPE="radio">&nbsp;&nbsp; 
+        <EM>Media copy:</EM>                       <INPUT VALUE="media" NAME="copy12" TYPE="radio"></TD></TR>
+</TABLE>
+
+<BR>
+ 
+
+<!-- ======================= -->
+<TABLE>
+<TR><TD><EM>Reserve Item #13:</EM></TD></TR>
+<TR><TD>
+
+Author, Title, Publisher, Edition, Call Number and Location<BR>
+(can be copied and pasted from the Library Catalog)
+
+</TD></TR>
+<TR><TD><TEXTAREA ROWS="5" NAME="title_13" COLS="60"></TEXTAREA></TD></TR>
+<TR><TD><EM>Date needed start:&nbsp;</EM>          <INPUT NAME="date_needed_13" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>&nbsp;&nbsp;Date needed end:&nbsp;</EM> <INPUT NAME="date_needed_13" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>Personal copy:</EM>                    <INPUT VALUE="personal" NAME="copy13" TYPE="radio">&nbsp;&nbsp; 
+        <EM>Media copy:</EM>                       <INPUT VALUE="media" NAME="copy13" TYPE="radio"></TD></TR>
+</TABLE>
+
+<BR>
+ 
+
+<!-- ======================= -->
+<TABLE>
+<TR><TD><EM>Reserve Item #14:</EM></TD></TR>
+<TR><TD>
+
+Author, Title, Publisher, Edition, Call Number and Location<BR>
+(can be copied and pasted from the Library Catalog)
+
+</TD></TR>
+<TR><TD><TEXTAREA ROWS="5" NAME="title_14" COLS="60"></TEXTAREA></TD></TR>
+<TR><TD><EM>Date needed start:&nbsp;</EM>          <INPUT NAME="date_needed_14" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>&nbsp;&nbsp;Date needed end:&nbsp;</EM> <INPUT NAME="date_needed_14" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>Personal copy:</EM>                    <INPUT VALUE="personal" NAME="copy14" TYPE="radio">&nbsp;&nbsp; 
+        <EM>Media copy:</EM>                       <INPUT VALUE="media" NAME="copy14" TYPE="radio"></TD></TR>
+</TABLE>
+
+<BR>
+ 
+
+<!-- ======================= -->
+<TABLE>
+<TR><TD><EM>Reserve Item #15:</EM></TD></TR>
+<TR><TD>
+
+Author, Title, Publisher, Edition, Call Number and Location<BR>
+(can be copied and pasted from the Library Catalog)
+
+</TD></TR>
+<TR><TD><TEXTAREA ROWS="5" NAME="title_15" COLS="60"></TEXTAREA></TD></TR>
+<TR><TD><EM>Date needed start:&nbsp;</EM>          <INPUT NAME="date_needed_15" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>&nbsp;&nbsp;Date needed end:&nbsp;</EM> <INPUT NAME="date_needed_15" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>Personal copy:</EM>                    <INPUT VALUE="personal" NAME="copy15" TYPE="radio">&nbsp;&nbsp; 
+        <EM>Media copy:</EM>                       <INPUT VALUE="media" NAME="copy15" TYPE="radio"></TD></TR>
+</TABLE>
+
+<BR>
+ 
+
+<!-- ======================= -->
+<TABLE>
+<TR><TD><EM>Reserve Item #16:</EM></TD></TR>
+<TR><TD>
+
+Author, Title, Publisher, Edition, Call Number and Location<BR>
+(can be copied and pasted from the Library Catalog)
+
+</TD></TR>
+<TR><TD><TEXTAREA ROWS="5" NAME="title_16" COLS="60"></TEXTAREA></TD></TR>
+<TR><TD><EM>Date needed start:&nbsp;</EM>          <INPUT NAME="date_needed_16" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>&nbsp;&nbsp;Date needed end:&nbsp;</EM> <INPUT NAME="date_needed_16" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>Personal copy:</EM>                    <INPUT VALUE="personal" NAME="copy16" TYPE="radio">&nbsp;&nbsp; 
+        <EM>Media copy:</EM>                       <INPUT VALUE="media" NAME="copy16" TYPE="radio"></TD></TR>
+</TABLE>
+
+<BR>
+ 
+
+<!-- ======================= -->
+<TABLE>
+<TR><TD><EM>Reserve Item #17:</EM></TD></TR>
+<TR><TD>
+
+Author, Title, Publisher, Edition, Call Number and Location<BR>
+(can be copied and pasted from the Library Catalog)
+
+</TD></TR>
+<TR><TD><TEXTAREA ROWS="5" NAME="title_17" COLS="60"></TEXTAREA></TD></TR>
+<TR><TD><EM>Date needed start:&nbsp;</EM>          <INPUT NAME="date_needed_17" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>&nbsp;&nbsp;Date needed end:&nbsp;</EM> <INPUT NAME="date_needed_17" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>Personal copy:</EM>                    <INPUT VALUE="personal" NAME="copy17" TYPE="radio">&nbsp;&nbsp; 
+        <EM>Media copy:</EM>                       <INPUT VALUE="media" NAME="copy17" TYPE="radio"></TD></TR>
+</TABLE>
+
+<BR>
+ 
+
+<!-- ======================= -->
+<TABLE>
+<TR><TD><EM>Reserve Item #18:</EM></TD></TR>
+<TR><TD>
+
+Author, Title, Publisher, Edition, Call Number and Location<BR>
+(can be copied and pasted from the Library Catalog)
+
+</TD></TR>
+<TR><TD><TEXTAREA ROWS="5" NAME="title_18" COLS="60"></TEXTAREA></TD></TR>
+<TR><TD><EM>Date needed start:&nbsp;</EM>          <INPUT NAME="date_needed_18" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>&nbsp;&nbsp;Date needed end:&nbsp;</EM> <INPUT NAME="date_needed_18" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>Personal copy:</EM>                    <INPUT VALUE="personal" NAME="copy18" TYPE="radio">&nbsp;&nbsp; 
+        <EM>Media copy:</EM>                       <INPUT VALUE="media" NAME="copy18" TYPE="radio"></TD></TR>
+</TABLE>
+
+<BR>
+ 
+
+<!-- ======================= -->
+<TABLE>
+<TR><TD><EM>Reserve Item #19:</EM></TD></TR>
+<TR><TD>
+
+Author, Title, Publisher, Edition, Call Number and Location<BR>
+(can be copied and pasted from the Library Catalog)
+
+</TD></TR>
+<TR><TD><TEXTAREA ROWS="5" NAME="title_19" COLS="60"></TEXTAREA></TD></TR>
+<TR><TD><EM>Date needed start:&nbsp;</EM>          <INPUT NAME="date_needed_19" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>&nbsp;&nbsp;Date needed end:&nbsp;</EM> <INPUT NAME="date_needed_19" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>Personal copy:</EM>                    <INPUT VALUE="personal" NAME="copy19" TYPE="radio">&nbsp;&nbsp; 
+        <EM>Media copy:</EM>                       <INPUT VALUE="media" NAME="copy19" TYPE="radio"></TD></TR>
+</TABLE>
+
+<BR>
+ 
+
+<!-- ======================= -->
+<TABLE>
+<TR><TD><EM>Reserve Item #20:</EM></TD></TR>
+<TR><TD>
+
+Author, Title, Publisher, Edition, Call Number and Location<BR>
+(can be copied and pasted from the Library Catalog)
+
+</TD></TR>
+<TR><TD><TEXTAREA ROWS="5" NAME="title_20" COLS="60"></TEXTAREA></TD></TR>
+<TR><TD><EM>Date needed start:&nbsp;</EM>          <INPUT NAME="date_needed_20" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>&nbsp;&nbsp;Date needed end:&nbsp;</EM> <INPUT NAME="date_needed_20" MAXLENGTH="9" SIZE="9" TYPE="text"> <EM>[format: MM/DD eg. 06/01]</EM></TD></TR>
+<TR><TD><EM>Personal copy:</EM>                    <INPUT VALUE="personal" NAME="copy20" TYPE="radio">&nbsp;&nbsp; 
+        <EM>Media copy:</EM>                       <INPUT VALUE="media" NAME="copy20" TYPE="radio"></TD></TR>
+</TABLE>
+
+<BR>
+ 
+
+<!-- ======================= -->
+<P><BR>
+Please print out the resulting screen for your records.  It prints better than it looks.
+</P>
+
+<INPUT VALUE="Click to Submit Form" TYPE="SUBMIT">
+</FORM>
+
+writeDateLong()
+
+<!-- content area: end -->
+
+<!-- footer -->
+
+<U><FONT COLOR=blue>[Back to Top of Page]</FONT></U>
+ 
+</TD></TR>
+<TR>
+<TD></TD>
+<TD>
+
+<!-- <span class="note">
+Last updated  --
+</span> -->
+
+</TD>
+</TR>
+<TR>
+<TD>&nbsp;</TD>
+<TD>
+
+
+URL: http://www.libraries.rutgers.edu/rul/forms/reserve_media.shtml<BR>
+
+
+
+
+    <U><FONT COLOR=blue>Website Feedback</FONT></U>&nbsp;&nbsp;|&nbsp;&nbsp;<U><FONT COLOR=blue>Privacy Policy</FONT></U>
+    <BR>
+    <U><FONT COLOR=blue>Copyright &#169;  2012</FONT></U>, Rutgers, The State University of New Jersey &nbsp;&nbsp;(<U><FONT COLOR=blue><EM>Further Copyright Information</EM></FONT></U>)
+
+
+</TD>
+</TR>
+</TABLE>
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>

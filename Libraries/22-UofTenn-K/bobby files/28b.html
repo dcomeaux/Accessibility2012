@@ -1,0 +1,535 @@
+
+<HTML>
+<HEAD>
+<META CONTENT="text/html; charset=UTF-8">
+<TITLE>Circ - Media - Reserve: IUS - University of Tennessee Libraries</TITLE>
+
+
+
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+<!-- Created by: Lee Hinder, lee.hinder@ntlworld.com -->
+
+<!-- Begin
+//set todays date
+Now = new Date();
+NowDay = Now.getDate();
+NowMonth = Now.getMonth();
+NowYear = Now.getYear();
+if (NowYear < 2000) NowYear += 1900; //for Netscape
+
+//function for returning how many days there are in a month including leap years
+function DaysInMonth(WhichMonth, WhichYear)
+{
+  var DaysInMonth = 31;
+  if (WhichMonth == "Apr" || WhichMonth == "Jun" || WhichMonth == "Sep" || WhichMonth == "Nov") DaysInMonth = 30;
+  if (WhichMonth == "Feb" && (WhichYear/4) != Math.floor(WhichYear/4))	DaysInMonth = 28;
+  if (WhichMonth == "Feb" && (WhichYear/4) == Math.floor(WhichYear/4))	DaysInMonth = 29;
+  return DaysInMonth;
+}
+
+//function to change the available days in a months
+function ChangeOptionDays(Which)
+{
+  DaysObject = eval("document.Form1." + Which + "Day");
+  MonthObject = eval("document.Form1." + Which + "Month");
+  YearObject = eval("document.Form1." + Which + "Year");
+
+  Month = MonthObject[MonthObject.selectedIndex].text;
+  Year = YearObject[YearObject.selectedIndex].text;
+
+  DaysForThisSelection = DaysInMonth(Month, Year);
+  CurrentDaysInSelection = DaysObject.length;
+  if (CurrentDaysInSelection > DaysForThisSelection)
+  {
+    for (i=0; i<(CurrentDaysInSelectionDaysForThisSelection); i++)
+    {
+      DaysObject.options[DaysObject.options.length  1] = null
+    }
+  }
+  if (DaysForThisSelection > CurrentDaysInSelection)
+  {
+    for (i=0; i<(DaysForThisSelectionCurrentDaysInSelection); i++)
+    {
+      NewOption = new Option(DaysObject.options.length + 1);
+      DaysObject.add(NewOption);
+    }
+  }
+    if (DaysObject.selectedIndex < 0) DaysObject.selectedIndex == 0;
+}
+
+//function to set options to today
+function SetToToday(Which)
+{
+  DaysObject = eval("document.Form1." + Which + "Day");
+  MonthObject = eval("document.Form1." + Which + "Month");
+  YearObject = eval("document.Form1." + Which + "Year");
+
+  YearObject[0].selected = true;
+  MonthObject[NowMonth].selected = true;
+
+  ChangeOptionDays(Which);
+
+  DaysObject[NowDay1].selected = true;
+}
+
+//function to write option years plus x
+function WriteYearOptions(YearsAhead)
+{
+  line = "";
+  for (i=0; i<YearsAhead; i++)
+  {
+    line += "<OPTION>";
+    line += NowYear + i;
+  }
+  return line;
+}
+//  End -->
+
+
+
+
+
+
+
+<META NAME="Description" CONTENT="The University of Tennessee, Knoxville was founded in 1794 and was designated the state land-grant institution in 1879. The University now has nearly 26,000 students and 400 academic programs.">
+<META NAME="Keywords" CONTENT="university, tennessee, knoxville, university of tennessee, university of tennessee knoxville, tennessee schools, tennessee colleges, tennessee higher education, higher education, ut, utk, big orange, vols, lady vols, volunteers">
+<META NAME="author" CONTENT="Dan Greene UTK Libraries Outreach">
+
+
+
+<!-- The following lines call the primary (libglobal.css) and secondary style sheets -->
+
+
+
+
+
+<!--Print style sheet that removes the header, footer and left navigation menu for printing-->
+
+
+<!--Script to correct the page scrolling/anchor reference problem-->
+
+
+
+
+<!--
+.style8 {
+	fontsize: 10pt;
+	color: #000000;
+	fontweight: bold;
+}
+.style9 {fontsize: 10pt; color: #000099; fontweight: bold; }
+.style10 {fontsize: 10pt; color: #0000CC; fontweight: bold; }
+-->
+
+
+
+<!--
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+
+
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<!-- HEADER -->
+
+<!--BEGIN GOOGLE ANALYTICS-->
+
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5931387-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+  })();
+
+
+<!--END GOOGLE ANALYTICS-->
+
+
+<!-- BEGIN HEADER | DO NOT EDIT ANYTHING IN THE HEADER SECTION -->
+</FONT></U>
+<P><U><FONT COLOR=blue>Skip to Main Content</FONT></U></P>
+<P><U><FONT COLOR=blue>Services for Individuals with Disabilities</FONT></U></P>
+	
+       
+    
+		
+		
+			<U><FONT COLOR=blue>[The University of Tennessee]</FONT></U>
+			<P><U><FONT COLOR=blue>The University of Tennessee</FONT></U></P>
+	  
+		
+		
+			<!-- Header image goes here -->
+			<P><U><FONT COLOR=blue>[University Libraries]</FONT></U></P>
+		
+		
+		<BR> <!-- Clears the headerleft and headerright columns -->
+		
+	
+    
+	
+<!-- END HEADER -->
+	
+	
+<!-- BEGIN DEPARTMENT -->
+
+
+	
+	
+		
+			<!-- University Libraries Home Link -->
+			<H2><U><FONT COLOR=blue>University Libraries Home</FONT></U></H2>
+		
+		
+			<!-- Contains the Tools menu and the UT search box -->
+
+
+				<H2>Frequently Used Tools:</H2> <!-- Does not display in standard browsers -->
+						<UL> 
+                    	<LI><U><FONT COLOR=blue>MyUTK</FONT></U>&nbsp;|&nbsp;</LI>
+                        <LI><U><FONT COLOR=blue>Online@UT</FONT></U>&nbsp;|&nbsp;</LI>
+                        <LI><U><FONT COLOR=blue>Tmail</FONT></U>&nbsp;|&nbsp;</LI> 
+						<LI><U><FONT COLOR=blue>Volmail</FONT></U>&nbsp;|&nbsp;</LI> 
+						<LI><U><FONT COLOR=blue>A-Z Index</FONT></U></LI> 
+					</UL> 
+			
+            
+            
+						<H2>Search The University of Tennessee:</H2> <!-- Does not display in standard browsers -->
+					<FORM>
+						search:  <!-- Does not display in standard browsers -->
+						<INPUT VALUE="Search" NAME="qt" SIZE="3" TYPE="text">
+            				<SELECT NAME="qtype">
+								<OPTION VALUE="utk">Campus</OPTION>
+								<OPTION VALUE="ldap">People</OPTION>
+                				<OPTION VALUE="system">System</OPTION>
+              				</SELECT> 
+						<INPUT NAME="go" TYPE="image">
+			 		</FORM>		
+				
+			
+            
+	  	
+		<BR> <!-- Clears the departmentleft and departmentright columns -->
+		
+	
+
+
+<!-- END DEPARTMENT -->
+<!-- END HEADER -->
+	
+
+
+
+
+
+<!-- BEGIN CONTENT AREA -->
+
+
+
+	
+<!-- BEGIN LEFT MENU -->
+			
+			<H2>Main Navigation:</H2> <!-- Does not display in standard browsers -->
+            
+            <!--BEGIN LEFT MENU ITEMS-->
+            
+            
+			<UL>		<!--Branch or Dept Home Link-->
+                    <LI><U><FONT COLOR=blue>Integrated User Services</FONT></U>
+                    		<!--Branch or Dept Sub Links-->
+					<UL>
+					<LI><U><FONT COLOR=blue>Circulation and Media Services</FONT></U></LI>
+                   <LI><U><FONT COLOR=blue>Instructional Services</FONT></U></LI>
+					<LI><U><FONT COLOR=blue>Reserve Services</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>The Commons</FONT></U></LI>
+                    <LI><U><FONT COLOR=blue>The Studio</FONT></U></LI>
+					</UL>
+					</LI>
+	                                          <!--Main Libraries Navigation Include-->	
+            
+                   <LI><U><FONT COLOR=blue>Find Resources</FONT></U></LI>
+			    <LI><U><FONT COLOR=blue>Databases</FONT></U></LI>
+			    <LI><U><FONT COLOR=blue>Course Reserves</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Request Materials</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Services</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Hours</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Branch Libraries &amp; Collections</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>About the Libraries</FONT></U></LI>
+                <LI><U><FONT COLOR=blue>Libraries A to Z</FONT></U></LI>  
+			    <LI><U><FONT COLOR=blue>My Account</FONT></U></LI>
+   
+			</UL>
+            
+            <!--END MENU ITEMS-->
+            <BR>
+            
+                 	<!-- BEGIN LEFT MENU LOWER -->
+        
+ 	
+ 
+     
+<BR>
+<BR>
+
+					
+<H4 ALIGN="center"><U><FONT COLOR=blue><EM>AskUsNow!</EM></FONT></U></H4>
+			   
+               <P ALIGN="center">&#8211;&nbsp;Help from a Librarian&nbsp;&#8211;</P><BR>
+                
+<P ALIGN="center">Walk-Ins<BR>
+    Chat<BR>
+	E-Mail<BR>
+	Phone<BR>
+	Appointments
+    <BR><BR>
+</P>
+
+
+
+<BR>
+<BR>
+	
+		  
+          
+          <BR>
+          
+          <!-- END LEFT MENU LOWER -->
+			
+<!-- END LEFT MENU -->
+    
+		<!-- BEGIN MAIN CONTENT AREA -->
+		
+		  
+			</FONT></U> <!-- A named anchor included to improve web accessibility.  DO NOT EDIT -->
+
+<!--BEGIN PAGE CONTENT-->
+
+				<H1>Circulation - Media - Reserve Services</H1>
+				<EM>Integrated User Services</EM>
+<BR>
+
+ 
+  
+  <P><EM>Borrowing </EM></P>
+  <UL>
+    <LI><U><FONT COLOR=blue>Loan Periods</FONT></U></LI>
+	<LI><U><FONT COLOR=blue>Request Materials</FONT></U>
+    <LI><U><FONT COLOR=blue>Overdue Fines</FONT></U></FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Borrower Cards</FONT></U><BR>
+    </LI>
+  </UL>
+ 
+
+
+  
+  <P><EM>Location Guides</EM></P>
+  
+  <UL>
+    <LI><U><FONT COLOR=blue>Floor Maps</FONT></U></LI>
+    <!-- Removed on 06/01/11 j.f. <li><a href="http://www.lib.utk.edu/instruction/materiallocation.html">Library Directory</a></li> -->
+    <LI><U><FONT COLOR=blue>Understanding Call Numbers</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Call Number Locator</FONT></U></LI>
+  </UL>
+ 
+		<BR> 
+		<!-- Clears the leftmenu and maincontent columns -->
+<P>&nbsp;</P>
+
+
+  
+  <P><EM>Media</EM></P>
+  <UL>
+    <LI><U><FONT COLOR=blue>Find Media</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Loan Periods</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Browse Streamed Videos</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>New Media Items</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Streamed Media Guide</FONT></U></LI>
+    <!--<li>Where to view  </li>-->
+  </UL>
+  
+
+
+
+<P><EM>Reserve</EM></P>
+<UL>
+  <LI><U><FONT COLOR=blue>Find Reserves</FONT></U></LI>
+  <LI><U><FONT COLOR=blue>Loan Periods</FONT></U></LI>
+  <LI><U><FONT COLOR=blue>Place Items on Reserve </FONT></U></LI>
+  <LI><U><FONT COLOR=blue>Video Reserves</FONT></U></LI>
+  </UL>
+
+
+		<BR> 
+		<!-- Clears the leftmenu and maincontent columns -->
+<P>&nbsp;</P>
+
+
+  
+    <P><EM>Spaces</EM></P>
+    <UL>
+      <LI><U><FONT COLOR=blue>Faculty Studies</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Graduate Carrels</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Presentation Rooms</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Auditorium & Group Viewing Rooms</FONT></U></LI>
+    </UL>
+    
+
+
+
+<P><EM>Contact</EM></P>
+<P>Circulation <U><FONT COLOR=blue>(865) 974-4351</FONT></U></P>
+<P>Media / Reserve <U><FONT COLOR=blue>(865) 974-4473</FONT></U></P>
+<P>Studio <U><FONT COLOR=blue>(865) 974-6396</FONT></U></P>
+  
+
+<!-- END PAGE CONTENT-->
+
+            
+			<!--BEGIN RIGHT COLUMN-->
+			
+			
+			
+			
+      <CENTER><H3>My Library<BR>Account Login </H3></CENTER>
+<CENTER>Login to the Library Catalog to check your loans, fines, requests, or to update your library information.</CENTER><BR>
+
+			<FORM>
+<INPUT VALUE="Y" NAME="ssl_flag" TYPE="hidden"> 
+<INPUT VALUE="login-session" NAME="func" TYPE="hidden"> 
+<INPUT VALUE="LOGIN-BOR" NAME="login_source" TYPE="hidden">
+        <EM>NetID:</EM><BR>
+<CENTER><INPUT NAME="bor_id" SIZE="15" TYPE="text"><BR></CENTER>
+        <EM>Password:&nbsp;</EM><BR>
+<CENTER><INPUT NAME="bor_verification" SIZE="15" TYPE="password"><BR><BR>
+        <INPUT VALUE="UTK50" NAME="bor_library" TYPE="hidden">
+        <INPUT VALUE="Log-in" NAME="c" TYPE="submit">&nbsp;&nbsp;&nbsp;
+        <INPUT VALUE="Clear" NAME="reset" TYPE="reset">
+       </CENTER></P>
+      </FORM>
+	  
+
+<P>&nbsp;</P>
+			<HR>
+			
+      <CENTER>
+        <H3>Room Schedule </H3>
+      </CENTER>
+<CENTER>View the room reservation schedules for: Group Viewing Rooms, Instruction Rooms, and the Auditorium.</CENTER><BR>
+          <FORM>
+           
+<CENTER>
+<SELECT NAME="FirstSelectMonth">
+	<OPTION>Jan
+	<OPTION>Feb
+	<OPTION>Mar
+	<OPTION>Apr
+	<OPTION>May
+	<OPTION>Jun
+	<OPTION>Jul
+	<OPTION>Aug
+	<OPTION>Sep
+	<OPTION>Oct
+	<OPTION>Nov
+	<OPTION>Dec
+</SELECT>
+
+<SELECT NAME="FirstSelectDay">
+	<OPTION>1
+	<OPTION>2
+	<OPTION>3
+	<OPTION>4
+	<OPTION>5
+	<OPTION>6
+	<OPTION>7
+	<OPTION>8
+	<OPTION>9
+	<OPTION>10
+	<OPTION>11
+	<OPTION>12
+	<OPTION>13
+	<OPTION>14
+	<OPTION>15
+	<OPTION>16
+	<OPTION>17
+	<OPTION>18
+	<OPTION>19
+	<OPTION>20
+	<OPTION>21
+	<OPTION>22
+	<OPTION>23
+	<OPTION>24
+	<OPTION>25
+	<OPTION>26
+	<OPTION>27
+	<OPTION>28
+	<OPTION>29
+	<OPTION>30
+	<OPTION>31
+</SELECT> <SELECT NAME="FirstSelectYear">
+	
+		document.write(WriteYearOptions(5));
+	
+</SELECT>
+</CENTER>
+<BR>
+	    <CENTER><INPUT VALUE="go to date" TYPE="SUBMIT"></CENTER>
+           
+          </FORM>
+
+	<P>&nbsp;</P>
+    <P><CENTER><U><FONT COLOR=blue>Room Reservation Form</FONT></U></CENTER></P>
+
+			
+			<!--END RIGHT COLUMN-->
+  	
+
+			<BR> <!-- Clears the maintwocol and mainright columns -->
+			
+		<!-- END MAIN CONTENT AREA -->	
+
+		
+		<BR> 
+		<!-- Clears the leftmenu and maincontent columns -->
+		
+  
+
+
+<!-- END CONTENT AREA -->
+
+
+
+
+<!-- BEGIN FOOTER | DO NOT EDIT THIS AREA -->
+
+
+	
+		&nbsp;
+	
+
+
+	
+		<P><U><FONT COLOR=blue>University of Tennessee, Knoxville - Libraries</FONT></U> &nbsp;&middot;&nbsp;  1015 Volunteer Boulevard, Knoxville, TN 37996-1000  &nbsp;&middot;&nbsp; (865) 974-4351 &nbsp;&middot;&nbsp;<U><FONT COLOR=blue>Contact Us</FONT></U>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <U><FONT COLOR=blue>[UT Libraries on Facebook]</FONT></U>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<U><FONT COLOR=blue>[UT Libraries on Twitter]</FONT></U>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<U><FONT COLOR=blue>[UT Libraries on YouTube]</FONT></U></P>
+        
+       <P><U><FONT COLOR=blue>Departments</FONT></U>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<U><FONT COLOR=blue>Staff Directory</FONT></U>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <U><FONT COLOR=blue>Maps and Directions</FONT></U>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<U><FONT COLOR=blue>Employment</FONT></U></P>
+        
+<P><U><FONT COLOR=blue>Top of Page</FONT></U>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<U><FONT COLOR=blue>Electronic Resource Use Guidelines</FONT></U></P>		
+  
+
+
+<!-- END FOOTER -->
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>

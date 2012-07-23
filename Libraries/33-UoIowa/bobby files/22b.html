@@ -1,0 +1,676 @@
+
+<HTML>
+<!-- InstanceBegin template="/Templates/subpage.dwt" codeOutsideHTMLIsLocked="false" -->
+<HEAD>
+<META CONTENT="text/html; charset=UTF-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<TITLE>Find Articles - General Databases/Indexes - The University of Iowa Libraries</TITLE>
+<META NAME="Description" CONTENT="Find articles in scholarly journals and magazines">
+<META NAME="Keywords" CONTENT="database, journal, article, index, literature search, database search, find articles, ebsco, ebscohost, academic search elite, ISI, Web of Science, JCR, Lexis, LexisNexis, google scholar, googlescholar">
+
+#leftcolumn { float:left; width: 60%; }
+#rightcolumn { float:right; width: 35%; padding: 8px; border: 1px solid #CCCCCC; }
+#dbsearch { line-height: normal; padding-left:0; }
+#dbsearch select { font-size: 10pt; }
+#dbsearch input { font-size: 10pt; }
+#dbsearch input[type=text] { background-color: #FFF; background-image: none; }
+h3 { margin-bottom: 0; padding-bottom: 0; }
+.style2 { font-size: small }
+#button a { text-decoration: none; }
+#topsearch { margin:0 auto; }
+
+
+<!--
+exampleSearchText1 = new Array(3);
+exampleSearchText2 = new Array(3);
+exampleSearchText3 = new Array(3);
+exampleSearchText4 = new Array(3);
+
+/*General Resources*/
+exampleSearchText1[0] = "Includes: Ebsco's Academic Search Elite,";
+exampleSearchText2[0] = "Newspaper Source, Periodicals Index Online,";
+exampleSearchText3[0] = "Readers' Guide Retrospective";
+exampleSearchText4[0] = "";
+
+/*Art Resources*/
+exampleSearchText1[1] = "Includes: Art Full Text, Art Retrospective,";
+exampleSearchText2[1] = "Bibliography of the History of Art, ";
+exampleSearchText3[1] = "JSTOR Art and Art History,";
+exampleSearchText4[1] = "JSTOR Architecture and Architectural History";
+
+/*Business and Economics*/
+exampleSearchText1[2] = "Includes: ABI/Inform,";
+exampleSearchText2[2] = "Business Source Complete, EconLit, ";
+exampleSearchText3[2] = "JSTOR Business, JSTOR Economics,";
+exampleSearchText4[2] = "Factiva, PsycINFO";
+
+/*Communication Studies*/
+exampleSearchText1[3] = "Includes: CIOS/ComAbstracts,";
+exampleSearchText2[3] = "Communication and Mass Media Complete,";
+exampleSearchText3[3] = "Film and Television Literature Index,";
+exampleSearchText4[3] = "PsycINFO, Academic Search Elite";
+
+/*Education*/
+exampleSearchText1[4] = "Includes: Academic Search Elite, ";
+exampleSearchText2[4] = "Education Full Text, ERIC, PsycINFO,";
+exampleSearchText3[4] = " Web of Science";
+exampleSearchText4[4] = "";
+
+/*Engineering*/
+exampleSearchText1[5] = "Includes: Compendex (Ei Village 2), ";
+exampleSearchText2[5] = "Inspec, Web of Science, ";
+exampleSearchText3[5] = "Academic Search Elite";
+exampleSearchText4[5] = "";
+
+/*Government*/
+exampleSearchText1[6] = "Includes: CQ Researcher Plus Archive,";
+exampleSearchText2[6] = "GPO Access via Firstgov, SourceOECD ";
+exampleSearchText3[6] = "";
+exampleSearchText4[6] = "";
+
+/*Health*/
+exampleSearchText1[7] = "Includes: CINAHL Plus,";
+exampleSearchText2[7] = "Health Reference Center,";
+exampleSearchText3[7] = "Health Source: Nursing,";
+exampleSearchText4[7] = "and PubMed";
+
+/*Iowa Universities Catalogs*/
+exampleSearchText1[8] = "Includes: University of Iowa,";
+exampleSearchText2[8] = "University of Northern Iowa,";
+exampleSearchText3[8] = "and Iowa State University";
+exampleSearchText4[8] = "";
+
+/*Law*/
+exampleSearchText1[9] = "Includes: Academic Search Elite,";
+exampleSearchText2[9] = "CQ Researcher, CQ Supreme Court,";
+exampleSearchText3[9] = "JSTOR (All Subjects), ";
+exampleSearchText4[9] = "and Law Journal Library";
+
+/*Literature and Humanities*/
+exampleSearchText1[10] = "Includes: JSTOR Language and Literature,";
+exampleSearchText2[10] = "LION Criticism and Project Muse";
+exampleSearchText3[10] = "";
+exampleSearchText4[10] = "";
+
+/*Math*/
+exampleSearchText1[11] = "Includes: MathSciNet, Science Direct,";
+exampleSearchText2[11] = "SpringerLink, Web of Science";
+exampleSearchText3[11] = "";
+exampleSearchText4[11] = "";
+
+/*Music*/
+exampleSearchText1[12] = "Includes: JSTOR Music, ";
+exampleSearchText2[12] = "RILM Abstracts of Music Literature,";
+exampleSearchText3[12] = "Project Muse, ";
+exampleSearchText4[12] = "International Index to Music Periodicals";
+
+/*Physics*/
+exampleSearchText1[13] = "Includes: Institute of Physics Journals, ";
+exampleSearchText2[13] = "Science Direct, SpringerLink, ";
+exampleSearchText3[13] = "Inspec (Ei Village 2), Web of Science";
+exampleSearchText4[13] = "";
+
+/*Political Science*/
+exampleSearchText1[14] = "Includes: CQ Weekly, JSTOR Political Science,";
+exampleSearchText2[14] = "PAIS International,";
+exampleSearchText3[14] = "Worldwide Political Science Abstracts,";
+exampleSearchText4[14] = "Academic Search Elite";
+
+/*Psychology*/
+exampleSearchText1[15] = "Includes: PsycINFO, PubMed, ";
+exampleSearchText2[15] = "Linguistics & Language Behavior Abstracts,";
+exampleSearchText3[15] = "Web of Science";
+exampleSearchText4[15] = "";
+
+/*Religion*/
+exampleSearchText1[16] = "Includes: Academic Search Elite";
+exampleSearchText2[16] = "and ATLA with ATLA Serials";
+exampleSearchText3[16] = "";
+exampleSearchText4[16] = "";
+
+/*Social Work*/
+exampleSearchText1[17] = "Includes: AgeLine, PsycINFO, ";
+exampleSearchText2[17] = "Social Services Abstracts, Social Work";
+exampleSearchText3[17] = "Abstracts, Sociological Abstracts,";
+exampleSearchText4[17] = "Academic Search Elite";
+
+/*Sociology*/
+exampleSearchText1[18] = "Includes: AgeLine, GenderWatch,";
+exampleSearchText2[18] = "JSTOR Sociology, PsycINFO, ";
+exampleSearchText3[18] = "Sociological Abstracts,";
+exampleSearchText4[18] = "Academic Search Elite";
+
+
+function exampleSearch(i) {
+
+  window.document.Form.exampleSearchLine1.value=exampleSearchText1[i];
+  window.document.Form.exampleSearchLine2.value=exampleSearchText2[i];
+  window.document.Form.exampleSearchLine3.value=exampleSearchText3[i];
+  window.document.Form.exampleSearchLine4.value=exampleSearchText4[i];
+}
+//-->
+
+
+
+<!-- InstanceEndEditable -->
+<META NAME="description" CONTENT="The University of Iowa Libraries">
+
+
+
+
+
+
+	jQuery(document).ready(function($) {
+$('.sf-menu').superfish({autoArrows: true, speed: 'fast', dropShadows: 'true'});
+});	
+
+<!--
+function clearDefault(el) {
+if (el.defaultValue==el.value) el.value = ""
+}
+// -->
+
+
+
+
+<!--<meta name="viewport" id="viewport" content="width=devicewidth, userscalable=no, initialscale=1.0, maximumscale=1.0" />-->
+<META NAME="viewport" CONTENT="width=device-width,initial-scale=1.0">
+
+
+
+
+<!--added to track external links on home page 11/11-->
+
+  function recordOutboundLink(link, category, action) {
+    _gat._getTrackerByName()._trackEvent(category, action);
+    setTimeout('document.location = "' + link.href + '"', 100);
+  }
+
+
+
+
+
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-783364-11']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+
+
+
+<!-- InstanceBeginEditable name="head" -->
+
+<!-- InstanceEndEditable -->
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<U><FONT COLOR=blue>Skip navigation</FONT></U> 
+
+  [print page header]
+
+
+
+  <P>For more mobile web services, visit <U><FONT COLOR=blue>www.lib.uiowa.edu/m</FONT></U></P>
+
+
+<H1>The University of Iowa Libraries</H1>
+
+  
+
+  <UL>
+    <LI><U><FONT COLOR=blue>The University of Iowa Libraries</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Site Map</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Contact Us</FONT></U>
+      <UL>
+        <LI><U><FONT COLOR=blue>Staff Directory</FONT></U></LI>
+        <LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+        <LI><U><FONT COLOR=blue>Living-Learning Communities Personal Librarians</FONT></U></LI>
+        <LI><U><FONT COLOR=blue>Cultural Center Liaisons</FONT></U></LI>
+        <LI><U><FONT COLOR=blue>Subject Specialists</FONT></U></LI>
+        <LI><U><FONT COLOR=blue>Make a Gift</FONT></U></LI>
+      </UL>
+    </LI>
+  </UL>
+
+
+
+<!-- #topmenu -->
+
+  
+    
+       <BR>
+[CLIENT-SIDE IMAGE MAP: The University of Iowa Libraries]<BR>
+
+<MAP NAME="Map">
+  <AREA HREF="/" COORDS="35,24,226,54" SHAPE="rect" ALT="The University of Iowa Libraries">
+  <AREA HREF="http://www.uiowa.edu/" COORDS="-1,1,-2,50,34,51,35,22,228,22,224,0" SHAPE="poly" ALT="The University of Iowa">
+</MAP>
+
+    
+    
+        <FORM>
+        <INPUT VALUE="t" NAME="tb" TYPE="hidden">
+        <INPUT VALUE="Basic" NAME="mode" TYPE="hidden">
+        <INPUT VALUE="default_tab" NAME="tab" TYPE="hidden">
+        <INPUT VALUE="1" NAME="indx" TYPE="hidden">
+        <INPUT VALUE="true" NAME="dum" TYPE="hidden">
+        <INPUT VALUE="rank" NAME="srt" TYPE="hidden">
+        <INPUT VALUE="uiowa" NAME="vid" TYPE="hidden">
+        <INPUT VALUE="" NAME="frbg" TYPE="hidden">
+        <INPUT VALUE="Smart Search" NAME="vl(freeText0)" TYPE="text">
+      <!--  <input type="submit" value="Go" id="go" class="searchsubmit" title="Smart Search" alt="Smart Search" onclick="javascript: pageTracker._trackPageview('/find/redirects/ss.html');" />-->
+        
+        <INPUT VALUE="Go" TYPE="submit">
+        
+        
+      </FORM>
+    
+  
+  <!-- #branding -->
+
+<!-- #header -->
+
+  
+  
+    <UL>
+      <LI><U><FONT COLOR=blue>Find Resources</FONT></U>
+        <UL>
+          <LI><U><FONT COLOR=blue>Smart Search</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>InfoHawk Catalog</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Databases</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>E-journals</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>E-books</FONT></U> </LI>
+          <LI><U><FONT COLOR=blue>Resources by Subject (LibGuides)</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Resources by Type</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Find Books &amp; Journals</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Find Articles</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Find Videos</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Iowa Digital Library </FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Research Collections<BR>
+            Special Collections &amp; University Archives, Iowa Women's Archives </FONT></U></LI>
+        </UL>
+      </LI>
+      <LI><U><FONT COLOR=blue>Services</FONT></U>
+        <UL>
+          <LI><U><FONT COLOR=blue>Course Reserves</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Interlibrary Loan &amp; Document Delivery</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Reference &amp; Library Instruction</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Government Information</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Circulation</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Distance Education</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Cultural Center Liaisons</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Scholarly Communication</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Iowa Research Online</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>More services...</FONT></U></LI>
+        </UL>
+      </LI>
+      <LI><U><FONT COLOR=blue>My Personal Library</FONT></U>
+        <UL>
+          <LI><U><FONT COLOR=blue>Check My Account</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Renew My Books</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>My Interlibrary Loan</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Recommend Library Purchase</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>RefWorks</FONT></U></LI>
+        </UL>
+      </LI>
+      <LI><U><FONT COLOR=blue>About the Libraries</FONT></U>
+        <UL>
+          <LI><U><FONT COLOR=blue>Locations</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Departments</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Employment</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>News &amp; Events</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Staff Directory</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Policies</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Collection Management</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Publications, Plans &amp; Reports </FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Friends of the Library</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>History of the Library</FONT></U></LI>
+        </UL>
+      </LI>
+      <LI><U><FONT COLOR=blue>Help</FONT></U>
+        <UL>
+          <LI><U><FONT COLOR=blue>Ask a Librarian</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Research Guides &amp; Tutorials</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Directions &amp; Maps</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>FAQ</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Assistance for Users with Disabilities </FONT></U> </LI>
+          <LI><U><FONT COLOR=blue>A-Z Search</FONT></U> </LI>
+        </UL>
+      </LI>
+      <LI><U><FONT COLOR=blue>Campus Libraries</FONT></U>
+        <UL>
+       
+          <LI><U><FONT COLOR=blue>Directions &amp; Maps<BR>
+            Contact information, addresses, parking information</FONT></U> </LI>
+          <LI><U><FONT COLOR=blue>Art Library</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Business Library <BR>
+            Marvin A. Pomerantz Business Library</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Engineering Library<BR>
+            Lichtenberger Engineering Library</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Health Sciences Library <BR>
+            Hardin Library for the Health Sciences</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Law Library</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Main Library</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Music Library<BR>
+            Rita Benton Music Library</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Sciences Library</FONT></U></LI>
+        </UL>
+      </LI>
+      
+         <LI><U><FONT COLOR=blue>Hours</FONT></U> </LI>
+    </UL>
+  
+  <UL>
+    <LI><U><FONT COLOR=blue>RSS Feeds</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Twitter</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Facebook</FONT></U></LI>
+  </UL>
+
+
+  <!-- #navcontent -->
+
+<!-- #nav -->
+</FONT></U>
+
+   <!-- InstanceBeginEditable name="RLI_Navigation" --> <!-- InstanceEndEditable --> </FONT></U>
+    <H2><!-- InstanceBeginEditable name="SubHeading" -->Find Articles
+      <!-- AddThis Feed Button BEGIN -->
+      <!--   <a href="http://www.addthis.com/feed.php?pub=uilibraries&h1=http%3A%2F%2Fwww.lib.uiowa.edu%2Feresources%2Fgenindexes_rss.asp&t1=" title="Subscribe using any feed reader!"><img src="http://s9.addthis.com/button1rss.gif" width="125" height="16" border="0" alt="AddThis Feed Button" /></a>-->
+      <!-- AddThis Feed Button END -->
+      <!-- AddThis Bookmark Button BEGIN -->
+      <!--    <script type="text/javascript">var addthis_disable_flash = true;</script>
+    <script type="text/javascript">
+  addthis_url    = location.href;   
+  addthis_title  = document.title;  
+  addthis_pub    = 'uilibraries';     
+                  </script>
+    <script type="text/javascript" src="http://s7.addthis.com/js/addthis_widget.php?v=12" ></script>-->
+      <!-- AddThis Bookmark Button END -->
+      <!-- InstanceEndEditable --></H2>
+    <!-- InstanceBeginEditable name="Body" -->
+    
+    <P><U><FONT COLOR=blue>Databases with mobile versions</FONT></U></P>
+    <P><U><FONT COLOR=blue>Databases, A-Z (Complete)</FONT></U></P>
+    
+    <P><EM>Find articles in scholarly journals and magazines with these large, multi-disciplinary databases.</EM> For assistance please visit <U><FONT COLOR=blue>E-Resources Help: problems, tips, etc.</FONT></U></P>
+    <P>Look for [InfoLink button] in search results to link to full text resources (when available). </P>
+    <P> [Restricted Resource - UI Access Only] - Restricted to faculty, students, and staff at The University of Iowa &nbsp;&nbsp;&nbsp; <U><FONT COLOR=blue>[Mobile Resource]</FONT></U> - Mobile-enabled resource</P>
+    
+      
+        
+          <H3><U><FONT COLOR=blue>ABI/INFORM Global</FONT></U>
+            
+            [Restricted Resource - UI Access Only]
+            
+          </H3>
+          <P>Search nearly 1,800 premier worldwide business periodicals for information on companies, computers, advertising, marketing, economics, personnel, finance, taxation, etc.  Includes the Wall Street Journal full-text 1984- . [<U><FONT COLOR=blue>Not compatible with Internet Explorer 9</FONT></U>]</P>
+          
+          <H3><U><FONT COLOR=blue>Academic Search Elite</FONT></U>
+            
+            [Restricted Resource - UI Access Only]
+            
+            <U><FONT COLOR=blue>[Mobile Resource] </FONT></U>
+            
+          </H3>
+          <P>This multi-disciplinary database offers full text for nearly 2,000 scholarly journals, including more than 1,500 peer-reviewed titles. Covering virtually every area of academic study, Academic Search Elite offers full text information dating as far back as 1985. This database is updated on a daily basis.</P>
+          
+          <H3><U><FONT COLOR=blue>Arts & Humanities Citation Index (A&HCI)</FONT></U>
+            
+            [Restricted Resource - UI Access Only]
+            
+          </H3>
+          <P>A multidisciplinary citation index to the journal literature of the arts and humanities, 1975 - present. Includes some full text. Part of the Web of Knowledge database.</P>
+          
+          <H3><U><FONT COLOR=blue>EBSCOhost</FONT></U>
+            
+            [Restricted Resource - UI Access Only]
+            
+            <U><FONT COLOR=blue>[Mobile Resource] </FONT></U>
+            
+          </H3>
+          <P>A collection of databases, including Academic Search Elite, which offers full text for nearly 2,000 scholarly journals, including more than 1,500 peer-reviewed titles, covering the social sciences, humanities, general science, multi-cultural studies, education, and much more.</P>
+          
+          <H3><U><FONT COLOR=blue>ERIC (EBSCOhost version)</FONT></U>
+            
+            [Restricted Resource - UI Access Only]
+            
+            <U><FONT COLOR=blue>[Mobile Resource] </FONT></U>
+            
+          </H3>
+          <P>ERIC focuses on journal and non-journal education-related topics. ERIC subject descriptors are listed in the Thesaurus of ERIC Descriptors, available at the public service desks in the Hardin Library for the Health Sciencesand the Main Library as well as electronically through EBSCOhost or ProQuest. Full-text of ERIC documents from 1993 to the present is available from the ERIC website free. NOTE:  There is a choice of interface based on user preference.</P>
+          
+          <H3><U><FONT COLOR=blue>ERIC (ProQuest version)</FONT></U>
+            
+            [Restricted Resource - UI Access Only]
+            
+          </H3>
+          <P>ERIC focuses on journal and non-journal education-related topics. ERIC subject descriptors are listed in the Thesaurus of ERIC Descriptors, available at the public service desks in the Hardin Library for the Health Sciences and the Main Library  as well as electronically through EBSCOhost or ProQuest. Full-text of ERIC documents from 1993 to the present is available from the ERIC website free. NOTE:  There is a choice of interface based on user preference. [<U><FONT COLOR=blue>Not compatible with Internet Explorer 9</FONT></U>]</P>
+          
+          <H3><U><FONT COLOR=blue>ERIC Collection</FONT></U>
+            
+            [Restricted Resource - UI Access Only]
+            
+          </H3>
+          <P>Bibliographic records of education literature, plus a growing collection of full text. [Please note that ERIC documents 1966-July, 2004 are available in microfiche in the Media Collection, South Circulation desk, Main Library. New ERIC documents (July, 2004 to the present) are available in electronic format only. There is an effort to digitize documents acquired by the ERIC system1966-1992. If there is no link to the full-text in a database for ERIC documents 1966-1992, check with the Media Collection, South Circulation desk, Main Library for the microfiche copy.]</P>
+          
+          <H3><U><FONT COLOR=blue>FRANCIS</FONT></U>
+            
+            [Restricted Resource - UI Access Only]
+            
+          </H3>
+          <P>A multilingual and multidisciplinary bibliographic database covering the humanities (archaeology, history of art, history of science, linguistics, literature, philosophy, prehistory, religions), social sciences (administration, computer and law, education, ethnology, geography, health , sociology) and economics (economy, energy economics, management ). [<U><FONT COLOR=blue>Not compatible with Internet Explorer 9</FONT></U>]</P>
+          
+          <H3><U><FONT COLOR=blue>Google Scholar</FONT></U>
+            
+            [Restricted Resource - UI Access Only]
+            
+          </H3>
+          <P>Click on the "UIowa InfoLink:Full Text" link next to each citation in your results list for InfoLink services including full text (when available), links to the InfoHawk Catalog, Interlibrary Loan requests and more.</P>
+          
+          <H3><U><FONT COLOR=blue>LexisNexis Academic</FONT></U>
+            
+            [Restricted Resource - UI Access Only]
+            
+          </H3>
+          <P>Provides access to a wide range of news, business, legal research, medical and reference information. The news section provides access to full text of newspapers from the U.S., Europe, Africa, North and South America and Australia in English, as well as some in Dutch, French, German, Italian and Spanish; news wires, television and radio transcripts are also available.</P>
+          
+          <H3><U><FONT COLOR=blue>MLA International Bibliography</FONT></U>
+            
+            [Restricted Resource - UI Access Only]
+            
+          </H3>
+          <P>The MLA International Bibliography is a subject index for books, articles and websites published on modern languages, literatures, folklore, and linguistics. It is produced by the Modern Language Association (MLA), an organization dedicated to the study and teaching of language and literature. The electronic version of the Bibliography dates back to 1925 and contains over 2 million citations from more than 4,400 periodicals (including peer-reviewed e-journals) and 1,000 book publishers.  [<U><FONT COLOR=blue>Not compatible with Internet Explorer 9</FONT></U>]</P>
+          
+          <H3><U><FONT COLOR=blue>Periodicals Index Online</FONT></U>
+            
+            [Restricted Resource - UI Access Only]
+            
+          </H3>
+          <P>Electronic index to over 4,500 periodicals in the humanities and social sciences, covering each periodical from its first issue (as early as 1665) . Every article is indexed. The scope is international, including journals in English, French, German, Italian, Spanish and other languages.</P>
+          
+          <H3><U><FONT COLOR=blue>PubMed</FONT></U>
+            
+            [Restricted Resource - UI Access Only]
+            
+            <U><FONT COLOR=blue>[Mobile Resource] </FONT></U>
+            
+          </H3>
+          <P>Provides access to bibliographic information in Medline and other sources. [<U><FONT COLOR=blue>Help sheet for searching PubMed - PDF</FONT></U>]</P>
+          
+          <H3><U><FONT COLOR=blue>Readers' Guide Retrospective</FONT></U>
+            
+            [Restricted Resource - UI Access Only]
+            
+            <U><FONT COLOR=blue>[Mobile Resource] </FONT></U>
+            
+          </H3>
+          <P>A comprehensive index to the most popular general-interest periodicals published in the United States. This database is available through WilsonWeb and covers the time period from 1890-1982.  (Formerly on WilsonWeb)</P>
+          
+          <H3><U><FONT COLOR=blue>Sage eReference</FONT></U>
+            
+            [Restricted Resource - UI Access Only]
+            
+          </H3>
+          <P>A database of reference books published by SAGE covering the social sciences and education, including such areas as African American Studies, Aging & Gerontology, Anthropology, Communication and Media Studies, Criminology and Criminal Justice, Economics, Education, Gender & Sexuality Studies, History, Politics, Psychology, Social Issues, Social Work & Social Policy, and Sociology.</P>
+          
+          <H3><U><FONT COLOR=blue>Science Citation Index Expanded (SCI-EXPANDED)</FONT></U>
+            
+            [Restricted Resource - UI Access Only]
+            
+          </H3>
+          <P>A multidisciplinary index to the journal literature of the sciences. From 1899 - present. Includes some full text. Part of the ISI Web of Knowledge database.</P>
+          
+          <H3><U><FONT COLOR=blue>Social Sciences Citation Index  or SSCI</FONT></U>
+            
+            [Restricted Resource - UI Access Only]
+            
+          </H3>
+          <P>SSCI is a multidisciplinary index to the journal literature of the social sciences, 1898 - present. Includes some full text. Part of the ISI Web of Knowledge database.</P>
+          
+          <H3><U><FONT COLOR=blue>Web of Knowledge</FONT></U>
+            
+            [Restricted Resource - UI Access Only]
+            
+            <U><FONT COLOR=blue>[Mobile Resource] </FONT></U>
+            
+          </H3>
+          <P>A citation reference that includes the <U><FONT COLOR=blue> Web of Science</FONT></U> (Science Citation Index, 1899-present, the Social Science Citation Index, 1898-present, and the Arts and Humanities Citation Index, 1975-present),  Book Citation Index- Science (2005-present), Book Citation Index- Social Sciences & Humanities (2005-present), Medline and <U><FONT COLOR=blue>Journal Citation Reports</FONT></U>, among other science and social science reference indexes.  [<U><FONT COLOR=blue>Not compatible with Internet Explorer 9</FONT></U>]</P>
+          
+          <H3><U><FONT COLOR=blue>WilsonWeb</FONT></U>
+            
+            [Restricted Resource - UI Access Only]
+            
+          </H3>
+          <P>This database provides access to the following indexes:  Art Full Text, Art Retrospective, Education Full Text, ERIC, Essay and General Literature, Library Literature and Information Science Full Text, Readers' Guide Retrospective, and Short Story Index. THESE DATABASES ARE NOW HOSTED ON EBSCOHOST; WilsonWeb ACCESS WILL END ON FEBRUARY 1.</P>
+          
+          <H3><U><FONT COLOR=blue>World Newspaper Archive</FONT></U>
+            
+            [Restricted Resource - UI Access Only]
+            
+          </H3>
+          <P>World Newspaper Archive is a fully searchable collection of historical newspapers from around the globe. This uniquely comprehensive online resource was created in partnership with the Center for Research Libraries - one of the world's largest and most important newspaper repositories.</P>
+          
+          <H3><U><FONT COLOR=blue>WorldCat</FONT></U>
+            
+            [Restricted Resource - UI Access Only]
+            
+          </H3>
+          <P>A bibliographic database of over 62,000,000 records from over 2,000 libraries around the world.</P>
+          
+      
+      
+        <P><EM>Additional Resources</EM></P>
+       <!-- <form name="Form" id="Form" method="post" action="http://smartsearch.uiowa.edu/primo_library/libweb/action/search.do?fn=search&ct=search" class="simple" enctype="application/xwwwformurlencoded; charset=utf8" target="quickset">
+          Find articles on a topic<br />
+          <span class="style1">(results open in new tab/window)</span><br />
+          <div id="dbsearch">
+            <input type="text" size="30" id="search_field2" title="Find articles on a topic" name="vl(freeText0)" value='' onKeyDown="" accesskey="s"/>
+            <br />
+            <select name="scp.scps" id="lookIn" title="in Category" onChange="exampleSearch(this.selectedIndex)">
+              <option value="000004995" selected="selected">General Resources</option>
+              <option value="000005003">Art</option>
+              <option value="000004987">Business and Economics</option>
+              <option value="000004989">Communication Studies</option>
+              <option value="000004998">Education</option>
+              <option value="000005006">Engineering</option>
+              <option value="000005000">Government</option>
+              <option value="000004997">Health Sciences</option>
+              <option value="000005039">Iowa Universities Catalogs</option>
+              <option value="000005001">Law</option>
+              <option value="000005008">Literature &amp; Humanities</option>
+              <option value="000005005">Mathematics (incl. Statistics)</option>
+              <option value="000004990">Music</option>
+              <option value="000005004">Physics</option>
+              <option value="000004991">Political Science</option>
+              <option value="000004999">Psychology</option>
+              <option value="000005002">Religion</option>
+              <option value="000004992">Social Work</option>
+              <option value="000004993">Sociology</option>
+            </select>
+            <input type="hidden" name="mode" value="Basic">
+            <input type="hidden" name="tab" value="other">
+            <input type="hidden" name="indx" value="1">
+            <input type="hidden" name="dum" value="true">
+            <input type="hidden" name="srt" value="rank" id="str">
+            <input type="hidden" name="vid" value="uiowa">
+            <input type="hidden" name="frbg" value="">
+            <input type="hidden" name="fromLogin" value="true">
+            <input id="goButton" type="submit" title="go button" value="Go" accesskey="g">
+            <br />
+            <input type="text" name="exampleSearchLine1" id="exampleSearchLine1" title="databases searched line 1"style="border:0; backgroundcolor:#FFF; " size="45" value="Includes: Ebsco's Academic Search Elite, " onFocus="this.blur()" />
+            <input type="text" name="exampleSearchLine2" id="exampleSearchLine2" title="databases searched line 2 " style="border:0; backgroundcolor:#FFF; "  size="45" value="Newspaper Source, Periodicals Index Online," onFocus="this.blur()" />
+            <input type="text" name="exampleSearchLine3" id="exampleSearchLine3" title="databases searched line 3" style="border:0; backgroundcolor:#FFF; "  size="45" value="and Readers' Guide Retrospective" onFocus="this.blur()" />
+            <input type="text" name="exampleSearchLine4" id="exampleSearchLine4" title="databases searched line 4" style="border:0; backgroundcolor:#FFF; "  size="45" value="" onFocus="this.blur()" />
+          </div>
+        </form>-->
+        <P><U><FONT COLOR=blue>Smart Search</FONT></U></P>
+        <P><U><FONT COLOR=blue>Find   Articles by Citation (ArticleLocator)</FONT></U><BR>
+          Use this tool   to find an article when you already have a citation in hand (from a footnote,   bibliography, or other source).<BR>
+        </P>
+        <P><U><FONT COLOR=blue>Resources by Subject</FONT></U></P>
+        <P><U><FONT COLOR=blue>Alphabetical List of Databases/Indexes</FONT></U></P>
+        <P>What you should know about using electronic information resources: <U><FONT COLOR=blue>plagiarism, copyright, fair use, and terms of licenses </FONT></U> </P>
+      
+   
+       <BR>
+           <HR>
+               
+    
+    <!--end columns div-->
+    <!-- InstanceEndEditable --> 
+  <!--end main div-->
+  
+    
+
+  <UL>
+    <LI><U><FONT COLOR=blue>Home</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Contact Us</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Assistance for Users with Disabilities</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>UI Libraries Mobile</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>[UI Libraries Mobile]</FONT></U></LI>
+  </UL>
+
+
+  <UL>
+    <LI><U><FONT COLOR=blue>The University of Iowa Libraries</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>100 Main Library (LIB)</FONT></U></LI>
+    <LI>Iowa City, IA 52242-1420</LI>
+    <LI><U><FONT COLOR=blue>(319)335-5299</FONT></U></LI>
+    <LI>&copy; <U><FONT COLOR=blue>The University of Iowa</FONT></U> 2012</LI>
+    <LI><U><FONT COLOR=blue>[Creative Commons License]</FONT></U></LI>
+  </UL>
+
+
+  <P><U><FONT COLOR=blue>[Follow us on Facebook]</FONT></U>&nbsp;<U><FONT COLOR=blue>[RSS Feed]</FONT></U>&nbsp;<U><FONT COLOR=blue>[Follow us on Twitter] </FONT></U></P>
+  <P>
+    <!-- AddThis Button BEGIN -->
+    var addthis_disable_flash = true;
+    addthis_pub  = 'uilibraries';
+    <U><FONT COLOR=blue>[Click to share, email or bookmark this site]</FONT></U>
+    
+    <!-- AddThis Button END -->
+  </P>
+
+
+ 
+    <UL>
+    
+    <LI><U><FONT COLOR=blue>Site Map</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Go to our mobile site</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Contact Us</FONT></U></LI>
+      <LI>&copy; <U><FONT COLOR=blue>The University of Iowa Libraries</FONT></U> 2011</LI>
+    </UL>
+  
+This site is based on the Arras WordPress Theme
+
+  
+
+<!-- #wrapper -->
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<!-- InstanceEnd -->
+</HTML>

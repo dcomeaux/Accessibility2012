@@ -1,0 +1,735 @@
+
+<HTML><!-- InstanceBegin template="/Templates/main3.dwt" codeOutsideHTMLIsLocked="false" -->
+<HEAD>
+<META CONTENT="text/html; charset=utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<TITLE>UWM Libraries - Staff Directory</TITLE>
+<!-- InstanceEndEditable -->
+@import "/libraries/styles/main3.css";
+@import "/libraries/styles/print3.css";
+<META NAME="robots" CONTENT="index, follow">
+<!-- InstanceBeginEditable name="head" -->
+
+
+
+
+$.tablesorter.addParser({ 
+	id: 'dept', 
+	is: function(s) { return false; }, 
+	format: function(s) { return s.toLowerCase().replace(/ \(director\)/,""); }, 
+	type: 'text' 
+});
+
+$(document).ready(function() { 
+	$.tablesorter.defaults.widgets = ['zebra']; 
+	$.tablesorter.defaults.sortList = [[0,0]]; 
+	$("#directory").tablesorter({headers: { 2: { sorter:'dept' } } }); 
+}); 
+
+jQuery(document).ready(function() { 
+	$("#directory tbody tr").hover( 
+		function() {  // mouseover 
+			$(this).addClass('highlight'); 
+		}, 
+		function() {  // mouseout 
+			$(this).removeClass('highlight'); 
+		} 
+	);
+});
+
+
+@import "style.css";
+</HEAD>
+<!-- InstanceEndEditable -->
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+
+
+
+<U><FONT COLOR=blue>[University of Wisconsin-Milwaukee]</FONT></U>
+
+
+
+<U><FONT COLOR=blue>UWM Libraries</FONT></U><BR>
+Imagine Discover Succeed
+
+
+
+<FORM>
+<SELECT NAME="url">
+<OPTION VALUE="/libraries/" SELECTED="selected">Libraries Home</OPTION>
+<OPTION VALUE="/libraries/sitemap.cfm">Site Map/Search</OPTION>
+<OPTION VALUE="nopick">--------------------</OPTION>
+<OPTION VALUE="https://ezproxy.lib.uwm.edu/login?url=http://xerxes.library.wisconsin.edu/uwm/">Resources</OPTION>
+<OPTION VALUE="https://millib.wisconsin.edu/vwebv/searchBasic">Library Catalog</OPTION>
+<OPTION VALUE="nopick">--------------------</OPTION>
+<OPTION VALUE="http://guides.library.uwm.edu/">Help</OPTION>
+<OPTION VALUE="/libraries/ask/">Ask a Librarian</OPTION>
+<OPTION VALUE="nopick">--------------------</OPTION>
+<OPTION VALUE="/libraries/links.cfm">UWM Links</OPTION>
+</SELECT>
+<INPUT VALUE="Go" TYPE="submit">
+</FORM>
+
+
+
+
+
+<!-- InstanceBeginEditable name="contents" -->
+<H2>UWM Libraries Staff Directory</H2>
+<P>See also: <U><FONT COLOR=blue>Department Listing</FONT></U> | <U><FONT COLOR=blue>Library Subject Contacts</FONT></U> | <U><FONT COLOR=blue>Organization Chart</FONT></U></P>
+<TABLE>
+
+<TR>
+<TH>Last Name</TH>
+<TH>First Name</TH>
+<TH>Department</TH>
+<TH>Phone</TH>
+<TH>e-mail address</TH>
+</TR>
+
+
+<TR>
+<TD><U><FONT COLOR=blue>Anders</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Debra</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Acquisitions</FONT></U></TD>
+<TD>(414) 229-6457</TD>
+<TD><U><FONT COLOR=blue>danders@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Anshus</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Marcia</FONT></U></TD>
+<TD><U><FONT COLOR=blue>E-Resources/Serials</FONT></U></TD>
+<TD>(414) 229-4752</TD>
+<TD><U><FONT COLOR=blue>mka2@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Barczyk</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Ewa</FONT></U></TD>
+<TD>Administrative Office (Director)</TD>
+<TD>(414) 229-4781</TD>
+<TD><U><FONT COLOR=blue>ewa@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Barnish</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Ann</FONT></U></TD>
+<TD><U><FONT COLOR=blue>AGS Library</FONT></U></TD>
+<TD>(414) 229-6282</TD>
+<TD><U><FONT COLOR=blue>barnisha@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Baule</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Lisa</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Acquisitions</FONT></U></TD>
+<TD>(414) 229-6511</TD>
+<TD><U><FONT COLOR=blue>baule@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Baxter</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Jim</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Circulation</FONT></U></TD>
+<TD>(414) 229-4132</TD>
+<TD><U><FONT COLOR=blue>jbax@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Beaulieu</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Theresa</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Research &amp; Instructional Support</FONT></U></TD>
+<TD>(414) 748-7429</TD>
+<TD><U><FONT COLOR=blue>theresab@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Bednarek</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Eleanor</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Digitization</FONT></U></TD>
+<TD>(414) 229-6511</TD>
+<TD><U><FONT COLOR=blue>ekb@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Beldavs</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Laura</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Special Collections</FONT></U></TD>
+<TD>(414) 229-4345</TD>
+<TD><U><FONT COLOR=blue>beldavs@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Berman</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Trevor</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Digitization</FONT></U></TD>
+<TD>(414) 229-2214</TD>
+<TD><U><FONT COLOR=blue>tgberman@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Blomquist</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Tim</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Digitization</FONT></U></TD>
+<TD>(414) 229-6511</TD>
+<TD><U><FONT COLOR=blue>blomqui3@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Bobke</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Carolyn</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Curriculum / Music</FONT></U></TD>
+<TD>(414) 229-4074</TD>
+<TD><U><FONT COLOR=blue>cjb@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Boulanger</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Mary</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Research &amp; Instructional Support</FONT></U></TD>
+<TD>(414) 229-5045</TD>
+<TD><U><FONT COLOR=blue>maryb@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Bowes</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Kathy</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Media and Reserve Library</FONT></U></TD>
+<TD>(414) 229-3698</TD>
+<TD><U><FONT COLOR=blue>kbowes@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Burnham</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Steve</FONT></U></TD>
+<TD>Administrative Office</TD>
+<TD>(414) 229-4786</TD>
+<TD><U><FONT COLOR=blue>sburnham@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Caspari</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Giulia</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Shelving Maintenance</FONT></U></TD>
+<TD>(414) 229-2444</TD>
+<TD><U><FONT COLOR=blue>gcaspari@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Ciatti</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Vince</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Acquisitions</FONT></U></TD>
+<TD>(414) 229-6457</TD>
+<TD><U><FONT COLOR=blue>vciatti@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Cieciorka</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Mary</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Resource Discovery</FONT></U></TD>
+<TD>(414) 229-5398</TD>
+<TD><U><FONT COLOR=blue>mtc2@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Cope</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Angie</FONT></U></TD>
+<TD><U><FONT COLOR=blue>AGS Library</FONT></U></TD>
+<TD>(414) 229-6282</TD>
+<TD><U><FONT COLOR=blue>acope@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Cushinery</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Margaret</FONT></U></TD>
+<TD>Administrative Office</TD>
+<TD>(414) 229-2881</TD>
+<TD><U><FONT COLOR=blue>mcushine@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Cutler</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Betsy</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Circulation</FONT></U></TD>
+<TD>(414) 229-4132</TD>
+<TD><U><FONT COLOR=blue>ekoch@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>DeSpears</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Christina</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Resource Discovery</FONT></U></TD>
+<TD>(414) 229-5398</TD>
+<TD><U><FONT COLOR=blue>despears@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Dobbs</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Aaron</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Circulation</FONT></U></TD>
+<TD>(414) 229-5410</TD>
+<TD><U><FONT COLOR=blue>dobba@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Dorsey</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Leigh</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Interlibrary Loan</FONT></U></TD>
+<TD>(414) 229-3938</TD>
+<TD><U><FONT COLOR=blue>ladorsey@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Doylen</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Michael</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Archives</FONT></U></TD>
+<TD>(414) 229-6980</TD>
+<TD><U><FONT COLOR=blue>doylenm@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Engseth</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Ellen</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Archives</FONT></U></TD>
+<TD>(414) 229-6979</TD>
+<TD><U><FONT COLOR=blue>engsethe@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Foran</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Susan</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Resource Discovery</FONT></U></TD>
+<TD>(414) 229-5398</TD>
+<TD><U><FONT COLOR=blue>sbforan@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Forrest</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Bonnie</FONT></U></TD>
+<TD><U><FONT COLOR=blue>E-Resources/Serials</FONT></U></TD>
+<TD>(414) 229-4752</TD>
+<TD><U><FONT COLOR=blue>bforrest@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Galligan</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Timothy</FONT></U></TD>
+<TD>Shipping</TD>
+<TD>(414) 229-6100</TD>
+<TD><U><FONT COLOR=blue>tgall@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Ganski</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Kate</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Research &amp; Instructional Support</FONT></U></TD>
+<TD>(414) 229-6828</TD>
+<TD><U><FONT COLOR=blue>ganski@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Guildner</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Kay</FONT></U></TD>
+<TD><U><FONT COLOR=blue>AGS Library</FONT></U></TD>
+<TD>(414) 229-6282</TD>
+<TD><U><FONT COLOR=blue>guildner@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Houston</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Brad</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Archives</FONT></U></TD>
+<TD>(414) 229-5402</TD>
+<TD><U><FONT COLOR=blue>houstobn@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Hubbard</FONT></U></TD>
+<TD><U><FONT COLOR=blue>John</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Research &amp; Instructional Support</FONT></U></TD>
+<TD>(414) 229-6775</TD>
+<TD><U><FONT COLOR=blue>hubbardj@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Humpal</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Nathan</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Resource Discovery</FONT></U></TD>
+<TD>(414) 229-5398</TD>
+<TD><U><FONT COLOR=blue>nahumpal@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Jaeger</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Bob</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Archives</FONT></U></TD>
+<TD>(414) 229-6511</TD>
+<TD><U><FONT COLOR=blue>jaegerrm@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Jakubowski</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Kathi</FONT></U></TD>
+<TD><U><FONT COLOR=blue>E-Resources/Serials</FONT></U></TD>
+<TD>(414) 229-4752</TD>
+<TD><U><FONT COLOR=blue>kathij@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Jander</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Karen</FONT></U></TD>
+<TD><U><FONT COLOR=blue>E-Resources/Serials</FONT></U></TD>
+<TD>(414) 229-6726</TD>
+<TD><U><FONT COLOR=blue>kj2@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Johnston</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Tamara</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Digitization</FONT></U></TD>
+<TD>(414) 229-6511</TD>
+<TD><U><FONT COLOR=blue>johnstot@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Kashinski</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Sue</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Library Systems</FONT></U></TD>
+<TD>(414) 229-5945</TD>
+<TD><U><FONT COLOR=blue>kashin@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Keltner</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Steve</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Facilities Management</FONT></U></TD>
+<TD>(414) 229-6683</TD>
+<TD><U><FONT COLOR=blue>keltners@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Klemmer</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Holly</FONT></U></TD>
+<TD><U><FONT COLOR=blue>E-Resources/Serials</FONT></U></TD>
+<TD>(414) 229-6002</TD>
+<TD><U><FONT COLOR=blue>hek@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Kober</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Sarah</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Media and Reserve Library</FONT></U></TD>
+<TD>(414) 229-4954</TD>
+<TD><U><FONT COLOR=blue>slkober@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Kolodzik</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Joanne</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Research &amp; Instructional Support</FONT></U></TD>
+<TD>(414) 229-6690</TD>
+<TD><U><FONT COLOR=blue>kolodzik@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Kopecky</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Linda</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Research &amp; Instructional Support</FONT></U></TD>
+<TD>(414) 229-3925</TD>
+<TD><U><FONT COLOR=blue>lkopecky@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Korolev</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Svetlana</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Research &amp; Instructional Support</FONT></U></TD>
+<TD>(414) 229-5045</TD>
+<TD><U><FONT COLOR=blue>skorolev@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Kraima</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Ahmed</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Research &amp; Instructional Support</FONT></U><U><FONT COLOR=blue></FONT></U></TD>
+<TD>(414) 229-6613</TD>
+<TD><U><FONT COLOR=blue>aak@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Kucera</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Beth</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Interlibrary Loan</FONT></U></TD>
+<TD>(414) 229-4493</TD>
+<TD><U><FONT COLOR=blue>bweixler@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Kuhn</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Jason</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Music</FONT></U></TD>
+<TD>(414) 229-6511</TD>
+<TD><U><FONT COLOR=blue>jakuhn@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Lange</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Roger</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Shelving Maintenance</FONT></U></TD>
+<TD>(414) 229-4132</TD>
+<TD><U><FONT COLOR=blue>rogerl@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Lee-Vue</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Dawn</FONT></U></TD>
+<TD>Administrative Office</TD>
+<TD>(414) 229-6202</TD>
+<TD><U><FONT COLOR=blue>dawnlee@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Lin</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Suyu</FONT></U></TD>
+<TD>Administrative Office</TD>
+<TD>(414) 229-6200</TD>
+<TD><U><FONT COLOR=blue>suyulin@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Littman</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Rebecca</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Music / Curriculum</FONT></U></TD>
+<TD>(414) 229-5529</TD>
+<TD><U><FONT COLOR=blue>rlittman@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Loomis</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Catherine</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Resource Discovery</FONT></U></TD>
+<TD>(414) 229-5398</TD>
+<TD><U><FONT COLOR=blue>cloomis@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Lowrey</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Jim</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Library Systems</FONT></U></TD>
+<TD>(414) 229-5979</TD>
+<TD><U><FONT COLOR=blue>lowrey@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Maass</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Christel</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Archives</FONT></U></TD>
+<TD>(414) 229-5402</TD>
+<TD><U><FONT COLOR=blue>cmaass@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Mathias</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Molly</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Learning Commons</FONT></U></TD>
+<TD>(414) 229-6204</TD>
+<TD><U><FONT COLOR=blue>mathiasm@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Matusiak</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Krystyna</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Digitization</FONT></U></TD>
+<TD>(414) 229-2214</TD>
+<TD><U><FONT COLOR=blue>kkm@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Meng</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Ling</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Digitization</FONT></U></TD>
+<TD>(414) 229-2214</TD>
+<TD><U><FONT COLOR=blue>lingmeng@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Midthun</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Kris</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Research &amp; Instructional Support</FONT></U></TD>
+<TD>(414) 229-6775</TD>
+<TD><U><FONT COLOR=blue>kabina@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Miller</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Cristina</FONT></U></TD>
+<TD><U><FONT COLOR=blue>AGS Library</FONT></U></TD>
+<TD>(414) 229-6282</TD>
+<TD><U><FONT COLOR=blue>crmiller@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Modder</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Susan</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Development Director</FONT></U></TD>
+<TD>(414) 229-2811</TD>
+<TD><U><FONT COLOR=blue>semodder@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Monty</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Emily</FONT></U></TD>
+<TD>Business Office</TD>
+<TD>(414) 229-6427</TD>
+<TD><U><FONT COLOR=blue>chun1@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Padway</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Janet</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Collection &amp; Resource Management</FONT></U></TD>
+<TD>(414) 229-6458</TD>
+<TD><U><FONT COLOR=blue>jgpadway@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Paly</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Kathy</FONT></U></TD>
+<TD>Business Office</TD>
+<TD>(414) 229-6291</TD>
+<TD><U><FONT COLOR=blue>kpaly@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Passafaro</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Diane</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Acquisitions</FONT></U></TD>
+<TD>(414) 229-6457</TD>
+<TD><U><FONT COLOR=blue>dianekay@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Peschel</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Susan</FONT></U></TD>
+<TD><U><FONT COLOR=blue>AGS Library</FONT></U></TD>
+<TD>(414) 229-6282</TD>
+<TD><U><FONT COLOR=blue>sqp@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Pontillo</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Laura</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Interlibrary Loan</FONT></U></TD>
+<TD>(414) 229-4493</TD>
+<TD><U><FONT COLOR=blue>pontilll@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Privatt</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Lynne</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Library Systems</FONT></U></TD>
+<TD>(414) 229-5430</TD>
+<TD><U><FONT COLOR=blue>lynne@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Puissant</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Michael</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Library Systems</FONT></U></TD>
+<TD>(414) 229-6207</TD>
+<TD><U><FONT COLOR=blue>puissan2@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Ristic</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Jovanka</FONT></U></TD>
+<TD><U><FONT COLOR=blue>AGS Library</FONT></U></TD>
+<TD>(414) 229-6282</TD>
+<TD><U><FONT COLOR=blue>ristic@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Ritter</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Andy</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Library Systems</FONT></U></TD>
+<TD>(414) 229-4817</TD>
+<TD><U><FONT COLOR=blue>aritter@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Stanley</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Brandon</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Media and Reserve Library</FONT></U></TD>
+<TD>(414) 229-4673</TD>
+<TD><U><FONT COLOR=blue>skippy@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Sutton</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Lisa</FONT></U></TD>
+<TD><U><FONT COLOR=blue>AGS Library</FONT></U></TD>
+<TD>(414) 229-6282</TD>
+<TD><U><FONT COLOR=blue>schellil@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Silbersack</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Kim</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Facilities Management</FONT></U></TD>
+<TD>(414) 229-6206</TD>
+<TD><U><FONT COLOR=blue>kimsack@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Smith</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Endora</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Interlibrary Loan</FONT></U></TD>
+<TD>(414) 229-4493</TD>
+<TD><U><FONT COLOR=blue>endora@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Smith</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Tyler</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Research &amp; Instructional Support</FONT></U></TD>
+<TD>(414) 229-6828</TD>
+<TD><U><FONT COLOR=blue>tssmith@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Tomich</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Joseph</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Resource Discovery</FONT></U></TD>
+<TD>(414) 229-5398</TD>
+<TD><U><FONT COLOR=blue>jtomich@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Toumayan</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Geoffrey</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Circulation</FONT></U></TD>
+<TD>(414) 229-4132</TD>
+<TD><U><FONT COLOR=blue>gdt@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Traylor</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Beth</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Media and Reserve Library</FONT></U></TD>
+<TD>(414) 229-4673</TD>
+<TD><U><FONT COLOR=blue>bethe@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Tyree</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Michael</FONT></U></TD>
+<TD>Administrative Office</TD>
+<TD>(414) 229-6813 </TD>
+<TD><U><FONT COLOR=blue>tyrees@uwm.edu</FONT></U> </TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Van Groll</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Andrea</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Research &amp; Instructional Support</FONT></U></TD>
+<TD>(414) 229-6690</TD>
+<TD><U><FONT COLOR=blue>andreavg@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Weikel</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Lisa</FONT></U></TD>
+<TD>Access Services</TD>
+<TD>(414) 229-3838</TD>
+<TD><U><FONT COLOR=blue>lweikel@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Wesley</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Craig</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Personnel Dept./Business Office</FONT></U></TD>
+<TD>(414) 229-6201</TD>
+<TD><U><FONT COLOR=blue>wesleyc@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Woodward</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Kristin</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Research &amp; Instructional Support</FONT></U></TD>
+<TD>(414) 229-6828</TD>
+<TD><U><FONT COLOR=blue>kristinw@uwm.edu</FONT></U></TD>
+</TR>
+<TR>
+<TD><U><FONT COLOR=blue>Yela</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Max</FONT></U></TD>
+<TD><U><FONT COLOR=blue>Special Collections</FONT></U></TD>
+<TD>(414) 229-4345</TD>
+<TD><U><FONT COLOR=blue>maxyela@uwm.edu</FONT></U></TD>
+</TR>
+
+</TABLE>
+<P><U><FONT COLOR=blue><EM>Back to About the Libraries</EM></FONT></U></P>
+<!-- InstanceEndEditable -->
+
+
+
+
+<DL>
+<DT>University of Wisconsin-Milwaukee Libraries</DT>
+<DD>P.O. Box 604, 2311 East Hartford Avenue</DD>
+<DD>Milwaukee WI 53201-0604</DD>
+<DD>(414) 229-4785</DD>
+</DL>
+
+
+
+<P><U><FONT COLOR=blue></FONT></U></P>
+
+
+
+<DL>
+<DT>Last updated on February 22, 2012.</DT>
+<DD><U><FONT COLOR=blue>Conditions of Use</FONT></U> | <U><FONT COLOR=blue>Privacy Information</FONT></U></DD>
+<DD><U><FONT COLOR=blue>Contact Us</FONT></U></DD>
+</DL>
+
+
+
+
+
+
+
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2721612-10']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+
+
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<!-- InstanceEnd --></HTML>

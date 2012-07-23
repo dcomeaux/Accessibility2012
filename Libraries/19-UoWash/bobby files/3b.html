@@ -1,0 +1,707 @@
+
+<HTML>
+<HEAD>
+<TITLE>UW Libraries - Contact Us: Questions Comments and Feedback</TITLE>
+
+<!--metadata starts here--> 
+ 
+<META NAME="DC.Subject" CONTENT="contact us, libquest, refquest, digital reference, virtual reference, electronic reference, electronic information desk, aska service, aska services, questions, comments, feedback, suggestions, reference questions, reference question"> 
+<META NAME="DC.Description" CONTENT="This is a one-stop-shopping information, reference, and referral service for library users. Your questions will be answered by the appropriate library staff member."> 
+<META NAME="DC.Creator" CONTENT="Jessica Albano, Dottie Smith"> 
+<META NAME="DC.Creator.Affiliation" CONTENT="University of Washington Libraries. Reference and Research Services, UW Tacoma Campus Library"> 
+<!--metadata ends here--> 
+
+
+
+ 
+table {margin: 0;}
+td, th {padding: .2em;}
+.submitbtn {text-align: right; background-color: #39275B; font-family: Arial, Helvetica, sans-serif; color: #fff; padding: 0 .5em;}
+.submitbtn a {color: #fff;}
+#qpspmrefblock {display: none;}
+
+
+<META CONTENT="text/html; charset=iso-8859-1">
+
+<!-- Begin script that validates proper text entry in form -->
+
+
+
+<!--
+
+//form cannot be sent over SSL, alert added 10/30/08 tawataoc
+	  function goNoSSL() {
+		  if (window.location.protocol=="https:") {
+		  top.location.href="/about/contact.html";
+		  }
+	  }
+
+<!--
+
+      function submitForm(form) {
+
+       if (checkIt(form)) {
+
+         form.submit();
+
+       }
+
+      }
+
+      function checkIt(form) {
+
+      var email = form.email.value;
+
+      var question = form.question.value;
+
+      var lib;
+
+      var msg = '';
+
+	 
+
+      if (form.library.selectedIndex >= 0) {
+
+                lib = form.library.options[form.library.selectedIndex].value;
+
+        }
+
+      if (lib == null) {
+
+                lib=form.library.value;;
+
+        }
+
+      
+
+      
+
+      if(email.length < 1) {
+
+      if(msg.length > 0)
+
+      msg+=', ';
+
+      msg += 'Email Address';
+
+      }
+
+      
+
+      if(question.length < 1) {
+
+      if(msg.length > 0)
+
+      msg+=', ';
+
+      msg += 'Question';
+
+      }
+
+      
+
+      if (msg != '')
+
+      {
+
+      alert("One or more required fields are blank\r\n" + msg);
+
+      return false;
+
+      }
+
+      
+
+      if(lib.length < 1) {
+
+      alert("The library supplying this form has an error in the form. Please contact them and alert them to the problem\r\n");
+
+      return false;
+
+      }
+	  
+	  
+
+      if (emailCheck(email, true)) {      
+
+      return true;
+
+      }
+
+      else {
+
+      return false;
+
+      }
+
+      }
+
+function emailCheck (emailStr, alertflag) {
+
+var emailPat=/^(.+)@(.+)$/		
+
+var specialChars="\\(\\)<>@,;:\\\\\\\"\\.\\[\\]"
+
+var validChars="\[^\\s" + specialChars + "\]"
+
+var quotedUser="(\"[^\"]*\")"
+
+var ipDomainPat=/^\[(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})\]$/
+
+var atom=validChars + '+'
+
+var word="(" + atom + "|" + quotedUser + ")"
+
+var userPat=new RegExp("^" + word + "(\\." + word + ")*$")
+
+var domainPat=new RegExp("^" + atom + "(\\." + atom +")*$")
+
+var matchArray=emailStr.match(emailPat)
+
+if (matchArray==null) {
+
+        if (alertflag)
+
+	alert("Email address seems incorrect (check @ and .'s)")
+
+	return false
+
+}
+
+var user=matchArray[1]
+
+var domain=matchArray[2]
+
+// See if "user" is valid 
+
+if (user.match(userPat)==null) {
+
+    // user is not valid
+
+     if (alertflag) 
+
+    alert("The username doesn't seem to be valid.")
+
+    return false
+
+}
+
+/* if the email address is at an IP address (as opposed to a symbolic
+
+   host name) make sure the IP address is valid. */
+
+var IPArray=domain.match(ipDomainPat)
+if (IPArray!=null) {
+
+    // this is an IP address
+
+	  for (var i=1;i<=4;i++) {
+
+	    if (IPArray[i]>255) {
+
+      if (alertflag)
+
+	        alert("Destination IP address is invalid!")
+
+		return false
+
+	    }
+
+    }
+
+    return true
+
+}
+
+// Domain is symbolic name
+
+var domainArray=domain.match(domainPat)
+
+if (domainArray==null) {
+
+      if (alertflag)
+
+	alert("The domain name doesn't seem to be valid.")
+
+    return false
+
+}
+
+var atomPat=new RegExp(atom,"g")
+
+var domArr=domain.match(atomPat)
+var len=domArr.length
+
+if (domArr[domArr.length1].length<2 || 
+
+    domArr[domArr.length1].length>3) {
+
+   // the address must end in a two letter or three letter word.
+
+      if (alertflag) 
+
+   alert("The address must end in a threeletter domain, or two letter country.")
+
+   return false
+}
+
+// Make sure there's a host name preceding the domain.
+
+if (len<2) {
+
+   var errStr="This address is missing a hostname!"
+
+      if (alertflag) 
+
+   alert(errStr)
+   return false
+
+}
+
+// If we've gotten this far, everything's valid!
+
+return true;
+
+}
+
+window.onload = goNoSSL;
+// -->
+//-->
+
+<!-- End validation script -->
+
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<!-- this includes scripts to make the menus, crumbs and proxy button work -->
+<!-- Alerts -->
+
+<!-- Libraries elements -->
+
+
+
+<!-- YUI menus -->
+
+
+
+
+
+<!-- Tabs/Accordions -->
+
+<!-- Qwidget -->
+
+
+<!-- Urchin analytics -->
+
+urchinTracker();
+@import url(/css/print.css);
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<!-- this next bit builds the top navigation -->
+<U><FONT COLOR=blue>Skip to content</FONT></U>    
+
+  
+      createProxyLink();
+	  <U><FONT COLOR=blue>Off-Campus Access</FONT></U>
+    
+  <UL>
+      <LI><U><FONT COLOR=blue>UW Home</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Directories</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Maps</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>MyUW</FONT></U></LI>
+  </UL>
+  <U><FONT COLOR=blue>[UW Home]</FONT></U>
+  
+  <!-- LIBRARIES MENU -->
+     <UL>
+      <LI>Libraries:</LI>
+      <LI><U><FONT COLOR=blue>Bothell</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Tacoma</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>Health Sciences</FONT></U></LI>
+      <LI><U><FONT COLOR=blue>All</FONT></U></LI>
+     </UL>
+    
+
+
+
+  	  	
+      
+        <U><FONT COLOR=blue>&lt;Home [University of Washington Libraries]</FONT></U>
+      
+      
+        <U><FONT COLOR=blue>ask us!</FONT></U>
+      <U><FONT COLOR=blue>email</FONT></U> | <U><FONT COLOR=blue>chat</FONT></U> | <U><FONT COLOR=blue>phone</FONT></U> | <U><FONT COLOR=blue>text</FONT></U> 
+      
+      
+        
+		        <UL>
+          <LI><U><FONT COLOR=blue>UW WorldCat</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>UW Catalog</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Site</FONT></U></LI>
+        </UL>
+        <FORM>
+          UW WorldCat
+          <INPUT VALUE="Search UW Libraries and beyond" NAME="q" SIZE="30" TYPE="text">
+          <INPUT VALUE="Go" TYPE="submit"><BR>
+          <U><FONT COLOR=blue>advanced search</FONT></U> | <U><FONT COLOR=blue>help</FONT></U>
+        </FORM>
+        <FORM>
+          UW Catalog
+          <INPUT VALUE="X" NAME="searchtype" TYPE="hidden">
+          <INPUT VALUE="Search UW Libraries only" NAME="searcharg" SIZE="30" TYPE="text">
+          <INPUT VALUE="Go" TYPE="submit"><BR>
+          <U><FONT COLOR=blue>advanced search</FONT></U>
+        </FORM>
+        <FORM>
+          <INPUT VALUE="008936132526005358774:sx8jrb0rpjo" NAME="cx" TYPE="hidden">
+          <INPUT VALUE="FORID:9" NAME="cof" TYPE="hidden">
+          Site Search
+          <INPUT VALUE="Search this website" NAME="q" SIZE="30" TYPE="text">
+          <INPUT VALUE="Go" TYPE="submit">
+        </FORM>
+$(function() {$("#wcl .sap-content ul.tabs").tabs("#wcl .sap-content > form");}); 
+        
+      
+  
+        
+
+
+	<U><FONT COLOR=blue>Log into <EM>Your Library Account</EM></FONT></U>
+	
+	
+	<UL>
+		<LI><U><FONT COLOR=blue>Find It</FONT></U></LI>
+		<LI><U><FONT COLOR=blue>Using the Libraries</FONT></U></LI>
+		<LI><U><FONT COLOR=blue>About</FONT></U></LI>
+		<LI><U><FONT COLOR=blue>How Do I...?</FONT></U></LI>
+	  </UL>
+	
+
+displayLibAlert();
+createBreadcrumbs();
+
+
+<P><H2>Ask a question or send a comment</H2>
+
+<P>
+
+
+Welcome to the University of Washington Libraries' e-mail information and reference service.  
+
+<P>UW Libraries' staff will respond to your question <EM>within two working days</EM>.  If you need a more immediate answer, feel free to use our <U><FONT COLOR=blue>real-time chat service</FONT></U> or call the Libraries' Information Desk at 206-543-0242 during library <U><FONT COLOR=blue>hours</FONT></U>.
+
+	
+
+
+<P>  
+
+<!--Begin question form -->
+
+<FORM>
+
+<!-- Begin qpspmref hidden input field -->
+<!-- If this form is submitted with a value in this field, the form will be rejected-->
+
+Leave this field blank: <INPUT VALUE="" NAME="qpspmref" TYPE="text">
+
+<!-- End qpspm input field -->
+
+
+<INPUT VALUE="3" NAME="source" TYPE="HIDDEN">
+
+<INPUT VALUE="1" NAME="language" TYPE="hidden">
+
+<!-- Begin library hidden input field -->
+
+<!-- Replace the value attribute "1" with your library's Ask a Librarian institution ID, supplied by OCLC, in the library hidden input field -->
+
+<INPUT VALUE="10082" NAME="library" TYPE="hidden">
+<!-- End library hidden input field -->
+
+<TABLE>
+
+<TR>
+<TD>
+
+<TABLE>
+
+<TR>
+
+<TD>
+
+<!--BEGIN ACTIVE TAB -->
+
+<TABLE>
+
+</TABLE>
+
+<!--END ACTIVE TAB -->
+
+</TD>
+
+</TR>
+
+</TABLE>
+
+</TD>
+
+</TR>
+
+<TR>
+
+<TD>&nbsp;</TD>
+
+<TD>
+
+
+Ask a Question | <U><FONT COLOR=blue>Check Your Questions and Answers</FONT></U></TD>
+
+<TD></TD>
+
+</TR>
+
+</TABLE>
+
+<!-- LABEL and ACCESSKEY tags used below provide greater accessibility to your form -->
+
+<TABLE>
+
+<!-- You can insert added field(s) here -->
+
+<!-- Email address entry -->
+
+<TR>
+
+<TH>*E-mail Address:</TH>
+
+<TD>
+
+<INPUT NAME="email" MAXLENGTH="100" SIZE="50" TYPE="TEXT">
+
+</TD>
+
+</TR>
+
+<!-- Name entry -->
+
+<TR>
+
+<TH>*Name:</TH>
+
+<TD>
+
+<INPUT NAME="name" MAXLENGTH="100" SIZE="50" TYPE="TEXT">
+
+</TD>
+
+</TR>
+
+<!-- UW affiliation entry -->
+
+<TR>
+
+<TH>*UW Affiliation:</TH>
+
+<TD>
+
+		<INPUT VALUE="UW Affiliation" NAME="label2" TYPE="hidden">
+                                <SELECT NAME="field2">
+                  <OPTION VALUE="0" SELECTED>Select one</OPTION>
+                        <OPTION VALUE="Undergraduate">Undergraduate Student </OPTION>
+                        <OPTION VALUE="Graduate">Graduate Student </OPTION>
+                        <OPTION VALUE="Faculty">Faculty </OPTION>
+                        <OPTION VALUE="Staff">Staff </OPTION>
+                        <OPTION VALUE="Alumni">Alumni </OPTION>
+                        <OPTION VALUE="Not_Affiliated">Not Affiliated </OPTION>
+                </SELECT>
+               
+</TD>
+
+</TR>
+
+<!-- Campus affiliation entry -->
+
+<TR>
+
+<TH>*UW campus?:</TH>
+
+<TD>
+
+		<INPUT VALUE="UW Campus" NAME="label3" TYPE="hidden">
+                                <SELECT NAME="field3">
+                  <OPTION VALUE="0" SELECTED>Select one</OPTION>
+                        <OPTION VALUE="UW-Seattle">UW-Seattle</OPTION>
+                        <OPTION VALUE="UW-Bothell">UW-Bothell</OPTION>
+                        <OPTION VALUE="UW-Tacoma">UW-Tacoma</OPTION>
+                        <OPTION VALUE="Cascadia CC">Cascadia CC</OPTION>
+                        <OPTION VALUE="Not Applicable">Not Applicable</OPTION>
+                </SELECT>
+               
+</TD>
+
+</TR>
+
+<!-- Residence entry -->
+
+<TR>
+
+<TH>*In which city and state (or country) are you currently located?</TH>
+
+<TD>
+<INPUT VALUE="Current location" NAME="label4" TYPE="hidden">
+<INPUT NAME="field4" MAXLENGTH="100" SIZE="50" TYPE="TEXT">
+
+</TD>
+
+</TR>
+
+<!-- Forward permission entry -->
+
+<TR>
+
+<TH>*May we have permission to forward your question outside the UW Libraries' if necessary?</TH>
+
+<TD>
+		<INPUT VALUE="Forward" NAME="label5" TYPE="hidden">  
+		<INPUT VALUE="Yes" NAME="field5" CHECKED TYPE="radio">Yes
+		<INPUT VALUE="No" NAME="field5" TYPE="radio">No
+               
+</TD>
+
+</TR>
+
+<!-- Archive permission entry -->
+
+<TR>
+
+<TH>*May we have permission to archive your question and corresponding answer? (All personal information will be removed prior to archiving.)</TH>
+
+<TD>
+		<INPUT VALUE="Archive" NAME="label6" TYPE="hidden">  
+		<INPUT VALUE="Yes" NAME="field6" CHECKED TYPE="radio">Yes
+		<INPUT VALUE="No" NAME="field6" TYPE="radio">No
+                                
+               
+</TD>
+
+</TR>
+
+<!-- Question text entry -->
+
+<TR>
+
+<TH>*Question:<BR>Please ask your question in complete sentences and be as descriptive as possible.</TH>
+
+<TD>
+
+<TEXTAREA ROWS="10" NAME="question" COLS="50"></TEXTAREA>
+
+</TD>
+
+</TR>
+
+<!-- You can insert added field(s) here -->
+
+
+<!-- 
+document.writeln('<input type=hidden name="label7" value="From page" />');
+document.writeln('<input type=hidden name="field7" id="field7" value="' + document.referrer + '"/>');
+//-->
+
+
+</TABLE>
+
+<!-- Submit button -->
+
+<TABLE>
+
+<TR>
+
+<TD></TD>
+
+<TD>*All fields are required.
+
+</TD>
+
+<TD>
+
+<!--BEGIN BUTTON -->
+
+<U><FONT COLOR=blue>Submit Question</FONT></U>
+
+<!--END BUTTON -->
+
+</TD>
+
+</TR>
+
+</TABLE>
+
+</TD>
+
+<TD></TD>
+
+</TR>
+
+</TABLE>
+
+</FORM>
+
+<!--End question form -->
+
+See the University of Washington Libraries policy on <U><FONT COLOR=blue>privacy</FONT></U> for further clarification.
+
+<P>
+
+<CENTER>
+<HR>
+<TABLE>
+<TR>
+<TH><U><FONT COLOR=blue>UW Libraries'
+Hours/Locations/Contacts</FONT></U></TH>
+</TR>
+<TR>
+<TD><EM>Libraries Mailing Address:</EM></TD></TR> 
+<TR><TD>Suzzallo and Allen Libraries</TD></TR> 
+<TR><TD>University of Washington</TD></TR>
+<TR><TD>Box 352900</TD></TR>
+<TR><TD>Seattle, WA  98195-2900</TD></TR>
+</TABLE>
+
+<HR>
+</CENTER>
+<P>
+
+<!-- server automatically updates last modified date -->
+
+  
+  <U><FONT COLOR=blue>Contact Us</FONT></U><BR>
+   Last modified:  Tuesday October 19, 2010 (tawataoc)
+
+
+
+
+    
+	<UL>
+          <LI><U><FONT COLOR=blue>Libraries Home</FONT></U></LI>
+		  <LI><U><FONT COLOR=blue>Site Map</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Site Search</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Privacy</FONT></U></LI>
+          <LI><U><FONT COLOR=blue>Contact Us</FONT></U></LI>
+      </UL>
+        <P>&copy; 1998-2011 University of Washington Libraries<BR>
+          Box 352900 Seattle, WA 98195-2900 USA<BR>
+	  phone: 206-543-0242
+        </P>
+	
+
+
+
+        var uwJsHost = (("https:" == document.location.protocol) ? "https://" : "http://");
+	    document.write(unescape("%3Cscript src='" + uwJsHost + "emergency.washington.edu/alert.js' type='text/javascript'%3E%3C/script%3E"));
+      
+displayAlert();
+					
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>

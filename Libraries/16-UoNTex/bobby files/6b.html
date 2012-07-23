@@ -1,0 +1,1071 @@
+
+
+
+
+<HTML>
+
+  
+    
+    
+    
+    
+    
+    
+
+  
+
+  <HEAD>
+    <META CONTENT="text/html;charset=utf-8">
+
+    <META CONTENT="IE=8">
+<META NAME="google-site-verification" CONTENT="PtEp_13Kqy8X05sXiK1E6cq7U7ZbnJAmtjKAUcSovrM">
+
+    <TITLE>
+        Locations &amp; Maps
+        &mdash;
+        University of North Texas Libraries
+    </TITLE>
+
+    
+      
+        <BASE HREF="http://www.library.unt.edu/about/locations-and-maps/locations-maps">
+      
+    
+
+    <META NAME="generator" CONTENT="Plone - http://plone.org">
+
+    <META NAME="DC.description" CONTENT="Information about locations and maps of the various buildings, departments, and units of the UNT Libraries.">
+    <META NAME="description" CONTENT="Information about locations and maps of the various buildings, departments, and units of the UNT Libraries.">
+    <META NAME="DC.format" CONTENT="text/html">
+    <META NAME="DC.type" CONTENT="Page">
+    <META NAME="DC.creator" CONTENT="gbs0010">
+    <META NAME="DC.date.created" CONTENT="2007-06-28 15:13:06">
+    <META NAME="DC.date.modified" CONTENT="2011-06-15 10:12:08">
+
+    <!-- Plone ECMAScripts -->
+    
+      
+        
+            
+                
+                
+                
+            
+            
+                
+                
+                <!--  
+/*  tabberoptions.js  */
+document.write('<style type="text/css">.tabber{display:none;}<\/style>');
+
+var tabberOptions = {
+   manualStartup:true,
+
+  'cookie':"tabber", /* Name to use for the cookie */
+
+  'onLoad': function(argsObj)
+  {
+    var t = argsObj.tabber;
+    var i;
+
+    /* Optional: Add the id of the tabber to the cookie name to allow
+       for multiple tabber interfaces on the site.  If you have
+       multiple tabber interfaces (even on different pages) I suggest
+       setting a unique id on each one, to avoid having the cookie set
+       the wrong tab.
+    */
+    if (t.id) {
+      t.cookie = t.id + t.cookie;
+    }
+
+    /* If a cookie was previously set, restore the active tab */
+    i = parseInt(getCookie(t.cookie));
+    if (isNaN(i)) { return; }
+    t.tabShow(i);
+  },
+
+  'onClick':function(argsObj)
+  {
+    var c = argsObj.tabber.cookie;
+    var i = argsObj.index;
+    setCookie(c, i);
+  }
+};
+
+/*==================================================
+  Cookie functions
+  ==================================================*/
+function setCookie(name, value, expires, path, domain, secure) {
+    var path = '/';
+    document.cookie= name + "=" + escape(value) +
+        ((expires) ? "; expires=" + expires.toGMTString() : "") +
+        ((path) ? "; path=" + path : "") +
+        ((domain) ? "; domain=" + domain : "") +
+        ((secure) ? "; secure" : "");
+}
+
+function getCookie(name) {
+    var dc = document.cookie;
+    var prefix = name + "=";
+    var begin = dc.indexOf("; " + prefix);
+    if (begin == 1) {
+        begin = dc.indexOf(prefix);
+        if (begin != 0) return null;
+    } else {
+        begin += 2;
+    }
+    var end = document.cookie.indexOf(";", begin);
+    if (end == 1) {
+        end = dc.length;
+    }
+    return unescape(dc.substring(begin + prefix.length, end));
+}
+function deleteCookie(name, path, domain) {
+    if (getCookie(name)) {
+        document.cookie = name + "=" +
+            ((path) ? "; path=" + path : "") +
+            ((domain) ? "; domain=" + domain : "") +
+            "; expires=Thu, 01Jan70 00:00:01 GMT";
+    }
+}
+
+                     // -->
+                
+            
+            
+                
+                
+                
+            
+            
+                
+                
+                <!--  
+/* Merged Plone Javascript file
+ * This file is dynamically assembled from separate parts.
+ * Some of these parts have 3rd party licenses or copyright information attached
+ * Such information is valid for that section,
+ * not for the entire composite file
+ * originating files are separated by  filename.js 
+ */
+
+/*  redirection_mobile.js  */
+/*
+* JS Redirection Mobile
+*
+* Developed by
+* Sebastiano ArmeliBattana (@sebarmeli)  http://www.sebastianoarmelibattana.com
+* Dual licensed under the MIT or GPL Version 3 licenses.
+* @version 0.8.6
+*/
+if(!window.SA){window.SA={};}SA.redirection_mobile=function(j){var c=function(t){var s=new Date();s.setTime(s.getTime()+t);return s;};var m=function(x){if(!x){return;}var s=document.location.search,y=s&&s.substring(1).split("&"),u=0,w=y.length;for(;u<w;u++){var t=y[u],v=t&&t.substring(0,t.indexOf("="));if(v===x){return t.substring(t.indexOf("=")+1,t.length);}}};var a=navigator.userAgent.toLowerCase(),o="false",e="true",r=j||{},n=r.redirection_paramName||"mobile_redirect",p=r.mobile_prefix||"m",k=r.mobile_url,d=r.mobile_scheme?r.mobile_scheme+":":document.location.protocol,l=document.location.host,f=m(n),g=k||(p+"."+(!!l.match(/^www\./i)?l.substring(4):l)),h=r.cookie_hours||1,b=!!(a.match(/(iPhone|iPod|blackberry|android 0.5|htc|lg|midp|mmp|mobile|nokia|opera mini|palm|pocket|psp|sgh|smartphone|symbian|treo mini|Playstation Portable|SonyEricsson|Samsung|MobileExplorer|PalmSource|Benq|Windows Phone|Windows Mobile|IEMobile|Windows CE|Nintendo Wii)/i));if(document.referrer.indexOf(g)>=0||f===o){if(window.sessionStorage){window.sessionStorage.setItem(n,o);}else{document.cookie=n+"="+o+";expires="+c(3600*1000*h).toUTCString();}}var q=(window.sessionStorage)?(window.sessionStorage.getItem(n)===o):false,i=document.cookie?(document.cookie.indexOf(n)>=0):false;if(!!(a.match(/(iPad|SCHI800|xoom|kindle)/i))){b=(r.tablet_redirection===e)?true:false;}if(b&&!(i||q)){if(r.beforeredirection_callback){if(!r.beforeredirection_callback.call(this)){return;}}document.location.href=d+"//"+g;}};
+
+/*  redirect_to_mobile_homepage.js  */
+
+             SA.redirection_mobile ({
+                mobile_url : "m.library.unt.edu",
+                mobile_prefix : "http",
+                redirection_paramName:"mobile_redirect",
+                cookie_hours : "2" 
+            });
+
+                     // -->
+                
+            
+        
+    
+    
+
+    
+	
+          
+        
+            
+                
+                    
+                    
+                        <!-- @import url(http://www.library.unt.edu/portal_css/untlibraryskin/ploneStyles6627.css); -->
+                    
+                    
+                
+            
+            
+                
+                    
+                    
+                    
+                
+            
+            
+                
+                    
+                    
+                    
+                
+            
+            
+                
+                    
+                    
+                        <!-- @import url(http://www.library.unt.edu/portal_css/untlibraryskin/ploneStyles6705.css); -->
+                    
+                    
+                
+            
+            
+                
+                    
+                    
+                        <!-- @import url(http://www.library.unt.edu/portal_css/untlibraryskin/ploneStyles0303.css); -->
+                    
+                    
+                
+            
+        
+    
+        
+        
+    
+
+    <!-- Internet Explorer CSS Fixes -->
+    <!--[if IE]>
+        <style type="text/css" media="all">@import url(http://www.library.unt.edu/IEFixes.css);</style>
+    <![endif]-->
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Disable IE6 image toolbar -->
+    <META CONTENT="no">
+    
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+    
+      
+      
+    
+
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3629573-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+
+
+  </HEAD>
+
+  <BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+    
+
+      
+
+        
+          <P>
+            <U><FONT COLOR=blue>Skip to content.</FONT></U> |
+
+            <U><FONT COLOR=blue>Skip to navigation</FONT></U>
+          </P>
+
+             
+
+
+
+
+<H2>Library Catalog</H2>
+    <FORM>
+    
+        <INPUT VALUE="12" NAME="searchscope" TYPE="hidden">
+        Search Library Online Catalog 
+        <SELECT NAME="searchtype">
+          <OPTION VALUE="X" SELECTED="selected">Keyword</OPTION>
+          <OPTION VALUE="t">Title</OPTION>
+          <OPTION VALUE="a">Author</OPTION>
+          <OPTION VALUE="d">Subject Heading</OPTION>
+          <OPTION VALUE="c">LC Call Number</OPTION>
+          <OPTION VALUE="l">Dewey Call Number</OPTION>
+          <OPTION VALUE="v">Journal Title</OPTION>
+          <OPTION VALUE="m">Other Call No</OPTION>
+        </SELECT><BR>
+        <INPUT NAME="searcharg" MAXLENGTH="75" SIZE="35" TYPE="text">
+        <INPUT VALUE="D" NAME="SORT" TYPE="hidden">
+        <INPUT VALUE="Search" NAME="Submit" TYPE="submit">
+     
+     </FORM>
+  &nbsp;
+ 
+
+<H2>Electronic Resources</H2>
+   <FORM>
+        Search Electronic Resources 
+       <SELECT NAME="search_type">
+         <OPTION VALUE="keyword">Keyword</OPTION>
+         <OPTION VALUE="title">Title</OPTION>
+         <OPTION VALUE="subject">Subject</OPTION>
+         <OPTION VALUE="course_code">Course Code</OPTION>
+       </SELECT><BR>
+       <INPUT NAME="search_text" SIZE="35" TYPE="text">
+       <INPUT VALUE="Search" NAME="new_search" TYPE="submit">
+   </FORM>
+ &nbsp;
+ 
+
+
+<H2>Digital Collections</H2>
+<FORM>
+        Search Digital Collections 
+   <SELECT NAME="t">
+     <OPTION VALUE="fulltext">fulltext</OPTION>
+     <OPTION VALUE="metadata">metadata</OPTION>
+     <OPTION VALUE="dc.title">title</OPTION>
+     <OPTION VALUE="dc.subject">subject</OPTION>
+     <OPTION VALUE="dc.creator">creator</OPTION>
+   </SELECT><BR>
+   <INPUT NAME="q" SIZE="35" TYPE="text">
+   <INPUT VALUE="Search" TYPE="submit">
+</FORM>
+ &nbsp;
+
+
+
+
+
+   <H2>This Website</H2> 
+     <FORM>
+
+        Search this Web Site
+
+        
+        <INPUT NAME="SearchableText" SIZE="35" TYPE="text">
+
+        <INPUT VALUE="Search" TYPE="submit">
+
+
+    </FORM>
+
+&nbsp;
+
+
+
+
+    
+    
+    &nbsp;
+    
+    
+      tabberAutomatic(tabberOptions);
+    
+
+
+
+
+             
+    <U><FONT COLOR=blue>
+        <!-- removed this line: tal:replace="structure here/library_banner.gif", added external logos location -->
+       <!-- <img alt="UNT Libraries" title="UNT Libraries" src="http://web3.unt.edu/mmdl/lib_logo/index.php" /> -->
+
+    </FONT></U>
+
+
+             
+    <H5>Sections</H5>
+
+    <UL>
+        <LI>
+            <U><FONT COLOR=blue>UNT Libraries Home</FONT></U></LI>
+        <LI>
+            <U><FONT COLOR=blue>UNT Library Catalog</FONT></U></LI>
+        <LI>
+            <U><FONT COLOR=blue>Electronic Resources</FONT></U></LI>
+        <LI>
+            <U><FONT COLOR=blue>About the Libraries</FONT></U></LI>
+        <LI>
+            <U><FONT COLOR=blue>Libraries and Collections</FONT></U></LI>
+        <LI>
+            <U><FONT COLOR=blue>Library Services</FONT></U></LI>
+        <LI>
+            <U><FONT COLOR=blue>Research Tools</FONT></U></LI>
+    </UL>
+
+          
+
+      
+
+      <!-- -->
+
+      
+
+      <TABLE>
+        
+          <TR>
+            
+            <TD>
+              
+                
+                  
+
+    
+        
+
+        
+            
+
+<DL>
+    <DT>
+        
+        <U><FONT COLOR=blue>Navigation</FONT></U>
+       
+        
+    </DT>
+
+    <DD>
+        <UL>
+
+            <LI>
+                
+                   
+                       <U><FONT COLOR=blue>
+                       
+                       About the Libraries
+                       </FONT></U>
+                   
+                
+            </LI>
+            
+
+
+
+<LI>
+
+    
+
+    
+        
+        <U><FONT COLOR=blue>Library Hours</FONT></U>
+        
+    
+
+    
+    
+</LI>
+
+
+<LI>
+
+    
+
+    
+        
+        <U><FONT COLOR=blue>Locations and Maps</FONT></U>
+        
+    
+
+    
+    
+</LI>
+
+
+<LI>
+
+    
+
+    
+        
+        <U><FONT COLOR=blue>Staff and Departmental Directories</FONT></U>
+        
+    
+
+    
+    
+</LI>
+
+
+<LI>
+
+    
+
+    
+        
+        <U><FONT COLOR=blue>Employment Opportunities</FONT></U>
+        
+    
+
+    
+    
+</LI>
+
+
+<LI>
+
+    
+
+    
+        
+        <U><FONT COLOR=blue>Giving to the Libraries</FONT></U>
+        
+    
+
+    
+    
+</LI>
+
+
+<LI>
+
+    
+
+    
+        
+        <U><FONT COLOR=blue>Administrative Information</FONT></U>
+        
+    
+
+    
+    
+</LI>
+
+
+<LI>
+
+    
+
+    
+        
+        <U><FONT COLOR=blue>Library Liaison Program</FONT></U>
+        
+    
+
+    
+    
+</LI>
+
+
+<LI>
+
+    
+
+    
+        
+        <U><FONT COLOR=blue>FAQ</FONT></U>
+        
+    
+
+    
+    
+</LI>
+
+
+
+
+        </UL>
+        
+        
+    </DD>
+</DL>
+
+
+        
+
+        
+
+        
+    
+
+                
+                &nbsp;
+              
+            </TD>
+            
+
+            
+            <TD>
+
+           
+
+
+    <U><FONT COLOR=blue>Home</FONT></U>
+    
+        &rsaquo;
+        
+    
+    
+        
+            <U><FONT COLOR=blue>About the Libraries</FONT></U>
+            
+                &rsaquo;
+                
+            
+            
+         
+    
+    
+        
+            
+            
+            Locations and Maps
+         
+    
+
+
+
+              
+                
+
+                  
+
+                  
+
+                    </FONT></U>
+
+                    
+
+    
+
+
+
+                    
+
+                    
+    
+
+        
+    
+
+    <H5>Document Actions</H5>
+
+    <UL>
+    
+        <LI>
+            <U><FONT COLOR=blue>
+
+                [Send this page to somebody]
+            </FONT></U>
+        </LI>
+    
+    
+        <LI>
+            <U><FONT COLOR=blue>
+
+                [Print this page]
+            </FONT></U>
+        </LI>
+    
+
+    </UL>
+    
+
+    
+
+
+
+        <H1>Locations &amp; Maps</H1>
+    
+        
+    
+        
+            
+<P>&nbsp;</P>
+
+
+<H2>Physical Address<BR></H2>
+
+UNT Libraries
+
+ 1506 Highland Avenue
+Willis Library
+Denton, TX 76203
+
+
+
+<H2>Mailing Address</H2>
+
+University of North Texas<BR>UNT Libraries
+1155 Union Circle #305190
+Denton, TX 76203-5017<BR>
+Please call the Libraries Business Office at (940) 565-2696 for shipping information
+
+
+&nbsp;
+<UL><LI><BR></LI><LI><U><FONT COLOR=blue>Campus Maps</FONT></U></LI><LI><U><FONT COLOR=blue>Directions to UNT</FONT></U></LI><LI><U><FONT COLOR=blue>UNT Parking Maps</FONT></U></LI><LI><U><FONT COLOR=blue>E-trans</FONT></U>&nbsp; <BR></LI></UL>
+<UL><LI><U><FONT COLOR=blue>Locations by Building</FONT></U></LI><LI><U><FONT COLOR=blue>Floor Maps</FONT></U></LI><LI><U><FONT COLOR=blue>Evacuation Routes</FONT></U></LI>
+<LI><U><FONT COLOR=blue>Call No. Location Guide</FONT></U></LI></UL>
+<H2></FONT></U>Locations by Building<BR></H2>
+
+<H3>Willis Library<BR></H3>
+<UL>
+<LI>
+<U><FONT COLOR=blue>Administrative Office</FONT></U>
+</LI><LI><U><FONT COLOR=blue>Archives</FONT></U></LI><LI><U><FONT COLOR=blue> Circulation Department</FONT></U></LI><LI><U><FONT COLOR=blue>CyberCafe</FONT></U></LI><LI><U><FONT COLOR=blue>Willis 24 Hr GACL</FONT></U></LI><LI><U><FONT COLOR=blue>Digital Projects 
+            Lab</FONT></U></LI><LI><U><FONT COLOR=blue>Government Documents Service Desk</FONT></U></LI><LI><U><FONT COLOR=blue>General Reference Desk</FONT></U></LI><LI><U><FONT COLOR=blue> ILL</FONT></U></LI><LI><U><FONT COLOR=blue>Microforms Service Desk</FONT></U></LI><LI><U><FONT COLOR=blue>Multimedia Development Lab</FONT></U><BR></LI><LI><U><FONT COLOR=blue>Music Library / Audio Center<BR></FONT></U></LI><LI><U><FONT COLOR=blue>Photocopy Office</FONT></U></LI><LI><U><FONT COLOR=blue>Rare Book and Texana Collections</FONT></U></LI><LI><U><FONT COLOR=blue> Reserves/Current Periodicals Room</FONT></U></LI></UL>
+
+
+<H3>&nbsp;Chilton Hall</H3>
+<UL><LI><U><FONT COLOR=blue>Media Library</FONT></U></LI></UL>
+<H3>Sycamore Hall</H3>
+<UL><LI><U><FONT COLOR=blue>Eagle Commons Library</FONT></U><BR></LI></UL>
+<H3>Library Annex</H3>
+<UL><LI><U><FONT COLOR=blue>Technical Services</FONT></U></LI><LI><U><FONT COLOR=blue>Preservation </FONT></U><BR></LI></UL>
+<H3>Discovery Park<BR></H3>
+<UL><LI><U><FONT COLOR=blue>Discovery Park Library</FONT></U><BR>
+</LI></UL>
+<H3>UNT 
+            Dallas Campus</H3>
+<UL><LI><U><FONT COLOR=blue>UNT Dallas Campus Library<BR><BR><BR><BR><BR><BR><BR></FONT></U></LI></UL>
+<P ALIGN="right"><U><FONT COLOR=blue>Return to top</FONT></U></P>
+
+&nbsp;
+<H2></FONT></U>Floor Maps</H2>
+
+<H3>Willis Library</H3>
+<P>Select image for full-sized view</P>
+<TABLE>
+
+<TR>
+<TD>1st Floor:<BR></TD>
+<TD>&nbsp;<U><FONT COLOR=blue>[Willis Library First Floor Evacuation Routes]</FONT></U></TD>
+</TR>
+<TR>
+<TD>2nd Floor:</TD>
+<TD>&nbsp;<U><FONT COLOR=blue>[Willis Library Second Floor Evacuation Routes]</FONT></U></TD>
+</TR>
+<TR>
+<TD>3rd Floor: <BR></TD>
+<TD>&nbsp;<U><FONT COLOR=blue>[Willis Library Third Floor Evacuation Routes]</FONT></U></TD>
+</TR>
+<TR>
+<TD>4th Floor:</TD>
+<TD>&nbsp;<U><FONT COLOR=blue>[Willis Library Fourth Floor Evacuation Routes]</FONT></U></TD>
+</TR>
+<TR>
+<TD>Lower Level: <BR></TD>
+<TD>&nbsp;<U><FONT COLOR=blue>[Willis Library Lower Level]</FONT></U></TD>
+</TR>
+
+</TABLE>
+
+
+<H3>Eagle Commons Library<BR></H3>
+<P>&nbsp;Select image for full-sized view</P>
+<TABLE>
+
+<TR>
+<TD>Main Floor: <BR></TD>
+<TD><U><FONT COLOR=blue>&nbsp;[Science and Technology Library First Floor and Basement]</FONT></U></TD>
+</TR>
+<TR>
+<TD>Mezzanine:</TD>
+<TD><U><FONT COLOR=blue>[Science and Technology Library Mezzanine]</FONT></U></TD>
+</TR>
+<TR>
+<TD>&nbsp;Basement:<BR></TD>
+<TD>&nbsp;<U><FONT COLOR=blue>[Eagle Commons Library Basement]</FONT></U></TD>
+</TR>
+
+</TABLE>
+<BR>
+<H3>Media Library</H3>
+<P>Select image for full-sized view</P>
+<U><FONT COLOR=blue>[Media Library]</FONT></U><BR><BR>
+<H3>Discovery Park</H3>
+<P>Select image for full-sized view</P>
+<P><U><FONT COLOR=blue>[Discovery Park Library Reference]</FONT></U>&nbsp;<U><FONT COLOR=blue>[Discovery Park Library Collection]</FONT></U></P>
+<U><FONT COLOR=blue></FONT></U>
+
+<H3></FONT></U></H3>
+
+
+<H3></FONT></U></H3>
+<U><FONT COLOR=blue><BR></FONT></U>
+&nbsp;
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P ALIGN="right"><U><FONT COLOR=blue>Return to top</FONT></U></P>
+<H2></FONT></U>Evacuation Routes</H2>
+
+<H3></FONT></U>Willis Library</H3>
+<P>Select image for full-sized view&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;</P>
+<TABLE>
+
+<TR>
+<TD>1st Floor:<BR></TD>
+<TD><U><FONT COLOR=blue>[Willis Library First Floor Evacuation Routes]</FONT></U><BR></TD>
+</TR>
+<TR>
+<TD>2nd Floor:<BR></TD>
+<TD><U><FONT COLOR=blue>[Willis Library Second Floor Evacuation Routes]</FONT></U><BR></TD>
+</TR>
+<TR>
+<TD>3rd Floor:<BR></TD>
+<TD><U><FONT COLOR=blue>[Willis Library Third Floor Evacuation Routes]</FONT></U><BR></TD>
+</TR>
+<TR>
+<TD>&nbsp;4th Floor:<BR></TD>
+<TD><U><FONT COLOR=blue>[Willis Library Fourth Floor Evacuation Routes]</FONT></U></TD>
+</TR>
+<TR>
+<TD>&nbsp;Lower Level:<BR></TD>
+<TD><U><FONT COLOR=blue>[Willis Library Lower Level Evacuation Routes]</FONT></U></TD>
+</TR>
+
+</TABLE>
+
+
+<H3></FONT></U>Eagle Commons Library</H3>
+<P>Select image for full-sized view</P>
+<TABLE>
+
+<TR>
+<TD>Main Floor and Basement<BR></TD>
+<TD><U><FONT COLOR=blue>[Science and Technology Library First Floor and Basement Evacuation Routes]</FONT></U></TD>
+</TR>
+<TR>
+<TD>
+<P>Mezzanine</P>
+</TD>
+<TD><U><FONT COLOR=blue>[Science and Technology Mezzanine Evacuation Routes]</FONT></U><BR></TD>
+</TR>
+
+</TABLE>
+<H3>Media Library</H3>
+<P>Select image for full-sized view</P>
+<TABLE>
+
+<TR>
+<TD>&nbsp;<U><FONT COLOR=blue>[Media Library Evacuation Emergency Evacuation Map]</FONT></U></TD>
+</TR>
+
+</TABLE>
+<P>&nbsp;</P>
+
+&nbsp;
+
+<H3></FONT></U><BR></H3>
+
+&nbsp;
+<P ALIGN="right"><U><FONT COLOR=blue>Return to top</FONT></U></P>
+<H2></FONT></U>Call No. Location Guide <BR></H2>
+<P>&nbsp;</P>
+<UL><LI><U><FONT COLOR=blue>Call Numbers Beginning with Letters</FONT></U></LI><LI></FONT></U><U><FONT COLOR=blue>Call Numbers Beginning with Numbers</FONT></U>
+</LI></UL>
+<P ALIGN="right"><U><FONT COLOR=blue><BR></FONT></U></P>
+<P ALIGN="right"><U><FONT COLOR=blue><BR></FONT></U></P>
+<P ALIGN="right"><U><FONT COLOR=blue>Return to top</FONT></U></P>
+<P ALIGN="right">&nbsp;</P>
+<P ALIGN="right"><U><FONT COLOR=blue><BR></FONT></U></P>
+<P ALIGN="right"><U><FONT COLOR=blue><BR></FONT></U></P>
+
+        
+
+        
+    
+        
+            
+        
+    
+
+
+        
+
+    
+        
+
+        
+          
+        
+
+        
+            
+            last modified
+            
+            Wednesday, June 15, 2011. 10:12 AM
+        
+
+        
+
+        
+
+
+        
+
+        
+
+        
+    
+
+
+    
+
+
+    
+    
+
+
+                    
+                      
+                 
+    
+        
+    
+
+                    
+
+                  
+
+                
+
+              
+            </TD>
+            
+
+            
+            <TD>
+              
+                
+                  
+
+    
+        
+
+        
+
+            
+        
+            <DL>
+                <DT>Info</DT>
+                <DD><UL><LI><U><FONT COLOR=blue>Ask Us</FONT></U></LI></UL>
+<UL><LI><U><FONT COLOR=blue>Special Audiences</FONT></U><BR></LI><LI><U><FONT COLOR=blue>How do I... (FAQ)</FONT></U></LI><LI><U><FONT COLOR=blue>Library Hours</FONT></U></LI><LI><U><FONT COLOR=blue>Locations &amp; Maps</FONT></U><BR></LI><LI><U><FONT COLOR=blue>News &amp; Events</FONT></U></LI></UL>
+<H2><EM>Looking for journal articles?&nbsp;</EM></H2>
+<P><EM>Try out our new <U><FONT COLOR=blue>Find Articles (Beta)</FONT></U> search!&nbsp;</EM></P>
+<P><EM>Don't forget to <U><FONT COLOR=blue>let us know what you think</FONT></U> about it.</EM></P>
+<P>&nbsp;</P>
+</DD>
+            </DL>
+        
+    
+
+
+        
+    
+
+                
+                &nbsp;
+              
+            </TD>
+            
+          </TR>
+        
+      </TABLE>
+      
+
+      <!-- -->
+
+
+      <HR>
+
+      
+
+        
+
+        <UL>
+
+    <LI><U><FONT COLOR=blue>UNT Libraries Home</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Search the Site</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Sitemap</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Permalink</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Tell us how we are doing</FONT></U></LI>
+    <LI><U><FONT COLOR=blue>Report a Problem</FONT></U></LI>
+
+</UL>
+
+
+
+        
+      
+
+      
+
+      <P>UNT and State of Texas: 
+           <U><FONT COLOR=blue>UNT</FONT></U> |
+           <U><FONT COLOR=blue>UNT Search</FONT></U> | 
+           <U><FONT COLOR=blue>UNT News and Events</FONT></U> |
+           <U><FONT COLOR=blue>State of Texas</FONT></U> |
+           <U><FONT COLOR=blue>State-wide Search</FONT></U>
+      </P>
+      
+      <P>Policies:  
+            <U><FONT COLOR=blue>UNT Web Accessibility Policy</FONT></U> | 
+            <U><FONT COLOR=blue>AA/EOE/ADA</FONT></U> |
+            <U><FONT COLOR=blue>Privacy Statement</FONT></U> |
+            <U><FONT COLOR=blue>Disclaimer</FONT></U>
+      </P> 
+
+
+
+ <U><FONT COLOR=blue>University Of North Texas Libraries</FONT></U>
+ 
+  1155 Union Circle #305190
+  Denton
+, 
+  TX 76203-5017
+
+ 
+ (940) 565-2413
+               <P>
+                  <U><FONT COLOR=blue>
+                  Locations, Maps, and Shipping.
+                  </FONT></U>
+               </P>
+
+
+       <U><FONT COLOR=blue>
+        Credits
+      </FONT></U>
+
+
+   <U><FONT COLOR=blue>
+      [Government Information Connection]
+   </FONT></U>
+
+
+   <U><FONT COLOR=blue>
+      [The UNT Libraries are on Facebook]
+   </FONT></U>
+
+
+      
+      
+
+    
+
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>

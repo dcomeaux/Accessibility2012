@@ -1,0 +1,200 @@
+
+<HTML>
+<HEAD>
+<META CONTENT="text/html; charset=iso-8859-1">
+<META NAME="author" CONTENT="University of Hawaii at Manoa Hamilton Library">
+
+
+<TITLE>Virtual Tour | University of Hawaii at Manoa Library</TITLE>
+
+
+
+   _uacct = "UA-302804-2";
+   urchinTracker();
+
+
+
+
+
+
+
+/*
+This script is used to swap the divs below
+Each div contains an image map of each floor
+
+A floor is passed to the function "swapDiv(index)"
+through the "index" variable which is a number 0-5
+
+*/
+
+//setting the default floor to the first floor
+var curDiv = "1";
+
+function swapDiv(index) {
+
+	//If they are clicking on the same floor do nothing
+	if(curDiv == index) return;
+
+	//hide the currently showing div
+	document.getElementById(curDiv).style.display="none";
+
+	//reset the current div to the new div were going to show
+	curDiv = index;
+
+	//show the div which was requested by the "index" variable
+	document.getElementById(index).style.display="block";
+
+	//This is for the title of the page it will change the text to read the floor
+	//that was clicked.
+	var floors=["Ground Floor","First Floor","Second Floor", "Third Floor", "Fourth Floor", "Fifth Floor"];
+	document.getElementById("floor_title").innerHTML = floors[index];
+
+
+}
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</FONT></U>
+
+<U><FONT COLOR=blue>Skip to Main Content</FONT></U><BR>
+
+
+
+<!-- Banner head2#, includes divs logo, nav2 -->
+<!-- head23 = research, head22 = services, head23 = about -->
+
+	
+	<U><FONT COLOR=blue>[Return to UHM Library Home]</FONT></U>
+	
+<!-- Main nav bar -->
+	
+	<U><FONT COLOR=blue>Home</FONT></U> | <U><FONT COLOR=blue>Research
+Tools</FONT></U> | <U><FONT COLOR=blue>Personal Services</FONT></U> | <U><FONT COLOR=blue>About the Library</FONT></U>
+	
+
+<!-- Minibar#, includes divs searchbar, minibartext -->
+<!-- minibar3 = research, minibar2 = services, minibar3 = about -->
+</FONT></U>
+
+	
+<!-- Search My Google Search Appliance -->
+  <FORM>
+  query
+  <INPUT VALUE="" NAME="query" MAXLENGTH="255" SIZE="15" TYPE="text">
+  <INPUT VALUE="Site Search" NAME="btnG" TYPE="submit">
+  <INPUT VALUE="library" NAME="site" TYPE="hidden">
+  <INPUT VALUE="library" NAME="client" TYPE="hidden">
+  <INPUT VALUE="library" NAME="proxystylesheet" TYPE="hidden">
+  <INPUT VALUE="xml_no_dtd" NAME="output" TYPE="hidden">
+  </FORM>
+ <!-- Search My Google Search Appliance-->
+	
+	
+	<U><FONT COLOR=blue>Ask Us</FONT></U> | <U><FONT COLOR=blue>Find Books &amp; Media</FONT></U> | <U><FONT COLOR=blue>Your Account</FONT></U>  |
+	
+
+<!-- End Navigation -->
+<!-- Begin Content -->
+
+</FONT></U>
+<BR>
+
+<!-- default is first floor so the span is First Floor -->
+<EM>Virtual Tour:</EM> First Floor
+<BR><BR>
+
+<CENTER>
+   <U><FONT COLOR=blue>Ground</FONT></U> | <U><FONT COLOR=blue>First</FONT></U>
+ | <U><FONT COLOR=blue>Second</FONT></U> | <U><FONT COLOR=blue>Third</FONT></U>
+ | <U><FONT COLOR=blue>Fourth</FONT></U> | <U><FONT COLOR=blue>Fifth</FONT></U>
+ </CENTER>
+
+
+<BR>
+<BR>
+
+<MAP NAME="0f">
+<AREA HREF="images/outside.jpg" COORDS="0,197,43,245" SHAPE="rect" ALT="Broken widow provided only escape route for LIS students">
+<AREA HREF="images/IMG_3196.jpg" COORDS="10,94,53,142" SHAPE="rect" ALT="Renovated room ready for new furniture">
+<AREA HREF="images/LIS.jpg" COORDS="52,176,95,224" SHAPE="rect" ALT="Flood damaged LIS hallway">
+<AREA HREF="images/grndflrstairs.jpg" COORDS="111,236,154,284" SHAPE="rect" ALT="Ground Floor Stairs with Gov Docs damaged door to the left (Left)<br />Ground Floor Stairs opposite the entrance to Government Documents (Right)">
+<AREA HREF="images/maps.jpg" COORDS="207,355,250,403" SHAPE="rect" ALT="Maps strewn about flooded room (Left)<br />Maps stored in new document cabinets (Right)">
+<AREA HREF="images/govdocs.jpg" COORDS="200,173,243,221" SHAPE="rect" ALT="Government Documents stacks (Left) <br /> New shelves with Government Document book sets in the stacks (Right)">
+<AREA HREF="images/govdocsworkroom.jpg" COORDS="253,275,296,323" SHAPE="rect" ALT="Government Documents Workroom with overturned furniture (Left) <br /> Government Documents Workroom with new furniture and materials (Right)">
+<AREA HREF="images/elevator.jpg" COORDS="254,163,297,211" SHAPE="rect" ALT="Elevator damaged by debris that pushed the doors off track (Left) <br /> New elevator and doors! (Right)">
+<AREA HREF="images/govdocsbooks.jpg" COORDS="249,92,292,140" SHAPE="rect" ALT="Government Documents Books covered with mold (Left)<br />New shelves with Government Document book sets in the stacks (Right)">
+<AREA HREF="images/ramp.jpg" COORDS="290,30,333,78" SHAPE="rect" ALT="Narrow ramp from the Edmondson Hall back door (Left)<br />Newly widened ramp to the double Edmondson Hall back doors (Right)">
+<AREA HREF="images/staffroom.jpg" COORDS="336,64,379,112" SHAPE="rect" ALT="Staff Room with muddied and disheveled tables (Left)<br />Renovated Staff Room with lighting and new, matching furniture! (Right)">
+<AREA HREF="images/IMG_3229.jpg" COORDS="314,176,357,224" SHAPE="rect" ALT="Mural after conservation work">
+<AREA HREF="images/frontofcataloging.jpg" COORDS="371,210,414,258" SHAPE="rect" ALT="A view from the front door of Cataloging (Left)<br />A view from the front door of Cataloging to the new cublicles (Right)">
+<AREA HREF="images/cataloging.jpg" COORDS="383,302,426,350" SHAPE="rect" ALT="Cataloging shelves destroyed by flood (Left)<br />Neatly arranged cataloging shelves and meeting table (Right)">
+<AREA HREF="images/PFentrancetoserials.jpg" COORDS="477,209,520,257" SHAPE="rect" ALT="Entrance to Serials with new offices">
+<AREA HREF="images/serials.jpg" COORDS="484,302,527,350" SHAPE="rect" ALT="Decimated journals and furniture (Left)<br />New Serials shelves and meeting table (Right)">
+<AREA HREF="images/acquisitions2.jpg" COORDS="612,216,655,264" SHAPE="rect" ALT="Acquisitions windows on the mauka side of the Hamilton moat (Left)<br />Acquisitions wall without windows and a covered moat! (Right)">
+<AREA HREF="images/acquisitions.jpg" COORDS="617,321,660,369" SHAPE="rect" ALT="Acquisitions windows were the entry point for the flood waters from the moat (Left)<br />Acquisitions cubicles and new drop ceiling (Right)">
+</MAP>
+
+
+
+<!-- First floor is display: block; beacuse it is the default floor when coming on the page-->
+
+<BR>
+<BR>
+
+<MAP NAME="1f">
+<AREA HREF="images/Hamilton_Library_and_Plaza.jpg" COORDS="0,640,39,688" SHAPE="rect" ALT="Hamilton Library & Plaza">
+<AREA HREF="images/Sci-Tech_Presentation_Practice_Rooms.jpg" COORDS="436,100,475,148" SHAPE="rect" ALT="Science Tech Presentation/Practice Rooms">
+<AREA HREF="images/Science_Technology_Reference_Desk.jpg" COORDS="447,175,486,223" SHAPE="rect" ALT="Science Technology Reference Desk">
+<AREA HREF="images/Elevator_Gallery.jpg" COORDS="373,444,412,492" SHAPE="rect" ALT="Elevator Gallery Library Exhibits">
+<AREA HREF="images/bridgegallery.jpg" COORDS="352,259,391,305" SHAPE="rect" ALT="Bridge Gallery Library Exhibits">
+<AREA HREF="images/entrancemural.jpg" COORDS="180,589,219,637" SHAPE="rect" ALT="Makahiki Ho'okupu ~ Charcoal and sanguine mural on masonite by Juliette May Fraser, 1939">
+<AREA HREF="images/Business_Humanities_and_Social_Sciences_Reference_Deskjpg.jpg" COORDS="243,501,282,549" SHAPE="rect" ALT="Business, Humanities, and Social Sciences Reference Desk">
+<AREA HREF="images/CLIC_Lab.jpg" COORDS="183,383,222,431" SHAPE="rect" ALT="CLIC Lab">
+<AREA HREF="images/Business_Window.jpg" COORDS="113,457,152,505" SHAPE="rect" ALT="Business Window">
+<AREA HREF="images/1stflrstairs.jpg" COORDS="119,506,158,554" SHAPE="rect" ALT="Circulation Desk with enclosed stairs to protect from mold (Left) <br />Reopened Circulation Stairs leading down to LIS, Government Documents and MAGIS (Right)">
+</MAP>
+
+
+
+[INLINE]
+
+
+
+<BR>
+<BR>
+
+<MAP NAME="3f">
+<AREA HREF="images/Room_301.jpg" COORDS="75,392,112,439" SHAPE="rect" ALT="Lecture Room 301">
+</MAP>
+
+
+
+<BR>
+<BR>
+
+<MAP NAME="4f">
+<AREA HREF="images/Asia_Collection_Reading_Room.jpg" COORDS="445,487,485,536" SHAPE="rect" ALT="Asia Collection Reading Room">
+</MAP>
+
+
+
+<BR>
+<BR>
+
+<MAP NAME="5f">
+<AREA HREF="images/lemon.jpg" COORDS="440,57,477,103" SHAPE="rect" ALT="Preservation Department Logo">
+<AREA HREF="images/charlot.jpg" COORDS="486,418,523,464" SHAPE="rect" ALT="A piece of artwork from the Jean Charlot Collection">
+<AREA HREF="images/Moir_Archives_Reading_Room.jpg" COORDS="470,197,507,242" SHAPE="rect" ALT="Moir Archives Reading Room">
+<AREA HREF="images/Hawaii_Pacific_Collection_Reading_Room.jpg" COORDS="455,496,492,541" SHAPE="rect" ALT="Hawaii Pacific Collection Reading Room">
+</MAP>
+
+
+
+<!-- div footer2 must go outside of container2 to keep footer at bottom of screen -->
+</FONT></U>
+
+<U><FONT COLOR=blue>Home</FONT></U> | <U><FONT COLOR=blue>Research Tools</FONT></U> | <U><FONT COLOR=blue>Personal Services</FONT></U> | <U><FONT COLOR=blue>About the Library</FONT></U>
+<BR>
+<U><FONT COLOR=blue>Terms of Use</FONT></U> | <U><FONT COLOR=blue>UH Manoa</FONT></U> | <U><FONT COLOR=blue>UH System</FONT></U> | <U><FONT COLOR=blue>Contact Us</FONT></U>
+
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>

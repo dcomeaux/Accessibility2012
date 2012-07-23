@@ -1,0 +1,548 @@
+
+
+<HTML>
+
+<HEAD>
+<TITLE>Search Page</TITLE>
+<!--<meta httpequiv="ContentType" content="text/html; charset=iso88591">-->
+<META CONTENT="text/html; charset=utf-8">
+<META NAME="DC.title" CONTENT="Search Page">
+<META NAME="DC.subject" CONTENT="">
+<META NAME="DC.subject" CONTENT="search, web">
+<META NAME="DC.description" CONTENT="Search - KentLINK catalog, articles, videos/DVDs, and our web site">
+<META NAME="DC.publisher" CONTENT="Kent State University - University Libraries">
+<META NAME="DC.date.created" CONTENT="2007-07-26">
+<META NAME="DC.date.modified" CONTENT="2007-07-26">
+<!-- printLinks=0 -->
+		
+		
+		
+		
+				
+		
+
+
+<!--
+
+function displayProxyHomeOff(tab) {
+	eval('document.proxyImageHome'+tab+'.src="http://www.library.kent.edu/graphics/vpn_alert_tiny.jpg"');
+}
+
+function displayProxyOff(section) {
+	eval('document.proxyImage'+section+'.src="http://www.library.kent.edu/graphics/vpnOff.jpg"');
+}
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+
+
+	function HideContent(d) {
+	if(d.length < 1) { return; }
+	document.getElementById(d).style.display = "none";
+	}
+	function ShowContent(d) {
+	if(d.length < 1) { return; }
+	document.getElementById(d).style.display = "block";
+	}
+	function ReverseContentDisplay(d) {
+		if(d.length < 1) { return; }
+			
+		document.getElementById(d).style.display = "block";
+		
+		if (d != "searchKentLINK") { 
+			document.getElementById("searchKentLINK").style.display = "none";
+		}
+		if (d != "searchDatabases") { 
+			document.getElementById("searchDatabases").style.display = "none";
+		}
+		if (d != "searchGoogleScholar") { 
+			document.getElementById("searchGoogleScholar").style.display = "none";
+		}
+		if (d != "searchVideos") { 
+			document.getElementById("searchVideos").style.display = "none";
+		}
+		if (d != "searchSite") { 
+			document.getElementById("searchSite").style.display = "none";
+		}
+		
+		if (d == "searchKentLINK") {
+			document.getElementById("searchTabs").style.background = 'url(../graphics/bg_search_tabs_kentlink.jpg)';
+			document.formSearchTermsKentLINK.searchTermsKentLINK.focus();
+		}
+		if (d == "searchDatabases") {
+			document.getElementById("searchTabs").style.background = 'url(../graphics/bg_search_tabs_databases.jpg)';
+			document.formSearchTermsKeyword.find_request_1.focus();
+		}
+		<!--if (d == "searchDatabases") {-->
+		<!--	document.getElementById("searchTabs").style.background = 'url(../graphics/bg_search_tabs_databases.jpg)';-->
+		<!--	document.aspnetForm.ctl00$ctl00$BaseFindField$FindField$ctl00$guidedFields$fieldRepeater$ctl01$SearchTerm.focus();-->
+		<!--}-->
+		if (d == "searchGoogleScholar") {
+			document.getElementById("searchTabs").style.background = 'url(../graphics/bg_search_tabs_googlescholar.jpg)';
+			document.formSearchTermsGoogleScholar.find_request_1.focus();
+		}
+		if (d == "searchVideos") {
+			document.getElementById("searchTabs").style.background = 'url(../graphics/bg_search_tabs_videos.jpg)';
+			document.formSearchTermsVideos.searchTermsVideos.focus();
+		}
+		if (d == "searchSite") {
+			document.getElementById("searchTabs").style.background = 'url(../graphics/bg_search_tabs_site.jpg)';
+			document.formSearchTermsWebSite.searchTermsWebSite.focus();
+		}
+	
+	
+	}
+	
+	function storeSearchKentLINK() {
+		
+		if (document.formSearchTermsKentLINK.searchTermsKentLINK.value != "") {
+		
+			var thisSearchTerm = document.formSearchTermsKentLINK.searchTermsKentLINK.value;
+	
+			document.formSearchTermsKentLINK.searchTermsKentLINK.value = thisSearchTerm;
+			document.formSearchTermsKeyword.find_request_1.value = thisSearchTerm;
+			<!--document.aspnetForm.ctl00$ctl00$BaseFindField$FindField$ctl00$guidedFields$fieldRepeater$ctl01$SearchTerm.value = thisSearchTerm;-->
+			document.formSearchTermsGoogleScholar.q.value = thisSearchTerm;
+			document.formSearchTermsVideos.searchTermsVideos.value = thisSearchTerm;
+			document.formSearchTermsWebSite.searchTermsWebSite.value = thisSearchTerm;
+
+		}			
+
+	}	
+	function storeSearchArticles() {
+		
+		if (document.formSearchTermsKeyword.find_request_1.value != "") {
+		<!--if (document.aspnetForm.ctl00$ctl00$BaseFindField$FindField$ctl00$guidedFields$fieldRepeater$ctl01$SearchTerm.value != "") {-->
+		
+			var thisSearchTerm = document.formSearchTermsKeyword.find_request_1.value;
+			<!--var thisSearchTerm = document.aspnetForm.ctl00$ctl00$BaseFindField$FindField$ctl00$guidedFields$fieldRepeater$ctl01$SearchTerm.value;-->
+	
+			document.formSearchTermsKentLINK.searchTermsKentLINK.value = thisSearchTerm;
+			document.formSearchTermsKeyword.find_request_1.value = thisSearchTerm;
+			<!--document.aspnetForm.ctl00$ctl00$BaseFindField$FindField$ctl00$guidedFields$fieldRepeater$ctl01$SearchTerm.value = thisSearchTerm;-->
+			document.formSearchTermsGoogleScholar.q.value = thisSearchTerm;
+			document.formSearchTermsVideos.searchTermsVideos.value = thisSearchTerm;
+			document.formSearchTermsWebSite.searchTermsWebSite.value = thisSearchTerm;
+
+		}			
+
+	}	
+	function storeSearchGoogleScholar() {
+		
+		if (document.formSearchTermsGoogleScholar.q.value != "") {
+		
+			var thisSearchTerm = document.formSearchTermsGoogleScholar.q.value;
+	
+			document.formSearchTermsKentLINK.searchTermsKentLINK.value = thisSearchTerm;
+			document.formSearchTermsKeyword.find_request_1.value = thisSearchTerm;
+			<!--document.aspnetForm.ctl00$ctl00$BaseFindField$FindField$ctl00$guidedFields$fieldRepeater$ctl01$SearchTerm.value = thisSearchTerm;-->
+			document.formSearchTermsGoogleScholar.q.value = thisSearchTerm;
+			document.formSearchTermsVideos.searchTermsVideos.value = thisSearchTerm;
+			document.formSearchTermsWebSite.searchTermsWebSite.value = thisSearchTerm;
+
+		}			
+
+	}	
+	function storeSearchVideos() {
+		
+		if (document.formSearchTermsVideos.searchTermsVideos.value != "") {
+		
+			var thisSearchTerm = document.formSearchTermsVideos.searchTermsVideos.value;
+	
+			document.formSearchTermsKentLINK.searchTermsKentLINK.value = thisSearchTerm;
+			document.formSearchTermsKeyword.find_request_1.value = thisSearchTerm;
+			<!--document.aspnetForm.ctl00$ctl00$BaseFindField$FindField$ctl00$guidedFields$fieldRepeater$ctl01$SearchTerm.value = thisSearchTerm;-->
+			document.formSearchTermsGoogleScholar.q.value = thisSearchTerm;
+			document.formSearchTermsVideos.searchTermsVideos.value = thisSearchTerm;
+			document.formSearchTermsWebSite.searchTermsWebSite.value = thisSearchTerm;
+
+		}			
+
+	}	
+	function storeSearchWebSite() {
+		
+		if (document.formSearchTermsWebSite.searchTermsWebSite.value != "") {
+		
+			var thisSearchTerm = document.formSearchTermsWebSite.searchTermsWebSite.value;
+	
+			document.formSearchTermsKentLINK.searchTermsKentLINK.value = thisSearchTerm;
+			document.formSearchTermsKeyword.find_request_1.value = thisSearchTerm;
+			<!--document.aspnetForm.ctl00$ctl00$BaseFindField$FindField$ctl00$guidedFields$fieldRepeater$ctl01$SearchTerm.value = thisSearchTerm;-->
+			document.formSearchTermsGoogleScholar.q.value = thisSearchTerm;
+			document.formSearchTermsVideos.searchTermsVideos.value = thisSearchTerm;
+			document.formSearchTermsWebSite.searchTermsWebSite.value = thisSearchTerm;
+
+		}			
+
+	}
+
+	if (document.graphics) 
+	{
+	   img1 = new Image();
+	   img2 = new Image();
+	   img3 = new Image();
+	   img4 = new Image();
+	   img1.src = "../graphics/ask_a_librarian_over.jpg";
+	   img2.src = "../graphics/bg_search_tabs_databases.jpg"
+	   img3.src = "../graphics/bg_search_tabs_googlescholar.jpg"
+	   img3.src = "../graphics/bg_search_tabs_videos.jpg"
+	   img4.src = "../graphics/bg_search_tabs_site.jpg"
+	}
+
+
+	
+	
+	
+	
+	function getInternetExplorerVersion()
+	// Returns the version of Internet Explorer or a -1
+	// (indicating the use of another browser).
+	{
+	  var rv = -1; // Return value assumes failure.
+	  if (navigator.appName == 'Microsoft Internet Explorer')
+	  {
+		var ua = navigator.userAgent;
+		var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+		if (re.exec(ua) != null)
+		  rv = parseFloat( RegExp.$1 );
+	  }
+	  return rv;
+	}
+	function checkVersion()
+	{
+	  var msg = "";
+	  var ver = getInternetExplorerVersion();
+	
+	  if ( ver > -1 )
+	  {
+		if (( ver 
+
+<!-- overLIB (c) Erik Bosrup -->
+
+
+
+
+
+
+
+    
+
+
+
+
+	$(function(){
+
+		$('#carousel').infiniteCarousel({
+			displayProgressBar: 0,
+			displayThumbnailBackground: 0,
+			textholderHeight: .123
+		});
+		
+
+	});
+
+
+
+
+
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</FONT></U>
+
+	[INLINE]
+	
+		<U><FONT COLOR=blue><P>Kent State University</P></FONT></U>
+				<U><FONT COLOR=blue>[Text Only]Text Only</FONT></U>
+		<U><FONT COLOR=blue>[Print with Links]Print w/ Links</FONT></U>
+		
+			<U><FONT COLOR=blue>A</FONT></U>
+			<U><FONT COLOR=blue>A</FONT></U>
+			<U><FONT COLOR=blue>A</FONT></U>
+		
+				<U><FONT COLOR=blue><P>University Libraries</P></FONT></U>
+		
+			<UL>
+								<LI><U><FONT COLOR=blue>Home</FONT></U></LI>
+				<LI>|</LI>
+				<LI><U><FONT COLOR=blue>Research</FONT></U></LI>
+				<LI>|</LI>
+				<LI><U><FONT COLOR=blue>Services</FONT></U></LI>
+				<LI>|</LI>
+				<LI><U><FONT COLOR=blue>About Us</FONT></U></LI>
+				<LI>|</LI>
+				<LI><U><FONT COLOR=blue>Help</FONT></U></LI>
+				<LI>|</LI>
+				<LI><U><FONT COLOR=blue>Contact Us</FONT></U></LI>
+				<LI>|</LI>
+				<LI><U><FONT COLOR=blue>Search</FONT></U></LI>
+				<LI>|</LI>
+				<LI><U><FONT COLOR=blue>Site Index</FONT></U></LI>
+				<LI>|</LI>
+				<LI><U><FONT COLOR=blue>My Library Account</FONT></U></LI>
+				<!--<li class="last"><a href="https://www.library.kent.edu/personal" title="Personal">Personal</a></li>-->
+							</UL>
+		
+	
+	
+		
+			<FORM>
+				<SELECT NAME="jumpMenu">
+					<OPTION VALUE="#" SELECTED>Quick jump to... </OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10000">UL Home Page </OPTION>
+					<OPTION VALUE="https://kentlink.kent.edu/patroninfo">My Library Account</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10006">Contact Us</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/5019">Hours</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10004">Locations &amp; Directions</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10847">Student Jobs</OPTION>
+					<OPTION VALUE="#">-----------------------</OPTION>
+					<OPTION VALUE="#">Research:</OPTION>
+					<OPTION VALUE="http://kentlink.kent.edu/">&nbsp;&nbsp;KentLINK</OPTION>
+					<OPTION VALUE="http://www.ohiolink.edu/">&nbsp;&nbsp;OhioLINK</OPTION>
+					<OPTION VALUE="http://reserves.library.kent.edu/">&nbsp;&nbsp;Electronic Reserves (ERes)</OPTION>
+					<!--<option value="http://www.library.kent.edu/ill_8campus.php">&nbsp;&nbsp;ILLiad</option>-->
+					<OPTION VALUE="https://kent.illiad.oclc.org/illiad/logon.html">&nbsp;&nbsp;ILLiad</OPTION>
+					<OPTION VALUE="http://qk8mu7jr6k.search.serialssolutions.com/">&nbsp;&nbsp;Journal Finder</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10679">&nbsp;&nbsp;Multimedia</OPTION>
+					<OPTION VALUE="http://kentlink.kent.edu/search/r">&nbsp;&nbsp;Reserves</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10300">&nbsp;&nbsp;Special Collections</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10300">&nbsp;&nbsp;&nbsp;&nbsp;&amp; Archives</OPTION>
+					<OPTION VALUE="#">-----------------------</OPTION>
+					<OPTION VALUE="#">Services/Depts</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10337">&nbsp;&nbsp;Administration</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10506">&nbsp;&nbsp;Architecture Library</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10398">&nbsp;&nbsp;Audiovisual Services</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10175">&nbsp;&nbsp;Campus Copy Connection</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10569">&nbsp;&nbsp;Chemistry/Physics Library</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10266">&nbsp;&nbsp;Circulation</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10143">&nbsp;&nbsp;Collection Development</OPTION>
+					<!--<option value="http://www.library.kent.edu/page/10547">&nbsp;&nbsp;Design Solutions</option>-->
+					<OPTION VALUE="http://www.library.kent.edu/page/10547">&nbsp;&nbsp;Communications Office</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10846">&nbsp;&nbsp;Engraving Services</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10507">&nbsp;&nbsp;Fashion Library</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10056">&nbsp;&nbsp;Interlibrary Loan</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10473">&nbsp;&nbsp;Map Library</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10752">&nbsp;&nbsp;Mathematics &amp; Computer</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10752">&nbsp;&nbsp;&nbsp;&nbsp; Sciences Library</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10678">&nbsp;&nbsp;Media Services</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10030">&nbsp;&nbsp;Performing Arts Library</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10254">&nbsp;&nbsp;Periodical Services</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10175">&nbsp;&nbsp;Public Copy Services</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10723">&nbsp;&nbsp;Reference &amp;</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10723">&nbsp;&nbsp;&nbsp;&nbsp; Instructional Services</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10286">&nbsp;&nbsp;Regional Campus Libraries</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10241">&nbsp;&nbsp;Reserve Services</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10016">&nbsp;&nbsp;Student Multimedia Studio</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10300">&nbsp;&nbsp;Special Collections</OPTION>
+					<OPTION VALUE="http://www.library.kent.edu/page/10300">&nbsp;&nbsp;&nbsp;&nbsp;&amp; Archives</OPTION>
+				</SELECT>
+			</FORM>
+		
+		
+						<!--<a href="cleancrumbs.php">Home</a>-->			
+		
+		[INLINE]
+		
+			<U><FONT COLOR=blue><P>Ask A Librarian</P></FONT></U>
+		
+	
+		
+<TABLE>
+	<TR>			
+		<TD></TD>
+		<TD>
+			[INLINE]
+			
+				
+					<UL>
+					  <LI><U><FONT COLOR=blue>Search<BR>KentLINK Catalog</FONT></U></LI>
+					  <LI><U><FONT COLOR=blue>Search<BR>For Articles</FONT></U></LI>
+					  <LI><U><FONT COLOR=blue>Search<BR>Google Scholar</FONT></U></LI>
+					  <LI><U><FONT COLOR=blue>Search<BR>For Videos &amp; DVDs</FONT></U></LI>
+
+					  <LI><U><FONT COLOR=blue>Search<BR>Our Web Site</FONT></U></LI>
+					</UL>
+				
+				
+					Search for books and more
+					
+						<FORM>
+							<INPUT VALUE="KentLINK" NAME="searchType" TYPE="hidden">
+							<SELECT NAME="searchKentLINKSelect">
+								<OPTION VALUE="keyword">Keyword</OPTION>
+								<OPTION VALUE="author">Author</OPTION>
+								<OPTION VALUE="title">Title</OPTION>
+								<OPTION VALUE="subject">Subject</OPTION>
+							</SELECT> 
+							<INPUT NAME="searchTermsKentLINK" MAXLENGTH="255" SIZE="35" TYPE="text"> 
+							<INPUT VALUE="Search" NAME="submit" TYPE="submit">
+					  </FORM>
+					
+					<U><FONT COLOR=blue>[You need to connect to the Kent State VPN to access the research databases listed on this page. Click this button for instructions. OhioLINK Authentication users can ignore this alert.]</FONT></U>
+<U><FONT COLOR=blue>Advanced Search</FONT></U> &nbsp; | &nbsp; <U><FONT COLOR=blue>More KentLINK Searches</FONT></U>
+					<U><FONT COLOR=blue>Search OhioLINK Catalog</FONT></U>
+				
+				
+				<!--<div id="searchDatabases" class="searchTabContent" style="display:none; left:200px;  top:100px;">-->
+				
+					Quick search in Academic Search Complete and the Electronic Journal Center
+					
+						<FORM>
+							<INPUT VALUE="quick-1-check1" NAME="func" TYPE="hidden"> 
+							<INPUT VALUE="simple" NAME="mode" TYPE="hidden">
+							<INPUT VALUE="000000136" NAME="group_number" TYPE="hidden">
+							<INPUT NAME="find_request_1" MAXLENGTH="255" SIZE="40" TYPE="text"> 
+							<INPUT VALUE="Search" NAME="submit" TYPE="submit">
+						</FORM>
+						
+						<!-- The following form code is hidden while EJC is unreliable -->
+						<!--
+						<form name="aspnetForm" method="post" action="http://web.ebscohost.com/ehost/search?vid=1&amp;hid=11&amp;sid=090935c333ef4d7295c301ec83753d9d%40sessionmgr12" id="formSearchTermsKeyword"> 
+							<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" /> 
+							<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" /> 
+							<input type="hidden" name="CurrentSearchMode" id="CurrentSearchMode" value="Bool" /> 
+							<input type="hidden" name="FirstFindFieldIdHolder" id="FirstFindFieldIdHolder" value="ctl00_ctl00_BaseFindField_FindField_ctl00_guidedFields_fieldRepeater_ctl01_SearchTerm" /> 
+							<input type="hidden" name="FirstFindFieldTagIdHolder" id="FirstFindFieldTagIdHolder" value="ctl00_ctl00_BaseFindField_FindField_ctl00_guidedFields_fieldRepeater_ctl01_DbTag" /> 
+							<input type="hidden" name="FirstFindFieldInLabelHolder" id="FirstFindFieldInLabelHolder" value="ctl00_ctl00_BaseFindField_FindField_ctl00_guidedFields_fieldRepeater_ctl01_inLabel" /> 
+							<input type="hidden" name="FirstFindFieldRowMeasure" id="FirstFindFieldRowMeasure" value="ctl00_ctl00_BaseFindField_FindField_ctl00_guidedFields_fieldRepeater_ctl02_fieldRow" /> 
+							<input type="hidden" name="__sid" id="__sid" value="090935c333ef4d7295c301ec83753d9d@sessionmgr12" /> 
+							<input type="hidden" name="__vid" id="__vid" value="1" /> 
+							<input type="hidden" name="__CUSTOMVIEWSTATE" id="__CUSTOMVIEWSTATE" value="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" /> 
+							<input type="hidden" name="__ScreenResolution" id="__ScreenResolution" value="" /> 
+							<input type="hidden" name="__VIEWSTATE" id="
+							
+							__VIEWSTATE" value="" /> 
+							<input name="ctl00$ctl00$BaseFindField$FindField$ctl00$guidedFields$fieldRepeater$ctl01$SearchTerm" type="text" size="40" id="ctl00_ctl00_BaseFindField_FindField_ctl00_guidedFields_fieldRepeater_ctl01_SearchTerm" title="Please enter search term(s)." class="findfieldswidthfirst" onblur="storeSearchArticles()" />
+							<input type="submit" name="ctl00$ctl00$MainContentArea$MainContentArea$ctrlLimiters$btnSearch" value="Search" id="ctl00_ctl00_MainContentArea_MainContentArea_ctrlLimiters_btnSearch" class="button" title="Search" />
+						</form>
+						
+						-->
+					
+					<U><FONT COLOR=blue>[You need to connect to the Kent State VPN to access the research databases listed on this page. Click this button for instructions. OhioLINK Authentication users can ignore this alert.]</FONT></U>
+Select another research database:  <U><FONT COLOR=blue>Alphabetical</FONT></U> | <U><FONT COLOR=blue>By Subject</FONT></U>
+				
+				
+				<!--<div id="searchDatabases" class="searchTabContent" style="display:none; left:200px;  top:100px;">-->
+				
+					Search Google Scholar for articles.  <U><FONT COLOR=blue>More about Google Scholar.</FONT></U>
+					
+						<FORM>
+							<INPUT VALUE="UTF-8" NAME="ie" TYPE="hidden">
+							<INPUT VALUE="UTF-8" NAME="oe" TYPE="hidden">
+							<INPUT NAME="q" MAXLENGTH="255" SIZE="40" TYPE="text"> 
+							<INPUT VALUE="Search" NAME="btnG" TYPE="submit">
+						</FORM>
+					
+					<U><FONT COLOR=blue>[You need to connect to the Kent State VPN to access the research databases listed on this page. Click this button for instructions. OhioLINK Authentication users can ignore this alert.]</FONT></U>
+Select a KSU database:  <U><FONT COLOR=blue>Alphabetical</FONT></U> | <U><FONT COLOR=blue>By Subject</FONT></U>
+				
+				
+				<!--<div id="searchVideos" class="searchTabContent" style="display:none; left:200px;  top:100px;">-->
+				
+					Search KentLINK for videos, DVDs, and other media
+
+					
+						<FORM>
+							<INPUT VALUE="Videos" NAME="searchType" TYPE="hidden">
+							<INPUT NAME="searchTermsVideos" MAXLENGTH="255" SIZE="40" TYPE="text"> 
+							<INPUT VALUE="Search" NAME="submit" TYPE="submit">
+						</FORM>
+					
+					<U><FONT COLOR=blue>[You need to connect to the Kent State VPN to access the research databases listed on this page. Click this button for instructions. OhioLINK Authentication users can ignore this alert.]</FONT></U>
+<U><FONT COLOR=blue>Advanced KentLINK Search</FONT></U> &nbsp; | &nbsp; <U><FONT COLOR=blue>OhioLINK Digital Media Center</FONT></U>
+				
+				<!--<div id="searchSite" class="searchTabContent" style="display:none; left:200px; top:100px;">-->
+
+				
+					Search the contents of our Web site
+					
+						<FORM>
+							<INPUT NAME="searchTerms" MAXLENGTH="255" SIZE="40" TYPE="text">
+							<INPUT VALUE="Search" NAME="submit" TYPE="submit">
+						</FORM>
+					
+					<U><FONT COLOR=blue>[You need to connect to the Kent State VPN to access the research databases listed on this page. Click this button for instructions. OhioLINK Authentication users can ignore this alert.]</FONT></U>
+
+				
+				<!--<img src="images/bg_search.jpg" />-->
+			
+		</TD>			
+	</TR>
+</TABLE>
+
+	
+		<UL>
+			<LI><U><FONT COLOR=blue>Home</FONT></U></LI>
+
+			<LI><U><FONT COLOR=blue>Research</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>Services</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>About Us</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>Help</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>Contact Us</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>Search</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>Site Index</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>My Library Account</FONT></U></LI>
+			<!--<li class="last"><a href="https://www.library.kent.edu/personal" title="Personal">Personal</a></li>-->
+		</UL>
+    
+	
+		<H1>Icon Legend/Key:</H1>
+		<UL>
+			<LI><U><FONT COLOR=blue>[Off-Site Icon] Off-Site Link</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>[PDF File] PDF File</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>[Required Form Field] Required Form Field</FONT></U></LI>
+			<LI><U><FONT COLOR=blue>[Add this Event to Your Calendar] Add this Event to Your Calendar</FONT></U></LI>
+			<!--
+			<li><a href="http://www.library.kent.edu/page/10853#siteSearchPage"><img src="http://www.library.kent.edu/graphics/icon_page_gray.gif" alt="Search Our Site: Page" width="15" height="13" border="0"> Search Our Site: Page Result</a></li>
+			<li><a href="http://www.library.kent.edu/page/10853#siteSearchResource"><img src="http://www.library.kent.edu/graphics/icon_resource_gray.gif" alt="Search Our Site: Resource" width="14" height="13" border="0"> Search Our Site: Resource Result</a></li>
+			-->
+		</UL>
+	
+		
+		<P>Page last updated: 2007-07-26</P>
+		<P><U><FONT COLOR=blue>Privacy Statement</FONT></U></P>
+		<P>&copy;2003-2012 University Libraries</P>
+		<P><U><FONT COLOR=blue>Mobile Site</FONT></U></P>
+    
+	
+		<P>University Libraries</P>
+		<P>Main Library</P>
+		<P>1125 Risman Drive</P>
+		<P>Kent, OH 44242-0001</P>
+	
+	
+		<P><U><FONT COLOR=blue>Email this page...</FONT></U></P>
+		<!--<p class="emailFriend"></p>-->
+		<P>Questions or comments about this page?</P>
+		<P>
+		<U><FONT COLOR=blue>Contact Jeffrey Remley</FONT></U></P>
+		  
+</BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+</HTML>
